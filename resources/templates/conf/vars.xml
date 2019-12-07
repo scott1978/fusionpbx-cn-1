@@ -1,0 +1,117 @@
+<include>
+   <!-- Preprocessor Variables
+      These are introduced when configuration strings must be consistent across modules. 
+      NOTICE: YOU CAN NOT COMMENT OUT AN X-PRE-PROCESS line, Remove the line instead.
+
+      The following variables are set dynamically by freeswitch and are available to
+      the config as $${variable}.  You can see their calculated value via fs_cli
+      by entering eval $${variable}
+
+      switchname
+      hostname
+      local_ip_v4
+      local_mask_v4
+      local_ip_v6
+      switch_serial
+      base_dir
+      recordings_dir
+      sound_prefix
+      sounds_dir
+      conf_dir
+      log_dir
+      run_dir
+      db_dir
+      mod_dir
+      htdocs_dir
+      script_dir
+      temp_dir
+      grammar_dir
+      certs_dir
+      storage_dir
+      cache_dir
+      core_uuid
+      zrtp_enabled
+      nat_public_addr
+      nat_private_addr
+      nat_type
+   -->
+
+   <!-- Codecs -->
+   <!-- G7221@32000h,G7221@16000h,G722,PCMU,PCMA,iLBC,GSM,H263,H264 -->
+   <X-PRE-PROCESS cmd="set" data="global_codec_prefs=PCMU,PCMA,G729" category="Codecs" enabled="true" uuid="38271682-cf61-40d3-a769-63617d933902"/>
+   <X-PRE-PROCESS cmd="set" data="outbound_codec_prefs=PCMU,PCMA,G729" category="Codecs" enabled="true"  uuid="522f710e-66ff-4e4d-8164-0ee1ef31c600"/>
+   <X-PRE-PROCESS cmd="set" data="media_mix_inbound_outbound_codecs=true" category="Codecs" enabled="true" uuid="76646fce-3ff0-4582-a377-0986ed330782"/>
+
+   <!-- Defaults -->
+   <X-PRE-PROCESS cmd="set" data="call_debug=false" category="Defaults" enabled="true" uuid="ace95a89-5b8e-481b-8d3a-5fe0a0e4925a"/>
+   <X-PRE-PROCESS cmd="set" data="console_loglevel=info" category="Defaults" enabled="true" uuid="a0dd1b20-436d-4bc5-b112-0311132f9f97"/>
+   <X-PRE-PROCESS cmd="set" data="default_areacode=208" category="Defaults" enabled="true" uuid="f84232a6-5107-43f0-90fd-870e54785f41"/>
+   <X-PRE-PROCESS cmd="set" data="sit=%(274,0,913.8);%(274,0,1370.6);%(380,0,1776.7)" category="Defaults" enabled="true" uuid="93508409-4679-4132-890b-8a6f39cea271"/>
+   <X-PRE-PROCESS cmd="set" data="use_profile=internal" category="Defaults" enabled="true" uuid="861372f4-9150-4815-a120-7808b4fb4897"/>
+   <X-PRE-PROCESS cmd="set" data="default_language=zh" category="Defaults" enabled="true" uuid="1b6312a0-10f4-4a35-9592-8f7f90b666f0"/>
+   <X-PRE-PROCESS cmd="set" data="default_dialect=cn" category="Defaults" enabled="true" uuid="3d5e6bd6-a862-4862-91d1-6fa363345cad"/>
+   <X-PRE-PROCESS cmd="set" data="default_voice=callie" category="Defaults" enabled="true" uuid="5fa8a217-697c-4525-99f3-1349e1e4e437"/>
+   <X-PRE-PROCESS cmd="set" data="ajax_refresh_rate=3000" category="Defaults" enabled="true" uuid="8cc61a79-8bf2-406f-ac96-7c5fcc28108d"/>
+   <X-PRE-PROCESS cmd="set" data="ringback=$${us-ring}" category="Defaults" enabled="true" uuid="10aa29df-0f39-41a5-bbc9-57be50a0f64e"/>
+   <X-PRE-PROCESS cmd="set" data="transfer_ringback=$${us-ring}" category="Defaults" enabled="true" uuid="82c2e923-3038-4da8-b721-85919792e50e"/>
+   <X-PRE-PROCESS cmd="set" data="record_ext=wav" category="Defaults" enabled="true" uuid="439e60dd-9385-43db-9b65-85fcc5db369a"/>
+   <X-PRE-PROCESS cmd="set" data="default_country=China" category="Defaults" enabled="true" uuid="db10bba0-b637-434f-8065-40f34ae16a94"/>
+   <X-PRE-PROCESS cmd="set" data="default_countrycode=1" category="Defaults" enabled="true" uuid="2b0e7950-171b-4710-a69b-29941151bb11"/>
+   <X-PRE-PROCESS cmd="set" data="default_exitcode=011" category="Defaults" enabled="true" uuid="6732040e-827b-48d4-a246-f74e1d3d383d"/>
+
+   <!-- Dingaling -->
+   <!-- xmpp_client_profile and xmpp_server_profile xmpp_client_profile can be any string. xmpp_server_profile is appended to "dingaling_" to form the database name containing the "subscriptions" table. used by: dingaling.conf.xml enum.conf.xml -->
+   <X-PRE-PROCESS cmd="set" data="xmpp_client_profile=xmppc" category="XMPP" enabled="true" uuid="33a1076e-0d0e-47ba-ab5c-30bbbc7e3507"/>
+   <X-PRE-PROCESS cmd="set" data="xmpp_server_profile=xmpps" category="XMPP" enabled="true" uuid="5e0053dd-422e-4dc7-9e68-7682e76f7f49"/>
+   <X-PRE-PROCESS cmd="set" data="bind_server_ip=auto" category="XMPP" enabled="true" uuid="0e02b564-22b6-41b7-8744-04f4b2b53aca"/>
+
+   <!-- IP Address -->
+   <!-- (If you''re going to load test then please input real IP addresses for external_rtp_ip and external_sip_ip)
+
+   Can be an one of:
+      ip address: "12.34.56.78"
+      a stun server lookup: "stun:stun.server.com"
+      a DNS name: "host:host.server.com"
+
+   where fs.mydomain.com is a DNS A record-useful when fs is on a dynamic IP address, and uses a dynamic DNS updater. If unspecified, the bind_server_ip value is used. Used by: sofia.conf.xml dingaling.conf.xml -->
+   <X-PRE-PROCESS cmd="set" data="external_rtp_ip=$${local_ip_v4}" category="IP Address" enabled="true" uuid="3d98734c-fa27-46c7-af21-29b3688005c2"/>
+   <X-PRE-PROCESS cmd="set" data="external_sip_ip=$${local_ip_v4}" category="IP Address" enabled="true" uuid="21754b8f-c7cd-44da-ae44-6b890af8f23c"/>
+
+   <!-- Music on Hold -->
+   <X-PRE-PROCESS cmd="set" data="hold_music=local_stream://default" category="Music on Hold" enabled="true" uuid="f3912a2-c3ea-4e6e-8f74-bce2838a20d8"/>
+
+   <!-- Ringtones -->
+   <X-PRE-PROCESS cmd="set" data="cn-ring=%(1000,4000,450)" category="Ringtones" enabled="true" uuid="e4b62a83-7905-4812-b341-d732ebf85069"/>
+   <X-PRE-PROCESS cmd="set" data="us-ring=%(2000,4000,440,480)" category="Ringtones" enabled="true" uuid="32c1635a-c9e1-48b0-ab92-6efc7d61ec46"/>
+   <X-PRE-PROCESS cmd="set" data="bong-ring=v=-7;%(100,0,941.0,1477.0);v=-7;>=2;+=.1;%(1400,0,350,440)" category="Ringtones" enabled="true" uuid="19ddc686-ec47-45d7-8d61-29536d7b67d1"/>
+
+   <!-- Tones -->
+   <X-PRE-PROCESS cmd="set" data="vacant-us-tone=%(274,0,913.8);%(274,0,1370.6);%(380,0,1776.7)" category="Tones" enabled="true" uuid="81e63d9e-d2d5-4691-a0f4-74dffb3b25dc"/>]
+   <X-PRE-PROCESS cmd="set" data="busy-us-tone=%(500,500,480,620)" category="Tones" enabled="true" uuid="29b0bf45-a633-4b48-a2dc-4a6e78f73a13"/>
+   <X-PRE-PROCESS cmd="set" data="bong-us-tone=v=-7;%(100,0,941.0,1477.0);v=-7;>=2;+=.1;%(1400,0,350,440)" category="Tones" enabled="true" uuid="4be3153c-5e8d-4b2e-82f0-c89ce7006a0d"/>
+
+   <!-- SIP -->
+   <!-- Used to turn on sip loopback unrolling. -->
+   <X-PRE-PROCESS cmd="set" data="hangup_on_subscriber_absent=true" category="SIP" enabled="false" uuid="c1292ccc-ad04-490d-9a30-c79e7747fb86"/>
+   <X-PRE-PROCESS cmd="set" data="hangup_on_call_reject=true" category="SIP" enabled="false" uuid="62644977-03b8-41c1-9827-ccedbc743d75"/>
+   <X-PRE-PROCESS cmd="set" data="unroll_loops=true" category="SIP" enabled="true" uuid="314fbf59-201b-4b3a-9e3a-34b19099ac6d"/>
+   <X-PRE-PROCESS cmd="set" data="sip_tls_version=tlsv1" category="SIP" enabled="true" uuid="3fff6ed5-fde0-49ca-abe6-7db15f7f54d4"/>
+
+   <!-- SIP Profile: External -->
+   <X-PRE-PROCESS cmd="set" data="external_sip_port=5080" category="SIP Profile: External" enabled="true" uuid="9594ab5c-884a-4d16-87ec-1a9f5b9c3247"/>
+   <X-PRE-PROCESS cmd="set" data="external_tls_port=5081" category="SIP Profile: External" enabled="true" uuid="ea87e722-8b8f-4c11-b4cd-16eabd99450b"/>
+   <X-PRE-PROCESS cmd="set" data="external_ssl_enable=false" category="SIP Profile: External" enabled="true" uuid="428d5aad-3116-4cfb-bbfa-d4c424707efb"/>
+   <X-PRE-PROCESS cmd="set" data="external_ssl_dir=$${conf_dir}/tls" category="SIP Profile: External" enabled="true" uuid="ad813484-bd8a-4fe9-9342-82ef8834da96"/>
+
+   <!-- SIP Profile: Internal -->
+   <X-PRE-PROCESS cmd="set" data="internal_sip_port=5060" category="SIP Profile: Internal" enabled="true" uuid="562e0395-4059-4421-b648-2ed991edb0fb"/>
+   <X-PRE-PROCESS cmd="set" data="internal_tls_port=5061" category="SIP Profile: Internal" enabled="true" uuid="82e185df-2835-419b-b79c-f5f3cf373c08"/>
+   <X-PRE-PROCESS cmd="set" data="internal_ssl_enable=false" category="SIP Profile: Internal" enabled="true" uuid="ee58ced9-75b2-49ae-9595-ea95a3781d85"/>
+   <X-PRE-PROCESS cmd="set" data="internal_ssl_dir=$${conf_dir}/tls" category="SIP Profile: Internal" enabled="true" uuid="c7daefd5-ac6d-4fed-b85a-40d7e8ad8c53"/>
+
+   <!-- Sound -->
+   <!-- Sets the sound directory. -->
+   <!-- <X-PRE-PROCESS cmd="set" data="sound_prefix=$${sounds_dir}/en/us/callie" category="Sound" enabled="true" uuid="693e0d9a-dde0-4d63-80e2-5255c2dc726e"/> -->
+   <X-PRE-PROCESS cmd="set" data="sound_prefix=$${sounds_dir}/zh/cn/callie" category="Sound" enabled="true" uuid="693e0d9a-dde0-4d63-80e2-5255c2dc726e"/>
+
+</include>
