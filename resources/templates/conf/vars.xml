@@ -48,14 +48,14 @@
    <X-PRE-PROCESS cmd="set" data="default_areacode=208" category="Defaults" enabled="true" uuid="f84232a6-5107-43f0-90fd-870e54785f41"/>
    <X-PRE-PROCESS cmd="set" data="sit=%(274,0,913.8);%(274,0,1370.6);%(380,0,1776.7)" category="Defaults" enabled="true" uuid="93508409-4679-4132-890b-8a6f39cea271"/>
    <X-PRE-PROCESS cmd="set" data="use_profile=internal" category="Defaults" enabled="true" uuid="861372f4-9150-4815-a120-7808b4fb4897"/>
-   <X-PRE-PROCESS cmd="set" data="default_language=zh" category="Defaults" enabled="true" uuid="1b6312a0-10f4-4a35-9592-8f7f90b666f0"/>
-   <X-PRE-PROCESS cmd="set" data="default_dialect=cn" category="Defaults" enabled="true" uuid="3d5e6bd6-a862-4862-91d1-6fa363345cad"/>
+   <X-PRE-PROCESS cmd="set" data="default_language=en" category="Defaults" enabled="true" uuid="1b6312a0-10f4-4a35-9592-8f7f90b666f0"/>
+   <X-PRE-PROCESS cmd="set" data="default_dialect=us" category="Defaults" enabled="true" uuid="3d5e6bd6-a862-4862-91d1-6fa363345cad"/>
    <X-PRE-PROCESS cmd="set" data="default_voice=callie" category="Defaults" enabled="true" uuid="5fa8a217-697c-4525-99f3-1349e1e4e437"/>
    <X-PRE-PROCESS cmd="set" data="ajax_refresh_rate=3000" category="Defaults" enabled="true" uuid="8cc61a79-8bf2-406f-ac96-7c5fcc28108d"/>
    <X-PRE-PROCESS cmd="set" data="ringback=$${us-ring}" category="Defaults" enabled="true" uuid="10aa29df-0f39-41a5-bbc9-57be50a0f64e"/>
    <X-PRE-PROCESS cmd="set" data="transfer_ringback=$${us-ring}" category="Defaults" enabled="true" uuid="82c2e923-3038-4da8-b721-85919792e50e"/>
    <X-PRE-PROCESS cmd="set" data="record_ext=wav" category="Defaults" enabled="true" uuid="439e60dd-9385-43db-9b65-85fcc5db369a"/>
-   <X-PRE-PROCESS cmd="set" data="default_country=China" category="Defaults" enabled="true" uuid="db10bba0-b637-434f-8065-40f34ae16a94"/>
+   <X-PRE-PROCESS cmd="set" data="default_country=US" category="Defaults" enabled="true" uuid="db10bba0-b637-434f-8065-40f34ae16a94"/>
    <X-PRE-PROCESS cmd="set" data="default_countrycode=1" category="Defaults" enabled="true" uuid="2b0e7950-171b-4710-a69b-29941151bb11"/>
    <X-PRE-PROCESS cmd="set" data="default_exitcode=011" category="Defaults" enabled="true" uuid="6732040e-827b-48d4-a246-f74e1d3d383d"/>
 
@@ -86,7 +86,7 @@
    <X-PRE-PROCESS cmd="set" data="bong-ring=v=-7;%(100,0,941.0,1477.0);v=-7;>=2;+=.1;%(1400,0,350,440)" category="Ringtones" enabled="true" uuid="19ddc686-ec47-45d7-8d61-29536d7b67d1"/>
 
    <!-- Tones -->
-   <X-PRE-PROCESS cmd="set" data="vacant-us-tone=%(274,0,913.8);%(274,0,1370.6);%(380,0,1776.7)" category="Tones" enabled="true" uuid="81e63d9e-d2d5-4691-a0f4-74dffb3b25dc"/>]
+   <X-PRE-PROCESS cmd="set" data="vacant-us-tone=%(274,0,913.8);%(274,0,1370.6);%(380,0,1776.7)" category="Tones" enabled="true" uuid="81e63d9e-d2d5-4691-a0f4-74dffb3b25dc"/>
    <X-PRE-PROCESS cmd="set" data="busy-us-tone=%(500,500,480,620)" category="Tones" enabled="true" uuid="29b0bf45-a633-4b48-a2dc-4a6e78f73a13"/>
    <X-PRE-PROCESS cmd="set" data="bong-us-tone=v=-7;%(100,0,941.0,1477.0);v=-7;>=2;+=.1;%(1400,0,350,440)" category="Tones" enabled="true" uuid="4be3153c-5e8d-4b2e-82f0-c89ce7006a0d"/>
 
@@ -111,7 +111,6 @@
 
    <!-- Sound -->
    <!-- Sets the sound directory. -->
-   <!-- <X-PRE-PROCESS cmd="set" data="sound_prefix=$${sounds_dir}/en/us/callie" category="Sound" enabled="true" uuid="693e0d9a-dde0-4d63-80e2-5255c2dc726e"/> -->
-   <X-PRE-PROCESS cmd="set" data="sound_prefix=$${sounds_dir}/zh/cn/callie" category="Sound" enabled="true" uuid="693e0d9a-dde0-4d63-80e2-5255c2dc726e"/>
+   <X-PRE-PROCESS cmd="set" data="sound_prefix=$${sounds_dir}/en/us/callie" category="Sound" enabled="true" uuid="693e0d9a-dde0-4d63-80e2-5255c2dc726e"/>
 
 </include>
