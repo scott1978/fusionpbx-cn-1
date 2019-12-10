@@ -9,6 +9,7 @@
 		$apps[$x]['license'] = "Mozilla Public License 1.1";
 		$apps[$x]['url'] = "http://www.fusionpbx.com";
 		$apps[$x]['description']['en-us'] = "User account settings can be changed by the user.";
+		$apps[$x]['description']['zh-cn'] = "该用户可修改用户账号设置";
 		$apps[$x]['description']['ar-eg'] = "";
 		$apps[$x]['description']['de-at'] = "Einstellungen des Benutzerkontos können durch den Benutzer geändert werden.";
 		$apps[$x]['description']['de-ch'] = "";

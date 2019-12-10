@@ -2,6 +2,7 @@
 
 	$y = 0;
 	$apps[$x]['menu'][$y]['title']['en-us'] = "Dashboard";
+	$apps[$x]['menu'][$y]['title']['zh-cn'] = "仪表盘";
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "الصفحه الرئيسيه للمستخدم";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Benutzerübersicht";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Benutzerübersicht";

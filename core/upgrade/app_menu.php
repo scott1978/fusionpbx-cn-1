@@ -2,6 +2,7 @@
 
 	$y = 0;
 	$apps[$x]['menu'][$y]['title']['en-us'] = "Upgrade";
+	$apps[$x]['menu'][$y]['title']['zh-cn'] = "升级";
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Aktualisierung";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Aktualisierung";
