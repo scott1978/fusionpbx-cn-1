@@ -336,9 +336,8 @@ $text['login-message_attention']['ru-ru'] = "Внимание!";
 $text['login-message_attention']['sv-se'] = "Observera!";
 $text['login-message_attention']['uk-ua'] = "Увага!";
 
-$text['label-welcome']['en-us'] = "Welcome:";
-$text['label-welcome']['zh-cn'] = "欢迎：";
-$text['label-welcome']['ar-eg'] = "أهلا بك:";
+$text['label-welcome']['en-us'] = "欢迎：";
+$text['label-welcome']['ar-eg'] = "Welcome:";
 $text['label-welcome']['de-at'] = "Herzlich willkommen:"; //copied from de-de
 $text['label-welcome']['de-ch'] = "Herzlich willkommen:"; //copied from de-de
 $text['label-welcome']['de-de'] = "Herzlich willkommen:";
@@ -357,7 +356,7 @@ $text['label-welcome']['ru-ru'] = "Добро пожаловать:";
 $text['label-welcome']['sv-se'] = "Välkommen:";
 $text['label-welcome']['uk-ua'] = "Ласкаво просимо:";
 
-$text['label-voicemail']['en-us'] = "语音邮箱";
+$text['label-voicemail']['en-us'] = "语音信箱";
 $text['label-voicemail']['ar-eg'] = "Voicemail";
 $text['label-voicemail']['de-at'] = "Mailbox"; //copied from de-de
 $text['label-voicemail']['de-ch'] = "Mailbox"; //copied from de-de
@@ -963,7 +962,7 @@ $text['label-numbers']['ru-ru'] = "Номера";
 $text['label-numbers']['sv-se'] = "Nummer";
 $text['label-numbers']['uk-ua'] = "чисел";
 
-$text['label-no_voicemail_assigned']['en-us'] = "未分配语音邮箱";
+$text['label-no_voicemail_assigned']['en-us'] = "未分配语音信箱";
 $text['label-no_voicemail_assigned']['ar-eg'] = "No Voicemail Assigned";
 $text['label-no_voicemail_assigned']['de-at'] = "Keine Mailbox zugewiesen"; //copied from de-de
 $text['label-no_voicemail_assigned']['de-ch'] = "Keine Mailbox zugewiesen"; //copied from de-de
@@ -1004,9 +1003,8 @@ $text['label-new_password']['ru-ru'] = "Новый пароль";
 $text['label-new_password']['sv-se'] = "Nytt Lösenord";
 $text['label-new_password']['uk-ua'] = "Новий пароль";
 
-$text['label-new_messages']['en-us'] = "New Messages";
-$text['label-new_messages']['zh-cn'] = "新消息";
-$text['label-new_messages']['ar-eg'] = "رسائل جديدة";
+$text['label-new_messages']['en-us'] = "新消息数";
+$text['label-new_messages']['ar-eg'] = "New Messages";
 $text['label-new_messages']['de-at'] = "Neue Nachrichten"; //copied from de-de
 $text['label-new_messages']['de-ch'] = "Neue Nachrichten"; //copied from de-de
 $text['label-new_messages']['de-de'] = "Neue Nachrichten";
@@ -1340,9 +1338,8 @@ $text['label-failed']['ru-ru'] = "Пропущенный";
 $text['label-failed']['sv-se'] = "Misslyckad";
 $text['label-failed']['uk-ua'] = "";
 
-$text['label-extensions']['en-us'] = "Extensions";
-$text['label-extensions']['zh-cn'] = "分机";
-$text['label-extensions']['ar-eg'] = "الأرقام الداخلية";
+$text['label-extensions']['en-us'] = "分机";
+$text['label-extensions']['ar-eg'] = "Extensions";
 $text['label-extensions']['de-at'] = "Nebenstellen"; //copied from de-de
 $text['label-extensions']['de-ch'] = "Nebenstellen"; //copied from de-de
 $text['label-extensions']['de-de'] = "Nebenstellen";
@@ -1403,9 +1400,8 @@ $text['label-email_address']['ru-ru'] = "Адрес электронной по�
 $text['label-email_address']['sv-se'] = "E-postadress";
 $text['label-email_address']['uk-ua'] = "Адреси E-Mail";
 
-$text['label-domains']['en-us'] = "Domains";
-$text['label-domains']['zh-cn'] = "域名";
-$text['label-domains']['ar-eg'] = "";
+$text['label-domains']['en-us'] = "域名";
+$text['label-domains']['ar-eg'] = "Domains";
 $text['label-domains']['de-at'] = "Domänen"; //copied from de-de
 $text['label-domains']['de-ch'] = "Domänen"; //copied from de-de
 $text['label-domains']['de-de'] = "Domänen";
@@ -1528,9 +1524,8 @@ $text['label-disabled']['ru-ru'] = "Отключено";
 $text['label-disabled']['sv-se'] = "Inaktiverad";
 $text['label-disabled']['uk-ua'] = "Відключено";
 
-$text['label-devices']['en-us'] = "Devices";
-$text['label-devices']['zh-cn'] = "设备";
-$text['label-devices']['ar-eg'] = "الأجهزة";
+$text['label-devices']['en-us'] = "设备";
+$text['label-devices']['ar-eg'] = "Devices";
 $text['label-devices']['de-at'] = "Geräte"; //copied from de-de
 $text['label-devices']['de-ch'] = "Geräte"; //copied from de-de
 $text['label-devices']['de-de'] = "Geräte";
