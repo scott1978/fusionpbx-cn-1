@@ -1,9 +1,8 @@
 <?php
 #This file was last reorganized on 27th of September 2017 01:41:52 PM UTC
 
-$text['title-user_dashboard']['en-us'] = "Dashboard";
-$text['title-user_dashboard']['zh-cn'] = "仪表盘";
-$text['title-user_dashboard']['ar-eg'] = "الصفحه الرئيسيه للمستخدم";
+$text['title-user_dashboard']['en-us'] = "仪表盘";
+$text['title-user_dashboard']['ar-eg'] = "Dashboard";
 $text['title-user_dashboard']['de-at'] = "Benutzerübersicht"; //copied from de-de
 $text['title-user_dashboard']['de-ch'] = "Benutzerübersicht"; //copied from de-de
 $text['title-user_dashboard']['de-de'] = "Benutzerübersicht";
@@ -1933,9 +1932,8 @@ $text['description-user_language']['ru-ru'] = "Выберите язык.";
 $text['description-user_language']['sv-se'] = "Välj Språk";
 $text['description-user_language']['uk-ua'] = "Виберіть мову";
 
-$text['description-user_dashboard']['en-us'] = "Quickly access information and tools related to your account.";
-$text['description-user_dashboard']['zh-cn'] = "快速查看账号信息与统计数据";
-$text['description-user_dashboard']['ar-eg'] = "دخول سريع للمعلومات و الادوات الخاصة بحسابك";
+$text['description-user_dashboard']['en-us'] = "快速查看账号信息与统计数据";
+$text['description-user_dashboard']['ar-eg'] = "Quickly access information and tools related to your account.";
 $text['description-user_dashboard']['de-at'] = "Schneller Zugriff auf Kontoinformationen und -funktionen"; //copied from de-de
 $text['description-user_dashboard']['de-ch'] = "Schneller Zugriff auf Kontoinformationen und -funktionen"; //copied from de-de
 $text['description-user_dashboard']['de-de'] = "Schneller Zugriff auf Kontoinformationen und -funktionen";
