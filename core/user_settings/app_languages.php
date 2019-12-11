@@ -563,7 +563,7 @@ $text['label-total_destinations']['ru-ru'] = "Всего направлений"
 $text['label-total_destinations']['sv-se'] = "Totalt resmål";
 $text['label-total_destinations']['uk-ua'] = "всього Напрями";
 
-$text['label-total']['en-us'] = "总计";
+$text['label-total']['en-us'] = "值";
 $text['label-total']['ar-eg'] = "Total";
 $text['label-total']['de-at'] = "Summe"; //copied from de-de
 $text['label-total']['de-ch'] = "Summe"; //copied from de-de
