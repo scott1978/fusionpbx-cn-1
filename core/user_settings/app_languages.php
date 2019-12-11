@@ -357,9 +357,8 @@ $text['label-welcome']['ru-ru'] = "Добро пожаловать:";
 $text['label-welcome']['sv-se'] = "Välkommen:";
 $text['label-welcome']['uk-ua'] = "Ласкаво просимо:";
 
-$text['label-voicemail']['en-us'] = "Voicemail";
-$text['label-voicemail']['zh-cn'] = "语音邮箱";
-$text['label-voicemail']['ar-eg'] = "";
+$text['label-voicemail']['en-us'] = "语音邮箱";
+$text['label-voicemail']['ar-eg'] = "Voicemail";
 $text['label-voicemail']['de-at'] = "Mailbox"; //copied from de-de
 $text['label-voicemail']['de-ch'] = "Mailbox"; //copied from de-de
 $text['label-voicemail']['de-de'] = "Mailbox";
