@@ -462,8 +462,8 @@ $text['button-search']['sv-se'] = "Sök";
 $text['button-search']['uk-ua'] = "Пошук";
 $text['button-search']['tr-tr'] = "Ara";
 
-$text['button-show_all']['en-us'] = "Show All";
-$text['button-show_all']['ar-eg'] = "أظهر الكل";
+$text['button-show_all']['en-us'] = "数据显示";
+$text['button-show_all']['ar-eg'] = "Show All";
 $text['button-show_all']['de-at'] = "Alle anzeigen"; //copied from de-de
 $text['button-show_all']['de-ch'] = "Alle anzeigen"; //copied from de-de
 $text['button-show_all']['de-de'] = "Alle anzeigen";
