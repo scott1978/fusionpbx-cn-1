@@ -141,8 +141,8 @@ $text['title-group_members']['ru-ru'] = "Участники группы";
 $text['title-group_members']['sv-se'] = "Grupp Medlemmar";
 $text['title-group_members']['uk-ua'] = "Учасники групи";
 
-$text['title-group_manager']['en-us'] = "用户组";
-$text['title-group_manager']['ar-eg'] = "Group Manager";
+$text['title-group_manager']['en-us'] = "Group Manager";
+$text['title-group_manager']['ar-eg'] = "";
 $text['title-group_manager']['de-at'] = "Gruppenverwaltung"; //copied from de-de
 $text['title-group_manager']['de-ch'] = "Gruppenverwaltung"; //copied from de-de
 $text['title-group_manager']['de-de'] = "Gruppenverwaltung";
@@ -1661,8 +1661,8 @@ $text['header-group_members']['ru-ru'] = "Участники группы: ";
 $text['header-group_members']['sv-se'] = "Grupp Medlemmar:";
 $text['header-group_members']['uk-ua'] = "Учасники групи: ";
 
-$text['header-group_manager']['en-us'] = "Group Manager";
-$text['header-group_manager']['ar-eg'] = "";
+$text['header-group_manager']['en-us'] = "用户组";
+$text['header-group_manager']['ar-eg'] = "Group Manager";
 $text['header-group_manager']['de-at'] = "Gruppenverwaltung"; //copied from de-de
 $text['header-group_manager']['de-ch'] = "Gruppenverwaltung"; //copied from de-de
 $text['header-group_manager']['de-de'] = "Gruppenverwaltung";
