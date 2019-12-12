@@ -2041,7 +2041,7 @@ $text['confirm-delete']['ru-ru'] = "Вы действительно хотите
 $text['confirm-delete']['sv-se'] = "Vill du verkligen ta bort detta?";
 $text['confirm-delete']['uk-ua'] = "Ви дійсно бажаєте це видалити?";
 
-$text['button-show_all']['en-us'] = "显示数据";
+$text['button-show_all']['en-us'] = "数据显示";
 $text['button-show_all']['ar-eg'] = "Show All";
 $text['button-show_all']['de-at'] = "Alle anzeigen"; //copied from de-de
 $text['button-show_all']['de-ch'] = "Alle anzeigen"; //copied from de-de

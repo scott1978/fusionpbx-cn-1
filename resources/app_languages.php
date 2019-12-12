@@ -483,8 +483,8 @@ $text['button-show_all']['sv-se'] = "Visa Allt";
 $text['button-show_all']['uk-ua'] = "Показати всі";
 $text['button-show_all']['tr-tr'] = "Hepsini Görüntüle";
 
-$text['button-restore']['en-us'] = "Restore Default";
-$text['button-restore']['ar-eg'] = "";
+$text['button-restore']['en-us'] = "恢复默认值";
+$text['button-restore']['ar-eg'] = "Restore Default";
 $text['button-restore']['de-at'] = "Ursprungszustand wiederherstellen"; //copied from de-de
 $text['button-restore']['de-ch'] = "Ursprungszustand wiederherstellen"; //copied from de-de
 $text['button-restore']['de-de'] = "Ursprungszustand wiederherstellen";
