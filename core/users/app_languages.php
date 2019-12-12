@@ -41,8 +41,8 @@ $text['title-user_setting-add']['ru-ru'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ �
 $text['title-user_setting-add']['sv-se'] = "LÃ¤gg Till AnvÃ¤ndarinstÃ¤llning";
 $text['title-user_setting-add']['uk-ua'] = "";
 
-$text['title-user_manager']['en-us'] = "User Manager";
-$text['title-user_manager']['ar-eg'] = "";
+$text['title-user_manager']['en-us'] = "用户管理";
+$text['title-user_manager']['ar-eg'] = "User Manager";
 $text['title-user_manager']['de-at'] = "Benutzerverwaltung"; //copied from de-de
 $text['title-user_manager']['de-ch'] = "Benutzerverwaltung"; //copied from de-de
 $text['title-user_manager']['de-de'] = "Benutzerverwaltung";
