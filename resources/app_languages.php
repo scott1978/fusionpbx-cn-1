@@ -441,8 +441,8 @@ $text['button-save']['sv-se'] = "Spara";
 $text['button-save']['uk-ua'] = "Зберегти";
 $text['button-save']['tr-tr'] = "Kaydet";
 
-$text['button-search']['en-us'] = "Search";
-$text['button-search']['ar-eg'] = "";
+$text['button-search']['en-us'] = "查找";
+$text['button-search']['ar-eg'] = "Search";
 $text['button-search']['de-at'] = "Suchen"; //copied from de-de
 $text['button-search']['de-ch'] = "Suchen"; //copied from de-de
 $text['button-search']['de-de'] = "Suchen";
@@ -1071,8 +1071,8 @@ $text['button-download_csv']['sv-se'] = "Ladda Ned CSV";
 $text['button-download_csv']['uk-ua'] = "";
 $text['button-download_csv']['tr-tr'] = "CVS İndir";
 
-$text['button-import']['en-us'] = "Import";
-$text['button-import']['ar-eg'] = "";
+$text['button-import']['en-us'] = "导入";
+$text['button-import']['ar-eg'] = "Import";
 $text['button-import']['de-at'] = "Importieren"; //copied from de-de
 $text['button-import']['de-ch'] = "Importieren"; //copied from de-de
 $text['button-import']['de-de'] = "Importieren";
@@ -1889,8 +1889,8 @@ $text['label-enable']['sv-se'] = "Aktivera ";
 $text['label-enable']['uk-ua'] = "";
 $text['label-enable']['tr-tr'] = "Etkinleştir";
 
-$text['label-enabled']['en-us'] = "Enabled";
-$text['label-enabled']['ar-eg'] = "";
+$text['label-enabled']['en-us'] = "启用";
+$text['label-enabled']['ar-eg'] = "Enabled";
 $text['label-enabled']['de-at'] = "Aktiviert"; //copied from de-de
 $text['label-enabled']['de-ch'] = "Aktiviert"; //copied from de-de
 $text['label-enabled']['de-de'] = "Aktiviert";
