@@ -1561,8 +1561,8 @@ $text['header-user_setting-add']['ru-ru'] = "Добавить настройки
 $text['header-user_setting-add']['sv-se'] = "";
 $text['header-user_setting-add']['uk-ua'] = "";
 
-$text['header-user_manager']['en-us'] = "Users";
-$text['header-user_manager']['ar-eg'] = "";
+$text['header-user_manager']['en-us'] = "所有用户";
+$text['header-user_manager']['ar-eg'] = "Users";
 $text['header-user_manager']['de-at'] = "Benutzerverwaltung"; //copied from de-de
 $text['header-user_manager']['de-ch'] = "Benutzerverwaltung"; //copied from de-de
 $text['header-user_manager']['de-de'] = "Benutzerverwaltung";
@@ -2041,8 +2041,8 @@ $text['confirm-delete']['ru-ru'] = "Вы действительно хотите
 $text['confirm-delete']['sv-se'] = "Vill du verkligen ta bort detta?";
 $text['confirm-delete']['uk-ua'] = "Ви дійсно бажаєте це видалити?";
 
-$text['button-show_all']['en-us'] = "Show All";
-$text['button-show_all']['ar-eg'] = "";
+$text['button-show_all']['en-us'] = "显示数据";
+$text['button-show_all']['ar-eg'] = "Show All";
 $text['button-show_all']['de-at'] = "Alle anzeigen"; //copied from de-de
 $text['button-show_all']['de-ch'] = "Alle anzeigen"; //copied from de-de
 $text['button-show_all']['de-de'] = "Alle anzeigen";
