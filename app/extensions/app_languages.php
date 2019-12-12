@@ -1,8 +1,8 @@
 <?php
 #This file was last reorganized on 27th of September 2017 01:41:51 PM UTC
 
-$text['title-extensions']['en-us'] = "Extensions";
-$text['title-extensions']['ar-eg'] = "الأرقام الداخلية";
+$text['title-extensions']['en-us'] = "分机列表";
+$text['title-extensions']['ar-eg'] = "Extensions";
 $text['title-extensions']['de-at'] = "Nebenstellen"; //copied from de-de
 $text['title-extensions']['de-ch'] = "Nebenstellen"; //copied from de-de
 $text['title-extensions']['de-de'] = "Nebenstellen";
@@ -1481,8 +1481,8 @@ $text['label-is_registered']['ru-ru'] = "Зарегистрировано";
 $text['label-is_registered']['sv-se'] = "Registrerad";
 $text['label-is_registered']['uk-ua'] = "";
 
-$text['header-extensions']['en-us'] = "Extensions";
-$text['header-extensions']['ar-eg'] = "الأرقام الداخلية";
+$text['header-extensions']['en-us'] = "分机管理";
+$text['header-extensions']['ar-eg'] = "Extensions";
 $text['header-extensions']['de-at'] = "Nebenstellen"; //copied from de-de
 $text['header-extensions']['de-ch'] = "Nebenstellen"; //copied from de-de
 $text['header-extensions']['de-de'] = "Nebenstellen";
@@ -2101,8 +2101,8 @@ $text['description-hold_music']['ru-ru'] = "Выберите мелодию Му
 $text['description-hold_music']['sv-se'] = "Välj MOH Kategori här.";
 $text['description-hold_music']['uk-ua'] = "";
 
-$text['description-extensions']['en-us'] = "Use this to configure your SIP extensions.";
-$text['description-extensions']['ar-eg'] = "";
+$text['description-extensions']['en-us'] = "添加、修改、删除 SIP 分机";
+$text['description-extensions']['ar-eg'] = "Use this to configure your SIP extensions.";
 $text['description-extensions']['de-at'] = "Benutzen Sie dieses Modul um Ihre SIP Nebenstelle zu konfigurieren."; //copied from de-de
 $text['description-extensions']['de-ch'] = "Benutzen Sie dieses Modul um Ihre SIP Nebenstelle zu konfigurieren."; //copied from de-de
 $text['description-extensions']['de-de'] = "Benutzen Sie dieses Modul um Ihre SIP Nebenstelle zu konfigurieren.";
