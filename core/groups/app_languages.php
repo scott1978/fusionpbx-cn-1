@@ -1081,8 +1081,8 @@ $text['label-groups']['ru-ru'] = "Группы";
 $text['label-groups']['sv-se'] = "Grupper";
 $text['label-groups']['uk-ua'] = "Групи";
 
-$text['label-group_tools']['en-us'] = "Tools";
-$text['label-group_tools']['ar-eg'] = "";
+$text['label-group_tools']['en-us'] = "权限与成员";
+$text['label-group_tools']['ar-eg'] = "Tools";
 $text['label-group_tools']['de-at'] = "Funktionen"; //copied from de-de
 $text['label-group_tools']['de-ch'] = "Funktionen"; //copied from de-de
 $text['label-group_tools']['de-de'] = "Funktionen";
@@ -1101,8 +1101,8 @@ $text['label-group_tools']['ru-ru'] = "Инструменты";
 $text['label-group_tools']['sv-se'] = "Verktyg";
 $text['label-group_tools']['uk-ua'] = "Інструменти";
 
-$text['label-group_protected']['en-us'] = "Protected";
-$text['label-group_protected']['ar-eg'] = "";
+$text['label-group_protected']['en-us'] = "保护";
+$text['label-group_protected']['ar-eg'] = "Protected";
 $text['label-group_protected']['de-at'] = "Geschützt"; //copied from de-de
 $text['label-group_protected']['de-ch'] = "Geschützt"; //copied from de-de
 $text['label-group_protected']['de-de'] = "Geschützt";
@@ -1121,8 +1121,8 @@ $text['label-group_protected']['ru-ru'] = "Защищенный";
 $text['label-group_protected']['sv-se'] = "Skyddad";
 $text['label-group_protected']['uk-ua'] = "Захищено";
 
-$text['label-group_permissions']['en-us'] = "Permissions";
-$text['label-group_permissions']['ar-eg'] = "";
+$text['label-group_permissions']['en-us'] = "权限设置";
+$text['label-group_permissions']['ar-eg'] = "Permissions";
 $text['label-group_permissions']['de-at'] = "Berechtigungen"; //copied from de-de
 $text['label-group_permissions']['de-ch'] = "Berechtigungen"; //copied from de-de
 $text['label-group_permissions']['de-de'] = "Berechtigungen";
@@ -1141,8 +1141,8 @@ $text['label-group_permissions']['ru-ru'] = "Права";
 $text['label-group_permissions']['sv-se'] = "Rättigheter";
 $text['label-group_permissions']['uk-ua'] = "Дозволи";
 
-$text['label-group_name']['en-us'] = "Name";
-$text['label-group_name']['ar-eg'] = "";
+$text['label-group_name']['en-us'] = "组名称";
+$text['label-group_name']['ar-eg'] = "Name";
 $text['label-group_name']['de-at'] = "Name"; //copied from de-de
 $text['label-group_name']['de-ch'] = "Name"; //copied from de-de
 $text['label-group_name']['de-de'] = "Name";
@@ -1161,8 +1161,8 @@ $text['label-group_name']['ru-ru'] = "Название";
 $text['label-group_name']['sv-se'] = "Namn";
 $text['label-group_name']['uk-ua'] = "Назва";
 
-$text['label-group_members']['en-us'] = "Members";
-$text['label-group_members']['ar-eg'] = "";
+$text['label-group_members']['en-us'] = "组成员";
+$text['label-group_members']['ar-eg'] = "Members";
 $text['label-group_members']['de-at'] = "Mitglieder"; //copied from de-de
 $text['label-group_members']['de-ch'] = "Mitglieder"; //copied from de-de
 $text['label-group_members']['de-de'] = "Mitglieder";
@@ -1181,8 +1181,8 @@ $text['label-group_members']['ru-ru'] = "Участники";
 $text['label-group_members']['sv-se'] = "Medlemmar";
 $text['label-group_members']['uk-ua'] = "Учасники";
 
-$text['label-group_description']['en-us'] = "Description";
-$text['label-group_description']['ar-eg'] = "";
+$text['label-group_description']['en-us'] = "描述";
+$text['label-group_description']['ar-eg'] = "Description";
 $text['label-group_description']['de-at'] = "Beschreibung"; //copied from de-de
 $text['label-group_description']['de-ch'] = "Beschreibung"; //copied from de-de
 $text['label-group_description']['de-de'] = "Beschreibung";
