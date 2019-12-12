@@ -1001,8 +1001,8 @@ $text['label-hold_music']['ru-ru'] = "Музыка на Удержании";
 $text['label-hold_music']['sv-se'] = "Vänt-musik";
 $text['label-hold_music']['uk-ua'] = "";
 
-$text['label-extension']['en-us'] = "Extension";
-$text['label-extension']['ar-eg'] = "رقم داخلي";
+$text['label-extension']['en-us'] = "分机";
+$text['label-extension']['ar-eg'] = "Extension";
 $text['label-extension']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['label-extension']['de-ch'] = "Nebenstelle"; //copied from de-de
 $text['label-extension']['de-de'] = "Nebenstelle";
