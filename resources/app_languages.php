@@ -714,8 +714,8 @@ $text['button-paste']['sv-se'] = "Klistra In";
 $text['button-paste']['uk-ua'] = "Вставити";
 $text['button-paste']['tr-tr'] = "Yapıştır";
 
-$text['button-export']['en-us'] = "Export";
-$text['button-export']['ar-eg'] = "";
+$text['button-export']['en-us'] = "导出";
+$text['button-export']['ar-eg'] = "Export";
 $text['button-export']['de-at'] = "Exportieren"; //copied from de-de
 $text['button-export']['de-ch'] = "Exportieren"; //copied from de-de
 $text['button-export']['de-de'] = "Exportieren";

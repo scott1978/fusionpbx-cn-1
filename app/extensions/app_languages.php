@@ -1,7 +1,7 @@
 <?php
 #This file was last reorganized on 27th of September 2017 01:41:51 PM UTC
 
-$text['title-extensions']['en-us'] = "分机列表";
+$text['title-extensions']['en-us'] = "分机管理";
 $text['title-extensions']['ar-eg'] = "Extensions";
 $text['title-extensions']['de-at'] = "Nebenstellen"; //copied from de-de
 $text['title-extensions']['de-ch'] = "Nebenstellen"; //copied from de-de
@@ -21,8 +21,8 @@ $text['title-extensions']['ru-ru'] = "";
 $text['title-extensions']['sv-se'] = "Anknytningar";
 $text['title-extensions']['uk-ua'] = "Розширення";
 
-$text['title-extension-edit']['en-us'] = "Extension";
-$text['title-extension-edit']['ar-eg'] = "رقم داخلي";
+$text['title-extension-edit']['en-us'] = "分机";
+$text['title-extension-edit']['ar-eg'] = "Extension";
 $text['title-extension-edit']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['title-extension-edit']['de-ch'] = "Nebenstelle"; //copied from de-de
 $text['title-extension-edit']['de-de'] = "Nebenstelle";
@@ -441,8 +441,8 @@ $text['label-users']['ru-ru'] = "Пользователи";
 $text['label-users']['sv-se'] = "Användar-lista";
 $text['label-users']['uk-ua'] = "Список користувачів";
 
-$text['label-user_context']['en-us'] = "Context";
-$text['label-user_context']['ar-eg'] = "";
+$text['label-user_context']['en-us'] = "上下文";
+$text['label-user_context']['ar-eg'] = "Context";
 $text['label-user_context']['de-at'] = "Kontext"; //copied from de-de
 $text['label-user_context']['de-ch'] = "Kontext"; //copied from de-de
 $text['label-user_context']['de-de'] = "Kontext";
@@ -1261,8 +1261,8 @@ $text['label-device_mac_address']['ru-ru'] = "MAC Адреса";
 $text['label-device_mac_address']['sv-se'] = "MAC-adress";
 $text['label-device_mac_address']['uk-ua'] = "";
 
-$text['label-description']['en-us'] = "Description";
-$text['label-description']['ar-eg'] = "الوصف";
+$text['label-description']['en-us'] = "备注";
+$text['label-description']['ar-eg'] = "Description";
 $text['label-description']['de-at'] = "Beschreibung"; //copied from de-de
 $text['label-description']['de-ch'] = "Beschreibung"; //copied from de-de
 $text['label-description']['de-de'] = "Beschreibung";
@@ -1341,8 +1341,8 @@ $text['label-call_screen_enabled']['ru-ru'] = "Экран вызова";
 $text['label-call_screen_enabled']['sv-se'] = "Call Screen";
 $text['label-call_screen_enabled']['uk-ua'] = "";
 
-$text['label-call_group']['en-us'] = "Call Group";
-$text['label-call_group']['ar-eg'] = "";
+$text['label-call_group']['en-us'] = "呼叫组";
+$text['label-call_group']['ar-eg'] = "Call Group";
 $text['label-call_group']['de-at'] = "Rufgruppe"; //copied from de-de
 $text['label-call_group']['de-ch'] = "Rufgruppe"; //copied from de-de
 $text['label-call_group']['de-de'] = "Rufgruppe";
@@ -1481,7 +1481,7 @@ $text['label-is_registered']['ru-ru'] = "Зарегистрировано";
 $text['label-is_registered']['sv-se'] = "Registrerad";
 $text['label-is_registered']['uk-ua'] = "";
 
-$text['header-extensions']['en-us'] = "分机管理";
+$text['header-extensions']['en-us'] = "分机列表";
 $text['header-extensions']['ar-eg'] = "Extensions";
 $text['header-extensions']['de-at'] = "Nebenstellen"; //copied from de-de
 $text['header-extensions']['de-ch'] = "Nebenstellen"; //copied from de-de
