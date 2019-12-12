@@ -1581,8 +1581,8 @@ $text['confirm-delete']['ru-ru'] = "Ð’Ñ‹ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ�
 $text['confirm-delete']['sv-se'] = "Vill du verkligen ta bort detta?";
 $text['confirm-delete']['uk-ua'] = "Ð’Ð¸ Ð´Ñ–Ð¹ÑÐ½Ð¾ Ð±Ð°Ð¶Ð°Ñ”Ñ‚Ðµ Ñ†Ðµ Ð²Ð¸Ð´Ð°Ð»Ð¸Ñ‚Ð¸?";
 
-$text['button-show_all']['en-us'] = "Show All";
-$text['button-show_all']['ar-eg'] = "";
+$text['button-show_all']['en-us'] = "数据显示";
+$text['button-show_all']['ar-eg'] = "Show All";
 $text['button-show_all']['de-at'] = "Alle anzeigen"; //copied from de-de
 $text['button-show_all']['de-ch'] = "Alle anzeigen"; //copied from de-de
 $text['button-show_all']['de-de'] = "Alle anzeigen";
