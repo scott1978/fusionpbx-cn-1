@@ -1501,8 +1501,8 @@ $text['header-extensions']['ru-ru'] = "Внутренние Номера";
 $text['header-extensions']['sv-se'] = "Anknytningar";
 $text['header-extensions']['uk-ua'] = "Розширення";
 
-$text['header-extension-edit']['en-us'] = "Extension";
-$text['header-extension-edit']['ar-eg'] = "رقم داخلي";
+$text['header-extension-edit']['en-us'] = "分机";
+$text['header-extension-edit']['ar-eg'] = "Extension";
 $text['header-extension-edit']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['header-extension-edit']['de-ch'] = "Nebenstelle"; //copied from de-de
 $text['header-extension-edit']['de-de'] = "Nebenstelle";
