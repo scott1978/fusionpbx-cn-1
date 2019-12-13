@@ -1,8 +1,8 @@
 <?php
 #This file was last reorganized on 19th of September 2017 08:54:24 AM UTC
 
-$text['title-gateways']['en-us'] = "Gateways";
-$text['title-gateways']['ar-eg'] = "البوابات";
+$text['title-gateways']['en-us'] = "网关列表";
+$text['title-gateways']['ar-eg'] = "Gateways";
 $text['title-gateways']['de-at'] = "Gateways"; //copied from de-de
 $text['title-gateways']['de-ch'] = "Gateways"; //copied from de-de
 $text['title-gateways']['de-de'] = "Gateways";
@@ -21,8 +21,8 @@ $text['title-gateways']['ru-ru'] = "Шлюзы";
 $text['title-gateways']['sv-se'] = "Gateways";
 $text['title-gateways']['uk-ua'] = "Шлюзи";
 
-$text['title-gateway']['en-us'] = "Gateway";
-$text['title-gateway']['ar-eg'] = "البوابة";
+$text['title-gateway']['en-us'] = "网关名称";
+$text['title-gateway']['ar-eg'] = "Gateway";
 $text['title-gateway']['de-at'] = "Gateway"; //copied from de-de
 $text['title-gateway']['de-ch'] = "Gateway"; //copied from de-de
 $text['title-gateway']['de-de'] = "Gateway";
@@ -161,8 +161,8 @@ $text['label-status-running']['ru-ru'] = "Запущено";
 $text['label-status-running']['sv-se'] = "I drift";
 $text['label-status-running']['uk-ua'] = "Запущено";
 
-$text['label-status']['en-us'] = "Status";
-$text['label-status']['ar-eg'] = "الحالة";
+$text['label-status']['en-us'] = "状态";
+$text['label-status']['ar-eg'] = "Status";
 $text['label-status']['de-at'] = "Status"; //copied from de-de
 $text['label-status']['de-ch'] = "Status"; //copied from de-de
 $text['label-status']['de-de'] = "Status";
@@ -542,7 +542,7 @@ $text['label-expire_seconds']['sv-se'] = "Utgår Sekunder";
 $text['label-expire_seconds']['uk-ua'] = "Expire Seconds";
 
 $text['label-hostname']['en-us'] = "Hostname";
-$text['label-hostname']['ar-eg'] = "";
+$text['label-hostname']['ar-eg'] = "Hostname";
 $text['label-hostname']['de-at'] = "Hostname"; //copied from de-de
 $text['label-hostname']['de-ch'] = "Hostname"; //copied from de-de
 $text['label-hostname']['de-de'] = "Hostname";
@@ -601,8 +601,8 @@ $text['label-distinct_to']['ru-ru'] = "Отличный";
 $text['label-distinct_to']['sv-se'] = "Distinct To";
 $text['label-distinct_to']['uk-ua'] = "Distinct To";
 
-$text['label-context']['en-us'] = "Context";
-$text['label-context']['ar-eg'] = "";
+$text['label-context']['en-us'] = "上下文";
+$text['label-context']['ar-eg'] = "Context";
 $text['label-context']['de-at'] = "Kontext"; //copied from de-de
 $text['label-context']['de-ch'] = "Kontext"; //copied from de-de
 $text['label-context']['de-de'] = "Kontext";
@@ -742,7 +742,7 @@ $text['label-action-start']['sv-se'] = "Start";
 $text['label-action-start']['uk-ua'] = "Запустити";
 
 $text['label-action']['en-us'] = "Action";
-$text['label-action']['ar-eg'] = "";
+$text['label-action']['ar-eg'] = "Action";
 $text['label-action']['de-at'] = "Aktion"; //copied from de-de
 $text['label-action']['de-ch'] = "Aktion"; //copied from de-de
 $text['label-action']['de-de'] = "Aktion";
@@ -1061,8 +1061,8 @@ $text['description-gateway-edit']['ru-ru'] = "Определяет подклю�
 $text['description-gateway-edit']['sv-se'] = "Definierar anslutning till en SIP Provider eller annan SIP -server.";
 $text['description-gateway-edit']['uk-ua'] = "Визначає підключення до провайдера SIP або іншого SIP-сервера.";
 
-$text['description-gateway']['en-us'] = "Gateways provide access into other voice networks. These can be voice providers or other systems that require SIP registration.";
-$text['description-gateway']['ar-eg'] = "";
+$text['description-gateway']['en-us'] = "网关是提供对其他语音网络的访问，网关可以是语音提供商或他需要SIP注册的系统";
+$text['description-gateway']['ar-eg'] = "Gateways provide access into other voice networks. These can be voice providers or other systems that require SIP registration.";
 $text['description-gateway']['de-at'] = "Gateways ermöglichen die Verbindung in andere Sprachnetze. Gateways können Voice over IP Provider oder andere Systeme sein, die eine SIP Registrierung voraussetzen."; //copied from de-de
 $text['description-gateway']['de-ch'] = "Gateways ermöglichen die Verbindung in andere Sprachnetze. Gateways können Voice over IP Provider oder andere Systeme sein, die eine SIP Registrierung voraussetzen."; //copied from de-de
 $text['description-gateway']['de-de'] = "Gateways ermöglichen die Verbindung in andere Sprachnetze. Gateways können Voice over IP Provider oder andere Systeme sein, die eine SIP Registrierung voraussetzen.";

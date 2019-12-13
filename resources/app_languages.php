@@ -861,8 +861,8 @@ $text['button-restart']['sv-se'] = "Starta Om";
 $text['button-restart']['uk-ua'] = "Перезапустити";
 $text['button-restart']['tr-tr'] = "Yeniden Başlat";
 
-$text['button-refresh']['en-us'] = "Refresh";
-$text['button-refresh']['ar-eg'] = "";
+$text['button-refresh']['en-us'] = "刷新";
+$text['button-refresh']['ar-eg'] = "Refresh";
 $text['button-refresh']['de-at'] = "Aktualisieren"; //copied from de-de
 $text['button-refresh']['de-ch'] = "Aktualisieren"; //copied from de-de
 $text['button-refresh']['de-de'] = "Aktualisieren";
