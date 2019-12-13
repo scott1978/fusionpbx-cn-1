@@ -61,8 +61,8 @@ $text['title-user_manager']['ru-ru'] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ð�
 $text['title-user_manager']['sv-se'] = "AnvÃ¤ndar InstÃ¤llningar";
 $text['title-user_manager']['uk-ua'] = "ÐšÐ¾Ñ€Ð¸ÑÑ‚ÑƒÐ²Ð°Ñ‡Ñ–";
 
-$text['title-user_edit']['en-us'] = "User";
-$text['title-user_edit']['ar-eg'] = "";
+$text['title-user_edit']['en-us'] = "用户";
+$text['title-user_edit']['ar-eg'] = "User";
 $text['title-user_edit']['de-at'] = "Benutzer"; //copied from de-de
 $text['title-user_edit']['de-ch'] = "Benutzer"; //copied from de-de
 $text['title-user_edit']['de-de'] = "Benutzer";
@@ -81,8 +81,8 @@ $text['title-user_edit']['ru-ru'] = "ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ
 $text['title-user_edit']['sv-se'] = "AnvÃ¤ndare";
 $text['title-user_edit']['uk-ua'] = "ÐšÐ¾Ñ€Ð¸ÑÑ‚ÑƒÐ²Ð°Ñ‡";
 
-$text['title-user_add']['en-us'] = "User";
-$text['title-user_add']['ar-eg'] = "";
+$text['title-user_add']['en-us'] = "用户";
+$text['title-user_add']['ar-eg'] = "User";
 $text['title-user_add']['de-at'] = "Benutzer"; //copied from de-de
 $text['title-user_add']['de-ch'] = "Benutzer"; //copied from de-de
 $text['title-user_add']['de-de'] = "Benutzer";
@@ -521,8 +521,8 @@ $text['label-top']['ru-ru'] = "Ð’ÐµÑ€Ñ…";
 $text['label-top']['sv-se'] = "Topp";
 $text['label-top']['uk-ua'] = "Ñ‚Ð¾Ð¿";
 
-$text['label-time_zone']['en-us'] = "Time Zone";
-$text['label-time_zone']['ar-eg'] = "";
+$text['label-time_zone']['en-us'] = "时区";
+$text['label-time_zone']['ar-eg'] = "Time Zone";
 $text['label-time_zone']['de-at'] = "Zeitzone"; //copied from de-de
 $text['label-time_zone']['de-ch'] = "Zeitzone"; //copied from de-de
 $text['label-time_zone']['de-de'] = "Zeitzone";
@@ -1401,8 +1401,8 @@ $text['description-user_language']['ru-ru'] = "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚�
 $text['description-user_language']['sv-se'] = "VÃ¤lj SprÃ¥k";
 $text['description-user_language']['uk-ua'] = "Ð’Ð¸Ð±ÐµÑ€Ñ–Ñ‚ÑŒ Ð¼Ð¾Ð²Ñƒ";
 
-$text['description-user_edit']['en-us'] = "Edit user information and group membership. ";
-$text['description-user_edit']['ar-eg'] = "";
+$text['description-user_edit']['en-us'] = "设置用户信息和用户组";
+$text['description-user_edit']['ar-eg'] = "Edit user information and group membership.";
 $text['description-user_edit']['de-at'] = "Benutzerinformationen und Gruppen verwalten."; //copied from de-de
 $text['description-user_edit']['de-ch'] = "Benutzerinformationen und Gruppen verwalten."; //copied from de-de
 $text['description-user_edit']['de-de'] = "Benutzerinformationen und Gruppen verwalten.";

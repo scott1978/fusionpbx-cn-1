@@ -583,9 +583,8 @@ $text['label-total']['ru-ru'] = "Всего";
 $text['label-total']['sv-se'] = "Totalt";
 $text['label-total']['uk-ua'] = "Всього";
 
-$text['label-time']['en-us'] = "Time Zone";
-$text['label-time']['zh-cn'] = "时区";
-$text['label-time']['ar-eg'] = "منطقة التوقيت";
+$text['label-time']['en-us'] = "时区";
+$text['label-time']['ar-eg'] = "Time Zone";
 $text['label-time']['de-at'] = "Zeitzone"; //copied from de-de
 $text['label-time']['de-ch'] = "Zeitzone"; //copied from de-de
 $text['label-time']['de-de'] = "Zeitzone";
