@@ -841,8 +841,8 @@ $text['label-outbound_caller_id_name']['ru-ru'] = "Идентификатор (C
 $text['label-outbound_caller_id_name']['sv-se'] = "Utgående Namnpresentation";
 $text['label-outbound_caller_id_name']['uk-ua'] = "";
 
-$text['label-number_alias']['en-us'] = "Number Alias";
-$text['label-number_alias']['ar-eg'] = "";
+$text['label-number_alias']['en-us'] = "分机号";
+$text['label-number_alias']['ar-eg'] = "Number Alias";
 $text['label-number_alias']['de-at'] = "Alternative Nummer"; //copied from de-de
 $text['label-number_alias']['de-ch'] = "Alternative Nummer"; //copied from de-de
 $text['label-number_alias']['de-de'] = "Alternative Nummer";
@@ -1521,7 +1521,7 @@ $text['header-extension-edit']['ru-ru'] = "Внутренний Номер";
 $text['header-extension-edit']['sv-se'] = "Anknytning";
 $text['header-extension-edit']['uk-ua'] = "Розширення";
 
-$text['header-extension-add']['en-us'] = "Extension Add";
+$text['header-extension-add']['en-us'] = "添加分机";
 $text['header-extension-add']['ar-eg'] = "إضافة رقم داخلي";
 $text['header-extension-add']['de-at'] = "Nebenstelle hinzufügen"; //copied from de-de
 $text['header-extension-add']['de-ch'] = "Nebenstelle hinzufügen"; //copied from de-de
@@ -1921,8 +1921,8 @@ $text['description-outbound_caller_id_name-custom']['ru-ru'] = "Введите �
 $text['description-outbound_caller_id_name-custom']['sv-se'] = "Ange det externa (publikt) namnvisningen här.";
 $text['description-outbound_caller_id_name-custom']['uk-ua'] = "";
 
-$text['description-number_alias']['en-us'] = "If the extension is numeric then number alias is optional.";
-$text['description-number_alias']['ar-eg'] = "";
+$text['description-number_alias']['en-us'] = "如果分机名是纯数字，则分机号可不填，此时分机号即为分机名";
+$text['description-number_alias']['ar-eg'] = "If the extension is numeric then number alias is optional.";
 $text['description-number_alias']['de-at'] = "Wenn die Nebenstelle numerisch ist, ist die Angabe einer alternativen Nummer optional."; //copied from de-de
 $text['description-number_alias']['de-ch'] = "Wenn die Nebenstelle numerisch ist, ist die Angabe einer alternativen Nummer optional."; //copied from de-de
 $text['description-number_alias']['de-de'] = "Wenn die Nebenstelle numerisch ist, ist die Angabe einer alternativen Nummer optional.";
@@ -2121,8 +2121,8 @@ $text['description-extensions']['ru-ru'] = "Используйте это для
 $text['description-extensions']['sv-se'] = "Använd detta för att konfigurera dina SIP anknytningar.";
 $text['description-extensions']['uk-ua'] = "";
 
-$text['description-extension']['en-us'] = "Enter the alphanumeric extension. The default configuration allows 2 - 15 digit extensions.";
-$text['description-extension']['ar-eg'] = "";
+$text['description-extension']['en-us'] = "分机名必须为字母或者数字，长度：2 ~ 15 位";
+$text['description-extension']['ar-eg'] = "Enter the alphanumeric extension. The default configuration allows 2 - 15 digit extensions.";
 $text['description-extension']['de-at'] = "Weisen Sie die Nebenstellen und Leitungen einem Gerät zu."; //copied from de-de
 $text['description-extension']['de-ch'] = "Weisen Sie die Nebenstellen und Leitungen einem Gerät zu."; //copied from de-de
 $text['description-extension']['de-de'] = "Weisen Sie die Nebenstellen und Leitungen einem Gerät zu.";

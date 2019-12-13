@@ -420,8 +420,8 @@ $text['button-clear']['sv-se'] = "Rensa";
 $text['button-clear']['uk-ua'] = "";
 $text['button-clear']['tr-tr'] = "Temizle";
 
-$text['button-save']['en-us'] = "Save";
-$text['button-save']['ar-eg'] = "حفظ";
+$text['button-save']['en-us'] = "保存";
+$text['button-save']['ar-eg'] = "Save";
 $text['button-save']['de-at'] = "Speichern"; //copied from de-de
 $text['button-save']['de-ch'] = "Speichern"; //copied from de-de
 $text['button-save']['de-de'] = "Speichern";
@@ -588,8 +588,8 @@ $text['button-next']['sv-se'] = "Nästa";
 $text['button-next']['uk-ua'] = "";
 $text['button-next']['tr-tr'] = "Sonraki";
 
-$text['button-back']['en-us'] = "Back";
-$text['button-back']['ar-eg'] = "رجوع";
+$text['button-back']['en-us'] = "返回";
+$text['button-back']['ar-eg'] = "Back";
 $text['button-back']['de-at'] = "Zurück "; //copied from de-de
 $text['button-back']['de-ch'] = "Zurück "; //copied from de-de
 $text['button-back']['de-de'] = "Zurück ";
@@ -651,8 +651,8 @@ $text['button-delete']['sv-se'] = "Ta Bort";
 $text['button-delete']['uk-ua'] = "Видалити";
 $text['button-delete']['tr-tr'] = "Sil";
 
-$text['button-add']['en-us'] = "Add";
-$text['button-add']['ar-eg'] = "اضافة";
+$text['button-add']['en-us'] = "添加";
+$text['button-add']['ar-eg'] = "Add";
 $text['button-add']['de-at'] = "Hinzufügen"; //copied from de-de
 $text['button-add']['de-ch'] = "Hinzufügen"; //copied from de-de
 $text['button-add']['de-de'] = "Hinzufügen";
