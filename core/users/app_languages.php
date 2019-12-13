@@ -1281,8 +1281,8 @@ $text['header-user_manager']['ru-ru'] = "ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚Ð
 $text['header-user_manager']['sv-se'] = "AnvÃ¤ndare";
 $text['header-user_manager']['uk-ua'] = "ÐšÐ¾Ñ€Ð¸ÑÑ‚ÑƒÐ²Ð°Ñ‡Ñ–";
 
-$text['header-user_edit']['en-us'] = "User";
-$text['header-user_edit']['ar-eg'] = "";
+$text['header-user_edit']['en-us'] = "用户";
+$text['header-user_edit']['ar-eg'] = "User";
 $text['header-user_edit']['de-at'] = "Benutzer"; //copied from de-de
 $text['header-user_edit']['de-ch'] = "Benutzer"; //copied from de-de
 $text['header-user_edit']['de-de'] = "Benutzer";
@@ -1301,8 +1301,8 @@ $text['header-user_edit']['ru-ru'] = "ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚Ðµ�
 $text['header-user_edit']['sv-se'] = "AnvÃ¤ndare";
 $text['header-user_edit']['uk-ua'] = "ÐšÐ¾Ñ€Ð¸ÑÑ‚ÑƒÐ²Ð°Ñ‡";
 
-$text['header-user_add']['en-us'] = "User";
-$text['header-user_add']['ar-eg'] = "";
+$text['header-user_add']['en-us'] = "用户";
+$text['header-user_add']['ar-eg'] = "User";
 $text['header-user_add']['de-at'] = "Benutzer"; //copied from de-de
 $text['header-user_add']['de-ch'] = "Benutzer"; //copied from de-de
 $text['header-user_add']['de-de'] = "Benutzer";
