@@ -525,8 +525,8 @@ $text['button-reset']['sv-se'] = "Återställ";
 $text['button-reset']['uk-ua'] = "Скинути";
 $text['button-reset']['tr-tr'] = "Sıfırla";
 
-$text['button-copy']['en-us'] = "Copy";
-$text['button-copy']['ar-eg'] = "";
+$text['button-copy']['en-us'] = "复制";
+$text['button-copy']['ar-eg'] = "Copy";
 $text['button-copy']['de-at'] = "Kopieren"; //copied from de-de
 $text['button-copy']['de-ch'] = "Kopieren"; //copied from de-de
 $text['button-copy']['de-de'] = "Kopieren";
@@ -546,8 +546,8 @@ $text['button-copy']['sv-se'] = "Kopiera";
 $text['button-copy']['uk-ua'] = "Копіювати";
 $text['button-copy']['tr-tr'] = "Kopyala";
 
-$text['button-login']['en-us'] = "Login";
-$text['button-login']['ar-eg'] = "دخول";
+$text['button-login']['en-us'] = "登录";
+$text['button-login']['ar-eg'] = "Login";
 $text['button-login']['de-at'] = "Anmelden"; //copied from de-de
 $text['button-login']['de-ch'] = "Anmelden"; //copied from de-de
 $text['button-login']['de-de'] = "Anmelden";
@@ -1700,8 +1700,8 @@ $text['label-username']['sv-se'] = "Användarnamn";
 $text['label-username']['uk-ua'] = "Ім’я користувача";
 $text['label-username']['tr-tr'] = "Soyisim";
 
-$text['label-description']['en-us'] = "Description";
-$text['label-description']['ar-eg'] = "";
+$text['label-description']['en-us'] = "备注";
+$text['label-description']['ar-eg'] = "Description";
 $text['label-description']['de-at'] = "Beschreibung"; //copied from de-de
 $text['label-description']['de-ch'] = "Beschreibung"; //copied from de-de
 $text['label-description']['de-de'] = "Beschreibung";
