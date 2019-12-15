@@ -882,8 +882,8 @@ $text['button-refresh']['sv-se'] = "Uppdatera";
 $text['button-refresh']['uk-ua'] = "Оновити";
 $text['button-refresh']['tr-tr'] = "Yenile";
 
-$text['button-advanced']['en-us'] = "Advanced";
-$text['button-advanced']['ar-eg'] = "";
+$text['button-advanced']['en-us'] = "高级";
+$text['button-advanced']['ar-eg'] = "Advanced";
 $text['button-advanced']['de-at'] = "Erweitert"; //copied from de-de
 $text['button-advanced']['de-ch'] = "Erweitert"; //copied from de-de
 $text['button-advanced']['de-de'] = "Erweitert";
@@ -2823,8 +2823,8 @@ $text['description-subcategory']['sv-se'] = "Fyll i under-kategori";
 $text['description-subcategory']['uk-ua'] = "";
 $text['description-subcategory']['tr-tr'] = "Alt kategori girin.";
 
-$text['description-description']['en-us'] = "Enter the description.";
-$text['description-description']['ar-eg'] = "";
+$text['description-description']['en-us'] = "请输入备注信息";
+$text['description-description']['ar-eg'] = "Enter the description.";
 $text['description-description']['de-at'] = "Geben Sie die Beschreibung ein."; //copied from de-de
 $text['description-description']['de-ch'] = "Geben Sie die Beschreibung ein."; //copied from de-de
 $text['description-description']['de-de'] = "Geben Sie die Beschreibung ein.";
