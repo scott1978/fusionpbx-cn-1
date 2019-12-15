@@ -21,7 +21,7 @@ $text['title-gateways']['ru-ru'] = "Шлюзы";
 $text['title-gateways']['sv-se'] = "Gateways";
 $text['title-gateways']['uk-ua'] = "Шлюзи";
 
-$text['title-gateway']['en-us'] = "网关名称";
+$text['title-gateway']['en-us'] = "网关";
 $text['title-gateway']['ar-eg'] = "Gateway";
 $text['title-gateway']['de-at'] = "Gateway"; //copied from de-de
 $text['title-gateway']['de-ch'] = "Gateway"; //copied from de-de
@@ -321,7 +321,7 @@ $text['label-realm']['ru-ru'] = "Область";
 $text['label-realm']['sv-se'] = "Realm";
 $text['label-realm']['uk-ua'] = "Realm";
 
-$text['label-proxy']['en-us'] = "代理服务器";
+$text['label-proxy']['en-us'] = "服务器";
 $text['label-proxy']['ar-eg'] = "Proxy";
 $text['label-proxy']['de-at'] = "Proxy"; //copied from de-de
 $text['label-proxy']['de-ch'] = "Proxy"; //copied from de-de
@@ -1041,8 +1041,8 @@ $text['description-gateway-name']['ru-ru'] = "Введите здесь имя �
 $text['description-gateway-name']['sv-se'] = "Ange gateway namn här.";
 $text['description-gateway-name']['uk-ua'] = "Введіть назву шлюзу";
 
-$text['description-gateway-edit']['en-us'] = "Defines a connections to a SIP Provider or another SIP server.";
-$text['description-gateway-edit']['ar-eg'] = "";
+$text['description-gateway-edit']['en-us'] = "网关是提供对其他语音网络的访问，网关可以是语音提供商或其他SIP注册的系统";
+$text['description-gateway-edit']['ar-eg'] = "Defines a connections to a SIP Provider or another SIP server.";
 $text['description-gateway-edit']['de-at'] = "Definiert eine Verbindung zu einem SIP Provider oder einem anderen SIP Server."; //copied from de-de
 $text['description-gateway-edit']['de-ch'] = "Definiert eine Verbindung zu einem SIP Provider oder einem anderen SIP Server."; //copied from de-de
 $text['description-gateway-edit']['de-de'] = "Definiert eine Verbindung zu einem SIP Provider oder einem anderen SIP Server.";
@@ -1061,7 +1061,7 @@ $text['description-gateway-edit']['ru-ru'] = "Определяет подклю�
 $text['description-gateway-edit']['sv-se'] = "Definierar anslutning till en SIP Provider eller annan SIP -server.";
 $text['description-gateway-edit']['uk-ua'] = "Визначає підключення до провайдера SIP або іншого SIP-сервера.";
 
-$text['description-gateway']['en-us'] = "网关是提供对其他语音网络的访问，网关可以是语音提供商或他需要SIP注册的系统";
+$text['description-gateway']['en-us'] = "网关是提供对其他语音网络的访问，网关可以是语音提供商或其他SIP注册的系统";
 $text['description-gateway']['ar-eg'] = "Gateways provide access into other voice networks. These can be voice providers or other systems that require SIP registration.";
 $text['description-gateway']['de-at'] = "Gateways ermöglichen die Verbindung in andere Sprachnetze. Gateways können Voice over IP Provider oder andere Systeme sein, die eine SIP Registrierung voraussetzen."; //copied from de-de
 $text['description-gateway']['de-ch'] = "Gateways ermöglichen die Verbindung in andere Sprachnetze. Gateways können Voice over IP Provider oder andere Systeme sein, die eine SIP Registrierung voraussetzen."; //copied from de-de
