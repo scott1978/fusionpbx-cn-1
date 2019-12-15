@@ -241,7 +241,7 @@ $text['label-retry_seconds']['ru-ru'] = "Повтор попытки регис�
 $text['label-retry_seconds']['sv-se'] = "Retry sekunder";
 $text['label-retry_seconds']['uk-ua'] = "Retry Seconds ";
 
-$text['label-register_transport']['en-us'] = "Register Transport";
+$text['label-register_transport']['en-us'] = "注册协议";
 $text['label-register_transport']['ar-eg'] = "";
 $text['label-register_transport']['de-at'] = "Register Transportprotokoll"; //copied from de-de
 $text['label-register_transport']['de-ch'] = "Register Transportprotokoll"; //copied from de-de
@@ -261,8 +261,8 @@ $text['label-register_transport']['ru-ru'] = "Регистрация Транс�
 $text['label-register_transport']['sv-se'] = "Register Transport";
 $text['label-register_transport']['uk-ua'] = "Транспорт для реєстрації";
 
-$text['label-register_proxy']['en-us'] = "Register Proxy";
-$text['label-register_proxy']['ar-eg'] = "";
+$text['label-register_proxy']['en-us'] = "注册代理";
+$text['label-register_proxy']['ar-eg'] = "Register Proxy";
 $text['label-register_proxy']['de-at'] = "Register Proxy"; //copied from de-de
 $text['label-register_proxy']['de-ch'] = "Register Proxy"; //copied from de-de
 $text['label-register_proxy']['de-de'] = "Register Proxy";
@@ -501,8 +501,8 @@ $text['label-extension_in_contact']['ru-ru'] = "Внутренний нмер д
 $text['label-extension_in_contact']['sv-se'] = "Anknytning In Contact";
 $text['label-extension_in_contact']['uk-ua'] = "Розширення у контакта";
 
-$text['label-extension']['en-us'] = "Extension";
-$text['label-extension']['ar-eg'] = "رقم داخلي";
+$text['label-extension']['en-us'] = "分机";
+$text['label-extension']['ar-eg'] = "Extension";
 $text['label-extension']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['label-extension']['de-ch'] = "Nebenstelle"; //copied from de-de
 $text['label-extension']['de-de'] = "Nebenstelle";
@@ -681,8 +681,8 @@ $text['label-caller_id_in_from']['ru-ru'] = "Идентификтор (Caller ID
 $text['label-caller_id_in_from']['sv-se'] = "Caller ID In From";
 $text['label-caller_id_in_from']['uk-ua'] = "Caller ID In From ";
 
-$text['label-auth_username']['en-us'] = "Auth Username";
-$text['label-auth_username']['ar-eg'] = "";
+$text['label-auth_username']['en-us'] = "验证用户名";
+$text['label-auth_username']['ar-eg'] = "Auth Username";
 $text['label-auth_username']['de-at'] = "Auth. Benutzername"; //copied from de-de
 $text['label-auth_username']['de-ch'] = "Auth. Benutzername"; //copied from de-de
 $text['label-auth_username']['de-de'] = "Auth. Benutzername";
@@ -781,8 +781,8 @@ $text['description-username']['ru-ru'] = "Введите здесь имя по�
 $text['description-username']['sv-se'] = "Ange användarnamn här.";
 $text['description-username']['uk-ua'] = "Введіть ім’я користувача";
 
-$text['description-supress_cng']['en-us'] = "Enter the supress-cng";
-$text['description-supress_cng']['ar-eg'] = "";
+$text['description-supress_cng']['en-us'] = "请选择 supress-cng";
+$text['description-supress_cng']['ar-eg'] = "Enter the supress-cng";
 $text['description-supress_cng']['de-at'] = "Wählen Sie, ob der Komfortgeräusch-Generator (CNG) deaktiviert werden soll."; //copied from de-de
 $text['description-supress_cng']['de-ch'] = "Wählen Sie, ob der Komfortgeräusch-Generator (CNG) deaktiviert werden soll."; //copied from de-de
 $text['description-supress_cng']['de-de'] = "Wählen Sie, ob der Komfortgeräusch-Generator (CNG) deaktiviert werden soll.";
@@ -841,8 +841,8 @@ $text['description-retry_seconds']['ru-ru'] = "Укажите время в се
 $text['description-retry_seconds']['sv-se'] = "Ange 'retry-sekunder' här.";
 $text['description-retry_seconds']['uk-ua'] = "Enter the retry-seconds here.";
 
-$text['description-register_transport']['en-us'] = "Choose whether to register-transport.";
-$text['description-register_transport']['ar-eg'] = "";
+$text['description-register_transport']['en-us'] = "请选择是用哪种协议注册网关";
+$text['description-register_transport']['ar-eg'] = "Choose whether to register-transport.";
 $text['description-register_transport']['de-at'] = "Wählen Sie, welches Transportprotokoll für die Registrierung verwendet werden soll."; //copied from de-de
 $text['description-register_transport']['de-ch'] = "Wählen Sie, welches Transportprotokoll für die Registrierung verwendet werden soll."; //copied from de-de
 $text['description-register_transport']['de-de'] = "Wählen Sie, welches Transportprotokoll für die Registrierung verwendet werden soll.";
@@ -1141,8 +1141,8 @@ $text['description-extension_in_contact']['ru-ru'] = "Введите конта�
 $text['description-extension_in_contact']['sv-se'] = "Ange 'Extension In Contact'";
 $text['description-extension_in_contact']['uk-ua'] = "Enter the Extension In Contact";
 
-$text['description-extension']['en-us'] = "Enter the extension here.";
-$text['description-extension']['ar-eg'] = "";
+$text['description-extension']['en-us'] = "在此输入分机，即被叫号码，如果为空与用户名相同";
+$text['description-extension']['ar-eg'] = "Enter the extension here.";
 $text['description-extension']['de-at'] = "Tragen Sie die Nebenstellen hier ein."; //copied from de-de
 $text['description-extension']['de-ch'] = "Tragen Sie die Nebenstellen hier ein."; //copied from de-de
 $text['description-extension']['de-de'] = "Tragen Sie die Nebenstellen hier ein.";
@@ -1221,8 +1221,8 @@ $text['description-enabled']['ru-ru'] = "Включение и выключен�
 $text['description-enabled']['sv-se'] = "Aktivera eller In-aktivera Gateway";
 $text['description-enabled']['uk-ua'] = "Enable or Disable the Gateway";
 
-$text['description-distinct_to']['en-us'] = "Enter the distinct_to here.";
-$text['description-distinct_to']['ar-eg'] = "";
+$text['description-distinct_to']['en-us'] = "请选择 distinct_to";
+$text['description-distinct_to']['ar-eg'] = "Enter the distinct_to here.";
 $text['description-distinct_to']['de-at'] = "Geben Sie den Wert für 'Distinct To' hier an."; //copied from de-de
 $text['description-distinct_to']['de-ch'] = "Geben Sie den Wert für 'Distinct To' hier an."; //copied from de-de
 $text['description-distinct_to']['de-de'] = "Geben Sie den Wert für 'Distinct To' hier an.";
@@ -1321,8 +1321,8 @@ $text['description-caller_id_in_from']['ru-ru'] = "Введите идентиф
 $text['description-caller_id_in_from']['sv-se'] = "Ange 'caller-id-in-from'.";
 $text['description-caller_id_in_from']['uk-ua'] = "";
 
-$text['description-auth_username']['en-us'] = "Enter the auth-username here.";
-$text['description-auth_username']['ar-eg'] = "";
+$text['description-auth_username']['en-us'] = "在此输入 auth-username";
+$text['description-auth_username']['ar-eg'] = "Enter the auth-username here.";
 $text['description-auth_username']['de-at'] = "Geben Sie den Benutzernamen für die Authentifizierung hier an."; //copied from de-de
 $text['description-auth_username']['de-ch'] = "Geben Sie den Benutzernamen für die Authentifizierung hier an."; //copied from de-de
 $text['description-auth_username']['de-de'] = "Geben Sie den Benutzernamen für die Authentifizierung hier an.";
