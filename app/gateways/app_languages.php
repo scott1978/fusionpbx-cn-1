@@ -161,7 +161,7 @@ $text['label-status-running']['ru-ru'] = "Запущено";
 $text['label-status-running']['sv-se'] = "I drift";
 $text['label-status-running']['uk-ua'] = "Запущено";
 
-$text['label-status']['en-us'] = "状态";
+$text['label-status']['en-us'] = "运行状态";
 $text['label-status']['ar-eg'] = "Status";
 $text['label-status']['de-at'] = "Status"; //copied from de-de
 $text['label-status']['de-ch'] = "Status"; //copied from de-de
@@ -181,8 +181,8 @@ $text['label-status']['ru-ru'] = "Статус";
 $text['label-status']['sv-se'] = "Status";
 $text['label-status']['uk-ua'] = "Статус";
 
-$text['label-state']['en-us'] = "State";
-$text['label-state']['ar-eg'] = "";
+$text['label-state']['en-us'] = "注册状态";
+$text['label-state']['ar-eg'] = "State";
 $text['label-state']['de-at'] = "Status"; //copied from de-de
 $text['label-state']['de-ch'] = "Status"; //copied from de-de
 $text['label-state']['de-de'] = "Status";
@@ -541,7 +541,7 @@ $text['label-expire_seconds']['ru-ru'] = "Время жизни регистра
 $text['label-expire_seconds']['sv-se'] = "Utgår Sekunder";
 $text['label-expire_seconds']['uk-ua'] = "Expire Seconds";
 
-$text['label-hostname']['en-us'] = "Hostname";
+$text['label-hostname']['en-us'] = "主机名称";
 $text['label-hostname']['ar-eg'] = "Hostname";
 $text['label-hostname']['de-at'] = "Hostname"; //copied from de-de
 $text['label-hostname']['de-ch'] = "Hostname"; //copied from de-de
@@ -741,7 +741,7 @@ $text['label-action-start']['ru-ru'] = "Старт";
 $text['label-action-start']['sv-se'] = "Start";
 $text['label-action-start']['uk-ua'] = "Запустити";
 
-$text['label-action']['en-us'] = "Action";
+$text['label-action']['en-us'] = "动作";
 $text['label-action']['ar-eg'] = "Action";
 $text['label-action']['de-at'] = "Aktion"; //copied from de-de
 $text['label-action']['de-ch'] = "Aktion"; //copied from de-de
