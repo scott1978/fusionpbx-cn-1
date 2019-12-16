@@ -1,8 +1,8 @@
 <?php
 #This file was last reorganized on 27th of September 2017 01:41:51 PM UTC
 
-$text['title-dialplan_manager']['en-us'] = "Dialplan Manager";
-$text['title-dialplan_manager']['ar-eg'] = "";
+$text['title-dialplan_manager']['en-us'] = "拨号规则管理";
+$text['title-dialplan_manager']['ar-eg'] = "Dialplan Manager";
 $text['title-dialplan_manager']['de-at'] = "Wählplan Einstellungen"; //copied from de-de
 $text['title-dialplan_manager']['de-ch'] = "Wählplan Einstellungen"; //copied from de-de
 $text['title-dialplan_manager']['de-de'] = "Wählplan Einstellungen";
@@ -141,8 +141,8 @@ $text['title-outbound_routes']['ru-ru'] = "Исходящие маршруты";
 $text['title-outbound_routes']['sv-se'] = "Utgående Router";
 $text['title-outbound_routes']['uk-ua'] = "Маршрути вихідних дзвінків";
 
-$text['title-inbound_routes']['en-us'] = "Inbound Routes";
-$text['title-inbound_routes']['ar-eg'] = "";
+$text['title-inbound_routes']['en-us'] = "呼入路由";
+$text['title-inbound_routes']['ar-eg'] = "Inbound Routes";
 $text['title-inbound_routes']['de-at'] = "Eingehende Routen"; //copied from de-de
 $text['title-inbound_routes']['de-ch'] = "Eingehende Routen"; //copied from de-de
 $text['title-inbound_routes']['de-de'] = "Eingehende Routen";
@@ -1021,8 +1021,8 @@ $text['label-tag']['ru-ru'] = "Тег";
 $text['label-tag']['sv-se'] = "Tag";
 $text['label-tag']['uk-ua'] = "Тег";
 
-$text['label-number']['en-us'] = "Number";
-$text['label-number']['ar-eg'] = "";
+$text['label-number']['en-us'] = "号码";
+$text['label-number']['ar-eg'] = "Number";
 $text['label-number']['de-at'] = "Nummer"; //copied from de-de
 $text['label-number']['de-ch'] = "Nummer"; //copied from de-de
 $text['label-number']['de-de'] = "Nummer";
@@ -1221,8 +1221,8 @@ $text['label-continue']['ru-ru'] = "Продолжить";
 $text['label-continue']['sv-se'] = "Fortsätt";
 $text['label-continue']['uk-ua'] = "Продовжити";
 
-$text['label-context']['en-us'] = "Context";
-$text['label-context']['ar-eg'] = "";
+$text['label-context']['en-us'] = "上下文";
+$text['label-context']['ar-eg'] = "Context";
 $text['label-context']['de-at'] = "Kontext"; //copied from de-de
 $text['label-context']['de-ch'] = "Kontext"; //copied from de-de
 $text['label-context']['de-de'] = "Kontext";
@@ -1421,8 +1421,8 @@ $text['header-outbound_routes']['ru-ru'] = "Исходящий Маршрут";
 $text['header-outbound_routes']['sv-se'] = "Utgående Router";
 $text['header-outbound_routes']['uk-ua'] = "Маршрути вихідних дзвінків";
 
-$text['header-inbound_routes']['en-us'] = "Inbound Routes";
-$text['header-inbound_routes']['ar-eg'] = "";
+$text['header-inbound_routes']['en-us'] = "呼入路由";
+$text['header-inbound_routes']['ar-eg'] = "Inbound Routes";
 $text['header-inbound_routes']['de-at'] = "Eingehende Routen"; //copied from de-de
 $text['header-inbound_routes']['de-ch'] = "Eingehende Routen"; //copied from de-de
 $text['header-inbound_routes']['de-de'] = "Eingehende Routen";
@@ -1441,8 +1441,8 @@ $text['header-inbound_routes']['ru-ru'] = "Входящий Маршрут";
 $text['header-inbound_routes']['sv-se'] = "Inkommande Router";
 $text['header-inbound_routes']['uk-ua'] = "Маршрути вхідних дзвінків";
 
-$text['header-dialplan_manager']['en-us'] = "Dialplan Manager";
-$text['header-dialplan_manager']['ar-eg'] = "";
+$text['header-dialplan_manager']['en-us'] = "拨号规则管理";
+$text['header-dialplan_manager']['ar-eg'] = "Dialplan Manager";
 $text['header-dialplan_manager']['de-at'] = "Wählplan Einstellungen"; //copied from de-de
 $text['header-dialplan_manager']['de-ch'] = "Wählplan Einstellungen"; //copied from de-de
 $text['header-dialplan_manager']['de-de'] = "Wählplan Einstellungen";
@@ -1621,8 +1621,8 @@ $text['description-outbound_routes']['ru-ru'] = "Маршрутизация ис
 $text['description-outbound_routes']['sv-se'] = "Styr utgående samtal till Gateways, tdm, enum mm. När ett samtal matchar villkoren så styrs samtalet till utgående route.";
 $text['description-outbound_routes']['uk-ua'] = "Спрямовує вихідні дзвінки на шлюзи, TDM, ENUM на інше, якщо дзвінок відповідає умовам вихідної маршрутизації.";
 
-$text['description-inbound_routes']['en-us'] = "Route incoming calls to destinations based on one or more conditions. It can send incoming calls to an IVR Menu, Call Group, Extension, External Number, Script. Order is important when an anti-action is used or when there are multiple conditions that match.";
-$text['description-inbound_routes']['ar-eg'] = "";
+$text['description-inbound_routes']['en-us'] = "根据一个或多个条件将传入呼叫路由到目的地。可将来电路由到IVR、呼叫组、分机、外部号码或者脚本。当使用反作用或存在多个匹配条件时，顺序很重要";
+$text['description-inbound_routes']['ar-eg'] = "Route incoming calls to destinations based on one or more conditions. It can send incoming calls to an IVR Menu, Call Group, Extension, External Number, Script. Order is important when an anti-action is used or when there are multiple conditions that match.";
 $text['description-inbound_routes']['de-at'] = "Eingehende Anrufe anhand Bedingungen routen. Anrufe können an IVR Menüs, Rufgruppen, Nebenstellen, externe Nummern oder Skripte weitergeleitet werden. Die Reihenfolge ist entscheidend, wenn eine Anti-Aktion gesetzt ist oder wenn mehrere Bedingungen angelegt wurden."; //copied from de-de
 $text['description-inbound_routes']['de-ch'] = "Eingehende Anrufe anhand Bedingungen routen. Anrufe können an IVR Menüs, Rufgruppen, Nebenstellen, externe Nummern oder Skripte weitergeleitet werden. Die Reihenfolge ist entscheidend, wenn eine Anti-Aktion gesetzt ist oder wenn mehrere Bedingungen angelegt wurden."; //copied from de-de
 $text['description-inbound_routes']['de-de'] = "Eingehende Anrufe anhand Bedingungen routen. Anrufe können an IVR Menüs, Rufgruppen, Nebenstellen, externe Nummern oder Skripte weitergeleitet werden. Die Reihenfolge ist entscheidend, wenn eine Anti-Aktion gesetzt ist oder wenn mehrere Bedingungen angelegt wurden.";
@@ -1641,8 +1641,8 @@ $text['description-inbound_routes']['ru-ru'] = "Маршрутизация вх�
 $text['description-inbound_routes']['sv-se'] = "Styr inkommande samtal till destinationer baserat på ett eller fler villkor. Den kan styra samtal till IVR Meny, Ring Grupp, Anknytning, Externt Nummer, Script. Ordningen är viktig när en anti-aktion används eller när flera villkor matchar.";
 $text['description-inbound_routes']['uk-ua'] = "Направляє вхідні дзвінки відповідно до умов. Можна спрямувати вхідні дзвінки на голосове меню (IVR), групу, розширення, зовнішній номер, сценарій. Порядок важливий якщо використовується анти-дія або за наявності декількох умов, які співпадають.";
 
-$text['description-dialplan_manager-superadmin']['en-us'] = "The dialplan is used to setup call destinations based on conditions and context. You can use the dialplan to send calls to gateways, auto attendants, external numbers, to scripts, or any destination.";
-$text['description-dialplan_manager-superadmin']['ar-eg'] = "";
+$text['description-dialplan_manager-superadmin']['en-us'] = "拨号计划用于根据条件和上下文设置呼叫目的地。您可使用拨号规则向网关、外部号码、脚本或者任何目的地发起呼叫";
+$text['description-dialplan_manager-superadmin']['ar-eg'] = "The dialplan is used to setup call destinations based on conditions and context. You can use the dialplan to send calls to gateways, auto attendants, external numbers, to scripts, or any destination.";
 $text['description-dialplan_manager-superadmin']['de-at'] = "Der Wählplan wird für die Anrufsteuerung basierend auf Bedingungen und Kontext benutzt. Sie können den Wählplan dazu benutzen um Anrufe an Gateways, automatische Vermittlungen, externe Nummern, Skripte oder andere Anwendungen zu routen."; //copied from de-de
 $text['description-dialplan_manager-superadmin']['de-ch'] = "Der Wählplan wird für die Anrufsteuerung basierend auf Bedingungen und Kontext benutzt. Sie können den Wählplan dazu benutzen um Anrufe an Gateways, automatische Vermittlungen, externe Nummern, Skripte oder andere Anwendungen zu routen."; //copied from de-de
 $text['description-dialplan_manager-superadmin']['de-de'] = "Der Wählplan wird für die Anrufsteuerung basierend auf Bedingungen und Kontext benutzt. Sie können den Wählplan dazu benutzen um Anrufe an Gateways, automatische Vermittlungen, externe Nummern, Skripte oder andere Anwendungen zu routen.";

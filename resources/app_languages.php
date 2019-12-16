@@ -2078,8 +2078,8 @@ $text['label-search']['sv-se'] = "Sök ...";
 $text['label-search']['uk-ua'] = "Результати пошуку";
 $text['label-search']['tr-tr'] = "Ara...";
 
-$text['label-order']['en-us'] = "Order";
-$text['label-order']['ar-eg'] = "";
+$text['label-order']['en-us'] = "序号";
+$text['label-order']['ar-eg'] = "Order";
 $text['label-order']['de-at'] = "Reihenfolge"; //copied from de-de
 $text['label-order']['de-ch'] = "Reihenfolge"; //copied from de-de
 $text['label-order']['de-de'] = "Reihenfolge";
@@ -2635,7 +2635,7 @@ $text['label-greeting']['pt-br'] = "ID de saudação";
 $text['label-greeting']['pt-pt'] = "ID de Saudação";
 $text['label-greeting']['ro-ro'] = "";
 $text['label-greeting']['ru-ru'] = "Приветствие";
-$text['label-greeting']['sv-se'] = "Hälsning";
+$textK'label-greeting']['sv-se'] = "Hälsning";
 $text['label-greeting']['uk-ua'] = "ID привітання";
 
 $text['label-play']['en-us'] = 'Play';
