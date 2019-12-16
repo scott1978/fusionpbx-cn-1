@@ -1658,8 +1658,8 @@ $text['label-time']['sv-se'] = "Tid";
 $text['label-time']['uk-ua'] = "Час";
 $text['label-time']['tr-tr'] = "Zaman";
 
-$text['label-name']['en-us'] = "Name";
-$text['label-name']['ar-eg'] = "";
+$text['label-name']['en-us'] = "名称";
+$text['label-name']['ar-eg'] = "Name";
 $text['label-name']['de-at'] = "Name"; //copied from de-de
 $text['label-name']['de-ch'] = "Name"; //copied from de-de
 $text['label-name']['de-de'] = "Name";
@@ -1763,8 +1763,8 @@ $text['label-password']['sv-se'] = "Lösenord";
 $text['label-password']['uk-ua'] = "Пароль";
 $text['label-password']['tr-tr'] = "Parola";
 
-$text['label-type']['en-us'] = "Type";
-$text['label-type']['ar-eg'] = "";
+$text['label-type']['en-us'] = "类型";
+$text['label-type']['ar-eg'] = "Type";
 $text['label-type']['de-at'] = "Typ"; //copied from de-de
 $text['label-type']['de-ch'] = "Typ"; //copied from de-de
 $text['label-type']['de-de'] = "Typ";
