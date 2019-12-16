@@ -2635,7 +2635,7 @@ $text['label-greeting']['pt-br'] = "ID de saudação";
 $text['label-greeting']['pt-pt'] = "ID de Saudação";
 $text['label-greeting']['ro-ro'] = "";
 $text['label-greeting']['ru-ru'] = "Приветствие";
-$textK'label-greeting']['sv-se'] = "Hälsning";
+$text'label-greeting']['sv-se'] = "Hälsning";
 $text['label-greeting']['uk-ua'] = "ID привітання";
 
 $text['label-play']['en-us'] = 'Play';
