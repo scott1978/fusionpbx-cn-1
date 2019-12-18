@@ -548,7 +548,8 @@ if (!class_exists('menu')) {
 					}
 					$sql .= ") ";
 					$sql .= ") ";
-					$sql .= "order by l.menu_item_title, i.menu_item_order asc ";
+					$sql .= "order by l.menu_item_order, i.menu_item_order asc ";
+					//$sql .= "order by l.menu_item_title, i.menu_item_order asc ";
 					$sub_prep_statement = $db->prepare($sql);
 					$sub_prep_statement->execute();
 					$sub_result = $sub_prep_statement->fetchAll(PDO::FETCH_NAMED);
