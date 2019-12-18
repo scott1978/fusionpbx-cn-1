@@ -623,7 +623,7 @@ $text['label-system_uptime']['ru-ru'] = "Время непрерывной ра�
 $text['label-system_uptime']['sv-se'] = "System Uptime";
 $text['label-system_uptime']['uk-ua'] = "час роботи системи";
 
-$text['label-system_status']['en-us'] = "系统 - 状态";
+$text['label-system_status']['en-us'] = "系统状态";
 $text['label-system_status']['ar-eg'] = "System Status";
 $text['label-system_status']['de-at'] = "Systemstatus"; //copied from de-de
 $text['label-system_status']['de-ch'] = "Systemstatus"; //copied from de-de
@@ -643,7 +643,7 @@ $text['label-system_status']['ru-ru'] = "Статус системы";
 $text['label-system_status']['sv-se'] = "Systemstatus ";
 $text['label-system_status']['uk-ua'] = "стан системи";
 
-$text['label-system_counts']['en-us'] = "系统 - 统计";
+$text['label-system_counts']['en-us'] = "系统计数";
 $text['label-system_counts']['ar-eg'] = "System Counts";
 $text['label-system_counts']['de-at'] = "Systemzähler"; //copied from de-de
 $text['label-system_counts']['de-ch'] = "Systemzähler"; //copied from de-de
