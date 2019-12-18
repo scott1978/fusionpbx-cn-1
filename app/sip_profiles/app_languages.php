@@ -362,7 +362,7 @@ $text['label-sip_profile_settings']['sv-se'] = "Inställningar";
 $text['label-sip_profile_settings']['uk-ua'] = "Параметри";
 
 $text['header-sip_profiles']['en-us'] = "SIP Profiles";
-$text['header-sip_profiles']['ar-eg'] = "";
+$text['header-sip_profiles']['ar-eg'] = "SIP Profiles";
 $text['header-sip_profiles']['de-at'] = "SIP Profile"; //copied from de-de
 $text['header-sip_profiles']['de-ch'] = "SIP Profile"; //copied from de-de
 $text['header-sip_profiles']['de-de'] = "SIP Profile";
@@ -381,8 +381,8 @@ $text['header-sip_profiles']['ru-ru'] = "Профили SIP";
 $text['header-sip_profiles']['sv-se'] = "SIP Profiler";
 $text['header-sip_profiles']['uk-ua'] = "SIP профілі";
 
-$text['header-sip_profile']['en-us'] = "SIP Profile";
-$text['header-sip_profile']['ar-eg'] = "";
+$text['header-sip_profile']['en-us'] = "SIP概况";
+$text['header-sip_profile']['ar-eg'] = "SIP Profile";
 $text['header-sip_profile']['de-at'] = "SIP Profile"; //copied from de-de
 $text['header-sip_profile']['de-ch'] = "SIP Profile"; //copied from de-de
 $text['header-sip_profile']['de-de'] = "SIP Profile";

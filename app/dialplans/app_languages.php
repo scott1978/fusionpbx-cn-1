@@ -121,8 +121,8 @@ $text['title-time_conditions']['ru-ru'] = "Временные условия";
 $text['title-time_conditions']['sv-se'] = "Tids Förhållande";
 $text['title-time_conditions']['uk-ua'] = "Часові умови";
 
-$text['title-outbound_routes']['en-us'] = "Outbound Routes";
-$text['title-outbound_routes']['ar-eg'] = "";
+$text['title-outbound_routes']['en-us'] = "呼出路由";
+$text['title-outbound_routes']['ar-eg'] = "Outbound Routes";
 $text['title-outbound_routes']['de-at'] = "Ausgehende Routen"; //copied from de-de
 $text['title-outbound_routes']['de-ch'] = "Ausgehende Routen"; //copied from de-de
 $text['title-outbound_routes']['de-de'] = "Ausgehende Routen";
@@ -1401,8 +1401,8 @@ $text['header-queues']['ru-ru'] = "Очереди";
 $text['header-queues']['sv-se'] = "Kö:er";
 $text['header-queues']['uk-ua'] = "Черги";
 
-$text['header-outbound_routes']['en-us'] = "Outbound Routes";
-$text['header-outbound_routes']['ar-eg'] = "";
+$text['header-outbound_routes']['en-us'] = "呼出路由";
+$text['header-outbound_routes']['ar-eg'] = "Outbound Routes";
 $text['header-outbound_routes']['de-at'] = "Ausgehende Routen"; //copied from de-de
 $text['header-outbound_routes']['de-ch'] = "Ausgehende Routen"; //copied from de-de
 $text['header-outbound_routes']['de-de'] = "Ausgehende Routen";
@@ -1601,8 +1601,8 @@ $text['description-queues']['ru-ru'] = "Очереди используются 
 $text['description-queues']['sv-se'] = "Kö används för att kö:a inkommande samtal. Även känd som FIFO (Firts In First Out) Kö.";
 $text['description-queues']['uk-ua'] = "Черги використовуються для встановлення очікування на лінії для тих, хто дзвонить. Також відомо як черги FIFO. ";
 
-$text['description-outbound_routes']['en-us'] = "Route outbound calls to gateways, tdm, enum and more. When a call matches the conditions the call to outbound routes.";
-$text['description-outbound_routes']['ar-eg'] = "";
+$text['description-outbound_routes']['en-us'] = "将出站呼叫路由到网关、tdm、enum等。当呼叫符合条件时呼叫出站路由";
+$text['description-outbound_routes']['ar-eg'] = "Route outbound calls to gateways, tdm, enum and more. When a call matches the conditions the call to outbound routes.";
 $text['description-outbound_routes']['de-at'] = "Ausgehende Anrufe zu Gateways, TDM, ENUM und andere weiterleiten, wenn der Anruf die Bedingungen für die ausgehenden Routen erfüllt."; //copied from de-de
 $text['description-outbound_routes']['de-ch'] = "Ausgehende Anrufe zu Gateways, TDM, ENUM und andere weiterleiten, wenn der Anruf die Bedingungen für die ausgehenden Routen erfüllt."; //copied from de-de
 $text['description-outbound_routes']['de-de'] = "Ausgehende Anrufe zu Gateways, TDM, ENUM und andere weiterleiten, wenn der Anruf die Bedingungen für die ausgehenden Routen erfüllt.";
@@ -1621,7 +1621,7 @@ $text['description-outbound_routes']['ru-ru'] = "Маршрутизация ис
 $text['description-outbound_routes']['sv-se'] = "Styr utgående samtal till Gateways, tdm, enum mm. När ett samtal matchar villkoren så styrs samtalet till utgående route.";
 $text['description-outbound_routes']['uk-ua'] = "Спрямовує вихідні дзвінки на шлюзи, TDM, ENUM на інше, якщо дзвінок відповідає умовам вихідної маршрутизації.";
 
-$text['description-inbound_routes']['en-us'] = "根据一个或多个条件将传入呼叫路由到目的地。可将来电路由到IVR、呼叫组、分机、外部号码或者脚本。当使用反作用或存在多个匹配条件时，顺序很重要";
+$text['description-inbound_routes']['en-us'] = "根据一个或多个条件将来电路由到目的地。它可以将来电发送到：IVR、振铃组、分机、外部电话、脚本。当使用反动作或存在多个匹配条件时，序号很重要";
 $text['description-inbound_routes']['ar-eg'] = "Route incoming calls to destinations based on one or more conditions. It can send incoming calls to an IVR Menu, Call Group, Extension, External Number, Script. Order is important when an anti-action is used or when there are multiple conditions that match.";
 $text['description-inbound_routes']['de-at'] = "Eingehende Anrufe anhand Bedingungen routen. Anrufe können an IVR Menüs, Rufgruppen, Nebenstellen, externe Nummern oder Skripte weitergeleitet werden. Die Reihenfolge ist entscheidend, wenn eine Anti-Aktion gesetzt ist oder wenn mehrere Bedingungen angelegt wurden."; //copied from de-de
 $text['description-inbound_routes']['de-ch'] = "Eingehende Anrufe anhand Bedingungen routen. Anrufe können an IVR Menüs, Rufgruppen, Nebenstellen, externe Nummern oder Skripte weitergeleitet werden. Die Reihenfolge ist entscheidend, wenn eine Anti-Aktion gesetzt ist oder wenn mehrere Bedingungen angelegt wurden."; //copied from de-de
