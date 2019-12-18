@@ -161,8 +161,8 @@ $text['label-prefix']['ru-ru'] = "Префикс";
 $text['label-prefix']['sv-se'] = "Prefix";
 $text['label-prefix']['uk-ua'] = "Префікс";
 
-$text['label-outbound-routes']['en-us'] = "Outbound Routes";
-$text['label-outbound-routes']['ar-eg'] = "";
+$text['label-outbound-routes']['en-us'] = "外呼路由";
+$text['label-outbound-routes']['ar-eg'] = "Outbound Routes";
 $text['label-outbound-routes']['de-at'] = "Ausgehende Routen"; //copied from de-de
 $text['label-outbound-routes']['de-ch'] = "Ausgehende Routen"; //copied from de-de
 $text['label-outbound-routes']['de-de'] = "Ausgehende Routen";
@@ -1001,8 +1001,8 @@ $text['description-shortcut']['ru-ru'] = "Ярлык для создания з�
 $text['description-shortcut']['sv-se'] = "Genväg för att skapa utgående nummerplan för denna Gateway.";
 $text['description-shortcut']['uk-ua'] = "Ярлик для створення маршрутизації вихідного дзвінка для цього шлюзу.";
 
-$text['description-outbound-routes']['en-us'] = "Outbound dialplans have one or more conditions that are matched to attributes of a call.  When a call matches the conditions the call is then routed to the gateway.";
-$text['description-outbound-routes']['ar-eg'] = "";
+$text['description-outbound-routes']['en-us'] = "外呼路由有一个或多个条件，当呼叫匹配条件时，外呼将被路由到网关";
+$text['description-outbound-routes']['ar-eg'] = "Outbound dialplans have one or more conditions that are matched to attributes of a call.  When a call matches the conditions the call is then routed to the gateway.";
 $text['description-outbound-routes']['de-at'] = "Ausgehende Wählpläne haben eine oder mehrere Bedingungen, die gegen den Eigenschaften des Anrufes geprüft werden. Sofern der Anruf die Bedingungen erfüllt, wir er über dieses Gateway geroutet."; //copied from de-de
 $text['description-outbound-routes']['de-ch'] = "Ausgehende Wählpläne haben eine oder mehrere Bedingungen, die gegen den Eigenschaften des Anrufes geprüft werden. Sofern der Anruf die Bedingungen erfüllt, wir er über dieses Gateway geroutet."; //copied from de-de
 $text['description-outbound-routes']['de-de'] = "Ausgehende Wählpläne haben eine oder mehrere Bedingungen, die gegen den Eigenschaften des Anrufes geprüft werden. Sofern der Anruf die Bedingungen erfüllt, wir er über dieses Gateway geroutet.";
