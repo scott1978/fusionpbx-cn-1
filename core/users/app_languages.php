@@ -1021,7 +1021,7 @@ $text['label-domain']['ru-ru'] = "Ð”Ð¾Ð¼ÐµÐ½";
 $text['label-domain']['sv-se'] = "DomÃ¤n";
 $text['label-domain']['uk-ua'] = "Ð”Ð¾Ð¼ÐµÐ½";
 
-$text['label-contact']['en-us'] = "关联用户";
+$text['label-contact']['en-us'] = "联系方式";
 $text['label-contact']['ar-eg'] = "Contact";
 $text['label-contact']['de-at'] = "Kontakt"; //copied from de-de
 $text['label-contact']['de-ch'] = "Kontakt"; //copied from de-de
@@ -1461,8 +1461,8 @@ $text['description-time_zone']['ru-ru'] = "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ 
 $text['description-time_zone']['sv-se'] = "VÃ¤lj standard tidszon";
 $text['description-time_zone']['uk-ua'] = "Ð’Ð¸Ð±ÐµÑ€Ñ–Ñ‚ÑŒ Ñ‡Ð°ÑÐ¾Ð²Ð¸Ð¹ Ð¿Ð¾ÑÑ Ð·Ð° Ð·Ð°Ð¼Ð¾Ð²Ñ‡ÑƒÐ²Ð°Ð½Ð½ÑÐ¼.";
 
-$text['description-status']['en-us'] = "Set the user's presence.";
-$text['description-status']['ar-eg'] = "";
+$text['description-status']['en-us'] = "设置用户状态";
+$text['description-status']['ar-eg'] = "Set the user's presence.";
 $text['description-status']['de-at'] = "Benutzerstatus auswÃ¤hlen"; //copied from de-de
 $text['description-status']['de-ch'] = "Benutzerstatus auswÃ¤hlen"; //copied from de-de
 $text['description-status']['de-de'] = "Benutzerstatus auswÃ¤hlen";
@@ -1521,7 +1521,7 @@ $text['description-contact_view']['ru-ru'] = "ÐŸÐ¾ÑÐ¼Ð¾Ñ‚Ñ€Ðµ
 $text['description-contact_view']['sv-se'] = "Visa";
 $text['description-contact_view']['uk-ua'] = "ÐŸÐµÑ€ÐµÐ³Ð»ÑÐ´";
 
-$text['description-contact']['en-us'] = "为此账号分配联系人";
+$text['description-contact']['en-us'] = "用户联系。用于电话目录或应用程序>通讯录";
 $text['description-contact']['ar-eg'] = "Assign a contact to this user account.";
 $text['description-contact']['de-at'] = "Weisen Sie diesem Benutzer einen Kontakt zu."; //copied from de-de
 $text['description-contact']['de-ch'] = "Weisen Sie diesem Benutzer einen Kontakt zu."; //copied from de-de

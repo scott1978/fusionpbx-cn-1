@@ -1,8 +1,8 @@
 <?php
 #This file was last reorganized on 19th of September 2017 08:54:24 AM UTC
 
-$text['title']['en-us'] = "Call Routing";
-$text['title']['ar-eg'] = "توجيه الدعوة";
+$text['title']['en-us'] = "呼叫路由";
+$text['title']['ar-eg'] = "Call Routing";
 $text['title']['de-at'] = "Call Routing"; //copied from de-de
 $text['title']['de-ch'] = "Call Routing"; //copied from de-de
 $text['title']['de-de'] = "Call Routing";

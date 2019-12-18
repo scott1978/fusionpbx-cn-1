@@ -1894,7 +1894,7 @@ $text['description-user_language']['ru-ru'] = "Выберите язык.";
 $text['description-user_language']['sv-se'] = "Välj Språk";
 $text['description-user_language']['uk-ua'] = "Виберіть мову";
 
-$text['description-user_dashboard']['en-us'] = "快速查看账号信息与统计数据";
+$text['description-user_dashboard']['en-us'] = "快速访问与你的帐户相关的信息和工具";
 $text['description-user_dashboard']['ar-eg'] = "Quickly access information and tools related to your account.";
 $text['description-user_dashboard']['de-at'] = "Schneller Zugriff auf Kontoinformationen und -funktionen"; //copied from de-de
 $text['description-user_dashboard']['de-ch'] = "Schneller Zugriff auf Kontoinformationen und -funktionen"; //copied from de-de
