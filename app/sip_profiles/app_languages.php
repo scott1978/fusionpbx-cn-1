@@ -181,7 +181,7 @@ $text['label-sip_profile_description']['ru-ru'] = "Описание";
 $text['label-sip_profile_description']['sv-se'] = "Beskrivning";
 $text['label-sip_profile_description']['uk-ua'] = "Опис";
 
-$text['label-sip_profile_domain_name']['en-us'] = "名称";
+$text['label-sip_profile_domain_name']['en-us'] = "Name";
 $text['label-sip_profile_domain_name']['ar-eg'] = "Name";
 $text['label-sip_profile_domain_name']['de-at'] = "Name"; //copied from de-de
 $text['label-sip_profile_domain_name']['de-ch'] = "Name"; //copied from de-de
@@ -581,8 +581,8 @@ $text['description-sip_profile_name']['ru-ru'] = "Введите имя проф
 $text['description-sip_profile_name']['sv-se'] = "Skriv in namnet på SIP Profilen.";
 $text['description-sip_profile_name']['uk-ua'] = "Введіть назву профілю";
 
-$text['description-sip_profile_hostname']['en-us'] = "Enter the hostname / switchname.";
-$text['description-sip_profile_hostname']['ar-eg'] = "";
+$text['description-sip_profile_hostname']['en-us'] = "请输入 hostname / switchname";
+$text['description-sip_profile_hostname']['ar-eg'] = "Enter the hostname / switchname.";
 $text['description-sip_profile_hostname']['de-at'] = "Geben Sie den Hostnamen / Switchnamen an."; //copied from de-de
 $text['description-sip_profile_hostname']['de-ch'] = "Geben Sie den Hostnamen / Switchnamen an."; //copied from de-de
 $text['description-sip_profile_hostname']['de-de'] = "Geben Sie den Hostnamen / Switchnamen an.";
@@ -601,8 +601,8 @@ $text['description-sip_profile_hostname']['ru-ru'] = "Введите имя хо
 $text['description-sip_profile_hostname']['sv-se'] = "Fyll i hostname / switchname.";
 $text['description-sip_profile_hostname']['uk-ua'] = "Введіть назву хоста / switchname.";
 
-$text['description-sip_profile_enabled']['en-us'] = "Control the state of the profile.";
-$text['description-sip_profile_enabled']['ar-eg'] = "";
+$text['description-sip_profile_enabled']['en-us'] = "请设置SIP概况状态";
+$text['description-sip_profile_enabled']['ar-eg'] = "Control the state of the profile.";
 $text['description-sip_profile_enabled']['de-at'] = "Setzen Sie den Status dieses Profils."; //copied from de-de
 $text['description-sip_profile_enabled']['de-ch'] = "Setzen Sie den Status dieses Profils."; //copied from de-de
 $text['description-sip_profile_enabled']['de-de'] = "Setzen Sie den Status dieses Profils.";
