@@ -1931,8 +1931,8 @@ $text['label-disable']['sv-se'] = "Inaktivera ";
 $text['label-disable']['uk-ua'] = "Відключити";
 $text['label-disable']['tr-tr'] = "Devre Dışı";
 
-$text['label-disabled']['en-us'] = "Disabled";
-$text['label-disabled']['ar-eg'] = "";
+$text['label-disabled']['en-us'] = "禁用";
+$text['label-disabled']['ar-eg'] = "Disabled";
 $text['label-disabled']['de-at'] = "Deaktiviert"; //copied from de-de
 $text['label-disabled']['de-ch'] = "Deaktiviert"; //copied from de-de
 $text['label-disabled']['de-de'] = "Deaktiviert";
