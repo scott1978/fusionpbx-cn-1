@@ -945,8 +945,8 @@ $text['button-stop']['sv-se'] = "Stoppa";
 $text['button-stop']['uk-ua'] = "Зупинити трансляцію";
 $text['button-stop']['tr-tr'] = "Durdur";
 
-$text['button-status']['en-us'] = "Status";
-$text['button-status']['ar-eg'] = "";
+$text['button-status']['en-us'] = "状态";
+$text['button-status']['ar-eg'] = "Status";
 $text['button-status']['de-at'] = "Status"; //copied from de-de
 $text['button-status']['de-ch'] = "Status"; //copied from de-de
 $text['button-status']['de-de'] = "Status";
