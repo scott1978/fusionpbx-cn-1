@@ -463,7 +463,7 @@
 			if ($result_count > 0) {
 				$hud[$n]['html'] .= "<th class='hud_heading'>&nbsp;</th>\n";
 			}
-			$hud[$n]['html'] .= "<th class='hud_heading' width='80%'>".$text['label-cid_number']."</th>\n";
+			$hud[$n]['html'] .= "<th class='hud_heading' width='60%'>".$text['label-cid_number']."</th>\n";
 			$hud[$n]['html'] .= "<th class='hud_heading'>".$text['label-missed']."</th>\n";
 			$hud[$n]['html'] .= "</tr>\n";
 
@@ -578,7 +578,7 @@
 			if ($result_count > 0) {
 				$hud[$n]['html'] .= "<th class='hud_heading'>&nbsp;</th>\n";
 			}
-			$hud[$n]['html'] .= "<th class='hud_heading' width='80%'>".$text['label-cid_number']."</th>\n";
+			$hud[$n]['html'] .= "<th class='hud_heading' width='60%'>".$text['label-cid_number']."</th>\n";
 			$hud[$n]['html'] .= "<th class='hud_heading'>".$text['label-date_time']."</th>\n";
 			$hud[$n]['html'] .= "</tr>\n";
 
