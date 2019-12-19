@@ -781,7 +781,7 @@ $text['description-call_forward']['ru-ru'] = "Переадресовать вс�
 $text['description-call_forward']['sv-se'] = "Vidarekoppla alla samtal till den angivna destinationen.";
 $text['description-call_forward']['uk-ua'] = "Усі дзвінки скеровуються на вказане місце призначення.";
 
-$text['description']['en-us'] = "管理分机的呼入来电";
+$text['description']['en-us'] = "管理分机的呼入来电：";
 $text['description']['ar-eg'] = "Directs incoming calls for extension:";
 $text['description']['de-at'] = "Leitet eingehende Gespräche für die Nebenstelle:"; //copied from de-de
 $text['description']['de-ch'] = "Leitet eingehende Gespräche für die Nebenstelle:"; //copied from de-de
