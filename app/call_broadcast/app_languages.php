@@ -301,7 +301,7 @@ $text['label-avmd']['ru-ru'] = "Определение голосовой поч
 $text['label-avmd']['sv-se'] = "Känn Av Röstbrevlåda";
 $text['label-avmd']['uk-ua'] = "Виявлення голосової пошти";
 
-$text['label-accountcode']['en-us'] = "账户号码";
+$text['label-accountcode']['en-us'] = "账户号码(结算系统使用)";
 $text['label-accountcode']['ar-eg'] = "Accountcode";
 $text['label-accountcode']['de-at'] = "Kontoschlüssel"; //copied from de-de
 $text['label-accountcode']['de-ch'] = "Kontoschlüssel"; //copied from de-de
@@ -361,8 +361,8 @@ $text['description-phone']['ru-ru'] = "Дополнительно, задайт�
 $text['description-phone']['sv-se'] = "Frivillig, fyll i en lista med nummer (ett per rad) i följande format: 123-123-1234|Efternamn, Förnamn";
 $text['description-phone']['uk-ua'] = "Додатково, задайте список телефонних номерів по одному на рядок в наступному форматі: 123-123-1234 | Прізвище, ім'я";
 
-$text['description-name']['en-us'] = "Enter the name here.";
-$text['description-name']['ar-eg'] = "";
+$text['description-name']['en-us'] = "输入广告的名称";
+$text['description-name']['ar-eg'] = "Enter the name here.";
 $text['description-name']['de-at'] = "Geben Sie den Namen an."; //copied from de-de
 $text['description-name']['de-ch'] = "Geben Sie den Namen an."; //copied from de-de
 $text['description-name']['de-de'] = "Geben Sie den Namen an.";

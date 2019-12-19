@@ -1679,8 +1679,8 @@ $text['label-name']['sv-se'] = "Namn";
 $text['label-name']['uk-ua'] = "Назва";
 $text['label-name']['tr-tr'] = "İsim";
 
-$text['label-username']['en-us'] = "Username";
-$text['label-username']['ar-eg'] = "";
+$text['label-username']['en-us'] = "用户名";
+$text['label-username']['ar-eg'] = "Username";
 $text['label-username']['de-at'] = "Benutzername"; //copied from de-de
 $text['label-username']['de-ch'] = "Benutzername"; //copied from de-de
 $text['label-username']['de-de'] = "Benutzername";
