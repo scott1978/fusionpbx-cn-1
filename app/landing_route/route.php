@@ -211,8 +211,8 @@
 	echo th_order_by('route_start_time', $text['label-route_start_time'], $order_by, $order, $param);
 	echo th_order_by('route_end_time', $text['label-route_end_time'], $order_by, $order, $param);
 	echo th_order_by('route_update_time', $text['label-route_update_time'], $order_by, $order, $param);
-	echo th_order_by('route_enabled', $text['label-enabled'], $order_by, $order, $param);
-	echo th_order_by('route_cmd', $text['label-cmd'], $order_by, $order, $param);
+	echo th_order_by('route_enabled', $text['label-route_enabled'], $order_by, $order, $param);
+	echo th_order_by('route_cmd', $text['label-route_cmd'], $order_by, $order, $param);
 	echo "	<td class='list_control_icons'>";
 	if (permission_exists('landing_route_add')) {
 		echo "		<a href='landing_route_edit.php' alt='".$text['button-add']."'>$v_link_label_add</a>";
@@ -221,7 +221,7 @@
 		echo "&nbsp;\n";
 	}
 	echo "	</td>\n";
-	echo "<tr>\n";
+	echo "</tr>\n";
 
 	// if (is_array($destinations)) {
 	// 	$x = 0;
