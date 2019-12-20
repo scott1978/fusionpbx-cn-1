@@ -195,7 +195,7 @@
 	echo th_order_by('route_cmd', $text['label-route_cmd'], $order_by, $order, $param);
 	echo "	<td class='list_control_icons'>";
 	if (permission_exists('landing_route_add')) {
-		echo "		<a href='landing_route_edit.php' alt='".$text['button-add']."'>$v_link_label_add</a>";
+		echo "		<a href='route_edit.php' alt='".$text['button-add']."'>$v_link_label_add</a>";
 	}
 	else {
 		echo "&nbsp;\n";
@@ -207,7 +207,7 @@
 		$x = 0;
 		foreach($data_list as $row) {
 			if (permission_exists('landing_route_edit')) {
-				$tr_link = "href='landing_route_edit.php?id=".urlencode($row['route_uuid'])."'";
+				$tr_link = "href='route_edit.php?id=".urlencode($row['route_uuid'])."'";
 			}
 			echo "<tr ".$tr_link.">\n";
 			echo "	<td valign='top' class='".$row_style[$c]." tr_link_void' style='align: center; padding: 3px 3px 0px 8px;'>\n";
@@ -251,7 +251,7 @@
 	echo "		<td width='33.3%' align='center' nowrap='nowrap'>$paging_controls</td>\n";
 	echo "		<td class='list_control_icons'>";
 	if (permission_exists('landing_route_add')) {
-		echo 		"<a href='landing_route_edit.php' alt='".$text['button-add']."'>$v_link_label_add</a>";
+		echo 		"<a href='route_edit.php' alt='".$text['button-add']."'>$v_link_label_add</a>";
 	}
 	else {
 		echo 		"&nbsp;";
