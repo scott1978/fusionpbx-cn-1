@@ -768,14 +768,9 @@
 	echo "	".$text['label-route_name']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	if (permission_exists('route_name')) {
-		echo "	<input class='formfld' type='text' name='route_name' maxlength='255' value=\"".escape($route_name)."\" required='required'>\n";
+	echo "	<input class='formfld' type='text' name='route_name' maxlength='255' value=\"".escape($route_name)."\" required='required'>\n";
 		echo "<br />\n";
 		echo $text['description-route_name']."\n";
-	}
-	else {
-		echo escape($route_name);
-	}
 	echo "</td>\n";
 	echo "</tr>\n";
 
@@ -785,14 +780,9 @@
 	echo "	".$text['label-route_gateway']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	if (permission_exists('route_gateway')) {
-		echo "	<input class='formfld' type='text' name='route_gateway' maxlength='255' value=\"".escape($route_gateway)."\" required='required'>\n";
+	echo "	<input class='formfld' type='text' name='route_gateway' maxlength='255' value=\"".escape($route_gateway)."\" required='required'>\n";
 		echo "<br />\n";
 		echo $text['description-route_gateway']."\n";
-	}
-	else {
-		echo escape($route_gateway);
-	}
 	echo "</td>\n";
 	echo "</tr>\n";
 
@@ -802,14 +792,9 @@
 	echo "	".$text['label-route_area_name']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	if (permission_exists('route_area_name')) {
-		echo "	<input class='formfld' type='text' name='route_area_name' maxlength='255' value=\"".escape($route_area_name)."\" required='required'>\n";
+	echo "	<input class='formfld' type='text' name='route_area_name' maxlength='255' value=\"".escape($route_area_name)."\" required='required'>\n";
 		echo "<br />\n";
 		echo $text['description-route_area_name']."\n";
-	}
-	else {
-		echo escape($route_area_name);
-	}
 	echo "</td>\n";
 	echo "</tr>\n";
 
