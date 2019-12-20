@@ -116,16 +116,16 @@
 		}
 	}
 
-// //prepare to page the results
-// 	$rows_per_page = ($_SESSION['domain']['paging']['numeric'] != '') ? $_SESSION['domain']['paging']['numeric'] : 50;
-// 	$param = "&search=".escape($search);
-// 	if ($_GET['show'] == "all" && permission_exists('destination_all')) {
-// 		$param .= "&show=all";
-// 	}
-// 	$page = $_GET['page'];
-// 	if (strlen($page) == 0) { $page = 0; $_GET['page'] = 0; }
-// 	list($paging_controls, $rows_per_page, $var3) = paging($num_rows, $param, $rows_per_page);
-// 	$offset = $rows_per_page * $page;
+//prepare to page the results
+	$rows_per_page = ($_SESSION['domain']['paging']['numeric'] != '') ? $_SESSION['domain']['paging']['numeric'] : 50;
+	$param = "&search=".escape($search);
+	if ($_GET['show'] == "all") {
+		$param .= "&show=all";
+	}
+	$page = $_GET['page'];
+	if (strlen($page) == 0) { $page = 0; $_GET['page'] = 0; }
+	list($paging_controls, $rows_per_page, $var3) = paging($num_rows, $param, $rows_per_page);
+	$offset = $rows_per_page * $page;
 
 // //get the list
 // 	$sql = "select * from v_destinations ";
@@ -276,27 +276,27 @@
 	// 	unset($sql, $destinations, $row_count);
 	// } //end if results
 
-	// echo "<tr>\n";
-	// echo "<td colspan='10' align='left'>\n";
-	// echo "	<table width='100%' cellpadding='0' cellspacing='0'>\n";
-	// echo "	<tr>\n";
-	// echo "		<td width='33.3%' nowrap='nowrap'>&nbsp;</td>\n";
-	// echo "		<td width='33.3%' align='center' nowrap='nowrap'>$paging_controls</td>\n";
-	// echo "		<td class='list_control_icons'>";
-	// if (permission_exists('destination_add')) {
-	// 	echo 		"<a href='destination_edit.php?type=".escape($destination_type)."' alt='".$text['button-add']."'>$v_link_label_add</a>";
-	// }
-	// else {
-	// 	echo 		"&nbsp;";
-	// }
-	// echo "		</td>\n";
-	// echo "	</tr>\n";
- // 	echo "	</table>\n";
-	// echo "</td>\n";
-	// echo "</tr>\n";
-	// echo "</table>";
-	// echo "</form>\n";
-	// echo "<br /><br />";
+	echo "<tr>\n";
+	echo "<td colspan='10' align='left'>\n";
+	echo "	<table width='100%' cellpadding='0' cellspacing='0'>\n";
+	echo "	<tr>\n";
+	echo "		<td width='33.3%' nowrap='nowrap'>&nbsp;</td>\n";
+	echo "		<td width='33.3%' align='center' nowrap='nowrap'>$paging_controls</td>\n";
+	echo "		<td class='list_control_icons'>";
+	if (permission_exists('landing_route_add')) {
+		echo 		"<a href='landing_route_edit.php' alt='".$text['button-add']."'>$v_link_label_add</a>";
+	}
+	else {
+		echo 		"&nbsp;";
+	}
+	echo "		</td>\n";
+	echo "	</tr>\n";
+ 	echo "	</table>\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+	echo "</table>";
+	echo "</form>\n";
+	echo "<br /><br />";
 
 //include the footer
 	require_once "resources/footer.php";
