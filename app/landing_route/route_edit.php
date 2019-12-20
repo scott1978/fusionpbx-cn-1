@@ -764,7 +764,7 @@
 
 	// route_name
 	echo "<tr>\n";
-	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "<td class='vncellreq' valign='top' align='left' nowrap='nowrap'>\n";
 	echo "	".$text['label-route_name']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
@@ -776,11 +776,11 @@
 
 	// route_gateway
 	echo "<tr>\n";
-	echo "<td class='vncellreq' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
 	echo "	".$text['label-route_gateway']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "	<input class='formfld' type='text' name='route_gateway' maxlength='255' value=\"".escape($route_gateway)."\" required='required'>\n";
+	echo "	<input class='formfld' type='text' name='route_gateway' maxlength='255' value=\"".escape($route_gateway)."\">\n";
 		echo "<br />\n";
 		echo $text['description-route_gateway']."\n";
 	echo "</td>\n";
@@ -798,205 +798,43 @@
 	echo "</td>\n";
 	echo "</tr>\n";
 
-	// if (permission_exists('destination_caller_id_name')) {
-	// 	echo "<tr id='tr_caller_id_name'>\n";
-	// 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	// 	echo "	".$text['label-destination_caller_id_name']."\n";
-	// 	echo "</td>\n";
-	// 	echo "<td class='vtable' align='left'>\n";
-	// 	echo "	<input class='formfld' type='text' name='destination_caller_id_name' maxlength='255' value=\"".escape($destination_caller_id_name)."\">\n";
-	// 	echo "<br />\n";
-	// 	echo $text['description-destination_caller_id_name']."\n";
-	// 	echo "</td>\n";
-	// 	echo "</tr>\n";
-	// }
+	// route_area_code
+	echo "<tr>\n";
+	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "	".$text['label-route_area_code']."\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	echo "	<input class='formfld' type='text' name='route_area_code' maxlength='255' value=\"".escape($route_area_code)."\" readonly='readonly'>\n";
+		echo "<br />\n";
+		echo $text['description-route_area_code']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
 
-	// if (permission_exists('destination_caller_id_number')) {
-	// 	echo "<tr id='tr_caller_id_number'>\n";
-	// 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	// 	echo "	".$text['label-destination_caller_id_number']."\n";
-	// 	echo "</td>\n";
-	// 	echo "<td class='vtable' align='left'>\n";
-	// 	echo "	<input class='formfld' type='number' name='destination_caller_id_number' maxlength='255' min='0' step='1' value=\"".escape($destination_caller_id_number)."\">\n";
-	// 	echo "<br />\n";
-	// 	echo $text['description-destination_caller_id_number']."\n";
-	// 	echo "</td>\n";
-	// 	echo "</tr>\n";
-	// }
+	// route_start_time
+	echo "<tr>\n";
+	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "	".$text['label-route_start_time']."\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	echo "	<input class='formfld' type='text' name='route_start_time' maxlength='255' value=\"".escape($route_start_time)."\" >\n";
+		echo "<br />\n";
+		echo $text['description-route_start_time']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
 
-	// if (permission_exists('destination_context')) {
-	// 	echo "<tr>\n";
-	// 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	// 	echo "	".$text['label-destination_context']."\n";
-	// 	echo "</td>\n";
-	// 	echo "<td class='vtable' align='left'>\n";
-	// 	echo "	<input class='formfld' type='text' name='destination_context' id='destination_context' maxlength='255' value=\"".escape($destination_context)."\">\n";
-	// 	echo "<br />\n";
-	// 	echo $text['description-destination_context']."\n";
-	// 	echo "</td>\n";
-	// 	echo "</tr>\n";
-	// }
+	// route_end_time
+	echo "<tr>\n";
+	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "	".$text['label-route_end_time']."\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	echo "	<input class='formfld' type='text' name='route_end_time' maxlength='255' value=\"".escape($route_end_time)."\" >\n";
+		echo "<br />\n";
+		echo $text['description-route_end_time']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
 
-	// if ($_SESSION['destinations']['dialplan_details']['boolean'] == "false") {
-	// 	echo "<tr id='tr_actions'>\n";
-	// 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	// 	echo "	".$text['label-detail_action']."\n";
-	// 	echo "</td>\n";
-	// 	echo "<td class='vtable' align='left'>\n";
-	// 	$destination_action = $destination_app.":".$destination_data;
-	// 	echo $destination->select('dialplan', 'destination_action', $destination_action);
-	// 	echo "</td>\n";
-	// 	echo "</tr>\n";
-	// }
-
-	// if ($_SESSION['destinations']['dialplan_details']['boolean'] == "true") {
-	// 	echo "<tr id='tr_actions'>\n";
-	// 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	// 	echo "	".$text['label-detail_action']."\n";
-	// 	echo "</td>\n";
-	// 	echo "<td class='vtable' align='left'>\n";
-	// 	echo "			<table width='52%' border='0' cellpadding='2' cellspacing='0'>\n";
-	// 	$x = 0;
-	// 	$order = 10;
-	// 	foreach($dialplan_details as $row) {
-	// 		if ($row["dialplan_detail_tag"] != "condition") {
-	// 			if ($row["dialplan_detail_tag"] == "action" && $row["dialplan_detail_type"] == "set" && strpos($row["dialplan_detail_data"], "accountcode") == 0) { continue; } //exclude set:accountcode actions
-	// 			echo "				<tr>\n";
-	// 			echo "					<td style='padding-top: 5px; padding-right: 3px; white-space: nowrap;'>\n";
-	// 			if (strlen($row['dialplan_detail_uuid']) > 0) {
-	// 				echo "	<input name='dialplan_details[".$x."][dialplan_detail_uuid]' type='hidden' value=\"".escape($row['dialplan_detail_uuid'])."\">\n";
-	// 			}
-	// 			echo "	<input name='dialplan_details[".$x."][dialplan_detail_type]' type='hidden' value=\"".escape($row['dialplan_detail_type'])."\">\n";
-	// 			echo "	<input name='dialplan_details[".$x."][dialplan_detail_order]' type='hidden' value=\"".$order."\">\n";
-	// 			$data = $row['dialplan_detail_data'];
-	// 			$label = explode("XML", $data);
-	// 			$divider = ($row['dialplan_detail_type'] != '') ? ":" : null;
-	// 			$detail_action = $row['dialplan_detail_type'].$divider.$row['dialplan_detail_data'];
-	// 			echo $destination->select('dialplan', 'dialplan_details['.$x.'][dialplan_detail_data]', $detail_action);
-	// 			echo "					</td>\n";
-	// 			echo "					<td class='list_control_icons' style='width: 25px;'>";
-	// 			if (strlen($row['destination_uuid']) > 0) {
-	// 				echo "				<a href='destination_delete.php?id=".escape($row['destination_uuid'])."&destination_uuid=".escape($row['destination_uuid'])."&a=delete' alt='delete' onclick=\"return confirm('".$text['confirm-delete']."')\">".$v_link_label_delete."</a>\n";
-	// 			}
-	// 			echo "					</td>\n";
-	// 			echo "				</tr>\n";
-	// 		}
-	// 		$order = $order + 10;
-	// 		$x++;
-	// 	}
-	// 	echo "			</table>\n";
-	// 	echo "</td>\n";
-	// 	echo "</tr>\n";
-	// }
-
-	// if (file_exists($_SERVER["PROJECT_ROOT"]."/app/fax/app_config.php")){
-	// 	$sql = "select * from v_fax ";
-	// 	$sql .= "where domain_uuid = '".$domain_uuid."' ";
-	// 	$sql .= "order by fax_name asc ";
-	// 	$prep_statement = $db->prepare(check_sql($sql));
-	// 	$prep_statement->execute();
-	// 	$result = $prep_statement->fetchAll(PDO::FETCH_ASSOC);
-	// 	unset ($prep_statement, $extension);
-	// 	if (is_array($result) && sizeof($result) > 0) {
-	// 		echo "<tr id='tr_fax_detection'>\n";
-	// 		echo "<td class='vncell' valign='top' align='left' nowrap>\n";
-	// 		echo "	".$text['label-fax_uuid']."\n";
-	// 		echo "</td>\n";
-	// 		echo "<td class='vtable' align='left'>\n";
-	// 		echo "	<select name='fax_uuid' id='fax_uuid' class='formfld' style='".$select_style."'>\n";
-	// 		echo "	<option value=''></option>\n";
-	// 		foreach ($result as &$row) {
-	// 			if ($row["fax_uuid"] == $fax_uuid) {
-	// 				echo "		<option value='".escape($row["fax_uuid"])."' selected='selected'>".escape($row["fax_extension"])." ".escape($row["fax_name"])."</option>\n";
-	// 			}
-	// 			else {
-	// 				echo "		<option value='".escape($row["fax_uuid"])."'>".escape($row["fax_extension"])." ".escape($row["fax_name"])."</option>\n";
-	// 			}
-	// 		}
-	// 		echo "	</select>\n";
-	// 		echo "	<br />\n";
-	// 		echo "	".$text['description-fax_uuid']."\n";
-	// 		echo "</td>\n";
-	// 		echo "</tr>\n";
-	// 	}
-	// }
-
-	// echo "<tr id='tr_cid_name_prefix'>\n";
-	// echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	// echo "	".$text['label-destination_cid_name_prefix']."\n";
-	// echo "</td>\n";
-	// echo "<td class='vtable' align='left'>\n";
-	// echo "	<input class='formfld' type='text' name='destination_cid_name_prefix' maxlength='255' value=\"".escape($destination_cid_name_prefix)."\">\n";
-	// echo "<br />\n";
-	// echo $text['description-destination_cid_name_prefix']."\n";
-	// echo "</td>\n";
-	// echo "</tr>\n";
-
-	// if ($destination_type == 'inbound' && permission_exists('destination_record')) {
-	// 	echo "<tr>\n";
-	// 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>".$text['label-destination_record']."</td>\n";
-	// 	echo "<td class='vtable' align='left'>\n";
-	// 	echo "	<select class='formfld' name='destination_record'>\n";
-	// 	echo "	<option value=''></option>\n";
-	// 	if ($destination_record == "true") {
-	// 		echo "	<option value='true' selected='selected'>".$text['label-true']."</option>\n";
-	// 	}
-	// 	else {
-	// 		echo "	<option value='true'>".$text['label-true']."</option>\n";
-	// 	}
-	// 	if ($destination_record == "false") {
-	// 		echo "	<option value='false' selected='selected'>".$text['label-false']."</option>\n";
-	// 	}
-	// 	else {
-	// 		echo "	<option value='false'>".$text['label-false']."</option>\n";
-	// 	}
-	// 	echo "	</select>\n";
-	// 	echo "<br />\n";
-	// 	echo "</td>\n";
-	// 	echo "</tr>\n";
-	// }
-
-	// echo "<tr id='tr_account_code'>\n";
-	// echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	// echo "	".$text['label-account_code']."\n";
-	// echo "</td>\n";
-	// echo "<td class='vtable' align='left'>\n";
-	// echo "	<input class='formfld' type='text' name='destination_accountcode' maxlength='255' value=\"".escape($destination_accountcode)."\">\n";
-	// echo "<br />\n";
-	// echo $text['description-account_code']."\n";
-	// echo "</td>\n";
-
-	// if (permission_exists('destination_domain')) {
-	// 	echo "<tr>\n";
-	// 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	// 	echo "	".$text['label-domain']."\n";
-	// 	echo "</td>\n";
-	// 	echo "<td class='vtable' align='left'>\n";
-	// 	echo "    <select class='formfld' name='domain_uuid' id='destination_domain' onchange='context_control();'>\n";
-	// 	if (strlen($domain_uuid) == 0) {
-	// 		echo "    <option value='' selected='selected'>".$text['select-global']."</option>\n";
-	// 	}
-	// 	else {
-	// 		echo "    <option value=''>".$text['select-global']."</option>\n";
-	// 	}
-	// 	foreach ($_SESSION['domains'] as $row) {
-	// 		if ($row['domain_uuid'] == $domain_uuid) {
-	// 			echo "    <option value='".escape($row['domain_uuid'])."' selected='selected'>".escape($row['domain_name'])."</option>\n";
-	// 		}
-	// 		else {
-	// 			echo "    <option value='".escape($row['domain_uuid'])."'>".escape($row['domain_name'])."</option>\n";
-	// 		}
-	// 	}
-	// 	echo "    </select>\n";
-	// 	echo "<br />\n";
-	// 	echo $text['description-domain_name']."\n";
-	// 	echo "</td>\n";
-	// 	echo "</tr>\n";
-	// }
-	// else {
-	// 	echo "<input type='hidden' name='domain_uuid' value='".escape($domain_uuid)."'>\n";
-	// }
-
+	// enabled
 	echo "<tr>\n";
 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
 	echo "	".$text['label-destination_enabled']."\n";
@@ -1012,7 +850,19 @@
 	unset($selected);
 	echo "	</select>\n";
 	echo "<br />\n";
-	echo $text['description-destination_enabled']."\n";
+	echo $text['description-route_enabled']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+
+	// route_cmd
+	echo "<tr>\n";
+	echo "<td class='vncellreq' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "	".$text['label-route_cmd']."\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	echo "	<input class='formfld' type='text' name='route_cmd' maxlength='255' value=\"".escape($route_cmd)."\" >\n";
+		echo "<br />\n";
+		echo $text['description-route_cmd']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 
@@ -1028,11 +878,11 @@
 	echo "</tr>\n";
 	echo "	<tr>\n";
 	echo "		<td colspan='2' align='right'>\n";
-	if ($action == "update") {
-		echo "		<input type='hidden' name='db_destination_number' value='".escape($destination_number)."'>\n";
-		echo "		<input type='hidden' name='dialplan_uuid' value='".escape($dialplan_uuid)."'>\n";
-		echo "		<input type='hidden' name='destination_uuid' value='".escape($destination_uuid)."'>\n";
-	}
+	// if ($action == "update") {
+	// 	echo "		<input type='hidden' name='db_destination_number' value='".escape($destination_number)."'>\n";
+	// 	echo "		<input type='hidden' name='dialplan_uuid' value='".escape($dialplan_uuid)."'>\n";
+	// 	echo "		<input type='hidden' name='destination_uuid' value='".escape($destination_uuid)."'>\n";
+	// }
 	echo "			<br>";
 	echo "			<input type='submit' class='btn' value='".$text['button-save']."'>\n";
 	echo "		</td>\n";
