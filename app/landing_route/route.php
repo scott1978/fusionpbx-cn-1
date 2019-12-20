@@ -64,9 +64,9 @@
 // 		}
 // 	}
 
-// //get variables used to control the order
-// 	$order_by = check_str($_GET["order_by"]);
-// 	$order = check_str($_GET["order"]);
+//get variables used to control the order
+	$order_by = check_str($_GET["order_by"]);
+	$order = check_str($_GET["order"]);
 
 // //set the type
 // 	if ($_GET['type'] == 'inbound') {
@@ -82,50 +82,39 @@
 // 		$destination_type = 'inbound';
 // 	}
 
-// //add the search term
-// 	$search = strtolower(check_str($_GET["search"]));
-// 	if (strlen($search) > 0) {
-// 		$sql_search = " (";
-// 		$sql_search .= "lower(destination_type) like '%".$search."%' ";
-// 		$sql_search .= "or lower(destination_number) like '%".$search."%' ";
-// 		$sql_search .= "or lower(destination_context) like '%".$search."%' ";
-// 		$sql_search .= "or lower(destination_accountcode) like '%".$search."%' ";
-// 		if (permission_exists('outbound_caller_id_select')) {
-// 			$sql_search .= "or lower(destination_caller_id_name) like '%".$search."%' ";
-// 			$sql_search .= "or destination_caller_id_number like '%".$search."%' ";
-// 		}
-// 		$sql_search .= "or lower(destination_enabled) like '%".$search."%' ";
-// 		$sql_search .= "or lower(destination_description) like '%".$search."%' ";
-// 		$sql_search .= ") ";
-// 	}
+//add the search term
+	$search = strtolower(check_str($_GET["search"]));
+	if (strlen($search) > 0) {
+		$sql_search = " (";
+		$sql_search .= "lower(route_name) like '%".$search."%' ";
+		$sql_search .= "or lower(route_gateway) like '%".$search."%' ";
+		$sql_search .= "or lower(route_area_code) like '%".$search."%' ";
+		$sql_search .= "or lower(route_cmd) like '%".$search."%' ";
+		$sql_search .= ") ";
+	}
 
-// //additional includes
-// 	require_once "resources/header.php";
-// 	require_once "resources/paging.php";
+//additional includes
+	require_once "resources/header.php";
+	require_once "resources/paging.php";
 
-// //prepare to page the results
-// 	$sql = "select count(route_uuid) as num_rows from v_landing_route ";
-// 	$sql .= "where destination_type = '".$destination_type."' ";
-// 	if ($_GET['show'] == "all" && permission_exists('destination_all')) {
-// 		//show all
-// 	} else {
-// 		$sql .= "and (domain_uuid = '".$domain_uuid."' or domain_uuid is null) ";
-// 	}
-// 	if (isset($sql_search)) {
-// 			$sql .= "and ".$sql_search;
-// 	}
-// 	if (strlen($order_by)> 0) { $sql .= "order by $order_by $order "; }
-// 	$prep_statement = $db->prepare($sql);
-// 	if ($prep_statement) {
-// 		$prep_statement->execute();
-// 		$row = $prep_statement->fetch(PDO::FETCH_ASSOC);
-// 		if ($row['num_rows'] > 0) {
-// 			$num_rows = $row['num_rows'];
-// 		}
-// 		else {
-// 			$num_rows = '0';
-// 		}
-// 	}
+//prepare to page the results
+	$sql = "select count(route_uuid) as num_rows from v_landing_route ";
+	$sql .= "where 1 = 1 ";
+	if (isset($sql_search)) {
+			$sql .= "and ".$sql_search;
+	}
+	if (strlen($order_by)> 0) { $sql .= "order by $order_by $order "; }
+	$prep_statement = $db->prepare($sql);
+	if ($prep_statement) {
+		$prep_statement->execute();
+		$row = $prep_statement->fetch(PDO::FETCH_ASSOC);
+		if ($row['num_rows'] > 0) {
+			$num_rows = $row['num_rows'];
+		}
+		else {
+			$num_rows = '0';
+		}
+	}
 
 // //prepare to page the results
 // 	$rows_per_page = ($_SESSION['domain']['paging']['numeric'] != '') ? $_SESSION['domain']['paging']['numeric'] : 50;
@@ -162,11 +151,6 @@
 // 	$row_style["0"] = "row_style0";
 // 	$row_style["1"] = "row_style1";
 
-	// add by atom
-	$num_rows = '0';
-	$search = strtolower(check_str($_GET["search"]));
-
-
 //define the checkbox_toggle function
 	echo "<script type=\"text/javascript\">\n";
 	echo "	function checkbox_toggle(item) {\n";
@@ -191,20 +175,12 @@
 	echo "		<form method='get' action=''>\n";
 	echo "			<td width='50%' style='vertical-align: top; text-align: right; white-space: nowrap;'>\n";
 
-	echo "				<input type='button' class='btn' value='".$text['button-inbound']."' onclick=\"window.location='destinations.php?type=inbound';\">\n";
-	echo "				<input type='button' class='btn' value='".$text['button-outbound']."' onclick=\"window.location='destinations.php?type=outbound';\">\n";
-	//echo "				<input type='button' class='btn' value='".$text['button-local']."' onclick=\"window.location='destinations.php?type=local';\">\n";
-	echo "				&nbsp;\n";
-	if (permission_exists('destination_import')) {
-		echo "				<input type='button' class='btn' alt='".$text['button-import']."' onclick=\"window.location='/app/destination_imports/destination_imports.php'\" value='".$text['button-import']."'>\n";
-	}
-
-	if (permission_exists('destination_all')) {
+	if (permission_exists('landing_route_all')) {
 		if ($_GET['show'] == 'all') {
 			echo "		<input type='hidden' name='show' value='all'>";
 		}
 		else {
-			echo "		<input type='button' class='btn' value='".$text['button-show_all']."' onclick=\"window.location='destinations.php?show=all&type=".urlencode($destination_type)."';\">\n";
+			echo "		<input type='button' class='btn' value='".$text['button-show_all']."' onclick=\"window.location='route.php?show=all';\">\n";
 		}
 	}
 
@@ -220,33 +196,32 @@
 	echo "	</tr>\n";
 	echo "</table>\n";
 
-	// echo "<form method='post' action=''>\n";
-	// echo "<table class='tr_hover' width='100%' border='0' cellpadding='0' cellspacing='0'>\n";
-	// echo "<tr>\n";
-	// echo "	<th style='width:30px;'>\n";
-	// echo "		<input type='checkbox' name='checkbox_all' id='checkbox_all' value='' onclick=\"checkbox_toggle();\">\n";
-	// echo "	</th>\n";
-	// if ($_GET['show'] == "all" && permission_exists('destination_all')) {
-	// 	echo th_order_by('domain_name', $text['label-domain'], $order_by, $order, $param);
-	// }
-	// echo th_order_by('destination_type', $text['label-destination_type'], $order_by, $order, $param);
-	// echo th_order_by('destination_number', $text['label-destination_number'], $order_by, $order, $param);
-	// echo th_order_by('destination_context', $text['label-destination_context'], $order_by, $order, $param);
-	// if (permission_exists('outbound_caller_id_select')) {
-	// 	echo th_order_by('destination_caller_id_name', $text['label-destination_caller_id_name'], $order_by, $order, $param);
-	// 	echo th_order_by('destination_caller_id_number', $text['label-destination_caller_id_number'], $order_by, $order, $param);
-	// }
-	// echo th_order_by('destination_enabled', $text['label-destination_enabled'], $order_by, $order, $param);
-	// echo th_order_by('destination_description', $text['label-destination_description'], $order_by, $order, $param);
-	// echo "	<td class='list_control_icons'>";
-	// if (permission_exists('destination_add')) {
-	// 	echo "		<a href='destination_edit.php?type=$destination_type' alt='".$text['button-add']."'>$v_link_label_add</a>";
-	// }
-	// else {
-	// 	echo "&nbsp;\n";
-	// }
-	// echo "	</td>\n";
-	// echo "<tr>\n";
+	echo "<form method='post' action=''>\n";
+	echo "<table class='tr_hover' width='100%' border='0' cellpadding='0' cellspacing='0'>\n";
+	echo "<tr>\n";
+	echo "	<th style='width:30px;'>\n";
+	echo "		<input type='checkbox' name='checkbox_all' id='checkbox_all' value='' onclick=\"checkbox_toggle();\">\n";
+	echo "	</th>\n";
+
+	echo th_order_by('route_name', $text['label-route_name'], $order_by, $order, $param);
+	echo th_order_by('route_gateway', $text['label-route_gateway'], $order_by, $order, $param);
+	echo th_order_by('route_area_name', $text['label-route_area_name'], $order_by, $order, $param);
+	echo th_order_by('route_area_code', $text['label-route_area_code'], $order_by, $order, $param);
+	echo th_order_by('route_weekday', $text['label-route_weekday'], $order_by, $order, $param);
+	echo th_order_by('route_start_time', $text['label-route_start_time'], $order_by, $order, $param);
+	echo th_order_by('route_end_time', $text['label-route_end_time'], $order_by, $order, $param);
+	echo th_order_by('route_update_time', $text['label-route_update_time'], $order_by, $order, $param);
+	echo th_order_by('route_enabled', $text['label-enabled'], $order_by, $order, $param);
+	echo th_order_by('route_cmd', $text['label-cmd'], $order_by, $order, $param);
+	echo "	<td class='list_control_icons'>";
+	if (permission_exists('landing_route_add')) {
+		echo "		<a href='landing_route_edit.php' alt='".$text['button-add']."'>$v_link_label_add</a>";
+	}
+	else {
+		echo "&nbsp;\n";
+	}
+	echo "	</td>\n";
+	echo "<tr>\n";
 
 	// if (is_array($destinations)) {
 	// 	$x = 0;
