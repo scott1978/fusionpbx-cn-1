@@ -68,20 +68,6 @@
 	$order_by = check_str($_GET["order_by"]);
 	$order = check_str($_GET["order"]);
 
-// //set the type
-// 	if ($_GET['type'] == 'inbound') {
-// 		$destination_type = 'inbound';
-// 	}
-// 	elseif ($_GET['type'] == 'outbound') {
-// 		$destination_type = 'outbound';
-// 	}
-// 	elseif ($_GET['type'] == 'local') {
-// 		$destination_type = 'local';
-// 	}
-// 	else {
-// 		$destination_type = 'inbound';
-// 	}
-
 //add the search term
 	$search = strtolower(check_str($_GET["search"]));
 	if (strlen($search) > 0) {
@@ -127,29 +113,23 @@
 	list($paging_controls, $rows_per_page, $var3) = paging($num_rows, $param, $rows_per_page);
 	$offset = $rows_per_page * $page;
 
-// //get the list
-// 	$sql = "select * from v_destinations ";
-// 	$sql .= "where destination_type = '".$destination_type."' ";
-// 	if ($_GET['show'] == "all" && permission_exists('destination_all')) {
-// 		//show all
-// 	} else {
-// 		$sql .= "and (domain_uuid = '".$domain_uuid."' or domain_uuid is null) ";
-// 	}
-// 	if (isset($sql_search)) {
-// 		$sql .= "and ".$sql_search;
-// 	}
-// 	$sql .= "and destination_type = '".$destination_type."' ";
-// 	if (strlen($order_by)> 0) { $sql .= "order by $order_by $order "; }
-// 	$sql .= "limit $rows_per_page offset $offset ";
-// 	$prep_statement = $db->prepare(check_sql($sql));
-// 	$prep_statement->execute();
-// 	$destinations = $prep_statement->fetchAll(PDO::FETCH_NAMED);
-// 	unset ($prep_statement, $sql);
+//get the list
+	$sql = "select * from v_landing_route ";
+	$sql .= "where 1 = 1 ";
+	if (isset($sql_search)) {
+		$sql .= "and ".$sql_search;
+	}
+	if (strlen($order_by)> 0) { $sql .= "order by $order_by $order "; }
+	$sql .= "limit $rows_per_page offset $offset ";
+	$prep_statement = $db->prepare(check_sql($sql));
+	$prep_statement->execute();
+	$data_list = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+	unset ($prep_statement, $sql);
 
-// //alternate the row style
-// 	$c = 0;
-// 	$row_style["0"] = "row_style0";
-// 	$row_style["1"] = "row_style1";
+//alternate the row style
+	$c = 0;
+	$row_style["0"] = "row_style0";
+	$row_style["1"] = "row_style1";
 
 //define the checkbox_toggle function
 	echo "<script type=\"text/javascript\">\n";
@@ -206,7 +186,7 @@
 	echo th_order_by('route_name', $text['label-route_name'], $order_by, $order, $param);
 	echo th_order_by('route_gateway', $text['label-route_gateway'], $order_by, $order, $param);
 	echo th_order_by('route_area_name', $text['label-route_area_name'], $order_by, $order, $param);
-	echo th_order_by('route_area_code', $text['label-route_area_code'], $order_by, $order, $param);
+	// echo th_order_by('route_area_code', $text['label-route_area_code'], $order_by, $order, $param);
 	echo th_order_by('route_weekday', $text['label-route_weekday'], $order_by, $order, $param);
 	echo th_order_by('route_start_time', $text['label-route_start_time'], $order_by, $order, $param);
 	echo th_order_by('route_end_time', $text['label-route_end_time'], $order_by, $order, $param);
@@ -223,58 +203,41 @@
 	echo "	</td>\n";
 	echo "</tr>\n";
 
-	// if (is_array($destinations)) {
-	// 	$x = 0;
-	// 	foreach($destinations as $row) {
-	// 		if (permission_exists('destination_edit')) {
-	// 			$tr_link = "href='destination_edit.php?id=".urlencode($row['destination_uuid'])."'";
-	// 		}
-	// 		echo "<tr ".$tr_link.">\n";
-	// 		//echo "	<td valign='top' class=''>".$row['destination_uuid']."&nbsp;</td>\n";
-	// 		//echo "	<td valign='top' class=''>".$row['dialplan_uuid']."&nbsp;</td>\n";
-	// 		echo "	<td valign='top' class='".$row_style[$c]." tr_link_void' style='align: center; padding: 3px 3px 0px 8px;'>\n";
-	// 		echo "		<input type='checkbox' name=\"destinations[$x][checked]\" id='checkbox_".$x."' value='true' onclick=\"if (!this.checked) { document.getElementById('chk_all_".$x."').checked = false; }\">\n";
-	// 		echo "		<input type='hidden' name=\"destinations[$x][destination_uuid]\" value='".escape($row['destination_uuid'])."' />\n";
-	// 		echo "	</td>\n";
-	// 		if ($_GET['show'] == "all" && permission_exists('destination_all')) {
-	// 			if (strlen($_SESSION['domains'][$row['domain_uuid']]['domain_name']) > 0) {
-	// 				$domain = $_SESSION['domains'][$row['domain_uuid']]['domain_name'];
-	// 			}
-	// 			else {
-	// 				$domain = $text['label-global'];
-	// 			}
-	// 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($domain)."</td>\n";
-	// 		}
-	// 		echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['destination_type'])."&nbsp;</td>\n";
-	// 		echo "	<td valign='top' class='".$row_style[$c]."'>".escape(format_phone($row['destination_number']))."&nbsp;</td>\n";
-	// 		//echo "	<td valign='top' class='".$row_style[$c]."'>".$row['destination_number_regex']."&nbsp;</td>\n";
-	// 		echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['destination_context'])."&nbsp;</td>\n";
-	// 		//echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['fax_uuid'])."&nbsp;</td>\n";
-	// 		if (permission_exists('outbound_caller_id_select')) {
-	// 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['destination_caller_id_name'])."&nbsp;</td>\n";
-	// 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['destination_caller_id_number'])."&nbsp;</td>\n";
-	// 		}
-	// 		//echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['destination_cid_name_prefix'])."&nbsp;</td>\n";
-	// 		//echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['destination_app'])."&nbsp;</td>\n";
-	// 		//echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['destination_data'])."&nbsp;</td>\n";
-	// 		//echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['destination_record'])."&nbsp;</td>\n";
-	// 		//echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['destination_accountcode'])."&nbsp;</td>\n";
-	// 		echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['destination_enabled'])."&nbsp;</td>\n";
-	// 		echo "	<td valign='top' class='row_stylebg'>".escape($row['destination_description'])."&nbsp;</td>\n";
-	// 		echo "	<td class='list_control_icons'>";
-	// 		if (permission_exists('destination_edit')) {
-	// 			echo "<a href='destination_edit.php?id=".escape($row['destination_uuid'])."' alt='".$text['button-edit']."'>$v_link_label_edit</a>";
-	// 		}
-	// 		if (permission_exists('destination_delete')) {
-	// 			echo "<button type='submit' class='btn btn-default list_control_icon' name=\"destinations[$x][action]\" alt='".$text['button-delete']."' value='delete'><span class='glyphicon glyphicon-remove'></span></button>";
-	// 		}
-	// 		echo "	</td>\n";
-	// 		echo "</tr>\n";
-	// 		$x++;
-	// 		if ($c==0) { $c=1; } else { $c=0; }
-	// 	} //end foreach
-	// 	unset($sql, $destinations, $row_count);
-	// } //end if results
+	if (is_array($data_list)) {
+		$x = 0;
+		foreach($data_list as $row) {
+			if (permission_exists('landing_route_edit')) {
+				$tr_link = "href='landing_route_edit.php?id=".urlencode($row['route_uuid'])."'";
+			}
+			echo "<tr ".$tr_link.">\n";
+			echo "	<td valign='top' class='".$row_style[$c]." tr_link_void' style='align: center; padding: 3px 3px 0px 8px;'>\n";
+			echo "		<input type='checkbox' name=\"data_list[$x][checked]\" id='checkbox_".$x."' value='true' onclick=\"if (!this.checked) { document.getElementById('chk_all_".$x."').checked = false; }\">\n";
+			echo "		<input type='hidden' name=\"data_list[$x][route_uuid]\" value='".escape($row['route_uuid'])."' />\n";
+			echo "	</td>\n";
+			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_name'])."&nbsp;</td>\n";
+			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_gateway'])."&nbsp;</td>\n";
+			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_area_name'])."&nbsp;</td>\n";
+			//echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_area_code'])."&nbsp;</td>\n";
+			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_weekday'])."&nbsp;</td>\n";
+			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_start_time'])."&nbsp;</td>\n";
+			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_end_time'])."&nbsp;</td>\n";
+			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_update_time'])."&nbsp;</td>\n";
+			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_enabled'])."&nbsp;</td>\n";
+			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_cmd'])."&nbsp;</td>\n";
+			echo "	<td class='list_control_icons'>";
+			if (permission_exists('landing_route_edit')) {
+				echo "<a href='landing_route_edit.php?id=".escape($row['route_uuid'])."' alt='".$text['button-edit']."'>$v_link_label_edit</a>";
+			}
+			if (permission_exists('landing_route_delete')) {
+				echo "<button type='submit' class='btn btn-default list_control_icon' name=\"data_list[$x][action]\" alt='".$text['button-delete']."' value='delete'><span class='glyphicon glyphicon-remove'></span></button>";
+			}
+			echo "	</td>\n";
+			echo "</tr>\n";
+			$x++;
+			if ($c==0) { $c=1; } else { $c=0; }
+		} //end foreach
+		unset($sql, $destinations, $row_count);
+	} //end if results
 
 	echo "<tr>\n";
 	echo "<td colspan='10' align='left'>\n";
