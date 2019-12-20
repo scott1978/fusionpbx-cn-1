@@ -222,7 +222,7 @@
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_start_time'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_end_time'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_update_time'])."&nbsp;</td>\n";
-			if ($row['route_enabled'] == 0) {
+			if ((int)$row['route_enabled'] == 0) {
 				echo "	<td valign='top' class='".$row_style[$c]."'>False&nbsp;</td>\n";
 			} else {
 				echo "	<td valign='top' class='".$row_style[$c]."'>True&nbsp;</td>\n";
