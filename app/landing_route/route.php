@@ -222,7 +222,11 @@
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_start_time'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_end_time'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_update_time'])."&nbsp;</td>\n";
-			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_enabled'])."&nbsp;</td>\n";
+			if ($row['route_enabled'] == 0) {
+				echo "	<td valign='top' class='".$row_style[$c]."'>False&nbsp;</td>\n";
+			} else {
+				echo "	<td valign='top' class='".$row_style[$c]."'>True&nbsp;</td>\n";
+			}
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_cmd'])."&nbsp;</td>\n";
 			echo "	<td class='list_control_icons'>";
 			if (permission_exists('landing_route_edit')) {
@@ -240,7 +244,7 @@
 	} //end if results
 
 	echo "<tr>\n";
-	echo "<td colspan='10' align='left'>\n";
+	echo "<td colspan='12' align='left'>\n";
 	echo "	<table width='100%' cellpadding='0' cellspacing='0'>\n";
 	echo "	<tr>\n";
 	echo "		<td width='33.3%' nowrap='nowrap'>&nbsp;</td>\n";
