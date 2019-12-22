@@ -552,7 +552,7 @@
 				<!--{body}-->
 			</div>
 			<div id='footer'>
-				<span class='footer'><?php echo (isset($_SESSION['theme']['footer']['text'])) ? $_SESSION['theme']['footer']['text'] : "&copy; ".$text['theme-label-copyright']." 2008 - ".date("Y")." <a href='http://www.fusionpbx.com' class='footer' target='_blank'>fusionpbx.com</a> ".$text['theme-label-all_rights_reserved']; ?></span>
+				<span class='footer'><?php echo (isset($_SESSION['theme']['footer']['text'])) ? $_SESSION['theme']['footer']['text'] : "&copy; ".$text['theme-label-copyright']." 2008 - ".date("Y")." <a href='http://www.y-free.com' class='footer' target='_blank'>y-free.com</a> ".$text['theme-label-all_rights_reserved']; ?></span>
 			</div>
 		</div>
 
@@ -569,7 +569,7 @@
 			<!--{body}-->
 		</div>
 		<div id='footer_login'>
-			<span class='footer'><?php echo (isset($_SESSION['theme']['footer']['text'])) ? $_SESSION['theme']['footer']['text'] : "&copy; ".$text['theme-label-copyright']." 2008 - ".date("Y")." <a href='http://www.fusionpbx.com' class='footer' target='_blank'>fusionpbx.com</a> ".$text['theme-label-all_rights_reserved']; ?></span>
+			<span class='footer'><?php echo (isset($_SESSION['theme']['footer']['text'])) ? $_SESSION['theme']['footer']['text'] : "&copy; ".$text['theme-label-copyright']." 2008 - ".date("Y")." <a href='http://www.y-free.com' class='footer' target='_blank'>y-free.com</a> ".$text['theme-label-all_rights_reserved']; ?></span>
 		</div>
 		<?php
 		unset($_SESSION['background_image']);
