@@ -68,9 +68,9 @@
 			$enabled = trim($_POST["enabled"]);
 			$route_cmd = trim($_POST["route_cmd"]);
 			$route_order = trim($_POST["route_order"]);
-			if !(isset($route_order)) {
-				$route_order = '1';
-			}
+			// if !(isset($route_order)) {
+			// 	$route_order = '1';
+			// }
 	}
 
 //process the http post 
