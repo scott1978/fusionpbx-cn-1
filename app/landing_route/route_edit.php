@@ -829,6 +829,25 @@
 // 	echo "	}\n";
 // 	echo "</script>\n";
 
+	echo "<script type='text/javascript'>\n";
+	echo "function route_type_control() {\n";
+	echo " 	var obj_type = document.getElementById('route_type');\n";
+	echo " 	var obj_city_group = document.getElementById('route_city_group');\n";
+	echo " 	var obj_telephone_group = document.getElementById('route_telephone_group');\n";
+	echo "	var idx = obj_type.selectedIndex;\n";
+	echo " 	var value = obj_type.options[idx].value;\n";
+	echo " 	if (parseInt(value) == 1) { // 省市组\n";
+	echo " 		obj_city_group.style.display = "block";\n";
+	echo " 		obj_telephone_group.style.display = "none";\n";
+	echo " 	} else {\n";
+	echo " 		obj_city_group.style.display = "none";\n";
+	echo " 		obj_telephone_group.style.display = "block";\n";
+	echo "	}\n";
+	echo " }\n";
+	echo "</script>\n";
+
+
+
 //show the content
 	echo "<form method='post' name='frm' action=''>\n";
 	echo "<table width='100%' border='0' cellpadding='0' cellspacing='0'>\n";
@@ -846,7 +865,7 @@
 	echo "</tr>\n";
 	echo "<tr>\n";
 	echo "<td align='left' colspan='2'>\n";
-	echo $text['description-destinations']."<br /><br />\n";
+	// echo $text['description-destinations']."<br /><br />\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 
@@ -868,7 +887,7 @@
 	echo "	".$text['label-route_gateway']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "	<input class='formfld' type='text' name='route_gateway' maxlength='255' value=\"".escape($route_gateway)."\">\n";
+	echo "	<input class='formfld' type='text' name='route_gateway' value=\"".escape($route_gateway)."\">\n";
 		echo "<br />\n";
 		echo $text['description-route_gateway']."\n";
 	echo "</td>\n";
@@ -880,8 +899,8 @@
 	echo "	".$text['label-route_type']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "	<select class='formfld' name='route_type' id='route_type'>\n";
-	// echo "	<select class='formfld' name='route_type' id='route_type' onchange='type_control(this.options[this.selectedIndex].value);context_control();'>\n";
+	// echo "	<select class='formfld' name='route_type' id='route_type'>\n";
+	echo "	<select class='formfld' name='route_type' id='route_type' onchange='route_type_control();'>\n";
 	switch ($route_type) {
 		case "1" : 	$selected[1] = "selected='selected'";	break;
 		case "2" : 	$selected[2] = "selected='selected'";	break;
@@ -896,19 +915,19 @@
 	echo "</tr>\n";
 
 	// route_city
-	echo "<tr>\n";
+	echo "<tr name='route_city_group' id='route_city_group'>\n";
 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
 	echo "	".$text['label-route_city']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "	<input class='formfld' type='text' name='route_city' value=\"".escape($route_city)."\" required='required'>\n";
+	echo "	<input class='formfld' type='text' name='route_city' value=\"".escape($route_city)."\">\n";
 		echo "<br />\n";
 		echo $text['description-route_city']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 
 	// route_telephone
-	echo "<tr>\n";
+	echo "<tr name='route_telephone_group' id='route_telephone_group'>\n";
 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
 	echo "	".$text['label-route_telephone']."\n";
 	echo "</td>\n";
