@@ -441,6 +441,26 @@ $text['description-route_cmd']['ru-ru'] = "";
 $text['description-route_cmd']['sv-se'] = "";
 $text['description-route_cmd']['uk-ua'] = "";
 
+$text['description-route_type']['en-us'] = "选择路由组类型";
+$text['description-route_type']['ar-eg'] = "Type";
+$text['description-route_type']['de-at'] = "Type"; //copied from de-de
+$text['description-route_type']['de-ch'] = "Type"; //copied from de-de
+$text['description-route_type']['de-de'] = "Type";
+$text['description-route_type']['es-cl'] = "Type";
+$text['description-route_type']['es-mx'] = "Type"; //copied from es-cl
+$text['description-route_type']['fr-ca'] = "Type"; //copied from fr-fr
+$text['description-route_type']['fr-fr'] = "Type";
+$text['description-route_type']['he-il'] = "Type";
+$text['description-route_type']['it-it'] = "Type";
+$text['description-route_type']['nl-nl'] = "Type";
+$text['description-route_type']['pl-pl'] = "Type";
+$text['description-route_type']['pt-br'] = "Type"; //copied from pt-pt
+$text['description-route_type']['pt-pt'] = "Type";
+$text['description-route_type']['ro-ro'] = "Type";
+$text['description-route_type']['ru-ru'] = "Type";
+$text['description-route_type']['sv-se'] = "Type";
+$text['description-route_type']['uk-ua'] = "Type";
+
 $text['description-route_enabled']['en-us'] = "设置状态";
 $text['description-route_enabled']['ar-eg'] = "Set the current status at here.";
 $text['description-route_enabled']['de-at'] = "Set the current status at here."; //copied from de-de

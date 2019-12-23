@@ -799,8 +799,8 @@
 		case "1" : 	$selected[1] = "selected='selected'";	break;
 		case "2" : 	$selected[2] = "selected='selected'";	break;
 	}
-	echo "	<option value='1' ".$selected[1].">".$text['option-type_city']."</option>\n";
-	echo "	<option value='2' ".$selected[2].">".$text['option-type_telephone']."</option>\n";
+	echo "	<option value='1' ".$selected[1].">".$text['label-route_city']."</option>\n";
+	echo "	<option value='2' ".$selected[2].">".$text['label-route_telephone']."</option>\n";
 	unset($selected);
 	echo "	</select>\n";
 	echo "<br />\n";
