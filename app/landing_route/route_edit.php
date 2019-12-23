@@ -831,11 +831,11 @@
 
 	echo "<script type='text/javascript'>\n";
 	echo "function route_type_control() {\n";
-	// echo " 	var obj_type = document.getElementById('route_type');\n";
-	// echo " 	var obj_city_group = document.getElementById('route_city_group');\n";
-	// echo " 	var obj_telephone_group = document.getElementById('route_telephone_group');\n";
-	// echo "	var idx = obj_type.selectedIndex;\n";
-	// echo " 	var value = obj_type.options[idx].value;\n";
+	echo " 	var obj_type = document.getElementById('route_type');\n";
+	echo " 	var obj_city_group = document.getElementById('route_city_group');\n";
+	echo " 	var obj_telephone_group = document.getElementById('route_telephone_group');\n";
+	echo "	var idx = obj_type.selectedIndex;\n";
+	echo " 	var value = obj_type.options[idx].value;\n";
 	// echo " 	if (parseInt(value) == 1) { // 省市组\n";
 	// echo " 		obj_city_group.style.display = "block";\n";
 	// echo " 		obj_telephone_group.style.display = "none";\n";
