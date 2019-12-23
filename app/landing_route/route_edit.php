@@ -837,11 +837,11 @@
 	echo "	var idx = obj_type.selectedIndex;\n";
 	echo " 	var value = obj_type.options[idx].value;\n";
 	echo " 	if (value == '1') { // 省市组\n";
-	echo " 		obj_city_group.disabled=false;\n";
-	echo " 		obj_telephone_group.disabled=true;\n";
+	echo " 		document.getElementById('route_city').setAttribute('readOnly', false);\n";
+	echo " 		document.getElementById('route_telephone').setAttribute('readOnly', true);\n";
 	echo " 	} else {\n";
-	echo " 		obj_city_group.disabled=true;\n";
-	echo " 		obj_telephone_group.disabled=false;\n";
+	echo " 		document.getElementById('route_city').setAttribute('readOnly', true);\n";
+	echo " 		document.getElementById('route_telephone').setAttribute('readOnly', false);\n";
 	echo "	}\n";
 	echo " }\n";
 	echo "</script>\n";
@@ -920,7 +920,7 @@
 	echo "	".$text['label-route_city']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "	<input class='formfld' type='text' name='route_city' value=\"".escape($route_city)."\">\n";
+	echo "	<input class='formfld' type='text' name='route_city' id='route_city' value=\"".escape($route_city)."\">\n";
 		echo "<br />\n";
 		echo $text['description-route_city']."\n";
 	echo "</td>\n";
@@ -932,7 +932,7 @@
 	echo "	".$text['label-route_telephone']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "	<input class='formfld' type='text' name='route_telephone' value=\"".escape($route_telephone)."\">\n";
+	echo "	<input class='formfld' type='text' name='route_telephone' id='route_telephone' value=\"".escape($route_telephone)."\">\n";
 		echo "<br />\n";
 		echo $text['description-route_telephone']."\n";
 	echo "</td>\n";
