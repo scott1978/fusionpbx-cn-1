@@ -136,6 +136,7 @@
 				$sql .= "'$route_order' ";
 				$sql .= ")";
 				echo "sql = ".$sql;
+				exit;
 				$db->exec(check_sql($sql));
 				unset($sql);
 			}
@@ -635,7 +636,6 @@
 				messages::add($text['message-update']);
 			}
 			header("Location: route.php");
-			// header("Location: destination_edit.php?id=".$destination_uuid."&type=".escape($destination_type));
 			return;
 
 	} //(count($_POST) > 0 && strlen($_POST["persistformvar"]) == 0)
