@@ -51,6 +51,29 @@
 		$action = "add";
 	}
 
+//get data by route_uuid
+	if (count($_GET) > 0 && isset($route_uuid)) {
+		$sql = "select * from v_landing_route where route_uuid='$route_uuid' limit 1";
+		$prep_statement = $db->prepare(check_sql($sql));
+		$prep_statement->execute();
+		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+		foreach ($result as &$row) {
+			$route_name = $row["route_name"];
+			$route_gateway = $row["route_gateway"];
+			$route_type = $row["route_type"];
+			$route_city = $row["route_city"];
+			$route_telephone = $row["route_telephone"];
+			$route_weekday = $row["route_weekday"];
+			$route_start_time = $row["route_start_time"];
+			$route_end_time = $row["route_end_time"];
+			$enabled = $row["enabled"];
+			$route_cmd = $row["route_cmd"];
+			$route_order = $row["route_order"];
+			break; //limit to 1 row
+		}
+		unset ($prep_statement);
+	}
+
 //get http post variables and set them to php variables
 	if (count($_POST) > 0) {
 
@@ -100,9 +123,6 @@
 			}
 
 		// add
-			echo "1111";
-			echo $action;
-
 			if ($action == "add") {
 				$sql = "insert into v_landing_route ";
 				$sql .= "(";
