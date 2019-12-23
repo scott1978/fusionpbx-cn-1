@@ -102,6 +102,8 @@
 			}
 
 		// add
+			echo "1111";
+			echo $action;
 			if ($action == "add") {
 				$sql = "insert into v_landing_route ";
 				$sql .= "(";
@@ -632,7 +634,8 @@
 			if ($action == "update") {
 				messages::add($text['message-update']);
 			}
-			header("Location: destination_edit.php?id=".$destination_uuid."&type=".escape($destination_type));
+			header("Location: route.php");
+			// header("Location: destination_edit.php?id=".$destination_uuid."&type=".escape($destination_type));
 			return;
 
 	} //(count($_POST) > 0 && strlen($_POST["persistformvar"]) == 0)
