@@ -161,10 +161,12 @@
 		// update
 			if ($action == "update" && isset($route_uuid)) {
 				$sql = "update v_landing_route set route_name='$route_name' and route_gateway='$route_gateway' and ";
-				$sql = "route_weekday='$route_weekday' and route_start_time='$route_start_time' and ";
-				$sql = "route_end_time='$route_end_time' and enabled='$enabled' and route_cmd='$route_cmd' and ";
-				$sql = "route_type='$route_type' and route_city='$route_city' and route_telephone='$route_telephone' and ";
-				$sql = "route_order='$route_order' where route_uuid='$route_uuid'";
+				$sql .= "route_weekday='$route_weekday' and route_start_time='$route_start_time' and ";
+				$sql .= "route_end_time='$route_end_time' and enabled='$enabled' and route_cmd='$route_cmd' and ";
+				$sql .= "route_type='$route_type' and route_city='$route_city' and route_telephone='$route_telephone' and ";
+				$sql .= "route_order='$route_order' where route_uuid='$route_uuid'";
+				echo "sql = ".$sql;
+				exit;
 				$db->exec(check_sql($sql));
 				unset($sql);
 			}
