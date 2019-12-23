@@ -68,6 +68,9 @@
 			$enabled = trim($_POST["enabled"]);
 			$route_cmd = trim($_POST["route_cmd"]);
 			$route_order = trim($_POST["route_order"]);
+			if !(isset($route_order)) {
+				$route_order = '1';
+			}
 	}
 
 //process the http post 
@@ -104,6 +107,7 @@
 		// add
 			echo "1111";
 			echo $action;
+
 			if ($action == "add") {
 				$sql = "insert into v_landing_route ";
 				$sql .= "(";
@@ -119,7 +123,7 @@
 				$sql .= "route_city, ";
 				$sql .= "route_telephone, ";
 				$sql .= "route_order ";
-				$sql .= ")";
+				$sql .= ") ";
 				$sql .= "values ";
 				$sql .= "(";
 				$sql .= "'".uuid()."', ";
