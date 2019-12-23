@@ -829,20 +829,20 @@
 // 	echo "	}\n";
 // 	echo "</script>\n";
 
-	echo "<script type='text/javascript'>\n";
-	echo "function route_type_control() {\n";
-	echo " 	var obj_type = document.getElementById('route_type');\n";
-	echo "	var idx = obj_type.selectedIndex;\n";
-	echo " 	var value = obj_type.options[idx].value;\n";
-	echo " 	if (value == '1') { // 省市组\n";
-	echo " 		document.getElementById('route_city').readOnly=false;\n";
-	echo " 		document.getElementById('route_telephone').readOnly=true;\n";
-	echo " 	} else {\n";
-	echo " 		document.getElementById('route_city').readOnly=true;\n";
-	echo " 		document.getElementById('route_telephone').readOnly=false;\n";
-	echo "	}\n";
-	echo " }\n";
-	echo "</script>\n";
+	// echo "<script type='text/javascript'>\n";
+	// echo "function route_type_control() {\n";
+	// echo " 	var obj_type = document.getElementById('route_type');\n";
+	// echo "	var idx = obj_type.selectedIndex;\n";
+	// echo " 	var value = obj_type.options[idx].value;\n";
+	// echo " 	if (value == '1') { // 省市组\n";
+	// echo " 		document.getElementById('route_city').readOnly=false;\n";
+	// echo " 		document.getElementById('route_telephone').readOnly=true;\n";
+	// echo " 	} else {\n";
+	// echo " 		document.getElementById('route_city').readOnly=true;\n";
+	// echo " 		document.getElementById('route_telephone').readOnly=false;\n";
+	// echo "	}\n";
+	// echo " }\n";
+	// echo "</script>\n";
 
 
 
@@ -897,8 +897,8 @@
 	echo "	".$text['label-route_type']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	// echo "	<select class='formfld' name='route_type' id='route_type'>\n";
-	echo "	<select class='formfld' name='route_type' id='route_type' onchange='route_type_control();'>\n";
+	echo "	<select class='formfld' name='route_type' id='route_type'>\n";
+	// echo "	<select class='formfld' name='route_type' id='route_type' onchange='route_type_control();'>\n";
 	switch ($route_type) {
 		case "1" : 	$selected[1] = "selected='selected'";	break;
 		case "2" : 	$selected[2] = "selected='selected'";	break;
