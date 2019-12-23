@@ -837,11 +837,11 @@
 	echo "	var idx = obj_type.selectedIndex;\n";
 	echo " 	var value = obj_type.options[idx].value;\n";
 	echo " 	if (value == '1') { // 省市组\n";
-	echo " 		obj_city_group.style.display = 'block';\n";
-	echo " 		obj_telephone_group.style.display = 'none';\n";
+	echo " 		obj_city_group.disabled=false;\n";
+	echo " 		obj_telephone_group.disabled=true;\n";
 	echo " 	} else {\n";
-	echo " 		obj_city_group.style.display = 'none';\n";
-	echo " 		obj_telephone_group.style.display = 'block';\n";
+	echo " 		obj_city_group.disabled=true;\n";
+	echo " 		obj_telephone_group.disabled=false;\n";
 	echo "	}\n";
 	echo " }\n";
 	echo "</script>\n";
