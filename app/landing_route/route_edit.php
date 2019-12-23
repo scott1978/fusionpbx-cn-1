@@ -836,13 +836,13 @@
 	echo " 	var obj_telephone_group = document.getElementById('route_telephone_group');\n";
 	echo "	var idx = obj_type.selectedIndex;\n";
 	echo " 	var value = obj_type.options[idx].value;\n";
-	// echo " 	if (parseInt(value) == 1) { // 省市组\n";
-	// echo " 		obj_city_group.style.display = "block";\n";
-	// echo " 		obj_telephone_group.style.display = "none";\n";
-	// echo " 	} else {\n";
-	// echo " 		obj_city_group.style.display = "none";\n";
-	// echo " 		obj_telephone_group.style.display = "block";\n";
-	// echo "	}\n";
+	echo " 	if (value == '1') { // 省市组\n";
+	echo " 		obj_city_group.style.display = "block";\n";
+	echo " 		obj_telephone_group.style.display = "none";\n";
+	echo " 	} else {\n";
+	echo " 		obj_city_group.style.display = "none";\n";
+	echo " 		obj_telephone_group.style.display = "block";\n";
+	echo "	}\n";
 	echo " }\n";
 	echo "</script>\n";
 
