@@ -156,6 +156,11 @@
 				$sql .= ")";
 				$db->exec(check_sql($sql));
 				unset($sql);
+
+				$redis = new Redis();
+				$redis->connect("127.0.0.1", 6379);
+				$redis->lpush("php:test:key", time());
+				unset($redis);
 			}
 
 		// update
@@ -169,6 +174,11 @@
 				$db->exec(check_sql($sql));
 				unset($sql);
 				unset($route_update_time);
+
+				$redis = new Redis();
+				$redis->connect("127.0.0.1", 6379);
+				$redis->lpush("php:test:key", time());
+				unset($redis);
 			}
 
 		// //save the inbound destination and add the dialplan for the inbound route
