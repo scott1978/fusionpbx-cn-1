@@ -51,13 +51,12 @@
 		$action = "add";
 	}
 
-	echo "action: ".$action;
-
 //get http post variables and set them to php variables
 	if (count($_POST) > 0) {
 
 		//set the variables
 			$route_name = trim($_POST["route_name"]);
+
 			$route_gateway = trim($_POST["route_gateway"]);
 			$route_type = trim($_POST["route_type"]);
 			$route_city = trim($_POST["route_city"]);
@@ -66,11 +65,15 @@
 			$route_start_time = trim($_POST["route_start_time"]);
 			$route_end_time = trim($_POST["route_end_time"]);
 			$enabled = trim($_POST["enabled"]);
+			if (int)$enabled == 0 {
+				$enabled = '0';
+			}
+
 			$route_cmd = trim($_POST["route_cmd"]);
 			$route_order = trim($_POST["route_order"]);
-			// if !(isset($route_order)) {
-			// 	$route_order = '1';
-			// }
+			if (int)$route_order == 0 {
+				$route_order = '1';
+			}
 	}
 
 //process the http post 
@@ -139,8 +142,6 @@
 				$sql .= "'$route_telephone', ";
 				$sql .= "'$route_order' ";
 				$sql .= ")";
-				echo "sql = ".$sql;
-				exit;
 				$db->exec(check_sql($sql));
 				unset($sql);
 			}
@@ -911,11 +912,11 @@
 	echo "<td class='vtable' align='left'>\n";
 	echo "	<select class='formfld' name='enabled'>\n";
 	switch ($route_enabled) {
-		case "true" :	$selected[1] = "selected='selected'";	break;
-		case "false" :	$selected[2] = "selected='selected'";	break;
+		case "1" :	$selected[1] = "selected='selected'";	break;
+		case "0" :	$selected[2] = "selected='selected'";	break;
 	}
-	echo "	<option value='true' ".$selected[1].">".$text['label-true']."</option>\n";
-	echo "	<option value='false' ".$selected[2].">".$text['label-false']."</option>\n";
+	echo "	<option value='1' ".$selected[1].">".$text['label-true']."</option>\n";
+	echo "	<option value='0' ".$selected[2].">".$text['label-false']."</option>\n";
 	unset($selected);
 	echo "	</select>\n";
 	echo "<br />\n";
