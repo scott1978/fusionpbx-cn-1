@@ -61,6 +61,26 @@ $text['label-route_gateway']['ru-ru'] = "Gateway";
 $text['label-route_gateway']['sv-se'] = "Gateway";
 $text['label-route_gateway']['uk-ua'] = "Gateway";
 
+$text['label-route_type']['en-us'] = "组类型";
+$text['label-route_type']['ar-eg'] = "Group";
+$text['label-route_type']['de-at'] = "Group";
+$text['label-route_type']['de-ch'] = "Group";
+$text['label-route_type']['de-de'] = "Group";
+$text['label-route_type']['es-cl'] = "Group";
+$text['label-route_type']['es-mx'] = "Group";
+$text['label-route_type']['fr-ca'] = "Group";
+$text['label-route_type']['fr-fr'] = "Group";
+$text['label-route_type']['he-il'] = "Group";
+$text['label-route_type']['it-it'] = "Group";
+$text['label-route_type']['nl-nl'] = "Group";
+$text['label-route_type']['pl-pl'] = "Group";
+$text['label-route_type']['pt-br'] = "Group";
+$text['label-route_type']['pt-pt'] = "Group";
+$text['label-route_type']['ro-ro'] = "Group";
+$text['label-route_type']['ru-ru'] = "Group";
+$text['label-route_type']['sv-se'] = "Group";
+$text['label-route_type']['uk-ua'] = "Group";
+
 $text['label-route_city']['en-us'] = "省市组";
 $text['label-route_city']['ar-eg'] = "City";
 $text['label-route_city']['de-at'] = "City";
