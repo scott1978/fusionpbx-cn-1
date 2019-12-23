@@ -193,6 +193,7 @@
 	echo th_order_by('route_update_time', $text['label-route_update_time'], $order_by, $order, $param);
 	echo th_order_by('route_enabled', $text['label-route_enabled'], $order_by, $order, $param);
 	echo th_order_by('route_cmd', $text['label-route_cmd'], $order_by, $order, $param);
+	echo th_order_by('route_order', $text['label-route_order'], $order_by, $order, $param);
 	echo "	<td class='list_control_icons'>";
 	if (permission_exists('landing_route_add')) {
 		echo "		<a href='route_edit.php' alt='".$text['button-add']."'>$v_link_label_add</a>";
@@ -233,6 +234,7 @@
 				echo "	<td valign='top' class='".$row_style[$c]."'>True&nbsp;</td>\n";
 			}
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_cmd'])."&nbsp;</td>\n";
+			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_order'])."&nbsp;</td>\n";
 			echo "	<td class='list_control_icons'>";
 			if (permission_exists('landing_route_edit')) {
 				echo "<a href='landing_route_edit.php?id=".escape($row['route_uuid'])."' alt='".$text['button-edit']."'>$v_link_label_edit</a>";
