@@ -57,8 +57,9 @@
 		//set the variables
 			$route_name = trim($_POST["route_name"]);
 			$route_gateway = trim($_POST["route_gateway"]);
-			$route_area_name = trim($_POST["route_area_name"]);
-			$route_area_code = trim($_POST["route_area_code"]);
+			$route_type = trim($_POST["route_type"]);
+			$route_city = trim($_POST["route_city"]);
+			$route_telephone = trim($_POST["route_telephone"]);
 			$route_weekday = trim($_POST["route_weekday"]);
 			$route_start_time = trim($_POST["route_start_time"]);
 			$route_end_time = trim($_POST["destination_caller_id_number"]);
@@ -786,27 +787,48 @@
 	echo "</td>\n";
 	echo "</tr>\n";
 
-	// route_area_name
+	// route_type
 	echo "<tr>\n";
 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	echo "	".$text['label-route_area_name']."\n";
+	echo "	".$text['label-route_type']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "	<input class='formfld' type='text' name='route_area_name' maxlength='255' value=\"".escape($route_area_name)."\" required='required'>\n";
-		echo "<br />\n";
-		echo $text['description-route_area_name']."\n";
+	echo "	<select class='formfld' name='route_type' id='route_type'>\n";
+	// echo "	<select class='formfld' name='route_type' id='route_type' onchange='type_control(this.options[this.selectedIndex].value);context_control();'>\n";
+	switch ($route_type) {
+		case "1" : 	$selected[1] = "selected='selected'";	break;
+		case "2" : 	$selected[2] = "selected='selected'";	break;
+	}
+	echo "	<option value='1' ".$selected[1].">".$text['option-type_city']."</option>\n";
+	echo "	<option value='2' ".$selected[2].">".$text['option-type_telephone']."</option>\n";
+	unset($selected);
+	echo "	</select>\n";
+	echo "<br />\n";
+	echo $text['description-route_type']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 
-	// route_area_code
+	// route_city
 	echo "<tr>\n";
 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	echo "	".$text['label-route_area_code']."\n";
+	echo "	".$text['label-route_city']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "	<input class='formfld' type='text' name='route_area_code' maxlength='255' value=\"".escape($route_area_code)."\" readonly='readonly'>\n";
+	echo "	<input class='formfld' type='text' name='route_city' value=\"".escape($route_city)."\" required='required'>\n";
 		echo "<br />\n";
-		echo $text['description-route_area_code']."\n";
+		echo $text['description-route_city']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+
+	// route_telephone
+	echo "<tr>\n";
+	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "	".$text['label-route_telephone']."\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	echo "	<input class='formfld' type='text' name='route_telephone' value=\"".escape($route_telephone)."\">\n";
+		echo "<br />\n";
+		echo $text['description-route_telephone']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 
@@ -841,7 +863,7 @@
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
 	echo "	<select class='formfld' name='destination_enabled'>\n";
-	switch ($destination_enabled) {
+	switch ($route_enabled) {
 		case "true" :	$selected[1] = "selected='selected'";	break;
 		case "false" :	$selected[2] = "selected='selected'";	break;
 	}

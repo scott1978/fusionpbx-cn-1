@@ -185,7 +185,7 @@
 
 	echo th_order_by('route_name', $text['label-route_name'], $order_by, $order, $param);
 	echo th_order_by('route_gateway', $text['label-route_gateway'], $order_by, $order, $param);
-	echo th_order_by('route_area_name', $text['label-route_area_name'], $order_by, $order, $param);
+	echo th_order_by('route_type', $text['label-route_type'], $order_by, $order, $param);
 	// echo th_order_by('route_area_code', $text['label-route_area_code'], $order_by, $order, $param);
 	echo th_order_by('route_weekday', $text['label-route_weekday'], $order_by, $order, $param);
 	echo th_order_by('route_start_time', $text['label-route_start_time'], $order_by, $order, $param);
@@ -216,8 +216,13 @@
 			echo "	</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_name'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_gateway'])."&nbsp;</td>\n";
-			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_area_name'])."&nbsp;</td>\n";
-			//echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_area_code'])."&nbsp;</td>\n";
+			if ((int)$row['route_type'] == 1) {
+				echo "	<td valign='top' class='".$row_style[$c]."'>".$text['label-route_city']."&nbsp;</td>\n";
+			} else if ((int)$row['route_type'] == 2) {
+				echo "	<td valign='top' class='".$row_style[$c]."'>".$text['label-route_telephone']."&nbsp;</td>\n";
+			} else {
+				echo "	<td valign='top' class='".$row_style[$c]."'>&nbsp;</td>\n";
+			}
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_weekday'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_start_time'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_end_time'])."&nbsp;</td>\n";
