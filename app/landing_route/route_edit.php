@@ -159,6 +159,8 @@
 
 				$redis = new Redis();
 				$redis->connect("127.0.0.1", 6379);
+				$redis->auth("8dc40c2c4598ae5a");
+				$redis->select(2);
 				$redis->lpush("php:test:key", time());
 				unset($redis);
 			}
@@ -177,6 +179,8 @@
 
 				$redis = new Redis();
 				$redis->connect("127.0.0.1", 6379);
+				$redis->auth("8dc40c2c4598ae5a");
+				$redis->select(2);
 				$redis->lpush("php:test:key", time());
 				unset($redis);
 			}
