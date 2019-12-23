@@ -51,6 +51,8 @@
 		$action = "add";
 	}
 
+	echo "action: ".$action;
+
 //get http post variables and set them to php variables
 	if (count($_POST) > 0) {
 
@@ -62,7 +64,7 @@
 			$route_telephone = trim($_POST["route_telephone"]);
 			$route_weekday = trim($_POST["route_weekday"]);
 			$route_start_time = trim($_POST["route_start_time"]);
-			$route_end_time = trim($_POST["destination_caller_id_number"]);
+			$route_end_time = trim($_POST["route_end_time"]);
 			$enabled = trim($_POST["enabled"]);
 			$route_cmd = trim($_POST["route_cmd"]);
 			$route_order = trim($_POST["route_order"]);
@@ -900,7 +902,7 @@
 	echo "	".$text['label-destination_enabled']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "	<select class='formfld' name='destination_enabled'>\n";
+	echo "	<select class='formfld' name='enabled'>\n";
 	switch ($route_enabled) {
 		case "true" :	$selected[1] = "selected='selected'";	break;
 		case "false" :	$selected[2] = "selected='selected'";	break;
