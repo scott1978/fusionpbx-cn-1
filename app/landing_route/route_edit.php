@@ -161,13 +161,11 @@
 		// update
 			if ($action == "update" && isset($route_uuid)) {
 				$route_update_time = date('Y-m-d H:i:s');
-				$sql = "update v_landing_route set (route_name='$route_name', route_gateway='$route_gateway', ";
+				$sql = "update v_landing_route set route_name='$route_name', route_gateway='$route_gateway', ";
 				$sql .= "route_weekday='$route_weekday', route_start_time='$route_start_time', ";
 				$sql .= "route_end_time='$route_end_time', enabled='$enabled', route_cmd='$route_cmd', ";
 				$sql .= "route_type='$route_type', route_city='$route_city', route_telephone='$route_telephone', ";
-				$sql .= "route_order='$route_order', route_update_time='$route_update_time') where route_uuid='$route_uuid'";
-				echo "sql = ".$sql;
-				exit;
+				$sql .= "route_order='$route_order', route_update_time='$route_update_time' where route_uuid='$route_uuid'";
 				$db->exec(check_sql($sql));
 				unset($sql);
 				unset($route_update_time);
@@ -987,11 +985,9 @@
 	echo "</tr>\n";
 	echo "	<tr>\n";
 	echo "		<td colspan='2' align='right'>\n";
-	// if ($action == "update") {
-	// 	echo "		<input type='hidden' name='db_destination_number' value='".escape($destination_number)."'>\n";
-	// 	echo "		<input type='hidden' name='dialplan_uuid' value='".escape($dialplan_uuid)."'>\n";
-	// 	echo "		<input type='hidden' name='destination_uuid' value='".escape($destination_uuid)."'>\n";
-	// }
+	if ($action == "update") {
+		echo "		<input type='hidden' name='route_uuid' value='".escape($route_uuid)."'>\n";
+	}
 	echo "			<br>";
 	echo "			<input type='submit' class='btn' value='".$text['button-save']."'>\n";
 	echo "		</td>\n";
