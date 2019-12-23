@@ -237,7 +237,7 @@
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_order'])."&nbsp;</td>\n";
 			echo "	<td class='list_control_icons'>";
 			if (permission_exists('landing_route_edit')) {
-				echo "<a href='landing_route_edit.php?id=".escape($row['route_uuid'])."' alt='".$text['button-edit']."'>$v_link_label_edit</a>";
+				echo "<a href='route_edit.php?id=".escape($row['route_uuid'])."' alt='".$text['button-edit']."'>$v_link_label_edit</a>";
 			}
 			if (permission_exists('landing_route_delete')) {
 				echo "<button type='submit' class='btn btn-default list_control_icon' name=\"data_list[$x][action]\" alt='".$text['button-delete']."' value='delete'><span class='glyphicon glyphicon-remove'></span></button>";

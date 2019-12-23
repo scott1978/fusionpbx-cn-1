@@ -56,7 +56,6 @@
 
 		//set the variables
 			$route_name = trim($_POST["route_name"]);
-
 			$route_gateway = trim($_POST["route_gateway"]);
 			$route_type = trim($_POST["route_type"]);
 			$route_city = trim($_POST["route_city"]);
@@ -65,15 +64,8 @@
 			$route_start_time = trim($_POST["route_start_time"]);
 			$route_end_time = trim($_POST["route_end_time"]);
 			$enabled = trim($_POST["enabled"]);
-			// if (int)$enabled == 0 {
-			// 	$enabled = '0';
-			// }
-
 			$route_cmd = trim($_POST["route_cmd"]);
 			$route_order = trim($_POST["route_order"]);
-			// if (int)$route_order == 0 {
-			// 	$route_order = '1';
-			// }
 	}
 
 //process the http post 
