@@ -65,6 +65,7 @@
 			$route_end_time = trim($_POST["destination_caller_id_number"]);
 			$enabled = trim($_POST["enabled"]);
 			$route_cmd = trim($_POST["route_cmd"]);
+			$route_order = trim($_POST["route_order"]);
 	}
 
 //process the http post 
@@ -96,6 +97,43 @@
 				echo "</div>\n";
 				require_once "resources/footer.php";
 				return;
+			}
+
+		// add
+			if ($action == "add") {
+				$sql = "insert into v_landing_route ";
+				$sql .= "(";
+				$sql .= "route_uuid, ";
+				$sql .= "route_name, ";
+				$sql .= "route_gateway, ";
+				$sql .= "route_weekday, ";
+				$sql .= "route_start_time, ";
+				$sql .= "route_end_time, ";
+				$sql .= "enabled, ";
+				$sql .= "route_cmd, ";
+				$sql .= "route_type, ";
+				$sql .= "route_city, ";
+				$sql .= "route_telephone, ";
+				$sql .= "route_order ";
+				$sql .= ")";
+				$sql .= "values ";
+				$sql .= "(";
+				$sql .= "'".uuid()."', ";
+				$sql .= "'$route_name', ";
+				$sql .= "'$route_gateway', ";
+				$sql .= "'$route_weekday', ";
+				$sql .= "'$route_start_time', ";
+				$sql .= "'$route_end_time', ";
+				$sql .= "'$enabled', ";
+				$sql .= "'$route_cmd', ";
+				$sql .= "'$route_type', ";
+				$sql .= "'$route_city', ";
+				$sql .= "'$route_telephone', ";
+				$sql .= "'$route_order' ";
+				$sql .= ")";
+				echo "sql = ".$sql;
+				$db->exec(check_sql($sql));
+				unset($sql);
 			}
 
 		// //save the inbound destination and add the dialplan for the inbound route
