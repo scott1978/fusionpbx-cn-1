@@ -849,7 +849,7 @@
 	echo "<script type='text/javascript'>\n";
 	echo "	var setting = { check: { enable: true }, data: { simpleData: { enable: true } } };\n";
 	echo "	var zNodes = [{id:1,pId:0,name:'全国',checked:true},{id:43,pId:1,name:'湖南',checked:true},{id:4301,pId:43,name:'长沙',checked:true},{id:4302,pId:43,name:'株洲',checked:true},{id:4303,pId:43,name:'湘潭',checked:true},{id:4304,pId:43,name:'衡阳',checked:true},{id:4305,pId:43,name:'岳阳',checked:true},{id:42,pId:1,name:'湖北',open:false},{id:4201,pId:42,name:'武汉'},{id:4302,pId:42,name:'咸宁'},];\n";
-	echo "	$(document).ready(function(){ $.fn.zTree.init($('#treeCity'), setting, $zNodes); });\n"
+	// echo "	$(document).ready(function(){ $.fn.zTree.init($('#treeCity'), setting, zNodes); });\n"
 	// echo "\n"
 	// echo "var setting = { check: { enable: true }, data: { simpleData: { enable: true } } };\n"
 	// echo "$(document).ready(function(){ $.fn.zTree.init($('#treeCity'), setting, $zNodes); });\n"
