@@ -31,7 +31,6 @@
 <link rel="stylesheet" type="text/css" href="<!--{project_path}-->/resources/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="<!--{project_path}-->/resources/bootstrap/css/bootstrap-datetimepicker.min.css" />
 <link rel="stylesheet" type="text/css" href="<!--{project_path}-->/resources/bootstrap/css/bootstrap-colorpicker.min.css">
-<link rel="stylesheet" type="text/css" href="<!--{project_path}-->/resources/bootstrap/css/zTreeStyle/zTreeStyle.css">
 <link rel="stylesheet" type="text/css" href="<!--{project_path}-->/themes/<?php echo escape($_SESSION['domain']['template']['name']); ?>/css.php<?php echo ($default_login) ? '?login=default' : null; ?>">
 <?php
 //load custom css
@@ -53,8 +52,6 @@
 <script language="JavaScript" type="text/javascript" src="<!--{project_path}-->/resources/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
 <script language="JavaScript" type="text/javascript" src="<!--{project_path}-->/resources/bootstrap/js/bootstrap-colorpicker.js"></script>
 <script language="JavaScript" type="text/javascript" src="<!--{project_path}-->/resources/bootstrap/js/bootstrap-pwstrength.min.js"></script>
-<script language="JavaScript" type="text/javascript" src="<!--{project_path}-->/resources/jquery/ztree/jquery.ztree.core.min.js"></script>
-<script language="JavaScript" type="text/javascript" src="<!--{project_path}-->/resources/jquery/ztree/jquery.ztree.excheck.min.js"></script>
 <?php
 //web font loader
 	if ($_SESSION['theme']['font_loader']['text'] == 'true') {
