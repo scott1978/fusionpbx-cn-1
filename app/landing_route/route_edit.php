@@ -829,8 +829,9 @@
 // 	echo "	}\n";
 // 	echo "</script>\n";
 
-	// echo "<script type='text/javascript'>\n";
-	// echo "function route_type_control() {\n";
+	echo "<script type='text/javascript'>\n";
+	echo "function setFormValue() {\n";
+	echo "  console.log('come here'); \n";
 	// echo " 	var obj_type = document.getElementById('route_type');\n";
 	// echo "	var idx = obj_type.selectedIndex;\n";
 	// echo " 	var value = obj_type.options[idx].value;\n";
@@ -841,8 +842,10 @@
 	// echo " 		document.getElementById('route_city').readOnly=true;\n";
 	// echo " 		document.getElementById('route_telephone').readOnly=false;\n";
 	// echo "	}\n";
-	// echo " }\n";
-	// echo "</script>\n";
+	echo " }\n";
+	echo "</script>\n";
+
+	// setFormValue
 
 
 
@@ -1020,7 +1023,7 @@
 		echo "		<input type='hidden' name='route_uuid' value='".escape($route_uuid)."'>\n";
 	}
 	echo "			<br>";
-	echo "			<input type='submit' class='btn' value='".$text['button-save']."'>\n";
+	echo "			<input type='submit' class='btn' onclick='setFormValue()' value='".$text['button-save']."'>\n";
 	echo "		</td>\n";
 	echo "	</tr>";
 	echo "</table>";
