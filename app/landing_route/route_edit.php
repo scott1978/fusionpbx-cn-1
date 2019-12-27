@@ -843,6 +843,7 @@
 // 	echo "	}\n";
 // 	echo "</script>\n";
 
+	echo "<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n";
 	echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.core.min.js\"></script>\n";
 	echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.excheck.min.js\"></script>\n";
 	echo "<link rel=\"stylesheet\" href=\"".PROJECT_PATH."/resources/bootstrap/css/zTreeStyle/zTreeStyle.css\" />\n";
