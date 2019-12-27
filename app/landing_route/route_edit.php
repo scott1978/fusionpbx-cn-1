@@ -843,16 +843,17 @@
 // 	echo "	}\n";
 // 	echo "</script>\n";
 
+	echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.core.min.js\"></script>\n";
+	echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.excheck.min.js\"></script>\n";
+	echo "<link rel=\"stylesheet\" href=\"".PROJECT_PATH."/resources/bootstrap/css/zTreeStyle/zTreeStyle.css\" />\n";
+
 	echo "<script type='text/javascript'>\n";
-	echo "<link rel='stylesheet' href='/resources/bootstrap/css/zTreeStyle/zTreeStyle.css' type='text/css'>\n"
-	echo "<script type='text/javascript' src='/resources/jquery/ztree/jquery.ztree.core.min.js'></script>\n"
-	echo "<script type='text/javascript' src='/resources/jquery/ztree/jquery.ztree.excheck.min.js'></script>\n"
 	echo "\n"
-	echo "var setting = { check: { enable: true }, data: { simpleData: { enable: true } } };\n"
+	// echo "var setting = { check: { enable: true }, data: { simpleData: { enable: true } } };\n"
 	// echo "$(document).ready(function(){ $.fn.zTree.init($('#treeCity'), setting, $zNodes); });\n"
 	echo "\n"
 	echo "function setFormValue() {\n";
-	echo "  console.log('come here'); \n";
+	// echo "  console.log('come here'); \n";
 	// echo " 	var obj_type = document.getElementById('route_type');\n";
 	// echo "	var idx = obj_type.selectedIndex;\n";
 	// echo " 	var value = obj_type.options[idx].value;\n";
