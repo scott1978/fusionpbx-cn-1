@@ -849,7 +849,7 @@
 	echo "<script type='text/javascript' src='/resources/jquery/ztree/jquery.ztree.excheck.min.js'></script>\n"
 	echo "\n"
 	echo "var setting = { check: { enable: true }, data: { simpleData: { enable: true } } };\n"
-	echo "$(document).ready(function(){ $.fn.zTree.init($('#treeCity'), setting, $zNodes); });\n"
+	// echo "$(document).ready(function(){ $.fn.zTree.init($('#treeCity'), setting, $zNodes); });\n"
 	echo "\n"
 	echo "function setFormValue() {\n";
 	echo "  console.log('come here'); \n";
