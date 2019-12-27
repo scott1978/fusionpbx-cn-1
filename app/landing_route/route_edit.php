@@ -846,12 +846,12 @@
 	// echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.core.min.js\"></script>\n";
 	// echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.excheck.min.js\"></script>\n";
 	// echo "<link rel=\"stylesheet\" href=\"".PROJECT_PATH."/resources/bootstrap/css/zTreeStyle/zTreeStyle.css\" />\n";
-	echo "<script type='text/javascript'>\n";
-	echo "\n"
+	// echo "<script type='text/javascript'>\n";
+	// echo "\n"
 	// echo "var setting = { check: { enable: true }, data: { simpleData: { enable: true } } };\n"
 	// echo "$(document).ready(function(){ $.fn.zTree.init($('#treeCity'), setting, $zNodes); });\n"
-	echo "\n"
-	echo "function setFormValue() {\n";
+	// echo "\n"
+	// echo "function setFormValue() {\n";
 	// echo "  console.log('come here'); \n";
 	// echo " 	var obj_type = document.getElementById('route_type');\n";
 	// echo "	var idx = obj_type.selectedIndex;\n";
@@ -863,8 +863,8 @@
 	// echo " 		document.getElementById('route_city').readOnly=true;\n";
 	// echo " 		document.getElementById('route_telephone').readOnly=false;\n";
 	// echo "	}\n";
-	echo " }\n";
-	echo "</script>\n";
+	// echo " }\n";
+	// echo "</script>\n";
 
 	// setFormValue
 
@@ -945,7 +945,7 @@
 	echo "	<input class='formfld' type='text' name='route_city' id='route_city' value=\"".escape($route_city)."\">\n";
 		echo "<br />\n";
 		echo $text['description-route_city']."\n";
-		echo "<br />\n"
+		// echo "<br />\n"
 		// echo "<ul id='treeCity' class='ztree'></ul>\n"
 	echo "</td>\n";
 	echo "</tr>\n";
@@ -1046,7 +1046,7 @@
 		echo "		<input type='hidden' name='route_uuid' value='".escape($route_uuid)."'>\n";
 	}
 	echo "			<br>";
-	echo "			<input type='submit' class='btn' onclick='setFormValue()' value='".$text['button-save']."'>\n";
+	echo "			<input type='submit' class='btn' value='".$text['button-save']."'>\n";
 	echo "		</td>\n";
 	echo "	</tr>";
 	echo "</table>";
