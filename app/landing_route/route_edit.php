@@ -948,7 +948,7 @@
 	echo "	<input class='formfld' type='text' name='route_city' id='route_city' value=\"".escape($route_city)."\">\n";
 		echo "<br />\n";
 		echo $text['description-route_city']."\n";
-		echo "<br />\n"
+		// echo "<br />\n"
 		// echo "<ul id='treeCity' class='ztree'></ul>\n"
 	echo "</td>\n";
 	echo "</tr>\n";
