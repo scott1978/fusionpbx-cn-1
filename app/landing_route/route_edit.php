@@ -51,6 +51,20 @@
 		$action = "add";
 	}
 
+//set ztree nodes
+	$zNodes = [
+			{ id:1, pId:0, name:'全国', checked:true},
+			{ id:43, pId:1, name:'湖南', checked:true},
+			{ id:4301, pId:43, name:'长沙', checked:true},
+			{ id:4302, pId:43, name:'株洲', checked:true},
+			{ id:4303, pId:43, name:'湘潭', checked:true},
+			{ id:4304, pId:43, name:'衡阳', checked:true},
+			{ id:4305, pId:43, name:'岳阳', checked:true},
+			{ id:42, pId:1, name:'湖北', open:false},
+			{ id:4201, pId:42, name:'武汉'},
+			{ id:4302, pId:42, name:'咸宁'},
+		];
+
 //get data by route_uuid
 	if (count($_GET) > 0 && isset($route_uuid)) {
 		$sql = "select * from v_landing_route where route_uuid='$route_uuid' limit 1";
@@ -830,6 +844,13 @@
 // 	echo "</script>\n";
 
 	echo "<script type='text/javascript'>\n";
+	echo "<link rel='stylesheet' href='/resources/bootstrap/css/zTreeStyle/zTreeStyle.css' type='text/css'>\n"
+	echo "<script type='text/javascript' src='/resources/jquery/ztree/jquery.ztree.core.min.js'></script>\n"
+	echo "<script type='text/javascript' src='/resources/jquery/ztree/jquery.ztree.excheck.min.js'></script>\n"
+	echo "\n"
+	echo "var setting = { check: { enable: true }, data: { simpleData: { enable: true } } };\n"
+	echo "$(document).ready(function(){ $.fn.zTree.init($('#treeCity'), setting, $zNodes); });\n"
+	echo "\n"
 	echo "function setFormValue() {\n";
 	echo "  console.log('come here'); \n";
 	// echo " 	var obj_type = document.getElementById('route_type');\n";
@@ -924,6 +945,8 @@
 	echo "	<input class='formfld' type='text' name='route_city' id='route_city' value=\"".escape($route_city)."\">\n";
 		echo "<br />\n";
 		echo $text['description-route_city']."\n";
+		echo "<br />\n"
+		echo "<ul id='treeCity' class='ztree'></ul>\n"
 	echo "</td>\n";
 	echo "</tr>\n";
 
