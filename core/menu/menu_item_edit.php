@@ -86,6 +86,9 @@ else {
 		//$menu_item_uuid = check_str($_POST["menu_item_uuid"]);
 		$menu_item_parent_uuid = check_str($_POST["menu_item_parent_uuid"]);
 		$menu_item_order = check_str($_POST["menu_item_order"]);
+
+		// add by hezhixiong
+		$menu_item_enabled = check_str($_POST["menu_item_enabled"]);
 	}
 
 //when a HTTP POST is available then process it
@@ -126,20 +129,20 @@ else {
 				}
 
 			//get the highest menu item order
-				if (strlen($menu_item_parent_uuid) == 0) {
-					$sql = "SELECT menu_item_order FROM v_menu_items ";
-					$sql .= "where menu_uuid = '$menu_uuid' ";
-					$sql .= "and menu_item_parent_uuid is null ";
-					$sql .= "order by menu_item_order desc ";
-					$sql .= "limit 1 ";
-					$prep_statement = $db->prepare(check_sql($sql));
-					$prep_statement->execute();
-					$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
-					foreach ($result as &$row) {
-						$highest_menu_item_order = $row['menu_item_order'];
-					}
-					unset($prep_statement);
-				}
+				// if (strlen($menu_item_parent_uuid) == 0) {
+				// 	$sql = "SELECT menu_item_order FROM v_menu_items ";
+				// 	$sql .= "where menu_uuid = '$menu_uuid' ";
+				// 	$sql .= "and menu_item_parent_uuid is null ";
+				// 	$sql .= "order by menu_item_order desc ";
+				// 	$sql .= "limit 1 ";
+				// 	$prep_statement = $db->prepare(check_sql($sql));
+				// 	$prep_statement->execute();
+				// 	$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+				// 	foreach ($result as &$row) {
+				// 		$highest_menu_item_order = $row['menu_item_order'];
+				// 	}
+				// 	unset($prep_statement);
+				// }
 
 			//add a menu item
 				if ($action == "add" && permission_exists('menu_add')) {
@@ -153,11 +156,12 @@ else {
 					$sql .= "menu_item_icon, ";
 					$sql .= "menu_item_description, ";
 					$sql .= "menu_item_protected, ";
+					$sql .= "menu_item_enabled, ";
 					$sql .= "menu_item_uuid, ";
 					$sql .= "menu_item_parent_uuid, ";
-					if (strlen($menu_item_parent_uuid) == 0) {
+					// if (strlen($menu_item_parent_uuid) == 0) {
 						$sql .= "menu_item_order, ";
-					}
+					// }
 					$sql .= "menu_item_add_user, ";
 					$sql .= "menu_item_add_date ";
 					$sql .= ")";
@@ -170,14 +174,15 @@ else {
 					$sql .= "'$menu_item_icon', ";
 					$sql .= "'$menu_item_description', ";
 					$sql .= "'$menu_item_protected', ";
+					$sql .= "'$menu_item_enabled', ";
 					$sql .= "'".$menu_item_uuid."', ";
 					if (strlen($menu_item_parent_uuid) == 0) {
 						$sql .= "null, ";
-						$sql .= "'".($highest_menu_item_order+1)."', ";
 					}
 					else {
 						$sql .= "'$menu_item_parent_uuid', ";
 					}
+					$sql .= "'".($menu_item_order)."', ";
 					$sql .= "'".$_SESSION["username"]."', ";
 					$sql .= "now() ";
 					$sql .= ")";
@@ -194,17 +199,21 @@ else {
 					$sql .= "menu_item_icon = '$menu_item_icon', ";
 					$sql .= "menu_item_description = '$menu_item_description', ";
 					$sql .= "menu_item_protected = '$menu_item_protected', ";
+					$sql .= "menu_item_enabled = '$menu_item_enabled', ";
 					if (strlen($menu_item_parent_uuid) == 0) {
 						$sql .= "menu_item_parent_uuid = null, ";
-						if (strlen($menu_item_order) > 0) {
-							$sql .= "menu_item_order = '$menu_item_order', ";
-						}
-						else {
-							$sql .= "menu_item_order = '".($highest_menu_item_order+1)."', ";
-						}
+						// if (strlen($menu_item_order) > 0) {
+						// 	$sql .= "menu_item_order = '$menu_item_order', ";
+						// }
+						// else {
+						// 	$sql .= "menu_item_order = '".($highest_menu_item_order+1)."', ";
+						// }
 					}
 					else {
 						$sql .= "menu_item_parent_uuid = '$menu_item_parent_uuid', ";
+					}
+					if (strlen($menu_item_order) > 0) {
+						$sql .= "menu_item_order = '$menu_item_order', ";
 					}
 					$sql .= "menu_item_mod_user = '".$_SESSION["username"]."', ";
 					$sql .= "menu_item_mod_date = now() ";
@@ -314,6 +323,7 @@ else {
 			$menu_item_icon = $row["menu_item_icon"];
 			$menu_item_description = $row["menu_item_description"];
 			$menu_item_protected = $row["menu_item_protected"];
+			$menu_item_enabled = $row["menu_item_enabled"];
 			$menu_item_parent_uuid = $row["menu_item_parent_uuid"];
 			$menu_item_order = $row["menu_item_order"];
 			$menu_item_add_user = $row["menu_item_add_user"];
@@ -544,14 +554,45 @@ else {
 	echo "</td>\n";
 	echo "</tr>\n";
 
-	if ($action == "update") {
-		if ($menu_item_parent_uuid == "") {
-			echo "	<tr>";
-			echo "		<td class='vncell'>".$text['label-menu_order']."</td>";
-			echo "		<td class='vtable'><input type='text' class='formfld' name='menu_item_order' value='".escape($menu_item_order)."'></td>";
-			echo "	</tr>";
-		}
+	// enabled
+	echo "<tr>\n";
+	echo "<td class='vncell' valign='top' align='left' nowrap>\n";
+	echo "    ".$text['label-enabled']."\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	echo "    <select class='formfld' name='menu_item_enabled'>\n";
+	if ($menu_item_enabled == "0") {
+		echo "    <option value='0' selected='selected' >".$text['label-false']."</option>\n";
 	}
+	else {
+		echo "    <option value='0'>".$text['label-false']."</option>\n";
+	}
+	if ($menu_item_enabled == "1") {
+		echo "    <option value='1' selected='selected' >".$text['label-true']."</option>\n";
+	}
+	else {
+		echo "    <option value='1'>".$text['label-true']."</option>\n";
+	}
+	echo "    </select><br />\n";
+	echo $text['description-enabled']."<br />\n";
+	echo "\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+
+	// if ($action == "update") {
+	// 	if ($menu_item_parent_uuid == "") {
+	// 		echo "	<tr>";
+	// 		echo "		<td class='vncell'>".$text['label-menu_order']."</td>";
+	// 		echo "		<td class='vtable'><input type='text' class='formfld' name='menu_item_order' value='".escape($menu_item_order)."'></td>";
+	// 		echo "	</tr>";
+	// 	}
+	// }
+
+	// menu_item_order
+	echo "	<tr>";
+	echo "		<td class='vncell'>".$text['label-menu_order']."</td>";
+	echo "		<td class='vtable'><input type='text' class='formfld' name='menu_item_order' value='".escape($menu_item_order)."'></td>";
+	echo "	</tr>";
 
 	echo "	<tr>";
 	echo "		<td class='vncell'>".$text['label-description']."</td>";
