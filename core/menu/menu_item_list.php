@@ -137,14 +137,15 @@ function build_db_child_menu_list ($db, $menu_item_level, $menu_item_uuid, $c) {
 					echo "</tr>";
 
 				//update the menu order
-					if ($row2[menu_item_order] != $tmp_menu_item_order) {
-						$sql  = "update v_menu_items set ";
-						$sql .= "menu_item_title = '".$row2[menu_item_title]."', ";
-						$sql .= "menu_item_order = '".$tmp_menu_item_order."' ";
-						$sql .= "where menu_uuid = '".$menu_uuid."' ";
-						$sql .= "and menu_item_uuid = '".$row2[menu_item_uuid]."' ";
-						$count = $db->exec(check_sql($sql));
-					}
+					// hezhixiong 不需要系统自动计算顺序，我已添加手工调整顺序
+					// if ($row2[menu_item_order] != $tmp_menu_item_order) {
+					// 	$sql  = "update v_menu_items set ";
+					// 	$sql .= "menu_item_title = '".$row2[menu_item_title]."', ";
+					// 	$sql .= "menu_item_order = '".$tmp_menu_item_order."' ";
+					// 	$sql .= "where menu_uuid = '".$menu_uuid."' ";
+					// 	$sql .= "and menu_item_uuid = '".$row2[menu_item_uuid]."' ";
+					// 	$count = $db->exec(check_sql($sql));
+					// }
 					$tmp_menu_item_order++;
 
 				//check for additional sub menus

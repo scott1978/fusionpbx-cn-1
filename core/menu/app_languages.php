@@ -21,8 +21,8 @@ $text['title-menus']['ru-ru'] = "Управление меню";
 $text['title-menus']['sv-se'] = "Meny Inställningar";
 $text['title-menus']['uk-ua'] = "Менеджер меню";
 
-$text['title-menu_item-edit']['en-us'] = "Menu Item";
-$text['title-menu_item-edit']['ar-eg'] = "";
+$text['title-menu_item-edit']['en-us'] = "更新菜单";
+$text['title-menu_item-edit']['ar-eg'] = "Menu Item";
 $text['title-menu_item-edit']['de-at'] = "Menüpunkt"; //copied from de-de
 $text['title-menu_item-edit']['de-ch'] = "Menüpunkt"; //copied from de-de
 $text['title-menu_item-edit']['de-de'] = "Menüpunkt";
@@ -41,8 +41,8 @@ $text['title-menu_item-edit']['ru-ru'] = "Пункт меню";
 $text['title-menu_item-edit']['sv-se'] = "Meny Post";
 $text['title-menu_item-edit']['uk-ua'] = "Пункт меню";
 
-$text['title-menu_item-add']['en-us'] = "Menu Item";
-$text['title-menu_item-add']['ar-eg'] = "";
+$text['title-menu_item-add']['en-us'] = "添加菜单";
+$text['title-menu_item-add']['ar-eg'] = "Menu Item";
 $text['title-menu_item-add']['de-at'] = "Menüpunkt"; //copied from de-de
 $text['title-menu_item-add']['de-ch'] = "Menüpunkt"; //copied from de-de
 $text['title-menu_item-add']['de-de'] = "Menüpunkt";
