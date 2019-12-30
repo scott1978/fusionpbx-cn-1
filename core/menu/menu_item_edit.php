@@ -217,8 +217,10 @@ else {
 					}
 					$sql .= "menu_item_mod_user = '".$_SESSION["username"]."', ";
 					$sql .= "menu_item_mod_date = now() ";
-					$sql .= "where menu_uuid = '$menu_uuid' ";
+					$sql .= "where menu_uuid = '$menu_uuid', ";
 					$sql .= "and menu_item_uuid = '$menu_item_uuid' ";
+					echo $sql;
+					exit(1);
 					$count = $db->exec(check_sql($sql));
 				}
 
