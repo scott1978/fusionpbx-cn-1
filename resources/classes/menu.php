@@ -528,7 +528,7 @@ if (!class_exists('menu')) {
 					$sql = "select i.menu_item_link, l.menu_item_title as menu_language_title, i.menu_item_title, i.menu_item_protected, i.menu_item_category, i.menu_item_icon, i.menu_item_uuid, i.menu_item_parent_uuid ";
 					$sql .= "from v_menu_items as i, v_menu_languages as l ";
 					$sql .= "where i.menu_item_uuid = l.menu_item_uuid ";
-					$sql .= "and l.enabled = '1' ";
+					$sql .= "and i.menu_item_enabled = '1' ";
 					$sql .= "and l.menu_language = '".$_SESSION['domain']['language']['code']."' ";
 					$sql .= "and l.menu_uuid = '".$this->menu_uuid."' ";
 					$sql .= "and i.menu_uuid = '".$this->menu_uuid."' ";
@@ -548,7 +548,7 @@ if (!class_exists('menu')) {
 					}
 					$sql .= ") ";
 					$sql .= ") ";
-					$sql .= "order by l.menu_item_order, i.menu_item_order asc ";
+					$sql .= "order by i.menu_item_order, l.menu_item_order asc ";
 					//$sql .= "order by l.menu_item_title, i.menu_item_order asc ";
 					$sub_prep_statement = $db->prepare($sql);
 					$sub_prep_statement->execute();
