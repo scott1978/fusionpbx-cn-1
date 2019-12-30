@@ -116,7 +116,7 @@ function build_db_child_menu_list ($db, $menu_item_level, $menu_item_uuid, $c) {
 						echo "<td valign='top' class='".$row_style[$c]."' style='text-align: center;'>".$text['label-false']." &nbsp;</td>";
 					}
 
-					if ($menu_item_enabled == "1") {
+					if ($menu_item_enabled == "true") {
 						echo "<td valign='top' class='".$row_style[$c]."' style='text-align: center;'><strong>".$text['label-true']."</strong> &nbsp;</td>";
 					}
 					else {
@@ -279,7 +279,7 @@ else {
 				echo "<td valign='top' class='".$row_style[$c]."' style='text-align: center;'>".$text['label-false']." &nbsp;</td>";
 			}
 
-			if ($menu_item_enabled == "1") {
+			if ($menu_item_enabled == "true") {
 				echo "<td valign='top' class='".$row_style[$c]."' style='text-align: center;'><strong>".$text['label-true']."</strong> &nbsp;</td>";
 			}
 			else {

@@ -202,12 +202,6 @@ else {
 					$sql .= "menu_item_enabled = '$menu_item_enabled', ";
 					if (strlen($menu_item_parent_uuid) == 0) {
 						$sql .= "menu_item_parent_uuid = null, ";
-						// if (strlen($menu_item_order) > 0) {
-						// 	$sql .= "menu_item_order = '$menu_item_order', ";
-						// }
-						// else {
-						// 	$sql .= "menu_item_order = '".($highest_menu_item_order+1)."', ";
-						// }
 					}
 					else {
 						$sql .= "menu_item_parent_uuid = '$menu_item_parent_uuid', ";
@@ -561,17 +555,17 @@ else {
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
 	echo "    <select class='formfld' name='menu_item_enabled'>\n";
-	if ($menu_item_enabled == "0") {
-		echo "    <option value='0' selected='selected' >".$text['label-false']."</option>\n";
+	if ($menu_item_enabled == "false") {
+		echo "    <option value='false' selected='selected' >".$text['label-false']."</option>\n";
 	}
 	else {
-		echo "    <option value='0'>".$text['label-false']."</option>\n";
+		echo "    <option value='false'>".$text['label-false']."</option>\n";
 	}
-	if ($menu_item_enabled == "1") {
-		echo "    <option value='1' selected='selected' >".$text['label-true']."</option>\n";
+	if ($menu_item_enabled == "true") {
+		echo "    <option value='true' selected='selected' >".$text['label-true']."</option>\n";
 	}
 	else {
-		echo "    <option value='1'>".$text['label-true']."</option>\n";
+		echo "    <option value='true'>".$text['label-true']."</option>\n";
 	}
 	echo "    </select><br />\n";
 	echo $text['description-enabled']."<br />\n";
