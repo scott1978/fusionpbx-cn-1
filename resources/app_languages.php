@@ -190,8 +190,8 @@ $text['message-copy']['sv-se'] = "Kopiering Slutförd";
 $text['message-copy']['uk-ua'] = "Скопійовано";
 $text['message-copy']['tr-tr'] = "Kopyalama İşlemi Tamamlandı";
 
-$text['message-invalid_credentials']['en-us'] = "Invalid Username and/or Password";
-$text['message-invalid_credentials']['ar-eg'] = "";
+$text['message-invalid_credentials']['en-us'] = "用户名或密码错误";
+$text['message-invalid_credentials']['ar-eg'] = "Invalid Username and/or Password";
 $text['message-invalid_credentials']['de-at'] = "Ungültiger Benutzername und/oder Passwort"; //copied from de-de
 $text['message-invalid_credentials']['de-ch'] = "Ungültiger Benutzername und/oder Passwort"; //copied from de-de
 $text['message-invalid_credentials']['de-de'] = "Ungültiger Benutzername und/oder Passwort";
