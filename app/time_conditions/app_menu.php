@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Time Conditions";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "时间条件";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Time Conditions";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Zeitschaltung";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Zeitschaltung";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Condic. de Tiempo";
@@ -25,5 +25,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/time_conditions/time_conditions.php";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "13";
 
 ?>

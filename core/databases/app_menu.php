@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Databases";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "قواعد البيانات";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "数据库管理";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Databases";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Datenbanken";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Datenbanken";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Bases de datos";
@@ -24,5 +24,7 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/core/databases/databases.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "false";
+	$apps[$x]['menu'][$y]['order'] = "14";
 
 ?>

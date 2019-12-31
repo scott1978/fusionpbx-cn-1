@@ -1,7 +1,7 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Landing Route";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "落地路由";
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Landing Route";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Landing Route";
 	$apps[$x]['menu'][$y]['title']['de-ch'] = "Landing Route";
@@ -26,5 +26,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/landing_route/route.php";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "false";
+	$apps[$x]['menu'][$y]['order'] = "5";
 
 ?>

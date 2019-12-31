@@ -1,6 +1,7 @@
 <?php
 
-$apps[$x]['menu'][3]['title']['en-us'] = "Group Manager";
+$apps[$x]['menu'][3]['title']['en-us'] = "用户组管理";
+$apps[$x]['menu'][3]['title']['ar-eg'] = "Group Manager";
 $apps[$x]['menu'][3]['title']['es-cl'] = "Administración de Grupos";
 $apps[$x]['menu'][3]['title']['fr-fr'] = "Gestion des groupes";
 $apps[$x]['menu'][3]['title']['pt-pt'] = "'Gestão de Grupos";
@@ -16,5 +17,7 @@ $apps[$x]['menu'][3]['parent_uuid'] = "594d99c5-6128-9c88-ca35-4b33392cec0f";
 $apps[$x]['menu'][3]['category'] = "internal";
 $apps[$x]['menu'][3]['path'] = "/core/groups/groups.php";
 $apps[$x]['menu'][3]['groups'][] = "superadmin";
+$apps[$x]['menu'][3]['order'] = "8";
+$apps[$x]['menu'][3]['enabled'] = "true";
 
 ?>

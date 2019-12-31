@@ -1,7 +1,7 @@
 <?php
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Call Detail Records";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "通话记录";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Call Detail Records";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Meine Gespräche";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Meine Gespräche";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Registro de detalle de llamada";
@@ -24,10 +24,12 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/xml_cdr/xml_cdr.php";
 	$apps[$x]['menu'][$y]['groups'][] = "user";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
-	$apps[$x]['menu'][$y]['groups'][] = "superadmin";	
+	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "3";
 	$y++;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "CDR Statistics";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "通话统计";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "CDR Statistics";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Anruf Statistik";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Anruf Statistik";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Statistics CDR";
@@ -51,9 +53,11 @@
 	$apps[$x]['menu'][$y]['groups'][] = "user";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "7";
 	$y++;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Extension Summary";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "分机统计";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Extension Summary";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Nebenstellen Statistik";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Nebenstellen Statistik";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Extension Summary";
@@ -76,5 +80,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/xml_cdr/xml_cdr_extension_summary.php";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "8";
 
 ?>

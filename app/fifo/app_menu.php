@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Queues";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "呼叫队列";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Queues";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Warteschlangen";
 	$apps[$x]['menu'][$y]['title']['de-ch'] = "Warteschlangen";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Warteschlangen";
@@ -26,5 +26,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/dialplans/dialplans.php?app_uuid=16589224-c876-aeb3-f59f-523a1c0801f7";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "7";
 
 ?>

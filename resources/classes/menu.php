@@ -122,6 +122,7 @@ if (!class_exists('menu')) {
 										$menu_item_path = $menu['path'];
 										$menu_item_order = $menu['order'];
 										$menu_item_description = $menu['desc'];
+										$menu_item_enabled = $menu['enabled'];
 
 									//menu found set the default
 										$menu_item_exists = true;
@@ -154,6 +155,7 @@ if (!class_exists('menu')) {
 													if (strlen($menu_item_parent_uuid) > 0) {
 														$sql .= "menu_item_parent_uuid, ";
 													}
+													$sql .= "menu_item_enabled, ";
 													$sql .= "menu_item_description ";
 													$sql .= ") ";
 													$sql .= "values ";
@@ -170,6 +172,7 @@ if (!class_exists('menu')) {
 													if (strlen($menu_item_parent_uuid) > 0) {
 														$sql .= "'$menu_item_parent_uuid', ";
 													}
+													$sql .= "'$menu_item_enabled', ";
 													$sql .= "'$menu_item_description' ";
 													$sql .= ")";
 													if ($menu_item_uuid == $menu_item_parent_uuid) {
@@ -459,6 +462,7 @@ if (!class_exists('menu')) {
 						$sql .= "and l.menu_uuid = '".$this->menu_uuid."' ";
 						$sql .= "and i.menu_uuid = '".$this->menu_uuid."' ";
 						$sql .= "and i.menu_item_parent_uuid is null ";
+						$sql .= "and i.menu_item_enabled = 'true' ";
 						$sql .= "and i.menu_item_uuid in ";
 						$sql .= "(select menu_item_uuid from v_menu_item_groups where menu_uuid = '".$this->menu_uuid."' ";
 						$sql .= "and ( ";
@@ -528,7 +532,7 @@ if (!class_exists('menu')) {
 					$sql = "select i.menu_item_link, l.menu_item_title as menu_language_title, i.menu_item_title, i.menu_item_protected, i.menu_item_category, i.menu_item_icon, i.menu_item_uuid, i.menu_item_parent_uuid ";
 					$sql .= "from v_menu_items as i, v_menu_languages as l ";
 					$sql .= "where i.menu_item_uuid = l.menu_item_uuid ";
-					$sql .= "and i.menu_item_enabled = '1' ";
+					$sql .= "and i.menu_item_enabled = 'true' ";
 					$sql .= "and l.menu_language = '".$_SESSION['domain']['language']['code']."' ";
 					$sql .= "and l.menu_uuid = '".$this->menu_uuid."' ";
 					$sql .= "and i.menu_uuid = '".$this->menu_uuid."' ";

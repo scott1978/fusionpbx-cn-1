@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Call Centers";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "呼叫中心";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Call Centers";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Callcenter";
 	$apps[$x]['menu'][$y]['title']['de-ch'] = "";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Callcenter";
@@ -27,9 +27,11 @@
 	$apps[$x]['menu'][$y]['groups'][] = "agent";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "6";
 	$y++;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Agent Status";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "座席状态";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Agent Status";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Agenten Status";
 	$apps[$x]['menu'][$y]['title']['de-ch'] = "";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Agenten Status";
@@ -53,5 +55,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/call_centers/call_center_agent_status.php";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "3";
 
 ?>

@@ -1,9 +1,8 @@
 <?php
 
 	$y = 0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Dashboard";
-	$apps[$x]['menu'][$y]['title']['zh-cn'] = "仪表盘";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "الصفحه الرئيسيه للمستخدم";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "仪表盘";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Dashboard";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Benutzerübersicht";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Benutzerübersicht";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Dashboard Usuario";
@@ -27,5 +26,7 @@
 	$apps[$x]['menu'][$y]['groups'][] = "user";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "1";
 
 ?>

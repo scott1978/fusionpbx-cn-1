@@ -1,7 +1,7 @@
 <?php
 
-$apps[$x]['menu'][0]['title']['en-us'] = 'Bridges';
-$apps[$x]['menu'][0]['title']['es-cl'] = '';
+$apps[$x]['menu'][0]['title']['en-us'] = '桥接';
+$apps[$x]['menu'][0]['title']['es-cl'] = 'Bridges';
 $apps[$x]['menu'][0]['title']['fr-fr'] = '';
 $apps[$x]['menu'][0]['title']['fr-ca'] = '';
 $apps[$x]['menu'][0]['title']['pl'] = '';
@@ -15,5 +15,7 @@ $apps[$x]['menu'][0]['path'] = '/app/bridges/bridges.php';
 $apps[$x]['menu'][0]['groups'][] = 'superadmin';
 //$apps[$x]['menu'][0]['groups'][] = 'admin';
 //$apps[$x]['menu'][0]['groups'][] = 'user';
+$apps[$x]['menu'][0]['enabled'] = "true";
+$apps[$x]['menu'][0]['order'] = "14";
 
 ?>

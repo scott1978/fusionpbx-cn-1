@@ -23,6 +23,8 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/core/menu/menu.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['order'] = "7";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
 	$y++;
 	$apps[$x]['menu'][$y]['title']['en-us'] = "主页";
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Home";
@@ -51,6 +53,7 @@
 	$apps[$x]['menu'][$y]['groups'][] = "user";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
 	$y++;
 	$apps[$x]['menu'][$y]['title']['en-us'] = "账号";
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Accounts";
@@ -76,6 +79,7 @@
 	$apps[$x]['menu'][$y]['icon'] = "glyphicon-user";
 	$apps[$x]['menu'][$y]['path'] = "";
 	$apps[$x]['menu'][$y]['order'] = "10";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$y++;
@@ -103,6 +107,7 @@
 	$apps[$x]['menu'][$y]['icon'] = "glyphicon-equalizer";
 	$apps[$x]['menu'][$y]['path'] = "";
 	$apps[$x]['menu'][$y]['order'] = "25";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
 	$apps[$x]['menu'][$y]['groups'][] = "user";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
@@ -131,6 +136,7 @@
 	$apps[$x]['menu'][$y]['icon'] = "glyphicon-cog";
 	$apps[$x]['menu'][$y]['path'] = "";
 	$apps[$x]['menu'][$y]['order'] = "30";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$y++;
 	$apps[$x]['menu'][$y]['title']['en-us'] = "登录";
@@ -158,6 +164,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/login.php";
 	$apps[$x]['menu'][$y]['groups'][] = "public";
 	$apps[$x]['menu'][$y]['order'] = "99";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
 	$y++;
 	$apps[$x]['menu'][$y]['title']['en-us'] = '退出';
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Logout";
@@ -185,5 +192,7 @@
 	$apps[$x]['menu'][$y]['groups'][] = 'user';
 	$apps[$x]['menu'][$y]['groups'][] = 'admin';
 	$apps[$x]['menu'][$y]['groups'][] = 'superadmin';
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "3";
 
 ?>

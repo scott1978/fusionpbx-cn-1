@@ -1,6 +1,7 @@
 <?php
 
-$apps[$x]['menu'][0]['title']['en-us'] = 'Email Templates';
+$apps[$x]['menu'][0]['title']['en-us'] = '邮件模板';
+$apps[$x]['menu'][0]['title']['ar-eg'] = 'Email Templates';
 $apps[$x]['menu'][0]['title']['es-cl'] = '';
 $apps[$x]['menu'][0]['title']['fr-fr'] = '';
 $apps[$x]['menu'][0]['title']['fr-ca'] = '';
@@ -14,5 +15,7 @@ $apps[$x]['menu'][0]['category'] = 'internal';
 $apps[$x]['menu'][0]['path'] = '/app/email_templates/email_templates.php';
 $apps[$x]['menu'][0]['groups'][] = 'superadmin';
 //$apps[$x]['menu'][0]['groups'][] = 'admin';
+$apps[$x]['menu'][0]['enabled'] = "true";
+$apps[$x]['menu'][0]['order'] = "11";
 
 ?>

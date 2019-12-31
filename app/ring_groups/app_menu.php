@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Ring Groups";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "振铃组";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Ring Groups";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Rufgruppen";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Rufgruppen";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Grupo de llamados";
@@ -25,5 +25,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/ring_groups/ring_groups.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "15";
 
 ?>

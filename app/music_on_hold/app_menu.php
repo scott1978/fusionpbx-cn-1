@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Music on Hold";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "媒体音乐";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Music on Hold";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Wartemusik";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Wartemusik";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Música en espera";
@@ -25,5 +25,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/music_on_hold/music_on_hold.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "22";
 
 ?>

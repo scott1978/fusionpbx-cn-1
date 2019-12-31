@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "SIP Profiles";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "SIP概况";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "SIP Profiles";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "SIP Profile";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "SIP Profile";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Perfiles SIP";
@@ -24,5 +24,7 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/app/sip_profiles/sip_profiles.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "3";
 
 ?>
