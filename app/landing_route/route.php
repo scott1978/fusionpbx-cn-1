@@ -74,8 +74,6 @@
 		$sql_search = " (";
 		$sql_search .= "lower(route_name) like '%".$search."%' ";
 		$sql_search .= "or lower(route_gateway) like '%".$search."%' ";
-		$sql_search .= "or lower(route_area_code) like '%".$search."%' ";
-		$sql_search .= "or lower(route_cmd) like '%".$search."%' ";
 		$sql_search .= ") ";
 	}
 
@@ -186,14 +184,13 @@
 	echo th_order_by('route_name', $text['label-route_name'], $order_by, $order, $param);
 	echo th_order_by('route_gateway', $text['label-route_gateway'], $order_by, $order, $param);
 	echo th_order_by('route_type', $text['label-route_type'], $order_by, $order, $param);
-	// echo th_order_by('route_area_code', $text['label-route_area_code'], $order_by, $order, $param);
 	echo th_order_by('route_weekday', $text['label-route_weekday'], $order_by, $order, $param);
 	echo th_order_by('route_start_time', $text['label-route_start_time'], $order_by, $order, $param);
 	echo th_order_by('route_end_time', $text['label-route_end_time'], $order_by, $order, $param);
 	echo th_order_by('route_update_time', $text['label-route_update_time'], $order_by, $order, $param);
-	echo th_order_by('route_enabled', $text['label-route_enabled'], $order_by, $order, $param);
 	echo th_order_by('route_cmd', $text['label-route_cmd'], $order_by, $order, $param);
 	echo th_order_by('route_order', $text['label-route_order'], $order_by, $order, $param);
+	echo th_order_by('route_enabled', $text['label-route_enabled'], $order_by, $order, $param);
 	echo "	<td class='list_control_icons'>";
 	if (permission_exists('landing_route_add')) {
 		echo "		<a href='route_edit.php' alt='".$text['button-add']."'>$v_link_label_add</a>";
@@ -228,13 +225,13 @@
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_start_time'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_end_time'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_update_time'])."&nbsp;</td>\n";
-			if ((int)$row['enabled'] == 0) {
-				echo "	<td valign='top' class='".$row_style[$c]."'>False&nbsp;</td>\n";
-			} else {
-				echo "	<td valign='top' class='".$row_style[$c]."'>True&nbsp;</td>\n";
-			}
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_cmd'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_order'])."&nbsp;</td>\n";
+			if ((int)$row['route_enabled'] == 'true') {
+				echo "	<td valign='top' class='".$row_style[$c]."'>True&nbsp;</td>\n";
+			} else {
+				echo "	<td valign='top' class='".$row_style[$c]."'>False&nbsp;</td>\n";
+			}
 			echo "	<td class='list_control_icons'>";
 			if (permission_exists('landing_route_edit')) {
 				echo "<a href='route_edit.php?id=".escape($row['route_uuid'])."' alt='".$text['button-edit']."'>$v_link_label_edit</a>";

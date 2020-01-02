@@ -66,9 +66,10 @@
 			$route_weekday = $row["route_weekday"];
 			$route_start_time = $row["route_start_time"];
 			$route_end_time = $row["route_end_time"];
-			$enabled = $row["enabled"];
+			$enabled = $row["route_enabled"];
 			$route_cmd = $row["route_cmd"];
 			$route_order = $row["route_order"];
+			$route_description = $row["route_description"];
 			break; //limit to 1 row
 		}
 		unset ($prep_statement);
@@ -86,9 +87,10 @@
 			$route_weekday = trim($_POST["route_weekday"]);
 			$route_start_time = trim($_POST["route_start_time"]);
 			$route_end_time = trim($_POST["route_end_time"]);
-			$enabled = trim($_POST["enabled"]);
+			$route_enabled = trim($_POST["route_enabled"]);
 			$route_cmd = trim($_POST["route_cmd"]);
 			$route_order = trim($_POST["route_order"]);
+			$route_description = trim($_POST["route_description"]);
 	}
 
 //process the http post 
@@ -132,7 +134,7 @@
 				$sql .= "route_weekday, ";
 				$sql .= "route_start_time, ";
 				$sql .= "route_end_time, ";
-				$sql .= "enabled, ";
+				$sql .= "route_enabled, ";
 				$sql .= "route_cmd, ";
 				$sql .= "route_type, ";
 				$sql .= "route_city, ";
@@ -147,7 +149,7 @@
 				$sql .= "'$route_weekday', ";
 				$sql .= "'$route_start_time', ";
 				$sql .= "'$route_end_time', ";
-				$sql .= "'$enabled', ";
+				$sql .= "'$route_enabled', ";
 				$sql .= "'$route_cmd', ";
 				$sql .= "'$route_type', ";
 				$sql .= "'$route_city', ";
@@ -170,7 +172,7 @@
 				$route_update_time = date('Y-m-d H:i:s');
 				$sql = "update v_landing_route set route_name='$route_name', route_gateway='$route_gateway', ";
 				$sql .= "route_weekday='$route_weekday', route_start_time='$route_start_time', ";
-				$sql .= "route_end_time='$route_end_time', enabled='$enabled', route_cmd='$route_cmd', ";
+				$sql .= "route_end_time='$route_end_time', route_enabled='$route_enabled', route_cmd='$route_cmd', ";
 				$sql .= "route_type='$route_type', route_city='$route_city', route_telephone='$route_telephone', ";
 				$sql .= "route_order='$route_order', route_update_time='$route_update_time' where route_uuid='$route_uuid'";
 				$db->exec(check_sql($sql));
@@ -975,19 +977,19 @@
 	echo "</td>\n";
 	echo "</tr>\n";
 
-	// enabled
+	// route_enabled
 	echo "<tr>\n";
 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
 	echo "	".$text['label-destination_enabled']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "	<select class='formfld' name='enabled'>\n";
+	echo "	<select class='formfld' name='route_enabled'>\n";
 	switch ($route_enabled) {
-		case "1" :	$selected[1] = "selected='selected'";	break;
-		case "0" :	$selected[2] = "selected='selected'";	break;
+		case "true" :	$selected[1] = "selected='selected'";	break;
+		default :	$selected[2] = "selected='selected'";	break;
 	}
-	echo "	<option value='1' ".$selected[1].">".$text['label-true']."</option>\n";
-	echo "	<option value='0' ".$selected[2].">".$text['label-false']."</option>\n";
+	echo "	<option value='true' ".$selected[1].">".$text['label-true']."</option>\n";
+	echo "	<option value='false' ".$selected[2].">".$text['label-false']."</option>\n";
 	unset($selected);
 	echo "	</select>\n";
 	echo "<br />\n";

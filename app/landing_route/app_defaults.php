@@ -24,27 +24,8 @@
 	Mark J Crane <markjcrane@fusionpbx.com>
 */
 
-//update the v_destinations set destination_app and destination_data
-	if ($domains_processed == 1) {
-		$sql = "select dialplan_uuid, dialplan_detail_type as destination_app, dialplan_detail_data as destination_data\n";
-		$sql .= "from v_dialplan_details\n";
-		$sql .= "where dialplan_uuid in (select dialplan_uuid from v_destinations where destination_type = 'inbound' and destination_app is null and destination_data is null)\n";
-		$sql .= "and dialplan_detail_tag = 'action'\n";
-		$sql .= "and (dialplan_detail_type = 'transfer' or dialplan_detail_type = 'bridge')\n";
-		$sql .= "order by dialplan_detail_order;\n";
-		$prep_statement = $db->prepare(check_sql($sql));
-		if ($prep_statement) {
-			$prep_statement->execute();
-			$extensions = $prep_statement->fetchall(PDO::FETCH_ASSOC);
-			foreach($extensions as $row) {
-				$sql = "UPDATE v_destinations ";
-				$sql .= "SET destination_app = '".$row['destination_app']."', ";
-				$sql .= "destination_data = '".$row['destination_data']."' ";
-				$sql .= "WHERE dialplan_uuid = '". $row['dialplan_uuid'] ."' ";
-				$db->exec(check_sql($sql));
-				unset($sql);
-			}
-		}
-	}
+	//process this only one time
+if ($domains_processed == 1) {
 
+}
 ?>
