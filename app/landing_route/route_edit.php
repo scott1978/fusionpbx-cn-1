@@ -58,6 +58,10 @@
 		$prep_statement->execute();
 		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
 		foreach ($result as &$row) {
+			echo $row["route_description"];
+			echo "\n";
+			var_dump($row);
+			exit(0);
 			$route_name = $row["route_name"];
 			$route_gateway = $row["route_gateway"];
 			$route_type = $row["route_type"];
@@ -70,6 +74,8 @@
 			$route_cmd = $row["route_cmd"];
 			$route_order = $row["route_order"];
 			$route_description = $row["route_description"];
+			
+
 			break; //limit to 1 row
 		}
 		unset ($prep_statement);
