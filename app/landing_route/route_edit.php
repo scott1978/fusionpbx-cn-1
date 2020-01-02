@@ -66,7 +66,7 @@
 			$route_weekday = $row["route_weekday"];
 			$route_start_time = $row["route_start_time"];
 			$route_end_time = $row["route_end_time"];
-			$enabled = $row["route_enabled"];
+			$route_enabled = $row["route_enabled"];
 			$route_cmd = $row["route_cmd"];
 			$route_order = $row["route_order"];
 			$route_description = $row["route_description"];
@@ -107,7 +107,7 @@
 		//check for all required data
 			$msg = '';
 			if (strlen($route_name) == 0) { $msg .= $text['message-required']." ".$text['label-route_name']."<br>\n"; }
-			if (strlen($enabled) == 0) { $msg .= $text['message-required']." ".$text['label-route_enabled']."<br>\n"; }
+			if (strlen($route_enabled) == 0) { $msg .= $text['message-required']." ".$text['label-route_enabled']."<br>\n"; }
 			if (strlen($route_cmd) == 0) { $msg .= $text['message-required']." ".$text['label-route_cmd']."<br>\n"; }
 
 		//show the message
