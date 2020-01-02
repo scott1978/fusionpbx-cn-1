@@ -48,6 +48,7 @@
 		$route_uuid = trim($_REQUEST["id"]);
 		echo "header ---";
 		echo "$route_uuid";
+		exit(0);
 	}
 	else {
 		$action = "add";
@@ -55,22 +56,11 @@
 
 //get data by route_uuid
 	if (count($_GET) > 0 && isset($route_uuid)) {
-		echo "get come here";
-		exit(0);
 		$sql = "select * from v_landing_route where route_uuid='".$route_uuid."' limit 1";
-		echo "$sql";
-		
 		$prep_statement = $db->prepare(check_sql($sql));
-		echo "111";
 		$prep_statement->execute();
-		echo "2222";
 		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
-		echo "3333";
 		foreach ($result as &$row) {
-			echo $row["route_description"];
-			echo "\n";
-			var_dump($row);
-			exit(0);
 			$route_name = $row["route_name"];
 			$route_gateway = $row["route_gateway"];
 			$route_type = $row["route_type"];
@@ -83,8 +73,6 @@
 			$route_cmd = $row["route_cmd"];
 			$route_order = $row["route_order"];
 			$route_description = $row["route_description"];
-			
-
 			break; //limit to 1 row
 		}
 		unset ($prep_statement);
