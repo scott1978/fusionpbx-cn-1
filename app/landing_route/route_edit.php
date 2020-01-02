@@ -69,7 +69,7 @@
 			$route_enabled = $row["route_enabled"];
 			$route_cmd = $row["route_cmd"];
 			$route_order = $row["route_order"];
-			// $route_description = $row["route_description"];
+			$route_description = $row["route_description"];
 			break; //limit to 1 row
 		}
 		unset ($prep_statement);
@@ -90,7 +90,7 @@
 			$route_enabled = trim($_POST["route_enabled"]);
 			$route_cmd = trim($_POST["route_cmd"]);
 			$route_order = trim($_POST["route_order"]);
-			// $route_description = trim($_POST["route_description"]);
+			$route_description = trim($_POST["route_description"]);
 	}
 
 //process the http post 
@@ -139,8 +139,8 @@
 				$sql .= "route_type, ";
 				$sql .= "route_city, ";
 				$sql .= "route_telephone, ";
-				$sql .= "route_order ";
-				// $sql .= "route_description ";
+				$sql .= "route_order, ";
+				$sql .= "route_description ";
 				$sql .= ") ";
 				$sql .= "values ";
 				$sql .= "(";
@@ -155,8 +155,8 @@
 				$sql .= "'$route_type', ";
 				$sql .= "'$route_city', ";
 				$sql .= "'$route_telephone', ";
-				$sql .= "'$route_order' ";
-				// $sql .= "'$route_description' ";
+				$sql .= "'$route_order', ";
+				$sql .= "'$route_description' ";
 				$sql .= ")";
 				$db->exec(check_sql($sql));
 				unset($sql);
@@ -176,7 +176,7 @@
 				$sql .= "route_weekday='$route_weekday', route_start_time='$route_start_time', ";
 				$sql .= "route_end_time='$route_end_time', route_enabled='$route_enabled', route_cmd='$route_cmd', ";
 				$sql .= "route_type='$route_type', route_city='$route_city', route_telephone='$route_telephone', ";
-				$sql .= "route_order='$route_order', route_update_time='$route_update_time' ";
+				$sql .= "route_order='$route_order', route_update_time='$route_update_time', route_description='$route_description' ";
 				$sql .= "where route_uuid='$route_uuid'";
 				$db->exec(check_sql($sql));
 				unset($sql);
@@ -1024,17 +1024,17 @@
 	echo "</td>\n";
 	echo "</tr>\n";
 
-	// // route_description
-	// echo "<tr>\n";
-	// echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	// echo "	".$text['label-route_description']."\n";
-	// echo "</td>\n";
-	// echo "<td class='vtable' align='left'>\n";
-	// echo "	<input class='formfld' type='text' name='route_description' maxlength='255' value=\"".escape($route_description)."\" >\n";
-	// echo "<br />\n";
-	// echo $text['description-route_description']."\n";
-	// echo "</td>\n";
-	// echo "</tr>\n";
+	// route_description
+	echo "<tr>\n";
+	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "	".$text['label-route_description']."\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	echo "	<input class='formfld' type='text' name='route_description' maxlength='255' value=\"".escape($route_description)."\" >\n";
+	echo "<br />\n";
+	echo $text['description-route_description']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
 
 	echo "	<tr>\n";
 	echo "		<td colspan='2' align='right'>\n";
