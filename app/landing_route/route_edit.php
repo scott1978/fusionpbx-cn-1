@@ -53,10 +53,15 @@
 
 //get data by route_uuid
 	if (count($_GET) > 0 && isset($route_uuid)) {
+		echo "get come here";
 		$sql = "select * from v_landing_route where route_uuid='$route_uuid' limit 1";
+		echo "000";
 		$prep_statement = $db->prepare(check_sql($sql));
+		echo "111";
 		$prep_statement->execute();
+		echo "2222";
 		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+		echo "3333";
 		foreach ($result as &$row) {
 			echo $row["route_description"];
 			echo "\n";
