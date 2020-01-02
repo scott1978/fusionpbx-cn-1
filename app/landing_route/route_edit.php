@@ -124,6 +124,7 @@
 				return;
 			}
 
+echo "$action\n";
 		// add
 			if ($action == "add") {
 				$sql = "insert into v_landing_route ";
@@ -156,6 +157,8 @@
 				$sql .= "'$route_telephone', ";
 				$sql .= "'$route_order' ";
 				$sql .= ")";
+				echo "$sql";
+				exit(0);
 				$db->exec(check_sql($sql));
 				unset($sql);
 
