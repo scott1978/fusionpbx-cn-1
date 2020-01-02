@@ -124,7 +124,7 @@
 				return;
 			}
 
-echo "$action\n";
+		echo "$action\n";
 		// add
 			if ($action == "add") {
 				$sql = "insert into v_landing_route ";
@@ -1024,14 +1024,15 @@ echo "$action\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 
+	// route_description
 	echo "<tr>\n";
 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	echo "	".$text['label-destination_description']."\n";
+	echo "	".$text['label-route_description']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "	<input class='formfld' type='text' name='destination_description' maxlength='255' value=\"".escape($destination_description)."\">\n";
+	echo "	<input class='formfld' type='text' name='route_description' maxlength='255' value=\"".escape($route_description)."\">\n";
 	echo "<br />\n";
-	echo $text['description-destination_description']."\n";
+	echo $text['description-route_description']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 	echo "	<tr>\n";
