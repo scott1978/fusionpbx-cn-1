@@ -21,12 +21,12 @@
 	$apps[$x]['menu'][$y]['title']['sv-se'] = "Landing Route";
 	$apps[$x]['menu'][$y]['title']['uk-ua'] = "Landing Route";
 	$apps[$x]['menu'][$y]['uuid'] = "3876ac58-7b37-49d2-8c34-9cf443b1b613";
-	$apps[$x]['menu'][$y]['parent_uuid'] = "b94e8bd9-9eb5-e427-9c26-ff7a6c21552a";
+	$apps[$x]['menu'][$y]['parent_uuid'] = "4095f57d-fc0d-4dd9-a5db-5fc486f22159";
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/app/landing_route/route.php";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['enabled'] = "false";
-	$apps[$x]['menu'][$y]['order'] = "5";
+	$apps[$x]['menu'][$y]['order'] = "2";
 
 ?>
