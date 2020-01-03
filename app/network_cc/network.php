@@ -207,7 +207,7 @@
 			echo "		<input type='checkbox' name=\"data_list[$x][checked]\" id='checkbox_".$x."' value='true' onclick=\"if (!this.checked) { document.getElementById('chk_all_".$x."').checked = false; }\">\n";
 			echo "		<input type='hidden' name=\"data_list[$x][network_uuid]\" value='".escape($row['network_uuid'])."' />\n";
 			echo "	</td>\n";
-			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['newtork_name'])."&nbsp;</td>\n";
+			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['network_name'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['network_caller'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['network_update_time'])."&nbsp;</td>\n";
 			if ((int)$row['network_enabled'] == 'true') {
