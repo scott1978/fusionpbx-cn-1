@@ -42,6 +42,11 @@
 	$language = new text;
 	$text = $language->get();
 
+// get the ID
+	if (is_array($_GET)) {
+		$id = check_str($_GET["id"]);
+	}
+
 //get the action
 	if (is_array($_POST["data_list"])) {
 		$data_list = $_POST["data_list"];
@@ -54,9 +59,9 @@
 	}
 
 //delete the fixed_code
-	if (permission_exists('fixed_code_delete') && ($action == "delete")) {
+	if (permission_exists('fixed_code_delete') && ($action == "delete")) && strlen($id) > 0 {
 		$sql = "delete from v_fixed_code ";
-		$sql .= "where fixed_code = '".$fixed_code."' ";
+		$sql .= "where fixed_code = '".$id."' ";
 		$db->exec(check_sql($sql));
 		unset($sql);
 
