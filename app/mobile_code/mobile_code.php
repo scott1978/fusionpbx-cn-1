@@ -231,7 +231,7 @@
 			if (permission_exists('mobile_code_edit')) {
 				echo "<a href='mobile_code_edit.php?id=".escape($row['mobile_prefix'])."' alt='".$text['button-edit']."'>$v_link_label_edit</a>";
 			}
-			if (permission_exists('moblile_code_delete')) {
+			if (permission_exists('mobile_code_delete')) {
 				echo "<button type='submit' class='btn btn-default list_control_icon' name=\"data_list[$x][action]\" alt='".$text['button-delete']."' value='delete'><span class='glyphicon glyphicon-remove'></span></button>";
 			}
 			echo "	</td>\n";
