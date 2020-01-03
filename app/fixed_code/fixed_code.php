@@ -42,17 +42,13 @@
 	$language = new text;
 	$text = $language->get();
 
-// get the ID
-	if (is_array($_GET)) {
-		$id = check_str($_GET["id"]);
-	}
-
 //get the action
 	if (is_array($_POST["data_list"])) {
 		$data_list = $_POST["data_list"];
 		foreach($data_list as $row) {
 			if ($row['action'] == 'delete') {
 				$action = 'delete';
+				$id = $row['fixed_code'];
 				break;
 			}
 		}
