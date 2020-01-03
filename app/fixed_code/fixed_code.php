@@ -59,7 +59,7 @@
 	}
 
 //delete the fixed_code
-	if (permission_exists('fixed_code_delete') && ($action == "delete")) && strlen($id) > 0 {
+	if (permission_exists('fixed_code_delete') && ($action == "delete") && (strlen($id) > 0)) {
 		$sql = "delete from v_fixed_code ";
 		$sql .= "where fixed_code = '".$id."' ";
 		$db->exec(check_sql($sql));
