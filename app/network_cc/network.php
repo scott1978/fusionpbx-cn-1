@@ -210,7 +210,7 @@
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['network_name'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['network_caller'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['network_update_time'])."&nbsp;</td>\n";
-			if ((int)$row['network_enabled'] == 'true') {
+			if ($row['network_enabled'] == 'true') {
 				echo "	<td valign='top' class='".$row_style[$c]."'>True&nbsp;</td>\n";
 			} else {
 				echo "	<td valign='top' class='".$row_style[$c]."'>False&nbsp;</td>\n";
