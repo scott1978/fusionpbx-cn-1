@@ -176,12 +176,15 @@
 	echo "<td class='vtable' align='left'>\n";
 	if ($action == "add") {
 		echo "	<input class='formfld' type='text' name='fixed_code' maxlength='255' value=\"".escape($fixed_code)."\" required='required'>\n";
+		echo "<br />\n";
+		echo $text['description-fixed_code']."\n";
 	}
 	if ($action == "update") {
 		echo "	<input class='formfld' type='text' name='fixed_code' maxlength='255' value=\"".escape($fixed_code)."\" readonly='readonly'>\n";
-	}
 		echo "<br />\n";
-		echo $text['description-fixed_code']."\n";
+		echo $text['description-fixed_code'].$text['description-readonly']"\n";
+	}
+		
 	echo "</td>\n";
 	echo "</tr>\n";
 
@@ -211,7 +214,7 @@
 
 	// area_code
 	echo "<tr>\n";
-	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "<td class='vncellreq' valign='top' align='left' nowrap='nowrap'>\n";
 	echo "	".$text['label-area_code']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";

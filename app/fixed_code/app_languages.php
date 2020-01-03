@@ -1383,6 +1383,26 @@ $text['description-area_code']['ru-ru'] = "";
 $text['description-area_code']['sv-se'] = "";
 $text['description-area_code']['uk-ua'] = "";
 
+$text['description-readonly']['en-us'] = "（只读）";
+$text['description-readonly']['ar-eg'] = "readonly";
+$text['description-readonly']['de-at'] = "readonly";
+$text['description-readonly']['de-ch'] = "readonly";
+$text['description-readonly']['de-de'] = "readonly";
+$text['description-readonly']['es-cl'] = "readonly";
+$text['description-readonly']['es-mx'] = "readonly";
+$text['description-readonly']['fr-ca'] = "readonly";
+$text['description-readonly']['fr-fr'] = "readonly";
+$text['description-readonly']['he-il'] = "readonly";
+$text['description-readonly']['it-it'] = "readonly";
+$text['description-readonly']['nl-nl'] = "readonly";
+$text['description-readonly']['pl-pl'] = "readonly";
+$text['description-readonly']['pt-br'] = "readonly";
+$text['description-readonly']['pt-pt'] = "readonly";
+$text['description-readonly']['ro-ro'] = "readonly";
+$text['description-readonly']['ru-ru'] = "readonly";
+$text['description-readonly']['sv-se'] = "readonly";
+$text['description-readonly']['uk-ua'] = "readonly";
+
 $text['billing-warning']['en-us'] = "If you are using fusionpbx billing application, make sure to add accountcode and carrier variables.";
 $text['billing-warning']['ar-eg'] = "";
 $text['billing-warning']['de-at'] = "Wenn Sie die Fusionpbx Abrechnung verwenden, stellen Sie sicher, dass Account-Code und Betreiber-Variablen gesetzt sind."; //copied from de-de
