@@ -26,6 +26,7 @@
 
 //includes
 	require_once "root.php";
+	require_once "resources/constant.php";
 	require_once "resources/require.php";
 	require_once "resources/check_auth.php";
 
@@ -129,6 +130,13 @@
 				$sql .= ")";
 				$db->exec(check_sql($sql));
 				unset($sql);
+
+				$redis = new Redis();
+				$redis->connect($rds_ip, $rds_port);
+				$redis->auth($rds_password);
+				$redis->select($rds_db);
+				$redis->hset($rds_pbx_mobile_code, $mobile_prefix, $area_code);
+				unset($redis);
 			}
 
 		// update
