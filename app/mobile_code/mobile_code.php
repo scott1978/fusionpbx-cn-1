@@ -217,7 +217,16 @@
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['province'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['city'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['area_code'])."&nbsp;</td>\n";
-			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['mobile_isp'])."&nbsp;</td>\n";
+			
+			if (escape($row['mobile_isp']) == "1") {
+				echo "	<td valign='top' class='".$row_style[$c]."'>".$text['label-yi_dong']."&nbsp;</td>\n";
+			} elseif ((escape($row['mobile_isp']) == "2")) {
+				echo "	<td valign='top' class='".$row_style[$c]."'>".$text['label-lian_tong']."&nbsp;</td>\n";
+			} elseif ((escape($row['mobile_isp']) == "3")) {
+				echo "	<td valign='top' class='".$row_style[$c]."'>".$text['label-dian_xin']."&nbsp;</td>\n";
+			} else {
+				echo "	<td valign='top' class='".$row_style[$c]."'>".""."&nbsp;</td>\n";
+			}
 			echo "	<td class='list_control_icons'>";
 			if (permission_exists('mobile_code_edit')) {
 				echo "<a href='mobile_code_edit.php?id=".escape($row['mobile_prefix'])."' alt='".$text['button-edit']."'>$v_link_label_edit</a>";
