@@ -42,27 +42,29 @@
 	$language = new text;
 	$text = $language->get();
 
-// //get the action
-// 	if (is_array($_POST["destinations"])) {
-// 		$destinations = $_POST["destinations"];
-// 		foreach($destinations as $row) {
-// 			if ($row['action'] == 'delete') {
-// 				$action = 'delete';
-// 				break;
-// 			}
-// 		}
-// 	}
+//get the action
+	if (is_array($_POST["data_list"])) {
+		$data_list = $_POST["data_list"];
+		foreach($data_list as $row) {
+			if ($row['action'] == 'delete') {
+				$action = 'delete';
+				break;
+			}
+		}
+	}
 
-// //delete the destinations
-// 	if (permission_exists('destination_delete')) {
-// 		if ($action == "delete") {
-// 			//download
-// 				$obj = new destinations;
-// 				$obj->delete($destinations);
-// 			//delete message
-// 				messages::add($text['message-delete']);
-// 		}
-// 	}
+//delete the fixed_code
+	if (permission_exists('fixed_code_delete') && ($action == "delete")) {
+		$sql = "delete from v_fixed_code ";
+		$sql .= "where fixed_code = '".$fixed_code."' ";
+		$db->exec(check_sql($sql));
+		unset($sql);
+
+		//delete message
+		messages::add($text['message-delete']);
+		header("Location: fixed_code.php");
+		return;
+	}
 
 //get variables used to control the order
 	$order_by = check_str($_GET["order_by"]);
