@@ -182,7 +182,7 @@
 	if ($action == "update") {
 		echo "	<input class='formfld' type='text' name='fixed_code' maxlength='255' value=\"".escape($fixed_code)."\" readonly='readonly'>\n";
 		echo "<br />\n";
-		echo $text['description-fixed_code'].$text['description-readonly']"\n";
+		echo $text['description-fixed_code'].$text['description-readonly']."\n";
 	}
 		
 	echo "</td>\n";
