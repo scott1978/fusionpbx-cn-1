@@ -146,6 +146,13 @@
 				$sql .= "area_code='$area_code', mobile_isp='$mobile_isp' where mobile_prefix='$mobile_prefix'";
 				$db->exec(check_sql($sql));
 				unset($sql);
+
+				$redis = new Redis();
+				$redis->connect($rds_ip, $rds_port);
+				$redis->auth($rds_password);
+				$redis->select($rds_db);
+				$redis->hset($rds_pbx_mobile_code, $mobile_prefix, $area_code);
+				unset($redis);
 			}
 
 		//redirect the user
