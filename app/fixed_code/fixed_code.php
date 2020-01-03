@@ -52,6 +52,7 @@
 				break;
 			}
 		}
+		unset($data_list);
 	}
 
 //delete the fixed_code
@@ -59,7 +60,7 @@
 		$sql = "delete from v_fixed_code ";
 		$sql .= "where fixed_code = '".$id."' ";
 		$db->exec(check_sql($sql));
-		unset($sql);
+		unset($sql, $id);
 
 		//delete message
 		messages::add($text['message-delete']);
