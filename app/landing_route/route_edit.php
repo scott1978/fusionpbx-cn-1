@@ -84,6 +84,7 @@
 		$prep_statement = $db->prepare(check_sql($sql));
 		$prep_statement->execute();
 		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+		// foreach ($network_result as $k_network_uuid => $v_network_name) {
 		foreach ($result as &$row) {
 			$network_result[$row["network_uuid"]] = $row["network_name"];
 		}
@@ -1034,7 +1035,7 @@
 	//     $str = iconv($encode,"GBK//IGNORE",$str);
 
 		if ($k_network_uuid == $network_uuid) {
-			echo "	<option value='".escape($k_network_uuid)."' selected='selected' >".iconv($encode, "GBK//IGNORE", $v_network_name);."</option>\n";
+			echo "	<option value='".escape($k_network_uuid)."' selected='selected' >".iconv($encode, "GBK//IGNORE", $v_network_name)."</option>\n";
 		} else {
 			echo "	<option value='".escape($k_network_uuid)."' >".iconv($encode, "GBK//IGNORE", $v_network_name)."</option>\n";
 		}
