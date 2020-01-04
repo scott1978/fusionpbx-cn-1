@@ -67,7 +67,7 @@
 			$route_start_time = $row["route_start_time"];
 			$route_end_time = $row["route_end_time"];
 			$route_enabled = $row["route_enabled"];
-			$route_cmd = $row["route_cmd"];
+			$network_uuid = $row["network_uuid"];
 			$route_order = $row["route_order"];
 			$route_description = $row["route_description"];
 			break; //limit to 1 row
@@ -88,7 +88,7 @@
 			$route_start_time = trim($_POST["route_start_time"]);
 			$route_end_time = trim($_POST["route_end_time"]);
 			$route_enabled = trim($_POST["route_enabled"]);
-			$route_cmd = trim($_POST["route_cmd"]);
+			$network_name = trim($_POST["network_name"]);
 			$route_order = trim($_POST["route_order"]);
 			$route_description = trim($_POST["route_description"]);
 	}
@@ -107,8 +107,8 @@
 		//check for all required data
 			$msg = '';
 			if (strlen($route_name) == 0) { $msg .= $text['message-required']." ".$text['label-route_name']."<br>\n"; }
-			if (strlen($route_enabled) == 0) { $msg .= $text['message-required']." ".$text['label-route_enabled']."<br>\n"; }
-			if (strlen($route_cmd) == 0) { $msg .= $text['message-required']." ".$text['label-route_cmd']."<br>\n"; }
+			// if (strlen($route_enabled) == 0) { $msg .= $text['message-required']." ".$text['label-route_enabled']."<br>\n"; }
+			// if (strlen($route_cmd) == 0) { $msg .= $text['message-required']." ".$text['label-route_cmd']."<br>\n"; }
 
 		//show the message
 			if (strlen($msg) > 0 && strlen($_POST["persistformvar"]) == 0) {
@@ -135,7 +135,7 @@
 				$sql .= "route_start_time, ";
 				$sql .= "route_end_time, ";
 				$sql .= "route_enabled, ";
-				$sql .= "route_cmd, ";
+				$sql .= "network_uuid, ";
 				$sql .= "route_type, ";
 				$sql .= "route_city, ";
 				$sql .= "route_telephone, ";
@@ -151,7 +151,7 @@
 				$sql .= "'$route_start_time', ";
 				$sql .= "'$route_end_time', ";
 				$sql .= "'$route_enabled', ";
-				$sql .= "'$route_cmd', ";
+				$sql .= "'$network_name', ";
 				$sql .= "'$route_type', ";
 				$sql .= "'$route_city', ";
 				$sql .= "'$route_telephone', ";
@@ -162,10 +162,10 @@
 				unset($sql);
 
 				$redis = new Redis();
-				$redis->connect("127.0.0.1", 6379);
-				$redis->auth("8dc40c2c4598ae5a");
-				$redis->select(2);
-				$redis->lpush("pbx:route:rule:watch", time());
+				$redis->connect($rds_ip, $rds_port);
+				$redis->auth($rds_password);
+				$redis->select($rds_db);
+				$redis->lpush($rds_pbx_rule_watch, time());
 				unset($redis);
 			}
 
@@ -174,7 +174,7 @@
 				$route_update_time = date('Y-m-d H:i:s');
 				$sql = "update v_landing_route set route_name='$route_name', route_gateway='$route_gateway', ";
 				$sql .= "route_weekday='$route_weekday', route_start_time='$route_start_time', ";
-				$sql .= "route_end_time='$route_end_time', route_enabled='$route_enabled', route_cmd='$route_cmd', ";
+				$sql .= "route_end_time='$route_end_time', route_enabled='$route_enabled', network_uuid='$network_name', ";
 				$sql .= "route_type='$route_type', route_city='$route_city', route_telephone='$route_telephone', ";
 				$sql .= "route_order='$route_order', route_update_time='$route_update_time', route_description='$route_description' ";
 				$sql .= "where route_uuid='$route_uuid'";
@@ -183,10 +183,10 @@
 				unset($route_update_time);
 
 				$redis = new Redis();
-				$redis->connect("127.0.0.1", 6379);
-				$redis->auth("8dc40c2c4598ae5a");
-				$redis->select(2);
-				$redis->lpush("pbx:route:rule:watch", time());
+				$redis->connect($rds_ip, $rds_port);
+				$redis->auth($rds_password);
+				$redis->select($rds_db);
+				$redis->lpush($rds_pbx_rule_watch, time());
 				unset($redis);
 			}
 
@@ -1000,15 +1000,30 @@
 	echo "</td>\n";
 	echo "</tr>\n";
 
-	// route_cmd
+	// network_name
 	echo "<tr>\n";
-	echo "<td class='vncellreq' valign='top' align='left' nowrap='nowrap'>\n";
-	echo "	".$text['label-route_cmd']."\n";
+	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "	".$text['label-network_name']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "	<input class='formfld' type='text' name='route_cmd' maxlength='255' value=\"".escape($route_cmd)."\" >\n";
-		echo "<br />\n";
-		echo $text['description-route_cmd']."\n";
+	echo "		<select id='network_name' name='network_name' class='formfld' style=''>\n";
+	echo "		<option value=''></option>\n";
+	//get all network_cc from database
+	$sql = "select * from v_network_cc where network_enabled='true' ";
+	$prep_statement = $db->prepare(check_sql($sql));
+	$prep_statement->execute();
+	$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+	foreach ($result as &$row) {
+		$network_result[$row["network_uuid"]] = $row["network_name"];
+	}
+	foreach ($network_result as $k_network_uuid => $v_network_name) {
+		$selected = ($k_network_uuid == $network_uuid) ? "selected='selected'" : null;
+		echo "	<option value='".escape($k_network_uuid)."' ".escape($selected).">".escape($v_network_name)."</option>\n";
+	}
+	unset($sql, $prep_statement, $result, $row, $network_result, $k_network_uuid, $v_network_name, $selected);
+	echo "		</select>\n";
+	echo "		<br />\n";
+	echo "		".$text['description-network_name']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 
