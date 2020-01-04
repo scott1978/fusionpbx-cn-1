@@ -183,7 +183,7 @@
 				$db->exec(check_sql($sql));
 				unset($sql, $network_update_time);
 
-				if ($network_enabled == 'true' && (($tmp_network_caller != $network_caller) || ($tmp_network_address != $network_address)) {
+				if ($network_enabled == 'true' && (($tmp_network_caller != $network_caller) || ($tmp_network_address != $network_address))) {
 					$redis = new Redis();
 					$redis->connect($rds_ip, $rds_port);
 					$redis->auth($rds_password);
