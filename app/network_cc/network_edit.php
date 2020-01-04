@@ -26,6 +26,7 @@
 
 //includes
 	require_once "root.php";
+	require_once "resources/constant.php";
 	require_once "resources/require.php";
 	require_once "resources/check_auth.php";
 
@@ -60,6 +61,7 @@
 		foreach ($result as &$row) {
 			$network_name = $row["network_name"];
 			$network_caller = $row["network_caller"];
+			$network_address = $row["network_address"];
 			$network_enabled = $row["network_enabled"];
 			$network_description = $row["network_description"];
 			break; //limit to 1 row
@@ -73,6 +75,7 @@
 		//set the variables
 			$network_name = trim($_POST["network_name"]);
 			$network_caller = trim($_POST["network_caller"]);
+			$network_address = trim($_POST["network_address"]);
 			$network_enabled = trim($_POST["network_enabled"]);
 			$network_description = trim($_POST["network_description"]);
 	}
@@ -92,6 +95,7 @@
 			$msg = '';
 			if (strlen($network_name) == 0) { $msg .= $text['message-required']." ".$text['label-network_name']."<br>\n"; }
 			if (strlen($network_caller) == 0) { $msg .= $text['message-required']." ".$text['label-network_caller']."<br>\n"; }
+			if (strlen($network_address) == 0) { $msg .= $text['message-required']." ".$text['label-network_address']."<br>\n"; }
 
 		//show the message
 			if (strlen($msg) > 0 && strlen($_POST["persistformvar"]) == 0) {
@@ -115,6 +119,7 @@
 				$sql .= "network_uuid, ";
 				$sql .= "network_name, ";
 				$sql .= "network_caller, ";
+				$sql .= "network_address, ";
 				$sql .= "network_update_time, ";
 				$sql .= "network_enabled, ";
 				$sql .= "network_description ";
@@ -124,6 +129,7 @@
 				$sql .= "'".uuid()."', ";
 				$sql .= "'$network_name', ";
 				$sql .= "'$network_caller', ";
+				$sql .= "'$network_address', ";
 				$sql .= "'$network_update_time', ";
 				$sql .= "'$network_enabled', ";
 				$sql .= "'$network_description' ";
@@ -141,6 +147,7 @@
 				$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
 				foreach ($result as &$row) {
 					$tmp_network_caller = $row["network_caller"];
+					$tmp_network_address = $row["network_address"];
 					$tmp_network_enabled = $row["network_enabled"];
 					break; //limit to 1 row
 				}
@@ -170,17 +177,18 @@
 				// 更新数据
 				$network_update_time = date('Y-m-d H:i:s');
 				$sql = "update v_network_cc set network_name='$network_name', network_caller='$network_caller', ";
+				$sql .= "network_address='$network_address', ";
 				$sql .= "network_update_time='$network_update_time', network_enabled='$network_enabled', ";
 				$sql .= "network_description='$network_description' where network_uuid='$network_uuid'";
 				$db->exec(check_sql($sql));
 				unset($sql, $network_update_time);
 
-				if ($network_enabled == 'true' &&  $tmp_network_caller != $network_caller) {
+				if ($network_enabled == 'true' && (($tmp_network_caller != $network_caller) || ($tmp_network_address != $network_address)) {
 					$redis = new Redis();
-					$redis->connect("127.0.0.1", 6379);
-					$redis->auth("8dc40c2c4598ae5a");
-					$redis->select(2);
-					$redis->lpush("pbx:route:rule:watch", time());
+					$redis->connect($rds_ip, $rds_port);
+					$redis->auth($rds_password);
+					$redis->select($rds_db);
+					$redis->lpush($rds_pbx_rule_watch, time());
 					unset($redis);
 				}
 
@@ -233,13 +241,25 @@
 
 	// network_caller
 	echo "<tr>\n";
-	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "<td class='vncellreq' valign='top' align='left' nowrap='nowrap'>\n";
 	echo "	".$text['label-network_caller']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
 	echo "	<input class='formfld' type='text' name='network_caller' value=\"".escape($network_caller)."\">\n";
 		echo "<br />\n";
 		echo $text['description-network_caller']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+
+	// network_caller
+	echo "<tr>\n";
+	echo "<td class='vncellreq' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "	".$text['label-network_address']."\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	echo "	<input class='formfld' type='text' name='network_address' value=\"".escape($network_address)."\">\n";
+		echo "<br />\n";
+		echo $text['description-network_address']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 

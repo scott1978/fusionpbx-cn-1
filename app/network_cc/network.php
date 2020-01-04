@@ -183,6 +183,7 @@
 
 	echo th_order_by('network_name', $text['label-network_name'], $order_by, $order, $param);
 	echo th_order_by('network_caller', $text['label-network_caller'], $order_by, $order, $param);
+	echo th_order_by('network_address', $text['label-network_address'], $order_by, $order, $param);
 	echo th_order_by('network_update_time', $text['label-network_update_time'], $order_by, $order, $param);
 	echo th_order_by('network_enabled', $text['label-network_enabled'], $order_by, $order, $param);
 	echo th_order_by('network_description', $text['label-network_description'], $order_by, $order, $param);
@@ -209,6 +210,7 @@
 			echo "	</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['network_name'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['network_caller'])."&nbsp;</td>\n";
+			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['network_address'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['network_update_time'])."&nbsp;</td>\n";
 			if ($row['network_enabled'] == 'true') {
 				echo "	<td valign='top' class='".$row_style[$c]."'>True&nbsp;</td>\n";
