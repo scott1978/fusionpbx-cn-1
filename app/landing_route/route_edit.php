@@ -1032,9 +1032,9 @@
 	echo "		<option value=''></option>\n";
 	foreach ($network_uuid_arr as $key => $value) {
 		// if ($value == $network_uuid) {
-		// 	echo "	<option value='".$value."' selected='selected' >".$network_name_arr[$key]."</option>\n";
+			echo "	<option value='".$value."' selected='selected' >".$network_name_arr[$key]."</option>\n";
 		// } else {
-			echo "	<option value='".$value."' >".$network_name_arr[$key]."</option>\n";
+			// echo "	<option value='".$value."' >".$network_name_arr[$key]."</option>\n";
 		// }
 	}
 	echo "		</select>\n";
