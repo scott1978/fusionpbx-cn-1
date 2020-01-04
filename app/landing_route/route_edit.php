@@ -79,7 +79,7 @@
 		$prep_statement->execute();
 		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
 		foreach ($result as &$row) {
-			$network_result[$row["network_uuid"]] = escape($row["network_name"]);
+			$network_result[$row["network_uuid"]] = $row["network_name"];
 		}
 		unset ($sql, $prep_statement, $result, $row);
 	}
@@ -1025,9 +1025,9 @@
 	echo "		<option value=''></option>\n";
 	foreach ($network_result as $k_network_uuid => $v_network_name) {
 		if ($k_network_uuid == $network_uuid) {
-			echo "	<option value='".escape($k_network_uuid)."' selected='selected' >".escape($v_network_name)."</option>\n";
+			echo "	<option value='".escape($k_network_uuid)."' selected='selected' >".$v_network_name."</option>\n";
 		} else {
-			echo "	<option value='".escape($k_network_uuid)."' >".escape($v_network_name)."</option>\n";
+			echo "	<option value='".escape($k_network_uuid)."' >".$v_network_name."</option>\n";
 		}
 	}
 	unset($network_result, $k_network_uuid, $v_network_name);
