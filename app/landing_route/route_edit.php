@@ -1033,7 +1033,7 @@
 	echo "		".$text['description-network_name']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
-	exit(0);
+	// exit(0);
 
 	// route_order
 	echo "<tr>\n";
