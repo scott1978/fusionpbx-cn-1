@@ -125,6 +125,7 @@
 
 		// add
 			if ($action == "add") {
+				$route_update_time = date('Y-m-d H:i:s');
 				$sql = "insert into v_landing_route ";
 				$sql .= "(";
 				$sql .= "route_uuid, ";
@@ -139,6 +140,7 @@
 				$sql .= "route_city, ";
 				$sql .= "route_telephone, ";
 				$sql .= "route_order, ";
+				$sql .= "route_update_time, ";
 				$sql .= "route_description ";
 				$sql .= ") ";
 				$sql .= "values ";
@@ -155,6 +157,7 @@
 				$sql .= "'$route_city', ";
 				$sql .= "'$route_telephone', ";
 				$sql .= "'$route_order', ";
+				$sql .= "'$route_update_time', ";
 				$sql .= "'$route_description' ";
 				$sql .= ")";
 				$db->exec(check_sql($sql));
@@ -949,16 +952,16 @@
 	echo "</tr>\n";
 
 	// route_telephone
-	echo "<tr name='route_telephone_group' id='route_telephone_group'>\n";
-	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	echo "	".$text['label-route_telephone']."\n";
-	echo "</td>\n";
-	echo "<td class='vtable' align='left'>\n";
-	echo "	<input class='formfld' type='text' name='route_telephone' id='route_telephone' value=\"".escape($route_telephone)."\">\n";
-		echo "<br />\n";
-		echo $text['description-route_telephone']."\n";
-	echo "</td>\n";
-	echo "</tr>\n";
+	// echo "<tr name='route_telephone_group' id='route_telephone_group'>\n";
+	// echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
+	// echo "	".$text['label-route_telephone']."\n";
+	// echo "</td>\n";
+	// echo "<td class='vtable' align='left'>\n";
+	// echo "	<input class='formfld' type='text' name='route_telephone' id='route_telephone' value=\"".escape($route_telephone)."\">\n";
+	// 	echo "<br />\n";
+	// 	echo $text['description-route_telephone']."\n";
+	// echo "</td>\n";
+	// echo "</tr>\n";
 
 	// route_start_time
 	echo "<tr>\n";
@@ -1005,34 +1008,34 @@
 	echo "</tr>\n";
 
 	// network_name
-	echo "<tr>\n";
-	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	echo "	".$text['label-network_name']."\n";
-	echo "</td>\n";
-	echo "<td class='vtable' align='left'>\n";
-	echo "		<select id='network_name' name='network_name' class='formfld' style=''>\n";
-	echo "		<option value=''></option>\n";
-	//get all network_cc from database
-	$sql = "select * from v_network_cc where network_enabled='true' ";
-	$prep_statement = $db->prepare(check_sql($sql));
-	$prep_statement->execute();
-	$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
-	foreach ($result as &$row) {
-		$network_result[$row["network_uuid"]] = $row["network_name"];
-	}
-	foreach ($network_result as $k_network_uuid => $v_network_name) {
-		if ($k_network_uuid == $network_uuid) {
-			echo "	<option value='".escape($k_network_uuid)."' selected='selected' >".escape($v_network_name)."</option>\n";
-		} else {
-			echo "	<option value='".escape($k_network_uuid)."' >".escape($v_network_name)."</option>\n";
-		}
-	}
-	unset($sql, $prep_statement, $result, $row, $network_result, $k_network_uuid, $v_network_name, $selected);
-	echo "		</select>\n";
-	echo "		<br />\n";
-	echo "		".$text['description-network_name']."\n";
-	echo "</td>\n";
-	echo "</tr>\n";
+	// echo "<tr>\n";
+	// echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
+	// echo "	".$text['label-network_name']."\n";
+	// echo "</td>\n";
+	// echo "<td class='vtable' align='left'>\n";
+	// echo "		<select id='network_name' name='network_name' class='formfld' style=''>\n";
+	// echo "		<option value=''></option>\n";
+	// //get all network_cc from database
+	// $sql = "select * from v_network_cc where network_enabled='true' ";
+	// $prep_statement = $db->prepare(check_sql($sql));
+	// $prep_statement->execute();
+	// $result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+	// foreach ($result as &$row) {
+	// 	$network_result[$row["network_uuid"]] = $row["network_name"];
+	// }
+	// foreach ($network_result as $k_network_uuid => $v_network_name) {
+	// 	if ($k_network_uuid == $network_uuid) {
+	// 		echo "	<option value='".escape($k_network_uuid)."' selected='selected' >".escape($v_network_name)."</option>\n";
+	// 	} else {
+	// 		echo "	<option value='".escape($k_network_uuid)."' >".escape($v_network_name)."</option>\n";
+	// 	}
+	// }
+	// unset($sql, $prep_statement, $result, $row, $network_result, $k_network_uuid, $v_network_name, $selected);
+	// echo "		</select>\n";
+	// echo "		<br />\n";
+	// echo "		".$text['description-network_name']."\n";
+	// echo "</td>\n";
+	// echo "</tr>\n";
 
 	// route_order
 	echo "<tr>\n";
