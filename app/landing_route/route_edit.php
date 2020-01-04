@@ -1023,7 +1023,7 @@
 	foreach ($network_result as $k_network_uuid => $v_network_name) {
 		$selected = ($k_network_uuid == $network_uuid) ? "selected='selected'" : null;
 		echo "	<option value='".escape($k_network_uuid)."' ".escape($selected).">".escape($v_network_name)."</option>\n";
-		// echo "k_network_uuid: ".$k_network_uuid .", v_network_name: ".$v_network_name.", network_uuid: ".$network_uuid.", selected: ".$selected."\n";
+		echo "k_network_uuid: ".$k_network_uuid .", v_network_name: ".$v_network_name.", network_uuid: ".$network_uuid.", selected: ".$selected."\n";
 	}
 	
 	// unset($sql, $prep_statement, $result, $row, $network_result, $k_network_uuid, $v_network_name, $selected);
@@ -1033,7 +1033,8 @@
 	echo "</td>\n";
 	echo "</tr>\n";
 	echo $network_uuid."\n";
-	var_dump($network_result);
+	var_dump($network_uuid)."\n";
+	var_dump($network_result)."\n";
 
 	// route_order
 	echo "<tr>\n";
