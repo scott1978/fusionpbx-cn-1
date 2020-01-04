@@ -1021,8 +1021,11 @@
 		$network_result[$row["network_uuid"]] = $row["network_name"];
 	}
 	foreach ($network_result as $k_network_uuid => $v_network_name) {
-		$selected = ($k_network_uuid == $network_uuid) ? "selected='selected'" : null;
-		echo "	<option value='".escape($k_network_uuid)."' ".escape($selected).">".escape($v_network_name)."</option>\n";
+		if ($k_network_uuid == $network_uuid) {
+			echo "	<option value='".escape($k_network_uuid)."' selected='selected' >".escape($v_network_name)."</option>\n";
+		} else {
+			echo "	<option value='".escape($k_network_uuid)."' >".escape($v_network_name)."</option>\n";
+		}
 	}
 	unset($sql, $prep_statement, $result, $row, $network_result, $k_network_uuid, $v_network_name, $selected);
 	echo "		</select>\n";
