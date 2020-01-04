@@ -250,7 +250,7 @@
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
 	echo "	<select class='formfld' name='mobile_isp' id='mobile_isp'>\n";
-	switch ($route_type) {
+	switch ($mobile_isp) {
 		case "1" : 	$selected[1] = "selected='selected'";	break;
 		case "2" : 	$selected[2] = "selected='selected'";	break;
 		case "3" : 	$selected[2] = "selected='selected'";	break;
