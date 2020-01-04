@@ -108,8 +108,6 @@
 		//check for all required data
 			$msg = '';
 			if (strlen($route_name) == 0) { $msg .= $text['message-required']." ".$text['label-route_name']."<br>\n"; }
-			// if (strlen($route_enabled) == 0) { $msg .= $text['message-required']." ".$text['label-route_enabled']."<br>\n"; }
-			// if (strlen($route_cmd) == 0) { $msg .= $text['message-required']." ".$text['label-route_cmd']."<br>\n"; }
 
 		//show the message
 			if (strlen($msg) > 0 && strlen($_POST["persistformvar"]) == 0) {
@@ -184,8 +182,6 @@
 				$sql .= "route_type='$route_type', route_city='$route_city', route_telephone='$route_telephone', ";
 				$sql .= "route_order='$route_order', route_update_time='$route_update_time', route_description='$route_description' ";
 				$sql .= "where route_uuid='$route_uuid'";
-				echo $sql;
-				exit(0);
 				$db->exec(check_sql($sql));
 				unset($sql);
 				unset($route_update_time);
@@ -1027,13 +1023,17 @@
 	foreach ($network_result as $k_network_uuid => $v_network_name) {
 		$selected = ($k_network_uuid == $network_uuid) ? "selected='selected'" : null;
 		echo "	<option value='".escape($k_network_uuid)."' ".escape($selected).">".escape($v_network_name)."</option>\n";
+		echo "k_network_uuid: ".$k_network_uuid .", v_network_name: ".$v_network_name.", network_uuid: ".$network_uuid.", selected: ".$selected."\n";
 	}
+	echo $network_uuid."\n";
+	var_dump($network_result);
 	unset($sql, $prep_statement, $result, $row, $network_result, $k_network_uuid, $v_network_name, $selected);
 	echo "		</select>\n";
 	echo "		<br />\n";
 	echo "		".$text['description-network_name']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
+	exit(0);
 
 	// route_order
 	echo "<tr>\n";
