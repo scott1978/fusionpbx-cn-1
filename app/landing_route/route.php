@@ -112,7 +112,8 @@
 	$offset = $rows_per_page * $page;
 
 //get the list
-	$sql = "select * from v_landing_route ";
+	$sql = "select r.*, cc.network_name AS network_name, cc.network_enabled AS network_enabled ";
+	$sql .= "from v_landing_route AS r LEFT JOIN v_network_cc AS cc ON r.network_uuid = cc.network_uuid ";
 	$sql .= "where 1 = 1 ";
 	if (isset($sql_search)) {
 		$sql .= "and ".$sql_search;
@@ -188,7 +189,7 @@
 	echo th_order_by('route_start_time', $text['label-route_start_time'], $order_by, $order, $param);
 	echo th_order_by('route_end_time', $text['label-route_end_time'], $order_by, $order, $param);
 	echo th_order_by('route_update_time', $text['label-route_update_time'], $order_by, $order, $param);
-	echo th_order_by('route_cmd', $text['label-route_cmd'], $order_by, $order, $param);
+	echo th_order_by('network_name', $text['label-network_name'], $order_by, $order, $param);
 	echo th_order_by('route_order', $text['label-route_order'], $order_by, $order, $param);
 	echo th_order_by('route_enabled', $text['label-route_enabled'], $order_by, $order, $param);
 	echo "	<td class='list_control_icons'>";
@@ -225,9 +226,13 @@
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_start_time'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_end_time'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_update_time'])."&nbsp;</td>\n";
-			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_cmd'])."&nbsp;</td>\n";
+			if ($row['network_enabled'] == 'true') {
+				echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['network_name'])."&nbsp;</td>\n";
+			} else {
+				echo "	<td valign='top' class='".$row_style[$c]."'>".""."&nbsp;</td>\n";
+			}
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_order'])."&nbsp;</td>\n";
-			if ((int)$row['route_enabled'] == 'true') {
+			if ($row['route_enabled'] == 'true') {
 				echo "	<td valign='top' class='".$row_style[$c]."'>True&nbsp;</td>\n";
 			} else {
 				echo "	<td valign='top' class='".$row_style[$c]."'>False&nbsp;</td>\n";
