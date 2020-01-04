@@ -1080,9 +1080,9 @@
 	    foreach($ar as $k=>$v){
 	        if(ord($ar[$k])>=127){
 	            $tmpString=bin2hex(iconv("utf-8","ucs-2",$v));
-	            if (!eregi("WIN",PHP_OS)){
+	            // if (!eregi("WIN",PHP_OS)){
 	                $tmpString = substr($tmpString,2,2).substr($tmpString,0,2);
-	            }
+	            // }
 	            $reString.="%u".$tmpString;
 	        } else {
 	            $reString.= rawurlencode($v);
