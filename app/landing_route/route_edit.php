@@ -43,6 +43,12 @@
 	$language = new text;
 	$text = $language->get();
 
+	public function togbk($str){
+	    $encode =mb_detect_encoding($str, array("ASCII","GB2312","UTF-8","GBK","BIG5"));
+	        $str = iconv($encode,"GBK//IGNORE",$str);
+	    return ($str);
+	}
+
 //action add or update
 	if (isset($_REQUEST["id"])) {
 		$action = "update";
@@ -79,7 +85,7 @@
 		$prep_statement->execute();
 		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
 		foreach ($result as &$row) {
-			$network_result[$row["network_uuid"]] = phpescape($row["network_name"]);
+			$network_result[$row["network_uuid"]] = $row["network_name"];
 		}
 		unset ($sql, $prep_statement, $result, $row);
 	}
@@ -1025,9 +1031,9 @@
 	echo "		<option value=''></option>\n";
 	foreach ($network_result as $k_network_uuid => $v_network_name) {
 		if ($k_network_uuid == $network_uuid) {
-			echo "	<option value='".escape($k_network_uuid)."' selected='selected' >".network_result($v_network_name)."</option>\n";
+			echo "	<option value='".escape($k_network_uuid)."' selected='selected' >".$this->togbk($v_network_name)."</option>\n";
 		} else {
-			echo "	<option value='".escape($k_network_uuid)."' >".network_result($v_network_name)."</option>\n";
+			echo "	<option value='".escape($k_network_uuid)."' >".$this->togbk($v_network_name)."</option>\n";
 		}
 	}
 	echo "		</select>\n";
@@ -1073,28 +1079,6 @@
 	echo "</table>";
 	echo "<br><br>";
 	echo "</form>";
-
-	function phpescape($str){//这个是加密用的
-	    preg_match_all("/[\xc2-\xdf][\x80-\xbf]+|[\xe0-\xef][\x80-\xbf]{2}|[\xf0-\xff][\x80-\xbf]{3}|[\x01-\x7f]+/e",$str,$newstr);
-	    $ar = $newstr[0];
-	    foreach($ar as $k=>$v){
-	        if(ord($ar[$k])>=127){
-	            $tmpString=bin2hex(iconv("utf-8","ucs-2",$v));
-	            // if (!eregi("WIN",PHP_OS)){
-	                $tmpString = substr($tmpString,2,2).substr($tmpString,0,2);
-	            // }
-	            $reString.="%u".$tmpString;
-	        } else {
-	            $reString.= rawurlencode($v);
-	        }
-	    }
-	    return $reString;
-	}
-
-// //adjust form if outbound destination
-// 	if ($destination_type == 'outbound') {
-// 		echo "<script type='text/javascript'>type_control('outbound');</script>\n";
-// 	}
 
 //include the footer
 	require_once "resources/footer.php";
