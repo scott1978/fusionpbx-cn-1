@@ -1022,17 +1022,34 @@
 	echo "</td>\n";
 	echo "</tr>\n";
 
+	/*
+	echo "<select id=\"agent_name\" name=\"agent_name\" class='formfld'>\n";
+	echo "<option value=\"\"></option>\n";
+	if (is_array($users)) {
+		foreach($users as $field) {
+			if ($field[username] == $agent_name) {
+				echo "<option value='".escape($field[username])."' selected='selected'>".escape($field[username])."</option>\n";
+			}
+			else {
+				echo "<option value='".escape($field[username])."'>".escape($field[username])."</option>\n";
+			}
+		}
+	}
+	echo "</select>";
+	*/
+	
 	// network_name
 	echo "<tr>\n";
 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
 	echo "	".$text['label-network_name']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "		<select id='network_name' name='network_name' class='formfld' style=''>\n";
+	echo "		<select id='network_name' name='network_name' class='formfld'>\n";
 	echo "		<option value=''></option>\n";
 	foreach ($network_uuid_arr as $key => $value) {
-		// if ($value == $network_uuid) {
-			echo "	<option value='".$value."' selected='selected' >".$network_name_arr[$key]."</option>\n";
+		// selected='selected'
+		// if ($value == $network_uuid) { 
+			echo "	<option value='".$value."' selected='selected'>".$text['label-route_name']."</option>\n";
 		// } else {
 			// echo "	<option value='".$value."' >".$network_name_arr[$key]."</option>\n";
 		// }
