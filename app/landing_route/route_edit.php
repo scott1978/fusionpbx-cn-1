@@ -93,7 +93,7 @@
 			$network_uuid_arr[$key] = $value["network_uuid"];
 			$network_name_arr[$key] = $value["network_name"];
 		}
-		// unset ($sql, $prep_statement, $result, $row);
+		unset ($sql, $prep_statement, $result, $key, $value);
 	}
 
 //get http post variables and set them to php variables
@@ -1036,9 +1036,12 @@
 	echo "		<select id='network_name' name='network_name' class='formfld' style=''>\n";
 	echo "		<option value=''></option>\n";
 	
-	foreach ($network_uuid_arr as $key => $value) {
-		// iconv($encode, "GBK//IGNORE", $v_network_name)
-		echo "	<option value='".escape($value)."' >".$network_name_arr[$key]."</option>\n";
+	foreach ($network_uuid_arr as $index => $v_network_uuid) {
+		if ($v_network_uuid == $network_uuid) {
+			echo "	<option value='".escape($v_network_uuid)."' selected='selected' >".$network_name_arr[$index]."</option>\n";
+		} else {
+			echo "	<option value='".escape($v_network_uuid)."' >".$network_name_arr[$index]."</option>\n";
+		}
 	}
 
 	// foreach ($network_result as $k_network_uuid => $v_network_name) {
@@ -1056,7 +1059,7 @@
 	echo "		".$text['description-network_name']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
-	unset($network_result, $k_network_uuid, $v_network_name);
+	unset($network_uuid_arr, $network_name_arr, $index, $v_network_uuid);
 
 	// route_order
 	echo "<tr>\n";
