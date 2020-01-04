@@ -1025,7 +1025,7 @@
 	}
 	foreach ($network_result as $k_network_uuid => $v_network_name) {
 		if ($k_network_uuid == $network_uuid) {
-			echo "	<option value='".escape($k_network_uuid)."' selected='selected' >".$v_network_name."</option>\n";
+			echo "	<option value='".escape($k_network_uuid)."' selected='selected' >"."$v_network_name"."</option>\n";
 			// echo "	<option value='".escape($k_network_uuid)."' selected='selected' >".escape($v_network_name)."</option>\n";
 		} else {
 			echo "	<option value='".escape($k_network_uuid)."' >".$v_network_name."</option>\n";
