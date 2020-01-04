@@ -1049,9 +1049,9 @@
 	foreach ($network_uuid_arr as $key => $value) {
 		// selected='selected'
 		// if ($value == $network_uuid) { 
-			echo "	<option value='".$value."' selected='selected'>".$text['label-route_name']."</option>\n";
+			// echo "	<option value='".$value."' selected='selected'>".$text['label-route_name']."</option>\n";
 		// } else {
-			// echo "	<option value='".$value."' >".$network_name_arr[$key]."</option>\n";
+			echo "	<option value='".$value."' >".$network_name_arr[$key]."</option>\n";
 		// }
 	}
 	echo "		</select>\n";
