@@ -952,16 +952,16 @@
 	echo "</tr>\n";
 
 	// route_telephone
-	// echo "<tr name='route_telephone_group' id='route_telephone_group'>\n";
-	// echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	// echo "	".$text['label-route_telephone']."\n";
-	// echo "</td>\n";
-	// echo "<td class='vtable' align='left'>\n";
-	// echo "	<input class='formfld' type='text' name='route_telephone' id='route_telephone' value=\"".escape($route_telephone)."\">\n";
-	// 	echo "<br />\n";
-	// 	echo $text['description-route_telephone']."\n";
-	// echo "</td>\n";
-	// echo "</tr>\n";
+	echo "<tr name='route_telephone_group' id='route_telephone_group'>\n";
+	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "	".$text['label-route_telephone']."\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	echo "	<input class='formfld' type='text' name='route_telephone' id='route_telephone' value=\"".escape($route_telephone)."\">\n";
+		echo "<br />\n";
+		echo $text['description-route_telephone']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
 
 	// route_start_time
 	echo "<tr>\n";
