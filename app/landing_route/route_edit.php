@@ -1031,11 +1031,11 @@
 	echo "		<select id='network_name' name='network_name' class='formfld' style=''>\n";
 	echo "		<option value=''></option>\n";
 	foreach ($network_uuid_arr as $key => $value) {
-		if ($value == $network_uuid) {
-			echo "	<option value='".$value."' selected='selected' >".$network_name_arr[$key]."</option>\n";
-		} else {
+		// if ($value == $network_uuid) {
+		// 	echo "	<option value='".$value."' selected='selected' >".$network_name_arr[$key]."</option>\n";
+		// } else {
 			echo "	<option value='".$value."' >".$network_name_arr[$key]."</option>\n";
-		}
+		// }
 	}
 	echo "		</select>\n";
 	echo "		<br />\n";
