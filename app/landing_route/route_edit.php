@@ -175,7 +175,12 @@
 				$route_update_time = date('Y-m-d H:i:s');
 				$sql = "update v_landing_route set route_name='$route_name', route_gateway='$route_gateway', ";
 				$sql .= "route_weekday='$route_weekday', route_start_time='$route_start_time', ";
-				$sql .= "route_end_time='$route_end_time', route_enabled='$route_enabled', network_uuid='$network_uuid', ";
+				$sql .= "route_end_time='$route_end_time', route_enabled='$route_enabled', ";
+				if (strlen($network_uuid) == 0) {
+					$sql .= "network_uuid=NULL, ";
+				} else {
+					$sql .= "network_uuid='$network_uuid', ";
+				}
 				$sql .= "route_type='$route_type', route_city='$route_city', route_telephone='$route_telephone', ";
 				$sql .= "route_order='$route_order', route_update_time='$route_update_time', route_description='$route_description' ";
 				$sql .= "where route_uuid='$route_uuid'";
