@@ -84,16 +84,11 @@
 		$prep_statement = $db->prepare(check_sql($sql));
 		$prep_statement->execute();
 		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
-		// foreach ($network_result as $k_network_uuid => $v_network_name) {
-		// foreach ($result as &$row) {
-		// 	$network_result[$row["network_uuid"]] = $row["network_name"];
-		// }
-		// unset ($sql, $prep_statement, $result, $row);
 		foreach ($result as $key => $value) {
 			$network_uuid_arr[$key] = $value["network_uuid"];
 			$network_name_arr[$key] = $value["network_name"];
 		}
-		// unset ($sql, $prep_statement, $result, $key, $value);
+		unset ($sql, $prep_statement, $result, $key, $value);
 	}
 
 //get http post variables and set them to php variables
@@ -1036,30 +1031,19 @@
 	echo "		<select id='network_name' name='network_name' class='formfld' style=''>\n";
 	echo "		<option value=''></option>\n";
 	
-	foreach ($network_uuid_arr as $key => $value) {
+	foreach ($network_uuid_arr as $index => $v_network_uuid) {
 		if ($v_network_uuid == $network_uuid) {
-			echo "	<option value='".escape($value)."' selected='selected' >".$network_name_arr[$key]."</option>\n";
+			echo "	<option value='".$v_network_uuid."' selected='selected' >".$network_name_arr[$index]."</option>\n";
 		} else {
-			echo "	<option value='".escape($value)."' >".$network_name_arr[$key]."</option>\n";
+			echo "	<option value='".$v_network_uuid."' >".$network_name_arr[$index]."</option>\n";
 		}
 	}
-
-	// foreach ($network_result as $k_network_uuid => $v_network_name) {
-	// 	$encode = mb_detect_encoding($str, array("ASCII","GB2312","UTF-8","GBK","BIG5"));
-	// //     $str = iconv($encode,"GBK//IGNORE",$str);
-
-	// 	if ($k_network_uuid == $network_uuid) {
-	// 		echo "	<option value='".escape($k_network_uuid)."' selected='selected' >".iconv($encode, "GBK//IGNORE", $v_network_name)."</option>\n";
-	// 	} else {
-	// 		echo "	<option value='".escape($k_network_uuid)."' >".iconv($encode, "GBK//IGNORE", $v_network_name)."</option>\n";
-	// 	}
-	// }
 	echo "		</select>\n";
 	echo "		<br />\n";
 	echo "		".$text['description-network_name']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
-	unset($network_uuid_arr, $network_name_arr, $key, $value);
+	unset($network_uuid_arr, $network_name_arr, $index, $v_network_uuid);
 
 	// route_order
 	echo "<tr>\n";
