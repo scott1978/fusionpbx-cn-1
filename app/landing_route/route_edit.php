@@ -93,7 +93,7 @@
 			$network_uuid_arr[$key] = $value["network_uuid"];
 			$network_name_arr[$key] = $value["network_name"];
 		}
-		unset ($sql, $prep_statement, $result, $key, $value);
+		// unset ($sql, $prep_statement, $result, $key, $value);
 	}
 
 //get http post variables and set them to php variables
@@ -1059,7 +1059,7 @@
 	echo "		".$text['description-network_name']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
-	unset($network_uuid_arr, $network_name_arr, $index, $v_network_uuid);
+	// unset($network_uuid_arr, $network_name_arr, $index, $v_network_uuid);
 
 	// route_order
 	echo "<tr>\n";
