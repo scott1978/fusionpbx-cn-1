@@ -73,7 +73,15 @@
 			$route_description = $row["route_description"];
 			break; //limit to 1 row
 		}
-		unset ($prep_statement);
+		unset ($sql, $prep_statement, $result);
+
+		$sql = "select * from v_network_cc where network_enabled='true' ";
+		$prep_statement = $db->prepare(check_sql($sql));
+		$prep_statement->execute();
+		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+		foreach ($result as &$row) {
+			$network_result[$row["network_uuid"]] = escape($row["network_name"]);
+		}
 	}
 
 //get http post variables and set them to php variables
@@ -1016,13 +1024,13 @@
 	echo "		<select id='network_name' name='network_name' class='formfld' style=''>\n";
 	echo "		<option value=''></option>\n";
 	//get all network_cc from database
-	$sql = "select * from v_network_cc where network_enabled='true' ";
-	$prep_statement = $db->prepare(check_sql($sql));
-	$prep_statement->execute();
-	$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
-	foreach ($result as &$row) {
-		$network_result[$row["network_uuid"]] = escape($row["network_name"]);
-	}
+	// $sql = "select * from v_network_cc where network_enabled='true' ";
+	// $prep_statement = $db->prepare(check_sql($sql));
+	// $prep_statement->execute();
+	// $result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+	// foreach ($result as &$row) {
+	// 	$network_result[$row["network_uuid"]] = escape($row["network_name"]);
+	// }
 	foreach ($network_result as $k_network_uuid => $v_network_name) {
 		if ($k_network_uuid == $network_uuid) {
 			echo "	<option value='".escape($k_network_uuid)."' selected='selected' >"."$v_network_name"."</option>\n";
