@@ -1030,12 +1030,11 @@
 	echo "<td class='vtable' align='left'>\n";
 	echo "		<select id='network_name' name='network_name' class='formfld' style=''>\n";
 	echo "		<option value=''></option>\n";
-	
-	foreach ($network_uuid_arr as $index => $v_network_uuid) {
-		if ($v_network_uuid == $network_uuid) {
-			echo "	<option value='".$v_network_uuid."' selected='selected' >".$network_name_arr[$index]."</option>\n";
+	foreach ($network_uuid_arr as $key => $value) {
+		if ($value == $network_uuid) {
+			echo "	<option value='".$value."' selected='selected' >".$network_name_arr[$key]."</option>\n";
 		} else {
-			echo "	<option value='".$v_network_uuid."' >".$network_name_arr[$index]."</option>\n";
+			echo "	<option value='".$value."' >".$network_name_arr[$key]."</option>\n";
 		}
 	}
 	echo "		</select>\n";
@@ -1043,7 +1042,7 @@
 	echo "		".$text['description-network_name']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
-	unset($network_uuid_arr, $network_name_arr, $index, $v_network_uuid);
+	unset($network_uuid_arr, $network_name_arr, $key, $value);
 
 	// route_order
 	echo "<tr>\n";
