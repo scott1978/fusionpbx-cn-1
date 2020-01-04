@@ -43,11 +43,11 @@
 	$language = new text;
 	$text = $language->get();
 
-	public function togbk($str){
-	    $encode =mb_detect_encoding($str, array("ASCII","GB2312","UTF-8","GBK","BIG5"));
-	        $str = iconv($encode,"GBK//IGNORE",$str);
-	    return ($str);
-	}
+	// public function togbk($str){
+	//     $encode = mb_detect_encoding($str, array("ASCII","GB2312","UTF-8","GBK","BIG5"));
+	//     $str = iconv($encode,"GBK//IGNORE",$str);
+	//     return ($str);
+	// }
 
 //action add or update
 	if (isset($_REQUEST["id"])) {
@@ -1030,10 +1030,13 @@
 	echo "		<select id='network_name' name='network_name' class='formfld' style=''>\n";
 	echo "		<option value=''></option>\n";
 	foreach ($network_result as $k_network_uuid => $v_network_name) {
+		$encode = mb_detect_encoding($str, array("ASCII","GB2312","UTF-8","GBK","BIG5"));
+	//     $str = iconv($encode,"GBK//IGNORE",$str);
+
 		if ($k_network_uuid == $network_uuid) {
-			echo "	<option value='".escape($k_network_uuid)."' selected='selected' >".$this->togbk($v_network_name)."</option>\n";
+			echo "	<option value='".escape($k_network_uuid)."' selected='selected' >".iconv($encode, "GBK//IGNORE", $v_network_name);."</option>\n";
 		} else {
-			echo "	<option value='".escape($k_network_uuid)."' >".$this->togbk($v_network_name)."</option>\n";
+			echo "	<option value='".escape($k_network_uuid)."' >".iconv($encode, "GBK//IGNORE", $v_network_name)."</option>\n";
 		}
 	}
 	echo "		</select>\n";
