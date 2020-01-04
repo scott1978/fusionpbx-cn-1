@@ -89,7 +89,7 @@
 			$route_start_time = trim($_POST["route_start_time"]);
 			$route_end_time = trim($_POST["route_end_time"]);
 			$route_enabled = trim($_POST["route_enabled"]);
-			$network_name = trim($_POST["network_name"]);
+			$network_uuid = trim($_POST["network_name"]);
 			$route_order = trim($_POST["route_order"]);
 			$route_description = trim($_POST["route_description"]);
 	}
@@ -152,7 +152,7 @@
 				$sql .= "'$route_start_time', ";
 				$sql .= "'$route_end_time', ";
 				$sql .= "'$route_enabled', ";
-				$sql .= "'$network_name', ";
+				$sql .= "'$network_uuid', ";
 				$sql .= "'$route_type', ";
 				$sql .= "'$route_city', ";
 				$sql .= "'$route_telephone', ";
@@ -175,10 +175,12 @@
 				$route_update_time = date('Y-m-d H:i:s');
 				$sql = "update v_landing_route set route_name='$route_name', route_gateway='$route_gateway', ";
 				$sql .= "route_weekday='$route_weekday', route_start_time='$route_start_time', ";
-				$sql .= "route_end_time='$route_end_time', route_enabled='$route_enabled', network_uuid='$network_name', ";
+				$sql .= "route_end_time='$route_end_time', route_enabled='$route_enabled', network_uuid='$network_uuid', ";
 				$sql .= "route_type='$route_type', route_city='$route_city', route_telephone='$route_telephone', ";
 				$sql .= "route_order='$route_order', route_update_time='$route_update_time', route_description='$route_description' ";
 				$sql .= "where route_uuid='$route_uuid'";
+				echo $sql;
+				exit(0);
 				$db->exec(check_sql($sql));
 				unset($sql);
 				unset($route_update_time);
