@@ -169,9 +169,13 @@
 				$sql .= "'$route_description' ";
 				$sql .= ")";
 				$db->exec(check_sql($sql));
-				unset($sql);
+				echo $sql."\n";
+				exit();
+				unset($sql, $route_update_time);
 
-				$redis->lpush($rds_pbx_rule_watch, time());
+				if (($route_enabled == "true") && (strlen($network_uuid)) > 0) {
+					$redis->lpush($rds_pbx_rule_watch, time());
+				}
 			}
 
 		// update
@@ -189,8 +193,7 @@
 				$sql .= "route_order='$route_order', route_update_time='$route_update_time', route_description='$route_description' ";
 				$sql .= "where route_uuid='$route_uuid'";
 				$db->exec(check_sql($sql));
-				unset($sql);
-				unset($route_update_time);
+				unset($sql, $route_update_time);
 
 				$redis->lpush($rds_pbx_rule_watch, time());
 			}
