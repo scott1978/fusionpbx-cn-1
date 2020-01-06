@@ -82,16 +82,6 @@
 			$route_description = $row["route_description"];
 			break; //limit to 1 row
 		}
-
-		$sql = "select * from v_network_cc where network_enabled='true' ";
-		$prep_statement = $db->prepare(check_sql($sql));
-		$prep_statement->execute();
-		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
-		foreach ($result as $key => $value) {
-			$network_uuid_arr[$key] = $value["network_uuid"];
-			$network_name_arr[$key] = $value["network_name"];
-		}
-		unset ($sql, $prep_statement, $result, $key, $value);
 	}
 
 //get http post variables and set them to php variables
@@ -107,7 +97,7 @@
 			$route_start_time = trim($_POST["route_start_time"]);
 			$route_end_time = trim($_POST["route_end_time"]);
 			$route_enabled = trim($_POST["route_enabled"]);
-			$network_uuid = trim($_POST["network_name"]);
+			$network_uuid = trim($_POST["network_uuid"]);
 			$route_order = trim($_POST["route_order"]);
 			$route_description = trim($_POST["route_description"]);
 	}
@@ -1026,22 +1016,6 @@
 	echo "</td>\n";
 	echo "</tr>\n";
 
-	/*
-	echo "<select id=\"agent_name\" name=\"agent_name\" class='formfld'>\n";
-	echo "<option value=\"\"></option>\n";
-	if (is_array($users)) {
-		foreach($users as $field) {
-			if ($field[username] == $agent_name) {
-				echo "<option value='".escape($field[username])."' selected='selected'>".escape($field[username])."</option>\n";
-			}
-			else {
-				echo "<option value='".escape($field[username])."'>".escape($field[username])."</option>\n";
-			}
-		}
-	}
-	echo "</select>";
-	*/
-
 	// network_uuid
 	echo "<tr>\n";
 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
@@ -1055,30 +1029,6 @@
 	echo "		".$text['description-network_name']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
-
-	
-	// // network_name
-	// echo "<tr>\n";
-	// echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	// echo "	".$text['label-network_name']."\n";
-	// echo "</td>\n";
-	// echo "<td class='vtable' align='left'>\n";
-	// echo "		<select id='network_name' name='network_name' class='formfld'>\n";
-	// echo "		<option value=''></option>\n";
-	// foreach ($network_uuid_arr as $key => $value) {
-	// 	// selected='selected'
-	// 	// if ($value == $network_uuid) { 
-	// 		// echo "	<option value='".$value."' selected='selected'>".$text['label-route_name']."</option>\n";
-	// 	// } else {
-	// 		echo "	<option value='".$value."' >".$network_name_arr[$key]."</option>\n";
-	// 	// }
-	// }
-	// echo "		</select>\n";
-	// echo "		<br />\n";
-	// echo "		".$text['description-network_name']."\n";
-	// echo "</td>\n";
-	// echo "</tr>\n";
-	// unset($network_uuid_arr, $network_name_arr, $key, $value);
 
 	// route_order
 	echo "<tr>\n";
