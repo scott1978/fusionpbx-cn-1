@@ -91,9 +91,9 @@
 			// }
 			$network_uuid = $row["network_uuid"];
 			$route_order = $row["route_order"];
-			// if (strlen($route_order) == 0) {
-			// 	$route_order = "999";
-			// }
+			if (strlen($route_order) == 0) {
+				$route_order = "999";
+			}
 			$route_description = $row["route_description"];
 			break; //limit to 1 row
 		}
