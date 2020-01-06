@@ -1,6 +1,7 @@
 <?php
 
-header("content-type:text/html;charset=utf-8");
+// header("content-type:text/html;charset=utf-8");
+
 /*
 	FusionPBX
 	Version: MPL 1.1
@@ -888,7 +889,8 @@ header("content-type:text/html;charset=utf-8");
 
 	// setFormValue
 
-
+//show the header
+	require_once "resources/header.php";
 
 //show the content
 	echo "<form method='post' name='frm' action=''>\n";
