@@ -71,24 +71,12 @@
 			$route_name = $row["route_name"];
 			$route_gateway = $row["route_gateway"];
 			$route_type = $row["route_type"];
-			// if (strlen($route_type) == 0) {
-			// 	$route_type = "1";
-			// }
 			$route_city = $row["route_city"];
 			$route_telephone = $row["route_telephone"];
 			$route_weekday = $row["route_weekday"];
 			$route_start_time = $row["route_start_time"];
-			// if (strlen($route_start_time) == 0) || !(preg_match("[0-2][0-9]:[0-5][0-9]", $route_start_time)) {
-			// 	$route_start_time = "00:00";
-			// }
 			$route_end_time = $row["route_end_time"];
-			// if (strlen($route_end_time) == 0) || !(preg_match("[0-2][0-9]:[0-5][0-9]", $route_start_time)) {
-			// 	$route_end_time = "23:59";
-			// }
 			$route_enabled = $row["route_enabled"];
-			// if (strlen($route_enabled) == 0) {
-			// 	$route_enabled = "false";
-			// }
 			$network_uuid = $row["network_uuid"];
 			$route_order = $row["route_order"];
 			$route_description = $row["route_description"];
@@ -103,12 +91,27 @@
 			$route_name = trim($_POST["route_name"]);
 			$route_gateway = trim($_POST["route_gateway"]);
 			$route_type = trim($_POST["route_type"]);
+			if (strlen($route_type) == 0) {
+				$route_type = "1";
+			}
 			$route_city = trim($_POST["route_city"]);
+			if ($route_type == "1" && strlen($route_city) == 0) {
+				$route_city = "0";
+			}
 			$route_telephone = trim($_POST["route_telephone"]);
 			$route_weekday = trim($_POST["route_weekday"]);
 			$route_start_time = trim($_POST["route_start_time"]);
+			if (strlen($route_start_time) == 0) || (preg_match("[0-2][0-9]:[0-5][0-9]", $route_start_time) == 0) {
+				$route_start_time = "00:00";
+			}
 			$route_end_time = trim($_POST["route_end_time"]);
+			if (strlen($route_end_time) == 0) || (preg_match("[0-2][0-9]:[0-5][0-9]", $route_start_time) == 0) {
+				$route_end_time = "23:59";
+			}
 			$route_enabled = trim($_POST["route_enabled"]);
+			if (strlen($route_enabled) == 0) {
+				$route_enabled = "false";
+			}
 			$network_uuid = trim($_POST["network_uuid"]);
 			$route_order = trim($_POST["route_order"]);
 			if (strlen($route_order) == 0) {
