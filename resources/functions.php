@@ -387,7 +387,8 @@
 					if (strlen($field[$field_name]) > 0) {
 						if (($field_current_value == $field[$field_name]) || ($field_current_value == $field[$field_value])) {
 							if (strlen($field_value) > 0) {
-								$html .= "<option value=\"".$field[$field_value]."\" selected>".$field[$field_name]."</option>\n";
+								// $html .= "<option value=\"".$field[$field_value]."\" selected>".$field[$field_name]."</option>\n";
+								$html .= "<option value=\"".$field[$field_value]."\">".$field[$field_name]."</option>\n";
 							}
 							else {
 								$html .= "<option value=\"".$field[$field_name]."\" selected>".$field[$field_name]."</option>\n";
@@ -404,11 +405,8 @@
 					}
 				}
 			}
-			// unset($sql, $result, $result_count);
+			unset($sql, $result, $result_count);
 			$html .= "</select>\n";
-			echo $sql."\n";
-			echo $html."\n";
-			exit(0);
 
 		return $html;
 		}
