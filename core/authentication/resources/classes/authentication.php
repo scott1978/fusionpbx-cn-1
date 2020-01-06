@@ -143,7 +143,12 @@ class authentication {
 						}
 
 						$username = $username_array[0];
-						unset($sql, $prep_statement, $result, $row, $domain_uuid);
+						// unset($sql, $prep_statement, $result, $row, $domain_uuid);
+						echo $username_array[0]."\n";
+						echo $username."\n";
+						echo $sql."\n";
+						exit(0);
+
 					} else {
 						$domain_name = $username_array[$username_array_len-1];
 						$username = substr(check_str($_REQUEST["username"]), 0, -(strlen($domain_name)+1));
