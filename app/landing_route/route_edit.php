@@ -91,9 +91,6 @@
 			// }
 			$network_uuid = $row["network_uuid"];
 			$route_order = $row["route_order"];
-			if (strlen($route_order) == 0) {
-				$route_order = "999";
-			}
 			$route_description = $row["route_description"];
 			break; //limit to 1 row
 		}
@@ -114,6 +111,9 @@
 			$route_enabled = trim($_POST["route_enabled"]);
 			$network_uuid = trim($_POST["network_uuid"]);
 			$route_order = trim($_POST["route_order"]);
+			if (strlen($route_order) == 0) {
+				$route_order = "999";
+			}
 			$route_description = trim($_POST["route_description"]);
 	}
 
