@@ -71,29 +71,29 @@
 			$route_name = $row["route_name"];
 			$route_gateway = $row["route_gateway"];
 			$route_type = $row["route_type"];
-			if (strlen($route_type) == 0) {
-				$route_type = "1";
-			}
+			// if (strlen($route_type) == 0) {
+			// 	$route_type = "1";
+			// }
 			$route_city = $row["route_city"];
 			$route_telephone = $row["route_telephone"];
 			$route_weekday = $row["route_weekday"];
-			// $route_start_time = $row["route_start_time"];
-			if (strlen($route_start_time) == 0) || !(preg_match("[0-2][0-9]:[0-5][0-9]", $route_start_time)) {
-				$route_start_time = "00:00";
-			}
+			$route_start_time = $row["route_start_time"];
+			// if (strlen($route_start_time) == 0) || !(preg_match("[0-2][0-9]:[0-5][0-9]", $route_start_time)) {
+			// 	$route_start_time = "00:00";
+			// }
 			$route_end_time = $row["route_end_time"];
-			if (strlen($route_end_time) == 0) || !(preg_match("[0-2][0-9]:[0-5][0-9]", $route_start_time)) {
-				$route_end_time = "23:59";
-			}
+			// if (strlen($route_end_time) == 0) || !(preg_match("[0-2][0-9]:[0-5][0-9]", $route_start_time)) {
+			// 	$route_end_time = "23:59";
+			// }
 			$route_enabled = $row["route_enabled"];
-			if (strlen($route_enabled) == 0) {
-				$route_enabled = "false";
-			}
+			// if (strlen($route_enabled) == 0) {
+			// 	$route_enabled = "false";
+			// }
 			$network_uuid = $row["network_uuid"];
 			$route_order = $row["route_order"];
-			if (strlen($route_order) == 0) {
-				$route_order = "999";
-			}
+			// if (strlen($route_order) == 0) {
+			// 	$route_order = "999";
+			// }
 			$route_description = $row["route_description"];
 			break; //limit to 1 row
 		}
