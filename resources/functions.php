@@ -363,14 +363,14 @@
 	}
 
 	if (!function_exists('html_select')) {
-		function html_select($db, $table_name, $field_name, $sql_where_optional, $field_current_value, $field_value = '', $style = '') {
+		function html_select($db, $table_name, $field_name, $sql_where_optional, $field_current_value, $field_value = '', $style = '', $sql_order_by = '') {
 			//html select other : build a select box from distinct items in db with option for other
 			global $domain_uuid;
 
 			if (strlen($field_value) > 0) {
 			$html .= "<select id=\"".$field_value."\" name=\"".$field_value."\" class='formfld' style='".$style."'>\n";
 			$html .= "<option value=\"\"></option>\n";
-				$sql = "SELECT distinct($field_name) as $field_name, $field_value FROM $table_name $sql_where_optional order by $field_name asc ";
+				$sql = "SELECT distinct($field_name) as $field_name, $field_value FROM $table_name $sql_where_optional $sql_order_by ";
 			}
 			else {
 				$html .= "<select id=\"".$field_name."\" name=\"".$field_name."\" class='formfld' style='".$style."'>\n";
@@ -385,7 +385,7 @@
 			if ($result_count > 0) { //if user account exists then show login
 				foreach($result as $field) {
 					if (strlen($field[$field_name]) > 0) {
-						if ($field_current_value == $field[$field_name]) {
+						if (($field_current_value == $field[$field_name]) || ($field_current_value == $field[$field_value])) {
 							if (strlen($field_value) > 0) {
 								$html .= "<option value=\"".$field[$field_value]."\" selected>".$field[$field_name]."</option>\n";
 							}

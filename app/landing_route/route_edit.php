@@ -1037,29 +1037,44 @@
 	}
 	echo "</select>";
 	*/
-	
+
 	// network_name
 	echo "<tr>\n";
 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
 	echo "	".$text['label-network_name']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "		<select id='network_name' name='network_name' class='formfld'>\n";
-	echo "		<option value=''></option>\n";
-	foreach ($network_uuid_arr as $key => $value) {
-		// selected='selected'
-		// if ($value == $network_uuid) { 
-			// echo "	<option value='".$value."' selected='selected'>".$text['label-route_name']."</option>\n";
-		// } else {
-			echo "	<option value='".$value."' >".$network_name_arr[$key]."</option>\n";
-		// }
-	}
-	echo "		</select>\n";
+	$table_name = 'v_network_cc'; $field_name = 'network_name'; $field_value = 'network_uuid';
+	$sql_where_optional = "network_enabled='true'"; $field_current_value = $network_uuid;
+	echo html_select($db, $table_name, $field_name, $sql_where_optional, $field_current_value, $field_value);
 	echo "		<br />\n";
 	echo "		".$text['description-network_name']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
-	unset($network_uuid_arr, $network_name_arr, $key, $value);
+
+	
+	// // network_name
+	// echo "<tr>\n";
+	// echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
+	// echo "	".$text['label-network_name']."\n";
+	// echo "</td>\n";
+	// echo "<td class='vtable' align='left'>\n";
+	// echo "		<select id='network_name' name='network_name' class='formfld'>\n";
+	// echo "		<option value=''></option>\n";
+	// foreach ($network_uuid_arr as $key => $value) {
+	// 	// selected='selected'
+	// 	// if ($value == $network_uuid) { 
+	// 		// echo "	<option value='".$value."' selected='selected'>".$text['label-route_name']."</option>\n";
+	// 	// } else {
+	// 		echo "	<option value='".$value."' >".$network_name_arr[$key]."</option>\n";
+	// 	// }
+	// }
+	// echo "		</select>\n";
+	// echo "		<br />\n";
+	// echo "		".$text['description-network_name']."\n";
+	// echo "</td>\n";
+	// echo "</tr>\n";
+	// unset($network_uuid_arr, $network_name_arr, $key, $value);
 
 	// route_order
 	echo "<tr>\n";
