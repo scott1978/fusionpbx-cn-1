@@ -42,27 +42,33 @@
 	$language = new text;
 	$text = $language->get();
 
-// //get the action
-// 	if (is_array($_POST["destinations"])) {
-// 		$destinations = $_POST["destinations"];
-// 		foreach($destinations as $row) {
-// 			if ($row['action'] == 'delete') {
-// 				$action = 'delete';
-// 				break;
-// 			}
-// 		}
-// 	}
+//get the action
+	if (is_array($_POST["data_list"])) {
+		$data_list = $_POST["data_list"];
+		foreach($data_list as $row) {
+			if ($row['action'] == 'delete') {
+				$action = 'delete';
+				$id = $row['route_uuid'];
+				break;
+			}
+		}
+		unset($data_list, $row);
+	}
 
-// //delete the destinations
-// 	if (permission_exists('destination_delete')) {
-// 		if ($action == "delete") {
-// 			//download
-// 				$obj = new destinations;
-// 				$obj->delete($destinations);
-// 			//delete message
-// 				messages::add($text['message-delete']);
-// 		}
-// 	}
+//delete the route
+	if (permission_exists('landing_route_delete') && ($action == "delete") && (strlen($id) > 0)) {
+		$sql = "delete from v_landing_route ";
+		$sql .= "where route_uuid = '".$id."' ";
+		$db->exec(check_sql($sql));
+		unset($sql, $id);
+
+		$redis->lpush($rds_pbx_rule_watch, time());
+
+		//delete message
+		messages::add($text['message-delete']);
+		header("Location: route.php");
+		return;
+	}
 
 //get variables used to control the order
 	$order_by = check_str($_GET["order_by"]);
