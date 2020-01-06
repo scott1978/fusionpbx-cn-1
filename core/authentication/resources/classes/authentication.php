@@ -124,7 +124,7 @@ class authentication {
 
 					//get the domain_name and username
 					if ($username_array_len == 1) {
-						$sql = "select * from v_users where username='".$username_array[0]."' where user_enabled='true' limit 1";
+						$sql = "select * from v_users where username='".$username_array[0]."' and user_enabled='true' limit 1";
 						$prep_statement = $this->db->prepare(check_sql($sql));
 						$prep_statement->execute();
 						$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
@@ -132,10 +132,8 @@ class authentication {
 							$domain_uuid = $row["domain_uuid"];
 							break; //limit to 1 row
 						}
-						echo $sql."\n";
-						echo $domain_uuid."\n";
 
-						$sql = "select * from v_domains where domain_uuid='".$domain_uuid."' where domain_enabled='true' limit 1";
+						$sql = "select * from v_domains where domain_uuid='".$domain_uuid."' and domain_enabled='true' limit 1";
 						$prep_statement = $this->db->prepare(check_sql($sql));
 						$prep_statement->execute();
 						$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
@@ -145,12 +143,7 @@ class authentication {
 						}
 
 						$username = $username_array[0];
-						// unset($sql, $prep_statement, $result, $row, $domain_uuid);
-						echo $username_array[0]."\n";
-						echo $username."\n";
-						echo $sql."\n";
-						exit(0);
-
+						unset($sql, $prep_statement, $result, $row, $domain_uuid);
 					} else {
 						$domain_name = $username_array[$username_array_len-1];
 						$username = substr(check_str($_REQUEST["username"]), 0, -(strlen($domain_name)+1));
