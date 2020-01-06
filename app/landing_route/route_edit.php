@@ -1,4 +1,6 @@
 <?php
+
+header("content-type:text/html;charset=utf-8");
 /*
 	FusionPBX
 	Version: MPL 1.1
