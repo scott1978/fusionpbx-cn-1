@@ -26,7 +26,7 @@
 
 //includes
 	require_once "root.php";
-	require_once "resources/constant.php";
+	require_once "resources/redis.php";
 	require_once "resources/require.php";
 	require_once "resources/check_auth.php";
 
@@ -63,12 +63,7 @@
 		$db->exec(check_sql($sql));
 		unset($sql, $id);
 
-		$redis = new Redis();
-		$redis->connect($rds_ip, $rds_port);
-		$redis->auth($rds_password);
-		$redis->select($rds_db);
 		$redis->hdel($rds_pbx_mobile_code, $mobile_prefix);
-		unset($redis);
 
 		//delete message
 		messages::add($text['message-delete']);

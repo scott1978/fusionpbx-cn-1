@@ -26,7 +26,7 @@
 
 //includes
 	require_once "root.php";
-	require_once "resources/constant.php";
+	require_once "resources/redis.php";
 	require_once "resources/require.php";
 	require_once "resources/check_auth.php";
 
@@ -184,12 +184,7 @@
 				unset($sql, $network_update_time);
 
 				if ($network_enabled == 'true' && (($tmp_network_caller != $network_caller) || ($tmp_network_address != $network_address))) {
-					$redis = new Redis();
-					$redis->connect($rds_ip, $rds_port);
-					$redis->auth($rds_password);
-					$redis->select($rds_db);
 					$redis->lpush($rds_pbx_rule_watch, time());
-					unset($redis);
 				}
 
 				unset($tmp_network_caller, $tmp_network_enabled);
