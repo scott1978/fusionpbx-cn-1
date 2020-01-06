@@ -119,7 +119,7 @@ class authentication {
 					//get the domain_name and username
 					if ($username_array_len == 1) {
 						$sql = "select * from v_users where username='".$username_array[0]."' where user_enabled='true' limit 1";
-						$prep_statement = $db->prepare(check_sql($sql));
+						$prep_statement = prepare(check_sql($sql));
 						$prep_statement->execute();
 						$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
 						foreach ($result as &$row) {
