@@ -1038,7 +1038,7 @@
 	echo "</select>";
 	*/
 
-	// network_name
+	// network_uuid
 	echo "<tr>\n";
 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
 	echo "	".$text['label-network_name']."\n";

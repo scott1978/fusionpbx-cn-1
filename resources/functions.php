@@ -368,8 +368,8 @@
 			global $domain_uuid;
 
 			if (strlen($field_value) > 0) {
-			$html .= "<select id=\"".$field_value."\" name=\"".$field_value."\" class='formfld' style='".$style."'>\n";
-			$html .= "<option value=\"\"></option>\n";
+				$html .= "<select id=\"".$field_value."\" name=\"".$field_value."\" class='formfld' style='".$style."'>\n";
+				$html .= "<option value=\"\"></option>\n";
 				$sql = "SELECT distinct($field_name) as $field_name, $field_value FROM $table_name $sql_where_optional $sql_order_by ";
 			}
 			else {
@@ -404,8 +404,12 @@
 					}
 				}
 			}
-			unset($sql, $result, $result_count);
+			// unset($sql, $result, $result_count);
 			$html .= "</select>\n";
+
+			echo $sql."\n";
+			echo $html."\n";
+			exit(0);
 
 		return $html;
 		}
