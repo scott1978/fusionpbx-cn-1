@@ -1045,7 +1045,7 @@
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
 	$table_name = 'v_network_cc'; $field_name = 'network_name'; $field_value = 'network_uuid';
-	$sql_where_optional = "network_enabled='true'"; $field_current_value = $network_uuid;
+	$sql_where_optional = "where network_enabled='true'"; $field_current_value = $network_uuid;
 	echo html_select($db, $table_name, $field_name, $sql_where_optional, $field_current_value, $field_value);
 	echo "		<br />\n";
 	echo "		".$text['description-network_name']."\n";
