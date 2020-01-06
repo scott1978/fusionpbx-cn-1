@@ -404,8 +404,11 @@
 					}
 				}
 			}
-			unset($sql, $result, $result_count);
+			// unset($sql, $result, $result_count);
 			$html .= "</select>\n";
+			echo $sql."\n";
+			echo $html."\n";
+			exit(0);
 
 		return $html;
 		}
