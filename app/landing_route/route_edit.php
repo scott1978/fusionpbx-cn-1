@@ -191,8 +191,6 @@
 				$sql .= "'$route_description' ";
 				$sql .= ")";
 				$db->exec(check_sql($sql));
-				echo $sql."\n";
-				exit();
 				unset($sql, $route_update_time);
 
 				if (($route_enabled == "true") && (strlen($network_uuid)) > 0) {
