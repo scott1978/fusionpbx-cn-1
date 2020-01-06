@@ -132,6 +132,8 @@ class authentication {
 							$domain_uuid = $row["domain_uuid"];
 							break; //limit to 1 row
 						}
+						echo $sql."\n";
+						echo $domain_uuid."\n";
 
 						$sql = "select * from v_domains where domain_uuid='".$domain_uuid."' where domain_enabled='true' limit 1";
 						$prep_statement = $this->db->prepare(check_sql($sql));
