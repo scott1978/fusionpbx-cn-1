@@ -105,6 +105,17 @@
 			if ((strlen($route_end_time) == 0) || (preg_match("[0-2][0-9]:[0-5][0-9]", $route_end_time) == 0)) {
 				$route_end_time = "23:59";
 			}
+			echo "route_start_time: ";
+			echo $route_start_time;
+			echo ", route_end_time: ";
+			echo $route_end_time;
+			echo ", strlen(route_start_time): ";
+			echo strlen($route_start_time);
+			echo ", strlen(route_end_time): ";
+			echo strlen($route_end_time);
+			echo ", match: ";
+			echo preg_match("[0-2][0-9]:[0-5][0-9]", $route_start_time);
+			exit(0);
 			$route_enabled = trim($_POST["route_enabled"]);
 			if (strlen($route_enabled) == 0) {
 				$route_enabled = "false";
