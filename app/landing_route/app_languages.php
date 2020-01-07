@@ -401,6 +401,26 @@ $text['description-route_city']['ru-ru'] = "";
 $text['description-route_city']['sv-se'] = "";
 $text['description-route_city']['uk-ua'] = "";
 
+$text['description-route_weekday']['en-us'] = "选择生效日期";
+$text['description-route_weekday']['ar-eg'] = "";
+$text['description-route_weekday']['de-at'] = "";
+$text['description-route_weekday']['de-ch'] = "";
+$text['description-route_weekday']['de-de'] = "";
+$text['description-route_weekday']['es-cl'] = "";
+$text['description-route_weekday']['es-mx'] = "";
+$text['description-route_weekday']['fr-ca'] = "";
+$text['description-route_weekday']['fr-fr'] = "";
+$text['description-route_weekday']['he-il'] = "";
+$text['description-route_weekday']['it-it'] = "";
+$text['description-route_weekday']['nl-nl'] = "";
+$text['description-route_weekday']['pl-pl'] = "";
+$text['description-route_weekday']['pt-br'] = "";
+$text['description-route_weekday']['pt-pt'] = "";
+$text['description-route_weekday']['ro-ro'] = "";
+$text['description-route_weekday']['ru-ru'] = "";
+$text['description-route_weekday']['sv-se'] = "";
+$text['description-route_weekday']['uk-ua'] = "";
+
 $text['description-route_telephone']['en-us'] = "输入组号码，多个号码之间以英文逗号分隔";
 $text['description-route_telephone']['ar-eg'] = "";
 $text['description-route_telephone']['de-at'] = "";

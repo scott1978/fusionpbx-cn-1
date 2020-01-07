@@ -68,9 +68,6 @@
 			$route_city = $row["route_city"];
 			$route_telephone = $row["route_telephone"];
 			$route_weekday = $row["route_weekday"];
-			if (strlen($route_weekday) == 0) {
-				$route_weekday = "1,2,3,4,5,6,7";
-			}
 			$route_weeks = explode(",", $route_weekday);
 			$route_start_time = $row["route_start_time"];
 			$route_end_time = $row["route_end_time"];
@@ -97,7 +94,6 @@
 				$route_city = "0";
 			}
 			$route_telephone = trim($_POST["route_telephone"]);
-			$route_weekday = trim($_POST["route_weekday"]);
 			$route_start_time = trim($_POST["route_start_time"]);
 			if ((strlen($route_start_time) == 0) || (preg_match("[0-2][0-9]:[0-5][0-9]", $route_start_time) == 0)) {
 				$route_start_time = "00:00";
@@ -116,6 +112,12 @@
 				$route_order = "999";
 			}
 			$route_description = trim($_POST["route_description"]);
+			$route_weeks = trim($_POST["route_weeks"]);
+			if (count($route_weeks) == 0) {
+				$route_weekday = "";
+			} else {
+				$route_weekday = implode(",", $route_weeks);
+			}
 	}
 
 //process the http post 
@@ -991,30 +993,30 @@
 	echo "<td class='vtable' align='left'>\n";
 	for ($i=1;$i<8;$i++) {
 		if ($i == 1) {
-			$show_week_name = "周一";
+			$show_week_name = "周一 ";
 		} else if ($i == 2) {
-			$show_week_name = "周二";
+			$show_week_name = "周二 ";
 		} else if ($i == 3) {
-			$show_week_name = "周三";
+			$show_week_name = "周三 ";
 		} else if ($i == 4) {
-			$show_week_name = "周四";
+			$show_week_name = "周四 ";
 		} else if ($i == 5) {
-			$show_week_name = "周五";
+			$show_week_name = "周五 ";
 		} else if ($i == 6) {
-			$show_week_name = "周六";
+			$show_week_name = "周六 ";
 		} else {
-			$show_week_name = "周日";
+			$show_week_name = "周日 ";
 		}
 
 		$is_in = in_array($i, $route_weeks);
 		if ($is_in) {
-			echo "	<input class='formfld' type='checkbox' name='weeks[]' value='$i' checked>$show_week_name\n";
+			echo "	<input class='formfld' type='checkbox' name='route_weeks[]' value='$i' checked>$show_week_name\n";
 		} else {
-			echo "	<input class='formfld' type='checkbox' name='weeks[]' value='$i'>$show_week_name\n";
+			echo "	<input class='formfld' type='checkbox' name='route_weeks[]' value='$i'>$show_week_name\n";
 		}
 	}
 	echo "<br />\n";
-	echo "\n";
+	echo $text['description-route_weekday']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 
