@@ -986,7 +986,7 @@
 	echo "	".$text['label-route_weekday']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	for ($i=1;$i<8;$i++) {
+	for ($i=0;$i<7;$i++) {
 		if ($i == 1) {
 			$show_week_name = "周一 、 ";
 		} else if ($i == 2) {
@@ -998,9 +998,9 @@
 		} else if ($i == 5) {
 			$show_week_name = "周五 、 ";
 		} else if ($i == 6) {
-			$show_week_name = "周六 、 ";
+			$show_week_name = "周六 ";
 		} else {
-			$show_week_name = "周日 ";
+			$show_week_name = "周日 、 ";
 		}
 
 		$is_in = in_array($i, $route_weeks);

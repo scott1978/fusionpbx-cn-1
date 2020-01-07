@@ -256,7 +256,7 @@
 					$route_week_array[$day] = "周五";
 				} else if ($day == "6") {
 					$route_week_array[$day] = "周六";
-				} else if ($day == "7") {
+				} else if ($day == "0") {
 					$route_week_array[$day] = "周日";
 				} else {
 
