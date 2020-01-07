@@ -212,6 +212,8 @@
 				$sql .= "route_type='$route_type', route_city='$route_city', route_telephone='$route_telephone', ";
 				$sql .= "route_order='$route_order', route_update_time='$route_update_time', route_description='$route_description' ";
 				$sql .= "where route_uuid='$route_uuid'";
+				echo $sql;
+				exit(0);
 				$db->exec(check_sql($sql));
 				unset($sql, $route_update_time);
 
