@@ -1015,9 +1015,10 @@
 
 		$is_in = in_array($i, $route_weeks);
 		if ($is_in) {
-			echo "	<input class='formfld' type='checkbox' name='route_weeks' value='$i' checked>$show_week_name\n";
+			echo "	<input class='formfld' type='checkbox' name='route_weeks[]' value='".$i."' checked>".$show_week_name."\n";
 		} else {
-			echo "	<input class='formfld' type='checkbox' name='route_weeks' value='$i'>$show_week_name\n";
+			echo "	<input class='formfld' type='checkbox' name='route_weeks[]' value='".$i."' >".$show_week_name."\n";
+//			echo "	<input class='formfld' type='checkbox' name='route_weeks[]' value='$i'>$show_week_name\n";
 		}
 	}
 	echo "<br />\n";
