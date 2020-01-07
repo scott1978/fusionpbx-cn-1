@@ -102,7 +102,7 @@
 				$route_start_time = "00:00";
 			}
 			$route_end_time = trim($_POST["route_end_time"]);
-			if ((strlen($route_end_time) == 0) || (preg_match("[0-2][0-9]:[0-5][0-9]", $route_start_time) == 0)) {
+			if ((strlen($route_end_time) == 0) || (preg_match("[0-2][0-9]:[0-5][0-9]", $route_end_time) == 0)) {
 				$route_end_time = "23:59";
 			}
 			$route_enabled = trim($_POST["route_enabled"]);
