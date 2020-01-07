@@ -42,27 +42,48 @@
 	$language = new text;
 	$text = $language->get();
 
-// //get the action
-// 	if (is_array($_POST["destinations"])) {
-// 		$destinations = $_POST["destinations"];
-// 		foreach($destinations as $row) {
-// 			if ($row['action'] == 'delete') {
-// 				$action = 'delete';
-// 				break;
-// 			}
-// 		}
-// 	}
+ //get the action
+ 	if (is_array($_POST["data_list"])) {
+ 		$data_list = $_POST["data_list"];
+ 		foreach($data_list as $row) {
+ 			if ($row['action'] == 'delete') {
+ 				$action = 'delete';
+				$id = $row['network_uuid'];
+ 				break;
+ 			}
+ 		}
+ 	}
 
-// //delete the destinations
-// 	if (permission_exists('destination_delete')) {
-// 		if ($action == "delete") {
-// 			//download
-// 				$obj = new destinations;
-// 				$obj->delete($destinations);
-// 			//delete message
-// 				messages::add($text['message-delete']);
-// 		}
-// 	}
+ //delete the data
+	if (permission_exists('network_cc_delete') && ($action == "delete") && (strlen($id) > 0)) {
+		$sql = "select count(route_uuid) as num_rows from v_landing_route where network_uuid = '$id' ";
+		$prep_statement = $db->prepare($sql);
+		$prep_statement->execute();
+		$row = $prep_statement->fetch(PDO::FETCH_ASSOC);
+		if ($row['num_rows'] > 0) {
+			$msg = "删除失败，该记录已被关联";
+			require_once "resources/header.php";
+			require_once "resources/persist_form_var.php";
+			echo "<div align='center'>\n";
+			echo "<table><tr><td>\n";
+			echo $msg."<br />";
+			echo "</td></tr></table>\n";
+			persistformvar($_POST);
+			echo "</div>\n";
+			require_once "resources/footer.php";
+			return;
+		}
+
+		$sql = "delete from v_network_cc ";
+		$sql .= "where network_uuid = '".$id."' ";
+		$db->exec(check_sql($sql));
+		unset($sql, $id);
+
+		//delete message
+		messages::add($text['message-delete']);
+		header("Location: network.php");
+		return;
+ 	}
 
 //get variables used to control the order
 	$order_by = check_str($_GET["order_by"]);
