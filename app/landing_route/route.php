@@ -57,12 +57,23 @@
 
 //delete the route
 	if (permission_exists('landing_route_delete') && ($action == "delete") && (strlen($id) > 0)) {
-		$sql = "delete from v_landing_route ";
-		$sql .= "where route_uuid = '".$id."' ";
+		$is_enabled = 'false';
+		$sql = "select * from v_landing_route where route_uuid='".$id."' limit 1";
+		$prep_statement = $db->prepare(check_sql($sql));
+		$prep_statement->execute();
+		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+		foreach ($result as &$row) {
+			$is_enabled = $row["route_enabled"];
+			break; //limit to 1 row
+		}
+
+		$sql = "delete from v_landing_route where route_uuid = '".$id."' ";
 		$db->exec(check_sql($sql));
 		unset($sql, $id);
 
-		$redis->lpush($rds_pbx_rule_watch, time());
+		if ($is_enabled == "true") {
+			$redis->lpush($rds_pbx_rule_watch, time());
+		}
 
 		//delete message
 		messages::add($text['message-delete']);
