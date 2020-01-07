@@ -46,12 +46,6 @@
 	$language = new text;
 	$text = $language->get();
 
-	// public function togbk($str){
-	//     $encode = mb_detect_encoding($str, array("ASCII","GB2312","UTF-8","GBK","BIG5"));
-	//     $str = iconv($encode,"GBK//IGNORE",$str);
-	//     return ($str);
-	// }
-
 //action add or update
 	if (isset($_REQUEST["id"])) {
 		$action = "update";
@@ -74,6 +68,10 @@
 			$route_city = $row["route_city"];
 			$route_telephone = $row["route_telephone"];
 			$route_weekday = $row["route_weekday"];
+			if (strlen($route_weekday) == 0) {
+				$route_weekday = "1,2,3,4,5,6,7";
+			}
+			$route_weeks = explode(",", $route_weekday);
 			$route_start_time = $row["route_start_time"];
 			$route_end_time = $row["route_end_time"];
 			$route_enabled = $row["route_enabled"];
@@ -982,6 +980,41 @@
 	echo "	<input class='formfld' type='text' name='route_telephone' id='route_telephone' value=\"".escape($route_telephone)."\">\n";
 		echo "<br />\n";
 		echo $text['description-route_telephone']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+
+	// route_weeks
+	echo "<tr>\n";
+	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "	".$text['label-route_weekday']."\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	for ($i=1;$i<8;$i++) {
+		if ($i == 1) {
+			$show_week_name = "周一";
+		} else if ($i == 2) {
+			$show_week_name = "周二";
+		} else if ($i == 3) {
+			$show_week_name = "周三";
+		} else if ($i == 4) {
+			$show_week_name = "周四";
+		} else if ($i == 5) {
+			$show_week_name = "周五";
+		} else if ($i == 6) {
+			$show_week_name = "周六";
+		} else {
+			$show_week_name = "周日";
+		}
+
+		$is_in = in_array($i, $route_weeks);
+		if ($is_in) {
+			echo "	<input class='formfld' type='checkbox' name='weeks[]' value='$i' checked>$show_week_name\n";
+		} else {
+			echo "	<input class='formfld' type='checkbox' name='weeks[]' value='$i'>$show_week_name\n";
+		}
+	}
+	echo "<br />\n";
+	echo "\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 
