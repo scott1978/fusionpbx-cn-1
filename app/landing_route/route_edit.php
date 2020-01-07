@@ -112,15 +112,18 @@
 				$route_order = "999";
 			}
 			$route_description = trim($_POST["route_description"]);
-			$route_weeks = request.getParameterValues("route_weeks[]");
+			$route_weeks = $_POST["route_weeks"];
+			$route_weekday = implode(",", $route_weeks);
 			echo "aaa ";
 			var_dump($route_weeks);
 			echo " aaa";
-			if (count($route_weeks) == 0) {
-				$route_weekday = "";
-			} else {
-				$route_weekday = implode(",", $route_weeks);
-			}
+			echo $route_weekday;
+			echo " bbb";
+//			if (count($route_weeks) == 0) {
+//				$route_weekday = "";
+//			} else {
+//				$route_weekday = implode(",", $route_weeks);
+//			}
 	}
 
 //process the http post 
