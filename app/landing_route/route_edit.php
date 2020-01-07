@@ -68,7 +68,9 @@
 			$route_city = $row["route_city"];
 			$route_telephone = $row["route_telephone"];
 			$route_weekday = $row["route_weekday"];
-			$route_weeks = explode(",", $route_weekday);
+			if (strlen($route_weekday) > 0) {
+				$route_weeks = explode(",", $route_weekday);
+			}
 			$route_start_time = $row["route_start_time"];
 			$route_end_time = $row["route_end_time"];
 			$route_enabled = $row["route_enabled"];
