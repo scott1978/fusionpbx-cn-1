@@ -26,6 +26,7 @@
 
 //includes
 	require_once "root.php";
+	require_once "resources/redis.php"
 	require_once "resources/require.php";
 	require_once "resources/check_auth.php";
 
@@ -69,11 +70,12 @@
 
 		$sql = "delete from v_landing_route where route_uuid = '".$id."' ";
 		$db->exec(check_sql($sql));
-		unset($sql, $id);
 
 		if ($is_enabled == "true") {
 			$redis->lpush($rds_pbx_rule_watch, time());
 		}
+
+		unset($sql, $id, $is_enabled, $prep_statement, $result, $row);
 
 		//delete message
 		messages::add($text['message-delete']);
