@@ -113,6 +113,9 @@
 			}
 			$route_description = trim($_POST["route_description"]);
 			$route_weeks = trim($_POST["route_weeks"]);
+			echo "aaa ";
+			var_dump($route_weeks);
+			echo " aaa";
 			if (count($route_weeks) == 0) {
 				$route_weekday = "";
 			} else {
