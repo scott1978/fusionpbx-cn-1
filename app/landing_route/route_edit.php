@@ -207,8 +207,6 @@
 				$sql .= "route_type='$route_type', route_city='$route_city', route_telephone='$route_telephone', ";
 				$sql .= "route_order='$route_order', route_update_time='$route_update_time', route_description='$route_description' ";
 				$sql .= "where route_uuid='$route_uuid'";
-				echo $sql;
-				exit(0);
 				$db->exec(check_sql($sql));
 				unset($sql, $route_update_time);
 
@@ -990,17 +988,17 @@
 	echo "<td class='vtable' align='left'>\n";
 	for ($i=1;$i<8;$i++) {
 		if ($i == 1) {
-			$show_week_name = "周一  ";
+			$show_week_name = "周一 、 ";
 		} else if ($i == 2) {
-			$show_week_name = "周二  ";
+			$show_week_name = "周二 、 ";
 		} else if ($i == 3) {
-			$show_week_name = "周三  ";
+			$show_week_name = "周三 、 ";
 		} else if ($i == 4) {
-			$show_week_name = "周四  ";
+			$show_week_name = "周四 、 ";
 		} else if ($i == 5) {
-			$show_week_name = "周五  ";
+			$show_week_name = "周五 、 ";
 		} else if ($i == 6) {
-			$show_week_name = "周六  ";
+			$show_week_name = "周六 、 ";
 		} else {
 			$show_week_name = "周日 ";
 		}
