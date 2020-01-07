@@ -112,7 +112,7 @@
 				$route_order = "999";
 			}
 			$route_description = trim($_POST["route_description"]);
-			$route_weeks = $this->request->getParameter("route_weeks[]");
+			$route_weeks = request.getParameterValues("route_weeks[]");
 			echo "aaa ";
 			var_dump($route_weeks);
 			echo " aaa";
