@@ -94,6 +94,7 @@
 				$route_city = "0";
 			}
 			$route_telephone = trim($_POST["route_telephone"]);
+			$route_weekday = implode(",", $_POST["route_weeks"]);
 			$route_start_time = trim($_POST["route_start_time"]);
 			if ((strlen($route_start_time) == 0) || (preg_match("[0-2][0-9]:[0-5][0-9]", $route_start_time) == 0)) {
 				$route_start_time = "00:00";
@@ -112,18 +113,6 @@
 				$route_order = "999";
 			}
 			$route_description = trim($_POST["route_description"]);
-			$route_weeks = $_POST["route_weeks"];
-			$route_weekday = implode(",", $route_weeks);
-			echo "aaa ";
-			var_dump($route_weeks);
-			echo " aaa";
-			echo $route_weekday;
-			echo " bbb";
-//			if (count($route_weeks) == 0) {
-//				$route_weekday = "";
-//			} else {
-//				$route_weekday = implode(",", $route_weeks);
-//			}
 	}
 
 //process the http post 
@@ -1001,32 +990,26 @@
 	echo "<td class='vtable' align='left'>\n";
 	for ($i=1;$i<8;$i++) {
 		if ($i == 1) {
-			$show_week_name = "周一 ";
+			$show_week_name = "周一  ";
 		} else if ($i == 2) {
-			$show_week_name = "周二 ";
+			$show_week_name = "周二  ";
 		} else if ($i == 3) {
-			$show_week_name = "周三 ";
+			$show_week_name = "周三  ";
 		} else if ($i == 4) {
-			$show_week_name = "周四 ";
+			$show_week_name = "周四  ";
 		} else if ($i == 5) {
-			$show_week_name = "周五 ";
+			$show_week_name = "周五  ";
 		} else if ($i == 6) {
-			$show_week_name = "周六 ";
+			$show_week_name = "周六  ";
 		} else {
 			$show_week_name = "周日 ";
 		}
 
 		$is_in = in_array($i, $route_weeks);
 		if ($is_in) {
-			echo "	<label><input type='checkbox' name='route_weeks[]' value='$i' checked='checked' /> $show_week_name </label>\n";
-//			echo "	<input class='formfld' type='checkbox' name='route_weeks[]' value='".$i."' checked>".$show_week_name."\n";
-//			echo "<br />\n";
+			echo "	<input type='checkbox' name='route_weeks[]' value='$i' checked='checked' /> $show_week_name \n";
 		} else {
-			echo "	<label><input type='checkbox' name='route_weeks[]' value='$i' /> $show_week_name </label>\n";
-//			echo "	<input class='formfld' type='checkbox' name='route_weeks[]' value='".$i."' >".$show_week_name."\n";
-//			echo "<br />\n";
-//			echo "	<label><input type='checkbox' name='db_create' value='1' $checked /> Create the database</label>\n";
-//			echo "	<input class='formfld' type='checkbox' name='route_weeks[]' value='$i'>$show_week_name\n";
+			echo "	<input type='checkbox' name='route_weeks[]' value='$i' /> $show_week_name \n";
 		}
 	}
 	echo "<br />\n";
