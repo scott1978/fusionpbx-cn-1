@@ -112,7 +112,7 @@
 				$route_order = "999";
 			}
 			$route_description = trim($_POST["route_description"]);
-			$route_weeks = trim($_POST["route_weeks"]);
+			$route_weeks = $this->request->getParameter("route_weeks[]");
 			echo "aaa ";
 			var_dump($route_weeks);
 			echo " aaa";
@@ -1016,8 +1016,10 @@
 		$is_in = in_array($i, $route_weeks);
 		if ($is_in) {
 			echo "	<input class='formfld' type='checkbox' name='route_weeks[]' value='".$i."' checked>".$show_week_name."\n";
+			echo "<br />\n";
 		} else {
 			echo "	<input class='formfld' type='checkbox' name='route_weeks[]' value='".$i."' >".$show_week_name."\n";
+			echo "<br />\n";
 //			echo "	<input class='formfld' type='checkbox' name='route_weeks[]' value='$i'>$show_week_name\n";
 		}
 	}
