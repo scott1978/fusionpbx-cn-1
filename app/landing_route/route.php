@@ -241,7 +241,28 @@
 			} else {
 				echo "	<td valign='top' class='".$row_style[$c]."'>&nbsp;</td>\n";
 			}
-			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_weekday'])."&nbsp;</td>\n";
+			$route_weeks = explode(",", $row['route_weekday']);
+			$route_week_array = array();
+			foreach ($route_weeks as $day) {
+				if ($day == "1") {
+					$route_week_array[$day] = "周一";
+				} else if ($day == "2") {
+					$route_week_array[$day] = "周二";
+				} else if ($day == "3") {
+					$route_week_array[$day] = "周三";
+				} else if ($day == "4") {
+					$route_week_array[$day] = "周四";
+				} else if ($day == "5") {
+					$route_week_array[$day] = "周五";
+				} else if ($day == "6") {
+					$route_week_array[$day] = "周六";
+				} else if ($day == "7") {
+					$route_week_array[$day] = "周日";
+				} else {
+
+				}
+			}
+			echo "	<td valign='top' class='".$row_style[$c]."'>".implode(",", $route_week_array)."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_start_time'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_end_time'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['route_update_time'])."&nbsp;</td>\n";
