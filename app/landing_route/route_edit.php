@@ -1006,13 +1006,6 @@
 		}
 
 		$is_in = in_array($i, $route_weeks);
-		echo "aaa";
-		echo $is_in;
-		echo " aaa";
-		echo count($route_weeks);
-		echo " aaa ";
-		var_dump($route_weeks);
-		exit(0);
 		if ($is_in) {
 			echo "	<input type='checkbox' name='route_weeks[]' value='$i' checked='checked' /> $show_week_name \n";
 		} else {
