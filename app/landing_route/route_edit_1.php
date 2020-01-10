@@ -233,7 +233,7 @@
 	require_once "resources/header.php";
 
 	// 111111
-	// echo "<script src=\"".PROJECT_PATH."/resources/jquery/jquery-1.11.1.js\"></script>\n";
+	echo "<script src=\"".PROJECT_PATH."/resources/jquery/jquery-1.11.1.js\"></script>\n";
 	echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.core.min.js\"></script>\n";
 	echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.excheck.min.js\"></script>\n";
 	echo "<link rel=\"stylesheet\" href=\"".PROJECT_PATH."/resources/bootstrap/css/zTreeStyle/zTreeStyle.css\" />\n";
@@ -263,7 +263,7 @@
 	echo "        var choose = '';\n";
 	echo "        for (var i = 0; i < nodes.length; i++) {\n";
 	echo "            if (nodes[i].id != null) {\n";
-	echo "                choose += (i == (nodes.length - 1)) ? nodes[i].id : nodes[i].id + ",";\n";
+	echo "                choose += (i == (nodes.length - 1)) ? nodes[i].id : nodes[i].id + ',';\n";
 	echo "            }\n";
 	echo "        }\n";
 	echo "        $('#route_city_ids).val(choose);\n";
