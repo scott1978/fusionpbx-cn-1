@@ -912,26 +912,29 @@
 //show the header
 	require_once "resources/header.php";
 
+	var_dump($province_city_list);
+	exit(0);
+
 	// 111111
-	echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.core.min.js\"></script>\n";
-	echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.excheck.min.js\"></script>\n";
-	echo "<link rel=\"stylesheet\" href=\"".PROJECT_PATH."/resources/bootstrap/css/zTreeStyle/zTreeStyle.css\" />\n";
-	echo "<script type='text/javascript'>\n";
-	echo "    var setting = {\n";
-	echo "        check: {\n";
-	echo "            enable: true\n";
-	echo "        },\n";
-	echo "        data: {\n";
-	echo "            simpleData: {\n";
-	echo "                enable: true\n";
-	echo "            }\n";
-	echo "        }\n";
-	echo "    };\n";
-	echo "    var zNodes = JSON.parse('<?php echo json_encode($province_city_list) ?>');\n";
-	echo "    $(document).ready(function () {\n";
-	echo "        $.fn.zTree.init($(\"#route_city_tree\"), setting, zNodes);\n";
-	echo "    });\n";
-	echo "</script>\n";
+	// echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.core.min.js\"></script>\n";
+	// echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.excheck.min.js\"></script>\n";
+	// echo "<link rel=\"stylesheet\" href=\"".PROJECT_PATH."/resources/bootstrap/css/zTreeStyle/zTreeStyle.css\" />\n";
+	// echo "<script type='text/javascript'>\n";
+	// echo "    var setting = {\n";
+	// echo "        check: {\n";
+	// echo "            enable: true\n";
+	// echo "        },\n";
+	// echo "        data: {\n";
+	// echo "            simpleData: {\n";
+	// echo "                enable: true\n";
+	// echo "            }\n";
+	// echo "        }\n";
+	// echo "    };\n";
+	// echo "    var zNodes = JSON.parse('<?php echo json_encode($province_city_list) ');\n";
+	// echo "    $(document).ready(function () {\n";
+	// echo "        $.fn.zTree.init($(\"#route_city_tree\"), setting, zNodes);\n";
+	// echo "    });\n";
+	// echo "</script>\n";
 	
 
 //show the content
