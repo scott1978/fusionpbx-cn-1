@@ -72,8 +72,6 @@
 		}
 	}
 	$province_city_list_str = json_encode($province_city_list);
-	echo $province_city_list_str;
-	exit(0);
 
 //get data by route_uuid
 	if (count($_GET) > 0 && isset($route_uuid)) {
@@ -248,7 +246,7 @@
 	echo "            }\n";
 	echo "        }\n";
 	echo "    };\n";
-	echo "    var zNodes = JSON.parse('<?php echo json_encode($province_city_list) ?>');\n";
+	echo "    var zNodes = JSON.parse('<?php echo $province_city_list_str ?>');\n";
 	echo "    $(document).ready(function () {\n";
 	echo "        $.fn.zTree.init($(\"#route_city_tree\"), setting, zNodes);\n";
 	echo "    });\n";
