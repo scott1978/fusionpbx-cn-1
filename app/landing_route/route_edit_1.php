@@ -264,7 +264,7 @@
 	echo "        for (var i = 0; i < nodes.length; i++) {\n";
 	echo "            if (nodes[i].id != null) {\n";
 	echo "                if (i == (nodes.length - 1)) {\n";
-	echo "                    choose += nodes[i].id\n";
+	echo "                    choose += nodes[i].id;\n";
 	echo "                } else {\n";
 	echo "                    choose += nodes[i].id + ',';\n";
 	echo "                }\n";
@@ -272,6 +272,7 @@
 	echo "        }\n";
 	echo "        console.log(choose);\n";
 	echo "        $('#route_city_ids').val(choose);\n";
+	echo "    }\n";
 	echo "</script>\n";
 	
 
