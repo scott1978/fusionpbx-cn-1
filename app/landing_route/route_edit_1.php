@@ -133,6 +133,9 @@
 				$route_order = "999";
 			}
 			$route_description = trim($_POST["route_description"]);
+			$route_city_ids = trim($_POST["route_city_ids"]);
+			echo $route_city_ids;
+			exit(0);
 	}
 
 //process the http post 
@@ -230,7 +233,7 @@
 	require_once "resources/header.php";
 
 	// 111111
-	echo "<script src=\"".PROJECT_PATH."/resources/jquery/jquery-1.11.1.js\"></script>\n";
+	// echo "<script src=\"".PROJECT_PATH."/resources/jquery/jquery-1.11.1.js\"></script>\n";
 	echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.core.min.js\"></script>\n";
 	echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.excheck.min.js\"></script>\n";
 	echo "<link rel=\"stylesheet\" href=\"".PROJECT_PATH."/resources/bootstrap/css/zTreeStyle/zTreeStyle.css\" />\n";
@@ -244,13 +247,26 @@
 	echo "            simpleData: {\n";
 	echo "                enable: true\n";
 	echo "            }\n";
+	echo "        },\n";
+	echo "        callback: {\n";
+	echo "            beforeCheck: true,\n";
+	echo "            onCheck: onCheck\n";
 	echo "        }\n";
 	echo "    };\n";
 	echo "    var zNodes = $province_city_list_str;\n";
-	// echo "    var zNodes = JSON.parse('<?php echo $province_city_list_str ? >');\n";
 	echo "    $(document).ready(function () {\n";
 	echo "        $.fn.zTree.init($(\"#route_city_tree\"), setting, zNodes);\n";
 	echo "    });\n";
+	echo "    function onCheck(e, treeId, treeNode) {\n";
+	echo "        var treeObj = $.fn.zTree.getZtreeObj('route_city_tree'),\n";
+	echo "            nodes = treeObj.getCheckedNodes(true);\n";
+	echo "        var choose = '';\n";
+	echo "        for (var i = 0; i < nodes.length; i++) {\n";
+	echo "            if (nodes[i].id != null) {\n";
+	echo "                choose += (i == (nodes.length - 1)) ? nodes[i].id : nodes[i].id + ",";\n";
+	echo "            }\n";
+	echo "        }\n";
+	echo "        $('#route_city_ids).val(choose);\n";
 	echo "</script>\n";
 	
 
@@ -467,6 +483,7 @@
 	if ($action == "update") {
 		echo "		<input type='hidden' name='route_uuid' value='".escape($route_uuid)."'>\n";
 	}
+	echo "		    <input type='hidden' id='route_city_ids' name='route_city_ids' >\n";
 	echo "			<br>";
 	echo "			<input type='submit' class='btn' value='".$text['button-save']."'>\n";
 	echo "		</td>\n";
