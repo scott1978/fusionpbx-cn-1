@@ -1003,18 +1003,18 @@
 	echo "</td>\n";
 	echo "</tr>\n";
 
-	// route_city
-	echo "<tr name='route_city_group' id='route_city_group'>\n";
-	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	echo "	".$text['label-route_city']."\n";
-	echo "</td>\n";
-	echo "<td class='vtable' align='left'>\n";
-	echo "  <ul id='route_city_tree' class='ztree'></ul>\n"
-	// echo "	<input class='formfld' type='text' name='route_city' id='route_city' value=\"".escape($route_city)."\">\n";
-		echo "<br />\n";
-		echo $text['description-route_city']."\n";
-	echo "</td>\n";
-	echo "</tr>\n";
+	// // route_city
+	// echo "<tr name='route_city_group' id='route_city_group'>\n";
+	// echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
+	// echo "	".$text['label-route_city']."\n";
+	// echo "</td>\n";
+	// echo "<td class='vtable' align='left'>\n";
+	// echo "  <ul id='route_city_tree' class='ztree'></ul>\n"
+	// // echo "	<input class='formfld' type='text' name='route_city' id='route_city' value=\"".escape($route_city)."\">\n";
+	// 	echo "<br />\n";
+	// 	echo $text['description-route_city']."\n";
+	// echo "</td>\n";
+	// echo "</tr>\n";
 
 	// route_telephone
 	echo "<tr name='route_telephone_group' id='route_telephone_group'>\n";
