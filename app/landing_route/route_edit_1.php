@@ -258,15 +258,15 @@
 	echo "        $.fn.zTree.init($(\"#route_city_tree\"), setting, zNodes);\n";
 	echo "    });\n";
 	echo "    function onCheck(e, treeId, treeNode) {\n";
-	echo "        var treeObj = $.fn.zTree.getZtreeObj('route_city_tree'),\n";
-	echo "            nodes = treeObj.getCheckedNodes(true);\n";
+	echo "        var treeObj = $.fn.zTree.getZtreeObj('route_city_tree');\n";
+	echo "        var nodes = treeObj.getCheckedNodes(true);\n";
 	echo "        var choose = '';\n";
 	echo "        for (var i = 0; i < nodes.length; i++) {\n";
 	echo "            if (nodes[i].id != null) {\n";
 	echo "                choose += (i == (nodes.length - 1)) ? nodes[i].id : nodes[i].id + ',';\n";
 	echo "            }\n";
 	echo "        }\n";
-	echo "        $('#route_city_ids).val(choose);\n";
+	echo "        $('#route_city_ids').val(choose);\n";
 	echo "</script>\n";
 	
 
