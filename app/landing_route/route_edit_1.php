@@ -270,7 +270,7 @@
 	echo "                }\n";
 	echo "            }\n";
 	echo "        }\n";
-	echo "        console.log(choose);"
+	echo "        console.log(choose);\n";
 	echo "        $('#route_city_ids').val(choose);\n";
 	echo "</script>\n";
 	
