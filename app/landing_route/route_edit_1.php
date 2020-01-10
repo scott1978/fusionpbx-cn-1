@@ -1008,7 +1008,7 @@
 	echo "	".$text['label-route_city']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "  <ul id='route_city_tree' class='ztree1'></ul>\n"
+	echo "  <ul></ul>\n"
 	// echo "	<input class='formfld' type='text' name='route_city' id='route_city' value=\"".escape($route_city)."\">\n";
 		// echo "<br />\n";
 		// echo $text['description-route_city']."\n";
