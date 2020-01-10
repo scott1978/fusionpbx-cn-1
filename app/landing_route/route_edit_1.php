@@ -913,27 +913,27 @@
 	require_once "resources/header.php";
 
 	// 111111
-	// echo "<script src=\"".PROJECT_PATH."/resources/jquery/jquery-1.11.1.js\"></script>\n";
-	// echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.core.min.js\"></script>\n";
-	// echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.excheck.min.js\"></script>\n";
-	// echo "<link rel=\"stylesheet\" href=\"".PROJECT_PATH."/resources/bootstrap/css/zTreeStyle/zTreeStyle.css\" />\n";
-	// echo "<script type='text/javascript'>\n";
-	// echo "    var setting = {\n";
-	// echo "        check: {\n";
-	// echo "            enable: true,\n";
-	// echo "            chkboxType: { 'Y': 'ps', 'N': 'ps' }\n";
-	// echo "        },\n";
-	// echo "        data: {\n";
-	// echo "            simpleData: {\n";
-	// echo "                enable: true\n";
-	// echo "            }\n";
-	// echo "        }\n";
-	// echo "    };\n";
-	// echo "    var zNodes = JSON.parse('<?php echo json_encode($province_city_list) ? >');\n";
-	// echo "    $(document).ready(function () {\n";
-	// echo "        $.fn.zTree.init($(\"#route_city_tree\"), setting, zNodes);\n";
-	// echo "    });\n";
-	// echo "</script>\n";
+	echo "<script src=\"".PROJECT_PATH."/resources/jquery/jquery-1.11.1.js\"></script>\n";
+	echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.core.min.js\"></script>\n";
+	echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.excheck.min.js\"></script>\n";
+	echo "<link rel=\"stylesheet\" href=\"".PROJECT_PATH."/resources/bootstrap/css/zTreeStyle/zTreeStyle.css\" />\n";
+	echo "<script type='text/javascript'>\n";
+	echo "    var setting = {\n";
+	echo "        check: {\n";
+	echo "            enable: true,\n";
+	echo "            chkboxType: { 'Y': 'ps', 'N': 'ps' }\n";
+	echo "        },\n";
+	echo "        data: {\n";
+	echo "            simpleData: {\n";
+	echo "                enable: true\n";
+	echo "            }\n";
+	echo "        }\n";
+	echo "    };\n";
+	echo "    var zNodes = JSON.parse('<?php echo json_encode($province_city_list) ? >');\n";
+	echo "    $(document).ready(function () {\n";
+	echo "        $.fn.zTree.init($(\"#route_city_tree\"), setting, zNodes);\n";
+	echo "    });\n";
+	echo "</script>\n";
 	
 
 //show the content
@@ -1008,7 +1008,7 @@
 	echo "	".$text['label-route_city']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
-	echo "  <ul></ul>\n";
+	echo "  <ul id='route_city_tree' class='ztree'></ul>\n";
 	// echo "	<input class='formfld' type='text' name='route_city' id='route_city' value=\"".escape($route_city)."\">\n";
 		// echo "<br />\n";
 		// echo $text['description-route_city']."\n";
