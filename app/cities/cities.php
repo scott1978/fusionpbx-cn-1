@@ -249,7 +249,7 @@
 		$x = 0;
 		foreach($data_list as $row) {
 			if ($row['item_type'] != '1') {
-				break;
+				continue;
 			}
 
 			$country_id = $row['id'];
