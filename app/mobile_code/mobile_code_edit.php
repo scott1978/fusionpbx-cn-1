@@ -62,6 +62,7 @@
 			$mobile_prefix = $row["mobile_prefix"];
 			$province = $row["province"];
 			$city = $row["city"];
+			$fixed_code = $row["fixed_code"];
 			$mobile_isp = $row["mobile_isp"];
 			break; //limit to 1 row
 		}
@@ -75,6 +76,7 @@
 			$mobile_prefix = trim($_POST["mobile_prefix"]);
 			$province = trim($_POST["province"]);
 			$city = trim($_POST["city"]);
+			$fixed_code = trim($_POST["fixed_code"]);
 			$mobile_isp = trim($_POST["mobile_isp"]);
 	}
 
@@ -92,6 +94,7 @@
 		//check for all required data
 			$msg = '';
 			if (strlen($mobile_prefix) == 0) { $msg .= $text['message-required']." ".$text['label-mobile_prefix']."<br>\n"; }
+			if (strlen($fixed_code) == 0) { $msg .= $text['message-required']." ".$text['label-fixed_code']."<br>\n"; }
 
 		//show the message
 			if (strlen($msg) > 0 && strlen($_POST["persistformvar"]) == 0) {
@@ -114,6 +117,7 @@
 				$sql .= "mobile_prefix, ";
 				$sql .= "province, ";
 				$sql .= "city, ";
+				$sql .= "fixed_code, ";
 				$sql .= "mobile_isp ";
 				$sql .= ") ";
 				$sql .= "values ";
@@ -121,23 +125,24 @@
 				$sql .= "'$mobile_prefix', ";
 				$sql .= "'$province', ";
 				$sql .= "'$city', ";
+				$sql .= "'$fixed_code', ";
 				$sql .= "'$mobile_isp' ";
 				$sql .= ")";
 				$db->exec(check_sql($sql));
 				unset($sql);
 
-				$redis->hset($rds_pbx_mobile_code, $mobile_prefix);
+				$redis->hset($rds_pbx_mobile_code, $mobile_prefix, $fixed_code);
 			}
 
 		// update
 			if ($action == "update" && isset($mobile_prefix)) {
 				
 				$sql = "update v_mobile_code set province='$province', city='$city', ";
-				$sql .= "mobile_isp='$mobile_isp' where mobile_prefix='$mobile_prefix'";
+				$sql .= "fixed_code='$fixed_code', mobile_isp='$mobile_isp' where mobile_prefix='$mobile_prefix'";
 				$db->exec(check_sql($sql));
 				unset($sql);
 
-				$redis->hset($rds_pbx_mobile_code, $mobile_prefix);
+				$redis->hset($rds_pbx_mobile_code, $mobile_prefix, $fixed_code);
 			}
 
 		//redirect the user
@@ -216,6 +221,18 @@
 	echo "	<input class='formfld' type='text' name='city' value=\"".escape($city)."\">\n";
 		echo "<br />\n";
 		echo $text['description-city']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+
+	// fixed_code
+	echo "<tr>\n";
+	echo "<td class='vncellreq' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "	".$text['label-fixed_code']."\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	echo "	<input class='formfld' type='text' name='fixed_code' value=\"".escape($fixed_code)."\">\n";
+		echo "<br />\n";
+		echo $text['description-fixed_code']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 

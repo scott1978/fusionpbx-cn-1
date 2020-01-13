@@ -192,6 +192,7 @@
 	echo th_order_by('mobile_prefix', $text['label-mobile_prefix'], $order_by, $order, $param);
 	echo th_order_by('province', $text['label-province'], $order_by, $order, $param);
 	echo th_order_by('city', $text['label-city'], $order_by, $order, $param);
+	echo th_order_by('city', $text['label-fixed_code'], $order_by, $order, $param);
 	echo th_order_by('mobile_isp', $text['label-mobile_isp'], $order_by, $order, $param);
 	echo "	<td class='list_control_icons'>";
 	if (permission_exists('mobile_code_add')) {
@@ -217,6 +218,7 @@
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['mobile_prefix'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['province'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['city'])."&nbsp;</td>\n";
+			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['fixed_code'])."&nbsp;</td>\n";
 			
 			if (escape($row['mobile_isp']) == "1") {
 				echo "	<td valign='top' class='".$row_style[$c]."'>".$text['label-yi_dong']."&nbsp;</td>\n";

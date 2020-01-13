@@ -26,7 +26,6 @@
 
 //includes
 	require_once "root.php";
-	require_once "resources/redis.php";
 	require_once "resources/require.php";
 	require_once "resources/check_auth.php";
 
@@ -122,8 +121,6 @@
 				$sql .= ")";
 				$db->exec(check_sql($sql));
 				unset($sql);
-
-				$redis->hset($rds_pbx_fixed_code, $fixed_code);
 			}
 
 		// update
@@ -132,8 +129,6 @@
 				$sql = "update v_fixed_code set province='$province', city='$city' where fixed_code='$fixed_code'";
 				$db->exec(check_sql($sql));
 				unset($sql);
-
-				$redis->hset($rds_pbx_fixed_code, $fixed_code);
 			}
 
 		//redirect the user
