@@ -82,7 +82,6 @@
 		$sql_search .= "lower(fixed_code) like '%".$search."%' ";
 		$sql_search .= "or lower(province) like '%".$search."%' ";
 		$sql_search .= "or lower(city) like '%".$search."%' ";
-		$sql_search .= "or lower(area_code) like '%".$search."%' ";
 		$sql_search .= ") ";
 	}
 
@@ -193,7 +192,6 @@
 	echo th_order_by('fixed_code', $text['label-fixed_code'], $order_by, $order, $param);
 	echo th_order_by('province', $text['label-province'], $order_by, $order, $param);
 	echo th_order_by('city', $text['label-city'], $order_by, $order, $param);
-	echo th_order_by('area_code', $text['label-area_code'], $order_by, $order, $param);
 	echo "	<td class='list_control_icons'>";
 	if (permission_exists('fixed_code_add')) {
 		echo "		<a href='fixed_code_edit.php' alt='".$text['button-add']."'>$v_link_label_add</a>";
@@ -218,7 +216,6 @@
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['fixed_code'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['province'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['city'])."&nbsp;</td>\n";
-			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['area_code'])."&nbsp;</td>\n";
 			echo "	<td class='list_control_icons'>";
 			if (permission_exists('fixed_code_edit')) {
 				echo "<a href='fixed_code_edit.php?id=".escape($row['fixed_code'])."' alt='".$text['button-edit']."'>$v_link_label_edit</a>";

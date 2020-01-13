@@ -75,7 +75,6 @@
 			$fixed_code = trim($_POST["fixed_code"]);
 			$province = trim($_POST["province"]);
 			$city = trim($_POST["city"]);
-			$area_code = trim($_POST["area_code"]);
 	}
 
 //process the http post 
@@ -92,7 +91,6 @@
 		//check for all required data
 			$msg = '';
 			if (strlen($fixed_code) == 0) { $msg .= $text['message-required']." ".$text['label-fixed_code']."<br>\n"; }
-			if (strlen($area_code) == 0) { $msg .= $text['message-required']." ".$text['label-area_code']."<br>\n"; }
 
 		//show the message
 			if (strlen($msg) > 0 && strlen($_POST["persistformvar"]) == 0) {
@@ -114,31 +112,28 @@
 				$sql .= "(";
 				$sql .= "fixed_code, ";
 				$sql .= "province, ";
-				$sql .= "city, ";
-				$sql .= "area_code ";
+				$sql .= "city ";
 				$sql .= ") ";
 				$sql .= "values ";
 				$sql .= "(";
 				$sql .= "'$fixed_code', ";
 				$sql .= "'$province', ";
-				$sql .= "'$city', ";
-				$sql .= "'$area_code' ";
+				$sql .= "'$city' ";
 				$sql .= ")";
 				$db->exec(check_sql($sql));
 				unset($sql);
 
-				$redis->hset($rds_pbx_fixed_code, $fixed_code, $area_code);
+				$redis->hset($rds_pbx_fixed_code, $fixed_code);
 			}
 
 		// update
 			if ($action == "update" && isset($fixed_code)) {
 				
-				$sql = "update v_fixed_code set province='$province', city='$city', ";
-				$sql .= "area_code='$area_code' where fixed_code='$fixed_code'";
+				$sql = "update v_fixed_code set province='$province', city='$city' where fixed_code='$fixed_code'";
 				$db->exec(check_sql($sql));
 				unset($sql);
 
-				$redis->hset($rds_pbx_fixed_code, $fixed_code, $area_code);
+				$redis->hset($rds_pbx_fixed_code, $fixed_code);
 			}
 
 		//redirect the user
@@ -217,18 +212,6 @@
 	echo "	<input class='formfld' type='text' name='city' value=\"".escape($city)."\">\n";
 		echo "<br />\n";
 		echo $text['description-city']."\n";
-	echo "</td>\n";
-	echo "</tr>\n";
-
-	// area_code
-	echo "<tr>\n";
-	echo "<td class='vncellreq' valign='top' align='left' nowrap='nowrap'>\n";
-	echo "	".$text['label-area_code']."\n";
-	echo "</td>\n";
-	echo "<td class='vtable' align='left'>\n";
-	echo "	<input class='formfld' type='text' name='area_code' value=\"".escape($area_code)."\">\n";
-		echo "<br />\n";
-		echo $text['description-area_code']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 
