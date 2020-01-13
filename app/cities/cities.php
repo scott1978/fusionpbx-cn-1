@@ -128,6 +128,13 @@
 	$data_list = $prep_statement->fetchAll(PDO::FETCH_NAMED);
 	unset ($prep_statement, $sql);
 
+	
+
+//alternate the row style
+	$c = 0;
+	$row_style["0"] = "row_style0";
+	$row_style["1"] = "row_style1";
+
 	function echoTable($row, $x, $c)
 	{
 		if (permission_exists('cites_edit')) {
@@ -168,11 +175,6 @@
 			echo "	</td>\n";
 			echo "</tr>\n";
 	}
-
-//alternate the row style
-	$c = 0;
-	$row_style["0"] = "row_style0";
-	$row_style["1"] = "row_style1";
 
 //define the checkbox_toggle function
 	echo "<script type=\"text/javascript\">\n";
