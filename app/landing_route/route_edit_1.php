@@ -99,7 +99,7 @@
 			break; //limit to 1 row
 		}
 
-		$route_city_arry = explode(",", $route_city)
+		$route_city_arry = explode(",", $route_city);
 		$sql = "select * from v_province_city order by item_order";
 		$prep_statement = $db->prepare(check_sql($sql));
 		$prep_statement->execute();
@@ -121,7 +121,7 @@
 
 		$province_city_list_str = json_encode($province_city_list);
 
-		unset($sql, $prep_statement, $result, $row, $route_city_arry, $k, $v, $province_city_list)
+		unset($sql, $prep_statement, $result, $row, $route_city_arry, $k, $v, $province_city_list);
 	}
 
 //get http post variables and set them to php variables
