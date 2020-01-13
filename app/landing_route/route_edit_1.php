@@ -55,25 +55,6 @@
 		$action = "add";
 	}
 
-// // get all province and city
-// 	$province_city_list = array();
-// 	if (count($_GET) > 0) {
-// 		$sql = "select * from v_province_city order by item_order";
-// 		$prep_statement = $db->prepare(check_sql($sql));
-// 		$prep_statement->execute();
-// 		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
-// 		foreach ($result as $k => $v) {
-// 			if (strlen($v['parent_id'])==0) {
-// 				$province_city_list[$k]['isParent'] = true;
-// 			}
-// 			$province_city_list[$k]['id'] = $v['id'];
-//             $province_city_list[$k]['pId'] = $v['parent_id'];
-//             $province_city_list[$k]['name'] = $v['name'];
-//             $province_city_list[$k]['checked'] = ;
-// 		}
-// 	}
-// 	$province_city_list_str = json_encode($province_city_list);
-
 //get data by route_uuid
 	if (count($_GET) > 0 && isset($route_uuid)) {
 		$sql = "select * from v_landing_route where route_uuid='".$route_uuid."' limit 1";
@@ -104,7 +85,9 @@
 		$prep_statement = $db->prepare(check_sql($sql));
 		$prep_statement->execute();
 		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+		$province_city_length = 0;
 		foreach ($result as $k => $v) {
+			$province_city_length++;
 			if (strlen($v['parent_id'])==0) {
 				$province_city_list[$k]['isParent'] = true;
 			}
@@ -275,7 +258,6 @@
 //show the header
 	require_once "resources/header.php";
 
-	// 111111
 	echo "<script src=\"".PROJECT_PATH."/resources/jquery/jquery-1.11.1.js\"></script>\n";
 	echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.core.min.js\"></script>\n";
 	echo "<script src=\"".PROJECT_PATH."/resources/jquery/ztree/jquery.ztree.excheck.min.js\"></script>\n";
@@ -304,12 +286,16 @@
 	echo "        var treeObj = $.fn.zTree.getZTreeObj('route_city_tree');\n";
 	echo "        var nodes = treeObj.getCheckedNodes(true);\n";
 	echo "        var choose = '';\n";
-	echo "        for (var i = 0; i < nodes.length; i++) {\n";
-	echo "            if (nodes[i].id != null) {\n";
-	echo "                if (i == (nodes.length - 1)) {\n";
-	echo "                    choose += nodes[i].id;\n";
-	echo "                } else {\n";
-	echo "                    choose += nodes[i].id + ',';\n";
+	echo "        if (nodes.length == $province_city_length) {\n";
+	echo "            choose = '0';\n";
+	echo "        } else {\n";
+	echo "            for (var i = 0; i < nodes.length; i++) {\n";
+	echo "                if (nodes[i].id != null) {\n";
+	echo "                    if (i == (nodes.length - 1)) {\n";
+	echo "                        choose += nodes[i].id;\n";
+	echo "                    } else {\n";
+	echo "                        choose += nodes[i].id + ',';\n";
+	echo "                    }\n";
 	echo "                }\n";
 	echo "            }\n";
 	echo "        }\n";
