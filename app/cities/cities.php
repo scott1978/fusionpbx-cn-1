@@ -135,7 +135,7 @@
 	$row_style["0"] = "row_style0";
 	$row_style["1"] = "row_style1";
 
-	function echoTable($row, $x, $row_style_ret)
+	function echoTable($row, $x, $row_style_ret, $v_link_edit)
 	{
 		// if (permission_exists('cites_edit')) {
 				$tr_link = "href='cites_edit.php?id=".urlencode($row['id'])."'";
@@ -167,7 +167,7 @@
 			echo "	<td valign='top' class='".$row_style_ret."'>".escape($row['item_order'])."&nbsp;</td>\n";
 			echo "	<td class='list_control_icons'>";
 			// if (permission_exists('cities_edit')) {
-				echo "<a href='cities_edit.php?id=".escape($row['id'])."' alt='".$text['button-edit']."'>$v_link_label_edit</a>";
+				echo "<a href='cities_edit.php?id=".escape($row['id'])."' alt='".$text['button-edit']."'>$v_link_edit</a>";
 			// }
 			// if (permission_exists('cities_delete')) {
 				echo "<button type='submit' class='btn btn-default list_control_icon' name=\"data_list[$x][action]\" alt='".$text['button-delete']."' value='delete'><span class='glyphicon glyphicon-remove'></span></button>";
@@ -253,7 +253,7 @@
 			}
 
 			$country_id = $row['id'];
-			echoTable($row, $x, $row_style[$c]);
+			echoTable($row, $x, $row_style[$c], $v_link_label_edit);
 			$x++;
 			if ($c==0) { $c=1; } else { $c=0; }
 
@@ -263,7 +263,7 @@
 				}
 
 				$province_id = $subrow['id'];
-				echoTable($subrow, $x, $row_style[$c]);
+				echoTable($subrow, $x, $row_style[$c], $v_link_label_edit);
 				$x++;
 				if ($c==0) { $c=1; } else { $c=0; }
 
@@ -272,14 +272,11 @@
 						continue;
 					}
 
-					echoTable($subsubrow, $x, $row_style[$c]);
+					echoTable($subsubrow, $x, $row_style[$c], $v_link_label_edit);
 					$x++;
 					if ($c==0) { $c=1; } else { $c=0; }
 				}
-
 			}
-
-
 		} //end foreach
 		unset($sql, $destinations, $row_count);
 	} //end if results
