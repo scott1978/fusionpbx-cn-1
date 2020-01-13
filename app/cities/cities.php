@@ -262,7 +262,7 @@
 					continue;
 				}
 
-				$province_id = $row['id'];
+				$province_id = $subrow['id'];
 				echoTable($subrow, $x, $row_style[$c]);
 				$x++;
 				if ($c==0) { $c=1; } else { $c=0; }
