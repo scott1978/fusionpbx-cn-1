@@ -141,7 +141,7 @@
 			if (strlen($route_order) == 0) {
 				$route_order = "999";
 			}
-			$route_description = trim($_POST["route_description"]);\
+			$route_description = trim($_POST["route_description"]);
 	}
 
 //process the http post 
