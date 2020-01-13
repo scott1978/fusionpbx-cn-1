@@ -137,9 +137,9 @@
 
 	function echoTable($row, $x, $row_style_ret)
 	{
-		if (permission_exists('cites_edit')) {
+		// if (permission_exists('cites_edit')) {
 				$tr_link = "href='cites_edit.php?id=".urlencode($row['id'])."'";
-			}
+		// }
 			echo "<tr ".$tr_link.">\n";
 			echo "	<td valign='top' class='".$row_style_ret." tr_link_void' style='align: center; padding: 3px 3px 0px 8px;'>\n";
 			echo "		<input type='checkbox' name=\"data_list[$x][checked]\" id='checkbox_".$x."' value='true' onclick=\"if (!this.checked) { document.getElementById('chk_all_".$x."').checked = false; }\">\n";
@@ -166,12 +166,12 @@
 			echo "	<td valign='top' class='".$row_style_ret."'>".escape($row['fixed_code'])."&nbsp;</td>\n";
 			echo "	<td valign='top' class='".$row_style_ret."'>".escape($row['item_order'])."&nbsp;</td>\n";
 			echo "	<td class='list_control_icons'>";
-			if (permission_exists('cities_edit')) {
+			// if (permission_exists('cities_edit')) {
 				echo "<a href='cities_edit.php?id=".escape($row['id'])."' alt='".$text['button-edit']."'>$v_link_label_edit</a>";
-			}
-			if (permission_exists('cities_delete')) {
+			// }
+			// if (permission_exists('cities_delete')) {
 				echo "<button type='submit' class='btn btn-default list_control_icon' name=\"data_list[$x][action]\" alt='".$text['button-delete']."' value='delete'><span class='glyphicon glyphicon-remove'></span></button>";
-			}
+			// }
 			echo "	</td>\n";
 			echo "</tr>\n";
 	}
@@ -248,9 +248,38 @@
 	if (is_array($data_list)) {
 		$x = 0;
 		foreach($data_list as $row) {
+			if ($row['item_type'] != '1') {
+				break;
+			}
+
+			$country_id = $row['id'];
 			echoTable($row, $x, $row_style[$c]);
 			$x++;
 			if ($c==0) { $c=1; } else { $c=0; }
+
+			foreach($data_list as $subrow) {
+				if ($subrow['parent_id'] != $country_id) {
+					continue;
+				}
+
+				$province_id = $row['id'];
+				echoTable($subrow, $x, $row_style[$c]);
+				$x++;
+				if ($c==0) { $c=1; } else { $c=0; }
+
+				foreach($data_list as $subsubrow) {
+					if ($subsubrow['parent_id'] != $province_id) {
+						continue;
+					}
+
+					echoTable($subsubrow, $x, $row_style[$c]);
+					$x++;
+					if ($c==0) { $c=1; } else { $c=0; }
+				}
+
+			}
+
+
 		} //end foreach
 		unset($sql, $destinations, $row_count);
 	} //end if results
