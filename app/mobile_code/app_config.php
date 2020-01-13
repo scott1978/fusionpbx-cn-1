@@ -31,7 +31,7 @@
 	//permission details
 		$y=0;
 		$apps[$x]['permissions'][$y]['name'] = "mobile_code_view";
-		$apps[$x]['permissions'][$y]['menu']['uuid'] = "48a8d4ca-68e2-44e5-951a-71bf6c262b0f";
+		$apps[$x]['permissions'][$y]['menu']['uuid'] = "ae7a8bc1-c031-425a-91ae-732a556e58e9";
 		$apps[$x]['permissions'][$y]['groups'][] = "superadmin";
 		$apps[$x]['permissions'][$y]['groups'][] = "admin";
 		$y++;

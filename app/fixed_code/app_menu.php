@@ -27,6 +27,6 @@
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['enabled'] = "false";
-	$apps[$x]['menu'][$y]['order'] = "3";
+	$apps[$x]['menu'][$y]['order'] = "4";
 
 ?>
