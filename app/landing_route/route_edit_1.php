@@ -290,7 +290,7 @@
 	echo "        var nodes = treeObj.getCheckedNodes(true);\n";
 	echo "        var choose = '';\n";
 	echo "        if (nodes.length == $province_city_length) {\n";
-	echo "            choose = '00';\n";
+	echo "            choose = '0';\n";
 	echo "        } else {\n";
 	echo "            for (var i = 0; i < nodes.length; i++) {\n";
 	echo "                if (nodes[i].id != null) {\n";
