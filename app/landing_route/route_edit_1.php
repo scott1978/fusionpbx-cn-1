@@ -118,7 +118,6 @@
 				$route_type = "1";
 			}
 			$route_city = trim($_POST["route_city"]);
-			echo "route_city: ".$route_city;
 			if ($route_type != "1") {
 				$route_city = "";
 			}
@@ -236,9 +235,6 @@
 				$sql .= "route_type='$route_type', route_city='$route_city', route_telephone='$route_telephone', ";
 				$sql .= "route_order='$route_order', route_update_time='$route_update_time', route_description='$route_description' ";
 				$sql .= "where route_uuid='$route_uuid'";
-				echo "1111\n";
-				echo $sql;
-				exit(0);
 				$db->exec(check_sql($sql));
 				unset($sql, $route_update_time);
 
