@@ -55,23 +55,24 @@
 		$action = "add";
 	}
 
-// get all province and city
-	$province_city_list = array();
-	if (count($_GET) > 0) {
-		$sql = "select * from v_province_city order by item_order";
-		$prep_statement = $db->prepare(check_sql($sql));
-		$prep_statement->execute();
-		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
-		foreach ($result as $k => $v) {
-			if (strlen($v['parent_id'])==0) {
-				$province_city_list[$k]['isParent'] = true;
-			}
-			$province_city_list[$k]['id'] = $v['id'];
-            $province_city_list[$k]['pId'] = $v['parent_id'];
-            $province_city_list[$k]['name'] = $v['name'];
-		}
-	}
-	$province_city_list_str = json_encode($province_city_list);
+// // get all province and city
+// 	$province_city_list = array();
+// 	if (count($_GET) > 0) {
+// 		$sql = "select * from v_province_city order by item_order";
+// 		$prep_statement = $db->prepare(check_sql($sql));
+// 		$prep_statement->execute();
+// 		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+// 		foreach ($result as $k => $v) {
+// 			if (strlen($v['parent_id'])==0) {
+// 				$province_city_list[$k]['isParent'] = true;
+// 			}
+// 			$province_city_list[$k]['id'] = $v['id'];
+//             $province_city_list[$k]['pId'] = $v['parent_id'];
+//             $province_city_list[$k]['name'] = $v['name'];
+//             $province_city_list[$k]['checked'] = ;
+// 		}
+// 	}
+// 	$province_city_list_str = json_encode($province_city_list);
 
 //get data by route_uuid
 	if (count($_GET) > 0 && isset($route_uuid)) {
@@ -97,6 +98,30 @@
 			$route_description = $row["route_description"];
 			break; //limit to 1 row
 		}
+
+		$route_city_arry = explode(",", $route_city)
+		$sql = "select * from v_province_city order by item_order";
+		$prep_statement = $db->prepare(check_sql($sql));
+		$prep_statement->execute();
+		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+		foreach ($result as $k => $v) {
+			if (strlen($v['parent_id'])==0) {
+				$province_city_list[$k]['isParent'] = true;
+			}
+			if (($route_city_arry[0] == '0') || in_array($v['id'], $route_city_arry)) {
+				$province_city_list[$k]['checked'] = 'true';
+			} else {
+				$province_city_list[$k]['checked'] = 'false';
+			}
+
+			$province_city_list[$k]['id'] = $v['id'];
+            $province_city_list[$k]['pId'] = $v['parent_id'];
+            $province_city_list[$k]['name'] = $v['name'];
+		}
+
+		$province_city_list_str = json_encode($province_city_list);
+
+		unset($sql, $prep_statement, $result, $row, $route_city_arry, $k, $v, $province_city_list)
 	}
 
 //get http post variables and set them to php variables
@@ -133,9 +158,7 @@
 				$route_order = "999";
 			}
 			$route_description = trim($_POST["route_description"]);
-			$route_city_ids = trim($_POST["route_city_ids"]);
-			echo $route_city_ids;
-			exit(0);
+			$route_city = trim($_POST["route_city"]);
 	}
 
 //process the http post 
@@ -216,6 +239,26 @@
 				}
 			}
 
+			// update
+			if ($action == "update" && isset($route_uuid)) {
+				$route_update_time = date('Y-m-d H:i:s');
+				$sql = "update v_landing_route set route_name='$route_name', route_gateway='$route_gateway', ";
+				$sql .= "route_weekday='$route_weekday', route_start_time='$route_start_time', ";
+				$sql .= "route_end_time='$route_end_time', route_enabled='$route_enabled', ";
+				if (strlen($network_uuid) == 0) {
+					$sql .= "network_uuid=NULL, ";
+				} else {
+					$sql .= "network_uuid='$network_uuid', ";
+				}
+				$sql .= "route_type='$route_type', route_city='$route_city', route_telephone='$route_telephone', ";
+				$sql .= "route_order='$route_order', route_update_time='$route_update_time', route_description='$route_description' ";
+				$sql .= "where route_uuid='$route_uuid'";
+				$db->exec(check_sql($sql));
+				unset($sql, $route_update_time);
+
+				$redis->lpush($rds_pbx_rule_watch, time());
+			}
+
 
 		//redirect the user
 			if ($action == "add") {
@@ -270,8 +313,7 @@
 	echo "                }\n";
 	echo "            }\n";
 	echo "        }\n";
-	echo "        console.log(choose);\n";
-	echo "        $('#route_city_ids').val(choose);\n";
+	echo "        $('#route_city').val(choose);\n";
 	echo "    }\n";
 	echo "</script>\n";
 	
@@ -328,7 +370,6 @@
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
 	echo "	<select class='formfld' name='route_type' id='route_type'>\n";
-	// echo "	<select class='formfld' name='route_type' id='route_type' onchange='route_type_control();'>\n";
 	switch ($route_type) {
 		case "1" : 	$selected[1] = "selected='selected'";	break;
 		case "2" : 	$selected[2] = "selected='selected'";	break;
@@ -349,9 +390,6 @@
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
 	echo "  <ul id='route_city_tree' class='ztree'></ul>\n";
-	// echo "	<input class='formfld' type='text' name='route_city' id='route_city' value=\"".escape($route_city)."\">\n";
-		// echo "<br />\n";
-		// echo $text['description-route_city']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 
@@ -489,7 +527,7 @@
 	if ($action == "update") {
 		echo "		<input type='hidden' name='route_uuid' value='".escape($route_uuid)."'>\n";
 	}
-	echo "		    <input type='hidden' id='route_city_ids' name='route_city_ids' >\n";
+	echo "		    <input type='hidden' id='route_city' name='route_city' >\n";
 	echo "			<br>";
 	echo "			<input type='submit' class='btn' value='".$text['button-save']."'>\n";
 	echo "		</td>\n";
