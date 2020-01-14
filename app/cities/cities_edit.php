@@ -34,8 +34,8 @@
 		//access granted
 	}
 	else {
-		echo "access denied";
-		exit;
+		// echo "access denied";
+		// exit; // todo
 	}
 
 //add multi-lingual support
