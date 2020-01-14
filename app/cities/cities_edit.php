@@ -253,12 +253,12 @@
 	// item_order
 	echo "<tr>\n";
 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	echo "	".$text['label-item_order']."\n";
+	echo "	".$text['label-order']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
 	echo "	<input class='formfld' type='text' name='item_order' value=\"".escape($item_order)."\">\n";
 		echo "<br />\n";
-		echo $text['description-item_order']."\n";
+		echo $text['description-order']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 
