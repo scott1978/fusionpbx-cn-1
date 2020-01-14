@@ -49,16 +49,16 @@
 		foreach($data_list as $row) {
 			if ($row['action'] == 'delete') {
 				$action = 'delete';
-				$id = $row['id'];
+				$id = $row['city_uuid'];
 				break;
 			}
 		}
 		unset($data_list);
 	}
 
-//delete the id
+//delete the city_uuid
 	if (permission_exists('cities_delete') && ($action == "delete") && (strlen($id) > 0)) {
-		$sql = "delete from v_province_city where id = '".$id."' ";
+		$sql = "delete from v_province_city where city_uuid = '".$id."' ";
 		$db->exec(check_sql($sql));
 		unset($sql, $id);
 
@@ -86,7 +86,7 @@
 	require_once "resources/paging.php";
 
 //prepare to page the results
-	$sql = "select count(id) as num_rows from v_province_city ";
+	$sql = "select count(city_uuid) as num_rows from v_province_city ";
 	$sql .= "where 1 = 1 ";
 	if (isset($sql_search)) {
 			$sql .= "and ".$sql_search;
@@ -137,13 +137,13 @@
 
 	function echoTable($row, $x, $row_style_ret, $v_link_edit)
 	{
-		// if (permission_exists('cites_edit')) {
-				$tr_link = "href='cites_edit.php?id=".urlencode($row['id'])."'";
+		// if (permission_exists('cities_edit')) {
+				$tr_link = "href='cities_edit.php?id=".urlencode($row['city_uuid'])."'";
 		// }
 			echo "<tr ".$tr_link.">\n";
 			echo "	<td valign='top' class='".$row_style_ret." tr_link_void' style='align: center; padding: 3px 3px 0px 8px;'>\n";
 			echo "		<input type='checkbox' name=\"data_list[$x][checked]\" id='checkbox_".$x."' value='true' onclick=\"if (!this.checked) { document.getElementById('chk_all_".$x."').checked = false; }\">\n";
-			echo "		<input type='hidden' name=\"data_list[$x][id]\" value='".escape($row['id'])."' />\n";
+			echo "		<input type='hidden' name=\"data_list[$x][city_uuid]\" value='".escape($row['city_uuid'])."' />\n";
 			echo "	</td>\n";
 			echo "	<td valign='top' class='".$row_style_ret."'>".escape($row['id'])."&nbsp;</td>\n";
 			if ($row['item_type'] == '1') {
@@ -216,7 +216,7 @@
 	echo "	</tr>\n";
 	echo "	<tr>\n";
 	echo "		<td align='left' colspan='2' valign='top'>\n";
-	echo "			".$text['description-cites']."<br /><br />\n";
+	echo "			".$text['description-cities']."<br /><br />\n";
 	echo "		</td>\n";
 	echo "	</tr>\n";
 	echo "</table>\n";
@@ -236,8 +236,8 @@
 	echo th_order_by('item_order', $text['label-order'], $order_by, $order, $param);
 
 	echo "	<td class='list_control_icons'>";
-	if (permission_exists('cites_add')) {
-		echo "		<a href='cites_edit.php' alt='".$text['button-add']."'>$v_link_label_add</a>";
+	if (permission_exists('cities_add')) {
+		echo "		<a href='cities_edit.php' alt='".$text['button-add']."'>$v_link_label_add</a>";
 	}
 	else {
 		echo "&nbsp;\n";
@@ -280,52 +280,6 @@
 		} //end foreach
 		unset($sql, $destinations, $row_count);
 	} //end if results
-
-	// if (is_array($data_list)) {
-	// 	$x = 0;
-	// 	foreach($data_list as $row) {
-	// 		if (permission_exists('cites_edit')) {
-	// 			$tr_link = "href='cites_edit.php?id=".urlencode($row['id'])."'";
-	// 		}
-	// 		echo "<tr ".$tr_link.">\n";
-	// 		echo "	<td valign='top' class='".$row_style[$c]." tr_link_void' style='align: center; padding: 3px 3px 0px 8px;'>\n";
-	// 		echo "		<input type='checkbox' name=\"data_list[$x][checked]\" id='checkbox_".$x."' value='true' onclick=\"if (!this.checked) { document.getElementById('chk_all_".$x."').checked = false; }\">\n";
-	// 		echo "		<input type='hidden' name=\"data_list[$x][id]\" value='".escape($row['id'])."' />\n";
-	// 		echo "	</td>\n";
-	// 		echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['id'])."&nbsp;</td>\n";
-	// 		if ($row['item_type'] == '1') {
-	// 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['name'])."&nbsp;</td>\n";
-	// 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape("")."&nbsp;</td>\n";
-	// 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape("")."&nbsp;</td>\n";
-	// 		} else if ($row['item_type'] == '2') {
-	// 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape("")."&nbsp;</td>\n";
-	// 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['name'])."&nbsp;</td>\n";
-	// 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape("")."&nbsp;</td>\n";
-	// 		} else if ($row['item_type'] == '3') {
-	// 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape("")."&nbsp;</td>\n";
-	// 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape("")."&nbsp;</td>\n";
-	// 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['name'])."&nbsp;</td>\n";
-	// 		} else {
-	// 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape("")."&nbsp;</td>\n";
-	// 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape("")."&nbsp;</td>\n";
-	// 			echo "	<td valign='top' class='".$row_style[$c]."'>".escape("")."&nbsp;</td>\n";
-	// 		}
-	// 		echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['fixed_code'])."&nbsp;</td>\n";
-	// 		echo "	<td valign='top' class='".$row_style[$c]."'>".escape($row['item_order'])."&nbsp;</td>\n";
-	// 		echo "	<td class='list_control_icons'>";
-	// 		if (permission_exists('cities_edit')) {
-	// 			echo "<a href='cities_edit.php?id=".escape($row['id'])."' alt='".$text['button-edit']."'>$v_link_label_edit</a>";
-	// 		}
-	// 		if (permission_exists('cities_delete')) {
-	// 			echo "<button type='submit' class='btn btn-default list_control_icon' name=\"data_list[$x][action]\" alt='".$text['button-delete']."' value='delete'><span class='glyphicon glyphicon-remove'></span></button>";
-	// 		}
-	// 		echo "	</td>\n";
-	// 		echo "</tr>\n";
-	// 		$x++;
-	// 		if ($c==0) { $c=1; } else { $c=0; }
-	// 	} //end foreach
-	// 	unset($sql, $destinations, $row_count);
-	// } //end if results
 
 	echo "<tr>\n";
 	echo "<td colspan='12' align='left'>\n";

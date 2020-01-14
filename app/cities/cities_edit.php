@@ -30,7 +30,7 @@
 	require_once "resources/check_auth.php";
 
 //check permissions
-	if (permission_exists('fixed_code_add') || permission_exists('fixed_code_edit')) {
+	if (permission_exists('cities_add') || permission_exists('cities_edit')) {
 		//access granted
 	}
 	else {
@@ -45,23 +45,25 @@
 //action add or update
 	if (isset($_REQUEST["id"])) {
 		$action = "update";
-		$fixed_code = trim($_REQUEST["id"]);
+		$id = trim($_REQUEST["id"]);
 	}
 	else {
 		$action = "add";
 	}
 
-//get data by fixed_code
-	if (count($_GET) > 0 && isset($fixed_code)) {
-		$sql = "select * from v_fixed_code where fixed_code='".$fixed_code."' limit 1";
+//get data by id
+	if (count($_GET) > 0 && isset($id)) {
+		$sql = "select * from v_province_city where id='".$id."' limit 1";
 		$prep_statement = $db->prepare(check_sql($sql));
 		$prep_statement->execute();
 		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
 		foreach ($result as &$row) {
+			$id = $row["id"];
+			$parent_id = $row["parent_id"];
+			$name = $row["name"];
 			$fixed_code = $row["fixed_code"];
-			$province = $row["province"];
-			$city = $row["city"];
-			$area_code = $row["area_code"];
+			$item_type = $row["item_type"];
+			$item_order = $row["item_order"];
 			break; //limit to 1 row
 		}
 		unset ($prep_statement);
@@ -71,25 +73,29 @@
 	if (count($_POST) > 0) {
 
 		//set the variables
+			$parent_id = trim($_POST["parent_id"]);
+			$name = trim($_POST["name"]);
 			$fixed_code = trim($_POST["fixed_code"]);
-			$province = trim($_POST["province"]);
-			$city = trim($_POST["city"]);
+			$item_type = trim($_POST["item_type"]);
+			$item_order = trim($_POST["item_order"]);
 	}
 
 //process the http post 
 	if (count($_POST) > 0 && strlen($_POST["persistformvar"]) == 0) {
 
 		//get the uuid
-			if ($action == "update" && isset($_POST["fixed_code"])) {
-				$fixed_code = trim($_POST["fixed_code"]);
+			if ($action == "update" && isset($_POST["id"])) {
+				$id = trim($_POST["id"]);
 			}
 			else {
-				$fixed_code = trim($_POST["fixed_code"]);
+				$id = trim($_POST["id"]);
 			}
 
 		//check for all required data
 			$msg = '';
-			if (strlen($fixed_code) == 0) { $msg .= $text['message-required']." ".$text['label-fixed_code']."<br>\n"; }
+			if (strlen($id) == 0) { $msg .= $text['message-required']." ".$text['label-id']."<br>\n"; }
+			if (strlen($name) == 0) { $msg .= $text['message-required']." ".$text['label-name']."<br>\n"; }
+			if ($item_type == '3' && strlen($fixed_code) == 0) { $msg .= $text['message-required']." ".$text['label-fixed_code']."<br>\n"; }
 
 		//show the message
 			if (strlen($msg) > 0 && strlen($_POST["persistformvar"]) == 0) {
@@ -107,17 +113,23 @@
 
 		// add
 			if ($action == "add") {
-				$sql = "insert into v_fixed_code ";
+				$sql = "insert into v_province_city ";
 				$sql .= "(";
+				$sql .= "id, ";
+				$sql .= "parent_id, ";
+				$sql .= "name, ";
 				$sql .= "fixed_code, ";
-				$sql .= "province, ";
-				$sql .= "city ";
+				$sql .= "item_type, ";
+				$sql .= "item_order ";
 				$sql .= ") ";
 				$sql .= "values ";
 				$sql .= "(";
+				$sql .= "'$id', ";
+				$sql .= "'$parent_id', ";
+				$sql .= "'$name', ";
 				$sql .= "'$fixed_code', ";
-				$sql .= "'$province', ";
-				$sql .= "'$city' ";
+				$sql .= "'$item_type', ";
+				$sql .= "'$item_order' ";
 				$sql .= ")";
 				$db->exec(check_sql($sql));
 				unset($sql);
@@ -126,7 +138,8 @@
 		// update
 			if ($action == "update" && isset($fixed_code)) {
 				
-				$sql = "update v_fixed_code set province='$province', city='$city' where fixed_code='$fixed_code'";
+				$sql = "update v_province_city set parent_id='$parent_id', name='$name', fixed_code='$fixed_code', ";
+				$sql .= "item_type='$item_type', item_order='$item_order' where id='$id'";
 				$db->exec(check_sql($sql));
 				unset($sql);
 			}
