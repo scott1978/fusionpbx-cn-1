@@ -239,9 +239,9 @@
 	// if (permission_exists('cities_add')) { // todo
 		echo "		<a href='cities_edit.php' alt='".$text['button-add']."'>$v_link_label_add</a>";
 	// }
-	else {
-		echo "&nbsp;\n";
-	}
+	// else {
+	// 	echo "&nbsp;\n";
+	// }
 	echo "	</td>\n";
 	echo "</tr>\n";
 
