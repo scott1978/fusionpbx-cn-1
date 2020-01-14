@@ -140,7 +140,7 @@
 			if ($action == "update" && isset($fixed_code)) {
 				$sql = "update v_province_city set id='$id', parent_id='$parent_id', name='$name', ";
 				$sql .= "fixed_code='$fixed_code', item_type='$item_type', item_order='$item_order' ";
-				$sql .= "where city_uuid='$city_uuid'"
+				$sql .= "where city_uuid='$city_uuid'";
 				$db->exec(check_sql($sql));
 				unset($sql);
 			}
