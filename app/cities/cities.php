@@ -236,9 +236,9 @@
 	echo th_order_by('item_order', $text['label-order'], $order_by, $order, $param);
 
 	echo "	<td class='list_control_icons'>";
-	if (permission_exists('cities_add')) {
+	// if (permission_exists('cities_add')) { // todo
 		echo "		<a href='cities_edit.php' alt='".$text['button-add']."'>$v_link_label_add</a>";
-	}
+	// }
 	else {
 		echo "&nbsp;\n";
 	}
