@@ -453,7 +453,7 @@
 	// route_enabled
 	echo "<tr>\n";
 	echo "<td class='vncell' valign='top' align='left' nowrap='nowrap'>\n";
-	echo "	".$text['label-destination_enabled']."\n";
+	echo "	".$text['label-route_enabled']."\n";
 	echo "</td>\n";
 	echo "<td class='vtable' align='left'>\n";
 	echo "	<select class='formfld' name='route_enabled'>\n";

@@ -261,6 +261,26 @@ $text['label-route_order']['ru-ru'] = "Order";
 $text['label-route_order']['sv-se'] = "Order";
 $text['label-route_order']['uk-ua'] = "Order";
 
+$text['label-route_description']['en-us'] = "描述";
+$text['label-route_description']['ar-eg'] = "Description";
+$text['label-route_description']['de-at'] = "Description";
+$text['label-route_description']['de-ch'] = "Description";
+$text['label-route_description']['de-de'] = "Description";
+$text['label-route_description']['es-cl'] = "Description";
+$text['label-route_description']['es-mx'] = "Description";
+$text['label-route_description']['fr-ca'] = "Description";
+$text['label-route_description']['fr-fr'] = "Description";
+$text['label-route_description']['he-il'] = "Description";
+$text['label-route_description']['it-it'] = "Description";
+$text['label-route_description']['nl-nl'] = "Description";
+$text['label-route_description']['pl-pl'] = "Description";
+$text['label-route_description']['pt-br'] = "Description";
+$text['label-route_description']['pt-pt'] = "Description";
+$text['label-route_description']['ro-ro'] = "Description";
+$text['label-route_description']['ru-ru'] = "Description";
+$text['label-route_description']['sv-se'] = "Description";
+$text['label-route_description']['uk-ua'] = "Description";
+
 $text['description-route_order']['en-us'] = "输入优先级，数值越小优先级越高，优先级数值需大于0";
 $text['description-route_order']['ar-eg'] = "Order";
 $text['description-route_order']['de-at'] = "Order";
