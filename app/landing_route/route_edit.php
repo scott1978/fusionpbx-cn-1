@@ -284,6 +284,7 @@
 	echo "    var zNodes = $province_city_list_str;\n";
 	echo "    $(document).ready(function () {\n";
 	echo "        $.fn.zTree.init($(\"#route_city_tree\"), setting, zNodes);\n";
+	echo "        onCheck();"
 	echo "    });\n";
 	echo "    function onCheck(e, treeId, treeNode) {\n";
 	echo "        var treeObj = $.fn.zTree.getZTreeObj('route_city_tree');\n";
