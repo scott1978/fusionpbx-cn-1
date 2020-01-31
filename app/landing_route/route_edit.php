@@ -118,6 +118,10 @@
 				$route_type = "1";
 			}
 			$route_city = trim($_POST["route_city"]);
+			echo $route_city;
+			echo "56789";
+			echo $route_type;
+			exit(0);
 			if ($route_type != "1") {
 				$route_city = "";
 			}
