@@ -58,34 +58,35 @@
 	echo "route_edit come here";
 
 //get data by route_uuid
-	if (count($_GET) > 0) {
-		echo "this is get";
-
-		if (isset($route_uuid)) {
-			$sql = "select * from v_landing_route where route_uuid='".$route_uuid."' limit 1";
-			$prep_statement = $db->prepare(check_sql($sql));
-			$prep_statement->execute();
-			$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
-			foreach ($result as &$row) {
-				$route_name = $row["route_name"];
-				$route_gateway = $row["route_gateway"];
-				$route_type = $row["route_type"];
-				$route_city = $row["route_city"];
-				$route_telephone = $row["route_telephone"];
-				$route_weekday = $row["route_weekday"];
-				if (strlen($route_weekday) > 0) {
-					$route_weeks = explode(",", $route_weekday);
-				}
-				$route_start_time = $row["route_start_time"];
-				$route_end_time = $row["route_end_time"];
-				$route_enabled = $row["route_enabled"];
-				$network_uuid = $row["network_uuid"];
-				$route_order = $row["route_order"];
-				$route_description = $row["route_description"];
-				break; //limit to 1 row
+	if (count($_GET) > 0 && isset($route_uuid)) {
+		$sql = "select * from v_landing_route where route_uuid='".$route_uuid."' limit 1";
+		$prep_statement = $db->prepare(check_sql($sql));
+		$prep_statement->execute();
+		$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+		foreach ($result as &$row) {
+			$route_name = $row["route_name"];
+			$route_gateway = $row["route_gateway"];
+			$route_type = $row["route_type"];
+			$route_city = $row["route_city"];
+			$route_telephone = $row["route_telephone"];
+			$route_weekday = $row["route_weekday"];
+			if (strlen($route_weekday) > 0) {
+				$route_weeks = explode(",", $route_weekday);
 			}
+			$route_start_time = $row["route_start_time"];
+			$route_end_time = $row["route_end_time"];
+			$route_enabled = $row["route_enabled"];
+			$network_uuid = $row["network_uuid"];
+			$route_order = $row["route_order"];
+			$route_description = $row["route_description"];
+			break; //limit to 1 row
 		}
-		
+
+		unset($sql, $prep_statement, $result, $row);
+	}
+
+	# get province city
+	if (count($_GET) > 0 || $action == "add") {
 		$route_city_arry = explode(",", $route_city);
 		$sql = "select * from v_province_city order by item_order";
 		$prep_statement = $db->prepare(check_sql($sql));
@@ -111,16 +112,11 @@
 		$province_city_list_str = json_encode($province_city_list);
 		echo "come here";
 		echo $province_city_list_str;
-		
 
-		unset($sql, $prep_statement, $result, $row, $route_city_arry, $k, $v, $province_city_list);
+		unset($sql, $prep_statement, $result, $route_city_arry, $k, $v, $province_city_list);
 	}
 
 	exit(0);
-
-	// if (count($_GET) > 0 || $action == "add") {
-	// 	# code...
-	// }
 
 //get http post variables and set them to php variables
 	if (count($_POST) > 0) {
