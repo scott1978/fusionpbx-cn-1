@@ -55,8 +55,12 @@
 		$action = "add";
 	}
 
+	echo "route_edit come here";
+
 //get data by route_uuid
 	if (count($_GET) > 0) {
+		echo "this is get";
+
 		if (isset($route_uuid)) {
 			$sql = "select * from v_landing_route where route_uuid='".$route_uuid."' limit 1";
 			$prep_statement = $db->prepare(check_sql($sql));
@@ -107,10 +111,16 @@
 		$province_city_list_str = json_encode($province_city_list);
 		echo "come here";
 		echo $province_city_list_str;
-		exit(0);
+		
 
 		unset($sql, $prep_statement, $result, $row, $route_city_arry, $k, $v, $province_city_list);
 	}
+
+	exit(0);
+
+	// if (count($_GET) > 0 || $action == "add") {
+	// 	# code...
+	// }
 
 //get http post variables and set them to php variables
 	if (count($_POST) > 0) {
