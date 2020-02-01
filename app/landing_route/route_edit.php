@@ -100,11 +100,14 @@
 			}
 
 			$province_city_list[$k]['id'] = $v['id'];
-            $province_city_list[$k]['pId'] = $v['parent_id'];
-            $province_city_list[$k]['name'] = $v['name'];
+			$province_city_list[$k]['pId'] = $v['parent_id'];
+			$province_city_list[$k]['name'] = $v['name'];
 		}
 
 		$province_city_list_str = json_encode($province_city_list);
+		echo "come here";
+		echo $province_city_list_str;
+		exit(0);
 
 		unset($sql, $prep_statement, $result, $row, $route_city_arry, $k, $v, $province_city_list);
 	}
