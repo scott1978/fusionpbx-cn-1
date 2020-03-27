@@ -257,5 +257,14 @@
 		$sql .= "or sip_profile_enabled = '' ";
 		$db->exec(check_sql($sql));
 		unset($sql);
+
+		// add by hezhixiong
+		// ipv6 set enabled=false
+		$sql = "update v_sip_profiles set ";
+		$sql .= "sip_profile_enabled = 'false' ";
+		$sql .= "where sip_profile_name = 'internal-ipv6' ";
+		$sql .= "or sip_profile_name = 'external-ipv6' ";
+		$db->exec(check_sql($sql));
+		unset($sql);
 	}
 ?>
