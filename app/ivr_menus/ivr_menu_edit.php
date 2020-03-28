@@ -341,7 +341,7 @@
 		$ivr_menus = $ivr->find();
 		if (is_array($ivr_menus)) foreach ($ivr_menus as &$row) {
 			$dialplan_uuid = $row["dialplan_uuid"];
-			$dialplan_context = $row["dialplan_context"];
+			// $dialplan_context = $row["dialplan_context"];
 			$ivr_menu_name = $row["ivr_menu_name"];
 			$ivr_menu_extension = $row["ivr_menu_extension"];
 			$ivr_menu_language = $row["ivr_menu_language"];
