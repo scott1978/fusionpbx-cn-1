@@ -1027,7 +1027,6 @@
 	echo $text['description-caller_id_name_prefix']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
-	echo "</table>\n";
 
 	echo "<tr>\n";
 	echo "<td class='vncellreq' valign='top' align='left' nowrap='nowrap'>\n";
@@ -1039,6 +1038,7 @@
 	echo $text['description-dialplan_context']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
+	echo "</table>\n";
 
 	//--- begin: show_advanced -----------------------
 		echo "	<div id=\"show_advanced_box\">\n";
