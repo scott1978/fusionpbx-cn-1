@@ -581,6 +581,26 @@ $text['label-caller_id_name_prefix']['ru-ru'] = "Префикс имени (Call
 $text['label-caller_id_name_prefix']['sv-se'] = "Caller ID Namn Prefix";
 $text['label-caller_id_name_prefix']['uk-ua'] = "";
 
+$text['label-dialplan_context']['en-us'] = "Context";
+$text['label-dialplan_context']['ar-eg'] = "Context";
+$text['label-dialplan_context']['de-at'] = "Context"; //copied from de-de
+$text['label-dialplan_context']['de-ch'] = "Context"; //copied from de-de
+$text['label-dialplan_context']['de-de'] = "Context";
+$text['label-dialplan_context']['es-cl'] = "Context";
+$text['label-dialplan_context']['es-mx'] = "Context"; //copied from es-cl
+$text['label-dialplan_context']['fr-ca'] = "Context"; //copied from fr-fr
+$text['label-dialplan_context']['fr-fr'] = "Context";
+$text['label-dialplan_context']['he-il'] = "Context";
+$text['label-dialplan_context']['it-it'] = "Context";
+$text['label-dialplan_context']['nl-nl'] = "Context";
+$text['label-dialplan_context']['pl-pl'] = "Context";
+$text['label-dialplan_context']['pt-br'] = "Context";
+$text['label-dialplan_context']['pt-pt'] = "Context";
+$text['label-dialplan_context']['ro-ro'] = "Context";
+$text['label-dialplan_context']['ru-ru'] = "Context";
+$text['label-dialplan_context']['sv-se'] = "Context";
+$text['label-dialplan_context']['uk-ua'] = "Context";
+
 $text['header-option_list']['en-us'] = "Option List";
 $text['header-option_list']['ar-eg'] = "";
 $text['header-option_list']['de-at'] = "Optionsliste"; //copied from de-de
@@ -1260,5 +1280,25 @@ $text['description-caller_id_name_prefix']['ro-ro'] = "";
 $text['description-caller_id_name_prefix']['ru-ru'] = "Задайте префикс имени (ID) идентификатора вызывающего абонента.";
 $text['description-caller_id_name_prefix']['sv-se'] = "Ange ett prefix för Caller ID namn.";
 $text['description-caller_id_name_prefix']['uk-ua'] = "";
+
+$text['description-dialplan_context']['en-us'] = "Set dialplan context.";
+$text['description-dialplan_context']['ar-eg'] = "Set dialplan context.";
+$text['description-dialplan_context']['de-at'] = "Set dialplan context."; //copied from de-de
+$text['description-dialplan_context']['de-ch'] = "Set dialplan context."; //copied from de-de
+$text['description-dialplan_context']['de-de'] = "Set dialplan context.";
+$text['description-dialplan_context']['es-cl'] = "Set dialplan context.";
+$text['description-dialplan_context']['es-mx'] = "Set dialplan context."; //copied from es-cl
+$text['description-dialplan_context']['fr-ca'] = "Set dialplan context."; //copied from fr-fr
+$text['description-dialplan_context']['fr-fr'] = "Set dialplan context.";
+$text['description-dialplan_context']['he-il'] = "Set dialplan context.";
+$text['description-dialplan_context']['it-it'] = "Set dialplan context.";
+$text['description-dialplan_context']['nl-nl'] = "Set dialplan context.";
+$text['description-dialplan_context']['pl-pl'] = "Set dialplan context.";
+$text['description-dialplan_context']['pt-br'] = "Set dialplan context.";
+$text['description-dialplan_context']['pt-pt'] = "Set dialplan context.";
+$text['description-dialplan_context']['ro-ro'] = "Set dialplan context.";
+$text['description-dialplan_context']['ru-ru'] = "Set dialplan context.";
+$text['description-dialplan_context']['sv-se'] = "Set dialplan context.";
+$text['description-dialplan_context']['uk-ua'] = "Set dialplan context.";
 
 ?>
