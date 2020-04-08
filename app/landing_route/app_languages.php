@@ -1,7 +1,7 @@
 <?php
 #This file was last reorganized on 27th of September 2017 01:41:51 PM UTC
 
-$text['title-landing-route']['en-us'] = "落地路由";
+$text['title-landing-route']['en-us'] = "调度规则";
 $text['title-landing-route']['ar-eg'] = "Landing Route";
 $text['title-landing-route']['de-at'] = "Landing Route";
 $text['title-landing-route']['de-ch'] = "Landing Route";
@@ -221,7 +221,7 @@ $text['label-route_enabled']['ru-ru'] = "Enabled";
 $text['label-route_enabled']['sv-se'] = "Enabled";
 $text['label-route_enabled']['uk-ua'] = "Enabled";
 
-$text['label-network_name']['en-us'] = "呼叫中心";
+$text['label-network_name']['en-us'] = "调度目的地";
 $text['label-network_name']['ar-eg'] = "Network CC";
 $text['label-network_name']['de-at'] = "Network CC";
 $text['label-network_name']['de-ch'] = "Network CC";
@@ -301,7 +301,7 @@ $text['description-route_order']['ru-ru'] = "Order";
 $text['description-route_order']['sv-se'] = "Order";
 $text['description-route_order']['uk-ua'] = "Order";
 
-$text['header-landing-route-add']['en-us'] = "添加落地路由";
+$text['header-landing-route-add']['en-us'] = "添加调度规则";
 $text['header-landing-route-add']['ar-eg'] = "Landing Route";
 $text['header-landing-route-add']['de-at'] = "Landing Route";
 $text['header-landing-route-add']['de-ch'] = "Landing Route";
@@ -321,7 +321,7 @@ $text['header-landing-route-add']['ru-ru'] = "Landing Route";
 $text['header-landing-route-add']['sv-se'] = "Landing Route";
 $text['header-landing-route-add']['uk-ua'] = "Landing Route";
 
-$text['header-landing-route-edit']['en-us'] = "编辑落地路由";
+$text['header-landing-route-edit']['en-us'] = "编辑调度规则";
 $text['header-landing-route-edit']['ar-eg'] = "Landing Route";
 $text['header-landing-route-edit']['de-at'] = "Landing Route";
 $text['header-landing-route-edit']['de-ch'] = "Landing Route";
@@ -501,7 +501,7 @@ $text['description-route_end_time']['ru-ru'] = "";
 $text['description-route_end_time']['sv-se'] = "";
 $text['description-route_end_time']['uk-ua'] = "";
 
-$text['description-network_name']['en-us'] = "选择呼叫中心";
+$text['description-network_name']['en-us'] = "选择调度目的地";
 $text['description-network_name']['ar-eg'] = "";
 $text['description-network_name']['de-at'] = "";
 $text['description-network_name']['de-ch'] = "";

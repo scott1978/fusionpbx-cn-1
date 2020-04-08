@@ -1,7 +1,7 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "呼叫中心";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "调度目的地";
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Network CC";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Network CC";
 	$apps[$x]['menu'][$y]['title']['de-ch'] = "Network CC";

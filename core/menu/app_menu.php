@@ -83,7 +83,7 @@
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$y++;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "路由中心";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "调度中心";
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Route Center";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Route Center";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Route Center";

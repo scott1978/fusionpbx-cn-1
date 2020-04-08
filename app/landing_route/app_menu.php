@@ -1,7 +1,7 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "落地路由";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "调度规则";
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Landing Route";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Landing Route";
 	$apps[$x]['menu'][$y]['title']['de-ch'] = "Landing Route";

@@ -1,7 +1,7 @@
 <?php
 #This file was last reorganized on 27th of September 2017 01:41:51 PM UTC
 
-$text['title-network_cc']['en-us'] = "网点呼叫中心";
+$text['title-network_cc']['en-us'] = "调度目的地";
 $text['title-network_cc']['ar-eg'] = "Network CC";
 $text['title-network_cc']['de-at'] = "Network CC";
 $text['title-network_cc']['de-ch'] = "Network CC";
@@ -21,7 +21,7 @@ $text['title-network_cc']['ru-ru'] = "Network CC";
 $text['title-network_cc']['sv-se'] = "Network CC";
 $text['title-network_cc']['uk-ua'] = "Network CC";
 
-$text['label-network_name']['en-us'] = "网点呼叫中心名称";
+$text['label-network_name']['en-us'] = "调度目的地名称";
 $text['label-network_name']['ar-eg'] = "Network CC Name";
 $text['label-network_name']['de-at'] = "Network CC Name";
 $text['label-network_name']['de-ch'] = "Network CC Name";
@@ -141,7 +141,7 @@ $text['label-network_description']['ru-ru'] = "Description";
 $text['label-network_description']['sv-se'] = "Description";
 $text['label-network_description']['uk-ua'] = "Description";
 
-$text['header-network-cc-add']['en-us'] = "添加网点呼叫中心";
+$text['header-network-cc-add']['en-us'] = "添加调度目的地";
 $text['header-network-cc-add']['ar-eg'] = "Add Network CC";
 $text['header-network-cc-add']['de-at'] = "Add Network CC";
 $text['header-network-cc-add']['de-ch'] = "Add Network CC";
@@ -161,7 +161,7 @@ $text['header-network-cc-add']['ru-ru'] = "Add Network CC";
 $text['header-network-cc-add']['sv-se'] = "Add Network CC";
 $text['header-network-cc-add']['uk-ua'] = "Add Network CC";
 
-$text['header-network-cc-edit']['en-us'] = "编辑网点呼叫中心";
+$text['header-network-cc-edit']['en-us'] = "编辑调度目的地";
 $text['header-network-cc-edit']['ar-eg'] = "Edit Network CC";
 $text['header-network-cc-edit']['de-at'] = "Edit Network CC";
 $text['header-network-cc-edit']['de-ch'] = "Edit Network CC";
