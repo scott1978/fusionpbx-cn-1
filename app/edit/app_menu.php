@@ -27,7 +27,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/edit/index.php?dir=scripts";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['enabled'] = "true";
-	$apps[$x]['menu'][$y]['order'] = "20";
+	$apps[$x]['menu'][$y]['order'] = "24";
 	$y++;
 	$apps[$x]['menu'][$y]['title']['en-us'] = "XML编辑器";
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "XML Editor";
@@ -55,7 +55,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/edit/index.php?dir=xml";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['enabled'] = "true";
-	$apps[$x]['menu'][$y]['order'] = "16";
+	$apps[$x]['menu'][$y]['order'] = "21";
 	$y++;
 	$apps[$x]['menu'][$y]['title']['en-us'] = "供应商编辑器";
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Provision Editor";
@@ -111,7 +111,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/edit/index.php?dir=php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['enabled'] = "true";
-	$apps[$x]['menu'][$y]['order'] = "17";
+	$apps[$x]['menu'][$y]['order'] = "22";
 	$y++;
 	$apps[$x]['menu'][$y]['title']['en-us'] = "语法编辑器";
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Grammar Editor";
@@ -139,6 +139,6 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/edit/index.php?dir=grammar";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['enabled'] = "true";
-	$apps[$x]['menu'][$y]['order'] = "19";
+	$apps[$x]['menu'][$y]['order'] = "23";
 
 ?>

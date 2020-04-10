@@ -26,6 +26,6 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/number_translations/number_translations.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['enabled'] = "true";
-	$apps[$x]['menu'][$y]['order'] = "12";
+	$apps[$x]['menu'][$y]['order'] = "17";
 
 ?>

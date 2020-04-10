@@ -26,6 +26,6 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/access_controls/access_controls.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['enabled'] = "true";
-	$apps[$x]['menu'][$y]['order'] = "4";
+	$apps[$x]['menu'][$y]['order'] = "8";
 
 ?>

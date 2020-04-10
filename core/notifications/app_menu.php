@@ -25,6 +25,6 @@
 	$apps[$x]['menu'][$y]['path'] = "/core/notifications/notification_edit.php";
 	//$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['enabled'] = "false";
-	$apps[$x]['menu'][$y]['order'] = "30";
+	$apps[$x]['menu'][$y]['order'] = "50";
 
 ?>

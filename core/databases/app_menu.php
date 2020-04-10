@@ -25,6 +25,6 @@
 	$apps[$x]['menu'][$y]['path'] = "/core/databases/databases.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['enabled'] = "false";
-	$apps[$x]['menu'][$y]['order'] = "14";
+	$apps[$x]['menu'][$y]['order'] = "9";
 
 ?>

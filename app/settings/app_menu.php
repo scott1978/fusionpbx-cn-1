@@ -1,7 +1,7 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "FS Socket设置";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "FS连接设置";
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Settings";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Einstellungen";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Einstellungen";
@@ -25,6 +25,6 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/settings/setting_edit.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['enabled'] = "true";
-	$apps[$x]['menu'][$y]['order'] = "2";
+	$apps[$x]['menu'][$y]['order'] = "11";
 
 ?>

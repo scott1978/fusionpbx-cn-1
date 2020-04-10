@@ -23,7 +23,7 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/core/menu/menu.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
-	$apps[$x]['menu'][$y]['order'] = "7";
+	$apps[$x]['menu'][$y]['order'] = "4";
 	$apps[$x]['menu'][$y]['enabled'] = "true";
 	$y++;
 	$apps[$x]['menu'][$y]['title']['en-us'] = "主页";

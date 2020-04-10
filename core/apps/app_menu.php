@@ -53,6 +53,6 @@
 	$apps[$x]['menu'][$y]['path'] = "/core/apps/apps.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['enabled'] = "true";
-	$apps[$x]['menu'][$y]['order'] = "6";
+	$apps[$x]['menu'][$y]['order'] = "13";
 
 ?>

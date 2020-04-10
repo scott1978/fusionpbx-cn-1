@@ -17,7 +17,7 @@ $apps[$x]['menu'][3]['parent_uuid'] = "594d99c5-6128-9c88-ca35-4b33392cec0f";
 $apps[$x]['menu'][3]['category'] = "internal";
 $apps[$x]['menu'][3]['path'] = "/core/groups/groups.php";
 $apps[$x]['menu'][3]['groups'][] = "superadmin";
-$apps[$x]['menu'][3]['order'] = "8";
+$apps[$x]['menu'][3]['order'] = "10";
 $apps[$x]['menu'][3]['enabled'] = "true";
 
 ?>

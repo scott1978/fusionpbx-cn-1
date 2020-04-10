@@ -25,7 +25,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/core/domain_settings/domains.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['enabled'] = "true";
-	$apps[$x]['menu'][$y]['order'] = "9";
+	$apps[$x]['menu'][$y]['order'] = "7";
 	$y++;
 	$apps[$x]['menu'][$y]['title']['en-us'] = "域名管理";
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Domain Settings";
@@ -51,6 +51,6 @@
 	$apps[$x]['menu'][$y]['path'] = "/core/domain_settings/domain_edit.php";
 	//$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['enabled'] = "false";
-	$apps[$x]['menu'][$y]['order'] = "9";
+	$apps[$x]['menu'][$y]['order'] = "7";
 
 ?>

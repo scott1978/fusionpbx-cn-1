@@ -25,6 +25,6 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/modules/modules.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['enabled'] = "true";
-	$apps[$x]['menu'][$y]['order'] = "10";
+	$apps[$x]['menu'][$y]['order'] = "12";
 
 ?>

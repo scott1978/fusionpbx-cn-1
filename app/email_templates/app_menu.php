@@ -16,6 +16,6 @@ $apps[$x]['menu'][0]['path'] = '/app/email_templates/email_templates.php';
 $apps[$x]['menu'][0]['groups'][] = 'superadmin';
 //$apps[$x]['menu'][0]['groups'][] = 'admin';
 $apps[$x]['menu'][0]['enabled'] = "true";
-$apps[$x]['menu'][0]['order'] = "11";
+$apps[$x]['menu'][0]['order'] = "18";
 
 ?>
