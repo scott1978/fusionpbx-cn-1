@@ -1381,7 +1381,7 @@ $text['header-time_conditions']['ru-ru'] = "Временные Условия";
 $text['header-time_conditions']['sv-se'] = "Tids Förhållande";
 $text['header-time_conditions']['uk-ua'] = "Часові умови";
 
-$text['header-queues']['en-us'] = "Queues";
+$text['header-queues']['en-us'] = "队列";
 $text['header-queues']['ar-eg'] = "";
 $text['header-queues']['de-at'] = "Warteschlangen"; //copied from de-de
 $text['header-queues']['de-ch'] = "Warteschlangen"; //copied from de-de
@@ -1581,7 +1581,7 @@ $text['description-time_conditions']['ru-ru'] = "Временные услови
 $text['description-time_conditions']['sv-se'] = "Tidsvillkor styr samtal baserat på tidsvillkor. Du kan använda Tidsvillkor för att skicka samtal till IVR Meny, Externa nummer, Script eller andra destinationer.";
 $text['description-time_conditions']['uk-ua'] = "Маршрут дзвінків буде залежати від часу. Можна використовувати для переадресації на голосове меню (IVR), на зовнішні номери, сценарії, або інші напрямки.";
 
-$text['description-queues']['en-us'] = "Queues are used to setup waiting lines for callers. Also known as FIFO Queues.";
+$text['description-queues']['en-us'] = "队列用于为呼叫者设置等待线路。也称为FIFO队列。";
 $text['description-queues']['ar-eg'] = "";
 $text['description-queues']['de-at'] = "Warteschlangen werden benutzt um Anrufer zu reihen. Auch als FIFO Warteschlangen bekannt."; //copied from de-de
 $text['description-queues']['de-ch'] = "Warteschlangen werden benutzt um Anrufer zu reihen. Auch als FIFO Warteschlangen bekannt."; //copied from de-de
