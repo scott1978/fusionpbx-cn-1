@@ -1,7 +1,7 @@
 <?php
 #This file was last reorganized on 19th of September 2017 08:54:24 AM UTC
 
-$text['title-edit']['en-us'] = "Recording";
+$text['title-edit']['en-us'] = "录音";
 $text['title-edit']['ar-eg'] = "";
 $text['title-edit']['de-at'] = "Aufnahmen"; //copied from de-de
 $text['title-edit']['de-ch'] = "Aufnahmen"; //copied from de-de
@@ -41,7 +41,7 @@ $text['title-add']['ru-ru'] = "Добавить запись";
 $text['title-add']['sv-se'] = "Lägg Till Inspelning";
 $text['title-add']['uk-ua'] = "Додати запис";
 
-$text['title-recordings']['en-us'] = "Recordings";
+$text['title-recordings']['en-us'] = "录音";
 $text['title-recordings']['ar-eg'] = "";
 $text['title-recordings']['de-at'] = "Aufnahmen"; //copied from de-de
 $text['title-recordings']['de-ch'] = "Aufnahmen"; //copied from de-de
@@ -81,7 +81,7 @@ $text['message-uploaded']['ru-ru'] = "Файл загружен";
 $text['message-uploaded']['sv-se'] = "File Uppladdade";
 $text['message-uploaded']['uk-ua'] = "файл Завантажено";
 
-$text['label-uploaded']['en-us'] = "Uploaded";
+$text['label-uploaded']['en-us'] = "上传时间";
 $text['label-uploaded']['ar-eg'] = "";
 $text['label-uploaded']['de-at'] = "Hochgeladen"; //copied from de-de
 $text['label-uploaded']['de-ch'] = "Hochgeladen"; //copied from de-de
@@ -121,7 +121,7 @@ $text['label-upload']['ru-ru'] = "Путь к файлу";
 $text['label-upload']['sv-se'] = "Sökväg";
 $text['label-upload']['uk-ua'] = "Шлях до файла";
 
-$text['label-tools']['en-us'] = "Tools";
+$text['label-tools']['en-us'] = "工具";
 $text['label-tools']['ar-eg'] = "";
 $text['label-tools']['de-at'] = "Funktionen"; //copied from de-de
 $text['label-tools']['de-ch'] = "Funktionen"; //copied from de-de
@@ -141,7 +141,7 @@ $text['label-tools']['ru-ru'] = "Инструменты";
 $text['label-tools']['sv-se'] = "Verktyg";
 $text['label-tools']['uk-ua'] = "Параметри";
 
-$text['label-recording_name']['en-us'] = "Recording Name";
+$text['label-recording_name']['en-us'] = "录音名称";
 $text['label-recording_name']['ar-eg'] = "";
 $text['label-recording_name']['de-at'] = "Name der Aufnahme"; //copied from de-de
 $text['label-recording_name']['de-ch'] = "Name der Aufnahme"; //copied from de-de
@@ -201,7 +201,7 @@ $text['label-pause']['ru-ru'] = "Пайза";
 $text['label-pause']['sv-se'] = "Paus";
 $text['label-pause']['uk-ua'] = "Призупинити";
 
-$text['label-file_name']['en-us'] = "File Name";
+$text['label-file_name']['en-us'] = "录音文件名称";
 $text['label-file_name']['ar-eg'] = "";
 $text['label-file_name']['de-at'] = "Dateiname"; //copied from de-de
 $text['label-file_name']['de-ch'] = "Dateiname"; //copied from de-de
@@ -221,7 +221,7 @@ $text['label-file_name']['ru-ru'] = "Имя файла";
 $text['label-file_name']['sv-se'] = "Fil-namn";
 $text['label-file_name']['uk-ua'] = "Назва файлу";
 
-$text['label-file-size']['en-us'] = "File Size";
+$text['label-file-size']['en-us'] = "录音文件大小";
 $text['label-file-size']['ar-eg'] = "";
 $text['label-file-size']['de-at'] = "Dateigröße"; //copied from de-de
 $text['label-file-size']['de-ch'] = "Dateigröße"; //copied from de-de
@@ -341,7 +341,7 @@ $text['header']['ru-ru'] = "Загрузить запись";
 $text['header']['sv-se'] = "Ladda Upp Inspelning";
 $text['header']['uk-ua'] = "Вивантажити запис";
 
-$text['description-recording']['en-us'] = "A name for the recording (not parsed).";
+$text['description-recording']['en-us'] = "输入录制的名称。";
 $text['description-recording']['ar-eg'] = "";
 $text['description-recording']['de-at'] = "Ein Name für die Aufnahme."; //copied from de-de
 $text['description-recording']['de-ch'] = "Ein Name für die Aufnahme."; //copied from de-de
@@ -381,7 +381,7 @@ $text['description-file']['ru-ru'] = "Имя файла. example.wav";
 $text['description-file']['sv-se'] = "Namn på filen. exempel: inspelning.wav";
 $text['description-file']['uk-ua'] = "";
 
-$text['description']['en-us'] = "Dial *732 to create a recording, or (for best results) upload a 16bit 8khz/16khz mono WAV file.";
+$text['description']['en-us'] = "拨*732创建录音或上传16bit 8khz/16khz单声道WAV文件。";
 $text['description']['ar-eg'] = "";
 $text['description']['de-at'] = "Wählen Sie *732 um eine Aufnahme direkt vom Telefon zu starten oder laden Sie eine 16bit 8/16kHz mono WAV-Datei hoch."; //copied from de-de
 $text['description']['de-ch'] = "Wählen Sie *732 um eine Aufnahme direkt vom Telefon zu starten oder laden Sie eine 16bit 8/16kHz mono WAV-Datei hoch."; //copied from de-de
