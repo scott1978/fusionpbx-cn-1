@@ -21,7 +21,7 @@ $text['title-dialplan_manager']['ru-ru'] = "Управление Планом Н
 $text['title-dialplan_manager']['sv-se'] = "Nummerplan Inställningar";
 $text['title-dialplan_manager']['uk-ua'] = "Керування маршрутизацією";
 
-$text['title-dialplan_edit']['en-us'] = "拨号规则";
+$text['title-dialplan_edit']['en-us'] = "拨号规则详情";
 $text['title-dialplan_edit']['ar-eg'] = "Dialplan";
 $text['title-dialplan_edit']['de-at'] = "Wählplan"; //copied from de-de
 $text['title-dialplan_edit']['de-ch'] = "Wählplan"; //copied from de-de
