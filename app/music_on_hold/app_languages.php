@@ -481,7 +481,7 @@ $text['label-mono']['ru-ru'] = "Моно";
 $text['label-mono']['sv-se'] = "sak";
 $text['label-mono']['uk-ua'] = "річ";
 
-$text['label-music_on_hold']['en-us'] = "Music on Hold";
+$text['label-music_on_hold']['en-us'] = "音乐等待";
 $text['label-music_on_hold']['ar-eg'] = "";
 $text['label-music_on_hold']['de-at'] = "Wartemusik"; //copied from de-de
 $text['label-music_on_hold']['de-ch'] = "Wartemusik"; //copied from de-de
