@@ -341,7 +341,7 @@ $text['description-timeout']['ru-ru'] = "Время ожидания (в мил�
 $text['description-timeout']['sv-se'] = "Specificera den absoluta timeout:en i sekunder.";
 $text['description-timeout']['uk-ua'] = "";
 
-$text['description-phone']['en-us'] = "可选参数。按以下格式为每一行设置一个号码：123-123-1234|名, 姓";
+$text['description-phone']['en-us'] = "可选参数。按以下格式为每一行设置一个号码：123-123-1234|姓, 名";
 $text['description-phone']['ar-eg'] = "Optional, set a list of phone numbers one per row in the following format: 123-123-1234|Last Name, First Name";
 $text['description-phone']['de-at'] = "Optional: Ergänzen Sie eine Liste von Telefonnummern, eine Nummer pro Zeile im folgenden Format: 123-123-1234|Nachname, Vorname"; //copied from de-de
 $text['description-phone']['de-ch'] = "Optional: Ergänzen Sie eine Liste von Telefonnummern, eine Nummer pro Zeile im folgenden Format: 123-123-1234|Nachname, Vorname"; //copied from de-de
@@ -361,7 +361,7 @@ $text['description-phone']['ru-ru'] = "Дополнительно, задайт�
 $text['description-phone']['sv-se'] = "Frivillig, fyll i en lista med nummer (ett per rad) i följande format: 123-123-1234|Efternamn, Förnamn";
 $text['description-phone']['uk-ua'] = "Додатково, задайте список телефонних номерів по одному на рядок в наступному форматі: 123-123-1234 | Прізвище, ім'я";
 
-$text['description-name']['en-us'] = "输入广告的名称";
+$text['description-name']['en-us'] = "输入呼叫广播的名称";
 $text['description-name']['ar-eg'] = "Enter the name here.";
 $text['description-name']['de-at'] = "Geben Sie den Namen an."; //copied from de-de
 $text['description-name']['de-ch'] = "Geben Sie den Namen an."; //copied from de-de

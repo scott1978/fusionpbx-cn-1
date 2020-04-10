@@ -41,7 +41,7 @@
 		$text['title-bridge']['sv-se'] = '';
 		$text['title-bridge']['uk-ua'] = '';
 
-		$text['title_description-bridge']['en-us'] = '桥语句将添加到目标选择列表中';
+		$text['title_description-bridge']['en-us'] = 'Bridge语句用于将呼叫直接发送到其他目的地，如另一个PBX，运营商或外部SIP到TDM网关等。桥语句将添加到目标选择列表中。';
 		$text['title_description-bridge']['ar-eg'] = 'Add bridge statements to destination select list.';
 		$text['title_description-bridge']['de-at'] = '';
 		$text['title_description-bridge']['de-ch'] = '';
