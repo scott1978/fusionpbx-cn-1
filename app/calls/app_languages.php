@@ -1,7 +1,7 @@
 <?php
 #This file was last reorganized on 19th of September 2017 08:54:24 AM UTC
 
-$text['title']['en-us'] = "呼叫路由";
+$text['title']['en-us'] = "分机随行";
 $text['title']['ar-eg'] = "Call Routing";
 $text['title']['de-at'] = "Call Routing"; //copied from de-de
 $text['title']['de-ch'] = "Call Routing"; //copied from de-de
@@ -561,7 +561,7 @@ $text['label-call-forward']['ru-ru'] = "Переадресация";
 $text['label-call-forward']['sv-se'] = "Vidarekoppling";
 $text['label-call-forward']['uk-ua'] = "Переадресація";
 
-$text['header-call_routing']['en-us'] = "呼叫路由";
+$text['header-call_routing']['en-us'] = "分机随行";
 $text['header-call_routing']['ar-eg'] = "Call Routing";
 $text['header-call_routing']['de-at'] = "Anrufweiterleitung"; //copied from de-de
 $text['header-call_routing']['de-ch'] = "Anrufweiterleitung"; //copied from de-de
