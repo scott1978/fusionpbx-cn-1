@@ -828,7 +828,7 @@ $text['label-repeat_password']['ru-ru'] = "Повторите пароль";
 $text['label-repeat_password']['sv-se'] = "Repetera Lösenord";
 $text['label-repeat_password']['uk-ua'] = "Повторіть пароль";
 
-$text['label-registrations']['en-us'] = "注册话机";
+$text['label-registrations']['en-us'] = "注册话机数";
 $text['label-registrations']['ar-eg'] = "Registrations";
 $text['label-registrations']['de-at'] = "Registrierungen"; //copied from de-de
 $text['label-registrations']['de-ch'] = "Registrierungen"; //copied from de-de
@@ -1667,7 +1667,7 @@ $text['label-characters']['ru-ru'] = "символов";
 $text['label-characters']['sv-se'] = "Tecken";
 $text['label-characters']['uk-ua'] = "персонажі";
 
-$text['label-channels']['en-us'] = "呼叫通道（Channels）";
+$text['label-channels']['en-us'] = "呼叫通道数";
 $text['label-channels']['ar-eg'] = "Channels";
 $text['label-channels']['de-at'] = "Kanäle"; //copied from de-de
 $text['label-channels']['de-ch'] = "Kanäle"; //copied from de-de
