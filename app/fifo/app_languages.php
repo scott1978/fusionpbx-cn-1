@@ -581,7 +581,7 @@ $text['description-queues']['ru-ru'] = "Очереди используются 
 $text['description-queues']['sv-se'] = "Köer används för att konfigurera väntelinjer för uppringare. Även känd som FIFO Kö:er.";
 $text['description-queues']['uk-ua'] = "";
 
-$text['description-queue_edit']['en-us'] = "Queues are used to setup waiting lines for callers. Also known as FIFO Queues.";
+$text['description-queue_edit']['en-us'] = "队列用于为呼叫者设置等待线路。也称为FIFO队列。";
 $text['description-queue_edit']['ar-eg'] = "";
 $text['description-queue_edit']['de-at'] = "Warteschlangen werden verwendt um Warteschleifen für Anrufer zu erstellen. Diese sind auch als FIFO-Warteschlangen bekannt."; //copied from de-de
 $text['description-queue_edit']['de-ch'] = "Warteschlangen werden verwendt um Warteschleifen für Anrufer zu erstellen. Diese sind auch als FIFO-Warteschlangen bekannt."; //copied from de-de
