@@ -81,7 +81,7 @@ $text['title-queue_detail_add']['ru-ru'] = "Добавление детали в
 $text['title-queue_detail_add']['sv-se'] = "Lägg Till Kö Detaljer";
 $text['title-queue_detail_add']['uk-ua'] = "";
 
-$text['title-queue_add']['en-us'] = "Queue Add";
+$text['title-queue_add']['en-us'] = "添加队列";
 $text['title-queue_add']['ar-eg'] = "";
 $text['title-queue_add']['de-at'] = "Warteschlange hinzufügen"; //copied from de-de
 $text['title-queue_add']['de-ch'] = "Warteschlange hinzufügen"; //copied from de-de
@@ -261,7 +261,7 @@ $text['label-field']['ru-ru'] = "Поле";
 $text['label-field']['sv-se'] = "Fält";
 $text['label-field']['uk-ua'] = "";
 
-$text['label-extension']['en-us'] = "Extension";
+$text['label-extension']['en-us'] = "分机号";
 $text['label-extension']['ar-eg'] = "";
 $text['label-extension']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['label-extension']['de-ch'] = "Nebenstelle"; //copied from de-de
@@ -481,7 +481,7 @@ $text['header-queue_detail_add']['ru-ru'] = "Добавление деталей
 $text['header-queue_detail_add']['sv-se'] = "Lägg Till Kö Detalj";
 $text['header-queue_detail_add']['uk-ua'] = "";
 
-$text['header-queue_add']['en-us'] = "Queue Add";
+$text['header-queue_add']['en-us'] = "添加队列";
 $text['header-queue_add']['ar-eg'] = "";
 $text['header-queue_add']['de-at'] = "Warteschlange hinzufügen"; //copied from de-de
 $text['header-queue_add']['de-ch'] = "Warteschlange hinzufügen"; //copied from de-de
@@ -601,7 +601,7 @@ $text['description-queue_edit']['ru-ru'] = "Очереди используют�
 $text['description-queue_edit']['sv-se'] = "Köer används för att konfigurera väntelinjer för uppringare. Även känd som FIFO Kö:er.";
 $text['description-queue_edit']['uk-ua'] = "";
 
-$text['description-queue_add']['en-us'] = "In simple terms queues are holding patterns for callers to wait until someone is available to take the call. Also known as FIFO Queues.";
+$text['description-queue_add']['en-us'] = "简单地说，队列是为呼叫者保留模式，以便等待有人可以接听电话。也称为FIFO队列。";
 $text['description-queue_add']['ar-eg'] = "";
 $text['description-queue_add']['de-at'] = "Einfach ausgedrückt sind WarteschlangenWarteschlangen in denen die Anruf gehalten werden, bit jemand verfügbar ist, der den Anruf annehmen kann. Diese sind als FIFO-Warteschlangen bekannt."; //copied from de-de
 $text['description-queue_add']['de-ch'] = "Einfach ausgedrückt sind WarteschlangenWarteschlangen in denen die Anruf gehalten werden, bit jemand verfügbar ist, der den Anruf annehmen kann. Diese sind als FIFO-Warteschlangen bekannt."; //copied from de-de
@@ -621,7 +621,7 @@ $text['description-queue_add']['ru-ru'] = "Говоря простыми сло�
 $text['description-queue_add']['sv-se'] = "Enkelt förklarat så är kö:er en vänt plats för inkommande samtal fram tills någon kan ta samtalet. Även känt som FIFO Kö:er.";
 $text['description-queue_add']['uk-ua'] = "";
 
-$text['description-name']['en-us'] = "The name the queue will be assigned.";
+$text['description-name']['en-us'] = "输入队列名称。";
 $text['description-name']['ar-eg'] = "";
 $text['description-name']['de-at'] = "Der Name, welcher der Warteschlange zugeordnet werden soll."; //copied from de-de
 $text['description-name']['de-ch'] = "Der Name, welcher der Warteschlange zugeordnet werden soll."; //copied from de-de
@@ -641,7 +641,7 @@ $text['description-name']['ru-ru'] = "Имя очереди будет прис�
 $text['description-name']['sv-se'] = "Namnet som kommer att kopplas till kö:n.";
 $text['description-name']['uk-ua'] = "";
 
-$text['description-extension']['en-us'] = "The number that will be assigned to the queue.";
+$text['description-extension']['en-us'] = "输入队列分机号。";
 $text['description-extension']['ar-eg'] = "";
 $text['description-extension']['de-at'] = "Die Rufnummer, die der Warteschlange zugeordnet werden soll."; //copied from de-de
 $text['description-extension']['de-ch'] = "Die Rufnummer, die der Warteschlange zugeordnet werden soll."; //copied from de-de
