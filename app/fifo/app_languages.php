@@ -561,7 +561,7 @@ $text['header-additional_information']['ru-ru'] = "Дополнительная 
 $text['header-additional_information']['sv-se'] = "Ytterligare Information";
 $text['header-additional_information']['uk-ua'] = "";
 
-$text['description-queues']['en-us'] = "Queues are used to setup waiting lines for callers. Also known as FIFO Queues.";
+$text['description-queues']['en-us'] = "队列用于为呼叫者设置等待线路。也称为FIFO队列。";
 $text['description-queues']['ar-eg'] = "";
 $text['description-queues']['de-at'] = "Warteschlangen werden verwendt um Warteschleifen für Anrufer zu erstellen. Diese sind auch als FIFO-Warteschlangen bekannt."; //copied from de-de
 $text['description-queues']['de-ch'] = "Warteschlangen werden verwendt um Warteschleifen für Anrufer zu erstellen. Diese sind auch als FIFO-Warteschlangen bekannt."; //copied from de-de
