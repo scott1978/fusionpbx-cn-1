@@ -541,7 +541,7 @@ $text['label-call-prompt']['ru-ru'] = "Запрос вызова";
 $text['label-call-prompt']['sv-se'] = "Samtals Verifiering";
 $text['label-call-prompt']['uk-ua'] = "";
 
-$text['label-call-forward']['en-us'] = "呼叫转移";
+$text['label-call-forward']['en-us'] = "来电转移";
 $text['label-call-forward']['ar-eg'] = "Call Forward";
 $text['label-call-forward']['de-at'] = "Rufumleitung"; //copied from de-de
 $text['label-call-forward']['de-ch'] = "Rufumleitung"; //copied from de-de
@@ -741,7 +741,7 @@ $text['description-call-prompt']['ru-ru'] = "Сообщение о приеме 
 $text['description-call-prompt']['sv-se'] = "Kräv verifiering för att ta emot samtal för externa destinationer.";
 $text['description-call-prompt']['uk-ua'] = "";
 
-$text['description-call_routing']['en-us'] = "为以下分机定义备用呼入呼叫处理";
+$text['description-call_routing']['en-us'] = "指示分机的来电。";
 $text['description-call_routing']['ar-eg'] = "Define alternate inbound call handling for the following extensions.";
 $text['description-call_routing']['de-at'] = "Definieren Sie eine alternative Handhabung von eingehenden Anrufen für nachfolgende Nebenstellen."; //copied from de-de
 $text['description-call_routing']['de-ch'] = "Definieren Sie eine alternative Handhabung von eingehenden Anrufen für nachfolgende Nebenstellen."; //copied from de-de
