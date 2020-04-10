@@ -1,7 +1,7 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "媒体音乐";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "音乐等待";
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Music on Hold";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Wartemusik";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Wartemusik";

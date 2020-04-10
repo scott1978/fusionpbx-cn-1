@@ -21,7 +21,7 @@ $text['title-music_on_hold_settings']['ru-ru'] = "Музыка на удержа
 $text['title-music_on_hold_settings']['sv-se'] = "Väntmusik inställningar";
 $text['title-music_on_hold_settings']['uk-ua'] = "Музика на утриманні настройки";
 
-$text['title-music_on_hold']['en-us'] = "Music on Hold";
+$text['title-music_on_hold']['en-us'] = "音乐等待";
 $text['title-music_on_hold']['ar-eg'] = "";
 $text['title-music_on_hold']['de-at'] = "Wartemusik"; //copied from de-de
 $text['title-music_on_hold']['de-ch'] = "Wartemusik"; //copied from de-de
@@ -261,7 +261,7 @@ $text['label-uploaded']['ru-ru'] = "Загружено";
 $text['label-uploaded']['sv-se'] = "Uppladdad";
 $text['label-uploaded']['uk-ua'] = "Завантажено";
 
-$text['label-upload-music_on_hold']['en-us'] = "Upload Music";
+$text['label-upload-music_on_hold']['en-us'] = "上传音乐";
 $text['label-upload-music_on_hold']['ar-eg'] = "";
 $text['label-upload-music_on_hold']['de-at'] = "Musik hochladen"; //copied from de-de
 $text['label-upload-music_on_hold']['de-ch'] = "Musik hochladen"; //copied from de-de
@@ -821,7 +821,7 @@ $text['header-music_on_hold_settings']['ru-ru'] = "Музыка на удерж�
 $text['header-music_on_hold_settings']['sv-se'] = "Väntmusik inställningar";
 $text['header-music_on_hold_settings']['uk-ua'] = "Музика на утриманні настройки";
 
-$text['desc-music_on_hold']['en-us'] = "Music on hold can be in WAV or MP3 format. To play an MP3 file you must have mod_shout enabled on the 'Modules' tab. You can adjust the volume of the MP3 audio from the 'Settings' tab. For best performance upload 16 bit, 8/16/32/48 kHz <i>mono</i> WAV files.";
+$text['desc-music_on_hold']['en-us'] = "音乐等待可以是WAV或MP3格式。要播放MP3文件，必须在'Modules'选项上启用mod_shout。可以从'Settings'标签调整MP3音频的音量。";
 $text['desc-music_on_hold']['ar-eg'] = "";
 $text['desc-music_on_hold']['de-at'] = "Haltemusik können Dateien im WAV oder MP3 Format sein. Um MP3 Dateien abzuspielen zu können, muss mod_shout installiert und aktiviert sein. Sie können die Lautstärke der MP3 Dateien in den Einstellungen verändern. Für beste Funktionalität laden Sie 16bit, 8/16/32/48 kHz mono WAV Dateien hoch."; //copied from de-de
 $text['desc-music_on_hold']['de-ch'] = "Haltemusik können Dateien im WAV oder MP3 Format sein. Um MP3 Dateien abzuspielen zu können, muss mod_shout installiert und aktiviert sein. Sie können die Lautstärke der MP3 Dateien in den Einstellungen verändern. Für beste Funktionalität laden Sie 16bit, 8/16/32/48 kHz mono WAV Dateien hoch."; //copied from de-de
