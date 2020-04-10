@@ -561,8 +561,8 @@ $text['label-voicemail_tutorial']['ru-ru'] = "Воспроизвести уче�
 $text['label-voicemail_tutorial']['sv-se'] = "Spela Upp Introduktion";
 $text['label-voicemail_tutorial']['uk-ua'] = "";
 
-$text['label-tools']['en-us'] = "Tools";
-$text['label-tools']['ar-eg'] = "";
+$text['label-tools']['en-us'] = "工具";
+$text['label-tools']['ar-eg'] = "Tools";
 $text['label-tools']['de-at'] = "Werkzeuge"; //copied from de-de
 $text['label-tools']['de-ch'] = "Werkzeuge"; //copied from de-de
 $text['label-tools']['de-de'] = "Werkzeuge";
@@ -681,8 +681,8 @@ $text['label-option']['ru-ru'] = "Опция";
 $text['label-option']['sv-se'] = "Val";
 $text['label-option']['uk-ua'] = "Параметр";
 
-$text['label-messages']['en-us'] = "Messages";
-$text['label-messages']['ar-eg'] = "رسائل";
+$text['label-messages']['en-us'] = "信箱";
+$text['label-messages']['ar-eg'] = "Messages";
 $text['label-messages']['de-at'] = "Nachrichten"; //copied from de-de
 $text['label-messages']['de-ch'] = "Nachrichten"; //copied from de-de
 $text['label-messages']['de-de'] = "Nachrichten";
@@ -821,8 +821,8 @@ $text['label-mailbox']['ru-ru'] = "Почтовый ящик";
 $text['label-mailbox']['sv-se'] = "Röstbrevlåda";
 $text['label-mailbox']['uk-ua'] = "Поштова скринька";
 
-$text['label-greetings']['en-us'] = "Greetings";
-$text['label-greetings']['ar-eg'] = "";
+$text['label-greetings']['en-us'] = "问候语";
+$text['label-greetings']['ar-eg'] = "Greetings";
 $text['label-greetings']['de-at'] = "Begrüßungen"; //copied from de-de
 $text['label-greetings']['de-ch'] = "Begrüßungen"; //copied from de-de
 $text['label-greetings']['de-de'] = "Begrüßungen";
@@ -861,8 +861,8 @@ $text['label-greeting']['ru-ru'] = "Приветствие";
 $text['label-greeting']['sv-se'] = "Hälsning";
 $text['label-greeting']['uk-ua'] = "ID привітання";
 
-$text['label-forward_destinations']['en-us'] = "Forward Destinations";
-$text['label-forward_destinations']['ar-eg'] = "";
+$text['label-forward_destinations']['en-us'] = "转发目的地";
+$text['label-forward_destinations']['ar-eg'] = "Forward Destinations";
 $text['label-forward_destinations']['de-at'] = "Weiterleitungs Ziele"; //copied from de-de
 $text['label-forward_destinations']['de-ch'] = "Weiterleitungs Ziele"; //copied from de-de
 $text['label-forward_destinations']['de-de'] = "Weiterleitungs Ziele";
@@ -1401,8 +1401,8 @@ $text['description-greeting']['ru-ru'] = "Выберите желаемое пр
 $text['description-greeting']['sv-se'] = "Ange Hälsningens ID";
 $text['description-greeting']['uk-ua'] = "Введіть ID привітання";
 
-$text['description-forward_destinations']['en-us'] = "Forward voicemail messages to additional destinations.";
-$text['description-forward_destinations']['ar-eg'] = "";
+$text['description-forward_destinations']['en-us'] = "将语音邮件转发到其他目的地。";
+$text['description-forward_destinations']['ar-eg'] = "Forward voicemail messages to additional destinations.";
 $text['description-forward_destinations']['de-at'] = "Mailbox Nachrichten an zusätzliche Nebenstellen weiterleiten."; //copied from de-de
 $text['description-forward_destinations']['de-ch'] = "Mailbox Nachrichten an zusätzliche Nebenstellen weiterleiten."; //copied from de-de
 $text['description-forward_destinations']['de-de'] = "Mailbox Nachrichten an zusätzliche Nebenstellen weiterleiten.";
