@@ -921,8 +921,8 @@ $text['label-destination']['ru-ru'] = "Место назначения";
 $text['label-destination']['sv-se'] = "Destination";
 $text['label-destination']['uk-ua'] = "Номер";
 
-$text['label-created_epoch']['en-us'] = "Created";
-$text['label-created_epoch']['ar-eg'] = "";
+$text['label-created_epoch']['en-us'] = "创建时间";
+$text['label-created_epoch']['ar-eg'] = "Created";
 $text['label-created_epoch']['de-at'] = "Erstellt"; //copied from de-de
 $text['label-created_epoch']['de-ch'] = "Erstellt"; //copied from de-de
 $text['label-created_epoch']['de-de'] = "Erstellt";
@@ -961,8 +961,8 @@ $text['label-count']['ru-ru'] = "Подсчет";
 $text['label-count']['sv-se'] = "Räkna";
 $text['label-count']['uk-ua'] = "Кількість";
 
-$text['label-caller_id_number']['en-us'] = "Caller ID Number";
-$text['label-caller_id_number']['ar-eg'] = "";
+$text['label-caller_id_number']['en-us'] = "主叫号码";
+$text['label-caller_id_number']['ar-eg'] = "Caller ID Number";
 $text['label-caller_id_number']['de-at'] = "Anrufer Nummer"; //copied from de-de
 $text['label-caller_id_number']['de-ch'] = "Anrufer Nummer"; //copied from de-de
 $text['label-caller_id_number']['de-de'] = "Anrufer Nummer";
@@ -981,8 +981,8 @@ $text['label-caller_id_number']['ru-ru'] = "Caller ID Номера";
 $text['label-caller_id_number']['sv-se'] = "Nummerpresentation";
 $text['label-caller_id_number']['uk-ua'] = "Caller ID Номер";
 
-$text['label-caller_id_name']['en-us'] = "Caller ID Name";
-$text['label-caller_id_name']['ar-eg'] = "";
+$text['label-caller_id_name']['en-us'] = "主叫名称";
+$text['label-caller_id_name']['ar-eg'] = "Caller ID Name";
 $text['label-caller_id_name']['de-at'] = "Anrufer Name"; //copied from de-de
 $text['label-caller_id_name']['de-ch'] = "Anrufer Name"; //copied from de-de
 $text['label-caller_id_name']['de-de'] = "Anrufer Name";
