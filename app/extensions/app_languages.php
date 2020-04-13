@@ -2461,8 +2461,8 @@ $text['checkbox-range']['ru-ru'] = "Автоматическая генерац�
 $text['checkbox-range']['sv-se'] = "Auto-generera användare med anknytning som inloggningsnamn.";
 $text['checkbox-range']['uk-ua'] = "";
 
-$text['button-call_routing']['en-us'] = "Call Routing";
-$text['button-call_routing']['ar-eg'] = "توجيه الدعوة";
+$text['button-call_routing']['en-us'] = "分机随行";
+$text['button-call_routing']['ar-eg'] = "Call Routing";
 $text['button-call_routing']['de-at'] = "Call Routing"; //copied from de-de
 $text['button-call_routing']['de-ch'] = "Call Routing"; //copied from de-de
 $text['button-call_routing']['de-de'] = "Call Routing";
