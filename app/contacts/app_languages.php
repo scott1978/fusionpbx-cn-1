@@ -2281,8 +2281,8 @@ $text['label-contact_time_zone']['ru-ru'] = "Часовой пояс";
 $text['label-contact_time_zone']['sv-se'] = "Tidszon";
 $text['label-contact_time_zone']['uk-ua'] = "Часовий пояс";
 
-$text['label-contact_settings']['en-us'] = "Settings";
-$text['label-contact_settings']['ar-eg'] = "";
+$text['label-contact_settings']['en-us'] = "设置";
+$text['label-contact_settings']['ar-eg'] = "Settings";
 $text['label-contact_settings']['de-at'] = "Einstellungen"; //copied from de-de
 $text['label-contact_settings']['de-ch'] = "Einstellungen"; //copied from de-de
 $text['label-contact_settings']['de-de'] = "Einstellungen";
@@ -2301,8 +2301,8 @@ $text['label-contact_settings']['ru-ru'] = "Настройки";
 $text['label-contact_settings']['sv-se'] = "Inställning";
 $text['label-contact_settings']['uk-ua'] = "Налаштування";
 
-$text['label-contact_setting_value']['en-us'] = "Value";
-$text['label-contact_setting_value']['ar-eg'] = "";
+$text['label-contact_setting_value']['en-us'] = "值";
+$text['label-contact_setting_value']['ar-eg'] = "Value";
 $text['label-contact_setting_value']['de-at'] = "Wert"; //copied from de-de
 $text['label-contact_setting_value']['de-ch'] = "Wert"; //copied from de-de
 $text['label-contact_setting_value']['de-de'] = "Wert";
@@ -2321,8 +2321,8 @@ $text['label-contact_setting_value']['ru-ru'] = "Параметр";
 $text['label-contact_setting_value']['sv-se'] = "Värde";
 $text['label-contact_setting_value']['uk-ua'] = "Значення";
 
-$text['label-contact_setting_type']['en-us'] = "Type";
-$text['label-contact_setting_type']['ar-eg'] = "";
+$text['label-contact_setting_type']['en-us'] = "类型";
+$text['label-contact_setting_type']['ar-eg'] = "Type";
 $text['label-contact_setting_type']['de-at'] = "Art"; //copied from de-de
 $text['label-contact_setting_type']['de-ch'] = "Art"; //copied from de-de
 $text['label-contact_setting_type']['de-de'] = "Art";
@@ -2341,8 +2341,8 @@ $text['label-contact_setting_type']['ru-ru'] = "Тип";
 $text['label-contact_setting_type']['sv-se'] = "Typ";
 $text['label-contact_setting_type']['uk-ua'] = "Тип";
 
-$text['label-contact_setting_subcategory']['en-us'] = "Subcategory";
-$text['label-contact_setting_subcategory']['ar-eg'] = "";
+$text['label-contact_setting_subcategory']['en-us'] = "子分类";
+$text['label-contact_setting_subcategory']['ar-eg'] = "Subcategory";
 $text['label-contact_setting_subcategory']['de-at'] = "Unterkategorie"; //copied from de-de
 $text['label-contact_setting_subcategory']['de-ch'] = "Unterkategorie"; //copied from de-de
 $text['label-contact_setting_subcategory']['de-de'] = "Unterkategorie";
@@ -2361,8 +2361,8 @@ $text['label-contact_setting_subcategory']['ru-ru'] = "Подкатегория"
 $text['label-contact_setting_subcategory']['sv-se'] = "Underkategori";
 $text['label-contact_setting_subcategory']['uk-ua'] = "Підкатегорія";
 
-$text['label-contact_setting_category']['en-us'] = "Category";
-$text['label-contact_setting_category']['ar-eg'] = "";
+$text['label-contact_setting_category']['en-us'] = "分类";
+$text['label-contact_setting_category']['ar-eg'] = "Category";
 $text['label-contact_setting_category']['de-at'] = "Kategorie"; //copied from de-de
 $text['label-contact_setting_category']['de-ch'] = "Kategorie"; //copied from de-de
 $text['label-contact_setting_category']['de-de'] = "Kategorie";
