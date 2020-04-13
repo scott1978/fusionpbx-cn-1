@@ -1261,8 +1261,8 @@ $text['label-video']['ru-ru'] = "Видео";
 $text['label-video']['sv-se'] = "Video";
 $text['label-video']['uk-ua'] = "Відео";
 
-$text['label-urls']['en-us'] = "URLs";
-$text['label-urls']['ar-eg'] = "";
+$text['label-urls']['en-us'] = "有关链接";
+$text['label-urls']['ar-eg'] = "URLs";
 $text['label-urls']['de-at'] = "URLs"; //copied from de-de
 $text['label-urls']['de-ch'] = "URLs"; //copied from de-de
 $text['label-urls']['de-de'] = "URLs";
@@ -1281,8 +1281,8 @@ $text['label-urls']['ru-ru'] = "URL адреса";
 $text['label-urls']['sv-se'] = "URL:s";
 $text['label-urls']['uk-ua'] = "URL адреси";
 
-$text['label-url_label']['en-us'] = "Label";
-$text['label-url_label']['ar-eg'] = "";
+$text['label-url_label']['en-us'] = "标签";
+$text['label-url_label']['ar-eg'] = "Label";
 $text['label-url_label']['de-at'] = "Kennzeichnung"; //copied from de-de
 $text['label-url_label']['de-ch'] = "Kennzeichnung"; //copied from de-de
 $text['label-url_label']['de-de'] = "Kennzeichnung";
@@ -1301,8 +1301,8 @@ $text['label-url_label']['ru-ru'] = "Метка";
 $text['label-url_label']['sv-se'] = "Etikett";
 $text['label-url_label']['uk-ua'] = "Назва";
 
-$text['label-url_description']['en-us'] = "Description";
-$text['label-url_description']['ar-eg'] = "";
+$text['label-url_description']['en-us'] = "备注";
+$text['label-url_description']['ar-eg'] = "Description";
 $text['label-url_description']['de-at'] = "Beschreibung"; //copied from de-de
 $text['label-url_description']['de-ch'] = "Beschreibung"; //copied from de-de
 $text['label-url_description']['de-de'] = "Beschreibung";
@@ -1321,8 +1321,8 @@ $text['label-url_description']['ru-ru'] = "Описание";
 $text['label-url_description']['sv-se'] = "Beskrivning";
 $text['label-url_description']['uk-ua'] = "Опис";
 
-$text['label-url_address']['en-us'] = "Address";
-$text['label-url_address']['ar-eg'] = "";
+$text['label-url_address']['en-us'] = "地址";
+$text['label-url_address']['ar-eg'] = "Address";
 $text['label-url_address']['de-at'] = "Adresse"; //copied from de-de
 $text['label-url_address']['de-ch'] = "Adresse"; //copied from de-de
 $text['label-url_address']['de-de'] = "Adresse";
@@ -1541,8 +1541,8 @@ $text['label-shared']['ru-ru'] = "Общий";
 $text['label-shared']['sv-se'] = "Delad";
 $text['label-shared']['uk-ua'] = "";
 
-$text['label-primary']['en-us'] = "Primary";
-$text['label-primary']['ar-eg'] = "";
+$text['label-primary']['en-us'] = "主要的";
+$text['label-primary']['ar-eg'] = "Primary";
 $text['label-primary']['de-at'] = "Primär"; //copied from de-de
 $text['label-primary']['de-ch'] = "Primär"; //copied from de-de
 $text['label-primary']['de-de'] = "Primär";
