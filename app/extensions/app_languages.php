@@ -1541,7 +1541,7 @@ $text['header-extension-add']['ru-ru'] = "Добавить Внутренний 
 $text['header-extension-add']['sv-se'] = "Lägg Till Anknytning";
 $text['header-extension-add']['uk-ua'] = "Додавання розширення";
 
-$text['description-voicemail_password']['en-us'] = "Enter the numeric voicemail  password here.";
+$text['description-voicemail_password']['en-us'] = "输入数字语音信箱密码。";
 $text['description-voicemail_password']['ar-eg'] = "";
 $text['description-voicemail_password']['de-at'] = "Geben Sie das numerische Mailbox Passwort an."; //copied from de-de
 $text['description-voicemail_password']['de-ch'] = "Geben Sie das numerische Mailbox Passwort an."; //copied from de-de
