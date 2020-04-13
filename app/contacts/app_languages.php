@@ -2081,8 +2081,8 @@ $text['label-enabled']['ru-ru'] = "Включено";
 $text['label-enabled']['sv-se'] = "Aktiverad";
 $text['label-enabled']['uk-ua'] = "Включено";
 
-$text['label-emails']['en-us'] = "Emails";
-$text['label-emails']['ar-eg'] = "";
+$text['label-emails']['en-us'] = "电子邮箱";
+$text['label-emails']['ar-eg'] = "Emails";
 $text['label-emails']['de-at'] = "Emails"; //copied from de-de
 $text['label-emails']['de-ch'] = "Emails"; //copied from de-de
 $text['label-emails']['de-de'] = "Emails";
@@ -2101,8 +2101,8 @@ $text['label-emails']['ru-ru'] = "Адреса электронной почты
 $text['label-emails']['sv-se'] = "E-post";
 $text['label-emails']['uk-ua'] = "Адреси електронної пошти";
 
-$text['label-email_label']['en-us'] = "Label";
-$text['label-email_label']['ar-eg'] = "";
+$text['label-email_label']['en-us'] = "标签";
+$text['label-email_label']['ar-eg'] = "Label";
 $text['label-email_label']['de-at'] = "Kennzeichnung"; //copied from de-de
 $text['label-email_label']['de-ch'] = "Kennzeichnung"; //copied from de-de
 $text['label-email_label']['de-de'] = "Kennzeichnung";
@@ -2121,8 +2121,8 @@ $text['label-email_label']['ru-ru'] = "Метка";
 $text['label-email_label']['sv-se'] = "Etikett";
 $text['label-email_label']['uk-ua'] = "Назва";
 
-$text['label-email_description']['en-us'] = "Description";
-$text['label-email_description']['ar-eg'] = "";
+$text['label-email_description']['en-us'] = "备注";
+$text['label-email_description']['ar-eg'] = "Description";
 $text['label-email_description']['de-at'] = "Beschreibung"; //copied from de-de
 $text['label-email_description']['de-ch'] = "Beschreibung"; //copied from de-de
 $text['label-email_description']['de-de'] = "Beschreibung";
@@ -2141,8 +2141,8 @@ $text['label-email_description']['ru-ru'] = "Описание";
 $text['label-email_description']['sv-se'] = "Beskrivning";
 $text['label-email_description']['uk-ua'] = "Опис";
 
-$text['label-email_address']['en-us'] = "Address";
-$text['label-email_address']['ar-eg'] = "";
+$text['label-email_address']['en-us'] = "邮箱地址";
+$text['label-email_address']['ar-eg'] = "Address";
 $text['label-email_address']['de-at'] = "Email-Adresse"; //copied from de-de
 $text['label-email_address']['de-ch'] = "Email-Adresse"; //copied from de-de
 $text['label-email_address']['de-de'] = "Email-Adresse";
@@ -2161,8 +2161,8 @@ $text['label-email_address']['ru-ru'] = "Адреса Электронной П�
 $text['label-email_address']['sv-se'] = "Adress";
 $text['label-email_address']['uk-ua'] = "Адреси E-Mail";
 
-$text['label-description']['en-us'] = "Description";
-$text['label-description']['ar-eg'] = "";
+$text['label-description']['en-us'] = "备注";
+$text['label-description']['ar-eg'] = "Description";
 $text['label-description']['de-at'] = "Beschreibung"; //copied from de-de
 $text['label-description']['de-ch'] = "Beschreibung"; //copied from de-de
 $text['label-description']['de-de'] = "Beschreibung";
