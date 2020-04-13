@@ -1621,8 +1621,8 @@ $text['label-phone_speed_dial']['ru-ru'] = "Быстрый Набор";
 $text['label-phone_speed_dial']['sv-se'] = "Snabb Nummer";
 $text['label-phone_speed_dial']['uk-ua'] = "";
 
-$text['label-phone_numbers']['en-us'] = "Numbers";
-$text['label-phone_numbers']['ar-eg'] = "";
+$text['label-phone_numbers']['en-us'] = "联系号码";
+$text['label-phone_numbers']['ar-eg'] = "Numbers";
 $text['label-phone_numbers']['de-at'] = "Nummern"; //copied from de-de
 $text['label-phone_numbers']['de-ch'] = "Nummern"; //copied from de-de
 $text['label-phone_numbers']['de-de'] = "Nummern";
@@ -1641,8 +1641,8 @@ $text['label-phone_numbers']['ru-ru'] = "Номера";
 $text['label-phone_numbers']['sv-se'] = "Nummer";
 $text['label-phone_numbers']['uk-ua'] = "Номери";
 
-$text['label-phone_number']['en-us'] = "Number";
-$text['label-phone_number']['ar-eg'] = "";
+$text['label-phone_number']['en-us'] = "号码";
+$text['label-phone_number']['ar-eg'] = "Number";
 $text['label-phone_number']['de-at'] = "Nummer"; //copied from de-de
 $text['label-phone_number']['de-ch'] = "Nummer"; //copied from de-de
 $text['label-phone_number']['de-de'] = "Nummer";
@@ -1661,8 +1661,8 @@ $text['label-phone_number']['ru-ru'] = "Номер";
 $text['label-phone_number']['sv-se'] = "Nummer";
 $text['label-phone_number']['uk-ua'] = "Номер";
 
-$text['label-phone_label']['en-us'] = "Label";
-$text['label-phone_label']['ar-eg'] = "";
+$text['label-phone_label']['en-us'] = "标签";
+$text['label-phone_label']['ar-eg'] = "Label";
 $text['label-phone_label']['de-at'] = "Kennzeichnung"; //copied from de-de
 $text['label-phone_label']['de-ch'] = "Kennzeichnung"; //copied from de-de
 $text['label-phone_label']['de-de'] = "Kennzeichnung";
@@ -1701,8 +1701,8 @@ $text['label-phone_extension']['ru-ru'] = "Внутренний Номер";
 $text['label-phone_extension']['sv-se'] = "Anknytning";
 $text['label-phone_extension']['uk-ua'] = "Розширення";
 
-$text['label-phone_description']['en-us'] = "Description";
-$text['label-phone_description']['ar-eg'] = "";
+$text['label-phone_description']['en-us'] = "备注";
+$text['label-phone_description']['ar-eg'] = "Description";
 $text['label-phone_description']['de-at'] = "Beschreibung"; //copied from de-de
 $text['label-phone_description']['de-ch'] = "Beschreibung"; //copied from de-de
 $text['label-phone_description']['de-de'] = "Beschreibung";
@@ -2961,8 +2961,8 @@ $text['label-address_type']['ru-ru'] = "Тип";
 $text['label-address_type']['sv-se'] = "Typ";
 $text['label-address_type']['uk-ua'] = "Тип";
 
-$text['label-address_tools']['en-us'] = "Tools";
-$text['label-address_tools']['ar-eg'] = "";
+$text['label-address_tools']['en-us'] = "工具";
+$text['label-address_tools']['ar-eg'] = "Tools";
 $text['label-address_tools']['de-at'] = "Werkzeuge"; //copied from de-de
 $text['label-address_tools']['de-ch'] = "Werkzeuge"; //copied from de-de
 $text['label-address_tools']['de-de'] = "Werkzeuge";
