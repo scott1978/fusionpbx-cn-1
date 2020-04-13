@@ -1261,7 +1261,7 @@ $text['label-video']['ru-ru'] = "Видео";
 $text['label-video']['sv-se'] = "Video";
 $text['label-video']['uk-ua'] = "Відео";
 
-$text['label-urls']['en-us'] = "有关链接";
+$text['label-urls']['en-us'] = "网址链接";
 $text['label-urls']['ar-eg'] = "URLs";
 $text['label-urls']['de-at'] = "URLs"; //copied from de-de
 $text['label-urls']['de-ch'] = "URLs"; //copied from de-de
@@ -1681,8 +1681,8 @@ $text['label-phone_label']['ru-ru'] = "Метка";
 $text['label-phone_label']['sv-se'] = "Etikett";
 $text['label-phone_label']['uk-ua'] = "Назва";
 
-$text['label-phone_extension']['en-us'] = "Extension";
-$text['label-phone_extension']['ar-eg'] = "";
+$text['label-phone_extension']['en-us'] = "分机";
+$text['label-phone_extension']['ar-eg'] = "Extension";
 $text['label-phone_extension']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['label-phone_extension']['de-ch'] = "Nebenstelle"; //copied from de-de
 $text['label-phone_extension']['de-de'] = "Nebenstelle";
@@ -2061,8 +2061,8 @@ $text['label-extension']['ru-ru'] = "Внутренний Номер";
 $text['label-extension']['sv-se'] = "Anknytning";
 $text['label-extension']['uk-ua'] = "Розширення";
 
-$text['label-enabled']['en-us'] = "Enabled";
-$text['label-enabled']['ar-eg'] = "";
+$text['label-enabled']['en-us'] = "启用";
+$text['label-enabled']['ar-eg'] = "Enabled";
 $text['label-enabled']['de-at'] = "An"; //copied from de-de
 $text['label-enabled']['de-ch'] = "An"; //copied from de-de
 $text['label-enabled']['de-de'] = "An";
@@ -2441,8 +2441,8 @@ $text['label-contact_relation_reciprocal']['ru-ru'] = "Взаимное";
 $text['label-contact_relation_reciprocal']['sv-se'] = "Ömsesidig";
 $text['label-contact_relation_reciprocal']['uk-ua'] = "";
 
-$text['label-contact_relation_organization']['en-us'] = "Organization";
-$text['label-contact_relation_organization']['ar-eg'] = "";
+$text['label-contact_relation_organization']['en-us'] = "公司";
+$text['label-contact_relation_organization']['ar-eg'] = "Organization";
 $text['label-contact_relation_organization']['de-at'] = "Organisation"; //copied from de-de
 $text['label-contact_relation_organization']['de-ch'] = "Organisation"; //copied from de-de
 $text['label-contact_relation_organization']['de-de'] = "Organisation";
@@ -2581,8 +2581,8 @@ $text['label-contact_relation_option_associate']['ru-ru'] = "Коллега";
 $text['label-contact_relation_option_associate']['sv-se'] = "Associate";
 $text['label-contact_relation_option_associate']['uk-ua'] = "";
 
-$text['label-contact_relation_name']['en-us'] = "Name";
-$text['label-contact_relation_name']['ar-eg'] = "";
+$text['label-contact_relation_name']['en-us'] = "姓名";
+$text['label-contact_relation_name']['ar-eg'] = "Name";
 $text['label-contact_relation_name']['de-at'] = "Name"; //copied from de-de
 $text['label-contact_relation_name']['de-ch'] = "Name"; //copied from de-de
 $text['label-contact_relation_name']['de-de'] = "Name";
@@ -2601,8 +2601,8 @@ $text['label-contact_relation_name']['ru-ru'] = "Имя";
 $text['label-contact_relation_name']['sv-se'] = "Namn";
 $text['label-contact_relation_name']['uk-ua'] = "Назва";
 
-$text['label-contact_relation_label']['en-us'] = "Relation";
-$text['label-contact_relation_label']['ar-eg'] = "";
+$text['label-contact_relation_label']['en-us'] = "关系";
+$text['label-contact_relation_label']['ar-eg'] = "Relation";
 $text['label-contact_relation_label']['de-at'] = "Beziehung"; //copied from de-de
 $text['label-contact_relation_label']['de-ch'] = "Beziehung"; //copied from de-de
 $text['label-contact_relation_label']['de-de'] = "Beziehung";
@@ -2861,8 +2861,8 @@ $text['label-contact_google']['ru-ru'] = "Контакт Google";
 $text['label-contact_google']['sv-se'] = "Google Kontakt";
 $text['label-contact_google']['uk-ua'] = "Контакт Google";
 
-$text['label-contact_extensions']['en-us'] = "Extensions";
-$text['label-contact_extensions']['ar-eg'] = "";
+$text['label-contact_extensions']['en-us'] = "分机";
+$text['label-contact_extensions']['ar-eg'] = "Extensions";
 $text['label-contact_extensions']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['label-contact_extensions']['de-ch'] = "Nebenstelle"; //copied from de-de
 $text['label-contact_extensions']['de-de'] = "Nebenstelle";
@@ -3381,8 +3381,8 @@ $text['header-contact_setting_add']['ru-ru'] = "Добавить Парамет�
 $text['header-contact_setting_add']['sv-se'] = "Lägg Till Kontakt Inställning";
 $text['header-contact_setting_add']['uk-ua'] = "";
 
-$text['header-contact_relations']['en-us'] = "Relations";
-$text['header-contact_relations']['ar-eg'] = "";
+$text['header-contact_relations']['en-us'] = "用户关系";
+$text['header-contact_relations']['ar-eg'] = "Relations";
 $text['header-contact_relations']['de-at'] = "Beziehungen"; //copied from de-de
 $text['header-contact_relations']['de-ch'] = "Beziehungen"; //copied from de-de
 $text['header-contact_relations']['de-de'] = "Beziehungen";
@@ -4381,8 +4381,8 @@ $text['description-contact_relation_reciprocal_label']['ru-ru'] = "Опреде�
 $text['description-contact_relation_reciprocal_label']['sv-se'] = "Definiera relationen mellan denna kontakt och de valda kontakterna ovan.";
 $text['description-contact_relation_reciprocal_label']['uk-ua'] = "";
 
-$text['description-contact_relation_reciprocal']['en-us'] = "Select whether to also create a reciprocal relationship for the contact selected above.";
-$text['description-contact_relation_reciprocal']['ar-eg'] = "";
+$text['description-contact_relation_reciprocal']['en-us'] = "选择是否需要为上面选择的联系人创建相互关系。";
+$text['description-contact_relation_reciprocal']['ar-eg'] = "Select whether to also create a reciprocal relationship for the contact selected above.";
 $text['description-contact_relation_reciprocal']['de-at'] = "Wählen Sie, ob die Beziehung Wechselseitig eingetragen werden soll."; //copied from de-de
 $text['description-contact_relation_reciprocal']['de-ch'] = "Wählen Sie, ob die Beziehung Wechselseitig eingetragen werden soll."; //copied from de-de
 $text['description-contact_relation_reciprocal']['de-de'] = "Wählen Sie, ob die Beziehung Wechselseitig eingetragen werden soll.";
