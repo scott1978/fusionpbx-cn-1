@@ -85,8 +85,8 @@ $text['theme-title-domains']['sv-se'] = "Domäner";
 $text['theme-title-domains']['uk-ua'] = "Домени";
 $text['theme-title-domains']['tr-tr'] = "Alan Adları";
 
-$text['theme-button-close']['en-us'] = "Close";
-$text['theme-button-close']['ar-eg'] = "";
+$text['theme-button-close']['en-us'] = "关闭";
+$text['theme-button-close']['ar-eg'] = "Close";
 $text['theme-button-close']['de-at'] = "Schließen"; //copied from de-de
 $text['theme-button-close']['de-ch'] = "Schließen"; //copied from de-de
 $text['theme-button-close']['de-de'] = "Schließen";
@@ -107,8 +107,8 @@ $text['theme-button-close']['uk-ua'] = "Близько";
 $text['theme-button-close']['tr-tr'] = "Kapat";
 
 
-$text['theme-label-search']['en-us'] = "Search...";
-$text['theme-label-search']['ar-eg'] = "";
+$text['theme-label-search']['en-us'] = "查找...";
+$text['theme-label-search']['ar-eg'] = "Search...";
 $text['theme-label-search']['de-at'] = "Suchen..."; //copied from de-de
 $text['theme-label-search']['de-ch'] = "Suchen..."; //copied from de-de
 $text['theme-label-search']['de-de'] = "Suchen...";
