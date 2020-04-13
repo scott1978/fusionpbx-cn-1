@@ -4061,7 +4061,7 @@ $text['description-contacts_import']['ru-ru'] = "Экспортируйте ко
 $text['description-contacts_import']['sv-se'] = "Exportera dina kontakter från Outlook till en kommaseparerad CSV fil. Använd sedan detta verktyg för att ladda upp kontakterna.";
 $text['description-contacts_import']['uk-ua'] = "";
 
-$text['description-contacts']['en-us'] = "联系人是个人和组织(公司)的列表。";
+$text['description-contacts']['en-us'] = "联系人是个人和组织（公司）的列表。";
 $text['description-contacts']['ar-eg'] = "The contact is a list of individuals and organizations.";
 $text['description-contacts']['de-at'] = "Kontakte sind Benutzer, externe Personen oder Unternehmen."; //copied from de-de
 $text['description-contacts']['de-ch'] = "Kontakte sind Benutzer, externe Personen oder Unternehmen."; //copied from de-de
