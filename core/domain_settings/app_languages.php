@@ -41,8 +41,8 @@ $text['title-domain_setting-edit']['ru-ru'] = "Настройки домена";
 $text['title-domain_setting-edit']['sv-se'] = "Domän Inställning";
 $text['title-domain_setting-edit']['uk-ua'] = "Налаштування доменів";
 
-$text['title-domain_setting-add']['en-us'] = "Domain Setting Add";
-$text['title-domain_setting-add']['ar-eg'] = "";
+$text['title-domain_setting-add']['en-us'] = "添加域名设置";
+$text['title-domain_setting-add']['ar-eg'] = "Domain Setting Add";
 $text['title-domain_setting-add']['de-at'] = "Domain Einstellungen hinzufügen"; //copied from de-de
 $text['title-domain_setting-add']['de-ch'] = "Domain Einstellungen hinzufügen"; //copied from de-de
 $text['title-domain_setting-add']['de-de'] = "Domain Einstellungen hinzufügen";
@@ -581,8 +581,8 @@ $text['header-domain_setting-edit']['ru-ru'] = "Настройки домена"
 $text['header-domain_setting-edit']['sv-se'] = "Domän Inställning";
 $text['header-domain_setting-edit']['uk-ua'] = "Налаштування домену";
 
-$text['header-domain_setting-add']['en-us'] = "Domain Setting Add";
-$text['header-domain_setting-add']['ar-eg'] = "";
+$text['header-domain_setting-add']['en-us'] = "添加域名设置";
+$text['header-domain_setting-add']['ar-eg'] = "Domain Setting Add";
 $text['header-domain_setting-add']['de-at'] = "Domain Einstellungen hinzufügen"; //copied from de-de
 $text['header-domain_setting-add']['de-ch'] = "Domain Einstellungen hinzufügen"; //copied from de-de
 $text['header-domain_setting-add']['de-de'] = "Domain Einstellungen hinzufügen";
@@ -741,8 +741,8 @@ $text['description-domains']['ru-ru'] = "Списк доменов для упр
 $text['description-domains']['sv-se'] = "Kontrollera lista med Domäner att hantera.";
 $text['description-domains']['uk-ua'] = "Список доменів для керування";
 
-$text['description-domain_setting-edit']['en-us'] = "Edit a setting for this domain.";
-$text['description-domain_setting-edit']['ar-eg'] = "";
+$text['description-domain_setting-edit']['en-us'] = "编辑域名配置。";
+$text['description-domain_setting-edit']['ar-eg'] = "Edit a setting for this domain.";
 $text['description-domain_setting-edit']['de-at'] = "Eine Einstellung für diese Domain ändern."; //copied from de-de
 $text['description-domain_setting-edit']['de-ch'] = "Eine Einstellung für diese Domain ändern."; //copied from de-de
 $text['description-domain_setting-edit']['de-de'] = "Eine Einstellung für diese Domain ändern.";
@@ -761,8 +761,8 @@ $text['description-domain_setting-edit']['ru-ru'] = "Изменить настр
 $text['description-domain_setting-edit']['sv-se'] = "Ändra en inställning för denna Domän.";
 $text['description-domain_setting-edit']['uk-ua'] = "Редагування параметрів для домену";
 
-$text['description-domain_setting-add']['en-us'] = "Add a setting for this domain.";
-$text['description-domain_setting-add']['ar-eg'] = "";
+$text['description-domain_setting-add']['en-us'] = "添加域名配置。";
+$text['description-domain_setting-add']['ar-eg'] = "Add a setting for this domain.";
 $text['description-domain_setting-add']['de-at'] = "Eine Einstellung für diese Domain hinzufügen."; //copied from de-de
 $text['description-domain_setting-add']['de-ch'] = "Eine Einstellung für diese Domain hinzufügen."; //copied from de-de
 $text['description-domain_setting-add']['de-de'] = "Eine Einstellung für diese Domain hinzufügen.";
