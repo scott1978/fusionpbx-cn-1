@@ -64,8 +64,8 @@ $text['theme-label-open_selector']['sv-se'] = "Välj en domän";
 $text['theme-label-open_selector']['uk-ua'] = "Виберіть домен";
 $text['theme-label-open_selector']['tr-tr'] = "Domain Seçici [ESC]";
 
-$text['theme-title-domains']['en-us'] = "Domains";
-$text['theme-title-domains']['ar-eg'] = "";
+$text['theme-title-domains']['en-us'] = "域名";
+$text['theme-title-domains']['ar-eg'] = "Domains";
 $text['theme-title-domains']['de-at'] = "Domänen"; //copied from de-de
 $text['theme-title-domains']['de-ch'] = "Domänen"; //copied from de-de
 $text['theme-title-domains']['de-de'] = "Domänen";
