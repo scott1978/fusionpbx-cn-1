@@ -81,8 +81,8 @@ $text['title-variable_add']['ru-ru'] = "Переменная";
 $text['title-variable_add']['sv-se'] = "Variabel";
 $text['title-variable_add']['uk-ua'] = "Змінна";
 
-$text['label-command']['en-us'] = "Command";
-$text['label-command']['ar-eg'] = "";
+$text['label-command']['en-us'] = "命令";
+$text['label-command']['ar-eg'] = "Command";
 $text['label-command']['de-at'] = "";
 $text['label-command']['de-ch'] = "";
 $text['label-command']['de-de'] = "";
@@ -181,7 +181,7 @@ $text['label-codec_information']['ru-ru'] = "Информация о кодек�
 $text['label-codec_information']['sv-se'] = "Codec Information";
 $text['label-codec_information']['uk-ua'] = "Інформація про кодек";
 
-$text['header-variables_advanced']['en-us'] = "FreeSWITCH 变量：高级";
+$text['header-variables_advanced']['en-us'] = "Switch Variables: Advanced";
 $text['header-variables_advanced']['ar-eg'] = "Switch Variables: Advanced";
 $text['header-variables_advanced']['de-at'] = "Switch Variablen: Erweitert"; //copied from de-de
 $text['header-variables_advanced']['de-ch'] = "Switch Variablen: Erweitert"; //copied from de-de
