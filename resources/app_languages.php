@@ -1721,8 +1721,8 @@ $text['label-description']['sv-se'] = "Beskrivning";
 $text['label-description']['uk-ua'] = "Опис";
 $text['label-description']['tr-tr'] = "Açıklama";
 
-$text['label-value']['en-us'] = "Value";
-$text['label-value']['ar-eg'] = "";
+$text['label-value']['en-us'] = "值";
+$text['label-value']['ar-eg'] = "Value";
 $text['label-value']['de-at'] = "Wert"; //copied from de-de
 $text['label-value']['de-ch'] = "Wert"; //copied from de-de
 $text['label-value']['de-de'] = "Wert";
@@ -1784,8 +1784,8 @@ $text['label-type']['sv-se'] = "Typ";
 $text['label-type']['uk-ua'] = "Тип";
 $text['label-type']['tr-tr'] = "Tür";
 
-$text['label-category']['en-us'] = "Category";
-$text['label-category']['ar-eg'] = "";
+$text['label-category']['en-us'] = "类型";
+$text['label-category']['ar-eg'] = "Category";
 $text['label-category']['de-at'] = "Kategorie"; //copied from de-de
 $text['label-category']['de-ch'] = "Kategorie"; //copied from de-de
 $text['label-category']['de-de'] = "Kategorie";
@@ -1805,8 +1805,8 @@ $text['label-category']['sv-se'] = "Kategori";
 $text['label-category']['uk-ua'] = "Категорія";
 $text['label-category']['tr-tr'] = "Kategori";
 
-$text['label-subcategory']['en-us'] = "Subcategory";
-$text['label-subcategory']['ar-eg'] = "";
+$text['label-subcategory']['en-us'] = "子类型";
+$text['label-subcategory']['ar-eg'] = "Subcategory";
 $text['label-subcategory']['de-at'] = "Unterkategorie"; //copied from de-de
 $text['label-subcategory']['de-ch'] = "Unterkategorie"; //copied from de-de
 $text['label-subcategory']['de-de'] = "Unterkategorie";
@@ -2718,8 +2718,8 @@ $text['description-greeting']['ru-ru'] = "Выберите желаемое пр
 $text['description-greeting']['sv-se'] = "Ange Hälsningens ID";
 $text['description-greeting']['uk-ua'] = "Введіть ID привітання";
 
-$text['description-name']['en-us'] = "Enter the name.";
-$text['description-name']['ar-eg'] = "";
+$text['description-name']['en-us'] = "输入名称。";
+$text['description-name']['ar-eg'] = "Enter the name.";
 $text['description-name']['de-at'] = "Geben Sie den Namen ein."; //copied from de-de
 $text['description-name']['de-ch'] = "Geben Sie den Namen ein."; //copied from de-de
 $text['description-name']['de-de'] = "Geben Sie den Namen ein.";
@@ -2739,8 +2739,8 @@ $text['description-name']['sv-se'] = "Ange namnet.";
 $text['description-name']['uk-ua'] = "";
 $text['description-name']['tr-tr'] = "İsim girin.";
 
-$text['description-value']['en-us'] = "Enter the value.";
-$text['description-value']['ar-eg'] = "";
+$text['description-value']['en-us'] = "输入值。";
+$text['description-value']['ar-eg'] = "Enter the value.";
 $text['description-value']['de-at'] = "Geben Sie den Wert für diese Einstellung an."; //copied from de-de
 $text['description-value']['de-ch'] = "Geben Sie den Wert für diese Einstellung an."; //copied from de-de
 $text['description-value']['de-de'] = "Geben Sie den Wert für diese Einstellung an.";
@@ -2781,8 +2781,8 @@ $text['description-type']['sv-se'] = "Fyll i inställnings typ (ie. uuid, name, 
 $text['description-type']['uk-ua'] = "";
 $text['description-type']['tr-tr'] = "Ayar türünü girin (ie. uuid, name, var, dir, etc).";
 
-$text['description-category']['en-us'] = "Enter the category.";
-$text['description-category']['ar-eg'] = "";
+$text['description-category']['en-us'] = "输入类型。";
+$text['description-category']['ar-eg'] = "Enter the category.";
 $text['description-category']['de-at'] = "Geben Sie die Kategorie an."; //copied from de-de
 $text['description-category']['de-ch'] = "Geben Sie die Kategorie an."; //copied from de-de
 $text['description-category']['de-de'] = "Geben Sie die Kategorie an.";
@@ -2802,8 +2802,8 @@ $text['description-category']['sv-se'] = "Ange Kategori.";
 $text['description-category']['uk-ua'] = "Опис";
 $text['description-category']['tr-tr'] = "Kategori girin.";
 
-$text['description-subcategory']['en-us'] = "Enter the subcategory.";
-$text['description-subcategory']['ar-eg'] = "";
+$text['description-subcategory']['en-us'] = "输入子类型。";
+$text['description-subcategory']['ar-eg'] = "Enter the subcategory.";
 $text['description-subcategory']['de-at'] = "Geben Sie die Unterkategorie an."; //copied from de-de
 $text['description-subcategory']['de-ch'] = "Geben Sie die Unterkategorie an."; //copied from de-de
 $text['description-subcategory']['de-de'] = "Geben Sie die Unterkategorie an.";
@@ -2823,7 +2823,7 @@ $text['description-subcategory']['sv-se'] = "Fyll i under-kategori";
 $text['description-subcategory']['uk-ua'] = "";
 $text['description-subcategory']['tr-tr'] = "Alt kategori girin.";
 
-$text['description-description']['en-us'] = "请输入备注信息";
+$text['description-description']['en-us'] = "输入备注信息";
 $text['description-description']['ar-eg'] = "Enter the description.";
 $text['description-description']['de-at'] = "Geben Sie die Beschreibung ein."; //copied from de-de
 $text['description-description']['de-ch'] = "Geben Sie die Beschreibung ein."; //copied from de-de
