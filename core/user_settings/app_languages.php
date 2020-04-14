@@ -1155,7 +1155,7 @@ $text['label-local']['ru-ru'] = "Локальный";
 $text['label-local']['sv-se'] = "Lokal";
 $text['label-local']['uk-ua'] = "Локальний";
 
-$text['label-last_24_hours']['en-us'] = "最后24小时";
+$text['label-last_24_hours']['en-us'] = "最近24小时";
 $text['label-last_24_hours']['ar-eg'] = "Last 24 Hours";
 $text['label-last_24_hours']['de-at'] = "Die letzten 24 Stunden"; //copied from de-de
 $text['label-last_24_hours']['de-ch'] = "Die letzten 24 Stunden"; //copied from de-de
