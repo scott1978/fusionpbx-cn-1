@@ -781,7 +781,7 @@ $text['option-contact_type_volunteer']['ru-ru'] = "Волонтер";
 $text['option-contact_type_volunteer']['sv-se'] = "Frivillig";
 $text['option-contact_type_volunteer']['uk-ua'] = "Волонтер";
 
-$text['option-contact_type_user']['en-us'] = "用户";
+$text['option-contact_type_user']['en-us'] = "User";
 $text['option-contact_type_user']['ar-eg'] = "User";
 $text['option-contact_type_user']['de-at'] = "Benutzer"; //copied from de-de
 $text['option-contact_type_user']['de-ch'] = "Benutzer"; //copied from de-de
