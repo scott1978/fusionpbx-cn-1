@@ -1601,8 +1601,8 @@ $text['label-domain']['ru-ru'] = "Домен";
 $text['label-domain']['sv-se'] = "Domän";
 $text['label-domain']['uk-ua'] = "Домен";
 
-$text['label-direction']['en-us'] = "Direction";
-$text['label-direction']['ar-eg'] = "";
+$text['label-direction']['en-us'] = "呼叫方向";
+$text['label-direction']['ar-eg'] = "Direction";
 $text['label-direction']['de-at'] = "Richtung"; //copied from de-de
 $text['label-direction']['de-ch'] = "Richtung"; //copied from de-de
 $text['label-direction']['de-de'] = "Richtung";
