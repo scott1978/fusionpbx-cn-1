@@ -504,8 +504,8 @@ $text['button-restore']['sv-se'] = "Aktivera Standard Inställningar";
 $text['button-restore']['uk-ua'] = "Відновити типові значення";
 $text['button-restore']['tr-tr'] = "Varsayılana Geri Yükle";
 
-$text['button-reset']['en-us'] = "Reset";
-$text['button-reset']['ar-eg'] = "إعادة تعيين";
+$text['button-reset']['en-us'] = "重置";
+$text['button-reset']['ar-eg'] = "Reset";
 $text['button-reset']['de-at'] = "Zurücksetzen"; //copied from de-de
 $text['button-reset']['de-ch'] = "Zurücksetzen"; //copied from de-de
 $text['button-reset']['de-de'] = "Zurücksetzen";
