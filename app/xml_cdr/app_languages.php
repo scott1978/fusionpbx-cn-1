@@ -2241,8 +2241,8 @@ $text['description-5']['ru-ru'] = "Подробный просмотр вызо�
 $text['description-5']['sv-se'] = "En detaljerad vy av samtalet och information kring samtalet.";
 $text['description-5']['uk-ua'] = "";
 
-$text['description-4']['en-us'] = "Records in the call list can be saved locally using the Export button.";
-$text['description-4']['ar-eg'] = "";
+$text['description-4']['en-us'] = "可以使用“导出”按钮在本地保存呼叫列表中的记录。";
+$text['description-4']['ar-eg'] = "Records in the call list can be saved locally using the Export button.";
 $text['description-4']['de-at'] = "Datensätze in der Anruferliste können mittels der Export-Funktion lokal gespeichert werden."; //copied from de-de
 $text['description-4']['de-ch'] = "Datensätze in der Anruferliste können mittels der Export-Funktion lokal gespeichert werden."; //copied from de-de
 $text['description-4']['de-de'] = "Datensätze in der Anruferliste können mittels der Export-Funktion lokal gespeichert werden.";
@@ -2261,8 +2261,8 @@ $text['description-4']['ru-ru'] = "Записи в списке вызовов �
 $text['description-4']['sv-se'] = "Sedan visa samtalen i listan eller hämta dem med knappen Export.";
 $text['description-4']['uk-ua'] = "";
 
-$text['description-3']['en-us'] = "Use the fields to filter the information for the specific call records that are desired.";
-$text['description-3']['ar-eg'] = "";
+$text['description-3']['en-us'] = "使用这些字段可以过滤所需特定呼叫记录的信息。";
+$text['description-3']['ar-eg'] = "Use the fields to filter the information for the specific call records that are desired.";
 $text['description-3']['de-at'] = "Benutzen Sie die Felder um Informationen betreffend spezifischer Anrufe zu filtern."; //copied from de-de
 $text['description-3']['de-ch'] = "Benutzen Sie die Felder um Informationen betreffend spezifischer Anrufe zu filtern."; //copied from de-de
 $text['description-3']['de-de'] = "Benutzen Sie die Felder um Informationen betreffend spezifischer Anrufe zu filtern.";
@@ -2301,8 +2301,8 @@ $text['description-2']['ru-ru'] = "нформация содержит исто�
 $text['description-2']['sv-se'] = "Informationen innehåller källa, destination, samtalstid, och annan nyttig information.";
 $text['description-2']['uk-ua'] = "";
 
-$text['description']['en-us'] = "Call Detail Records (CDRs) are detailed information on the calls.";
-$text['description']['ar-eg'] = "";
+$text['description']['en-us'] = "呼叫详细记录（CDR）是有关呼叫的详细信息。";
+$text['description']['ar-eg'] = "Call Detail Records (CDRs) are detailed information on the calls.";
 $text['description']['de-at'] = "Call Detail Records (CDRs) enthalten detaiilierte Informationen zu den Anrufen"; //copied from de-de
 $text['description']['de-ch'] = "Call Detail Records (CDRs) enthalten detaiilierte Informationen zu den Anrufen"; //copied from de-de
 $text['description']['de-de'] = "Call Detail Records (CDRs) enthalten detaiilierte Informationen zu den Anrufen";
