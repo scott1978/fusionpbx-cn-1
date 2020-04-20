@@ -41,8 +41,8 @@ $text['title-extension_summary']['ru-ru'] = "По всем номерам";
 $text['title-extension_summary']['sv-se'] = "Anknytnings Summering";
 $text['title-extension_summary']['uk-ua'] = "";
 
-$text['title']['en-us'] = "Call Detail Records";
-$text['title']['ar-eg'] = "";
+$text['title']['en-us'] = "通话详细记录";
+$text['title']['ar-eg'] = "Call Detail Records";
 $text['title']['de-at'] = "Meine Gespräche"; //copied from de-de
 $text['title']['de-ch'] = "Meine Gespräche"; //copied from de-de
 $text['title']['de-de'] = "Meine Gespräche";
@@ -2401,8 +2401,8 @@ $text['button-update']['ru-ru'] = "Обновить";
 $text['button-update']['sv-se'] = "Uppdatera";
 $text['button-update']['uk-ua'] = "Оновити";
 
-$text['button-statistics']['en-us'] = "Statistics";
-$text['button-statistics']['ar-eg'] = "";
+$text['button-statistics']['en-us'] = "通话统计";
+$text['button-statistics']['ar-eg'] = "Statistics";
 $text['button-statistics']['de-at'] = "Statistik"; //copied from de-de
 $text['button-statistics']['de-ch'] = "Statistik"; //copied from de-de
 $text['button-statistics']['de-de'] = "Statistik";
@@ -2421,8 +2421,8 @@ $text['button-statistics']['ru-ru'] = "Статистика";
 $text['button-statistics']['sv-se'] = "Statistik";
 $text['button-statistics']['uk-ua'] = "";
 
-$text['button-missed']['en-us'] = "Missed Calls";
-$text['button-missed']['ar-eg'] = "";
+$text['button-missed']['en-us'] = "未接来电";
+$text['button-missed']['ar-eg'] = "Missed Calls";
 $text['button-missed']['de-at'] = "Verpasste Anrufe"; //copied from de-de
 $text['button-missed']['de-ch'] = "Verpasste Anrufe"; //copied from de-de
 $text['button-missed']['de-de'] = "Verpasste Anrufe";
@@ -2481,8 +2481,8 @@ $text['button-download_csv']['ru-ru'] = "Загрузить в формате CS
 $text['button-download_csv']['sv-se'] = "Ladda Ned CSV";
 $text['button-download_csv']['uk-ua'] = "";
 
-$text['button-advanced_search']['en-us'] = "Advanced Search";
-$text['button-advanced_search']['ar-eg'] = "";
+$text['button-advanced_search']['en-us'] = "高级搜索";
+$text['button-advanced_search']['ar-eg'] = "Advanced Search";
 $text['button-advanced_search']['de-at'] = "Erweiterte Suche"; //copied from de-de
 $text['button-advanced_search']['de-ch'] = "Erweiterte Suche"; //copied from de-de
 $text['button-advanced_search']['de-de'] = "Erweiterte Suche";

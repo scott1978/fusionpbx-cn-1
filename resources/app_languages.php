@@ -567,8 +567,8 @@ $text['button-login']['sv-se'] = "Logga In";
 $text['button-login']['uk-ua'] = "Логін";
 $text['button-login']['tr-tr'] = "Giriş Yap";
 
-$text['button-next']['en-us'] = "Next";
-$text['button-next']['ar-eg'] = "";
+$text['button-next']['en-us'] = "下一页";
+$text['button-next']['ar-eg'] = "Next";
 $text['button-next']['de-at'] = "Nächste"; //copied from de-de
 $text['button-next']['de-ch'] = "Nächste"; //copied from de-de
 $text['button-next']['de-de'] = "Nächste";
