@@ -562,7 +562,7 @@ $text['label-username']['sv-se'] = "Användarnamn";
 $text['label-username']['uk-ua'] = "Ім’я користувача";
 
 $text['label-tta']['en-us'] = "TTA";
-$text['label-tta']['ar-eg'] = "";
+$text['label-tta']['ar-eg'] = "TTA";
 $text['label-tta']['de-at'] = "ZZB"; //copied from de-de
 $text['label-tta']['de-ch'] = "ZZB"; //copied from de-de
 $text['label-tta']['de-de'] = "ZZB";
@@ -581,8 +581,8 @@ $text['label-tta']['ru-ru'] = "";
 $text['label-tta']['sv-se'] = "TTA";
 $text['label-tta']['uk-ua'] = "";
 
-$text['label-pdd']['en-us'] = "PDD";
-$text['label-pdd']['ar-eg'] = "";
+$text['label-pdd']['en-us'] = "拨号延迟";
+$text['label-pdd']['ar-eg'] = "PDD";
 $text['label-pdd']['de-at'] = "PDD"; //copied from de-de
 $text['label-pdd']['de-ch'] = "PDD"; //copied from de-de
 $text['label-pdd']['de-de'] = "PDD";
@@ -601,8 +601,8 @@ $text['label-pdd']['ru-ru'] = "";
 $text['label-pdd']['sv-se'] = "PDD";
 $text['label-pdd']['uk-ua'] = "";
 
-$text['label-mos']['en-us'] = "MOS";
-$text['label-mos']['ar-eg'] = "";
+$text['label-mos']['en-us'] = "通话质量分";
+$text['label-mos']['ar-eg'] = "MOS";
 $text['label-mos']['de-at'] = "MM"; //copied from de-de
 $text['label-mos']['de-ch'] = "MM"; //copied from de-de
 $text['label-mos']['de-de'] = "MM";
@@ -761,8 +761,8 @@ $text['label-start_date_time']['ru-ru'] = "Старт Дата/Время";
 $text['label-start_date_time']['sv-se'] = "Start Datum/Tid";
 $text['label-start_date_time']['uk-ua'] = "";
 
-$text['label-start']['en-us'] = "Start";
-$text['label-start']['ar-eg'] = "";
+$text['label-start']['en-us'] = "开始";
+$text['label-start']['ar-eg'] = "Start";
 $text['label-start']['de-at'] = "Start"; //copied from de-de
 $text['label-start']['de-ch'] = "Start"; //copied from de-de
 $text['label-start']['de-de'] = "Start";
@@ -841,8 +841,8 @@ $text['label-remote_media_ip']['ru-ru'] = "Удаленный IP-адрес му
 $text['label-remote_media_ip']['sv-se'] = "Remote Media IP";
 $text['label-remote_media_ip']['uk-ua'] = "";
 
-$text['label-recording']['en-us'] = "Recording";
-$text['label-recording']['ar-eg'] = "";
+$text['label-recording']['en-us'] = "录音";
+$text['label-recording']['ar-eg'] = "Recording";
 $text['label-recording']['de-at'] = "Aufnahme"; //copied from de-de
 $text['label-recording']['de-ch'] = "Aufnahme"; //copied from de-de
 $text['label-recording']['de-de'] = "Aufnahme";
@@ -1441,8 +1441,8 @@ $text['label-failed']['ru-ru'] = "Ошибка";
 $text['label-failed']['sv-se'] = "Misslyckad";
 $text['label-failed']['uk-ua'] = "";
 
-$text['label-extension']['en-us'] = "Extension";
-$text['label-extension']['ar-eg'] = "";
+$text['label-extension']['en-us'] = "分机";
+$text['label-extension']['ar-eg'] = "Extension";
 $text['label-extension']['de-at'] = "Durchwahl"; //copied from de-de
 $text['label-extension']['de-ch'] = "Durchwahl"; //copied from de-de
 $text['label-extension']['de-de'] = "Durchwahl";
@@ -1521,8 +1521,8 @@ $text['label-end_date_time']['ru-ru'] = "Конечная дата/время";
 $text['label-end_date_time']['sv-se'] = "Slut Datum/Tid";
 $text['label-end_date_time']['uk-ua'] = "";
 
-$text['label-duration']['en-us'] = "Duration";
-$text['label-duration']['ar-eg'] = "";
+$text['label-duration']['en-us'] = "持续时间";
+$text['label-duration']['ar-eg'] = "Duration";
 $text['label-duration']['de-at'] = "Dauer"; //copied from de-de
 $text['label-duration']['de-ch'] = "Dauer"; //copied from de-de
 $text['label-duration']['de-de'] = "Dauer";
