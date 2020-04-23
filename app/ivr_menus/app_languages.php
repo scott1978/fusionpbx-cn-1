@@ -61,8 +61,8 @@ $text['title-ivr_menus']['ru-ru'] = "Голосовые Меню (IVR)";
 $text['title-ivr_menus']['sv-se'] = "IVR Menyer";
 $text['title-ivr_menus']['uk-ua'] = "";
 
-$text['title-ivr_menu']['en-us'] = "IVR Menu";
-$text['title-ivr_menu']['ar-eg'] = "";
+$text['title-ivr_menu']['en-us'] = "IVR 菜单";
+$text['title-ivr_menu']['ar-eg'] = "IVR Menu";
 $text['title-ivr_menu']['de-at'] = "Automatische Vermittlung"; //copied from de-de
 $text['title-ivr_menu']['de-ch'] = "Automatische Vermittlung"; //copied from de-de
 $text['title-ivr_menu']['de-de'] = "Automatische Vermittlung";
@@ -381,8 +381,8 @@ $text['label-greet_long']['ru-ru'] = "Полное Приветствие";
 $text['label-greet_long']['sv-se'] = "Lång Hälsning";
 $text['label-greet_long']['uk-ua'] = "";
 
-$text['label-extension']['en-us'] = "Extension";
-$text['label-extension']['ar-eg'] = "";
+$text['label-extension']['en-us'] = "分机号";
+$text['label-extension']['ar-eg'] = "Extension";
 $text['label-extension']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['label-extension']['de-ch'] = "Nebenstelle"; //copied from de-de
 $text['label-extension']['de-de'] = "Nebenstelle";
@@ -681,8 +681,8 @@ $text['header-ivr_menus']['ru-ru'] = "Голосовых Меню (IVR)";
 $text['header-ivr_menus']['sv-se'] = "IVR Menyer";
 $text['header-ivr_menus']['uk-ua'] = "";
 
-$text['header-ivr_menu']['en-us'] = "IVR Menu";
-$text['header-ivr_menu']['ar-eg'] = "";
+$text['header-ivr_menu']['en-us'] = "IVR 菜单";
+$text['header-ivr_menu']['ar-eg'] = "IVR Menu";
 $text['header-ivr_menu']['de-at'] = "Automatische Vermittlung"; //copied from de-de
 $text['header-ivr_menu']['de-ch'] = "Automatische Vermittlung"; //copied from de-de
 $text['header-ivr_menu']['de-de'] = "Automatische Vermittlung";
@@ -941,8 +941,8 @@ $text['description-max_failures']['ru-ru'] = "Максимальное коли�
 $text['description-max_failures']['sv-se'] = "Max antal försök innan slut.";
 $text['description-max_failures']['uk-ua'] = "";
 
-$text['description-ivr_menus']['en-us'] = "The IVR Menu plays a recording or a pre-defined phrase that presents the caller with options to choose from. Each option has a corresponding destination. The destinations can be extensions, voicemail, other IVR menus, call groups, FAX extensions, and more.";
-$text['description-ivr_menus']['ar-eg'] = "";
+$text['description-ivr_menus']['en-us'] = "IVR菜单播放一段录音或一个预定义的短语，为主叫用户提供可选择的菜单项。每个菜单项都有相应的目的地。目的地可以是分机、语音信箱、其他IVR、呼叫组、传真等。";
+$text['description-ivr_menus']['ar-eg'] = "The IVR Menu plays a recording or a pre-defined phrase that presents the caller with options to choose from. Each option has a corresponding destination. The destinations can be extensions, voicemail, other IVR menus, call groups, FAX extensions, and more.";
 $text['description-ivr_menus']['de-at'] = "Die Automatische Vermittlung spielt eine Aufnahme oder eine vordefinierte Phrase ab von welcher der Anrufe seine Optionen wählt. Jede Option hat ein entsprechendes Ziel. Das Ziel kann eine Nebenstelle, eine Mailbox eine andere Automatische Vermittlung, Rufgruppen, Fax Server und weitere Funktionen sein."; //copied from de-de
 $text['description-ivr_menus']['de-ch'] = "Die Automatische Vermittlung spielt eine Aufnahme oder eine vordefinierte Phrase ab von welcher der Anrufe seine Optionen wählt. Jede Option hat ein entsprechendes Ziel. Das Ziel kann eine Nebenstelle, eine Mailbox eine andere Automatische Vermittlung, Rufgruppen, Fax Server und weitere Funktionen sein."; //copied from de-de
 $text['description-ivr_menus']['de-de'] = "Die Automatische Vermittlung spielt eine Aufnahme oder eine vordefinierte Phrase ab von welcher der Anrufe seine Optionen wählt. Jede Option hat ein entsprechendes Ziel. Das Ziel kann eine Nebenstelle, eine Mailbox eine andere Automatische Vermittlung, Rufgruppen, Fax Server und weitere Funktionen sein.";
