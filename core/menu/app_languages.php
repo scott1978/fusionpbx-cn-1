@@ -1,8 +1,8 @@
 <?php
 #This file was last reorganized on 19th of September 2017 08:54:24 AM UTC
 
-$text['title-menus']['en-us'] = "Menu Manager";
-$text['title-menus']['ar-eg'] = "";
+$text['title-menus']['en-us'] = "菜单管理";
+$text['title-menus']['ar-eg'] = "Menu Manager";
 $text['title-menus']['de-at'] = "Menü Konfigurationsmanager"; //copied from de-de
 $text['title-menus']['de-ch'] = "Menü Konfigurationsmanager"; //copied from de-de
 $text['title-menus']['de-de'] = "Menü Konfigurationsmanager";
@@ -61,8 +61,8 @@ $text['title-menu_item-add']['ru-ru'] = "Пункт меню";
 $text['title-menu_item-add']['sv-se'] = "Meny Post";
 $text['title-menu_item-add']['uk-ua'] = "Пункт меню";
 
-$text['title-menu-edit']['en-us'] = "Menu";
-$text['title-menu-edit']['ar-eg'] = "";
+$text['title-menu-edit']['en-us'] = "菜单";
+$text['title-menu-edit']['ar-eg'] = "Menu";
 $text['title-menu-edit']['de-at'] = "Menü"; //copied from de-de
 $text['title-menu-edit']['de-ch'] = "Menü"; //copied from de-de
 $text['title-menu-edit']['de-de'] = "Menü";
@@ -81,8 +81,8 @@ $text['title-menu-edit']['ru-ru'] = "Меню";
 $text['title-menu-edit']['sv-se'] = "Meny";
 $text['title-menu-edit']['uk-ua'] = "Меню";
 
-$text['title-menu-add']['en-us'] = "Menu";
-$text['title-menu-add']['ar-eg'] = "";
+$text['title-menu-add']['en-us'] = "菜单";
+$text['title-menu-add']['ar-eg'] = "Menu";
 $text['title-menu-add']['de-at'] = "Menü"; //copied from de-de
 $text['title-menu-add']['de-ch'] = "Menü"; //copied from de-de
 $text['title-menu-add']['de-de'] = "Menü";
@@ -221,8 +221,8 @@ $text['message-moved_down']['ru-ru'] = "Элемент перемещен вни
 $text['message-moved_down']['sv-se'] = "Posten Flyttades Nedåt";
 $text['message-moved_down']['uk-ua'] = "Елемент переміщено вниз";
 
-$text['label-title']['en-us'] = "Title";
-$text['label-title']['ar-eg'] = "";
+$text['label-title']['en-us'] = "标题";
+$text['label-title']['ar-eg'] = "Title";
 $text['label-title']['de-at'] = "Titel"; //copied from de-de
 $text['label-title']['de-ch'] = "Titel"; //copied from de-de
 $text['label-title']['de-de'] = "Titel";
@@ -241,8 +241,8 @@ $text['label-title']['ru-ru'] = "Название";
 $text['label-title']['sv-se'] = "Titel";
 $text['label-title']['uk-ua'] = "Назва";
 
-$text['label-protected']['en-us'] = "Protected";
-$text['label-protected']['ar-eg'] = "";
+$text['label-protected']['en-us'] = "受保护";
+$text['label-protected']['ar-eg'] = "Protected";
 $text['label-protected']['de-at'] = "Geschützt"; //copied from de-de
 $text['label-protected']['de-ch'] = "Geschützt"; //copied from de-de
 $text['label-protected']['de-de'] = "Geschützt";
@@ -281,8 +281,8 @@ $text['label-enabled']['ru-ru'] = "Anabled";
 $text['label-enabled']['sv-se'] = "Anabled";
 $text['label-enabled']['uk-ua'] = "Anabled";
 
-$text['label-parent_menu']['en-us'] = "Parent Menu";
-$text['label-parent_menu']['ar-eg'] = "";
+$text['label-parent_menu']['en-us'] = "父菜单";
+$text['label-parent_menu']['ar-eg'] = "Parent Menu";
 $text['label-parent_menu']['de-at'] = "Übergeordnetes Menü"; //copied from de-de
 $text['label-parent_menu']['de-ch'] = "Übergeordnetes Menü"; //copied from de-de
 $text['label-parent_menu']['de-de'] = "Übergeordnetes Menü";
@@ -301,8 +301,8 @@ $text['label-parent_menu']['ru-ru'] = "Родительское меню";
 $text['label-parent_menu']['sv-se'] = "Överordnad Meny";
 $text['label-parent_menu']['uk-ua'] = "Батьківське меню";
 
-$text['label-name']['en-us'] = "Name";
-$text['label-name']['ar-eg'] = "";
+$text['label-name']['en-us'] = "名称";
+$text['label-name']['ar-eg'] = "Name";
 $text['label-name']['de-at'] = "Name"; //copied from de-de
 $text['label-name']['de-ch'] = "Name"; //copied from de-de
 $text['label-name']['de-de'] = "Name";
@@ -321,8 +321,8 @@ $text['label-name']['ru-ru'] = "Название";
 $text['label-name']['sv-se'] = "Namn";
 $text['label-name']['uk-ua'] = "Назва";
 
-$text['label-menu_order']['en-us'] = "Order";
-$text['label-menu_order']['ar-eg'] = "";
+$text['label-menu_order']['en-us'] = "优先级";
+$text['label-menu_order']['ar-eg'] = "Order";
 $text['label-menu_order']['de-at'] = "Reihenfolge"; //copied from de-de
 $text['label-menu_order']['de-ch'] = "Reihenfolge"; //copied from de-de
 $text['label-menu_order']['de-de'] = "Reihenfolge";
@@ -341,8 +341,8 @@ $text['label-menu_order']['ru-ru'] = "Приоритет";
 $text['label-menu_order']['sv-se'] = "Ordning";
 $text['label-menu_order']['uk-ua'] = "Інше";
 
-$text['label-link']['en-us'] = "Link";
-$text['label-link']['ar-eg'] = "";
+$text['label-link']['en-us'] = "链接地址";
+$text['label-link']['ar-eg'] = "Link";
 $text['label-link']['de-at'] = "Link"; //copied from de-de
 $text['label-link']['de-ch'] = "Link"; //copied from de-de
 $text['label-link']['de-de'] = "Link";
@@ -361,8 +361,8 @@ $text['label-link']['ru-ru'] = "Ссылка";
 $text['label-link']['sv-se'] = "Länk";
 $text['label-link']['uk-ua'] = "Посилання";
 
-$text['label-language']['en-us'] = "Language";
-$text['label-language']['ar-eg'] = "";
+$text['label-language']['en-us'] = "语言";
+$text['label-language']['ar-eg'] = "Language";
 $text['label-language']['de-at'] = "Sprache"; //copied from de-de
 $text['label-language']['de-ch'] = "Sprache"; //copied from de-de
 $text['label-language']['de-de'] = "Sprache";
@@ -381,8 +381,8 @@ $text['label-language']['ru-ru'] = "Язык";
 $text['label-language']['sv-se'] = "Språk";
 $text['label-language']['uk-ua'] = "Мова";
 
-$text['label-icon']['en-us'] = "Icon";
-$text['label-icon']['ar-eg'] = "";
+$text['label-icon']['en-us'] = "图标";
+$text['label-icon']['ar-eg'] = "Icon";
 $text['label-icon']['de-at'] = "Symbol"; //copied from de-de
 $text['label-icon']['de-ch'] = "Symbol"; //copied from de-de
 $text['label-icon']['de-de'] = "Symbol";
@@ -401,8 +401,8 @@ $text['label-icon']['ru-ru'] = "Иконка";
 $text['label-icon']['sv-se'] = "Ikon";
 $text['label-icon']['uk-ua'] = "іконка";
 
-$text['label-groups']['en-us'] = "Groups";
-$text['label-groups']['ar-eg'] = "";
+$text['label-groups']['en-us'] = "用户组";
+$text['label-groups']['ar-eg'] = "Groups";
 $text['label-groups']['de-at'] = "Gruppen"; //copied from de-de
 $text['label-groups']['de-ch'] = "Gruppen"; //copied from de-de
 $text['label-groups']['de-de'] = "Gruppen";
@@ -421,8 +421,8 @@ $text['label-groups']['ru-ru'] = "Группы";
 $text['label-groups']['sv-se'] = "Grupper";
 $text['label-groups']['uk-ua'] = "Групи";
 
-$text['label-category']['en-us'] = "Target";
-$text['label-category']['ar-eg'] = "";
+$text['label-category']['en-us'] = "对象";
+$text['label-category']['ar-eg'] = "Target";
 $text['label-category']['de-at'] = "Ziel"; //copied from de-de
 $text['label-category']['de-ch'] = "Ziel"; //copied from de-de
 $text['label-category']['de-de'] = "Ziel";
@@ -441,8 +441,8 @@ $text['label-category']['ru-ru'] = "Цель";
 $text['label-category']['sv-se'] = "KMäl";
 $text['label-category']['uk-ua'] = "Категорія";
 
-$text['header-menus']['en-us'] = "Menu Manager";
-$text['header-menus']['ar-eg'] = "";
+$text['header-menus']['en-us'] = "菜单管理";
+$text['header-menus']['ar-eg'] = "Menu Manager";
 $text['header-menus']['de-at'] = "Menü Konfigurationsmanager"; //copied from de-de
 $text['header-menus']['de-ch'] = "Menü Konfigurationsmanager"; //copied from de-de
 $text['header-menus']['de-de'] = "Menü Konfigurationsmanager";
@@ -461,8 +461,8 @@ $text['header-menus']['ru-ru'] = "Управление меню";
 $text['header-menus']['sv-se'] = "Meny Inställningar";
 $text['header-menus']['uk-ua'] = "Менеджер меню";
 
-$text['header-menu_item-edit']['en-us'] = "Menu Item";
-$text['header-menu_item-edit']['ar-eg'] = "";
+$text['header-menu_item-edit']['en-us'] = "菜单项";
+$text['header-menu_item-edit']['ar-eg'] = "Menu Item";
 $text['header-menu_item-edit']['de-at'] = "Menüpunkt"; //copied from de-de
 $text['header-menu_item-edit']['de-ch'] = "Menüpunkt"; //copied from de-de
 $text['header-menu_item-edit']['de-de'] = "Menüpunkt";
@@ -481,8 +481,8 @@ $text['header-menu_item-edit']['ru-ru'] = "Пункт меню";
 $text['header-menu_item-edit']['sv-se'] = "Meny Post";
 $text['header-menu_item-edit']['uk-ua'] = "Пункт меню";
 
-$text['header-menu_item-add']['en-us'] = "Menu Item";
-$text['header-menu_item-add']['ar-eg'] = "";
+$text['header-menu_item-add']['en-us'] = "菜单项";
+$text['header-menu_item-add']['ar-eg'] = "Menu Item";
 $text['header-menu_item-add']['de-at'] = "Menüpunkt"; //copied from de-de
 $text['header-menu_item-add']['de-ch'] = "Menüpunkt"; //copied from de-de
 $text['header-menu_item-add']['de-de'] = "Menüpunkt";
@@ -501,8 +501,8 @@ $text['header-menu_item-add']['ru-ru'] = "Пункт меню";
 $text['header-menu_item-add']['sv-se'] = "Meny Post";
 $text['header-menu_item-add']['uk-ua'] = "Пункт меню";
 
-$text['header-menu-edit']['en-us'] = "Menu";
-$text['header-menu-edit']['ar-eg'] = "";
+$text['header-menu-edit']['en-us'] = "菜单";
+$text['header-menu-edit']['ar-eg'] = "Menu";
 $text['header-menu-edit']['de-at'] = "Menü"; //copied from de-de
 $text['header-menu-edit']['de-ch'] = "Menü"; //copied from de-de
 $text['header-menu-edit']['de-de'] = "Menü";
@@ -521,8 +521,8 @@ $text['header-menu-edit']['ru-ru'] = "Меню";
 $text['header-menu-edit']['sv-se'] = "Meny";
 $text['header-menu-edit']['uk-ua'] = "Меню";
 
-$text['header-menu-add']['en-us'] = "Menu";
-$text['header-menu-add']['ar-eg'] = "";
+$text['header-menu-add']['en-us'] = "菜单";
+$text['header-menu-add']['ar-eg'] = "Menu";
 $text['header-menu-add']['de-at'] = "Menü"; //copied from de-de
 $text['header-menu-add']['de-ch'] = "Menü"; //copied from de-de
 $text['header-menu-add']['de-de'] = "Menü";
@@ -561,8 +561,8 @@ $text['description-title']['ru-ru'] = "Описание";
 $text['description-title']['sv-se'] = "Beskrivning";
 $text['description-title']['uk-ua'] = "Опис";
 
-$text['description-protected']['en-us'] = "Enable this to protect the menu item from being removed by 'Restore Default'.";
-$text['description-protected']['ar-eg'] = "";
+$text['description-protected']['en-us'] = "启用此选项可防止菜单项被“还原默认设置”删除。";
+$text['description-protected']['ar-eg'] = "Enable this to protect the menu item from being removed by 'Restore Default'.";
 $text['description-protected']['de-at'] = "Setzen Sie diese Option auf Ein um zu verhindern, dass dieser Menüpunkt durch 'Zurücksetzen' entfernt wird."; //copied from de-de
 $text['description-protected']['de-ch'] = "Setzen Sie diese Option auf Ein um zu verhindern, dass dieser Menüpunkt durch 'Zurücksetzen' entfernt wird."; //copied from de-de
 $text['description-protected']['de-de'] = "Setzen Sie diese Option auf Ein um zu verhindern, dass dieser Menüpunkt durch 'Zurücksetzen' entfernt wird.";
@@ -621,8 +621,8 @@ $text['description-parent_menu']['ru-ru'] = "Описание";
 $text['description-parent_menu']['sv-se'] = "Beskrivning";
 $text['description-parent_menu']['uk-ua'] = "Опис";
 
-$text['description-name']['en-us'] = "Enter the name of the menu.";
-$text['description-name']['ar-eg'] = "";
+$text['description-name']['en-us'] = "输入菜单名称。";
+$text['description-name']['ar-eg'] = "Enter the name of the menu.";
 $text['description-name']['de-at'] = "Geben Sie den Namen des Menüs an."; //copied from de-de
 $text['description-name']['de-ch'] = "Geben Sie den Namen des Menüs an."; //copied from de-de
 $text['description-name']['de-de'] = "Geben Sie den Namen des Menüs an.";
@@ -641,8 +641,8 @@ $text['description-name']['ru-ru'] = "Введите название меню."
 $text['description-name']['sv-se'] = "Skriv in namnet på menyn.";
 $text['description-name']['uk-ua'] = "Введіть назву меню";
 
-$text['description-menus']['en-us'] = "Used to customize one or more menus.";
-$text['description-menus']['ar-eg'] = "";
+$text['description-menus']['en-us'] = "用于自定义一个或多个菜单。";
+$text['description-menus']['ar-eg'] = "Used to customize one or more menus.";
 $text['description-menus']['de-at'] = "Hier können Sie die Menüleiste bearbeiten."; //copied from de-de
 $text['description-menus']['de-ch'] = "Hier können Sie die Menüleiste bearbeiten."; //copied from de-de
 $text['description-menus']['de-de'] = "Hier können Sie die Menüleiste bearbeiten.";
@@ -721,8 +721,8 @@ $text['description-menu_item-add']['ru-ru'] = "Описание";
 $text['description-menu_item-add']['sv-se'] = "Beskrivning";
 $text['description-menu_item-add']['uk-ua'] = "Опис";
 
-$text['description-menu-edit']['en-us'] = "Used to customize one or more menus.";
-$text['description-menu-edit']['ar-eg'] = "";
+$text['description-menu-edit']['en-us'] = "用于自定义一个或多个菜单。";
+$text['description-menu-edit']['ar-eg'] = "Used to customize one or more menus.";
 $text['description-menu-edit']['de-at'] = "Hier können Sie die Menüleiste bearbeiten."; //copied from de-de
 $text['description-menu-edit']['de-ch'] = "Hier können Sie die Menüleiste bearbeiten."; //copied from de-de
 $text['description-menu-edit']['de-de'] = "Hier können Sie die Menüleiste bearbeiten.";
@@ -741,8 +741,8 @@ $text['description-menu-edit']['ru-ru'] = "Используется для на�
 $text['description-menu-edit']['sv-se'] = "Används för att anpassa en eller flera menyer.";
 $text['description-menu-edit']['uk-ua'] = "Використовується для налаштування одного або декількох меню.";
 
-$text['description-menu-add']['en-us'] = "Used to customize one or more menus.";
-$text['description-menu-add']['ar-eg'] = "";
+$text['description-menu-add']['en-us'] = "用于自定义一个或多个菜单。";
+$text['description-menu-add']['ar-eg'] = "Used to customize one or more menus.";
 $text['description-menu-add']['de-at'] = "Hier können Sie die Menüleiste bearbeiten."; //copied from de-de
 $text['description-menu-add']['de-ch'] = "Hier können Sie die Menüleiste bearbeiten."; //copied from de-de
 $text['description-menu-add']['de-de'] = "Hier können Sie die Menüleiste bearbeiten.";
@@ -781,8 +781,8 @@ $text['description-link']['ru-ru'] = "Описание";
 $text['description-link']['sv-se'] = "Beskrivning";
 $text['description-link']['uk-ua'] = "Опис";
 
-$text['description-language']['en-us'] = "Enter the language.";
-$text['description-language']['ar-eg'] = "";
+$text['description-language']['en-us'] = "输入语言。";
+$text['description-language']['ar-eg'] = "Enter the language.";
 $text['description-language']['de-at'] = "Geben Sie die Sprache an."; //copied from de-de
 $text['description-language']['de-ch'] = "Geben Sie die Sprache an."; //copied from de-de
 $text['description-language']['de-de'] = "Geben Sie die Sprache an.";
@@ -821,8 +821,8 @@ $text['description-groups']['ru-ru'] = "Описание";
 $text['description-groups']['sv-se'] = "Beskrivning";
 $text['description-groups']['uk-ua'] = "Опис";
 
-$text['description-description']['en-us'] = "Enter a description, if desired.";
-$text['description-description']['ar-eg'] = "";
+$text['description-description']['en-us'] = "输入备注。";
+$text['description-description']['ar-eg'] = "Enter a description, if desired.";
 $text['description-description']['de-at'] = "Geben Sie eine Beschreibung an falls gewünscht."; //copied from de-de
 $text['description-description']['de-ch'] = "Geben Sie eine Beschreibung an falls gewünscht."; //copied from de-de
 $text['description-description']['de-de'] = "Geben Sie eine Beschreibung an falls gewünscht.";
@@ -861,8 +861,8 @@ $text['description-category']['ru-ru'] = "Описание";
 $text['description-category']['sv-se'] = "Beskrivning";
 $text['description-category']['uk-ua'] = "Опис";
 
-$text['button-restore_default']['en-us'] = "Restore Default";
-$text['button-restore_default']['ar-eg'] = "";
+$text['button-restore_default']['en-us'] = "恢复默认设置";
+$text['button-restore_default']['ar-eg'] = "Restore Default";
 $text['button-restore_default']['de-at'] = "Zurücksetzen"; //copied from de-de
 $text['button-restore_default']['de-ch'] = "Zurücksetzen"; //copied from de-de
 $text['button-restore_default']['de-de'] = "Zurücksetzen";
