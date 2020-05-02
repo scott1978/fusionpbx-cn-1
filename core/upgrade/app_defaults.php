@@ -44,8 +44,8 @@ if ($domains_processed == 1) {
 				$sql .= "values ";
 				$sql .= "(";
 				$sql .= "'".uuid()."', ";
-				$sql .= "'Y-Free', ";
-				$sql .= "'www.y-free.com', ";
+				$sql .= "'HeZhixiong', ";
+				$sql .= "'https://www.cnblogs.com/hezhixiong/p/12251586.html', ";
 				$sql .= "'".software_version()."' ";
 				$sql .= ")";
 				$db->exec(check_sql($sql));
