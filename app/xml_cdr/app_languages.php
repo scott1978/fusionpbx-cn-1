@@ -1581,8 +1581,8 @@ $text['label-domain-name']['ru-ru'] = "Имя домена";
 $text['label-domain-name']['sv-se'] = "Domän Namn";
 $text['label-domain-name']['uk-ua'] = "";
 
-$text['label-domain']['en-us'] = "Domain";
-$text['label-domain']['ar-eg'] = "";
+$text['label-domain']['en-us'] = "域名";
+$text['label-domain']['ar-eg'] = "Domain";
 $text['label-domain']['de-at'] = "Domain"; //copied from de-de
 $text['label-domain']['de-ch'] = "Domain"; //copied from de-de
 $text['label-domain']['de-de'] = "Domain";
