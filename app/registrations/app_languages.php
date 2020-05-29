@@ -341,8 +341,8 @@ $text['label-sip_profile_name']['ru-ru'] = "Профили";
 $text['label-sip_profile_name']['sv-se'] = "Profiler";
 $text['label-sip_profile_name']['uk-ua'] = "профілі";
 
-$text['header-registrations']['en-us'] = "Registrations";
-$text['header-registrations']['ar-eg'] = "";
+$text['header-registrations']['en-us'] = "注册话机";
+$text['header-registrations']['ar-eg'] = "Registrations";
 $text['header-registrations']['de-at'] = "Registrierungen"; //copied from de-de
 $text['header-registrations']['de-ch'] = "Registrierungen"; //copied from de-de
 $text['header-registrations']['de-de'] = "Registrierungen";
