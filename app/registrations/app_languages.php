@@ -1,8 +1,8 @@
 <?php
 #This file was last reorganized on 19th of September 2017 08:54:24 AM UTC
 
-$text['label-user']['en-us'] = "User";
-$text['label-user']['ar-eg'] = "";
+$text['label-user']['en-us'] = "用户";
+$text['label-user']['ar-eg'] = "User";
 $text['label-user']['de-at'] = "Benutzer"; //copied from de-de
 $text['label-user']['de-ch'] = "Benutzer"; //copied from de-de
 $text['label-user']['de-de'] = "Benutzer";
@@ -21,8 +21,8 @@ $text['label-user']['ru-ru'] = "Пользователь";
 $text['label-user']['sv-se'] = "Användare";
 $text['label-user']['uk-ua'] = "Користувач";
 
-$text['label-status']['en-us'] = "Status";
-$text['label-status']['ar-eg'] = "";
+$text['label-status']['en-us'] = "状态";
+$text['label-status']['ar-eg'] = "Status";
 $text['label-status']['de-at'] = "Status"; //copied from de-de
 $text['label-status']['de-ch'] = "Status"; //copied from de-de
 $text['label-status']['de-de'] = "Status";
@@ -101,8 +101,8 @@ $text['label-refresh_enable']['ru-ru'] = "Включить обновление"
 $text['label-refresh_enable']['sv-se'] = "Aktivera Uppdatera";
 $text['label-refresh_enable']['uk-ua'] = "включити Оновити";
 
-$text['label-port']['en-us'] = "Port";
-$text['label-port']['ar-eg'] = "";
+$text['label-port']['en-us'] = "端口";
+$text['label-port']['ar-eg'] = "Port";
 $text['label-port']['de-at'] = "Port"; //copied from de-de
 $text['label-port']['de-ch'] = "Port"; //copied from de-de
 $text['label-port']['de-de'] = "Port";
@@ -161,8 +161,8 @@ $text['label-message']['ru-ru'] = "Недопустимый профиль!";
 $text['label-message']['sv-se'] = "Ogiltig Profil!";
 $text['label-message']['uk-ua'] = "Хибний профіль!";
 
-$text['label-lan_ip']['en-us'] = "LAN IP";
-$text['label-lan_ip']['ar-eg'] = "";
+$text['label-lan_ip']['en-us'] = "局域网IP";
+$text['label-lan_ip']['ar-eg'] = "LAN IP";
 $text['label-lan_ip']['de-at'] = "LAN IP"; //copied from de-de
 $text['label-lan_ip']['de-ch'] = "LAN IP"; //copied from de-de
 $text['label-lan_ip']['de-de'] = "LAN IP";
@@ -182,7 +182,7 @@ $text['label-lan_ip']['sv-se'] = "LAN IP";
 $text['label-lan_ip']['uk-ua'] = "LAN IP";
 
 $text['label-ip']['en-us'] = "IP";
-$text['label-ip']['ar-eg'] = "";
+$text['label-ip']['ar-eg'] = "IP";
 $text['label-ip']['de-at'] = "IP"; //copied from de-de
 $text['label-ip']['de-ch'] = "IP"; //copied from de-de
 $text['label-ip']['de-de'] = "IP";
@@ -221,8 +221,8 @@ $text['label-interval']['ru-ru'] = "Интервал (сек)";
 $text['label-interval']['sv-se'] = "Intervall (Sek)";
 $text['label-interval']['uk-ua'] = "Інтервал (с.)";
 
-$text['label-hostname']['en-us'] = "Hostname";
-$text['label-hostname']['ar-eg'] = "";
+$text['label-hostname']['en-us'] = "主机名";
+$text['label-hostname']['ar-eg'] = "Hostname";
 $text['label-hostname']['de-at'] = "Hostname"; //copied from de-de
 $text['label-hostname']['de-ch'] = "Hostname"; //copied from de-de
 $text['label-hostname']['de-de'] = "Hostname";
@@ -281,8 +281,8 @@ $text['label-domain']['ru-ru'] = "Домен";
 $text['label-domain']['sv-se'] = "Domän";
 $text['label-domain']['uk-ua'] = "Домен";
 
-$text['label-agent']['en-us'] = "Agent";
-$text['label-agent']['ar-eg'] = "";
+$text['label-agent']['en-us'] = "话机";
+$text['label-agent']['ar-eg'] = "Agent";
 $text['label-agent']['de-at'] = "Agent"; //copied from de-de
 $text['label-agent']['de-ch'] = "Agent"; //copied from de-de
 $text['label-agent']['de-de'] = "Agent";
@@ -301,8 +301,8 @@ $text['label-agent']['ru-ru'] = "Оператор";
 $text['label-agent']['sv-se'] = "Agent";
 $text['label-agent']['uk-ua'] = "Оператор";
 
-$text['label-contact']['en-us'] = "Contact";
-$text['label-contact']['ar-eg'] = "";
+$text['label-contact']['en-us'] = "号码";
+$text['label-contact']['ar-eg'] = "Contact";
 $text['label-contact']['de-at'] = "Kontakt"; //copied from de-de
 $text['label-contact']['de-ch'] = "Kontakt"; //copied from de-de
 $text['label-contact']['de-de'] = "Kontakt";
@@ -321,8 +321,8 @@ $text['label-contact']['ru-ru'] = "Контакт";
 $text['label-contact']['sv-se'] = "Kontakta";
 $text['label-contact']['uk-ua'] = "Контакт";
 
-$text['label-sip_profile_name']['en-us'] = "Profile";
-$text['label-sip_profile_name']['ar-eg'] = "";
+$text['label-sip_profile_name']['en-us'] = "概述";
+$text['label-sip_profile_name']['ar-eg'] = "Profile";
 $text['label-sip_profile_name']['de-at'] = "Profile"; //copied from de-de
 $text['label-sip_profile_name']['de-ch'] = "Profile"; //copied from de-de
 $text['label-sip_profile_name']['de-de'] = "Profile";
@@ -381,8 +381,8 @@ $text['error-event-socket']['ru-ru'] = "Подключение к сокету �
 $text['error-event-socket']['sv-se'] = "Kontakten till 'Event Socket' misslyckades.";
 $text['error-event-socket']['uk-ua'] = "Помилка підключення до Event Socket";
 
-$text['button-unregister']['en-us'] = "Unregister";
-$text['button-unregister']['ar-eg'] = "";
+$text['button-unregister']['en-us'] = "取消注册";
+$text['button-unregister']['ar-eg'] = "Unregister";
 $text['button-unregister']['de-at'] = "Unregister"; //copied from de-de
 $text['button-unregister']['de-ch'] = "Unregister"; //copied from de-de
 $text['button-unregister']['de-de'] = "Unregister";
@@ -401,8 +401,8 @@ $text['button-unregister']['ru-ru'] = "Отменить регистрацию";
 $text['button-unregister']['sv-se'] = "Avregistrera";
 $text['button-unregister']['uk-ua'] = "Розреєструвати";
 
-$text['button-reboot']['en-us'] = "Reboot";
-$text['button-reboot']['ar-eg'] = "";
+$text['button-reboot']['en-us'] = "重启话机";
+$text['button-reboot']['ar-eg'] = "Reboot";
 $text['button-reboot']['de-at'] = "Neu starten"; //copied from de-de
 $text['button-reboot']['de-ch'] = "Neu starten"; //copied from de-de
 $text['button-reboot']['de-de'] = "Neu starten";
@@ -421,8 +421,8 @@ $text['button-reboot']['ru-ru'] = "Перезагрузить";
 $text['button-reboot']['sv-se'] = "Starta Om";
 $text['button-reboot']['uk-ua'] = "Перезавантажити";
 
-$text['button-provision']['en-us'] = "Provision";
-$text['button-provision']['ar-eg'] = "";
+$text['button-provision']['en-us'] = "初始化";
+$text['button-provision']['ar-eg'] = "Provision";
 $text['button-provision']['de-at'] = "Bereitstellen"; //copied from de-de
 $text['button-provision']['de-ch'] = "Bereitstellen"; //copied from de-de
 $text['button-provision']['de-de'] = "Bereitstellen";
