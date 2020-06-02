@@ -501,8 +501,8 @@ $text['label-drive']['ru-ru'] = "Объем дискового простран�
 $text['label-drive']['sv-se'] = "Enhetsutrymme";
 $text['label-drive']['uk-ua'] = "Диски";
 
-$text['label-cpu']['en-us'] = "CPU Status";
-$text['label-cpu']['ar-eg'] = "";
+$text['label-cpu']['en-us'] = "CPU状态";
+$text['label-cpu']['ar-eg'] = "CPU Status";
 $text['label-cpu']['de-at'] = "CPU Status"; //copied from de-de
 $text['label-cpu']['de-ch'] = "CPU Status"; //copied from de-de
 $text['label-cpu']['de-de'] = "CPU Status";
@@ -521,8 +521,8 @@ $text['label-cpu']['ru-ru'] = "Статус процессора";
 $text['label-cpu']['sv-se'] = "CPU Status";
 $text['label-cpu']['uk-ua'] = "Стан процесора ";
 
-$text['header-sys-status']['en-us'] = "System Status";
-$text['header-sys-status']['ar-eg'] = "";
+$text['header-sys-status']['en-us'] = "系统状态";
+$text['header-sys-status']['ar-eg'] = "System Status";
 $text['header-sys-status']['de-at'] = "System Status"; //copied from de-de
 $text['header-sys-status']['de-ch'] = "System Status"; //copied from de-de
 $text['header-sys-status']['de-de'] = "System Status";
