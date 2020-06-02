@@ -672,8 +672,8 @@ $text['button-add']['sv-se'] = "Lägg Till";
 $text['button-add']['uk-ua'] = "Додати";
 $text['button-add']['tr-tr'] = "Ekle";
 
-$text['button-reload']['en-us'] = "Reload";
-$text['button-reload']['ar-eg'] = "";
+$text['button-reload']['en-us'] = "重新加载";
+$text['button-reload']['ar-eg'] = "Reload";
 $text['button-reload']['de-at'] = "Neu Laden"; //copied from de-de
 $text['button-reload']['de-ch'] = "Neu Laden"; //copied from de-de
 $text['button-reload']['de-de'] = "Neu Laden";
@@ -798,8 +798,8 @@ $text['button-upload']['sv-se'] = "Ladda Upp";
 $text['button-upload']['uk-ua'] = "Завантажити";
 $text['button-upload']['tr-tr'] = "Yükle";
 
-$text['button-download']['en-us'] = "Download";
-$text['button-download']['ar-eg'] = "";
+$text['button-download']['en-us'] = "下载";
+$text['button-download']['ar-eg'] = "Download";
 $text['button-download']['de-at'] = "Herunterladen"; //copied from de-de
 $text['button-download']['de-ch'] = "Herunterladen"; //copied from de-de
 $text['button-download']['de-de'] = "Herunterladen";
