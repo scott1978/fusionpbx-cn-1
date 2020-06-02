@@ -61,8 +61,8 @@ $text['title']['ru-ru'] = "Детализация Вызовов";
 $text['title']['sv-se'] = "Detaljerad Samtalsinformation";
 $text['title']['uk-ua'] = "Параметри облікового запису";
 
-$text['table-time']['en-us'] = "Time";
-$text['table-time']['ar-eg'] = "";
+$text['table-time']['en-us'] = "时间";
+$text['table-time']['ar-eg'] = "Time";
 $text['table-time']['de-at'] = "Zeit"; //copied from de-de
 $text['table-time']['de-ch'] = "Zeit"; //copied from de-de
 $text['table-time']['de-de'] = "Zeit";
@@ -101,8 +101,8 @@ $text['table-name']['ru-ru'] = "Имя";
 $text['table-name']['sv-se'] = "Namn";
 $text['table-name']['uk-ua'] = "Назва";
 
-$text['table-missed']['en-us'] = "Missed";
-$text['table-missed']['ar-eg'] = "";
+$text['table-missed']['en-us'] = "未接数";
+$text['table-missed']['ar-eg'] = "Missed";
 $text['table-missed']['de-at'] = "Verpasst"; //copied from de-de
 $text['table-missed']['de-ch'] = "Verpasst"; //copied from de-de
 $text['table-missed']['de-de'] = "Verpasst";
@@ -121,8 +121,8 @@ $text['table-missed']['ru-ru'] = "Пропущщеные";
 $text['table-missed']['sv-se'] = "Missat";
 $text['table-missed']['uk-ua'] = "";
 
-$text['table-minutes']['en-us'] = "Minutes";
-$text['table-minutes']['ar-eg'] = "";
+$text['table-minutes']['en-us'] = "分钟";
+$text['table-minutes']['ar-eg'] = "Minutes";
 $text['table-minutes']['de-at'] = "Minuten"; //copied from de-de
 $text['table-minutes']['de-ch'] = "Minuten"; //copied from de-de
 $text['table-minutes']['de-de'] = "Minuten";
@@ -141,8 +141,8 @@ $text['table-minutes']['ru-ru'] = "Минут";
 $text['table-minutes']['sv-se'] = "Minuter";
 $text['table-minutes']['uk-ua'] = "Хвилини";
 
-$text['table-hours']['en-us'] = "Hours";
-$text['table-hours']['ar-eg'] = "";
+$text['table-hours']['en-us'] = "小时";
+$text['table-hours']['ar-eg'] = "Hours";
 $text['table-hours']['de-at'] = "Stunden"; //copied from de-de
 $text['table-hours']['de-ch'] = "Stunden"; //copied from de-de
 $text['table-hours']['de-de'] = "Stunden";
@@ -241,8 +241,8 @@ $text['table-days']['ru-ru'] = "Дни";
 $text['table-days']['sv-se'] = "Dagar";
 $text['table-days']['uk-ua'] = "Дні";
 
-$text['table-date']['en-us'] = "Date";
-$text['table-date']['ar-eg'] = "";
+$text['table-date']['en-us'] = "日期";
+$text['table-date']['ar-eg'] = "Date";
 $text['table-date']['de-at'] = "Datum"; //copied from de-de
 $text['table-date']['de-ch'] = "Datum"; //copied from de-de
 $text['table-date']['de-de'] = "Datum";
@@ -261,8 +261,8 @@ $text['table-date']['ru-ru'] = "Дата";
 $text['table-date']['sv-se'] = "Datum";
 $text['table-date']['uk-ua'] = "Дата";
 
-$text['table-calls-per-minute']['en-us'] = "Calls Per Min";
-$text['table-calls-per-minute']['ar-eg'] = "";
+$text['table-calls-per-minute']['en-us'] = "每分钟呼叫数";
+$text['table-calls-per-minute']['ar-eg'] = "Calls Per Min";
 $text['table-calls-per-minute']['de-at'] = "Anrufe pro Min"; //copied from de-de
 $text['table-calls-per-minute']['de-ch'] = "Anrufe pro Min"; //copied from de-de
 $text['table-calls-per-minute']['de-de'] = "Anrufe pro Min";
@@ -1781,8 +1781,8 @@ $text['label-caller_destination']['ru-ru'] = "";
 $text['label-caller_destination']['sv-se'] = "";
 $text['label-caller_destination']['uk-ua'] = "";
 
-$text['label-call-statistics-description']['en-us'] = "Call Detail Records Statics summarize the call information.";
-$text['label-call-statistics-description']['ar-eg'] = "";
+$text['label-call-statistics-description']['en-us'] = "基于呼叫记录详情进行通话统计。";
+$text['label-call-statistics-description']['ar-eg'] = "Call Detail Records Statics summarize the call information.";
 $text['label-call-statistics-description']['de-at'] = "Anruf Statistiken fassen alle Anrufinformationen zusammen."; //copied from de-de
 $text['label-call-statistics-description']['de-ch'] = "Anruf Statistiken fassen alle Anrufinformationen zusammen."; //copied from de-de
 $text['label-call-statistics-description']['de-de'] = "Anruf Statistiken fassen alle Anrufinformationen zusammen.";
@@ -1801,8 +1801,8 @@ $text['label-call-statistics-description']['ru-ru'] = "Обобщенная ин
 $text['label-call-statistics-description']['sv-se'] = "Detaljerad Samtals-statistik summerar samtalsinformationen.";
 $text['label-call-statistics-description']['uk-ua'] = "";
 
-$text['label-call-statistics']['en-us'] = "Call Detail Record Statistics";
-$text['label-call-statistics']['ar-eg'] = "";
+$text['label-call-statistics']['en-us'] = "呼叫详情统计";
+$text['label-call-statistics']['ar-eg'] = "Call Detail Record Statistics";
 $text['label-call-statistics']['de-at'] = "Anruf Statistiken"; //copied from de-de
 $text['label-call-statistics']['de-ch'] = "Anruf Statistiken"; //copied from de-de
 $text['label-call-statistics']['de-de'] = "Anruf Statistiken";
