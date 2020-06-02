@@ -261,6 +261,26 @@ $text['table-date']['ru-ru'] = "Дата";
 $text['table-date']['sv-se'] = "Datum";
 $text['table-date']['uk-ua'] = "Дата";
 
+$text['table-volume']['en-us'] = "音量";
+$text['table-volume']['ar-eg'] = "Volume";
+$text['table-volume']['de-at'] = "Volume"; //copied from de-de
+$text['table-volume']['de-ch'] = "Volume"; //copied from de-de
+$text['table-volume']['de-de'] = "Volume";
+$text['table-volume']['es-cl'] = "Volume";
+$text['table-volume']['es-mx'] = "Volume"; //copied from es-cl
+$text['table-volume']['fr-ca'] = "Volume"; //copied from fr-fr
+$text['table-volume']['fr-fr'] = "Volume";
+$text['table-volume']['he-il'] = "Volume";
+$text['table-volume']['it-it'] = "Volume";
+$text['table-volume']['nl-nl'] = "Volume";
+$text['table-volume']['pl-pl'] = "Volume";
+$text['table-volume']['pt-br'] = "Volume"; //copied from pt-pt
+$text['table-volume']['pt-pt'] = "Volume";
+$text['table-volume']['ro-ro'] = "Volume";
+$text['table-volume']['ru-ru'] = "Volume";
+$text['table-volume']['sv-se'] = "Volume";
+$text['table-volume']['uk-ua'] = "Volume";
+
 $text['table-calls-per-minute']['en-us'] = "每分钟呼叫数";
 $text['table-calls-per-minute']['ar-eg'] = "Calls Per Min";
 $text['table-calls-per-minute']['de-at'] = "Anrufe pro Min"; //copied from de-de
