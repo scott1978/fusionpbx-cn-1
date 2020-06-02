@@ -81,8 +81,8 @@ $text['title-sip-status']['ru-ru'] = "SIP Статус";
 $text['title-sip-status']['sv-se'] = "SIP Status";
 $text['title-sip-status']['uk-ua'] = "Стан SIP";
 
-$text['label-action']['en-us'] = "Action";
-$text['label-action']['ar-eg'] = "";
+$text['label-action']['en-us'] = "动作";
+$text['label-action']['ar-eg'] = "Action";
 $text['label-action']['de-at'] = "Aktion"; //copied from de-de
 $text['label-action']['de-ch'] = "Aktion"; //copied from de-de
 $text['label-action']['de-de'] = "Aktion";
@@ -161,7 +161,7 @@ $text['label-data']['ru-ru'] = "Дата";
 $text['label-data']['sv-se'] = "Data";
 $text['label-data']['uk-ua'] = "Дані";
 
-$text['header-sip-status']['en-us'] = "SIP 状态";
+$text['header-sip-status']['en-us'] = "SIP状态";
 $text['header-sip-status']['ar-eg'] = "SIP Status";
 $text['header-sip-status']['de-at'] = "SIP Status"; //copied from de-de
 $text['header-sip-status']['de-ch'] = "SIP Status"; //copied from de-de

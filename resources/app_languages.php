@@ -840,8 +840,8 @@ $text['button-downloads']['sv-se'] = "Ladda Ned";
 $text['button-downloads']['uk-ua'] = "Скачати";
 $text['button-downloads']['tr-tr'] = "İndirilenler";
 
-$text['button-restart']['en-us'] = "Restart";
-$text['button-restart']['ar-eg'] = "";
+$text['button-restart']['en-us'] = "重启";
+$text['button-restart']['ar-eg'] = "Restart";
 $text['button-restart']['de-at'] = "Neu starten"; //copied from de-de
 $text['button-restart']['de-ch'] = "Neu starten"; //copied from de-de
 $text['button-restart']['de-de'] = "Neu starten";
@@ -924,8 +924,8 @@ $text['button-basic']['sv-se'] = "";
 $text['button-basic']['uk-ua'] = "Основний";
 $text['button-basic']['tr-tr'] = "Temel";
 
-$text['button-stop']['en-us'] = "Stop";
-$text['button-stop']['ar-eg'] = "";
+$text['button-stop']['en-us'] = "停止";
+$text['button-stop']['ar-eg'] = "Stop";
 $text['button-stop']['de-at'] = "Stopp"; //copied from de-de
 $text['button-stop']['de-ch'] = "Stopp"; //copied from de-de
 $text['button-stop']['de-de'] = "Stopp";
