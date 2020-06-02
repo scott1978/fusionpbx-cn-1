@@ -2461,8 +2461,8 @@ $text['button-missed']['ru-ru'] = "Пропущенные вызова";
 $text['button-missed']['sv-se'] = "Missade Samtal";
 $text['button-missed']['uk-ua'] = "";
 
-$text['button-extension_summary']['en-us'] = "Extension Summary";
-$text['button-extension_summary']['ar-eg'] = "";
+$text['button-extension_summary']['en-us'] = "分机统计";
+$text['button-extension_summary']['ar-eg'] = "Extension Summary";
 $text['button-extension_summary']['de-at'] = "Nebenstellen Statistik"; //copied from de-de
 $text['button-extension_summary']['de-ch'] = "Nebenstellen Statistik"; //copied from de-de
 $text['button-extension_summary']['de-de'] = "Nebenstellen Statistik";
