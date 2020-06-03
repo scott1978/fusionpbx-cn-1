@@ -1,7 +1,7 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "控制面板";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "操作面板";
 	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Operator Panel";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Bedienfeld";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Bedienfeld";

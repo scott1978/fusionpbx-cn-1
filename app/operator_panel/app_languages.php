@@ -1,8 +1,8 @@
 <?php
 #This file was last reorganized on 19th of September 2017 08:54:24 AM UTC
 
-$text['title-operator_panel']['en-us'] = "Operator Panel";
-$text['title-operator_panel']['ar-eg'] = "";
+$text['title-operator_panel']['en-us'] = "操作面板";
+$text['title-operator_panel']['ar-eg'] = "Operator Panel";
 $text['title-operator_panel']['de-at'] = "Bedienfeld"; //copied from de-de
 $text['title-operator_panel']['de-ch'] = "Bedienfeld"; //copied from de-de
 $text['title-operator_panel']['de-de'] = "Bedienfeld";
