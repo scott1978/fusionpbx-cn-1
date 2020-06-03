@@ -1,8 +1,8 @@
 <?php
 #This file was last reorganized on 27th of September 2017 01:41:51 PM UTC
 
-$text['title2']['en-us'] = "Call Details";
-$text['title2']['ar-eg'] = "";
+$text['title2']['en-us'] = "呼叫详情";
+$text['title2']['ar-eg'] = "Call Details";
 $text['title2']['de-at'] = "Anruf Details"; //copied from de-de
 $text['title2']['de-ch'] = "Anruf Details"; //copied from de-de
 $text['title2']['de-de'] = "Anruf Details";
@@ -181,8 +181,8 @@ $text['table-end']['ru-ru'] = "Конец";
 $text['table-end']['sv-se'] = "Slut";
 $text['table-end']['uk-ua'] = "Кінець";
 
-$text['table-download']['en-us'] = "Number";
-$text['table-download']['ar-eg'] = "";
+$text['table-download']['en-us'] = "号码";
+$text['table-download']['ar-eg'] = "Number";
 $text['table-download']['de-at'] = "Nummer"; //copied from de-de
 $text['table-download']['de-ch'] = "Nummer"; //copied from de-de
 $text['table-download']['de-de'] = "Nummer";
@@ -701,8 +701,8 @@ $text['label-to']['ru-ru'] = "До";
 $text['label-to']['sv-se'] = "Till";
 $text['label-to']['uk-ua'] = "До";
 
-$text['label-summary']['en-us'] = "Summary";
-$text['label-summary']['ar-eg'] = "";
+$text['label-summary']['en-us'] = "概览";
+$text['label-summary']['ar-eg'] = "Summary";
 $text['label-summary']['de-at'] = "Zusammenfassung"; //copied from de-de
 $text['label-summary']['de-ch'] = "Zusammenfassung"; //copied from de-de
 $text['label-summary']['de-de'] = "Zusammenfassung";
@@ -781,7 +781,7 @@ $text['label-start_date_time']['ru-ru'] = "Старт Дата/Время";
 $text['label-start_date_time']['sv-se'] = "Start Datum/Tid";
 $text['label-start_date_time']['uk-ua'] = "";
 
-$text['label-start']['en-us'] = "开始";
+$text['label-start']['en-us'] = "开始时间";
 $text['label-start']['ar-eg'] = "Start";
 $text['label-start']['de-at'] = "Start"; //copied from de-de
 $text['label-start']['de-ch'] = "Start"; //copied from de-de
@@ -1261,8 +1261,8 @@ $text['label-mos_score-5']['ru-ru'] = "Отлично";
 $text['label-mos_score-5']['sv-se'] = "Utmärkt";
 $text['label-mos_score-5']['uk-ua'] = "відмінно";
 
-$text['label-name']['en-us'] = "Name";
-$text['label-name']['ar-eg'] = "";
+$text['label-name']['en-us'] = "名称";
+$text['label-name']['ar-eg'] = "Name";
 $text['label-name']['de-at'] = "Name"; //copied from de-de
 $text['label-name']['de-ch'] = "Name"; //copied from de-de
 $text['label-name']['de-de'] = "Name";
@@ -1481,8 +1481,8 @@ $text['label-extension']['ru-ru'] = "Внутренний номер";
 $text['label-extension']['sv-se'] = "Anknytning";
 $text['label-extension']['uk-ua'] = "Розширення (Extention)";
 
-$text['label-end_stamp']['en-us'] = "End";
-$text['label-end_stamp']['ar-eg'] = "";
+$text['label-end_stamp']['en-us'] = "结束时间";
+$text['label-end_stamp']['ar-eg'] = "End";
 $text['label-end_stamp']['de-at'] = "Ende"; //copied from de-de
 $text['label-end_stamp']['de-ch'] = "Ende"; //copied from de-de
 $text['label-end_stamp']['de-de'] = "Ende";
@@ -1661,8 +1661,8 @@ $text['label-destination']['ru-ru'] = "Назначение";
 $text['label-destination']['sv-se'] = "Destination";
 $text['label-destination']['uk-ua'] = "Номер";
 
-$text['label-data']['en-us'] = "Data";
-$text['label-data']['ar-eg'] = "";
+$text['label-data']['en-us'] = "数据";
+$text['label-data']['ar-eg'] = "Data";
 $text['label-data']['de-at'] = "Daten"; //copied from de-de
 $text['label-data']['de-ch'] = "Daten"; //copied from de-de
 $text['label-data']['de-de'] = "Daten";
