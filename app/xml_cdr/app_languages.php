@@ -2201,8 +2201,8 @@ $text['description_search']['ru-ru'] = "<u>Заметка</u>: Поля 'Ист�
 $text['description_search']['sv-se'] = "Notera : Källa, Destination och Nummerpresentation ( CID ) Namn fält stödjer användningen av en asterisk ( ' * ' ) som jokertecken.";
 $text['description_search']['uk-ua'] = "";
 
-$text['description-7']['en-us'] = "Call variables, call flow, timing information, and other useful call details.";
-$text['description-7']['ar-eg'] = "";
+$text['description-7']['en-us'] = "";
+$text['description-7']['ar-eg'] = "Call variables, call flow, timing information, and other useful call details.";
 $text['description-7']['de-at'] = "Anruf Variablen, Ruf-Ablauf, Zeit Information und andere nützliche Anruf Details"; //copied from de-de
 $text['description-7']['de-ch'] = "Anruf Variablen, Ruf-Ablauf, Zeit Information und andere nützliche Anruf Details"; //copied from de-de
 $text['description-7']['de-de'] = "Anruf Variablen, Ruf-Ablauf, Zeit Information und andere nützliche Anruf Details";
@@ -2221,8 +2221,8 @@ $text['description-7']['ru-ru'] = "Переменные вызова, поток
 $text['description-7']['sv-se'] = "Samtalsvariabler, samtalsflöden, tidsinformation och andra nyttiga samtalsdetaljer.";
 $text['description-7']['uk-ua'] = "";
 
-$text['description-6']['en-us'] = "The information contains caller id name and number, channel data, ";
-$text['description-6']['ar-eg'] = "";
+$text['description-6']['en-us'] = "";
+$text['description-6']['ar-eg'] = "The information contains caller id name and number, channel data, ";
 $text['description-6']['de-at'] = "Die Information beinhaltet Anruferkennung (Name, Nummer) und Kanal-Daten."; //copied from de-de
 $text['description-6']['de-ch'] = "Die Information beinhaltet Anruferkennung (Name, Nummer) und Kanal-Daten."; //copied from de-de
 $text['description-6']['de-de'] = "Die Information beinhaltet Anruferkennung (Name, Nummer) und Kanal-Daten.";
@@ -2241,8 +2241,8 @@ $text['description-6']['ru-ru'] = "Информация содержит имя 
 $text['description-6']['sv-se'] = "Informationen innehåller presentation av namn och nummer, channel data,";
 $text['description-6']['uk-ua'] = "";
 
-$text['description-5']['en-us'] = "A detailed view of the call and all information regarding it.";
-$text['description-5']['ar-eg'] = "";
+$text['description-5']['en-us'] = "电话的详细视图和所有相关信息。该信息包含呼叫者id名称和号码、频道数据、呼叫变量、呼叫流、定时信息和其他有用的呼叫详细信息。";
+$text['description-5']['ar-eg'] = "A detailed view of the call and all information regarding it.";
 $text['description-5']['de-at'] = "Eine detaillierte Ansicht des Anrufes mit allen zugehörigen Informationen."; //copied from de-de
 $text['description-5']['de-ch'] = "Eine detaillierte Ansicht des Anrufes mit allen zugehörigen Informationen."; //copied from de-de
 $text['description-5']['de-de'] = "Eine detaillierte Ansicht des Anrufes mit allen zugehörigen Informationen.";
