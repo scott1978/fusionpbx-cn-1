@@ -2495,8 +2495,8 @@ $text['label-groups']['sv-se'] = "Grupper";
 $text['label-groups']['uk-ua'] = "Групи";
 $text['label-groups']['tr-tr'] = "Gruplar";
 
-$text['label-recording']['en-us'] = "Recording";
-$text['label-recording']['ar-eg'] = "";
+$text['label-recording']['en-us'] = "录音";
+$text['label-recording']['ar-eg'] = "Recording";
 $text['label-recording']['de-at'] = "Aufnahme"; //copied from de-de
 $text['label-recording']['de-ch'] = "Aufnahme"; //copied from de-de
 $text['label-recording']['de-de'] = "Aufnahme";
