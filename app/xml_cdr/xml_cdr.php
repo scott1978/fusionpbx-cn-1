@@ -425,14 +425,15 @@
 		else {
 			echo "<th>".$text['label-status']."</th>\n";
 		}
-		if (if_group("admin") || if_group("superadmin") || if_group("cdr")) {
-			echo "<td class='list_control_icon'>";
-			if (permission_exists('xml_cdr_delete') && $result_count > 0) {
-				echo "<a href='javascript:void(0);' onclick=\"if (confirm('".$text['confirm-delete']."')) { document.forms.frm.submit(); }\" alt='".$text['button-delete']."'>".$v_link_label_delete."</a>";
-			}
-			echo "</td>\n";
-			$col_count++;
-		}
+		// hezhixiong cdr 禁止删除
+		// if (if_group("admin") || if_group("superadmin") || if_group("cdr")) {
+		// 	echo "<td class='list_control_icon'>";
+		// 	if (permission_exists('xml_cdr_delete') && $result_count > 0) {
+		// 		echo "<a href='javascript:void(0);' onclick=\"if (confirm('".$text['confirm-delete']."')) { document.forms.frm.submit(); }\" alt='".$text['button-delete']."'>".$v_link_label_delete."</a>";
+		// 	}
+		// 	echo "</td>\n";
+		// 	$col_count++;
+		// }
 		echo "</tr>\n";
 
 	if (file_exists($_SERVER["PROJECT_ROOT"]."/app/billing/app_config.php")){
