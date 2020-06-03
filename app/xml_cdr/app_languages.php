@@ -161,8 +161,8 @@ $text['table-hours']['ru-ru'] = "Часов";
 $text['table-hours']['sv-se'] = "Timmar";
 $text['table-hours']['uk-ua'] = "Години";
 
-$text['table-end']['en-us'] = "End";
-$text['table-end']['ar-eg'] = "";
+$text['table-end']['en-us'] = "结束时间";
+$text['table-end']['ar-eg'] = "End";
 $text['table-end']['de-at'] = "Ende"; //copied from de-de
 $text['table-end']['de-ch'] = "Ende"; //copied from de-de
 $text['table-end']['de-de'] = "Ende";
