@@ -321,8 +321,8 @@ $text['label-system']['ru-ru'] = "Система";
 $text['label-system']['sv-se'] = "System";
 $text['label-system']['uk-ua'] = "";
 
-$text['label-strategy']['en-us'] = "Strategy";
-$text['label-strategy']['ar-eg'] = "";
+$text['label-strategy']['en-us'] = "策略";
+$text['label-strategy']['ar-eg'] = "Strategy";
 $text['label-strategy']['de-at'] = "Strategie"; //copied from de-de
 $text['label-strategy']['de-ch'] = "Strategie"; //copied from de-de
 $text['label-strategy']['de-de'] = "Strategie";
@@ -421,8 +421,8 @@ $text['label-record_template']['ru-ru'] = "Шаблон записи";
 $text['label-record_template']['sv-se'] = "Spela In Mall";
 $text['label-record_template']['uk-ua'] = "";
 
-$text['label-queue_name']['en-us'] = "Queue Name";
-$text['label-queue_name']['ar-eg'] = "اسم الطابور";
+$text['label-queue_name']['en-us'] = "队列名称";
+$text['label-queue_name']['ar-eg'] = "Queue Name";
 $text['label-queue_name']['de-at'] = "Warteschlange Name"; //copied from de-de
 $text['label-queue_name']['de-ch'] = "Warteschlange Name"; //copied from de-de
 $text['label-queue_name']['de-de'] = "Warteschlange Name";
@@ -581,8 +581,8 @@ $text['label-max_wait_time']['ru-ru'] = "Максимальное время о�
 $text['label-max_wait_time']['sv-se'] = "Max Vänt Tid";
 $text['label-max_wait_time']['uk-ua'] = "";
 
-$text['label-extension']['en-us'] = "Extension";
-$text['label-extension']['ar-eg'] = "رقم داخلي";
+$text['label-extension']['en-us'] = "分机号";
+$text['label-extension']['ar-eg'] = "Extension";
 $text['label-extension']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['label-extension']['de-ch'] = "Nebenstelle"; //copied from de-de
 $text['label-extension']['de-de'] = "Nebenstelle";
@@ -801,8 +801,8 @@ $text['description-agents']['ru-ru'] = "Текущий список операт
 $text['description-agents']['sv-se'] = "Aktuell lista på Agenter enligt nedan";
 $text['description-agents']['uk-ua'] = "";
 
-$text['description-active_call_center']['en-us'] = "Select a Call Center Queue from the list below to view its activity.";
-$text['description-active_call_center']['ar-eg'] = "";
+$text['description-active_call_center']['en-us'] = "从下面的列表中选择呼叫中心队列以查看其活动。";
+$text['description-active_call_center']['ar-eg'] = "Select a Call Center Queue from the list below to view its activity.";
 $text['description-active_call_center']['de-at'] = "Wählen Sie eine Callcenter-Warteschlange aus der Liste unten um die Aktivität zu beobachten."; //copied from de-de
 $text['description-active_call_center']['de-ch'] = "Wählen Sie eine Callcenter-Warteschlange aus der Liste unten um die Aktivität zu beobachten."; //copied from de-de
 $text['description-active_call_center']['de-de'] = "Wählen Sie eine Callcenter-Warteschlange aus der Liste unten um die Aktivität zu beobachten.";
