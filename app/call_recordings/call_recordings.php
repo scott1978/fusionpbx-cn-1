@@ -259,12 +259,13 @@
 			if (permission_exists('xml_cdr_details')) {
 				echo "		<a href='".PROJECT_PATH."/app/xml_cdr/xml_cdr_details.php?id=".escape($row['call_recording_uuid'])."' title='".$text['button-view']."'>$v_link_label_view</a>";
 			}
-			if (permission_exists('call_recording_edit')) {
-				echo "<button type='button' class='btn btn-default list_control_icon' name='' alt='".$text['button-edit']."' onclick=\"window.location='call_recording_edit.php?id=".escape($row['call_recording_uuid'])."'\" value='edit'><span class='glyphicon glyphicon-pencil'></span></input>\n";
-			}
-			if (permission_exists('call_recording_delete')) {
-				echo "<button type='submit' class='btn btn-default list_control_icon' name=\"call_recordings[$x][action]\" alt='".$text['button-delete']."' value='delete'><span class='glyphicon glyphicon-remove'></span></button>\n";
-			}
+			// hezhixiong 禁止修改和删除录音信息
+			// if (permission_exists('call_recording_edit')) {
+			// 	echo "<button type='button' class='btn btn-default list_control_icon' name='' alt='".$text['button-edit']."' onclick=\"window.location='call_recording_edit.php?id=".escape($row['call_recording_uuid'])."'\" value='edit'><span class='glyphicon glyphicon-pencil'></span></input>\n";
+			// }
+			// if (permission_exists('call_recording_delete')) {
+			// 	echo "<button type='submit' class='btn btn-default list_control_icon' name=\"call_recordings[$x][action]\" alt='".$text['button-delete']."' value='delete'><span class='glyphicon glyphicon-remove'></span></button>\n";
+			// }
 			echo "	</td>\n";
 			echo "</tr>\n";
 			$x++;
