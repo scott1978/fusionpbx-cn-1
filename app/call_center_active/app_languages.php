@@ -741,8 +741,8 @@ $text['header-agents']['ru-ru'] = "Операторы";
 $text['header-agents']['sv-se'] = "Agenter";
 $text['header-agents']['uk-ua'] = "";
 
-$text['header-active_call_center']['en-us'] = "Active Call Center";
-$text['header-active_call_center']['ar-eg'] = "";
+$text['header-active_call_center']['en-us'] = "实时呼叫中心";
+$text['header-active_call_center']['ar-eg'] = "Active Call Center";
 $text['header-active_call_center']['de-at'] = "Aktives Callcenter"; //copied from de-de
 $text['header-active_call_center']['de-ch'] = "Aktives Callcenter"; //copied from de-de
 $text['header-active_call_center']['de-de'] = "Aktives Callcenter";
