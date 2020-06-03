@@ -21,8 +21,8 @@ $text['title-queue']['ru-ru'] = "Очередь";
 $text['title-queue']['sv-se'] = "Kö";
 $text['title-queue']['uk-ua'] = "Черга";
 
-$text['title-active_queues']['en-us'] = "Active Queues";
-$text['title-active_queues']['ar-eg'] = "";
+$text['title-active_queues']['en-us'] = "实时呼叫队列";
+$text['title-active_queues']['ar-eg'] = "Active Queues";
 $text['title-active_queues']['de-at'] = "Aktive Warteschlangen"; //copied from de-de
 $text['title-active_queues']['de-ch'] = "Aktive Warteschlangen"; //copied from de-de
 $text['title-active_queues']['de-de'] = "Aktive Warteschlangen";
@@ -41,8 +41,8 @@ $text['title-active_queues']['ru-ru'] = "Активные Очереди";
 $text['title-active_queues']['sv-se'] = "Aktiva Köer";
 $text['title-active_queues']['uk-ua'] = "Активні черги";
 
-$text['label-waiting_count']['en-us'] = "Waiting Count";
-$text['label-waiting_count']['ar-eg'] = "";
+$text['label-waiting_count']['en-us'] = "排队数";
+$text['label-waiting_count']['ar-eg'] = "Waiting Count";
 $text['label-waiting_count']['de-at'] = "Anzahl Wartend"; //copied from de-de
 $text['label-waiting_count']['de-ch'] = "Anzahl Wartend"; //copied from de-de
 $text['label-waiting_count']['de-de'] = "Anzahl Wartend";
@@ -161,8 +161,8 @@ $text['label-position']['ru-ru'] = "Позиция";
 $text['label-position']['sv-se'] = "Position";
 $text['label-position']['uk-ua'] = "Позиція";
 
-$text['label-name']['en-us'] = "Name";
-$text['label-name']['ar-eg'] = "";
+$text['label-name']['en-us'] = "队列名称";
+$text['label-name']['ar-eg'] = "Name";
 $text['label-name']['de-at'] = "Name"; //copied from de-de
 $text['label-name']['de-ch'] = "Name"; //copied from de-de
 $text['label-name']['de-de'] = "Name";
@@ -201,8 +201,8 @@ $text['label-language']['ru-ru'] = "Язык";
 $text['label-language']['sv-se'] = "Språk";
 $text['label-language']['uk-ua'] = "Мова";
 
-$text['label-importance']['en-us'] = "Importance";
-$text['label-importance']['ar-eg'] = "";
+$text['label-importance']['en-us'] = "重要数";
+$text['label-importance']['ar-eg'] = "Importance";
 $text['label-importance']['de-at'] = "Wichtigkeit"; //copied from de-de
 $text['label-importance']['de-ch'] = "Wichtigkeit"; //copied from de-de
 $text['label-importance']['de-de'] = "Wichtigkeit";
@@ -261,8 +261,8 @@ $text['label-destination_number']['ru-ru'] = "Целевой номер";
 $text['label-destination_number']['sv-se'] = "Destination Nummer";
 $text['label-destination_number']['uk-ua'] = "Номер";
 
-$text['label-consumer_count']['en-us'] = "Consumer Count";
-$text['label-consumer_count']['ar-eg'] = "";
+$text['label-consumer_count']['en-us'] = "队列成员数";
+$text['label-consumer_count']['ar-eg'] = "Consumer Count";
 $text['label-consumer_count']['de-at'] = "Anzahl Verbraucher"; //copied from de-de
 $text['label-consumer_count']['de-ch'] = "Anzahl Verbraucher"; //copied from de-de
 $text['label-consumer_count']['de-de'] = "Anzahl Verbraucher";
@@ -321,8 +321,8 @@ $text['label-caller_id_name']['ru-ru'] = "Caller ID Имя";
 $text['label-caller_id_name']['sv-se'] = "Inringande ID Namn";
 $text['label-caller_id_name']['uk-ua'] = "Caller ID Ім’я";
 
-$text['label-caller_count']['en-us'] = "Caller Count";
-$text['label-caller_count']['ar-eg'] = "";
+$text['label-caller_count']['en-us'] = "主叫数";
+$text['label-caller_count']['ar-eg'] = "Caller Count";
 $text['label-caller_count']['de-at'] = "Anzahl Anrufer"; //copied from de-de
 $text['label-caller_count']['de-ch'] = "Anzahl Anrufer"; //copied from de-de
 $text['label-caller_count']['de-de'] = "Anzahl Anrufer";
@@ -361,8 +361,8 @@ $text['header-queue']['ru-ru'] = "Очередь";
 $text['header-queue']['sv-se'] = "Kö";
 $text['header-queue']['uk-ua'] = "Черга";
 
-$text['header-active_queues']['en-us'] = "Active Queues";
-$text['header-active_queues']['ar-eg'] = "";
+$text['header-active_queues']['en-us'] = "实时呼叫队列";
+$text['header-active_queues']['ar-eg'] = "Active Queues";
 $text['header-active_queues']['de-at'] = "Aktive Warteschlangen"; //copied from de-de
 $text['header-active_queues']['de-ch'] = "Aktive Warteschlangen"; //copied from de-de
 $text['header-active_queues']['de-de'] = "Aktive Warteschlangen";
@@ -401,8 +401,8 @@ $text['description-queue']['ru-ru'] = "Используйте эту стран�
 $text['description-queue']['sv-se'] = "Använd denna sida för att monitorera kö aktivitet";
 $text['description-queue']['uk-ua'] = "Використовуйте цю сторінку, щоб стежити за активністю черги.";
 
-$text['description-active_queues']['en-us'] = "List all the queues that are currently active with one or more callers.";
-$text['description-active_queues']['ar-eg'] = "";
+$text['description-active_queues']['en-us'] = "展示所有正在通话的队列。";
+$text['description-active_queues']['ar-eg'] = "List all the queues that are currently active with one or more callers.";
 $text['description-active_queues']['de-at'] = "Auflistung aller derzeit aktiven Warteschlangen mit einem oder mehreren Anrufern."; //copied from de-de
 $text['description-active_queues']['de-ch'] = "Auflistung aller derzeit aktiven Warteschlangen mit einem oder mehreren Anrufern."; //copied from de-de
 $text['description-active_queues']['de-de'] = "Auflistung aller derzeit aktiven Warteschlangen mit einem oder mehreren Anrufern.";
