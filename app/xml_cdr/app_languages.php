@@ -521,8 +521,8 @@ $text['label-voicemail']['ru-ru'] = "Голосовая почта";
 $text['label-voicemail']['sv-se'] = "Röstbrevlåda";
 $text['label-voicemail']['uk-ua'] = "Голосова пошта";
 
-$text['label-variables']['en-us'] = "Variables";
-$text['label-variables']['ar-eg'] = "";
+$text['label-variables']['en-us'] = "变量";
+$text['label-variables']['ar-eg'] = "Variables";
 $text['label-variables']['de-at'] = "Variablen"; //copied from de-de
 $text['label-variables']['de-ch'] = "Variablen"; //copied from de-de
 $text['label-variables']['de-de'] = "Variablen";
@@ -1701,8 +1701,8 @@ $text['label-context']['ru-ru'] = "Контекст";
 $text['label-context']['sv-se'] = "Context";
 $text['label-context']['uk-ua'] = "Контекст";
 
-$text['label-channel']['en-us'] = "Channel Data";
-$text['label-channel']['ar-eg'] = "";
+$text['label-channel']['en-us'] = "通道数据";
+$text['label-channel']['ar-eg'] = "Channel Data";
 $text['label-channel']['de-at'] = "Kanal Daten"; //copied from de-de
 $text['label-channel']['de-ch'] = "Kanal Daten"; //copied from de-de
 $text['label-channel']['de-de'] = "Kanal Daten";
@@ -1841,8 +1841,8 @@ $text['label-call-statistics']['ru-ru'] = "Статистика вызовов";
 $text['label-call-statistics']['sv-se'] = "Detaljerad Samtals-statistik";
 $text['label-call-statistics']['uk-ua'] = "";
 
-$text['label-call-flow-5']['en-us'] = "Call Flow: Times";
-$text['label-call-flow-5']['ar-eg'] = "";
+$text['label-call-flow-5']['en-us'] = "呼叫流程：时间";
+$text['label-call-flow-5']['ar-eg'] = "Call Flow: Times";
 $text['label-call-flow-5']['de-at'] = "Anruf Steuerung: Zeiten"; //copied from de-de
 $text['label-call-flow-5']['de-ch'] = "Anruf Steuerung: Zeiten"; //copied from de-de
 $text['label-call-flow-5']['de-de'] = "Anruf Steuerung: Zeiten";
@@ -1861,8 +1861,8 @@ $text['label-call-flow-5']['ru-ru'] = "Поток вызовов: время";
 $text['label-call-flow-5']['sv-se'] = "Samtals Flöden: Tider";
 $text['label-call-flow-5']['uk-ua'] = "";
 
-$text['label-call-flow-4']['en-us'] = "Call Flow: Caller Profile";
-$text['label-call-flow-4']['ar-eg'] = "";
+$text['label-call-flow-4']['en-us'] = "呼叫流程：主叫配置";
+$text['label-call-flow-4']['ar-eg'] = "Call Flow: Caller Profile";
 $text['label-call-flow-4']['de-at'] = "Anruf Steuerung: Anrufer Profil"; //copied from de-de
 $text['label-call-flow-4']['de-ch'] = "Anruf Steuerung: Anrufer Profil"; //copied from de-de
 $text['label-call-flow-4']['de-de'] = "Anruf Steuerung: Anrufer Profil";
@@ -1881,8 +1881,8 @@ $text['label-call-flow-4']['ru-ru'] = "Поток вызовов: профиль
 $text['label-call-flow-4']['sv-se'] = "Samtals Flöden: Samtals Profil";
 $text['label-call-flow-4']['uk-ua'] = "";
 
-$text['label-call-flow-3']['en-us'] = "Call Flow: Extension: Application";
-$text['label-call-flow-3']['ar-eg'] = "";
+$text['label-call-flow-3']['en-us'] = "呼叫流程：分机：应用";
+$text['label-call-flow-3']['ar-eg'] = "Call Flow: Extension: Application";
 $text['label-call-flow-3']['de-at'] = "Anruf Steuerung: Nebenstelle: Applikation"; //copied from de-de
 $text['label-call-flow-3']['de-ch'] = "Anruf Steuerung: Nebenstelle: Applikation"; //copied from de-de
 $text['label-call-flow-3']['de-de'] = "Anruf Steuerung: Nebenstelle: Applikation";
@@ -1901,8 +1901,8 @@ $text['label-call-flow-3']['ru-ru'] = "Поток вызовов: расшире
 $text['label-call-flow-3']['sv-se'] = "Samtals Flöden: Anknytning: Applikation";
 $text['label-call-flow-3']['uk-ua'] = "";
 
-$text['label-call-flow-2']['en-us'] = "Call Flow: Extension: Attributes";
-$text['label-call-flow-2']['ar-eg'] = "";
+$text['label-call-flow-2']['en-us'] = "呼叫流程：分机：属性";
+$text['label-call-flow-2']['ar-eg'] = "Call Flow: Extension: Attributes";
 $text['label-call-flow-2']['de-at'] = "Anruf Steuerung: Nebenstelle: Attribute"; //copied from de-de
 $text['label-call-flow-2']['de-ch'] = "Anruf Steuerung: Nebenstelle: Attribute"; //copied from de-de
 $text['label-call-flow-2']['de-de'] = "Anruf Steuerung: Nebenstelle: Attribute";
@@ -1921,8 +1921,8 @@ $text['label-call-flow-2']['ru-ru'] = "Поток вызова: внутренн
 $text['label-call-flow-2']['sv-se'] = "Samtals Flöden: Anknytning: Attribut";
 $text['label-call-flow-2']['uk-ua'] = "";
 
-$text['label-call-flow']['en-us'] = "Call Flow: Attributes";
-$text['label-call-flow']['ar-eg'] = "";
+$text['label-call-flow']['en-us'] = "呼叫流程：属性";
+$text['label-call-flow']['ar-eg'] = "Call Flow: Attributes";
 $text['label-call-flow']['de-at'] = "Anruf Steuerung: Attribute"; //copied from de-de
 $text['label-call-flow']['de-ch'] = "Anruf Steuerung: Attribute"; //copied from de-de
 $text['label-call-flow']['de-de'] = "Anruf Steuerung: Attribute";
@@ -2041,8 +2041,8 @@ $text['label-average']['ru-ru'] = "В среднем";
 $text['label-average']['sv-se'] = "Medel";
 $text['label-average']['uk-ua'] = "";
 
-$text['label-application-log']['en-us'] = "Application Log";
-$text['label-application-log']['ar-eg'] = "";
+$text['label-application-log']['en-us'] = "应用程序日志";
+$text['label-application-log']['ar-eg'] = "Application Log";
 $text['label-application-log']['de-at'] = "Applikations Log"; //copied from de-de
 $text['label-application-log']['de-ch'] = "Applikations Log"; //copied from de-de
 $text['label-application-log']['de-de'] = "Applikations Log";
