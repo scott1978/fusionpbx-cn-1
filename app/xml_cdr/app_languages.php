@@ -81,8 +81,8 @@ $text['table-time']['ru-ru'] = "Время";
 $text['table-time']['sv-se'] = "Tid";
 $text['table-time']['uk-ua'] = "Час";
 
-$text['table-name']['en-us'] = "Name";
-$text['table-name']['ar-eg'] = "";
+$text['table-name']['en-us'] = "名称";
+$text['table-name']['ar-eg'] = "Name";
 $text['table-name']['de-at'] = "Name"; //copied from de-de
 $text['table-name']['de-ch'] = "Name"; //copied from de-de
 $text['table-name']['de-de'] = "Name";
