@@ -1681,8 +1681,8 @@ $text['label-data']['ru-ru'] = "Дата";
 $text['label-data']['sv-se'] = "Data";
 $text['label-data']['uk-ua'] = "Дані";
 
-$text['label-context']['en-us'] = "Context";
-$text['label-context']['ar-eg'] = "";
+$text['label-context']['en-us'] = "上下文";
+$text['label-context']['ar-eg'] = "Context";
 $text['label-context']['de-at'] = "Kontext"; //copied from de-de
 $text['label-context']['de-ch'] = "Kontext"; //copied from de-de
 $text['label-context']['de-de'] = "Kontext";
