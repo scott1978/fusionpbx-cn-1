@@ -705,9 +705,10 @@
 					if ($tr_link!=null) {
 						echo "		<a $tr_link title='".$text['button-view']."'>$v_link_label_view</a>"; //CJB
 					}
-					if (permission_exists('xml_cdr_delete')) {
-						echo 	"<a href='xml_cdr_delete.php?id[]=".escape($row['xml_cdr_uuid'])."&rec[]=".(($record_path != '') ? base64_encode($record_path.'/'.$record_name) : null)."' alt='".$text['button-delete']."' onclick=\"return confirm('".$text['confirm-delete']."')\">".$v_link_label_delete."</a>";
-					}
+					// hezhixiong 禁止删除 cdr
+					// if (permission_exists('xml_cdr_delete')) {
+					// 	echo 	"<a href='xml_cdr_delete.php?id[]=".escape($row['xml_cdr_uuid'])."&rec[]=".(($record_path != '') ? base64_encode($record_path.'/'.$record_name) : null)."' alt='".$text['button-delete']."' onclick=\"return confirm('".$text['confirm-delete']."')\">".$v_link_label_delete."</a>";
+					// }
 					echo "	</td>\n";
 				}
 			echo "</tr>\n";
