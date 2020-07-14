@@ -53,6 +53,7 @@
 	}
 
 echo "come here";
+var_dump("expression come here");
 
 //if the username session is not set the check username and password
 	if (strlen($_SESSION['username']) == 0) {
