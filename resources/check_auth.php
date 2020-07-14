@@ -52,6 +52,8 @@
 		exit;
 	}
 
+echo "come here";
+
 //if the username session is not set the check username and password
 	if (strlen($_SESSION['username']) == 0) {
 
@@ -98,8 +100,6 @@
 					syslog(LOG_WARNING, '['.$_SERVER['REMOTE_ADDR']."] authentication failed for ".$result["username"]);
 					closelog();
 
-					print_r($result);
-
 				//redirect the user to the login page
 					$target_path = ($_REQUEST["path"] != '') ? $_REQUEST["path"] : $_SERVER["PHP_SELF"];
 					messages::add($text['message-invalid_credentials'], 'negative');
@@ -109,20 +109,16 @@
 
 		//get the groups assigned to the user and then set the groups in $_SESSION["groups"]
 			$sql = "SELECT * FROM v_group_users ";
-			$sql .= "where domain_uuid='".$domain_uuid."' ";
-			$sql .= "and user_uuid='".$_SESSION["user_uuid"]."' ";
-			//$sql .= "where domain_uuid=:domain_uuid ";
-			//$sql .= "and user_uuid=:user_uuid ";
+			//$sql .= "where domain_uuid='".$domain_uuid."' ";
+			//$sql .= "and user_uuid='".$_SESSION["user_uuid"]."' ";
+			$sql .= "where domain_uuid=:domain_uuid ";
+			$sql .= "and user_uuid=:user_uuid ";
 			$prep_statement = $db->prepare(check_sql($sql));
 			$prep_statement->bindParam(':domain_uuid', $_SESSION["domain_uuid"] );
 			$prep_statement->bindParam(':user_uuid', $_SESSION["user_uuid"]);
 			$prep_statement->execute();
 			$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
 			$_SESSION["groups"] = $result;
-			echo $sql;
-			echo "   ";
-			var_dump($sql);
-			exit;
 			unset($sql, $row_count, $prep_statement);
 
 		//get the permissions assigned to the groups that the user is a member of set the permissions in $_SESSION['permissions']
