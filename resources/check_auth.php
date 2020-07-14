@@ -107,10 +107,10 @@
 
 		//get the groups assigned to the user and then set the groups in $_SESSION["groups"]
 			$sql = "SELECT * FROM v_group_users ";
-			//$sql .= "where domain_uuid='".$domain_uuid."' ";
-			//$sql .= "and user_uuid='".$_SESSION["user_uuid"]."' ";
-			$sql .= "where domain_uuid=:domain_uuid ";
-			$sql .= "and user_uuid=:user_uuid ";
+			$sql .= "where domain_uuid='".$domain_uuid."' ";
+			$sql .= "and user_uuid='".$_SESSION["user_uuid"]."' ";
+			//$sql .= "where domain_uuid=:domain_uuid ";
+			//$sql .= "and user_uuid=:user_uuid ";
 			$prep_statement = $db->prepare(check_sql($sql));
 			$prep_statement->bindParam(':domain_uuid', $_SESSION["domain_uuid"] );
 			$prep_statement->bindParam(':user_uuid', $_SESSION["user_uuid"]);
