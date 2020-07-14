@@ -98,6 +98,8 @@
 					syslog(LOG_WARNING, '['.$_SERVER['REMOTE_ADDR']."] authentication failed for ".$result["username"]);
 					closelog();
 
+					print_r($result);
+
 				//redirect the user to the login page
 					$target_path = ($_REQUEST["path"] != '') ? $_REQUEST["path"] : $_SERVER["PHP_SELF"];
 					messages::add($text['message-invalid_credentials'], 'negative');
@@ -120,6 +122,7 @@
 			echo $sql;
 			echo "   ";
 			var_dump($sql);
+			exit;
 			unset($sql, $row_count, $prep_statement);
 
 		//get the permissions assigned to the groups that the user is a member of set the permissions in $_SESSION['permissions']
