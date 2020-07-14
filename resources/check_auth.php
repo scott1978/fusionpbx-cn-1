@@ -117,6 +117,9 @@
 			$prep_statement->execute();
 			$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
 			$_SESSION["groups"] = $result;
+			echo $sql;
+			echo "   ";
+			var_dump($sql);
 			unset($sql, $row_count, $prep_statement);
 
 		//get the permissions assigned to the groups that the user is a member of set the permissions in $_SESSION['permissions']
