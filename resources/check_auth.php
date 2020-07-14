@@ -52,9 +52,6 @@
 		exit;
 	}
 
-echo "come here";
-var_dump("expression come here");
-
 //if the username session is not set the check username and password
 	if (strlen($_SESSION['username']) == 0) {
 
@@ -102,10 +99,10 @@ var_dump("expression come here");
 					closelog();
 
 				//redirect the user to the login page
-					$target_path = ($_REQUEST["path"] != '') ? $_REQUEST["path"] : $_SERVER["PHP_SELF"];
-					messages::add($text['message-invalid_credentials'], 'negative');
-					header("Location: ".PROJECT_PATH."/login.php?path=".urlencode($target_path));
-					exit;
+					// $target_path = ($_REQUEST["path"] != '') ? $_REQUEST["path"] : $_SERVER["PHP_SELF"];
+					// messages::add($text['message-invalid_credentials'], 'negative');
+					// header("Location: ".PROJECT_PATH."/login.php?path=".urlencode($target_path));
+					// exit;
 			}
 
 		//get the groups assigned to the user and then set the groups in $_SESSION["groups"]
