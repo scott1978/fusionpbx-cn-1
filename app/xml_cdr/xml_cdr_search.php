@@ -67,7 +67,7 @@
 	
 	echo "<table width='100%' cellpadding='0' cellspacing='0'>\n";
 	echo "	<tr>\n";
-	echo "		<td width='30%' nowrap='nowrap' valign='top'><b>Advanced Search</b></td>\n";
+	echo "		<td width='30%' nowrap='nowrap' valign='top'><b>".$text['button-advanced_search']."</b></td>\n";
 	echo "		<td width='70%' align='right' valign='top'>";
 	echo "			<input type='button' class='btn' name='' alt='back' onclick=\"window.location='xml_cdr.php'\" value='Back'>";
 	echo "			<input type='submit' name='submit' class='btn' value='Search'>";

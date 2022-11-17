@@ -1,8 +1,8 @@
 <?php
 #This file was last reorganized on 27th of September 2017 01:41:51 PM UTC
 
-$text['title-destinations']['en-us'] = "Destinations";
-$text['title-destinations']['ar-eg'] = "جهات الأتصال";
+$text['title-destinations']['en-us'] = "目的地";
+$text['title-destinations']['ar-eg'] = "Destinations";
 $text['title-destinations']['de-at'] = "Ziele"; //copied from de-de
 $text['title-destinations']['de-ch'] = "Ziele"; //copied from de-de
 $text['title-destinations']['de-de'] = "Ziele";
@@ -21,8 +21,8 @@ $text['title-destinations']['ru-ru'] = "Направления";
 $text['title-destinations']['sv-se'] = "Destinationer";
 $text['title-destinations']['uk-ua'] = "Номери";
 
-$text['title-destination-edit']['en-us'] = "Destination";
-$text['title-destination-edit']['ar-eg'] = "جهه الأتصال";
+$text['title-destination-edit']['en-us'] = "目的地";
+$text['title-destination-edit']['ar-eg'] = "Destination";
 $text['title-destination-edit']['de-at'] = "Ziel"; //copied from de-de
 $text['title-destination-edit']['de-ch'] = "Ziel"; //copied from de-de
 $text['title-destination-edit']['de-de'] = "Ziel";
@@ -41,8 +41,8 @@ $text['title-destination-edit']['ru-ru'] = "Направление";
 $text['title-destination-edit']['sv-se'] = "Destination";
 $text['title-destination-edit']['uk-ua'] = "Номер";
 
-$text['title-destination-add']['en-us'] = "Destination";
-$text['title-destination-add']['ar-eg'] = "جهه الأتصال";
+$text['title-destination-add']['en-us'] = "目的地";
+$text['title-destination-add']['ar-eg'] = "Destination";
 $text['title-destination-add']['de-at'] = "Ziel"; //copied from de-de
 $text['title-destination-add']['de-ch'] = "Ziel"; //copied from de-de
 $text['title-destination-add']['de-de'] = "Ziel";
@@ -61,8 +61,8 @@ $text['title-destination-add']['ru-ru'] = "Направление";
 $text['title-destination-add']['sv-se'] = "Destination";
 $text['title-destination-add']['uk-ua'] = "Номер";
 
-$text['button-outbound']['en-us'] = "Outbound";
-$text['button-outbound']['ar-eg'] = "صادر";
+$text['button-outbound']['en-us'] = "呼出";
+$text['button-outbound']['ar-eg'] = "Outbound";
 $text['button-outbound']['de-at'] = "Ausgehend"; //copied from de-de
 $text['button-outbound']['de-ch'] = "Ausgehend"; //copied from de-de
 $text['button-outbound']['de-de'] = "Ausgehend";
@@ -81,8 +81,8 @@ $text['button-outbound']['ru-ru'] = "Исходящий";
 $text['button-outbound']['sv-se'] = "Utgående";
 $text['button-outbound']['uk-ua'] = "Вихідний";
 
-$text['button-inbound']['en-us'] = "Inbound";
-$text['button-inbound']['ar-eg'] = "وارد";
+$text['button-inbound']['en-us'] = "呼入";
+$text['button-inbound']['ar-eg'] = "Inbound";
 $text['button-inbound']['de-at'] = "Eingehend"; //copied from de-de
 $text['button-inbound']['de-ch'] = "Eingehend"; //copied from de-de
 $text['button-inbound']['de-de'] = "Eingehend";
@@ -281,8 +281,8 @@ $text['label-domain-name']['ru-ru'] = "Имя Домена";
 $text['label-domain-name']['sv-se'] = "Domän Namn";
 $text['label-domain-name']['uk-ua'] = "Назва домену";
 
-$text['label-domain']['en-us'] = "Domain";
-$text['label-domain']['ar-eg'] = "النطاق";
+$text['label-domain']['en-us'] = "域";
+$text['label-domain']['ar-eg'] = "Domain";
 $text['label-domain']['de-at'] = "Domäne"; //copied from de-de
 $text['label-domain']['de-ch'] = "Domäne"; //copied from de-de
 $text['label-domain']['de-de'] = "Domäne";
@@ -301,8 +301,8 @@ $text['label-domain']['ru-ru'] = "Домен";
 $text['label-domain']['sv-se'] = "Domän";
 $text['label-domain']['uk-ua'] = "Домен";
 
-$text['label-detail_action']['en-us'] = "Actions";
-$text['label-detail_action']['ar-eg'] = "الأفعال";
+$text['label-detail_action']['en-us'] = "动作";
+$text['label-detail_action']['ar-eg'] = "Actions";
 $text['label-detail_action']['de-at'] = "Aktionen"; //copied from de-de
 $text['label-detail_action']['de-ch'] = "Aktionen"; //copied from de-de
 $text['label-detail_action']['de-de'] = "Aktionen";
@@ -321,8 +321,8 @@ $text['label-detail_action']['ru-ru'] = "Действия";
 $text['label-detail_action']['sv-se'] = "Åtgärder";
 $text['label-detail_action']['uk-ua'] = "Дії";
 
-$text['label-destination_type']['en-us'] = "Type";
-$text['label-destination_type']['ar-eg'] = "النوع";
+$text['label-destination_type']['en-us'] = "类型";
+$text['label-destination_type']['ar-eg'] = "Type";
 $text['label-destination_type']['de-at'] = "Art"; //copied from de-de
 $text['label-destination_type']['de-ch'] = "Art"; //copied from de-de
 $text['label-destination_type']['de-de'] = "Art";
@@ -341,8 +341,8 @@ $text['label-destination_type']['ru-ru'] = "Тип";
 $text['label-destination_type']['sv-se'] = "Typ";
 $text['label-destination_type']['uk-ua'] = "Тип";
 
-$text['label-destination_number']['en-us'] = "Destination";
-$text['label-destination_number']['ar-eg'] = "جهه الأتصال";
+$text['label-destination_number']['en-us'] = "目的地";
+$text['label-destination_number']['ar-eg'] = "Destination";
 $text['label-destination_number']['de-at'] = "Ziel"; //copied from de-de
 $text['label-destination_number']['de-ch'] = "Ziel"; //copied from de-de
 $text['label-destination_number']['de-de'] = "Ziel";
@@ -361,8 +361,8 @@ $text['label-destination_number']['ru-ru'] = "Направление";
 $text['label-destination_number']['sv-se'] = "Destination";
 $text['label-destination_number']['uk-ua'] = "Номер";
 
-$text['label-destination_enabled']['en-us'] = "Enabled";
-$text['label-destination_enabled']['ar-eg'] = "مفعل";
+$text['label-destination_enabled']['en-us'] = "启用";
+$text['label-destination_enabled']['ar-eg'] = "Enabled";
 $text['label-destination_enabled']['de-at'] = "Aktiviert"; //copied from de-de
 $text['label-destination_enabled']['de-ch'] = "Aktiviert"; //copied from de-de
 $text['label-destination_enabled']['de-de'] = "Aktiviert";
@@ -381,8 +381,8 @@ $text['label-destination_enabled']['ru-ru'] = "Включено";
 $text['label-destination_enabled']['sv-se'] = "Aktiverad";
 $text['label-destination_enabled']['uk-ua'] = "Включено";
 
-$text['label-destination_description']['en-us'] = "Description";
-$text['label-destination_description']['ar-eg'] = "الوصف";
+$text['label-destination_description']['en-us'] = "备注";
+$text['label-destination_description']['ar-eg'] = "Description";
 $text['label-destination_description']['de-at'] = "Beschreibung"; //copied from de-de
 $text['label-destination_description']['de-ch'] = "Beschreibung"; //copied from de-de
 $text['label-destination_description']['de-de'] = "Beschreibung";
@@ -401,8 +401,8 @@ $text['label-destination_description']['ru-ru'] = "Описание";
 $text['label-destination_description']['sv-se'] = "Beskrivning";
 $text['label-destination_description']['uk-ua'] = "Опис";
 
-$text['label-destination_context']['en-us'] = "Context";
-$text['label-destination_context']['ar-eg'] = "";
+$text['label-destination_context']['en-us'] = "上下文";
+$text['label-destination_context']['ar-eg'] = "Context";
 $text['label-destination_context']['de-at'] = "Kontext"; //copied from de-de
 $text['label-destination_context']['de-ch'] = "Kontext"; //copied from de-de
 $text['label-destination_context']['de-de'] = "Kontext";
@@ -421,8 +421,8 @@ $text['label-destination_context']['ru-ru'] = "Контекст";
 $text['label-destination_context']['sv-se'] = "Context";
 $text['label-destination_context']['uk-ua'] = "Контекст";
 
-$text['label-destination_cid_name_prefix']['en-us'] = "Caller ID Name Prefix";
-$text['label-destination_cid_name_prefix']['ar-eg'] = "";
+$text['label-destination_cid_name_prefix']['en-us'] = "来电显示名称前缀";
+$text['label-destination_cid_name_prefix']['ar-eg'] = "Caller ID Name Prefix";
 $text['label-destination_cid_name_prefix']['de-at'] = "Präfix für Anruferkennung (Name)"; //copied from de-de
 $text['label-destination_cid_name_prefix']['de-ch'] = "Präfix für Anruferkennung (Name)"; //copied from de-de
 $text['label-destination_cid_name_prefix']['de-de'] = "Präfix für Anruferkennung (Name)";
@@ -441,8 +441,8 @@ $text['label-destination_cid_name_prefix']['ru-ru'] = "Префикс имени
 $text['label-destination_cid_name_prefix']['sv-se'] = "Caller ID Namn Prefix ";
 $text['label-destination_cid_name_prefix']['uk-ua'] = "Caller ID Префікс імені";
 
-$text['label-destination_caller_id_number']['en-us'] = "Caller ID Number";
-$text['label-destination_caller_id_number']['ar-eg'] = "رقم المتصل";
+$text['label-destination_caller_id_number']['en-us'] = "主叫号码";
+$text['label-destination_caller_id_number']['ar-eg'] = "Caller ID Number";
 $text['label-destination_caller_id_number']['de-at'] = "Anruferkennung (Nummer)"; //copied from de-de
 $text['label-destination_caller_id_number']['de-ch'] = "Anruferkennung (Nummer)"; //copied from de-de
 $text['label-destination_caller_id_number']['de-de'] = "Anruferkennung (Nummer)";
@@ -461,8 +461,8 @@ $text['label-destination_caller_id_number']['ru-ru'] = "Префикс номе�
 $text['label-destination_caller_id_number']['sv-se'] = "Caller ID Nummer";
 $text['label-destination_caller_id_number']['uk-ua'] = "Caller ID Номер";
 
-$text['label-destination_caller_id_name']['en-us'] = "Caller ID Name";
-$text['label-destination_caller_id_name']['ar-eg'] = "اسم المتصل";
+$text['label-destination_caller_id_name']['en-us'] = "主叫名称";
+$text['label-destination_caller_id_name']['ar-eg'] = "Caller ID Name";
 $text['label-destination_caller_id_name']['de-at'] = "Anruferkennung (Name)"; //copied from de-de
 $text['label-destination_caller_id_name']['de-ch'] = "Anruferkennung (Name)"; //copied from de-de
 $text['label-destination_caller_id_name']['de-de'] = "Anruferkennung (Name)";
@@ -701,8 +701,8 @@ $text['description-fax_uuid']['ru-ru'] = "Выберите адресат фак
 $text['description-fax_uuid']['sv-se'] = "Ange fax destination för att aktivera fax deteketering.";
 $text['description-fax_uuid']['uk-ua'] = "Виберіть  номер для факсу, щоб дозволити його виявлення";
 
-$text['description-destinations']['en-us'] = "Inbound destinations are the DID/DDI, DNIS or Alias for inbound calls.";
-$text['description-destinations']['ar-eg'] = "";
+$text['description-destinations']['en-us'] = "呼入目的地是通过DID/DDI、DNIS或者别名来匹配的";
+$text['description-destinations']['ar-eg'] = "Inbound destinations are the DID/DDI, DNIS or Alias for inbound calls.";
 $text['description-destinations']['de-at'] = "Eingehende Ziele sind DID/DDI, DNIS oder alternative Nummern für eingehende Anrufe"; //copied from de-de
 $text['description-destinations']['de-ch'] = "Eingehende Ziele sind DID/DDI, DNIS oder alternative Nummern für eingehende Anrufe"; //copied from de-de
 $text['description-destinations']['de-de'] = "Eingehende Ziele sind DID/DDI, DNIS oder alternative Nummern für eingehende Anrufe";
@@ -721,8 +721,8 @@ $text['description-destinations']['ru-ru'] = "Входящие адресаты 
 $text['description-destinations']['sv-se'] = "Inkommande destinationer är DID / DDI , DNIS eller Alias ​​för inkommande samtal.";
 $text['description-destinations']['uk-ua'] = "Вхідні номери можуть бути таких типів: DID/DDI, DNIS або Alias  для вхідних дзвінків";
 
-$text['description-destination_type']['en-us'] = "Select the type.";
-$text['description-destination_type']['ar-eg'] = "اختر النوع";
+$text['description-destination_type']['en-us'] = "选择类型";
+$text['description-destination_type']['ar-eg'] = "Select the type.";
 $text['description-destination_type']['de-at'] = "Wählen Sie die Art."; //copied from de-de
 $text['description-destination_type']['de-ch'] = "Wählen Sie die Art."; //copied from de-de
 $text['description-destination_type']['de-de'] = "Wählen Sie die Art.";
@@ -741,8 +741,8 @@ $text['description-destination_type']['ru-ru'] = "Выберите Тип.";
 $text['description-destination_type']['sv-se'] = "Välj typ";
 $text['description-destination_type']['uk-ua'] = "Виберіть тип";
 
-$text['description-destination_number']['en-us'] = "Enter the destination.";
-$text['description-destination_number']['ar-eg'] = "أدخل جهه الأتصال";
+$text['description-destination_number']['en-us'] = "输入目的地号码";
+$text['description-destination_number']['ar-eg'] = "Enter the destination.";
 $text['description-destination_number']['de-at'] = "Geben Sie das Ziel an."; //copied from de-de
 $text['description-destination_number']['de-ch'] = "Geben Sie das Ziel an."; //copied from de-de
 $text['description-destination_number']['de-de'] = "Geben Sie das Ziel an.";
@@ -761,8 +761,8 @@ $text['description-destination_number']['ru-ru'] = "Введите номер н
 $text['description-destination_number']['sv-se'] = "Ange destinationen.";
 $text['description-destination_number']['uk-ua'] = "Введіть номер";
 
-$text['description-destination_enabled']['en-us'] = "Set the current status of this destination.";
-$text['description-destination_enabled']['ar-eg'] = "";
+$text['description-destination_enabled']['en-us'] = "设置目的地的状态";
+$text['description-destination_enabled']['ar-eg'] = "Set the current status of this destination.";
 $text['description-destination_enabled']['de-at'] = "Setzen Sie den derzeitigen Status des Ziels."; //copied from de-de
 $text['description-destination_enabled']['de-ch'] = "Setzen Sie den derzeitigen Status des Ziels."; //copied from de-de
 $text['description-destination_enabled']['de-de'] = "Setzen Sie den derzeitigen Status des Ziels.";
@@ -781,8 +781,8 @@ $text['description-destination_enabled']['ru-ru'] = "Установите тек
 $text['description-destination_enabled']['sv-se'] = "Ange den nuvarande statusen för denna destination.";
 $text['description-destination_enabled']['uk-ua'] = "Виберіть поточний статус для номера";
 
-$text['description-destination_description']['en-us'] = "Enter a description for this destination (optional).";
-$text['description-destination_description']['ar-eg'] = "";
+$text['description-destination_description']['en-us'] = "输入备注";
+$text['description-destination_description']['ar-eg'] = "Enter a description for this destination (optional).";
 $text['description-destination_description']['de-at'] = "Geben Sie eine Beschreibung für dieses Ziel an (optional)."; //copied from de-de
 $text['description-destination_description']['de-ch'] = "Geben Sie eine Beschreibung für dieses Ziel an (optional)."; //copied from de-de
 $text['description-destination_description']['de-de'] = "Geben Sie eine Beschreibung für dieses Ziel an (optional).";
@@ -801,8 +801,8 @@ $text['description-destination_description']['ru-ru'] = "Введите опис
 $text['description-destination_description']['sv-se'] = "Ange en beskrivning för denna destination (frivillig).";
 $text['description-destination_description']['uk-ua'] = "Введіть опис для номера (не обов’язково)";
 
-$text['description-destination_context']['en-us'] = "Enter the context.";
-$text['description-destination_context']['ar-eg'] = "";
+$text['description-destination_context']['en-us'] = "输入上下午";
+$text['description-destination_context']['ar-eg'] = "Enter the context.";
 $text['description-destination_context']['de-at'] = "Geben Sie den Kontext an."; //copied from de-de
 $text['description-destination_context']['de-ch'] = "Geben Sie den Kontext an."; //copied from de-de
 $text['description-destination_context']['de-de'] = "Geben Sie den Kontext an.";
@@ -821,8 +821,8 @@ $text['description-destination_context']['ru-ru'] = "Введите контек
 $text['description-destination_context']['sv-se'] = "Ange Context.";
 $text['description-destination_context']['uk-ua'] = "Контекст";
 
-$text['description-destination_cid_name_prefix']['en-us'] = "Set a prefix on the caller ID name.";
-$text['description-destination_cid_name_prefix']['ar-eg'] = "";
+$text['description-destination_cid_name_prefix']['en-us'] = "为来电显示名称(主叫名称)设置前缀";
+$text['description-destination_cid_name_prefix']['ar-eg'] = "Set a prefix on the caller ID name.";
 $text['description-destination_cid_name_prefix']['de-at'] = "Geben Sie ein Präfix für die Anruferkennung (Name) an."; //copied from de-de
 $text['description-destination_cid_name_prefix']['de-ch'] = "Geben Sie ein Präfix für die Anruferkennung (Name) an."; //copied from de-de
 $text['description-destination_cid_name_prefix']['de-de'] = "Geben Sie ein Präfix für die Anruferkennung (Name) an.";
@@ -841,8 +841,8 @@ $text['description-destination_cid_name_prefix']['ru-ru'] = "Задайте пр
 $text['description-destination_cid_name_prefix']['sv-se'] = "Ange ett prefix för Caller ID Namn.";
 $text['description-destination_cid_name_prefix']['uk-ua'] = "Введіть префікс для імені Caller ID";
 
-$text['description-destination_caller_id_number']['en-us'] = "Enter the caller ID number.";
-$text['description-destination_caller_id_number']['ar-eg'] = "أدخل رقم المتصل";
+$text['description-destination_caller_id_number']['en-us'] = "输入主叫号码";
+$text['description-destination_caller_id_number']['ar-eg'] = "Enter the caller ID number.";
 $text['description-destination_caller_id_number']['de-at'] = "Geben Sie die Anruferkennung (Nummer) an."; //copied from de-de
 $text['description-destination_caller_id_number']['de-ch'] = "Geben Sie die Anruferkennung (Nummer) an."; //copied from de-de
 $text['description-destination_caller_id_number']['de-de'] = "Geben Sie die Anruferkennung (Nummer) an.";
@@ -861,8 +861,8 @@ $text['description-destination_caller_id_number']['ru-ru'] = "Введите и�
 $text['description-destination_caller_id_number']['sv-se'] = "Ange Caller ID Nummer.";
 $text['description-destination_caller_id_number']['uk-ua'] = "Введіть номер Caller ID";
 
-$text['description-destination_caller_id_name']['en-us'] = "Enter the caller ID name.";
-$text['description-destination_caller_id_name']['ar-eg'] = "أدخل اسم المتصل";
+$text['description-destination_caller_id_name']['en-us'] = "输入主叫名称";
+$text['description-destination_caller_id_name']['ar-eg'] = "Enter the caller ID name.";
 $text['description-destination_caller_id_name']['de-at'] = "Geben Sie die Anruferkennung (Name) an."; //copied from de-de
 $text['description-destination_caller_id_name']['de-ch'] = "Geben Sie die Anruferkennung (Name) an."; //copied from de-de
 $text['description-destination_caller_id_name']['de-de'] = "Geben Sie die Anruferkennung (Name) an.";
@@ -901,8 +901,8 @@ $text['description-carrier']['ru-ru'] = "Введите имя оператор�
 $text['description-carrier']['sv-se'] = "Ange operatörens namn. Detta används för att hålla reda på debitering.";
 $text['description-carrier']['uk-ua'] = "Введіть назву оператора. Використовується для тарифікації";
 
-$text['description-account_code']['en-us'] = "Enter account code.";
-$text['description-account_code']['ar-eg'] = "";
+$text['description-account_code']['en-us'] = "输入 account code";
+$text['description-account_code']['ar-eg'] = "Enter account code.";
 $text['description-account_code']['de-at'] = "Geben Sie einen Kontoschlüssel an."; //copied from de-de
 $text['description-account_code']['de-ch'] = "Geben Sie einen Kontoschlüssel an."; //copied from de-de
 $text['description-account_code']['de-de'] = "Geben Sie einen Kontoschlüssel an.";

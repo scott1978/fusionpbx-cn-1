@@ -106,6 +106,7 @@
 			$ivr_menu_enabled = check_str($_POST["ivr_menu_enabled"]);
 			$ivr_menu_description = check_str($_POST["ivr_menu_description"]);
 			$dialplan_uuid = check_str($_POST["dialplan_uuid"]);
+			$dialplan_context = check_str($_POST["dialplan_context"]);
 
 		//process the values
 			$ivr_menu_exit_action = check_str($_POST["ivr_menu_exit_action"]);
@@ -263,7 +264,8 @@
 					$dialplan["dialplan_uuid"] = $dialplan_uuid;
 					$dialplan["dialplan_name"] = $ivr_menu_name;
 					$dialplan["dialplan_number"] = $ivr_menu_extension;
-					$dialplan["dialplan_context"] = $_SESSION["context"];
+					// $dialplan["dialplan_context"] = $_SESSION["context"];
+					$dialplan["dialplan_context"] = $dialplan_context;
 					$dialplan["dialplan_continue"] = "false";
 					$dialplan["dialplan_xml"] = $dialplan_xml;
 					$dialplan["dialplan_order"] = "101";
@@ -339,6 +341,7 @@
 		$ivr_menus = $ivr->find();
 		if (is_array($ivr_menus)) foreach ($ivr_menus as &$row) {
 			$dialplan_uuid = $row["dialplan_uuid"];
+			$dialplan_context = $row["dialplan_context"];
 			$ivr_menu_name = $row["ivr_menu_name"];
 			$ivr_menu_extension = $row["ivr_menu_extension"];
 			$ivr_menu_language = $row["ivr_menu_language"];
@@ -1022,6 +1025,17 @@
 	echo "	<input class='formfld' type='text' name='ivr_menu_cid_prefix' maxlength='255' value=\"".escape($ivr_menu_cid_prefix)."\">\n";
 	echo "<br />\n";
 	echo $text['description-caller_id_name_prefix']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+
+	echo "<tr>\n";
+	echo "<td class='vncellreq' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "    ".$text['label-dialplan_context']."\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	echo "    <input class='formfld' type='text' name='dialplan_context' maxlength='255' value=\"".escape($dialplan_context)."\" required='required'>\n";
+	echo "<br />\n";
+	echo $text['description-dialplan_context']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
 	echo "</table>\n";

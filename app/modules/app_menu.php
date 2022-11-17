@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Modules";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "FS模块管理";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Modules";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Module";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Module";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Módulos";
@@ -24,5 +24,7 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/app/modules/modules.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "12";
 
 ?>

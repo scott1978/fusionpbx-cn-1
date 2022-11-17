@@ -1,9 +1,8 @@
 <?php
 
 	$y = 0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Upgrade";
-	$apps[$x]['menu'][$y]['title']['zh-cn'] = "升级";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "升级";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Upgrade";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Aktualisierung";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Aktualisierung";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Actualizar";
@@ -25,5 +24,7 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/core/upgrade/index.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "false";
+	$apps[$x]['menu'][$y]['order'] = "22";
 
 ?>

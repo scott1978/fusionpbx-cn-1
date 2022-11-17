@@ -270,7 +270,7 @@
 	echo "	<th>".$text['table-hours']."</th>\n";
 	echo "	<th>".$text['table-date']."</th>\n";
 	echo "	<th nowrap='nowrap'>".$text['table-time']."</th>\n";
-	echo "	<th>Volume</th>\n";
+	echo "	<th>".$text['table-volume']."</th>\n";
 	echo "	<th>".$text['table-minutes']."</th>\n";
 	echo "	<th>".$text['table-calls-per-minute']."</th>\n";
 	echo "	<th>".$text['table-missed']."</th>\n";

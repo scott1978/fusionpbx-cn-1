@@ -1,6 +1,6 @@
 .project
 .vscode
-/phpinfo.php
+.idea/*
 resources/config.php
 secure/mailto.bat
 secure/*.db

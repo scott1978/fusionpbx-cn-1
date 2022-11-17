@@ -205,14 +205,14 @@
 		//response div tag
 			echo "<div id='cmd_reponse'>\n";
 			echo "</div>\n";
-			echo "<br><br>Logged in agents<br><br>\n";
+			echo "<br><br>".$text['label-logged-in-agents']."<br><br>\n";
 
 		//show the content
 			echo "<table width='100%' border='0' cellpadding='0' cellspacing='0'>\n";
 			echo "<tr>\n";
 			echo "<th>".$text['label-username']."</th>\n";
-			echo "<th>Total inbound calls</th>\n";
-			echo "<th>Logged on since</th>\n";
+			echo "<th>".$text['label-total-inbound-calls']."</th>\n";
+			echo "<th>".$text['label-logged-on-since']."</th>\n";
 			echo "</tr>\n";
 			//print_r($xml->fifo->outbound->member[0]);
 			//print_r($xml->fifo->outbound->member[1]);

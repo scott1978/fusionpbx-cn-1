@@ -64,8 +64,8 @@ $text['theme-label-open_selector']['sv-se'] = "Välj en domän";
 $text['theme-label-open_selector']['uk-ua'] = "Виберіть домен";
 $text['theme-label-open_selector']['tr-tr'] = "Domain Seçici [ESC]";
 
-$text['theme-title-domains']['en-us'] = "Domains";
-$text['theme-title-domains']['ar-eg'] = "";
+$text['theme-title-domains']['en-us'] = "域名";
+$text['theme-title-domains']['ar-eg'] = "Domains";
 $text['theme-title-domains']['de-at'] = "Domänen"; //copied from de-de
 $text['theme-title-domains']['de-ch'] = "Domänen"; //copied from de-de
 $text['theme-title-domains']['de-de'] = "Domänen";
@@ -85,8 +85,8 @@ $text['theme-title-domains']['sv-se'] = "Domäner";
 $text['theme-title-domains']['uk-ua'] = "Домени";
 $text['theme-title-domains']['tr-tr'] = "Alan Adları";
 
-$text['theme-button-close']['en-us'] = "Close";
-$text['theme-button-close']['ar-eg'] = "";
+$text['theme-button-close']['en-us'] = "关闭";
+$text['theme-button-close']['ar-eg'] = "Close";
 $text['theme-button-close']['de-at'] = "Schließen"; //copied from de-de
 $text['theme-button-close']['de-ch'] = "Schließen"; //copied from de-de
 $text['theme-button-close']['de-de'] = "Schließen";
@@ -107,8 +107,8 @@ $text['theme-button-close']['uk-ua'] = "Близько";
 $text['theme-button-close']['tr-tr'] = "Kapat";
 
 
-$text['theme-label-search']['en-us'] = "Search...";
-$text['theme-label-search']['ar-eg'] = "";
+$text['theme-label-search']['en-us'] = "查找...";
+$text['theme-label-search']['ar-eg'] = "Search...";
 $text['theme-label-search']['de-at'] = "Suchen..."; //copied from de-de
 $text['theme-label-search']['de-ch'] = "Suchen..."; //copied from de-de
 $text['theme-label-search']['de-de'] = "Suchen...";
@@ -129,7 +129,7 @@ $text['theme-label-search']['uk-ua'] = "Пошук...";
 $text['theme-label-search']['tr-tr'] = "Arama...";
 
 $text['theme-label-copyright']['en-us'] = "Copyright";
-$text['theme-label-copyright']['ar-eg'] = "";
+$text['theme-label-copyright']['ar-eg'] = "Copyright";
 $text['theme-label-copyright']['de-at'] = "Urheberrecht"; //copied from de-de
 $text['theme-label-copyright']['de-ch'] = "Urheberrecht"; //copied from de-de
 $text['theme-label-copyright']['de-de'] = "Urheberrecht";
@@ -150,7 +150,7 @@ $text['theme-label-copyright']['uk-ua'] = "";
 $text['theme-label-copyright']['tr-tr'] = "Copyright";
 
 $text['theme-label-all_rights_reserved']['en-us'] = "All rights reserved.";
-$text['theme-label-all_rights_reserved']['ar-eg'] = "";
+$text['theme-label-all_rights_reserved']['ar-eg'] = "All rights reserved.";
 $text['theme-label-all_rights_reserved']['de-at'] = "Alle Rechte vorbehalten"; //copied from de-de
 $text['theme-label-all_rights_reserved']['de-ch'] = "Alle Rechte vorbehalten"; //copied from de-de
 $text['theme-label-all_rights_reserved']['de-de'] = "Alle Rechte vorbehalten";

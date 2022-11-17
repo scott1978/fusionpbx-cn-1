@@ -227,7 +227,7 @@
 		if (strlen($tmp_result) > 0) {
 			echo "<tr>\n";
 			echo "	<td width='20%' class=\"vncell\" style='text-align: left;'>\n";
-			echo "		Uptime\n";
+			echo "		".$text['label-uptime']." \n";
 			echo "	</td>\n";
 			echo "	<td class=\"row_style1\">\n";
 			echo "		".$tmp_result." \n";
@@ -238,7 +238,7 @@
 	}
 	echo "<tr>\n";
 	echo "	<td width='20%' class=\"vncell\" style='text-align: left;'>\n";
-	echo "		Date\n";
+	echo "		".$text['label-date']." \n";
 	echo "	</td>\n";
 	echo "	<td class=\"row_style1\">\n";
 	echo "		".date('r')." \n";

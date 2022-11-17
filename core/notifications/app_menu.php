@@ -1,8 +1,8 @@
 <?php
 
 	$y = 0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Notifications";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "通知";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Notifications";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Benachrichtigungen";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Benachrichtigungen";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Notificaciones";
@@ -24,5 +24,7 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/core/notifications/notification_edit.php";
 	//$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "false";
+	$apps[$x]['menu'][$y]['order'] = "50";
 
 ?>

@@ -80,6 +80,7 @@
 			$queue_name = check_str($_POST["queue_name"]);
 			$queue_extension = check_str($_POST["queue_extension"]);
 			$queue_strategy = check_str($_POST["queue_strategy"]);
+			$dialplan_context = check_str($_POST["dialplan_context"]);
 			$queue_moh_sound = check_str($_POST["queue_moh_sound"]);
 			$queue_record_template = check_str($_POST["queue_record_template"]);
 			$queue_time_base_score = check_str($_POST["queue_time_base_score"]);
@@ -161,6 +162,7 @@
 			if (strlen($queue_name) == 0) { $msg .= $text['message-required'].$text['label-queue_name']."<br>\n"; }
 			if (strlen($queue_extension) == 0) { $msg .= $text['message-required'].$text['label-extension']."<br>\n"; }
 			if (strlen($queue_strategy) == 0) { $msg .= $text['message-required'].$text['label-strategy']."<br>\n"; }
+			if (strlen($dialplan_context) == 0) { $msg .= $text['message-required'].$text['label-strategy']."<br>\n"; }
 			//if (strlen($queue_moh_sound) == 0) { $msg .= $text['message-required'].$text['label-music_on_hold']."<br>\n"; }
 			//if (strlen($queue_record_template) == 0) { $msg .= $text['message-required'].$text['label-record_template']."<br>\n"; }
 			//if (strlen($queue_time_base_score) == 0) { $msg .= $text['message-required'].$text['label-time_base_score']."<br>\n"; }
@@ -249,7 +251,8 @@
 			$dialplan["dialplan_uuid"] = $dialplan_uuid;
 			$dialplan["dialplan_name"] = $queue_name;
 			$dialplan["dialplan_number"] = $queue_extension;
-			$dialplan["dialplan_context"] = $_SESSION['context'];
+			//$dialplan["dialplan_context"] = $_SESSION['context'];
+			$dialplan["dialplan_context"] = $dialplan_context;
 			$dialplan["dialplan_continue"] = "false";
 			$dialplan["dialplan_xml"] = $dialplan_xml;
 			$dialplan["dialplan_order"] = "230";
@@ -288,7 +291,8 @@
 
 		//clear the cache
 			$cache = new cache;
-			$cache->delete("dialplan:".$_SESSION["context"]);
+			// $cache->delete("dialplan:".$_SESSION["context"]); $
+			$cache->delete("dialplan:".$dialplan_context);
 
 		//redirect the user
 			if (isset($action)) {
@@ -372,6 +376,7 @@
 				$database_queue_name = $row["queue_name"];
 				$queue_extension = $row["queue_extension"];
 				$queue_strategy = $row["queue_strategy"];
+				$dialplan_context = $row["dialplan_context"];
 				$queue_moh_sound = $row["queue_moh_sound"];
 				$queue_record_template = $row["queue_record_template"];
 				$queue_time_base_score = $row["queue_time_base_score"];
@@ -642,6 +647,17 @@
 		echo "	</td>";
 		echo "</tr>";
 	}
+
+	echo "<tr>\n";
+	echo "<td class='vncellreq' valign='top' align='left' nowrap='nowrap'>\n";
+	echo "    ".$text['label-dialplan_context']."\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	echo "    <input class='formfld' type='text' name='dialplan_context' maxlength='255' value=\"".escape($dialplan_context)."\" required='required'>\n";
+	echo "<br />\n";
+	echo $text['description-dialplan_context']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
 
 	echo "<tr>\n";
 	echo "<td class='vncellreq' valign='top' align='left' nowrap>\n";

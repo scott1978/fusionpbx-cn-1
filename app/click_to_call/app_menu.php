@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Click to Call";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "点击呼叫";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Click to Call";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Click to Call";
 	$apps[$x]['menu'][$y]['title']['de-ch'] = "";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Click to Call";
@@ -24,5 +24,7 @@
 	$apps[$x]['menu'][$y]['parent_uuid'] = "fd29e39c-c936-f5fc-8e2b-611681b266b5";
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/app/click_to_call/click_to_call.php";
+	$apps[$x]['menu'][$y]['enabled'] = "false";
+	$apps[$x]['menu'][$y]['order'] = "5";
 
 ?>

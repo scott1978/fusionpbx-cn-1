@@ -74,6 +74,7 @@
 			}
 			$auth->debug = false;
 			$result = $auth->validate();
+
 			if ($result["authorized"] == "true") {
 				// set the session variables
 					$_SESSION["domain_uuid"] = $result["domain_uuid"];

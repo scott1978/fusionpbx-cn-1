@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Domains";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "域名管理";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Domains";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Domänen";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Domänen";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Dominios";
@@ -24,9 +24,11 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/core/domain_settings/domains.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "7";
 	$y++;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Domain Settings";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "域名管理";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Domain Settings";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Domänen Einstellungen";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Domänen Einstellungen";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Configuraciones de Dominio";
@@ -48,5 +50,7 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/core/domain_settings/domain_edit.php";
 	//$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "false";
+	$apps[$x]['menu'][$y]['order'] = "7";
 
 ?>

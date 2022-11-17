@@ -1,8 +1,8 @@
 <?php
 #This file was last reorganized on 19th of September 2017 08:54:24 AM UTC
 
-$text['title']['en-us'] = "Voicemail Greetings";
-$text['title']['ar-eg'] = "";
+$text['title']['en-us'] = "语音邮件问候语";
+$text['title']['ar-eg'] = "Voicemail Greetings";
 $text['title']['de-at'] = "Begrüßungen für Sprachnachrichten"; //copied from de-de
 $text['title']['de-ch'] = "Begrüßungen für Sprachnachrichten"; //copied from de-de
 $text['title']['de-de'] = "Begrüßungen für Sprachnachrichten";
@@ -21,8 +21,8 @@ $text['title']['ru-ru'] = "";
 $text['title']['sv-se'] = "Röstbrevlåda Hälsningar";
 $text['title']['uk-ua'] = "Привітання";
 
-$text['table-size']['en-us'] = "Size";
-$text['table-size']['ar-eg'] = "";
+$text['table-size']['en-us'] = "大小";
+$text['table-size']['ar-eg'] = "Size";
 $text['table-size']['de-at'] = "Größe"; //copied from de-de
 $text['table-size']['de-ch'] = "Größe"; //copied from de-de
 $text['table-size']['de-de'] = "Größe";
@@ -42,7 +42,7 @@ $text['table-size']['sv-se'] = "Storlek";
 $text['table-size']['uk-ua'] = "Розмір";
 
 $text['table-number']['en-us'] = "#";
-$text['table-number']['ar-eg'] = "";
+$text['table-number']['ar-eg'] = "#";
 $text['table-number']['de-at'] = "#"; //copied from de-de
 $text['table-number']['de-ch'] = "#"; //copied from de-de
 $text['table-number']['de-de'] = "#";
@@ -61,8 +61,8 @@ $text['table-number']['ru-ru'] = "";
 $text['table-number']['sv-se'] = "#";
 $text['table-number']['uk-ua'] = "кількість";
 
-$text['table-name']['en-us'] = "Name";
-$text['table-name']['ar-eg'] = "";
+$text['table-name']['en-us'] = "名称";
+$text['table-name']['ar-eg'] = "Name";
 $text['table-name']['de-at'] = "Name"; //copied from de-de
 $text['table-name']['de-ch'] = "Name"; //copied from de-de
 $text['table-name']['de-de'] = "Name";
@@ -81,8 +81,8 @@ $text['table-name']['ru-ru'] = "";
 $text['table-name']['sv-se'] = "Namn";
 $text['table-name']['uk-ua'] = "Назва";
 
-$text['table-filename']['en-us'] = "File Name";
-$text['table-filename']['ar-eg'] = "";
+$text['table-filename']['en-us'] = "文件名称";
+$text['table-filename']['ar-eg'] = "File Name";
 $text['table-filename']['de-at'] = "Dateiname"; //copied from de-de
 $text['table-filename']['de-ch'] = "Dateiname"; //copied from de-de
 $text['table-filename']['de-de'] = "Dateiname";
@@ -121,8 +121,8 @@ $text['table-download']['ru-ru'] = "";
 $text['table-download']['sv-se'] = "Ladda Ned";
 $text['table-download']['uk-ua'] = "Скачати";
 
-$text['table-description']['en-us'] = "Description";
-$text['table-description']['ar-eg'] = "";
+$text['table-description']['en-us'] = "备注";
+$text['table-description']['ar-eg'] = "Description";
 $text['table-description']['de-at'] = "Beschreibung"; //copied from de-de
 $text['table-description']['de-ch'] = "Beschreibung"; //copied from de-de
 $text['table-description']['de-de'] = "Beschreibung";
@@ -161,8 +161,8 @@ $text['table-choose']['ru-ru'] = "";
 $text['table-choose']['sv-se'] = "Välj";
 $text['table-choose']['uk-ua'] = "Вибрати";
 
-$text['message-uploaded']['en-us'] = "Upload Complete";
-$text['message-uploaded']['ar-eg'] = "";
+$text['message-uploaded']['en-us'] = "上传完成";
+$text['message-uploaded']['ar-eg'] = "Upload Complete";
 $text['message-uploaded']['de-at'] = "Hochladen abgeschlossen"; //copied from de-de
 $text['message-uploaded']['de-ch'] = "Hochladen abgeschlossen"; //copied from de-de
 $text['message-uploaded']['de-de'] = "Hochladen abgeschlossen";
@@ -221,8 +221,8 @@ $text['message-greeting_selected']['ru-ru'] = "";
 $text['message-greeting_selected']['sv-se'] = "Hälsning Vald";
 $text['message-greeting_selected']['uk-ua'] = "привітання Вибрані";
 
-$text['label-tools']['en-us'] = "Tools";
-$text['label-tools']['ar-eg'] = "";
+$text['label-tools']['en-us'] = "工具";
+$text['label-tools']['ar-eg'] = "Tools";
 $text['label-tools']['de-at'] = "Werkzeuge"; //copied from de-de
 $text['label-tools']['de-ch'] = "Werkzeuge"; //copied from de-de
 $text['label-tools']['de-de'] = "Werkzeuge";
@@ -241,8 +241,8 @@ $text['label-tools']['ru-ru'] = "";
 $text['label-tools']['sv-se'] = "Verktyg";
 $text['label-tools']['uk-ua'] = "Параметри";
 
-$text['label-select_a_file']['en-us'] = "Select a file...";
-$text['label-select_a_file']['ar-eg'] = "";
+$text['label-select_a_file']['en-us'] = "选择文件...";
+$text['label-select_a_file']['ar-eg'] = "Select a file...";
 $text['label-select_a_file']['de-at'] = "Wähle eine Datei aus..."; //copied from de-de
 $text['label-select_a_file']['de-ch'] = "Wähle eine Datei aus..."; //copied from de-de
 $text['label-select_a_file']['de-de'] = "Wähle eine Datei aus...";
@@ -321,8 +321,8 @@ $text['label-greeting']['ru-ru'] = "";
 $text['label-greeting']['sv-se'] = "Hälsning";
 $text['label-greeting']['uk-ua'] = "привітання";
 
-$text['label-filename']['en-us'] = "File Name";
-$text['label-filename']['ar-eg'] = "";
+$text['label-filename']['en-us'] = "文件名称";
+$text['label-filename']['ar-eg'] = "File Name";
 $text['label-filename']['de-at'] = "Dateiname"; //copied from de-de
 $text['label-filename']['de-ch'] = "Dateiname"; //copied from de-de
 $text['label-filename']['de-de'] = "Dateiname";
@@ -441,8 +441,8 @@ $text['description-info']['ru-ru'] = "";
 $text['description-info']['sv-se'] = "Du kan ange en beskrivning här som din egna referens.";
 $text['description-info']['uk-ua'] = "Введіть опис";
 
-$text['description']['en-us'] = "Select the active greeting message to play for extension:";
-$text['description']['ar-eg'] = "";
+$text['description']['en-us'] = "为分机选择一个问候语，分机号:";
+$text['description']['ar-eg'] = "Select the active greeting message to play for extension:";
 $text['description']['de-at'] = "Wählen Sie die aktive Begrüßung aus, welche für diese Nebenstelle abgespielt werden soll:"; //copied from de-de
 $text['description']['de-ch'] = "Wählen Sie die aktive Begrüßung aus, welche für diese Nebenstelle abgespielt werden soll:"; //copied from de-de
 $text['description']['de-de'] = "Wählen Sie die aktive Begrüßung aus, welche für diese Nebenstelle abgespielt werden soll:";

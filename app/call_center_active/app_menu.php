@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Active Call Center";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "实时呼叫中心";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Active Call Center";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Aktive Callcenter";
 	$apps[$x]['menu'][$y]['title']['de-ch'] = "";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Aktive Callcenter";
@@ -26,5 +26,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/call_center_active/call_center_queue.php";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "6";
 
 ?>

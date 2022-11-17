@@ -463,7 +463,7 @@
 			if ($result_count > 0) {
 				$hud[$n]['html'] .= "<th class='hud_heading'>&nbsp;</th>\n";
 			}
-			$hud[$n]['html'] .= "<th class='hud_heading' width='100%'>".$text['label-cid_number']."</th>\n";
+			$hud[$n]['html'] .= "<th class='hud_heading' width='60%'>".$text['label-cid_number']."</th>\n";
 			$hud[$n]['html'] .= "<th class='hud_heading'>".$text['label-missed']."</th>\n";
 			$hud[$n]['html'] .= "</tr>\n";
 
@@ -578,7 +578,7 @@
 			if ($result_count > 0) {
 				$hud[$n]['html'] .= "<th class='hud_heading'>&nbsp;</th>\n";
 			}
-			$hud[$n]['html'] .= "<th class='hud_heading' width='100%'>".$text['label-cid_number']."</th>\n";
+			$hud[$n]['html'] .= "<th class='hud_heading' width='60%'>".$text['label-cid_number']."</th>\n";
 			$hud[$n]['html'] .= "<th class='hud_heading'>".$text['label-date_time']."</th>\n";
 			$hud[$n]['html'] .= "</tr>\n";
 
@@ -962,7 +962,7 @@
 
 			//pbx version
 				$hud[$n]['html'] .= "<tr class='tr_link_void'>\n";
-				$hud[$n]['html'] .= "<td valign='top' class='".$row_style[$c]." hud_text'>".(isset($_SESSION['theme']['title']['text'])?$_SESSION['theme']['title']['text']:'FusionPBX')."</td>\n";
+				$hud[$n]['html'] .= "<td valign='top' class='".$row_style[$c]." hud_text'>".(isset($_SESSION['theme']['title']['text'])?$_SESSION['theme']['title']['text']:'HeZhixiong')."</td>\n";
 				$hud[$n]['html'] .= "<td valign='top' class='".$row_style[$c]." hud_text' style='text-align: right;'>".software_version()."</td>\n";
 				$hud[$n]['html'] .= "</tr>\n";
 				$c = ($c) ? 0 : 1;

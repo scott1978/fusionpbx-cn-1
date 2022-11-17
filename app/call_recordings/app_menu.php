@@ -1,7 +1,7 @@
 <?php
 
-$apps[$x]['menu'][0]['title']['en-us'] = 'Call Recordings';
-$apps[$x]['menu'][0]['title']['es-cl'] = '';
+$apps[$x]['menu'][0]['title']['en-us'] = '电话录音';
+$apps[$x]['menu'][0]['title']['es-cl'] = 'Call Recordings';
 $apps[$x]['menu'][0]['title']['fr-fr'] = '';
 $apps[$x]['menu'][0]['title']['fr-ca'] = '';
 $apps[$x]['menu'][0]['title']['pl'] = '';
@@ -15,5 +15,7 @@ $apps[$x]['menu'][0]['path'] = '/app/call_recordings/call_recordings.php';
 $apps[$x]['menu'][0]['groups'][] = 'superadmin';
 //$apps[$x]['menu'][0]['groups'][] = 'admin';
 //$apps[$x]['menu'][0]['groups'][] = 'user';
+$apps[$x]['menu'][0]['enabled'] = "true";
+$apps[$x]['menu'][0]['order'] = "4";
 
 ?>

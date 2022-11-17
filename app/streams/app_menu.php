@@ -1,6 +1,7 @@
 <?php
 
-$apps[$x]['menu'][0]['title']['en-us'] = 'Streams';
+$apps[$x]['menu'][0]['title']['en-us'] = '流式音频';
+$apps[$x]['menu'][0]['title']['ar-eg'] = 'Streams';
 $apps[$x]['menu'][0]['title']['es-cl'] = '';
 $apps[$x]['menu'][0]['title']['fr-fr'] = '';
 $apps[$x]['menu'][0]['title']['fr-ca'] = '';
@@ -15,5 +16,7 @@ $apps[$x]['menu'][0]['path'] = '/app/streams/streams.php';
 $apps[$x]['menu'][0]['groups'][] = 'superadmin';
 //$apps[$x]['menu'][0]['groups'][] = 'admin';
 //$apps[$x]['menu'][0]['groups'][] = 'user';
+$apps[$x]['menu'][0]['enabled'] = "false";
+$apps[$x]['menu'][0]['order'] = "24";
 
 ?>

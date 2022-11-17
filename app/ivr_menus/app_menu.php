@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "IVR Menus";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "IVR";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "IVR Menus";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Automatische Vermittlung";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Automatische Vermittlung";
 	$apps[$x]['menu'][$y]['title']['fr-fr'] = "Menu SVI";
@@ -25,5 +25,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/ivr_menus/ivr_menus.php";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "1";
 
 ?>

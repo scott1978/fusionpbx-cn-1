@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Settings";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "FS连接设置";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Settings";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Einstellungen";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Einstellungen";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Configuraciones";
@@ -24,5 +24,7 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/app/settings/setting_edit.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "11";
 
 ?>

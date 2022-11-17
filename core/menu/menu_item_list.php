@@ -44,7 +44,7 @@ function build_db_child_menu_list ($db, $menu_item_level, $menu_item_uuid, $c) {
 		$sql = "select * from v_menu_items ";
 		$sql .= "where menu_uuid = '".$menu_uuid."' ";
 		$sql .= "and menu_item_parent_uuid = '".$menu_item_uuid."' ";
-		$sql .= "order by menu_item_title, menu_item_order asc ";
+		$sql .= "order by menu_item_order, menu_item_title asc ";
 		$prep_statement_2 = $db->prepare($sql);
 		$prep_statement_2->execute();
 		$result2 = $prep_statement_2->fetchAll(PDO::FETCH_NAMED);
@@ -59,6 +59,7 @@ function build_db_child_menu_list ($db, $menu_item_level, $menu_item_uuid, $c) {
 					$menu_item_uuid = $row2['menu_item_uuid'];
 					$menu_item_category = $row2['menu_item_category'];
 					$menu_item_protected = $row2['menu_item_protected'];
+					$menu_item_enabled = $row2['menu_item_enabled'];
 					$menu_item_parent_uuid = $row2['menu_item_parent_uuid'];
 					$menu_item_order = $row2['menu_item_order'];
 					$menu_item_language = $row2['menu_item_language'];
@@ -114,9 +115,17 @@ function build_db_child_menu_list ($db, $menu_item_level, $menu_item_uuid, $c) {
 					else {
 						echo "<td valign='top' class='".$row_style[$c]."' style='text-align: center;'>".$text['label-false']." &nbsp;</td>";
 					}
+
+					if ($menu_item_enabled == "true") {
+						echo "<td valign='top' class='".$row_style[$c]."' style='text-align: center;'><strong>".$text['label-true']."</strong> &nbsp;</td>";
+					}
+					else {
+						echo "<td valign='top' class='".$row_style[$c]."' style='text-align: center;'>".$text['label-false']." &nbsp;</td>";
+					}
+
 					echo "<td valign='top' align='center' nowrap class='".$row_style[$c]."'>";
 					echo "	&nbsp;";
-					//echo "  ".$row2[menu_item_order]."&nbsp;";
+					echo "  ".$row2[menu_item_order]."&nbsp;";
 					echo "</td>";
 
 					//echo "<td valign='top' align='center' class='".$row_style[$c]."'>";
@@ -137,14 +146,15 @@ function build_db_child_menu_list ($db, $menu_item_level, $menu_item_uuid, $c) {
 					echo "</tr>";
 
 				//update the menu order
-					if ($row2[menu_item_order] != $tmp_menu_item_order) {
-						$sql  = "update v_menu_items set ";
-						$sql .= "menu_item_title = '".$row2[menu_item_title]."', ";
-						$sql .= "menu_item_order = '".$tmp_menu_item_order."' ";
-						$sql .= "where menu_uuid = '".$menu_uuid."' ";
-						$sql .= "and menu_item_uuid = '".$row2[menu_item_uuid]."' ";
-						$count = $db->exec(check_sql($sql));
-					}
+					// hezhixiong 不需要系统自动计算顺序，我已添加手工调整顺序
+					// if ($row2[menu_item_order] != $tmp_menu_item_order) {
+					// 	$sql  = "update v_menu_items set ";
+					// 	$sql .= "menu_item_title = '".$row2[menu_item_title]."', ";
+					// 	$sql .= "menu_item_order = '".$tmp_menu_item_order."' ";
+					// 	$sql .= "where menu_uuid = '".$menu_uuid."' ";
+					// 	$sql .= "and menu_item_uuid = '".$row2[menu_item_uuid]."' ";
+					// 	$count = $db->exec(check_sql($sql));
+					// }
 					$tmp_menu_item_order++;
 
 				//check for additional sub menus
@@ -194,6 +204,7 @@ else {
 	echo "<th align='left' nowrap>".$text['label-groups']."</th>";
 	echo "<th align='left'nowrap>".$text['label-category']."</th>";
 	echo "<th nowrap style='text-align: center;'>".$text['label-protected']."</th>";
+	echo "<th nowrap style='text-align: center;'>".$text['label-enabled']."</th>";
 	echo "<th nowrap width='70' style='text-align: center;'>".$text['label-menu_order']."</th>";
 	echo "<td class='list_control_icons'>";
 	if (permission_exists('menu_add')) {
@@ -209,6 +220,7 @@ else {
 			$menu_item_title = $row['menu_item_title'];
 			$menu_item_link = $row['menu_item_link'];
 			$menu_item_protected = $row['menu_item_protected'];
+			$menu_item_enabled = $row['menu_item_enabled'];
 
 		//get the groups that have been assigned to the menu
 			$sql = "select ";
@@ -261,6 +273,13 @@ else {
 			//echo "<td valign='top' class='".$row_style[$c]."'>".$row['menu_item_order']."&nbsp;</td>";
 
 			if ($menu_item_protected == "true") {
+				echo "<td valign='top' class='".$row_style[$c]."' style='text-align: center;'><strong>".$text['label-true']."</strong> &nbsp;</td>";
+			}
+			else {
+				echo "<td valign='top' class='".$row_style[$c]."' style='text-align: center;'>".$text['label-false']." &nbsp;</td>";
+			}
+
+			if ($menu_item_enabled == "true") {
 				echo "<td valign='top' class='".$row_style[$c]."' style='text-align: center;'><strong>".$text['label-true']."</strong> &nbsp;</td>";
 			}
 			else {

@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Log Viewer";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "日志查看器";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Log Viewer";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Log Betrachter";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Log Betrachter";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Visor de eventos";
@@ -24,5 +24,7 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/app/log_viewer/log_viewer.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "11";
 
 ?>

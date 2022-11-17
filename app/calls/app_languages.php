@@ -1,8 +1,8 @@
 <?php
 #This file was last reorganized on 19th of September 2017 08:54:24 AM UTC
 
-$text['title']['en-us'] = "Call Routing";
-$text['title']['ar-eg'] = "توجيه الدعوة";
+$text['title']['en-us'] = "分机随行";
+$text['title']['ar-eg'] = "Call Routing";
 $text['title']['de-at'] = "Call Routing"; //copied from de-de
 $text['title']['de-ch'] = "Call Routing"; //copied from de-de
 $text['title']['de-de'] = "Call Routing";
@@ -41,8 +41,8 @@ $text['table-tools']['ru-ru'] = "Инструменты";
 $text['table-tools']['sv-se'] = "Verktyg";
 $text['table-tools']['uk-ua'] = "Інструменти";
 
-$text['table-extension']['en-us'] = "Extension";
-$text['table-extension']['ar-eg'] = "";
+$text['table-extension']['en-us'] = "分机";
+$text['table-extension']['ar-eg'] = "Extension";
 $text['table-extension']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['table-extension']['de-ch'] = "Nebenstelle"; //copied from de-de
 $text['table-extension']['de-de'] = "Nebenstelle";
@@ -61,8 +61,8 @@ $text['table-extension']['ru-ru'] = "Внутренний номер";
 $text['table-extension']['sv-se'] = "Anknytning";
 $text['table-extension']['uk-ua'] = "Розширення (Extention)";
 
-$text['table-description']['en-us'] = "Description";
-$text['table-description']['ar-eg'] = "";
+$text['table-description']['en-us'] = "备注";
+$text['table-description']['ar-eg'] = "Description";
 $text['table-description']['de-at'] = "Beschreibung"; //copied from de-de
 $text['table-description']['de-ch'] = "Beschreibung"; //copied from de-de
 $text['table-description']['de-de'] = "Beschreibung";
@@ -81,8 +81,8 @@ $text['table-description']['ru-ru'] = "Описание";
 $text['table-description']['sv-se'] = "Beskrivning";
 $text['table-description']['uk-ua'] = "Опис";
 
-$text['label-ring-timeout']['en-us'] = "Timeout";
-$text['label-ring-timeout']['ar-eg'] = "";
+$text['label-ring-timeout']['en-us'] = "超时";
+$text['label-ring-timeout']['ar-eg'] = "Timeout";
 $text['label-ring-timeout']['de-at'] = "Abwurfzeit"; //copied from de-de
 $text['label-ring-timeout']['de-ch'] = "Abwurfzeit"; //copied from de-de
 $text['label-ring-timeout']['de-de'] = "Abwurfzeit";
@@ -161,8 +161,8 @@ $text['label-prompt']['ru-ru'] = "Подтверждение приема выз
 $text['label-prompt']['sv-se'] = "Kräv verifiering för att ta emot samtal.";
 $text['label-prompt']['uk-ua'] = "";
 
-$text['label-on-busy']['en-us'] = "On Busy";
-$text['label-on-busy']['ar-eg'] = "";
+$text['label-on-busy']['en-us'] = "忙碌时";
+$text['label-on-busy']['ar-eg'] = "On Busy";
 $text['label-on-busy']['de-at'] = "Bei Besetzt"; //copied from de-de
 $text['label-on-busy']['de-ch'] = "Bei Besetzt"; //copied from de-de
 $text['label-on-busy']['de-de'] = "Bei Besetzt";
@@ -201,8 +201,8 @@ $text['label-number']['ru-ru'] = "Номер";
 $text['label-number']['sv-se'] = "Nummer";
 $text['label-number']['uk-ua'] = "Номер";
 
-$text['label-no_answer']['en-us'] = "No Answer";
-$text['label-no_answer']['ar-eg'] = "";
+$text['label-no_answer']['en-us'] = "无应答";
+$text['label-no_answer']['ar-eg'] = "No Answer";
 $text['label-no_answer']['de-at'] = "Keine Antwort"; //copied from de-de
 $text['label-no_answer']['de-ch'] = "Keine Antwort"; //copied from de-de
 $text['label-no_answer']['de-de'] = "Keine Antwort";
@@ -221,8 +221,8 @@ $text['label-no_answer']['ru-ru'] = "Нет ответа";
 $text['label-no_answer']['sv-se'] = "Inget Svar";
 $text['label-no_answer']['uk-ua'] = "Без відповіді";
 
-$text['label-not_registered']['en-us'] = "Not Registered";
-$text['label-not_registered']['ar-eg'] = "";
+$text['label-not_registered']['en-us'] = "未注册";
+$text['label-not_registered']['ar-eg'] = "Not Registered";
 $text['label-not_registered']['de-at'] = "Nicht registriert"; //copied from de-de
 $text['label-not_registered']['de-ch'] = "Nicht registriert"; //copied from de-de
 $text['label-not_registered']['de-de'] = "Nicht registriert";
@@ -241,8 +241,8 @@ $text['label-not_registered']['ru-ru'] = "Не зарегистрирован";
 $text['label-not_registered']['sv-se'] = "Ej Registrerad";
 $text['label-not_registered']['uk-ua'] = "";
 
-$text['label-ignore_busy']['en-us'] = "Ignore Busy";
-$text['label-ignore_busy']['ar-eg'] = "";
+$text['label-ignore_busy']['en-us'] = "忽略忙";
+$text['label-ignore_busy']['ar-eg'] = "Ignore Busy";
 $text['label-ignore_busy']['de-at'] = "Besetzt ignorieren"; //copied from de-de
 $text['label-ignore_busy']['de-ch'] = "Besetzt ignorieren"; //copied from de-de
 $text['label-ignore_busy']['de-de'] = "Besetzt ignorieren";
@@ -261,8 +261,8 @@ $text['label-ignore_busy']['ru-ru'] = "Игногировать занятост
 $text['label-ignore_busy']['sv-se'] = "Ignorera Upptaget";
 $text['label-ignore_busy']['uk-ua'] = "";
 
-$text['label-follow-me']['en-us'] = "Follow Me";
-$text['label-follow-me']['ar-eg'] = "";
+$text['label-follow-me']['en-us'] = "分机随行";
+$text['label-follow-me']['ar-eg'] = "Follow Me";
 $text['label-follow-me']['de-at'] = "Anrufweiterschaltung"; //copied from de-de
 $text['label-follow-me']['de-ch'] = "Anrufweiterschaltung"; //copied from de-de
 $text['label-follow-me']['de-de'] = "Anrufweiterschaltung";
@@ -281,8 +281,8 @@ $text['label-follow-me']['ru-ru'] = "Перенаправление";
 $text['label-follow-me']['sv-se'] = "Följ Mig";
 $text['label-follow-me']['uk-ua'] = "";
 
-$text['label-dnd']['en-us'] = "Do Not Disturb";
-$text['label-dnd']['ar-eg'] = "";
+$text['label-dnd']['en-us'] = "请勿打扰";
+$text['label-dnd']['ar-eg'] = "Do Not Disturb";
 $text['label-dnd']['de-at'] = "Bitte nicht stören"; //copied from de-de
 $text['label-dnd']['de-ch'] = "Bitte nicht stören"; //copied from de-de
 $text['label-dnd']['de-de'] = "Bitte nicht stören";
@@ -301,8 +301,8 @@ $text['label-dnd']['ru-ru'] = "Не беспокоить";
 $text['label-dnd']['sv-se'] = "Stör Ej";
 $text['label-dnd']['uk-ua'] = "Не турбувати";
 
-$text['label-destinations']['en-us'] = "Destinations";
-$text['label-destinations']['ar-eg'] = "";
+$text['label-destinations']['en-us'] = "目的地";
+$text['label-destinations']['ar-eg'] = "Destinations";
 $text['label-destinations']['de-at'] = "Ziele"; //copied from de-de
 $text['label-destinations']['de-ch'] = "Ziele"; //copied from de-de
 $text['label-destinations']['de-de'] = "Ziele";
@@ -381,8 +381,8 @@ $text['label-destination_prompt_announce']['ru-ru'] = "Сообщение";
 $text['label-destination_prompt_announce']['sv-se'] = "Meddela";
 $text['label-destination_prompt_announce']['uk-ua'] = "";
 
-$text['label-destination_prompt']['en-us'] = "Prompt";
-$text['label-destination_prompt']['ar-eg'] = "";
+$text['label-destination_prompt']['en-us'] = "提示";
+$text['label-destination_prompt']['ar-eg'] = "Prompt";
 $text['label-destination_prompt']['de-at'] = "Nachfragen"; //copied from de-de
 $text['label-destination_prompt']['de-ch'] = "Nachfragen"; //copied from de-de
 $text['label-destination_prompt']['de-de'] = "Nachfragen";
@@ -401,8 +401,8 @@ $text['label-destination_prompt']['ru-ru'] = "Приглашение";
 $text['label-destination_prompt']['sv-se'] = "Verifiering";
 $text['label-destination_prompt']['uk-ua'] = "";
 
-$text['label-destination_number']['en-us'] = "Destination";
-$text['label-destination_number']['ar-eg'] = "";
+$text['label-destination_number']['en-us'] = "目的地";
+$text['label-destination_number']['ar-eg'] = "Destination";
 $text['label-destination_number']['de-at'] = "Ziel"; //copied from de-de
 $text['label-destination_number']['de-ch'] = "Ziel"; //copied from de-de
 $text['label-destination_number']['de-de'] = "Ziel";
@@ -421,8 +421,8 @@ $text['label-destination_number']['ru-ru'] = "Назначение";
 $text['label-destination_number']['sv-se'] = "Destination Nummer";
 $text['label-destination_number']['uk-ua'] = "Номер";
 
-$text['label-destination_delay']['en-us'] = "Delay";
-$text['label-destination_delay']['ar-eg'] = "";
+$text['label-destination_delay']['en-us'] = "延迟";
+$text['label-destination_delay']['ar-eg'] = "Delay";
 $text['label-destination_delay']['de-at'] = "Verzögerung"; //copied from de-de
 $text['label-destination_delay']['de-ch'] = "Verzögerung"; //copied from de-de
 $text['label-destination_delay']['de-de'] = "Verzögerung";
@@ -461,8 +461,8 @@ $text['label-destination']['ru-ru'] = "Назначение";
 $text['label-destination']['sv-se'] = "Destination";
 $text['label-destination']['uk-ua'] = "Номер";
 
-$text['label-cid-number-prefix']['en-us'] = "Number Prefix";
-$text['label-cid-number-prefix']['ar-eg'] = "";
+$text['label-cid-number-prefix']['en-us'] = "主叫号码前缀";
+$text['label-cid-number-prefix']['ar-eg'] = "Number Prefix";
 $text['label-cid-number-prefix']['de-at'] = "Anruferkennung (Nummer)"; //copied from de-de
 $text['label-cid-number-prefix']['de-ch'] = "Anruferkennung (Nummer)"; //copied from de-de
 $text['label-cid-number-prefix']['de-de'] = "Anruferkennung (Nummer)";
@@ -501,8 +501,8 @@ $text['label-cid-number']['ru-ru'] = "Caller ID Номер";
 $text['label-cid-number']['sv-se'] = "Nummerpresentation";
 $text['label-cid-number']['uk-ua'] = "Caller ID Номер";
 
-$text['label-cid-name-prefix']['en-us'] = "Name Prefix";
-$text['label-cid-name-prefix']['ar-eg'] = "";
+$text['label-cid-name-prefix']['en-us'] = "主叫名称前缀";
+$text['label-cid-name-prefix']['ar-eg'] = "Name Prefix";
 $text['label-cid-name-prefix']['de-at'] = "Anruferkennung (Name)"; //copied from de-de
 $text['label-cid-name-prefix']['de-ch'] = "Anruferkennung (Name)"; //copied from de-de
 $text['label-cid-name-prefix']['de-de'] = "Anruferkennung (Name)";
@@ -541,8 +541,8 @@ $text['label-call-prompt']['ru-ru'] = "Запрос вызова";
 $text['label-call-prompt']['sv-se'] = "Samtals Verifiering";
 $text['label-call-prompt']['uk-ua'] = "";
 
-$text['label-call-forward']['en-us'] = "Call Forward";
-$text['label-call-forward']['ar-eg'] = "";
+$text['label-call-forward']['en-us'] = "来电转移";
+$text['label-call-forward']['ar-eg'] = "Call Forward";
 $text['label-call-forward']['de-at'] = "Rufumleitung"; //copied from de-de
 $text['label-call-forward']['de-ch'] = "Rufumleitung"; //copied from de-de
 $text['label-call-forward']['de-de'] = "Rufumleitung";
@@ -561,8 +561,8 @@ $text['label-call-forward']['ru-ru'] = "Переадресация";
 $text['label-call-forward']['sv-se'] = "Vidarekoppling";
 $text['label-call-forward']['uk-ua'] = "Переадресація";
 
-$text['header-call_routing']['en-us'] = "Call Routing";
-$text['header-call_routing']['ar-eg'] = "توجيه الدعوة";
+$text['header-call_routing']['en-us'] = "分机随行";
+$text['header-call_routing']['ar-eg'] = "Call Routing";
 $text['header-call_routing']['de-at'] = "Anrufweiterleitung"; //copied from de-de
 $text['header-call_routing']['de-ch'] = "Anrufweiterleitung"; //copied from de-de
 $text['header-call_routing']['de-de'] = "Anrufweiterleitung";
@@ -581,8 +581,8 @@ $text['header-call_routing']['ru-ru'] = "Маршрутизация вызово
 $text['header-call_routing']['sv-se'] = "Samtals Styrning";
 $text['header-call_routing']['uk-ua'] = "маршрутизація викликів";
 
-$text['description-on-busy']['en-us'] = "If enabled, it overrides the value of voicemail enabling in extension.";
-$text['description-on-busy']['ar-eg'] = "";
+$text['description-on-busy']['en-us'] = "如果启用，它将覆盖语音信箱的设置";
+$text['description-on-busy']['ar-eg'] = "If enabled, it overrides the value of voicemail enabling in extension.";
 $text['description-on-busy']['de-at'] = "Falls aktiviert, wird die aktive Mailbox der Nebenstelle überschrieben."; //copied from de-de
 $text['description-on-busy']['de-ch'] = "Falls aktiviert, wird die aktive Mailbox der Nebenstelle überschrieben."; //copied from de-de
 $text['description-on-busy']['de-de'] = "Falls aktiviert, wird die aktive Mailbox der Nebenstelle überschrieben.";
@@ -601,8 +601,8 @@ $text['description-on-busy']['ru-ru'] = "Если включено, этот п�
 $text['description-on-busy']['sv-se'] = "Om aktiverad, så tar den överhand framför röstbrevlåda hos anknytningen.";
 $text['description-on-busy']['uk-ua'] = "Якщо цей параметр включений, то вона перекриває значення голосової пошти, що дозволяє в розширенні.";
 
-$text['description-no_answer']['en-us'] = "If enabled, it overrides the value of voicemail enabling in extension.";
-$text['description-no_answer']['ar-eg'] = "";
+$text['description-no_answer']['en-us'] = "如果启用，它将覆盖语音信箱的设置";
+$text['description-no_answer']['ar-eg'] = "If enabled, it overrides the value of voicemail enabling in extension.";
 $text['description-no_answer']['de-at'] = "Falls aktiviert, wird die aktive Mailbox der Nebenstelle überschrieben."; //copied from de-de
 $text['description-no_answer']['de-ch'] = "Falls aktiviert, wird die aktive Mailbox der Nebenstelle überschrieben."; //copied from de-de
 $text['description-no_answer']['de-de'] = "Falls aktiviert, wird die aktive Mailbox der Nebenstelle überschrieben.";
@@ -621,8 +621,8 @@ $text['description-no_answer']['ru-ru'] = "Если включено, этот �
 $text['description-no_answer']['sv-se'] = "Om aktiverad, så tar den överhand framför röstbrevlåda hos anknytningen.";
 $text['description-no_answer']['uk-ua'] = "Якщо цей параметр включений, то вона перекриває значення голосової пошти, що дозволяє в розширенні.";
 
-$text['description-not_registered']['en-us'] = "If endpoint is not reachable, forward to this destination before going to voicemail.";
-$text['description-not_registered']['ar-eg'] = "";
+$text['description-not_registered']['en-us'] = "如果分机未注册，在语音信箱之前会转移至目的地";
+$text['description-not_registered']['ar-eg'] = "If endpoint is not reachable, forward to this destination before going to voicemail.";
 $text['description-not_registered']['de-at'] = "Rufweiterleitung an neues Ziel, wenn ursprüngliches Ziel nicht erreichbar ist, bevor die Mailbox aktiviert wird."; //copied from de-de
 $text['description-not_registered']['de-ch'] = "Rufweiterleitung an neues Ziel, wenn ursprüngliches Ziel nicht erreichbar ist, bevor die Mailbox aktiviert wird."; //copied from de-de
 $text['description-not_registered']['de-de'] = "Rufweiterleitung an neues Ziel, wenn ursprüngliches Ziel nicht erreichbar ist, bevor die Mailbox aktiviert wird.";
@@ -641,8 +641,8 @@ $text['description-not_registered']['ru-ru'] = "Если номер недост
 $text['description-not_registered']['sv-se'] = "Om endpoint är inte nås, vidarebefordra till denna destination innan du går till röstbrevlådan.";
 $text['description-not_registered']['uk-ua'] = "Якщо кінцева точка не можна досягти, вперед до цієї мети, перш ніж йти на голосову пошту.";
 
-$text['description-ignore_busy']['en-us'] = "Interrupt the call if a destination is busy.";
-$text['description-ignore_busy']['ar-eg'] = "";
+$text['description-ignore_busy']['en-us'] = "如果目的地号码忙，则结束通话";
+$text['description-ignore_busy']['ar-eg'] = "Interrupt the call if a destination is busy.";
 $text['description-ignore_busy']['de-at'] = "Anruf unterbrechen wenn ein Ziel besetzt ist."; //copied from de-de
 $text['description-ignore_busy']['de-ch'] = "Anruf unterbrechen wenn ein Ziel besetzt ist."; //copied from de-de
 $text['description-ignore_busy']['de-de'] = "Anruf unterbrechen wenn ein Ziel besetzt ist.";
@@ -661,8 +661,8 @@ $text['description-ignore_busy']['ru-ru'] = "Прервать вызов, есл
 $text['description-ignore_busy']['sv-se'] = "Avbryt samtal om en destination är upptagen.";
 $text['description-ignore_busy']['uk-ua'] = "Переривання виклику, якщо абонент зайнятий.";
 
-$text['description-cid-number-prefix']['en-us'] = "Set the caller ID number prefix.";
-$text['description-cid-number-prefix']['ar-eg'] = "";
+$text['description-cid-number-prefix']['en-us'] = "设置主叫号码前缀";
+$text['description-cid-number-prefix']['ar-eg'] = "Set the caller ID number prefix.";
 $text['description-cid-number-prefix']['de-at'] = "Setzen Sie ein Präfix für die Anruferkennung (Nummer)"; //copied from de-de
 $text['description-cid-number-prefix']['de-ch'] = "Setzen Sie ein Präfix für die Anruferkennung (Nummer)"; //copied from de-de
 $text['description-cid-number-prefix']['de-de'] = "Setzen Sie ein Präfix für die Anruferkennung (Nummer)";
@@ -701,8 +701,8 @@ $text['description-cid-number']['ru-ru'] = "Выберите номер для �
 $text['description-cid-number']['sv-se'] = "Välj ett nummer för att åsidosätta den ursprungliga uppringaren ID-nummer.";
 $text['description-cid-number']['uk-ua'] = "Виберіть номер, щоб перевизначити вихідний ідентифікаційний номер абонента.";
 
-$text['description-cid-name-prefix']['en-us'] = "Set the caller ID name prefix.";
-$text['description-cid-name-prefix']['ar-eg'] = "";
+$text['description-cid-name-prefix']['en-us'] = "设置主叫名称前缀";
+$text['description-cid-name-prefix']['ar-eg'] = "Set the caller ID name prefix.";
 $text['description-cid-name-prefix']['de-at'] = "Setzen Sie ein Präfix für die Anruferkennung (Name)"; //copied from de-de
 $text['description-cid-name-prefix']['de-ch'] = "Setzen Sie ein Präfix für die Anruferkennung (Name)"; //copied from de-de
 $text['description-cid-name-prefix']['de-de'] = "Setzen Sie ein Präfix für die Anruferkennung (Name)";
@@ -741,8 +741,8 @@ $text['description-call-prompt']['ru-ru'] = "Сообщение о приеме 
 $text['description-call-prompt']['sv-se'] = "Kräv verifiering för att ta emot samtal för externa destinationer.";
 $text['description-call-prompt']['uk-ua'] = "";
 
-$text['description-call_routing']['en-us'] = "Define alternate inbound call handling for the following extensions.";
-$text['description-call_routing']['ar-eg'] = "";
+$text['description-call_routing']['en-us'] = "指示分机的来电。";
+$text['description-call_routing']['ar-eg'] = "Define alternate inbound call handling for the following extensions.";
 $text['description-call_routing']['de-at'] = "Definieren Sie eine alternative Handhabung von eingehenden Anrufen für nachfolgende Nebenstellen."; //copied from de-de
 $text['description-call_routing']['de-ch'] = "Definieren Sie eine alternative Handhabung von eingehenden Anrufen für nachfolgende Nebenstellen."; //copied from de-de
 $text['description-call_routing']['de-de'] = "Definieren Sie eine alternative Handhabung von eingehenden Anrufen für nachfolgende Nebenstellen.";
@@ -761,8 +761,8 @@ $text['description-call_routing']['ru-ru'] = "Установливает аль�
 $text['description-call_routing']['sv-se'] = "Definiera alternativa inkommande samtalshantering för följande tillägg.";
 $text['description-call_routing']['uk-ua'] = "Визначити обробку для наступних розширень альтернативного вхідного дзвінка.";
 
-$text['description-call_forward']['en-us'] = "Forward all calls to the specified destination.";
-$text['description-call_forward']['ar-eg'] = "";
+$text['description-call_forward']['en-us'] = "将所有来电转移至目标号码";
+$text['description-call_forward']['ar-eg'] = "Forward all calls to the specified destination.";
 $text['description-call_forward']['de-at'] = "Leiten Sie alle Anrufe an das angegebene Ziel."; //copied from de-de
 $text['description-call_forward']['de-ch'] = "Leiten Sie alle Anrufe an das angegebene Ziel."; //copied from de-de
 $text['description-call_forward']['de-de'] = "Leiten Sie alle Anrufe an das angegebene Ziel.";
@@ -781,8 +781,8 @@ $text['description-call_forward']['ru-ru'] = "Переадресовать вс�
 $text['description-call_forward']['sv-se'] = "Vidarekoppla alla samtal till den angivna destinationen.";
 $text['description-call_forward']['uk-ua'] = "Усі дзвінки скеровуються на вказане місце призначення.";
 
-$text['description']['en-us'] = "Directs incoming calls for extension:";
-$text['description']['ar-eg'] = "";
+$text['description']['en-us'] = "管理分机的呼入来电：";
+$text['description']['ar-eg'] = "Directs incoming calls for extension:";
 $text['description']['de-at'] = "Leitet eingehende Gespräche für die Nebenstelle:"; //copied from de-de
 $text['description']['de-ch'] = "Leitet eingehende Gespräche für die Nebenstelle:"; //copied from de-de
 $text['description']['de-de'] = "Leitet eingehende Gespräche für die Nebenstelle:";

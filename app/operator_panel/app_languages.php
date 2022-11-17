@@ -1,8 +1,8 @@
 <?php
 #This file was last reorganized on 19th of September 2017 08:54:24 AM UTC
 
-$text['title-operator_panel']['en-us'] = "Operator Panel";
-$text['title-operator_panel']['ar-eg'] = "";
+$text['title-operator_panel']['en-us'] = "操作面板";
+$text['title-operator_panel']['ar-eg'] = "Operator Panel";
 $text['title-operator_panel']['de-at'] = "Bedienfeld"; //copied from de-de
 $text['title-operator_panel']['de-ch'] = "Bedienfeld"; //copied from de-de
 $text['title-operator_panel']['de-de'] = "Bedienfeld";
@@ -221,8 +221,8 @@ $text['label-recording']['ru-ru'] = "Запись";
 $text['label-recording']['sv-se'] = "Inspelning";
 $text['label-recording']['uk-ua'] = "Ð—Ð°Ð¿Ð¸Ñ";
 
-$text['label-record']['en-us'] = "Record";
-$text['label-record']['ar-eg'] = "";
+$text['label-record']['en-us'] = "记录";
+$text['label-record']['ar-eg'] = "Record";
 $text['label-record']['de-at'] = "Aufnehmen"; //copied from de-de
 $text['label-record']['de-ch'] = "Aufnehmen"; //copied from de-de
 $text['label-record']['de-de'] = "Aufnehmen";
@@ -281,8 +281,8 @@ $text['label-no_extensions_found']['ru-ru'] = "Внутренних номеро
 $text['label-no_extensions_found']['sv-se'] = "Ingen anknytning funnen.";
 $text['label-no_extensions_found']['uk-ua'] = "ÐÐµ Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ Ñ€Ð¾Ð·ÑˆÐ¸Ñ€ÐµÐ½ÑŒ";
 
-$text['label-kill']['en-us'] = "Hangup";
-$text['label-kill']['ar-eg'] = "";
+$text['label-kill']['en-us'] = "挂断";
+$text['label-kill']['ar-eg'] = "Hangup";
 $text['label-kill']['de-at'] = "Abwürgen"; //copied from de-de
 $text['label-kill']['de-ch'] = "Abwürgen"; //copied from de-de
 $text['label-kill']['de-de'] = "Abwürgen";

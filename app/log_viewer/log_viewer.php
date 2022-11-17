@@ -91,7 +91,7 @@
 	echo "			".$text['label-filter']." <input type='text' name='filter' class='formfld' style='width: 150px; text-align: center; margin-right: 20px;' value=\"".escape($_POST['filter'])."\" onclick='this.select();'>";
 	echo "			<label style='margin-right: 20px; margin-top: 4px;'><input type='checkbox' name='line_number' id='line_number' value='1' ".(($_POST['line_number'] == 1) ? 'checked' : null)."> ".$text['label-line_number']."</label>";
 	echo "			<label style='margin-right: 20px; margin-top: 4px;'><input type='checkbox' name='sort' id='sort' value='desc' ".(($_POST['sort'] == 'desc') ? 'checked' : null)."> ".$text['label-sort']."</label>";
-	echo "			Display <input type='text' class='formfld' style='width: 50px; text-align: center;' name='size' value=\"".escape($_POST['size'])."\" onclick='this.select();'> ".$text['label-size']."";
+	echo "			".$text['label-display']." <input type='text' class='formfld' style='width: 50px; text-align: center;' name='size' value=\"".escape($_POST['size'])."\" onclick='this.select();'> ".$text['label-size']."";
 	echo "			<input type='submit' class='btn' style='margin-left: 20px;' name='submit' value=\"".$text['button-reload']."\">";
 	if (permission_exists('log_download')) {
 		echo "		<input type='button' class='btn' value='".$text['button-download']."' onclick=\"document.location.href='log_viewer.php?a=download&t=logs';\" />\n";
@@ -176,7 +176,7 @@
 		}
 
 		//echo "Log File Size: " . $file_size . " bytes. <br />";
-		echo "				<td style='text-align: right;color: #FFFFFF;'>".$text['label-displaying']." ".number_format($user_file_size,0,'.',',')." of ".number_format($file_size,0,'.',',')." ".$text['label-bytes'].". </td>";
+		echo "				<td style='text-align: right;color: #FFFFFF;'>".$text['label-displaying']." ".number_format($user_file_size,0,'.',',')." / ".number_format($file_size,0,'.',',')." ".$text['label-bytes'].". </td>";
 		echo "			</tr>";
 		echo "		</table>";
 		echo "		<hr size='1' style='color: #fff;'>";

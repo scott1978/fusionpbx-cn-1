@@ -24,7 +24,13 @@ class authentication {
 	 * Called when the object is created
 	 */
 	public function __construct() {
-
+			//connect to the database if not connected
+			if (!$this->db) {
+				require_once "resources/classes/database.php";
+				$database = new database;
+				$database->connect();
+				$this->db = $database->db;
+			}
 	}
 
 	/**
@@ -112,26 +118,61 @@ class authentication {
 		//get the domain name from the username
 			if ($_SESSION["user"]["unique"]["text"] != "global") {
 				$username_array = explode("@", check_str($_REQUEST["username"]));
-				if (count($username_array) > 1) {
-					//get the domain name
-						$domain_name =  $username_array[count($username_array) -1];
+				$username_array_len = count($username_array);
+
+				while ($username_array_len > 0) {
+
+					//get the domain_name and username
+					if ($username_array_len == 1) {
+						$sql = "select * from v_users where username='".$username_array[0]."' and user_enabled='true' limit 1";
+						$prep_statement = $this->db->prepare(check_sql($sql));
+						$prep_statement->execute();
+						$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+						foreach ($result as &$row) {
+							$domain_uuid = $row["domain_uuid"];
+							break; //limit to 1 row
+						}
+
+						$sql = "select * from v_domains where domain_uuid='".$domain_uuid."' and domain_enabled='true' limit 1";
+						$prep_statement = $this->db->prepare(check_sql($sql));
+						$prep_statement->execute();
+						$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+						foreach ($result as &$row) {
+							$domain_name = $row["domain_name"];
+							break; //limit to 1 row
+						}
+
+						$username = $username_array[0];
+						unset($sql, $prep_statement, $result, $row, $domain_uuid);
+					} else {
+						$domain_name = $username_array[$username_array_len-1];
+						$username = substr(check_str($_REQUEST["username"]), 0, -(strlen($domain_name)+1));
+					}
+
+					// check domain_name
+					if (strlen($domain_name) == 0) {
+						break;
+					}
+
 					//check if the domain from the username exists then set the domain_uuid
-						$domain_exists = false;
-						foreach ($_SESSION['domains'] as $row) {
-							if (lower_case($row['domain_name']) == lower_case($domain_name)) {
-								$this->domain_uuid = $row['domain_uuid'];
-								$domain_exists = true;
-								break;
-							}
+					$domain_exists = false;
+					foreach ($_SESSION['domains'] as $row) {
+						if (lower_case($row['domain_name']) == lower_case($domain_name)) {
+							$this->domain_uuid = $row['domain_uuid'];
+							$domain_exists = true;
+							break;
 						}
+					}
 					//if the domain exists then set domain_name and update the username
-						if ($domain_exists) {
-							$this->domain_name = $domain_name;
-							$this->username = substr(check_str($_REQUEST["username"]), 0, -(strlen($domain_name)+1));
-							$_SESSION['domain_uuid'] = $this->domain_uuid;
-						}
+					if ($domain_exists) {
+						$this->domain_name = $domain_name;
+						$this->username = $username;
+						$_SESSION['domain_uuid'] = $this->domain_uuid;
+					}
 					//unset the domain name variable
-						unset($domain_name);
+					unset($domain_name, $username);
+
+					break;
 				}
 			}
 

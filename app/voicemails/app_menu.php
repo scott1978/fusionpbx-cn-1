@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Voicemail";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "语音信箱";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Voicemail";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Sprachnachrichten";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Sprachnachrichten";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "";
@@ -25,5 +25,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/voicemails/voicemails.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "11";
 
 ?>

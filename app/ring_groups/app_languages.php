@@ -601,8 +601,8 @@ $text['label-missed_call']['ru-ru'] = "Пропущенный вызов";
 $text['label-missed_call']['sv-se'] = "Missat Samtal";
 $text['label-missed_call']['uk-ua'] = "пропущений Дзвінок";
 
-$text['label-forwarding']['en-us'] = "Forwarding";
-$text['label-forwarding']['ar-eg'] = "إعادة توجيه";
+$text['label-forwarding']['en-us'] = "转发";
+$text['label-forwarding']['ar-eg'] = "Forwarding";
 $text['label-forwarding']['de-at'] = "Weiterleiten"; //copied from de-de
 $text['label-forwarding']['de-ch'] = "Weiterleiten"; //copied from de-de
 $text['label-forwarding']['de-de'] = "Weiterleiten";
@@ -661,8 +661,8 @@ $text['label-forward_destination']['ru-ru'] = "Номер";
 $text['label-forward_destination']['sv-se'] = "Nummer";
 $text['label-forward_destination']['uk-ua'] = "";
 
-$text['label-extension']['en-us'] = "Extension";
-$text['label-extension']['ar-eg'] = "";
+$text['label-extension']['en-us'] = "分机";
+$text['label-extension']['ar-eg'] = "Extension";
 $text['label-extension']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['label-extension']['de-ch'] = "Nebenstelle"; //copied from de-de
 $text['label-extension']['de-de'] = "Nebenstelle";
@@ -1001,8 +1001,8 @@ $text['label-call-forward']['ru-ru'] = "Переадресация вызова"
 $text['label-call-forward']['sv-se'] = "Vidarekoppling";
 $text['label-call-forward']['uk-ua'] = "Переадресація";
 
-$text['header-ring-group-forward']['en-us'] = "Ring Group Forward";
-$text['header-ring-group-forward']['ar-eg'] = "";
+$text['header-ring-group-forward']['en-us'] = "振铃组转发";
+$text['header-ring-group-forward']['ar-eg'] = "Ring Group Forward";
 $text['header-ring-group-forward']['de-at'] = "Rufgruppe weiterleiten"; //copied from de-de
 $text['header-ring-group-forward']['de-ch'] = "Rufgruppe weiterleiten"; //copied from de-de
 $text['header-ring-group-forward']['de-de'] = "Rufgruppe weiterleiten";

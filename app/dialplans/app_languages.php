@@ -1,8 +1,8 @@
 <?php
 #This file was last reorganized on 27th of September 2017 01:41:51 PM UTC
 
-$text['title-dialplan_manager']['en-us'] = "Dialplan Manager";
-$text['title-dialplan_manager']['ar-eg'] = "";
+$text['title-dialplan_manager']['en-us'] = "拨号规则管理";
+$text['title-dialplan_manager']['ar-eg'] = "Dialplan Manager";
 $text['title-dialplan_manager']['de-at'] = "Wählplan Einstellungen"; //copied from de-de
 $text['title-dialplan_manager']['de-ch'] = "Wählplan Einstellungen"; //copied from de-de
 $text['title-dialplan_manager']['de-de'] = "Wählplan Einstellungen";
@@ -21,8 +21,8 @@ $text['title-dialplan_manager']['ru-ru'] = "Управление Планом Н
 $text['title-dialplan_manager']['sv-se'] = "Nummerplan Inställningar";
 $text['title-dialplan_manager']['uk-ua'] = "Керування маршрутизацією";
 
-$text['title-dialplan_edit']['en-us'] = "Dialplan";
-$text['title-dialplan_edit']['ar-eg'] = "";
+$text['title-dialplan_edit']['en-us'] = "拨号规则详情";
+$text['title-dialplan_edit']['ar-eg'] = "Dialplan";
 $text['title-dialplan_edit']['de-at'] = "Wählplan"; //copied from de-de
 $text['title-dialplan_edit']['de-ch'] = "Wählplan"; //copied from de-de
 $text['title-dialplan_edit']['de-de'] = "Wählplan";
@@ -61,8 +61,8 @@ $text['title-dialplan_detail']['ru-ru'] = "Подробная информаци
 $text['title-dialplan_detail']['sv-se'] = "Nummerplan Detaljer";
 $text['title-dialplan_detail']['uk-ua'] = "Деталі маршрутизації";
 
-$text['title-dialplan_add']['en-us'] = "Dialplan";
-$text['title-dialplan_add']['ar-eg'] = "";
+$text['title-dialplan_add']['en-us'] = "拨号规则";
+$text['title-dialplan_add']['ar-eg'] = "Dialplan";
 $text['title-dialplan_add']['de-at'] = "Wählplan"; //copied from de-de
 $text['title-dialplan_add']['de-ch'] = "Wählplan"; //copied from de-de
 $text['title-dialplan_add']['de-de'] = "Wählplan";
@@ -121,8 +121,8 @@ $text['title-time_conditions']['ru-ru'] = "Временные условия";
 $text['title-time_conditions']['sv-se'] = "Tids Förhållande";
 $text['title-time_conditions']['uk-ua'] = "Часові умови";
 
-$text['title-outbound_routes']['en-us'] = "Outbound Routes";
-$text['title-outbound_routes']['ar-eg'] = "";
+$text['title-outbound_routes']['en-us'] = "呼出路由";
+$text['title-outbound_routes']['ar-eg'] = "Outbound Routes";
 $text['title-outbound_routes']['de-at'] = "Ausgehende Routen"; //copied from de-de
 $text['title-outbound_routes']['de-ch'] = "Ausgehende Routen"; //copied from de-de
 $text['title-outbound_routes']['de-de'] = "Ausgehende Routen";
@@ -141,8 +141,8 @@ $text['title-outbound_routes']['ru-ru'] = "Исходящие маршруты";
 $text['title-outbound_routes']['sv-se'] = "Utgående Router";
 $text['title-outbound_routes']['uk-ua'] = "Маршрути вихідних дзвінків";
 
-$text['title-inbound_routes']['en-us'] = "Inbound Routes";
-$text['title-inbound_routes']['ar-eg'] = "";
+$text['title-inbound_routes']['en-us'] = "呼入路由";
+$text['title-inbound_routes']['ar-eg'] = "Inbound Routes";
 $text['title-inbound_routes']['de-at'] = "Eingehende Routen"; //copied from de-de
 $text['title-inbound_routes']['de-ch'] = "Eingehende Routen"; //copied from de-de
 $text['title-inbound_routes']['de-de'] = "Eingehende Routen";
@@ -1001,8 +1001,8 @@ $text['optgroup-applications']['ru-ru'] = "Приложения";
 $text['optgroup-applications']['sv-se'] = "Applikationer";
 $text['optgroup-applications']['uk-ua'] = "Додаток";
 
-$text['label-tag']['en-us'] = "Tag";
-$text['label-tag']['ar-eg'] = "";
+$text['label-tag']['en-us'] = "标签";
+$text['label-tag']['ar-eg'] = "Tag";
 $text['label-tag']['de-at'] = "Bezeichnung"; //copied from de-de
 $text['label-tag']['de-ch'] = "Bezeichnung"; //copied from de-de
 $text['label-tag']['de-de'] = "Bezeichnung";
@@ -1021,8 +1021,8 @@ $text['label-tag']['ru-ru'] = "Тег";
 $text['label-tag']['sv-se'] = "Tag";
 $text['label-tag']['uk-ua'] = "Тег";
 
-$text['label-number']['en-us'] = "Number";
-$text['label-number']['ar-eg'] = "";
+$text['label-number']['en-us'] = "号码";
+$text['label-number']['ar-eg'] = "Number";
 $text['label-number']['de-at'] = "Nummer"; //copied from de-de
 $text['label-number']['de-ch'] = "Nummer"; //copied from de-de
 $text['label-number']['de-de'] = "Nummer";
@@ -1041,8 +1041,8 @@ $text['label-number']['ru-ru'] = "Номер";
 $text['label-number']['sv-se'] = "Nummer";
 $text['label-number']['uk-ua'] = "Номер";
 
-$text['label-inline']['en-us'] = "Inline";
-$text['label-inline']['ar-eg'] = "";
+$text['label-inline']['en-us'] = "内联";
+$text['label-inline']['ar-eg'] = "Inline";
 $text['label-inline']['de-at'] = "Inline"; //copied from de-de
 $text['label-inline']['de-ch'] = "Inline"; //copied from de-de
 $text['label-inline']['de-de'] = "Inline";
@@ -1061,8 +1061,8 @@ $text['label-inline']['ru-ru'] = "inline";
 $text['label-inline']['sv-se'] = "Inline";
 $text['label-inline']['uk-ua'] = "Inline";
 
-$text['label-group']['en-us'] = "Group";
-$text['label-group']['ar-eg'] = "";
+$text['label-group']['en-us'] = "组";
+$text['label-group']['ar-eg'] = "Group";
 $text['label-group']['de-at'] = "Gruppe"; //copied from de-de
 $text['label-group']['de-ch'] = "Gruppe"; //copied from de-de
 $text['label-group']['de-de'] = "Gruppe";
@@ -1121,8 +1121,8 @@ $text['label-expression']['ru-ru'] = "Выражение";
 $text['label-expression']['sv-se'] = "Uttryck";
 $text['label-expression']['uk-ua'] = "Вираз";
 
-$text['label-domain']['en-us'] = "Domain";
-$text['label-domain']['ar-eg'] = "";
+$text['label-domain']['en-us'] = "域";
+$text['label-domain']['ar-eg'] = "Domain";
 $text['label-domain']['de-at'] = "Domäne"; //copied from de-de
 $text['label-domain']['de-ch'] = "Domäne"; //copied from de-de
 $text['label-domain']['de-de'] = "Domäne";
@@ -1161,8 +1161,8 @@ $text['label-dialplan_detail']['ru-ru'] = "Подробная информаци
 $text['label-dialplan_detail']['sv-se'] = "Nummerplan Detaljer";
 $text['label-dialplan_detail']['uk-ua'] = "Деталі маршрутизації";
 
-$text['label-data']['en-us'] = "Data";
-$text['label-data']['ar-eg'] = "";
+$text['label-data']['en-us'] = "数据";
+$text['label-data']['ar-eg'] = "Data";
 $text['label-data']['de-at'] = "Daten"; //copied from de-de
 $text['label-data']['de-ch'] = "Daten"; //copied from de-de
 $text['label-data']['de-de'] = "Daten";
@@ -1181,8 +1181,8 @@ $text['label-data']['ru-ru'] = "Аргумент";
 $text['label-data']['sv-se'] = "Data";
 $text['label-data']['uk-ua'] = "Дані";
 
-$text['label-hostname']['en-us'] = "Hostname";
-$text['label-hostname']['ar-eg'] = "";
+$text['label-hostname']['en-us'] = "主机名";
+$text['label-hostname']['ar-eg'] = "Hostname";
 $text['label-hostname']['de-at'] = "Hostname"; //copied from de-de
 $text['label-hostname']['de-ch'] = "Hostname"; //copied from de-de
 $text['label-hostname']['de-de'] = "Hostname";
@@ -1201,8 +1201,8 @@ $text['label-hostname']['ru-ru'] = "Имя Хоста";
 $text['label-hostname']['sv-se'] = "Hostname";
 $text['label-hostname']['uk-ua'] = "Назва хоста";
 
-$text['label-continue']['en-us'] = "Continue";
-$text['label-continue']['ar-eg'] = "";
+$text['label-continue']['en-us'] = "继续执行下一条拨号规则";
+$text['label-continue']['ar-eg'] = "Continue";
 $text['label-continue']['de-at'] = "Fortfahren"; //copied from de-de
 $text['label-continue']['de-ch'] = "Fortfahren"; //copied from de-de
 $text['label-continue']['de-de'] = "Fortfahren";
@@ -1221,8 +1221,8 @@ $text['label-continue']['ru-ru'] = "Продолжить";
 $text['label-continue']['sv-se'] = "Fortsätt";
 $text['label-continue']['uk-ua'] = "Продовжити";
 
-$text['label-context']['en-us'] = "Context";
-$text['label-context']['ar-eg'] = "";
+$text['label-context']['en-us'] = "上下文";
+$text['label-context']['ar-eg'] = "Context";
 $text['label-context']['de-at'] = "Kontext"; //copied from de-de
 $text['label-context']['de-ch'] = "Kontext"; //copied from de-de
 $text['label-context']['de-de'] = "Kontext";
@@ -1241,8 +1241,8 @@ $text['label-context']['ru-ru'] = "Контекст";
 $text['label-context']['sv-se'] = "Context";
 $text['label-context']['uk-ua'] = "Контекст";
 
-$text['label-condition_2']['en-us'] = "Condition 2";
-$text['label-condition_2']['ar-eg'] = "";
+$text['label-condition_2']['en-us'] = "条件2";
+$text['label-condition_2']['ar-eg'] = "Condition 2";
 $text['label-condition_2']['de-at'] = "Bedingung 2"; //copied from de-de
 $text['label-condition_2']['de-ch'] = "Bedingung 2"; //copied from de-de
 $text['label-condition_2']['de-de'] = "Bedingung 2";
@@ -1261,8 +1261,8 @@ $text['label-condition_2']['ru-ru'] = "Условие 2";
 $text['label-condition_2']['sv-se'] = "Tillstånd 2";
 $text['label-condition_2']['uk-ua'] = "Умова 2";
 
-$text['label-condition_1']['en-us'] = "Condition 1";
-$text['label-condition_1']['ar-eg'] = "";
+$text['label-condition_1']['en-us'] = "条件1";
+$text['label-condition_1']['ar-eg'] = "Condition 1";
 $text['label-condition_1']['de-at'] = "Bedingung 1"; //copied from de-de
 $text['label-condition_1']['de-ch'] = "Bedingung 1"; //copied from de-de
 $text['label-condition_1']['de-de'] = "Bedingung 1";
@@ -1281,8 +1281,8 @@ $text['label-condition_1']['ru-ru'] = "Условие 1";
 $text['label-condition_1']['sv-se'] = "Tillstånd 1";
 $text['label-condition_1']['uk-ua'] = "Умова 1";
 
-$text['label-break']['en-us'] = "Break";
-$text['label-break']['ar-eg'] = "";
+$text['label-break']['en-us'] = "退出";
+$text['label-break']['ar-eg'] = "Break";
 $text['label-break']['de-at'] = "Abbrechen"; //copied from de-de
 $text['label-break']['de-ch'] = "Abbrechen"; //copied from de-de
 $text['label-break']['de-de'] = "Abbrechen";
@@ -1321,8 +1321,8 @@ $text['label-application']['ru-ru'] = "Приложение";
 $text['label-application']['sv-se'] = "Applikation";
 $text['label-application']['uk-ua'] = "Додаток";
 
-$text['label-action_2']['en-us'] = "Action 2";
-$text['label-action_2']['ar-eg'] = "";
+$text['label-action_2']['en-us'] = "动作2";
+$text['label-action_2']['ar-eg'] = "Action 2";
 $text['label-action_2']['de-at'] = "Aktion 2"; //copied from de-de
 $text['label-action_2']['de-ch'] = "Aktion 2"; //copied from de-de
 $text['label-action_2']['de-de'] = "Aktion 2";
@@ -1341,8 +1341,8 @@ $text['label-action_2']['ru-ru'] = "Действие 2";
 $text['label-action_2']['sv-se'] = "Aktion 2";
 $text['label-action_2']['uk-ua'] = "Дія 2";
 
-$text['label-action_1']['en-us'] = "Action 1";
-$text['label-action_1']['ar-eg'] = "";
+$text['label-action_1']['en-us'] = "动作1";
+$text['label-action_1']['ar-eg'] = "Action 1";
 $text['label-action_1']['de-at'] = "Aktion 1"; //copied from de-de
 $text['label-action_1']['de-ch'] = "Aktion 1"; //copied from de-de
 $text['label-action_1']['de-de'] = "Aktion 1";
@@ -1381,7 +1381,7 @@ $text['header-time_conditions']['ru-ru'] = "Временные Условия";
 $text['header-time_conditions']['sv-se'] = "Tids Förhållande";
 $text['header-time_conditions']['uk-ua'] = "Часові умови";
 
-$text['header-queues']['en-us'] = "Queues";
+$text['header-queues']['en-us'] = "队列";
 $text['header-queues']['ar-eg'] = "";
 $text['header-queues']['de-at'] = "Warteschlangen"; //copied from de-de
 $text['header-queues']['de-ch'] = "Warteschlangen"; //copied from de-de
@@ -1401,8 +1401,8 @@ $text['header-queues']['ru-ru'] = "Очереди";
 $text['header-queues']['sv-se'] = "Kö:er";
 $text['header-queues']['uk-ua'] = "Черги";
 
-$text['header-outbound_routes']['en-us'] = "Outbound Routes";
-$text['header-outbound_routes']['ar-eg'] = "";
+$text['header-outbound_routes']['en-us'] = "呼出路由";
+$text['header-outbound_routes']['ar-eg'] = "Outbound Routes";
 $text['header-outbound_routes']['de-at'] = "Ausgehende Routen"; //copied from de-de
 $text['header-outbound_routes']['de-ch'] = "Ausgehende Routen"; //copied from de-de
 $text['header-outbound_routes']['de-de'] = "Ausgehende Routen";
@@ -1421,8 +1421,8 @@ $text['header-outbound_routes']['ru-ru'] = "Исходящий Маршрут";
 $text['header-outbound_routes']['sv-se'] = "Utgående Router";
 $text['header-outbound_routes']['uk-ua'] = "Маршрути вихідних дзвінків";
 
-$text['header-inbound_routes']['en-us'] = "Inbound Routes";
-$text['header-inbound_routes']['ar-eg'] = "";
+$text['header-inbound_routes']['en-us'] = "呼入路由";
+$text['header-inbound_routes']['ar-eg'] = "Inbound Routes";
 $text['header-inbound_routes']['de-at'] = "Eingehende Routen"; //copied from de-de
 $text['header-inbound_routes']['de-ch'] = "Eingehende Routen"; //copied from de-de
 $text['header-inbound_routes']['de-de'] = "Eingehende Routen";
@@ -1441,8 +1441,8 @@ $text['header-inbound_routes']['ru-ru'] = "Входящий Маршрут";
 $text['header-inbound_routes']['sv-se'] = "Inkommande Router";
 $text['header-inbound_routes']['uk-ua'] = "Маршрути вхідних дзвінків";
 
-$text['header-dialplan_manager']['en-us'] = "Dialplan Manager";
-$text['header-dialplan_manager']['ar-eg'] = "";
+$text['header-dialplan_manager']['en-us'] = "拨号规则管理";
+$text['header-dialplan_manager']['ar-eg'] = "Dialplan Manager";
 $text['header-dialplan_manager']['de-at'] = "Wählplan Einstellungen"; //copied from de-de
 $text['header-dialplan_manager']['de-ch'] = "Wählplan Einstellungen"; //copied from de-de
 $text['header-dialplan_manager']['de-de'] = "Wählplan Einstellungen";
@@ -1481,8 +1481,8 @@ $text['header-dialplan_detail']['ru-ru'] = "Подробная информац�
 $text['header-dialplan_detail']['sv-se'] = "Nummerplan Detaljer";
 $text['header-dialplan_detail']['uk-ua'] = "Деталі маршрутизації";
 
-$text['header-dialplan-edit']['en-us'] = "Dialplan";
-$text['header-dialplan-edit']['ar-eg'] = "";
+$text['header-dialplan-edit']['en-us'] = "拨号规则";
+$text['header-dialplan-edit']['ar-eg'] = "Dialplan";
 $text['header-dialplan-edit']['de-at'] = "Wählplan"; //copied from de-de
 $text['header-dialplan-edit']['de-ch'] = "Wählplan"; //copied from de-de
 $text['header-dialplan-edit']['de-de'] = "Wählplan";
@@ -1501,8 +1501,8 @@ $text['header-dialplan-edit']['ru-ru'] = "План Нумерации";
 $text['header-dialplan-edit']['sv-se'] = "Nummerplan";
 $text['header-dialplan-edit']['uk-ua'] = "Маршрутизація";
 
-$text['header-dialplan-add']['en-us'] = "Dialplan";
-$text['header-dialplan-add']['ar-eg'] = "";
+$text['header-dialplan-add']['en-us'] = "拨号规则";
+$text['header-dialplan-add']['ar-eg'] = "Dialplan";
 $text['header-dialplan-add']['de-at'] = "Wählplan"; //copied from de-de
 $text['header-dialplan-add']['de-ch'] = "Wählplan"; //copied from de-de
 $text['header-dialplan-add']['de-de'] = "Wählplan";
@@ -1581,7 +1581,7 @@ $text['description-time_conditions']['ru-ru'] = "Временные услови
 $text['description-time_conditions']['sv-se'] = "Tidsvillkor styr samtal baserat på tidsvillkor. Du kan använda Tidsvillkor för att skicka samtal till IVR Meny, Externa nummer, Script eller andra destinationer.";
 $text['description-time_conditions']['uk-ua'] = "Маршрут дзвінків буде залежати від часу. Можна використовувати для переадресації на голосове меню (IVR), на зовнішні номери, сценарії, або інші напрямки.";
 
-$text['description-queues']['en-us'] = "Queues are used to setup waiting lines for callers. Also known as FIFO Queues.";
+$text['description-queues']['en-us'] = "队列用于为呼叫者设置等待线路。也称为FIFO队列。";
 $text['description-queues']['ar-eg'] = "";
 $text['description-queues']['de-at'] = "Warteschlangen werden benutzt um Anrufer zu reihen. Auch als FIFO Warteschlangen bekannt."; //copied from de-de
 $text['description-queues']['de-ch'] = "Warteschlangen werden benutzt um Anrufer zu reihen. Auch als FIFO Warteschlangen bekannt."; //copied from de-de
@@ -1601,8 +1601,8 @@ $text['description-queues']['ru-ru'] = "Очереди используются 
 $text['description-queues']['sv-se'] = "Kö används för att kö:a inkommande samtal. Även känd som FIFO (Firts In First Out) Kö.";
 $text['description-queues']['uk-ua'] = "Черги використовуються для встановлення очікування на лінії для тих, хто дзвонить. Також відомо як черги FIFO. ";
 
-$text['description-outbound_routes']['en-us'] = "Route outbound calls to gateways, tdm, enum and more. When a call matches the conditions the call to outbound routes.";
-$text['description-outbound_routes']['ar-eg'] = "";
+$text['description-outbound_routes']['en-us'] = "将出站呼叫路由到网关、tdm、enum等。当呼叫符合条件时呼叫出站路由";
+$text['description-outbound_routes']['ar-eg'] = "Route outbound calls to gateways, tdm, enum and more. When a call matches the conditions the call to outbound routes.";
 $text['description-outbound_routes']['de-at'] = "Ausgehende Anrufe zu Gateways, TDM, ENUM und andere weiterleiten, wenn der Anruf die Bedingungen für die ausgehenden Routen erfüllt."; //copied from de-de
 $text['description-outbound_routes']['de-ch'] = "Ausgehende Anrufe zu Gateways, TDM, ENUM und andere weiterleiten, wenn der Anruf die Bedingungen für die ausgehenden Routen erfüllt."; //copied from de-de
 $text['description-outbound_routes']['de-de'] = "Ausgehende Anrufe zu Gateways, TDM, ENUM und andere weiterleiten, wenn der Anruf die Bedingungen für die ausgehenden Routen erfüllt.";
@@ -1621,8 +1621,8 @@ $text['description-outbound_routes']['ru-ru'] = "Маршрутизация ис
 $text['description-outbound_routes']['sv-se'] = "Styr utgående samtal till Gateways, tdm, enum mm. När ett samtal matchar villkoren så styrs samtalet till utgående route.";
 $text['description-outbound_routes']['uk-ua'] = "Спрямовує вихідні дзвінки на шлюзи, TDM, ENUM на інше, якщо дзвінок відповідає умовам вихідної маршрутизації.";
 
-$text['description-inbound_routes']['en-us'] = "Route incoming calls to destinations based on one or more conditions. It can send incoming calls to an IVR Menu, Call Group, Extension, External Number, Script. Order is important when an anti-action is used or when there are multiple conditions that match.";
-$text['description-inbound_routes']['ar-eg'] = "";
+$text['description-inbound_routes']['en-us'] = "根据一个或多个条件将来电路由到目的地。它可以将来电发送到：IVR、振铃组、分机、外部电话、脚本。当使用反动作或存在多个匹配条件时，序号很重要";
+$text['description-inbound_routes']['ar-eg'] = "Route incoming calls to destinations based on one or more conditions. It can send incoming calls to an IVR Menu, Call Group, Extension, External Number, Script. Order is important when an anti-action is used or when there are multiple conditions that match.";
 $text['description-inbound_routes']['de-at'] = "Eingehende Anrufe anhand Bedingungen routen. Anrufe können an IVR Menüs, Rufgruppen, Nebenstellen, externe Nummern oder Skripte weitergeleitet werden. Die Reihenfolge ist entscheidend, wenn eine Anti-Aktion gesetzt ist oder wenn mehrere Bedingungen angelegt wurden."; //copied from de-de
 $text['description-inbound_routes']['de-ch'] = "Eingehende Anrufe anhand Bedingungen routen. Anrufe können an IVR Menüs, Rufgruppen, Nebenstellen, externe Nummern oder Skripte weitergeleitet werden. Die Reihenfolge ist entscheidend, wenn eine Anti-Aktion gesetzt ist oder wenn mehrere Bedingungen angelegt wurden."; //copied from de-de
 $text['description-inbound_routes']['de-de'] = "Eingehende Anrufe anhand Bedingungen routen. Anrufe können an IVR Menüs, Rufgruppen, Nebenstellen, externe Nummern oder Skripte weitergeleitet werden. Die Reihenfolge ist entscheidend, wenn eine Anti-Aktion gesetzt ist oder wenn mehrere Bedingungen angelegt wurden.";
@@ -1641,8 +1641,8 @@ $text['description-inbound_routes']['ru-ru'] = "Маршрутизация вх�
 $text['description-inbound_routes']['sv-se'] = "Styr inkommande samtal till destinationer baserat på ett eller fler villkor. Den kan styra samtal till IVR Meny, Ring Grupp, Anknytning, Externt Nummer, Script. Ordningen är viktig när en anti-aktion används eller när flera villkor matchar.";
 $text['description-inbound_routes']['uk-ua'] = "Направляє вхідні дзвінки відповідно до умов. Можна спрямувати вхідні дзвінки на голосове меню (IVR), групу, розширення, зовнішній номер, сценарій. Порядок важливий якщо використовується анти-дія або за наявності декількох умов, які співпадають.";
 
-$text['description-dialplan_manager-superadmin']['en-us'] = "The dialplan is used to setup call destinations based on conditions and context. You can use the dialplan to send calls to gateways, auto attendants, external numbers, to scripts, or any destination.";
-$text['description-dialplan_manager-superadmin']['ar-eg'] = "";
+$text['description-dialplan_manager-superadmin']['en-us'] = "拨号规则用于根据条件和上下文设置呼叫目的地。您可以使用拨号规则将呼叫发送到网关，自动助理，外部号码，脚本或任何目的地";
+$text['description-dialplan_manager-superadmin']['ar-eg'] = "The dialplan is used to setup call destinations based on conditions and context. You can use the dialplan to send calls to gateways, auto attendants, external numbers, to scripts, or any destination.";
 $text['description-dialplan_manager-superadmin']['de-at'] = "Der Wählplan wird für die Anrufsteuerung basierend auf Bedingungen und Kontext benutzt. Sie können den Wählplan dazu benutzen um Anrufe an Gateways, automatische Vermittlungen, externe Nummern, Skripte oder andere Anwendungen zu routen."; //copied from de-de
 $text['description-dialplan_manager-superadmin']['de-ch'] = "Der Wählplan wird für die Anrufsteuerung basierend auf Bedingungen und Kontext benutzt. Sie können den Wählplan dazu benutzen um Anrufe an Gateways, automatische Vermittlungen, externe Nummern, Skripte oder andere Anwendungen zu routen."; //copied from de-de
 $text['description-dialplan_manager-superadmin']['de-de'] = "Der Wählplan wird für die Anrufsteuerung basierend auf Bedingungen und Kontext benutzt. Sie können den Wählplan dazu benutzen um Anrufe an Gateways, automatische Vermittlungen, externe Nummern, Skripte oder andere Anwendungen zu routen.";
@@ -1681,8 +1681,8 @@ $text['description-dialplan_manager']['ru-ru'] = "В Плане Нумераци
 $text['description-dialplan_manager']['sv-se'] = "Nummerplanen ger en vy över några av funktionskoderna samt IVR Meny, Konferenser, Kö:er och andra destinationer.";
 $text['description-dialplan_manager']['uk-ua'] = "В маршрутизації можна побачити деякі особливості, такі як голосові меню (IVR), конференції, черги і інші напрямки.";
 
-$text['description-dialplan-edit']['en-us'] = "Dialplan include general settings.";
-$text['description-dialplan-edit']['ar-eg'] = "";
+$text['description-dialplan-edit']['en-us'] = "拨号规则设置";
+$text['description-dialplan-edit']['ar-eg'] = "Dialplan include general settings.";
 $text['description-dialplan-edit']['de-at'] = "Wählplan umfasst Standardeinstellungen"; //copied from de-de
 $text['description-dialplan-edit']['de-ch'] = "Wählplan umfasst Standardeinstellungen"; //copied from de-de
 $text['description-dialplan-edit']['de-de'] = "Wählplan umfasst Standardeinstellungen";
