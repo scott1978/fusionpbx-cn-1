@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Gateways";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "البوابات";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "网关管理";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Gateways";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Gateways";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Gateways";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Pasarelas";
@@ -24,5 +24,7 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/app/gateways/gateways.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "3";
 
 ?>

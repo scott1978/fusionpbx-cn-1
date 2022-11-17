@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Default Settings";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "默认设置";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Default Settings";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Standardeinstellungen";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Standardeinstellungen";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Conf. Predeterminada";
@@ -24,5 +24,7 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/core/default_settings/default_settings.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "5";
 
 ?>

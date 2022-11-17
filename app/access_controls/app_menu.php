@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Access Controls";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "عناصر التحكم في الوصول";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "访问控制";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Access Controls";
 	$apps[$x]['menu'][$y]['title']['de-at'] = " Zugriffskontrolle";
 	$apps[$x]['menu'][$y]['title']['de-ch'] = "";
 	$apps[$x]['menu'][$y]['title']['de-de'] = " Zugriffskontrolle";
@@ -25,5 +25,7 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/app/access_controls/access_controls.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "4";
 
 ?>

@@ -2,7 +2,7 @@
 
 	$y=0;
 	$apps[$x]['menu'][$y]['title']['en-us'] = 'PIN Numbers';
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "PIN Numbers";
 	$apps[$x]['menu'][$y]['title']['de-at'] = 'PIN Nummern';
 	$apps[$x]['menu'][$y]['title']['de-de'] = 'PIN Nummern';
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "";
@@ -26,5 +26,7 @@
 	//$apps[$x]['menu'][$y]['groups'][] = 'superadmin';
 	//$apps[$x]['menu'][$y]['groups'][] = 'admin';
 	//$apps[$x]['menu'][$y]['groups'][] = 'user';
+	$apps[$x]['menu'][$y]['enabled'] = "false";
+	$apps[$x]['menu'][$y]['order'] = "30";
 
 ?>

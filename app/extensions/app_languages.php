@@ -1,8 +1,8 @@
 <?php
 #This file was last reorganized on 27th of September 2017 01:41:51 PM UTC
 
-$text['title-extensions']['en-us'] = "Extensions";
-$text['title-extensions']['ar-eg'] = "الأرقام الداخلية";
+$text['title-extensions']['en-us'] = "分机管理";
+$text['title-extensions']['ar-eg'] = "Extensions";
 $text['title-extensions']['de-at'] = "Nebenstellen"; //copied from de-de
 $text['title-extensions']['de-ch'] = "Nebenstellen"; //copied from de-de
 $text['title-extensions']['de-de'] = "Nebenstellen";
@@ -21,8 +21,8 @@ $text['title-extensions']['ru-ru'] = "";
 $text['title-extensions']['sv-se'] = "Anknytningar";
 $text['title-extensions']['uk-ua'] = "Розширення";
 
-$text['title-extension-edit']['en-us'] = "Extension";
-$text['title-extension-edit']['ar-eg'] = "رقم داخلي";
+$text['title-extension-edit']['en-us'] = "分机";
+$text['title-extension-edit']['ar-eg'] = "Extension";
 $text['title-extension-edit']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['title-extension-edit']['de-ch'] = "Nebenstelle"; //copied from de-de
 $text['title-extension-edit']['de-de'] = "Nebenstelle";
@@ -441,8 +441,8 @@ $text['label-users']['ru-ru'] = "Пользователи";
 $text['label-users']['sv-se'] = "Användar-lista";
 $text['label-users']['uk-ua'] = "Список користувачів";
 
-$text['label-user_context']['en-us'] = "Context";
-$text['label-user_context']['ar-eg'] = "";
+$text['label-user_context']['en-us'] = "上下文";
+$text['label-user_context']['ar-eg'] = "Context";
 $text['label-user_context']['de-at'] = "Kontext"; //copied from de-de
 $text['label-user_context']['de-ch'] = "Kontext"; //copied from de-de
 $text['label-user_context']['de-de'] = "Kontext";
@@ -841,8 +841,8 @@ $text['label-outbound_caller_id_name']['ru-ru'] = "Идентификатор (C
 $text['label-outbound_caller_id_name']['sv-se'] = "Utgående Namnpresentation";
 $text['label-outbound_caller_id_name']['uk-ua'] = "";
 
-$text['label-number_alias']['en-us'] = "Number Alias";
-$text['label-number_alias']['ar-eg'] = "";
+$text['label-number_alias']['en-us'] = "分机号";
+$text['label-number_alias']['ar-eg'] = "Number Alias";
 $text['label-number_alias']['de-at'] = "Alternative Nummer"; //copied from de-de
 $text['label-number_alias']['de-ch'] = "Alternative Nummer"; //copied from de-de
 $text['label-number_alias']['de-de'] = "Alternative Nummer";
@@ -1001,8 +1001,8 @@ $text['label-hold_music']['ru-ru'] = "Музыка на Удержании";
 $text['label-hold_music']['sv-se'] = "Vänt-musik";
 $text['label-hold_music']['uk-ua'] = "";
 
-$text['label-extension']['en-us'] = "Extension";
-$text['label-extension']['ar-eg'] = "رقم داخلي";
+$text['label-extension']['en-us'] = "分机";
+$text['label-extension']['ar-eg'] = "Extension";
 $text['label-extension']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['label-extension']['de-ch'] = "Nebenstelle"; //copied from de-de
 $text['label-extension']['de-de'] = "Nebenstelle";
@@ -1261,8 +1261,8 @@ $text['label-device_mac_address']['ru-ru'] = "MAC Адреса";
 $text['label-device_mac_address']['sv-se'] = "MAC-adress";
 $text['label-device_mac_address']['uk-ua'] = "";
 
-$text['label-description']['en-us'] = "Description";
-$text['label-description']['ar-eg'] = "الوصف";
+$text['label-description']['en-us'] = "备注";
+$text['label-description']['ar-eg'] = "Description";
 $text['label-description']['de-at'] = "Beschreibung"; //copied from de-de
 $text['label-description']['de-ch'] = "Beschreibung"; //copied from de-de
 $text['label-description']['de-de'] = "Beschreibung";
@@ -1341,8 +1341,8 @@ $text['label-call_screen_enabled']['ru-ru'] = "Экран вызова";
 $text['label-call_screen_enabled']['sv-se'] = "Call Screen";
 $text['label-call_screen_enabled']['uk-ua'] = "";
 
-$text['label-call_group']['en-us'] = "Call Group";
-$text['label-call_group']['ar-eg'] = "";
+$text['label-call_group']['en-us'] = "呼叫组";
+$text['label-call_group']['ar-eg'] = "Call Group";
 $text['label-call_group']['de-at'] = "Rufgruppe"; //copied from de-de
 $text['label-call_group']['de-ch'] = "Rufgruppe"; //copied from de-de
 $text['label-call_group']['de-de'] = "Rufgruppe";
@@ -1481,8 +1481,8 @@ $text['label-is_registered']['ru-ru'] = "Зарегистрировано";
 $text['label-is_registered']['sv-se'] = "Registrerad";
 $text['label-is_registered']['uk-ua'] = "";
 
-$text['header-extensions']['en-us'] = "Extensions";
-$text['header-extensions']['ar-eg'] = "الأرقام الداخلية";
+$text['header-extensions']['en-us'] = "分机列表";
+$text['header-extensions']['ar-eg'] = "Extensions";
 $text['header-extensions']['de-at'] = "Nebenstellen"; //copied from de-de
 $text['header-extensions']['de-ch'] = "Nebenstellen"; //copied from de-de
 $text['header-extensions']['de-de'] = "Nebenstellen";
@@ -1501,8 +1501,8 @@ $text['header-extensions']['ru-ru'] = "Внутренние Номера";
 $text['header-extensions']['sv-se'] = "Anknytningar";
 $text['header-extensions']['uk-ua'] = "Розширення";
 
-$text['header-extension-edit']['en-us'] = "Extension";
-$text['header-extension-edit']['ar-eg'] = "رقم داخلي";
+$text['header-extension-edit']['en-us'] = "分机";
+$text['header-extension-edit']['ar-eg'] = "Extension";
 $text['header-extension-edit']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['header-extension-edit']['de-ch'] = "Nebenstelle"; //copied from de-de
 $text['header-extension-edit']['de-de'] = "Nebenstelle";
@@ -1521,7 +1521,7 @@ $text['header-extension-edit']['ru-ru'] = "Внутренний Номер";
 $text['header-extension-edit']['sv-se'] = "Anknytning";
 $text['header-extension-edit']['uk-ua'] = "Розширення";
 
-$text['header-extension-add']['en-us'] = "Extension Add";
+$text['header-extension-add']['en-us'] = "添加分机";
 $text['header-extension-add']['ar-eg'] = "إضافة رقم داخلي";
 $text['header-extension-add']['de-at'] = "Nebenstelle hinzufügen"; //copied from de-de
 $text['header-extension-add']['de-ch'] = "Nebenstelle hinzufügen"; //copied from de-de
@@ -1921,8 +1921,8 @@ $text['description-outbound_caller_id_name-custom']['ru-ru'] = "Введите �
 $text['description-outbound_caller_id_name-custom']['sv-se'] = "Ange det externa (publikt) namnvisningen här.";
 $text['description-outbound_caller_id_name-custom']['uk-ua'] = "";
 
-$text['description-number_alias']['en-us'] = "If the extension is numeric then number alias is optional.";
-$text['description-number_alias']['ar-eg'] = "";
+$text['description-number_alias']['en-us'] = "如果分机名是纯数字，则分机号可不填，此时分机号即为分机名";
+$text['description-number_alias']['ar-eg'] = "If the extension is numeric then number alias is optional.";
 $text['description-number_alias']['de-at'] = "Wenn die Nebenstelle numerisch ist, ist die Angabe einer alternativen Nummer optional."; //copied from de-de
 $text['description-number_alias']['de-ch'] = "Wenn die Nebenstelle numerisch ist, ist die Angabe einer alternativen Nummer optional."; //copied from de-de
 $text['description-number_alias']['de-de'] = "Wenn die Nebenstelle numerisch ist, ist die Angabe einer alternativen Nummer optional.";
@@ -2101,8 +2101,8 @@ $text['description-hold_music']['ru-ru'] = "Выберите мелодию Му
 $text['description-hold_music']['sv-se'] = "Välj MOH Kategori här.";
 $text['description-hold_music']['uk-ua'] = "";
 
-$text['description-extensions']['en-us'] = "Use this to configure your SIP extensions.";
-$text['description-extensions']['ar-eg'] = "";
+$text['description-extensions']['en-us'] = "添加、修改、删除 SIP 分机";
+$text['description-extensions']['ar-eg'] = "Use this to configure your SIP extensions.";
 $text['description-extensions']['de-at'] = "Benutzen Sie dieses Modul um Ihre SIP Nebenstelle zu konfigurieren."; //copied from de-de
 $text['description-extensions']['de-ch'] = "Benutzen Sie dieses Modul um Ihre SIP Nebenstelle zu konfigurieren."; //copied from de-de
 $text['description-extensions']['de-de'] = "Benutzen Sie dieses Modul um Ihre SIP Nebenstelle zu konfigurieren.";
@@ -2121,8 +2121,8 @@ $text['description-extensions']['ru-ru'] = "Используйте это для
 $text['description-extensions']['sv-se'] = "Använd detta för att konfigurera dina SIP anknytningar.";
 $text['description-extensions']['uk-ua'] = "";
 
-$text['description-extension']['en-us'] = "Enter the alphanumeric extension. The default configuration allows 2 - 15 digit extensions.";
-$text['description-extension']['ar-eg'] = "";
+$text['description-extension']['en-us'] = "分机名必须为字母或者数字，长度：2 ~ 15 位";
+$text['description-extension']['ar-eg'] = "Enter the alphanumeric extension. The default configuration allows 2 - 15 digit extensions.";
 $text['description-extension']['de-at'] = "Weisen Sie die Nebenstellen und Leitungen einem Gerät zu."; //copied from de-de
 $text['description-extension']['de-ch'] = "Weisen Sie die Nebenstellen und Leitungen einem Gerät zu."; //copied from de-de
 $text['description-extension']['de-de'] = "Weisen Sie die Nebenstellen und Leitungen einem Gerät zu.";

@@ -1,8 +1,8 @@
 <?php
 #This file was last reorganized on 19th of September 2017 08:54:24 AM UTC
 
-$text['title-dialplan-inbound-add']['en-us'] = "Inbound Call Routing";
-$text['title-dialplan-inbound-add']['ar-eg'] = "";
+$text['title-dialplan-inbound-add']['en-us'] = "呼入拨号规则";
+$text['title-dialplan-inbound-add']['ar-eg'] = "Inbound Call Routing";
 $text['title-dialplan-inbound-add']['de-at'] = "Routing eingehender Anrufe"; //copied from de-de
 $text['title-dialplan-inbound-add']['de-ch'] = "Routing eingehender Anrufe"; //copied from de-de
 $text['title-dialplan-inbound-add']['de-de'] = "Routing eingehender Anrufe";
@@ -141,8 +141,8 @@ $text['option-network_addr']['ru-ru'] = "Сетевой адрес";
 $text['option-network_addr']['sv-se'] = "Nätverk Address";
 $text['option-network_addr']['uk-ua'] = "Адреси мережі";
 
-$text['option-destination_number']['en-us'] = "Destination Number";
-$text['option-destination_number']['ar-eg'] = "";
+$text['option-destination_number']['en-us'] = "目标号码";
+$text['option-destination_number']['ar-eg'] = "Destination Number";
 $text['option-destination_number']['de-at'] = "Ziel Rufnummer"; //copied from de-de
 $text['option-destination_number']['de-ch'] = "Ziel Rufnummer"; //copied from de-de
 $text['option-destination_number']['de-de'] = "Ziel Rufnummer";
@@ -401,8 +401,8 @@ $text['label-required-action_application_1']['ru-ru'] = "Пожалуйста у
 $text['label-required-action_application_1']['sv-se'] = "Var god ange:  Action Applikation";
 $text['label-required-action_application_1']['uk-ua'] = "Будь ласка, надайте додаток для дії";
 
-$text['label-caller-id-number-prefix']['en-us'] = "Caller ID Number Prefix";
-$text['label-caller-id-number-prefix']['ar-eg'] = "";
+$text['label-caller-id-number-prefix']['en-us'] = "主叫前缀";
+$text['label-caller-id-number-prefix']['ar-eg'] = "Caller ID Number Prefix";
 $text['label-caller-id-number-prefix']['de-at'] = "Präfix für Anruferkennung"; //copied from de-de
 $text['label-caller-id-number-prefix']['de-ch'] = "Präfix für Anruferkennung"; //copied from de-de
 $text['label-caller-id-number-prefix']['de-de'] = "Präfix für Anruferkennung";
@@ -422,7 +422,7 @@ $text['label-caller-id-number-prefix']['sv-se'] = "Caller ID Nummer Prefix";
 $text['label-caller-id-number-prefix']['uk-ua'] = "Префікс для повторного набору вихідного дзвінка";
 
 $text['label-limit']['en-us'] = "Limit";
-$text['label-limit']['ar-eg'] = "";
+$text['label-limit']['ar-eg'] = "Limit";
 $text['label-limit']['de-at'] = "Obergrenze"; //copied from de-de
 $text['label-limit']['de-ch'] = "Obergrenze"; //copied from de-de
 $text['label-limit']['de-de'] = "Obergrenze";
@@ -581,8 +581,8 @@ $text['label-action_1']['ru-ru'] = "Действие 1";
 $text['label-action_1']['sv-se'] = "Action 1";
 $text['label-action_1']['uk-ua'] = "Дія 1";
 
-$text['label-action']['en-us'] = "Action";
-$text['label-action']['ar-eg'] = "";
+$text['label-action']['en-us'] = "动作";
+$text['label-action']['ar-eg'] = "Action";
 $text['label-action']['de-at'] = "Aktion"; //copied from de-de
 $text['label-action']['de-ch'] = "Aktion"; //copied from de-de
 $text['label-action']['de-de'] = "Aktion";
@@ -621,8 +621,8 @@ $text['label-access-denied']['ru-ru'] = "доступ закрыт";
 $text['label-access-denied']['sv-se'] = "tillträde beviljas ej";
 $text['label-access-denied']['uk-ua'] = "в доступі відмовлено";
 
-$text['description-caller-id-number-prefix']['en-us'] = "Set a prefix on the caller ID number.";
-$text['description-caller-id-number-prefix']['ar-eg'] = "";
+$text['description-caller-id-number-prefix']['en-us'] = "为 Caller ID 号码设置前缀";
+$text['description-caller-id-number-prefix']['ar-eg'] = "Set a prefix on the caller ID number.";
 $text['description-caller-id-number-prefix']['de-at'] = "Präfix für Anruferkennung (Nummer) setzen."; //copied from de-de
 $text['description-caller-id-number-prefix']['de-ch'] = "Präfix für Anruferkennung (Nummer) setzen."; //copied from de-de
 $text['description-caller-id-number-prefix']['de-de'] = "Präfix für Anruferkennung (Nummer) setzen.";
@@ -641,8 +641,8 @@ $text['description-caller-id-number-prefix']['ru-ru'] = "Задайте преф
 $text['description-caller-id-number-prefix']['sv-se'] = "Ange ett prefix för caller iID nummer.";
 $text['description-caller-id-number-prefix']['uk-ua'] = "";
 
-$text['description-name']['en-us'] = "Please enter an inbound route name.";
-$text['description-name']['ar-eg'] = "";
+$text['description-name']['en-us'] = "请输入呼入拨号规则名称";
+$text['description-name']['ar-eg'] = "Please enter an inbound route name.";
 $text['description-name']['de-at'] = "Bitte geben Sie einen Namen für die eingehende Route an."; //copied from de-de
 $text['description-name']['de-ch'] = "Bitte geben Sie einen Namen für die eingehende Route an."; //copied from de-de
 $text['description-name']['de-de'] = "Bitte geben Sie einen Namen für die eingehende Route an.";
@@ -661,8 +661,8 @@ $text['description-name']['ru-ru'] = "Введите название входя
 $text['description-name']['sv-se'] = "Var god ange ett namn för inkommande route.";
 $text['description-name']['uk-ua'] = "Введіть назву меню";
 
-$text['description-dialplan-inbound-add']['en-us'] = "The public dialplan is used to route incoming calls to destinations based on one or more conditions and context. It can send incoming calls to an auto attendant, huntgroup, extension, external number, or a script.";
-$text['description-dialplan-inbound-add']['ar-eg'] = "";
+$text['description-dialplan-inbound-add']['en-us'] = "呼入拨号规则基于一个或多个条件和上下文将来电路由到目的号码。它能将来电传入至分机、外部号码、或者脚本";
+$text['description-dialplan-inbound-add']['ar-eg'] = "The public dialplan is used to route incoming calls to destinations based on one or more conditions and context. It can send incoming calls to an auto attendant, huntgroup, extension, external number, or a script.";
 $text['description-dialplan-inbound-add']['de-at'] = "Der öffentliche Wählplan wird verwendet, um eingehende Anrufe anhand von einem oder mehrere Bedingungen an bestimmte Ziele weiter zu leiten."; //copied from de-de
 $text['description-dialplan-inbound-add']['de-ch'] = "Der öffentliche Wählplan wird verwendet, um eingehende Anrufe anhand von einem oder mehrere Bedingungen an bestimmte Ziele weiter zu leiten."; //copied from de-de
 $text['description-dialplan-inbound-add']['de-de'] = "Der öffentliche Wählplan wird verwendet, um eingehende Anrufe anhand von einem oder mehrere Bedingungen an bestimmte Ziele weiter zu leiten.";
@@ -681,8 +681,8 @@ $text['description-dialplan-inbound-add']['ru-ru'] = "Общедоступный
 $text['description-dialplan-inbound-add']['sv-se'] = "";
 $text['description-dialplan-inbound-add']['uk-ua'] = "Маршрутизація спрямовує вхідні дзвінки в напрямку відповідно до умов і контексту. Можна спрямувати вхідні виклики на групи, автоматичне обслуговування, зовнішні номери, сценарії або інші напрямки. ";
 
-$text['confirm-update-complete']['en-us'] = "Update Complete";
-$text['confirm-update-complete']['ar-eg'] = "";
+$text['confirm-update-complete']['en-us'] = "更新完成";
+$text['confirm-update-complete']['ar-eg'] = "Update Complete";
 $text['confirm-update-complete']['de-at'] = "Aktualisierung abgeschlossen"; //copied from de-de
 $text['confirm-update-complete']['de-ch'] = "Aktualisierung abgeschlossen"; //copied from de-de
 $text['confirm-update-complete']['de-de'] = "Aktualisierung abgeschlossen";

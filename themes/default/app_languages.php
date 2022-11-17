@@ -129,7 +129,7 @@ $text['theme-label-search']['uk-ua'] = "Пошук...";
 $text['theme-label-search']['tr-tr'] = "Arama...";
 
 $text['theme-label-copyright']['en-us'] = "Copyright";
-$text['theme-label-copyright']['ar-eg'] = "";
+$text['theme-label-copyright']['ar-eg'] = "Copyright";
 $text['theme-label-copyright']['de-at'] = "Urheberrecht"; //copied from de-de
 $text['theme-label-copyright']['de-ch'] = "Urheberrecht"; //copied from de-de
 $text['theme-label-copyright']['de-de'] = "Urheberrecht";
@@ -150,7 +150,7 @@ $text['theme-label-copyright']['uk-ua'] = "";
 $text['theme-label-copyright']['tr-tr'] = "Copyright";
 
 $text['theme-label-all_rights_reserved']['en-us'] = "All rights reserved.";
-$text['theme-label-all_rights_reserved']['ar-eg'] = "";
+$text['theme-label-all_rights_reserved']['ar-eg'] = "All rights reserved.";
 $text['theme-label-all_rights_reserved']['de-at'] = "Alle Rechte vorbehalten"; //copied from de-de
 $text['theme-label-all_rights_reserved']['de-ch'] = "Alle Rechte vorbehalten"; //copied from de-de
 $text['theme-label-all_rights_reserved']['de-de'] = "Alle Rechte vorbehalten";

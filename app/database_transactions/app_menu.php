@@ -1,6 +1,7 @@
 <?php
 
-$apps[$x]['menu'][0]['title']['en-us'] = 'Transactions';
+$apps[$x]['menu'][0]['title']['en-us'] = '事务日志';
+$apps[$x]['menu'][0]['title']['ar-eg'] = 'Transactions';
 $apps[$x]['menu'][0]['title']['es-cl'] = '';
 $apps[$x]['menu'][0]['title']['fr-fr'] = '';
 $apps[$x]['menu'][0]['title']['fr-ca'] = '';
@@ -17,5 +18,7 @@ $apps[$x]['menu'][0]['path'] = '/app/database_transactions/database_transactions
 $apps[$x]['menu'][0]['groups'][] = 'superadmin';
 //$apps[$x]['menu'][0]['groups'][] = 'admin';
 //$apps[$x]['menu'][0]['groups'][] = 'user';
+$apps[$x]['menu'][0]['enabled'] = "true";
+$apps[$x]['menu'][0]['order'] = "21";
 
 ?>

@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "System Status";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "系统状态";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "System Status";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "System Status";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "System Status";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Estado de Sistema";
@@ -25,5 +25,7 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/app/system/system.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "12";
 
 ?>

@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Conferences";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "会议";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Conferences";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Konferenzen";
 	$apps[$x]['menu'][$y]['title']['de-ch'] = "";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Konferenzen";
@@ -26,5 +26,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/conferences/conferences.php";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "false";
+	$apps[$x]['menu'][$y]['order'] = "16";
 
 ?>

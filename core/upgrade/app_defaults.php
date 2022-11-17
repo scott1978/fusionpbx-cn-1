@@ -44,8 +44,8 @@ if ($domains_processed == 1) {
 				$sql .= "values ";
 				$sql .= "(";
 				$sql .= "'".uuid()."', ";
-				$sql .= "'FusionPBX', ";
-				$sql .= "'www.fusionpbx.com', ";
+				$sql .= "'Y-Free', ";
+				$sql .= "'www.y-free.com', ";
 				$sql .= "'".software_version()."' ";
 				$sql .= ")";
 				$db->exec(check_sql($sql));

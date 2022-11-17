@@ -1,8 +1,8 @@
 <?php
 
 	$y = 0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Users";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "用户管理";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Users";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Benutzerverwaltung";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Benutzerverwaltung";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Gestor de Usuarios";
@@ -25,9 +25,11 @@
 	$apps[$x]['menu'][$y]['path'] = "/core/users/users.php";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "1";
 	$y++;	
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Account Settings";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "إعدادات الحساب";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "账号设置";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Account Settings";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Kontoeinstellungen";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Config de Cuenta";
@@ -51,5 +53,7 @@
 	$apps[$x]['menu'][$y]['groups'][] = "user";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "2";
 
 ?>

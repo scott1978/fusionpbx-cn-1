@@ -2,7 +2,7 @@
 
 	$y=0;
 	$apps[$x]['menu'][$y]['title']['en-us'] = "Adminer";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Adminer";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Adminer";
 	$apps[$x]['menu'][$y]['title']['de-ch'] = "";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Adminer";
@@ -26,5 +26,7 @@
 	$apps[$x]['menu'][$y]['icon'] = "glyphicon-new-window";
 	$apps[$x]['menu'][$y]['path'] = "/app/adminer/index.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "false";
+	$apps[$x]['menu'][$y]['order'] = "1";
 
 ?>

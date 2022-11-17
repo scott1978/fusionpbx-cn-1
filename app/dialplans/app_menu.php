@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Dialplan";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "拨号规则";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Dialplan";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Wählplan";
 	$apps[$x]['menu'][$y]['title']['de-ch'] = "";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Wählplan";
@@ -28,9 +28,10 @@
 	$apps[$x]['menu'][$y]['order'] = "15";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
 	$y++;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Dialplan Manager";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "拨号规则";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Dialplan Manager";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Wählplan Einstellungen";
 	$apps[$x]['menu'][$y]['title']['de-ch'] = "";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Wählplan Einstellungen";
@@ -54,5 +55,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/dialplans/dialplans.php";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "4";
 
 ?>

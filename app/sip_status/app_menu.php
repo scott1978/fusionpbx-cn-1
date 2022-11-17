@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "SIP Status";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "SIP状态";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "SIP Status";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "SIP Status";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "SIP Status";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Estado de SIP";
@@ -24,5 +24,7 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/app/sip_status/sip_status.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "1";
 
 ?>

@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Call Block";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "حظر المكالمات";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "呼叫拦截";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Call Block";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Sperrlisten";
 	$apps[$x]['menu'][$y]['title']['de-ch'] = "";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Sperrlisten";
@@ -26,5 +26,7 @@
 	$apps[$x]['menu'][$y]['path'] = "/app/call_block/call_block.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "8";
 
 ?>

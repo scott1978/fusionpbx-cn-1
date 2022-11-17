@@ -1,8 +1,8 @@
 <?php
 
 	$y=0;
-	$apps[$x]['menu'][$y]['title']['en-us'] = "Apps";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "应用";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "Apps";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Applikationen";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Applikationen";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Aplicaciones";
@@ -25,12 +25,13 @@
 	$apps[$x]['menu'][$y]['icon'] = "glyphicon-send";
 	$apps[$x]['menu'][$y]['path'] = "";
 	$apps[$x]['menu'][$y]['order'] = "20";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
 	$apps[$x]['menu'][$y]['groups'][] = "user";
 	$apps[$x]['menu'][$y]['groups'][] = "admin";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
 	$y++;	
-	$apps[$x]['menu'][$y]['title']['en-us'] = "App Manager";
-	$apps[$x]['menu'][$y]['title']['ar-eg'] = "";
+	$apps[$x]['menu'][$y]['title']['en-us'] = "应用管理";
+	$apps[$x]['menu'][$y]['title']['ar-eg'] = "App Manager";
 	$apps[$x]['menu'][$y]['title']['de-at'] = "Applikation Verwalten";
 	$apps[$x]['menu'][$y]['title']['de-de'] = "Applikation Verwalten";
 	$apps[$x]['menu'][$y]['title']['es-cl'] = "Administrador de Aplicaciones";
@@ -51,5 +52,7 @@
 	$apps[$x]['menu'][$y]['category'] = "internal";
 	$apps[$x]['menu'][$y]['path'] = "/core/apps/apps.php";
 	$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+	$apps[$x]['menu'][$y]['enabled'] = "true";
+	$apps[$x]['menu'][$y]['order'] = "6";
 
 ?>
