@@ -2,6 +2,7 @@
 #This file was last reorganized on 19th of September 2017 08:54:24 AM UTC
 
 $text['title-conference_controls']['en-us'] = "Conference Controls";
+$text['title-conference_controls']['zh-cn'] = "会议控制";
 $text['title-conference_controls']['ar-eg'] = "";
 $text['title-conference_controls']['de-at'] = "Konferenzsteuerung"; //copied from de-de
 $text['title-conference_controls']['de-ch'] = "Konferenzsteuerung"; //copied from de-de
@@ -22,6 +23,7 @@ $text['title-conference_controls']['sv-se'] = "Konferens Kontroller";
 $text['title-conference_controls']['uk-ua'] = "";
 
 $text['title-conference_control']['en-us'] = "Conference Control";
+$text['title-conference_control']['zh-cn'] = "会议控制";
 $text['title-conference_control']['ar-eg'] = "";
 $text['title-conference_control']['de-at'] = "Konferenzsteuerung"; //copied from de-de
 $text['title-conference_control']['de-ch'] = "Konferenzsteuerung"; //copied from de-de
@@ -42,6 +44,7 @@ $text['title-conference_control']['sv-se'] = "Konferens Kontroll";
 $text['title-conference_control']['uk-ua'] = "";
 
 $text['title_description-conference_control']['en-us'] = "Call controls enable ability to assign digits to actions. They can be used to mute, unmute, or other actions during the conference call.";
+$text['title_description-conference_control']['zh-cn'] = "呼叫控制允许为动作分配数字。它们可用于在电话会议期间静音、取消静音或其他操作。";
 $text['title_description-conference_control']['ar-eg'] = "";
 $text['title_description-conference_control']['de-at'] = "Funktionen zur Anrufsteuerung können Ziffern zugeordnet werden. Diese können verschiedene Aktionen wie Stummschaltung, usw. während einer Konferenz auslösen."; //copied from de-de
 $text['title_description-conference_control']['de-ch'] = "Funktionen zur Anrufsteuerung können Ziffern zugeordnet werden. Diese können verschiedene Aktionen wie Stummschaltung, usw. während einer Konferenz auslösen."; //copied from de-de
@@ -62,6 +65,7 @@ $text['title_description-conference_control']['sv-se'] = "Samtalskontroller möj
 $text['title_description-conference_control']['uk-ua'] = "";
 
 $text['label-control_name']['en-us'] = "Name";
+$text['label-control_name']['zh-cn'] = "名称";
 $text['label-control_name']['ar-eg'] = "";
 $text['label-control_name']['de-at'] = "Name"; //copied from de-de
 $text['label-control_name']['de-ch'] = "Name"; //copied from de-de
@@ -82,6 +86,7 @@ $text['label-control_name']['sv-se'] = "Namn";
 $text['label-control_name']['uk-ua'] = "";
 
 $text['description-control_name']['en-us'] = "Enter the conference control name.";
+$text['description-control_name']['zh-cn'] = "输入会议控制名称。";
 $text['description-control_name']['ar-eg'] = "";
 $text['description-control_name']['de-at'] = "Geben Sie den Namen des Steuerelements ein."; //copied from de-de
 $text['description-control_name']['de-ch'] = "Geben Sie den Namen des Steuerelements ein."; //copied from de-de
@@ -102,6 +107,7 @@ $text['description-control_name']['sv-se'] = "Ange konferens kontroll namnet.";
 $text['description-control_name']['uk-ua'] = "";
 
 $text['label-control_enabled']['en-us'] = "Enabled";
+$text['label-control_enabled']['zh-cn'] = "开启";
 $text['label-control_enabled']['ar-eg'] = "";
 $text['label-control_enabled']['de-at'] = "Aktiviert"; //copied from de-de
 $text['label-control_enabled']['de-ch'] = "Aktiviert"; //copied from de-de

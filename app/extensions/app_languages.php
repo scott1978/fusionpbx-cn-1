@@ -2,7 +2,7 @@
 #This file was last reorganized on 27th of September 2017 01:41:51 PM UTC
 
 $text['title-extensions']['en-us'] = "Extensions";
-$text['title-extensions']['zh-cn'] = "分机号";
+$text['title-extensions']['zh-cn'] = "分机";
 $text['title-extensions']['ar-eg'] = "الأرقام الداخلية";
 $text['title-extensions']['de-at'] = "Nebenstellen"; //copied from de-de
 $text['title-extensions']['de-ch'] = "Nebenstellen"; //copied from de-de
@@ -23,7 +23,7 @@ $text['title-extensions']['sv-se'] = "Anknytningar";
 $text['title-extensions']['uk-ua'] = "Розширення";
 
 $text['title-extension-edit']['en-us'] = "Extension";
-$text['title-extension-edit']['zh-cn'] = "分机";
+$text['title-extension-edit']['zh-cn'] = "分机号";
 $text['title-extension-edit']['ar-eg'] = "رقم داخلي";
 $text['title-extension-edit']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['title-extension-edit']['de-ch'] = "Nebenstelle"; //copied from de-de
@@ -86,7 +86,7 @@ $text['title-call_groups']['sv-se'] = "Ring Grupp";
 $text['title-call_groups']['uk-ua'] = "";
 
 $text['option-voicemail_file_listen']['en-us'] = "Listen Link (Login Required)";
-$text['option-voicemail_file_listen']['zh-cn'] = "侦听链接（需要登录）";
+$text['option-voicemail_file_listen']['zh-cn'] = "试听链接（需要登录）";
 $text['option-voicemail_file_listen']['ar-eg'] = "";
 $text['option-voicemail_file_listen']['de-at'] = "Link zur Nachricht (Login erforderlich)"; //copied from de-de
 $text['option-voicemail_file_listen']['de-ch'] = "Link zur Nachricht (Login erforderlich)"; //copied from de-de
@@ -170,6 +170,7 @@ $text['message-number_alias']['sv-se'] = "Fyll i det nya Nummer Alias...";
 $text['message-number_alias']['uk-ua'] = "Введіть новий псевдонім номера...";
 
 $text['message-maximum_extensions']['en-us'] = "Maximum Extensions:";
+$text['message-maximum_extensions']['zh-cn'] = "最大分机号:";
 $text['message-maximum_extensions']['ar-eg'] = "الحد الأقصي للأرقام الداخلية :";
 $text['message-maximum_extensions']['de-at'] = "Maximale Anzahl an Nebenstellen:"; //copied from de-de
 $text['message-maximum_extensions']['de-ch'] = "Maximale Anzahl an Nebenstellen:"; //copied from de-de
@@ -190,6 +191,7 @@ $text['message-maximum_extensions']['sv-se'] = "Maximum Antal Anknytningar:";
 $text['message-maximum_extensions']['uk-ua'] = "Максимальна кількість розширень";
 
 $text['message-extension']['en-us'] = "Enter the new Extension...";
+$text['message-extension']['zh-cn'] = "输入新分机号...";
 $text['message-extension']['ar-eg'] = "أدخل الرقم الداخلي الجديد";
 $text['message-extension']['de-at'] = "Geben Sie die neue Nebenstelle an..."; //copied from de-de
 $text['message-extension']['de-ch'] = "Geben Sie die neue Nebenstelle an..."; //copied from de-de
@@ -210,6 +212,7 @@ $text['message-extension']['sv-se'] = "Fyll i den nya Anknytningen...";
 $text['message-extension']['uk-ua'] = "Введіть нове розширення";
 
 $text['label-voicemail_password']['en-us'] = "Voicemail Password";
+$text['label-voicemail_password']['zh-cn'] = "语音邮件密码";
 $text['label-voicemail_password']['ar-eg'] = "كلمة السر للبريد الصوتي";
 $text['label-voicemail_password']['de-at'] = "Mailbox Passwort"; //copied from de-de
 $text['label-voicemail_password']['de-ch'] = "Mailbox Passwort"; //copied from de-de
@@ -230,6 +233,7 @@ $text['label-voicemail_password']['sv-se'] = "Röstbrevlåda Lösenord";
 $text['label-voicemail_password']['uk-ua'] = "Пароль на голосову пошту";
 
 $text['label-voicemail_mail_to']['en-us'] = "Voicemail Mail To";
+$text['label-voicemail_mail_to']['zh-cn'] = "语音邮件收件人";
 $text['label-voicemail_mail_to']['ar-eg'] = "";
 $text['label-voicemail_mail_to']['de-at'] = "Mailbox Email"; //copied from de-de
 $text['label-voicemail_mail_to']['de-ch'] = "Mailbox Email"; //copied from de-de
@@ -250,6 +254,7 @@ $text['label-voicemail_mail_to']['sv-se'] = "Röstbrevlåda E-post Till";
 $text['label-voicemail_mail_to']['uk-ua'] = "Надсилати голосову пошту на E-Mail";
 
 $text['label-voicemail_local_after_email']['en-us'] = "Voicemail Keep Local";
+$text['label-voicemail_local_after_email']['zh-cn'] = "语音邮件保存到本地";
 $text['label-voicemail_local_after_email']['ar-eg'] = "";
 $text['label-voicemail_local_after_email']['de-at'] = "Sprachnachricht auf dem Server speichern"; //copied from de-de
 $text['label-voicemail_local_after_email']['de-ch'] = "Sprachnachricht auf dem Server speichern"; //copied from de-de
@@ -270,6 +275,7 @@ $text['label-voicemail_local_after_email']['sv-se'] = "Röstbrevlåda Behåll Lo
 $text['label-voicemail_local_after_email']['uk-ua'] = "Залишати голосову пошту локально";
 
 $text['label-voicemail_file']['en-us'] = "Voicemail File";
+$text['label-voicemail_file']['zh-cn'] = "语音邮件文件";
 $text['label-voicemail_file']['ar-eg'] = "";
 $text['label-voicemail_file']['de-at'] = "Sprachnachricht Datei"; //copied from de-de
 $text['label-voicemail_file']['de-ch'] = "Sprachnachricht Datei"; //copied from de-de
@@ -290,6 +296,7 @@ $text['label-voicemail_file']['sv-se'] = "Röstbrevlåda Fil";
 $text['label-voicemail_file']['uk-ua'] = "Файл голосової пошти";
 
 $text['label-voicemail_enabled']['en-us'] = "Voicemail Enabled";
+$text['label-voicemail_enabled']['zh-cn'] = "语音邮件启用";
 $text['label-voicemail_enabled']['ar-eg'] = "";
 $text['label-voicemail_enabled']['de-at'] = "Mailbox eingeschaltet"; //copied from de-de
 $text['label-voicemail_enabled']['de-ch'] = "Mailbox eingeschaltet"; //copied from de-de
@@ -310,6 +317,7 @@ $text['label-voicemail_enabled']['sv-se'] = "Röstbrevlåda Aktiverad";
 $text['label-voicemail_enabled']['uk-ua'] = "Голосову пошту включено";
 
 $text['label-user_record_outbound']['en-us'] = "Outbound";
+$text['label-user_record_outbound']['zh-cn'] = "去电";
 $text['label-user_record_outbound']['ar-eg'] = "صادر";
 $text['label-user_record_outbound']['de-at'] = "Ausgehend"; //copied from de-de
 $text['label-user_record_outbound']['de-ch'] = "Ausgehend"; //copied from de-de
@@ -330,6 +338,7 @@ $text['label-user_record_outbound']['sv-se'] = "Utgående";
 $text['label-user_record_outbound']['uk-ua'] = "Вихідний";
 
 $text['label-user_record_none']['en-us'] = "Disabled";
+$text['label-user_record_none']['zh-cn'] = "禁用";
 $text['label-user_record_none']['ar-eg'] = "معطل";
 $text['label-user_record_none']['de-at'] = "Ausgeschaltet"; //copied from de-de
 $text['label-user_record_none']['de-ch'] = "Ausgeschaltet"; //copied from de-de
@@ -350,6 +359,7 @@ $text['label-user_record_none']['sv-se'] = "Inaktiverad";
 $text['label-user_record_none']['uk-ua'] = "Відключено";
 
 $text['label-user_record_local']['en-us'] = "Local";
+$text['label-user_record_local']['zh-cn'] = "本地";
 $text['label-user_record_local']['ar-eg'] = "محلي";
 $text['label-user_record_local']['de-at'] = "Lokal"; //copied from de-de
 $text['label-user_record_local']['de-ch'] = "Lokal"; //copied from de-de
@@ -370,6 +380,7 @@ $text['label-user_record_local']['sv-se'] = "Lokal";
 $text['label-user_record_local']['uk-ua'] = "Локальний";
 
 $text['label-user_record_inbound']['en-us'] = "Inbound";
+$text['label-user_record_inbound']['zh-cn'] = "来电";
 $text['label-user_record_inbound']['ar-eg'] = "وارد";
 $text['label-user_record_inbound']['de-at'] = "Eingehend"; //copied from de-de
 $text['label-user_record_inbound']['de-ch'] = "Eingehend"; //copied from de-de
@@ -390,6 +401,7 @@ $text['label-user_record_inbound']['sv-se'] = "Inkommande";
 $text['label-user_record_inbound']['uk-ua'] = "Вхідний";
 
 $text['label-user_record_all']['en-us'] = "All";
+$text['label-user_record_all']['en-us'] = "全部";
 $text['label-user_record_all']['ar-eg'] = "الكل";
 $text['label-user_record_all']['de-at'] = "Alle"; //copied from de-de
 $text['label-user_record_all']['de-ch'] = "Alle"; //copied from de-de
@@ -410,6 +422,7 @@ $text['label-user_record_all']['sv-se'] = "Allt";
 $text['label-user_record_all']['uk-ua'] = "Всі";
 
 $text['label-user_record']['en-us'] = "Record";
+$text['label-user_record']['zh-cn'] = "录音";
 $text['label-user_record']['ar-eg'] = "تسجيل";
 $text['label-user_record']['de-at'] = "Aufnahme"; //copied from de-de
 $text['label-user_record']['de-ch'] = "Aufnahme"; //copied from de-de
@@ -430,6 +443,7 @@ $text['label-user_record']['sv-se'] = "Spela In";
 $text['label-user_record']['uk-ua'] = "Запис розмов";
 
 $text['label-users']['en-us'] = "Users";
+$text['label-users']['zh-cn'] = "用户组";
 $text['label-users']['ar-eg'] = "قائمة المستخدم";
 $text['label-users']['de-at'] = "Benutzerliste"; //copied from de-de
 $text['label-users']['de-ch'] = "Benutzerliste"; //copied from de-de
@@ -450,6 +464,7 @@ $text['label-users']['sv-se'] = "Användar-lista";
 $text['label-users']['uk-ua'] = "Список користувачів";
 
 $text['label-user_context']['en-us'] = "Context";
+$text['label-user_context']['zh-cn'] = "上下文";
 $text['label-user_context']['ar-eg'] = "";
 $text['label-user_context']['de-at'] = "Kontext"; //copied from de-de
 $text['label-user_context']['de-ch'] = "Kontext"; //copied from de-de
@@ -470,6 +485,7 @@ $text['label-user_context']['sv-se'] = "Sammanhang";
 $text['label-user_context']['uk-ua'] = "Контекст";
 
 $text['label-url']['en-us'] = "URL";
+$text['label-url']['zh-cn'] = "URL";
 $text['label-url']['ar-eg'] = "";
 $text['label-url']['de-at'] = "URL"; //copied from de-de
 $text['label-url']['de-ch'] = "URL"; //copied from de-de
@@ -490,6 +506,7 @@ $text['label-url']['sv-se'] = "URL";
 $text['label-url']['uk-ua'] = "URL";
 
 $text['label-toll_allow']['en-us'] = "Toll Allow";
+$text['label-toll_allow']['zh-cn'] = "允许放行";
 $text['label-toll_allow']['ar-eg'] = "";
 $text['label-toll_allow']['de-at'] = "Berechtigung"; //copied from de-de
 $text['label-toll_allow']['de-ch'] = "Berechtigung"; //copied from de-de
@@ -510,6 +527,7 @@ $text['label-toll_allow']['sv-se'] = "Toll Allow";
 $text['label-toll_allow']['uk-ua'] = "";
 
 $text['label-text']['en-us'] = "Text";
+$text['label-text']['zh-cn'] = "文本";
 $text['label-text']['ar-eg'] = "نص";
 $text['label-text']['de-at'] = "Text"; //copied from de-de
 $text['label-text']['de-ch'] = "Text"; //copied from de-de
@@ -530,6 +548,7 @@ $text['label-text']['sv-se'] = "Text";
 $text['label-text']['uk-ua'] = "текст";
 
 $text['label-sip_force_expires']['en-us'] = "SIP Force Expires";
+$text['label-sip_force_expires']['zh-cn'] = "SIP 强制过期";
 $text['label-sip_force_expires']['ar-eg'] = "";
 $text['label-sip_force_expires']['de-at'] = "SIP Force Expires"; //copied from de-de
 $text['label-sip_force_expires']['de-ch'] = "SIP Force Expires"; //copied from de-de
@@ -550,6 +569,7 @@ $text['label-sip_force_expires']['sv-se'] = "SIP Force Expires";
 $text['label-sip_force_expires']['uk-ua'] = "";
 
 $text['label-sip_force_contact']['en-us'] = "SIP Force Contact";
+$text['label-sip_force_contact']['zh-cn'] = "SIP 强制联系";
 $text['label-sip_force_contact']['ar-eg'] = "";
 $text['label-sip_force_contact']['de-at'] = "SIP Force Contact"; //copied from de-de
 $text['label-sip_force_contact']['de-ch'] = "SIP Force Contact"; //copied from de-de
@@ -570,6 +590,7 @@ $text['label-sip_force_contact']['sv-se'] = "SIP Force Contact";
 $text['label-sip_force_contact']['uk-ua'] = "";
 
 $text['label-sip_bypass_media']['en-us'] = "SIP Bypass Media";
+$text['label-sip_bypass_media']['zh-cn'] = "SIP 跳过广播";
 $text['label-sip_bypass_media']['ar-eg'] = "";
 $text['label-sip_bypass_media']['de-at'] = "SIP Bypass Media"; //copied from de-de
 $text['label-sip_bypass_media']['de-ch'] = "SIP Bypass Media"; //copied from de-de
@@ -590,6 +611,7 @@ $text['label-sip_bypass_media']['sv-se'] = "SIP Bypass Media";
 $text['label-sip_bypass_media']['uk-ua'] = "";
 
 $text['label-absolute_codec_string']['en-us'] = "Absolute Codec String";
+$text['label-absolute_codec_string']['zh-cn'] = "绝对编解码器字符串";
 $text['label-absolute_codec_string']['ar-eg'] = "";
 $text['label-absolute_codec_string']['de-at'] = "Absolute Codec String"; //copied from de-de
 $text['label-absolute_codec_string']['de-ch'] = "Absolute Codec String"; //copied from de-de
@@ -610,6 +632,7 @@ $text['label-absolute_codec_string']['sv-se'] = "";
 $text['label-absolute_codec_string']['uk-ua'] = "";
 
 $text['label-force_ping']['en-us'] = "Force ping";
+$text['label-force_ping']['zh-cn'] = "强制 ping";
 $text['label-force_ping']['ar-eg'] = "";
 $text['label-force_ping']['de-at'] = "Ping erzwingen"; //copied from de-de
 $text['label-force_ping']['de-ch'] = "Ping erzwingen"; //copied from de-de
@@ -630,6 +653,7 @@ $text['label-force_ping']['sv-se'] = "Force ping";
 $text['label-force_ping']['uk-ua'] = "";
 
 $text['label-rewrite_tls_contact_port']['en-us'] = "Rewrite TLS Contact Port";
+$text['label-rewrite_tls_contact_port']['zh-cn'] = "重写TLS联系人端口";
 $text['label-rewrite_tls_contact_port']['ar-eg'] = "";
 $text['label-rewrite_tls_contact_port']['de-at'] = "TLS Contact-Port überschreiben"; //copied from de-de
 $text['label-rewrite_tls_contact_port']['de-ch'] = "TLS Contact-Port überschreiben"; //copied from de-de
@@ -650,6 +674,7 @@ $text['label-rewrite_tls_contact_port']['sv-se'] = "Rewrite TLS Contact Port";
 $text['label-rewrite_tls_contact_port']['uk-ua'] = "";
 
 $text['label-rewrite_contact_ip_and_port_2']['en-us'] = "Rewrite Contact IP and Port 2.0";
+$text['label-rewrite_contact_ip_and_port_2']['zh-cn'] = "重写联系人IP和端口2.0";
 $text['label-rewrite_contact_ip_and_port_2']['ar-eg'] = "";
 $text['label-rewrite_contact_ip_and_port_2']['de-at'] = "Contact IP und Port überschreiben 2.0"; //copied from de-de
 $text['label-rewrite_contact_ip_and_port_2']['de-ch'] = "Contact IP und Port überschreiben 2.0"; //copied from de-de
@@ -670,6 +695,7 @@ $text['label-rewrite_contact_ip_and_port_2']['sv-se'] = "Rewrite Contact IP and 
 $text['label-rewrite_contact_ip_and_port_2']['uk-ua'] = "";
 
 $text['label-rewrite_contact_ip_and_port']['en-us'] = "Rewrite Contact IP and Port";
+$text['label-rewrite_contact_ip_and_port']['zh-cn'] = "重写联系人IP和端口";
 $text['label-rewrite_contact_ip_and_port']['ar-eg'] = "";
 $text['label-rewrite_contact_ip_and_port']['de-at'] = "Contact IP und Port überschreiben"; //copied from de-de
 $text['label-rewrite_contact_ip_and_port']['de-ch'] = "Contact IP und Port überschreiben"; //copied from de-de
@@ -690,6 +716,7 @@ $text['label-rewrite_contact_ip_and_port']['sv-se'] = "Rewrite Contact IP and Po
 $text['label-rewrite_contact_ip_and_port']['uk-ua'] = "";
 
 $text['label-range']['en-us'] = "Range";
+$text['label-range']['zh-cn'] = "范围";
 $text['label-range']['ar-eg'] = "";
 $text['label-range']['de-at'] = "Bereich"; //copied from de-de
 $text['label-range']['de-ch'] = "Bereich"; //copied from de-de
@@ -710,6 +737,7 @@ $text['label-range']['sv-se'] = "Intervall";
 $text['label-range']['uk-ua'] = "Діапазон";
 
 $text['label-proxy_media']['en-us'] = "Proxy Media";
+$text['label-proxy_media']['zh-cn'] = "广播端口";
 $text['label-proxy_media']['ar-eg'] = "";
 $text['label-proxy_media']['de-at'] = "Proxy Media"; //copied from de-de
 $text['label-proxy_media']['de-ch'] = "Proxy Media"; //copied from de-de
@@ -730,6 +758,7 @@ $text['label-proxy_media']['sv-se'] = "Proxy Media";
 $text['label-proxy_media']['uk-ua'] = "";
 
 $text['label-provisioning']['en-us'] = "Device Provisioning";
+$text['label-provisioning']['zh-cn'] = "设备配置";
 $text['label-provisioning']['ar-eg'] = "";
 $text['label-provisioning']['de-at'] = "Endgeräte Bereitstellung"; //copied from de-de
 $text['label-provisioning']['de-ch'] = "Endgeräte Bereitstellung"; //copied from de-de
@@ -750,6 +779,7 @@ $text['label-provisioning']['sv-se'] = "Enhet Provisionering";
 $text['label-provisioning']['uk-ua'] = "";
 
 $text['label-password']['en-us'] = "Password";
+$text['label-password']['zh-cn'] = "密码";
 $text['label-password']['ar-eg'] = "كلمة السر";
 $text['label-password']['de-at'] = "Passwort"; //copied from de-de
 $text['label-password']['de-ch'] = "Passwort"; //copied from de-de
@@ -770,6 +800,7 @@ $text['label-password']['sv-se'] = "Lösenord";
 $text['label-password']['uk-ua'] = "Пароль";
 
 $text['label-caller_id']['en-us'] = "Caller ID";
+$text['label-caller_id']['zh-cn'] = "呼叫 ID";
 $text['label-caller_id']['ar-eg'] = "";
 $text['label-caller_id']['de-at'] = "Ausgehende Anruferkennung"; //copied from de-de
 $text['label-caller_id']['de-ch'] = "Ausgehende Anruferkennung"; //copied from de-de
@@ -790,6 +821,7 @@ $text['label-caller_id']['sv-se'] = "Nummerpresentation";
 $text['label-caller_id']['uk-ua'] = "";
 
 $text['label-caller_id_number']['en-us'] = "Caller ID";
+$text['label-caller_id_number']['zh-cn'] = "呼叫 ID";
 $text['label-caller_id_number']['ar-eg'] = "";
 $text['label-caller_id_number']['de-at'] = "Ausgehende Anruferkennung"; //copied from de-de
 $text['label-caller_id_number']['de-ch'] = "Ausgehende Anruferkennung"; //copied from de-de
@@ -810,6 +842,7 @@ $text['label-caller_id_number']['sv-se'] = "Nummerpresentation";
 $text['label-caller_id_number']['uk-ua'] = "";
 
 $text['label-outbound_caller_id_number']['en-us'] = "Outbound Caller ID Number";
+$text['label-outbound_caller_id_number']['zh-cn'] = "出站呼叫者ID号码";
 $text['label-outbound_caller_id_number']['ar-eg'] = "";
 $text['label-outbound_caller_id_number']['de-at'] = "Ausgehende Anruferkennung (Nummer)"; //copied from de-de
 $text['label-outbound_caller_id_number']['de-ch'] = "Ausgehende Anruferkennung (Nummer)"; //copied from de-de
@@ -830,6 +863,7 @@ $text['label-outbound_caller_id_number']['sv-se'] = "Utgående Nummerpresentatio
 $text['label-outbound_caller_id_number']['uk-ua'] = "";
 
 $text['label-outbound_caller_id_name']['en-us'] = "Outbound Caller ID Name";
+$text['label-outbound_caller_id_name']['zh-cn'] = "出站呼叫者ID名称";
 $text['label-outbound_caller_id_name']['ar-eg'] = "";
 $text['label-outbound_caller_id_name']['de-at'] = "Ausgehende Anruferkennung (Name)"; //copied from de-de
 $text['label-outbound_caller_id_name']['de-ch'] = "Ausgehende Anruferkennung (Name)"; //copied from de-de
@@ -850,6 +884,7 @@ $text['label-outbound_caller_id_name']['sv-se'] = "Utgående Namnpresentation";
 $text['label-outbound_caller_id_name']['uk-ua'] = "";
 
 $text['label-number_alias']['en-us'] = "Number Alias";
+$text['label-number_alias']['zh-cn'] = "号码别名";
 $text['label-number_alias']['ar-eg'] = "";
 $text['label-number_alias']['de-at'] = "Alternative Nummer"; //copied from de-de
 $text['label-number_alias']['de-ch'] = "Alternative Nummer"; //copied from de-de
@@ -870,6 +905,7 @@ $text['label-number_alias']['sv-se'] = "Nummer Alias";
 $text['label-number_alias']['uk-ua'] = "Псевдонім номера";
 
 $text['label-nibble_account']['en-us'] = "Nibble Account";
+$text['label-nibble_account']['zh-cn'] = "Nibble帐户";
 $text['label-nibble_account']['ar-eg'] = "";
 $text['label-nibble_account']['de-at'] = "Nibble Benutzer"; //copied from de-de
 $text['label-nibble_account']['de-ch'] = "Nibble Benutzer"; //copied from de-de
@@ -890,6 +926,7 @@ $text['label-nibble_account']['sv-se'] = "Nibble Konto";
 $text['label-nibble_account']['uk-ua'] = "";
 
 $text['label-mwi_account']['en-us'] = "MWI Account";
+$text['label-mwi_account']['zh-cn'] = "MWI 账户";
 $text['label-mwi_account']['ar-eg'] = "";
 $text['label-mwi_account']['de-at'] = "MWI Konto"; //copied from de-de
 $text['label-mwi_account']['de-ch'] = "MWI Konto"; //copied from de-de
@@ -910,6 +947,7 @@ $text['label-mwi_account']['sv-se'] = "MWI Konto";
 $text['label-mwi_account']['uk-ua'] = "";
 
 $text['label-missed_call']['en-us'] = "Missed Call";
+$text['label-missed_call']['zh-cn'] = "未接来电";
 $text['label-missed_call']['ar-eg'] = "";
 $text['label-missed_call']['de-at'] = "Verpasster Anruf"; //copied from de-de
 $text['label-missed_call']['de-ch'] = "Verpasster Anruf"; //copied from de-de
@@ -930,6 +968,7 @@ $text['label-missed_call']['sv-se'] = "Missat Samtal";
 $text['label-missed_call']['uk-ua'] = "пропущений Дзвінок";
 
 $text['label-line']['en-us'] = "Line";
+$text['label-line']['zh-cn'] = "Line";
 $text['label-line']['ar-eg'] = "خط";
 $text['label-line']['de-at'] = "Leitung"; //copied from de-de
 $text['label-line']['de-ch'] = "Leitung"; //copied from de-de
@@ -950,6 +989,7 @@ $text['label-line']['sv-se'] = "Linje";
 $text['label-line']['uk-ua'] = "";
 
 $text['label-limit_max']['en-us'] = "Limit Max";
+$text['label-limit_max']['zh-cn'] = "限制最大值";
 $text['label-limit_max']['ar-eg'] = "";
 $text['label-limit_max']['de-at'] = "Obergrenze"; //copied from de-de
 $text['label-limit_max']['de-ch'] = "Obergrenze"; //copied from de-de
@@ -970,6 +1010,7 @@ $text['label-limit_max']['sv-se'] = "Max Begränsning";
 $text['label-limit_max']['uk-ua'] = "";
 
 $text['label-limit_destination']['en-us'] = "Limit Destination";
+$text['label-limit_destination']['zh-cn'] = "限制目的地";
 $text['label-limit_destination']['ar-eg'] = "";
 $text['label-limit_destination']['de-at'] = "Ziel bei Wertüberschreitung"; //copied from de-de
 $text['label-limit_destination']['de-ch'] = "Ziel bei Wertüberschreitung"; //copied from de-de
@@ -990,6 +1031,7 @@ $text['label-limit_destination']['sv-se'] = "Begränsad Destination";
 $text['label-limit_destination']['uk-ua'] = "";
 
 $text['label-hold_music']['en-us'] = "Hold Music";
+$text['label-hold_music']['zh-cn'] = "等待音乐";
 $text['label-hold_music']['ar-eg'] = "";
 $text['label-hold_music']['de-at'] = "Wartemusik"; //copied from de-de
 $text['label-hold_music']['de-ch'] = "Wartemusik"; //copied from de-de
@@ -1010,6 +1052,7 @@ $text['label-hold_music']['sv-se'] = "Vänt-musik";
 $text['label-hold_music']['uk-ua'] = "";
 
 $text['label-extension']['en-us'] = "Extension";
+$text['label-extension']['zh-cn'] = "分机";
 $text['label-extension']['ar-eg'] = "رقم داخلي";
 $text['label-extension']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['label-extension']['de-ch'] = "Nebenstelle"; //copied from de-de
@@ -1030,6 +1073,7 @@ $text['label-extension']['sv-se'] = "Anknytning";
 $text['label-extension']['uk-ua'] = "Розширення";
 
 $text['label-emergency_caller_id_number']['en-us'] = "Emergency Caller ID Number";
+$text['label-emergency_caller_id_number']['zh-cn'] = "紧急呼叫者ID号码";
 $text['label-emergency_caller_id_number']['ar-eg'] = "";
 $text['label-emergency_caller_id_number']['de-at'] = "Notruf Anruferkennung (Nummer)"; //copied from de-de
 $text['label-emergency_caller_id_number']['de-ch'] = "Notruf Anruferkennung (Nummer)"; //copied from de-de
@@ -1050,6 +1094,7 @@ $text['label-emergency_caller_id_number']['sv-se'] = "Nöd Nummerpresentation";
 $text['label-emergency_caller_id_number']['uk-ua'] = "";
 
 $text['label-emergency_caller_id_name']['en-us'] = "Emergency Caller ID Name";
+$text['label-emergency_caller_id_name']['zh-cn'] = "紧急呼叫方ID名称";
 $text['label-emergency_caller_id_name']['ar-eg'] = "";
 $text['label-emergency_caller_id_name']['de-at'] = "Notruf Anruferkennung (Name)"; //copied from de-de
 $text['label-emergency_caller_id_name']['de-ch'] = "Notruf Anruferkennung (Name)"; //copied from de-de
@@ -1070,6 +1115,7 @@ $text['label-emergency_caller_id_name']['sv-se'] = "Nöd Namnpresentation";
 $text['label-emergency_caller_id_name']['uk-ua'] = "";
 
 $text['label-email']['en-us'] = "Email";
+$text['label-email']['zh-cn'] = "电子邮件";
 $text['label-email']['ar-eg'] = "البريد الإليكتروني";
 $text['label-email']['de-at'] = "Email"; //copied from de-de
 $text['label-email']['de-ch'] = "Email"; //copied from de-de
@@ -1090,6 +1136,7 @@ $text['label-email']['sv-se'] = "E-post";
 $text['label-email']['uk-ua'] = "Електронна пошта";
 
 $text['label-effective_caller_id_number']['en-us'] = "Effective Caller ID Number";
+$text['label-effective_caller_id_number']['zh-cn'] = "有效呼叫者ID号码";
 $text['label-effective_caller_id_number']['ar-eg'] = "رقم المتصل الفعال";
 $text['label-effective_caller_id_number']['de-at'] = "Tatsächliche Anruferkennung (Nummer)"; //copied from de-de
 $text['label-effective_caller_id_number']['de-ch'] = "Tatsächliche Anruferkennung (Nummer)"; //copied from de-de
@@ -1110,6 +1157,7 @@ $text['label-effective_caller_id_number']['sv-se'] = "Effektiv Nummerpresentatio
 $text['label-effective_caller_id_number']['uk-ua'] = "";
 
 $text['label-effective_caller_id_name']['en-us'] = "Effective Caller ID Name";
+$text['label-effective_caller_id_name']['zh-cn'] = "有效呼叫者ID名称";
 $text['label-effective_caller_id_name']['ar-eg'] = "إسم المتصل الفعال";
 $text['label-effective_caller_id_name']['de-at'] = "Tatsächliche Anruferkennung (Name)"; //copied from de-de
 $text['label-effective_caller_id_name']['de-ch'] = "Tatsächliche Anruferkennung (Name)"; //copied from de-de
@@ -1130,6 +1178,7 @@ $text['label-effective_caller_id_name']['sv-se'] = "Effektiv Namnpresentation";
 $text['label-effective_caller_id_name']['uk-ua'] = "";
 
 $text['label-domain']['en-us'] = "Domain";
+$text['label-domain']['zh-cn'] = "域";
 $text['label-domain']['ar-eg'] = "النطاق";
 $text['label-domain']['de-at'] = "Domäne"; //copied from de-de
 $text['label-domain']['de-ch'] = "Domäne"; //copied from de-de
@@ -1150,6 +1199,7 @@ $text['label-domain']['sv-se'] = "Domän";
 $text['label-domain']['uk-ua'] = "Домен";
 
 $text['label-directory_visible']['en-us'] = "Directory Visible";
+$text['label-directory_visible']['zh-cn'] = "电话簿可见";
 $text['label-directory_visible']['ar-eg'] = "";
 $text['label-directory_visible']['de-at'] = "Sichtbar im Verzeichnis"; //copied from de-de
 $text['label-directory_visible']['de-ch'] = "Sichtbar im Verzeichnis"; //copied from de-de
@@ -1170,6 +1220,7 @@ $text['label-directory_visible']['sv-se'] = "Synlig I Katalog";
 $text['label-directory_visible']['uk-ua'] = "";
 
 $text['label-directory_full_name']['en-us'] = "Directory Full Name";
+$text['label-directory_full_name']['zh-cn'] = "电话簿全名";
 $text['label-directory_full_name']['ar-eg'] = "";
 $text['label-directory_full_name']['de-at'] = "Voller Name im Verzeichnis"; //copied from de-de
 $text['label-directory_full_name']['de-ch'] = "Voller Name im Verzeichnis"; //copied from de-de
@@ -1190,6 +1241,7 @@ $text['label-directory_full_name']['sv-se'] = "Hela Namnet I Katalog";
 $text['label-directory_full_name']['uk-ua'] = "";
 
 $text['label-directory_exten_visible']['en-us'] = "Directory Extension Visible";
+$text['label-directory_exten_visible']['zh-cn'] = "电话簿分机号可见";
 $text['label-directory_exten_visible']['ar-eg'] = "";
 $text['label-directory_exten_visible']['de-at'] = "Nebenstelle im Verzeichnis sichtbar"; //copied from de-de
 $text['label-directory_exten_visible']['de-ch'] = "Nebenstelle im Verzeichnis sichtbar"; //copied from de-de
@@ -1210,6 +1262,7 @@ $text['label-directory_exten_visible']['sv-se'] = "Fullständigt Namn I Kataloge
 $text['label-directory_exten_visible']['uk-ua'] = "";
 
 $text['label-dial_string']['en-us'] = "Dial String";
+$text['label-dial_string']['zh-cn'] = "拨打字符串";
 $text['label-dial_string']['ar-eg'] = "";
 $text['label-dial_string']['de-at'] = "Wahl Zeichenkette"; //copied from de-de
 $text['label-dial_string']['de-ch'] = "Wahl Zeichenkette"; //copied from de-de
@@ -1230,6 +1283,7 @@ $text['label-dial_string']['sv-se'] = "Dial String";
 $text['label-dial_string']['uk-ua'] = "";
 
 $text['label-device_template']['en-us'] = "Template";
+$text['label-device_template']['zh-cn'] = "模板";
 $text['label-device_template']['ar-eg'] = "";
 $text['label-device_template']['de-at'] = "Vorlage"; //copied from de-de
 $text['label-device_template']['de-ch'] = "Vorlage"; //copied from de-de
@@ -1250,6 +1304,7 @@ $text['label-device_template']['sv-se'] = "Mall";
 $text['label-device_template']['uk-ua'] = "";
 
 $text['label-device_mac_address']['en-us'] = "MAC Address";
+$text['label-device_mac_address']['zh-cn'] = "MAC 地址";
 $text['label-device_mac_address']['ar-eg'] = "";
 $text['label-device_mac_address']['de-at'] = "MAC Adresse"; //copied from de-de
 $text['label-device_mac_address']['de-ch'] = "MAC Adresse"; //copied from de-de
@@ -1270,6 +1325,7 @@ $text['label-device_mac_address']['sv-se'] = "MAC-adress";
 $text['label-device_mac_address']['uk-ua'] = "";
 
 $text['label-description']['en-us'] = "Description";
+$text['label-description']['zh-cn'] = "描述";
 $text['label-description']['ar-eg'] = "الوصف";
 $text['label-description']['de-at'] = "Beschreibung"; //copied from de-de
 $text['label-description']['de-ch'] = "Beschreibung"; //copied from de-de
@@ -1290,6 +1346,7 @@ $text['label-description']['sv-se'] = "Beskrivning";
 $text['label-description']['uk-ua'] = "Опис";
 
 $text['label-cidr']['en-us'] = "CIDR";
+$text['label-cidr']['zh-cn'] = "CIDR";
 $text['label-cidr']['ar-eg'] = "";
 $text['label-cidr']['de-at'] = "CIDR"; //copied from de-de
 $text['label-cidr']['de-ch'] = "CIDR"; //copied from de-de
@@ -1310,6 +1367,7 @@ $text['label-cidr']['sv-se'] = "CIDR";
 $text['label-cidr']['uk-ua'] = "";
 
 $text['label-call_timeout']['en-us'] = "Call Timeout";
+$text['label-call_timeout']['zh-cn'] = "呼叫超时";
 $text['label-call_timeout']['ar-eg'] = "";
 $text['label-call_timeout']['de-at'] = "Zeitüberschreitung des Anrufs"; //copied from de-de
 $text['label-call_timeout']['de-ch'] = "Zeitüberschreitung des Anrufs"; //copied from de-de
@@ -1330,6 +1388,7 @@ $text['label-call_timeout']['sv-se'] = "Call Timeout";
 $text['label-call_timeout']['uk-ua'] = "";
 
 $text['label-call_screen_enabled']['en-us'] = "Call Screen";
+$text['label-call_screen_enabled']['zh-cn'] = "呼叫检查";
 $text['label-call_screen_enabled']['ar-eg'] = "";
 $text['label-call_screen_enabled']['de-at'] = "Anrufe abschirmen"; //copied from de-de
 $text['label-call_screen_enabled']['de-ch'] = "Anrufe abschirmen"; //copied from de-de
@@ -1350,6 +1409,7 @@ $text['label-call_screen_enabled']['sv-se'] = "Call Screen";
 $text['label-call_screen_enabled']['uk-ua'] = "";
 
 $text['label-call_group']['en-us'] = "Call Group";
+$text['label-call_group']['zh-cn'] = "呼叫组";
 $text['label-call_group']['ar-eg'] = "";
 $text['label-call_group']['de-at'] = "Rufgruppe"; //copied from de-de
 $text['label-call_group']['de-ch'] = "Rufgruppe"; //copied from de-de
@@ -1370,6 +1430,7 @@ $text['label-call_group']['sv-se'] = "Ring Grupp";
 $text['label-call_group']['uk-ua'] = "";
 
 $text['label-bypass_media_after_bridge']['en-us'] = "Bypass Media After Bridge";
+$text['label-bypass_media_after_bridge']['zh-cn'] = "桥接后跳过广播";
 $text['label-bypass_media_after_bridge']['ar-eg'] = "";
 $text['label-bypass_media_after_bridge']['de-at'] = "Bypass Media After Bridge"; //copied from de-de
 $text['label-bypass_media_after_bridge']['de-ch'] = "Bypass Media After Bridge"; //copied from de-de
@@ -1390,6 +1451,7 @@ $text['label-bypass_media_after_bridge']['sv-se'] = "Bypass Media After Bridge";
 $text['label-bypass_media_after_bridge']['uk-ua'] = "";
 
 $text['label-bypass_media']['en-us'] = "Bypass Media";
+$text['label-bypass_media']['zh-cn'] = "跳过广播";
 $text['label-bypass_media']['ar-eg'] = "";
 $text['label-bypass_media']['de-at'] = "Bypass Media"; //copied from de-de
 $text['label-bypass_media']['de-ch'] = "Bypass Media"; //copied from de-de
@@ -1410,6 +1472,7 @@ $text['label-bypass_media']['sv-se'] = "Bypass Media";
 $text['label-bypass_media']['uk-ua'] = "";
 
 $text['label-billing_warning']['en-us'] = "Billing is installed, please take note you need to have enough balance to create extensions.";
+$text['label-billing_warning']['zh-cn'] = "账单已安装，请注意您需要有足够的余额来创建分机。";
 $text['label-billing_warning']['ar-eg'] = "";
 $text['label-billing_warning']['de-at'] = "Das Rechnungsmodul ist installiert. Bitte beachten Sie, dass Sie genug Guthaben benötigen um Nebenstellen anlegen zu können."; //copied from de-de
 $text['label-billing_warning']['de-ch'] = "Das Rechnungsmodul ist installiert. Bitte beachten Sie, dass Sie genug Guthaben benötigen um Nebenstellen anlegen zu können."; //copied from de-de
@@ -1430,6 +1493,7 @@ $text['label-billing_warning']['sv-se'] = "Fakturerings program är installerat,
 $text['label-billing_warning']['uk-ua'] = "";
 
 $text['label-auth_acl']['en-us'] = "Auth ACL";
+$text['label-auth_acl']['zh-cn'] = "身份验证 ACL";
 $text['label-auth_acl']['ar-eg'] = "";
 $text['label-auth_acl']['de-at'] = "Authentifizierungs ACL"; //copied from de-de
 $text['label-auth_acl']['de-ch'] = "Authentifizierungs ACL"; //copied from de-de
@@ -1450,6 +1514,7 @@ $text['label-auth_acl']['sv-se'] = "Auth ACL";
 $text['label-auth_acl']['uk-ua'] = "";
 
 $text['label-accountcode']['en-us'] = "Account Code";
+$text['label-accountcode']['zh-cn'] = "账户编码";
 $text['label-accountcode']['ar-eg'] = "";
 $text['label-accountcode']['de-at'] = "Kontoschlüssel"; //copied from de-de
 $text['label-accountcode']['de-ch'] = "Kontoschlüssel"; //copied from de-de
@@ -1470,6 +1535,7 @@ $text['label-accountcode']['sv-se'] = "Kontokod";
 $text['label-accountcode']['uk-ua'] = "";
 
 $text['label-is_registered']['en-us'] = "Registered";
+$text['label-is_registered']['zh-cn'] = "注册";
 $text['label-is_registered']['ar-eg'] = "";
 $text['label-is_registered']['de-at'] = "Registriert"; //copied from de-de
 $text['label-is_registered']['de-ch'] = "Registriert"; //copied from de-de
@@ -1490,6 +1556,7 @@ $text['label-is_registered']['sv-se'] = "Registrerad";
 $text['label-is_registered']['uk-ua'] = "";
 
 $text['header-extensions']['en-us'] = "Extensions";
+$text['header-extensions']['zh-cn'] = "分机";
 $text['header-extensions']['ar-eg'] = "الأرقام الداخلية";
 $text['header-extensions']['de-at'] = "Nebenstellen"; //copied from de-de
 $text['header-extensions']['de-ch'] = "Nebenstellen"; //copied from de-de
@@ -1510,6 +1577,7 @@ $text['header-extensions']['sv-se'] = "Anknytningar";
 $text['header-extensions']['uk-ua'] = "Розширення";
 
 $text['header-extension-edit']['en-us'] = "Extension";
+$text['header-extension-edit']['zh-cn'] = "分机号";
 $text['header-extension-edit']['ar-eg'] = "رقم داخلي";
 $text['header-extension-edit']['de-at'] = "Nebenstelle"; //copied from de-de
 $text['header-extension-edit']['de-ch'] = "Nebenstelle"; //copied from de-de
@@ -1530,6 +1598,7 @@ $text['header-extension-edit']['sv-se'] = "Anknytning";
 $text['header-extension-edit']['uk-ua'] = "Розширення";
 
 $text['header-extension-add']['en-us'] = "Extension Add";
+$text['header-extension-add']['zh-cn'] = "添加分机";
 $text['header-extension-add']['ar-eg'] = "إضافة رقم داخلي";
 $text['header-extension-add']['de-at'] = "Nebenstelle hinzufügen"; //copied from de-de
 $text['header-extension-add']['de-ch'] = "Nebenstelle hinzufügen"; //copied from de-de
@@ -1550,6 +1619,7 @@ $text['header-extension-add']['sv-se'] = "Lägg Till Anknytning";
 $text['header-extension-add']['uk-ua'] = "Додавання розширення";
 
 $text['description-voicemail_password']['en-us'] = "Enter the numeric voicemail  password here.";
+$text['description-voicemail_password']['zh-cn'] = "在此处输入语音邮件密码。";
 $text['description-voicemail_password']['ar-eg'] = "";
 $text['description-voicemail_password']['de-at'] = "Geben Sie das numerische Mailbox Passwort an."; //copied from de-de
 $text['description-voicemail_password']['de-ch'] = "Geben Sie das numerische Mailbox Passwort an."; //copied from de-de
@@ -1570,6 +1640,7 @@ $text['description-voicemail_password']['sv-se'] = "Ange det numeriska röstbrev
 $text['description-voicemail_password']['uk-ua'] = "";
 
 $text['description-voicemail_mail_to']['en-us'] = "Enter the email address to send voicemail to (optional).";
+$text['description-voicemail_mail_to']['zh-cn'] = "输入要发送语音邮件的电子邮件地址（可选）。";
 $text['description-voicemail_mail_to']['ar-eg'] = "";
 $text['description-voicemail_mail_to']['de-at'] = "Geben Sie die Email Adresse an, an die Ihre Mailbox Nachricht gesendet werden soll (optional)."; //copied from de-de
 $text['description-voicemail_mail_to']['de-ch'] = "Geben Sie die Email Adresse an, an die Ihre Mailbox Nachricht gesendet werden soll (optional)."; //copied from de-de
@@ -1590,6 +1661,7 @@ $text['description-voicemail_mail_to']['sv-se'] = "Ange E-post adressen för rö
 $text['description-voicemail_mail_to']['uk-ua'] = "";
 
 $text['description-voicemail_local_after_email']['en-us'] = "Choose whether to keep the voicemail in the system after sending the email notification.";
+$text['description-voicemail_local_after_email']['zh-cn'] = "选择发送电子邮件通知后是否将语音邮件保留在系统中。";
 $text['description-voicemail_local_after_email']['ar-eg'] = "";
 $text['description-voicemail_local_after_email']['de-at'] = "Wählen Sie ob die Mailbox Nachricht am Server gespeichert werden soll, sobald die Nachricht per Mail versendet worden ist."; //copied from de-de
 $text['description-voicemail_local_after_email']['de-ch'] = "Wählen Sie ob die Mailbox Nachricht am Server gespeichert werden soll, sobald die Nachricht per Mail versendet worden ist."; //copied from de-de
@@ -1610,6 +1682,7 @@ $text['description-voicemail_local_after_email']['sv-se'] = "Välj om du vill be
 $text['description-voicemail_local_after_email']['uk-ua'] = "";
 
 $text['description-voicemail_file']['en-us'] = "Select a listening option to include with the email notification.";
+$text['description-voicemail_file']['zh-cn'] = "选择要包含在电子邮件通知中的选项。";
 $text['description-voicemail_file']['ar-eg'] = "";
 $text['description-voicemail_file']['de-at'] = "Wählen Sie eine Option für die Mailbox Benachrichtigung."; //copied from de-de
 $text['description-voicemail_file']['de-ch'] = "Wählen Sie eine Option für die Mailbox Benachrichtigung."; //copied from de-de
@@ -1630,6 +1703,7 @@ $text['description-voicemail_file']['sv-se'] = "Välj ett alternativ för avlyss
 $text['description-voicemail_file']['uk-ua'] = "";
 
 $text['description-voicemail_enabled']['en-us'] = "Enable/disable voicemail for this extension.";
+$text['description-voicemail_enabled']['zh-cn'] = "启用/禁用此分机的语音邮件。";
 $text['description-voicemail_enabled']['ar-eg'] = "";
 $text['description-voicemail_enabled']['de-at'] = "Mailbox für diese Nebenstelle Ein- oder Ausschalten."; //copied from de-de
 $text['description-voicemail_enabled']['de-ch'] = "Mailbox für diese Nebenstelle Ein- oder Ausschalten."; //copied from de-de
@@ -1650,6 +1724,7 @@ $text['description-voicemail_enabled']['sv-se'] = "Aktivera/Inaktivera röstbrev
 $text['description-voicemail_enabled']['uk-ua'] = "";
 
 $text['description-user_record']['en-us'] = "Choose whether to record local, inbound, outbound, or all.";
+$text['description-user_record']['zh-cn'] = "选择是录制本地、入站、出站还是全部。";
 $text['description-user_record']['ar-eg'] = "";
 $text['description-user_record']['de-at'] = "Wählen Sie ob lokale (local), ausgehende (outbound) oder alle (all) Gespräche aufgezeichnet werden sollen."; //copied from de-de
 $text['description-user_record']['de-ch'] = "Wählen Sie ob lokale (local), ausgehende (outbound) oder alle (all) Gespräche aufgezeichnet werden sollen."; //copied from de-de
@@ -1670,6 +1745,7 @@ $text['description-user_record']['sv-se'] = "Välj om lokala, inkommande, utgåe
 $text['description-user_record']['uk-ua'] = "";
 
 $text['description-user_list']['en-us'] = "Assign the users that are assigned to this extension. ";
+$text['description-user_list']['zh-cn'] = "分配分配给此分机的用户。 ";
 $text['description-user_list']['ar-eg'] = "";
 $text['description-user_list']['de-at'] = "Weisen Sie dieser Nebenstelle Benutzer zu."; //copied from de-de
 $text['description-user_list']['de-ch'] = "Weisen Sie dieser Nebenstelle Benutzer zu."; //copied from de-de
@@ -1690,6 +1766,7 @@ $text['description-user_list']['sv-se'] = "Tilldela användare till denna anknyt
 $text['description-user_list']['uk-ua'] = "";
 
 $text['description-user_context']['en-us'] = "Enter the user context here.";
+$text['description-user_context']['zh-cn'] = "在此处输入用户上下文。";
 $text['description-user_context']['ar-eg'] = "";
 $text['description-user_context']['de-at'] = "Geben Sie den Benutzer Kontext an."; //copied from de-de
 $text['description-user_context']['de-ch'] = "Geben Sie den Benutzer Kontext an."; //copied from de-de
@@ -1710,6 +1787,7 @@ $text['description-user_context']['sv-se'] = "Ange 'user context' här.";
 $text['description-user_context']['uk-ua'] = "";
 
 $text['description-toll_allow']['en-us'] = "Enter the toll allow value here.  (Examples: domestic,international,local)";
+$text['description-toll_allow']['zh-cn'] = "在此处输入允许放行值。（示:例domestic,international,local）";
 $text['description-toll_allow']['ar-eg'] = "";
 $text['description-toll_allow']['de-at'] = "Geben Sie die Berechtigung an. (z.B.: domestic, international, local)"; //copied from de-de
 $text['description-toll_allow']['de-ch'] = "Geben Sie die Berechtigung an. (z.B.: domestic, international, local)"; //copied from de-de
@@ -1730,6 +1808,7 @@ $text['description-toll_allow']['sv-se'] = "Ange 'toll allow' värde här. (Exem
 $text['description-toll_allow']['uk-ua'] = "";
 
 $text['description-sip_force_expires']['en-us'] = "To prevent stale registrations SIP Force expires can override the client expire.";
+$text['description-sip_force_expires']['zh-cn'] = "为了防止过期注册，SIP强制过期可以覆盖客户端过期。";
 $text['description-sip_force_expires']['ar-eg'] = "";
 $text['description-sip_force_expires']['de-at'] = "Um abgelaufene Registrierungen zu vermeiden kann SIP 'Force expires' des Endgeräts hier überschrieben werden."; //copied from de-de
 $text['description-sip_force_expires']['de-ch'] = "Um abgelaufene Registrierungen zu vermeiden kann SIP 'Force expires' des Endgeräts hier überschrieben werden."; //copied from de-de
@@ -1750,6 +1829,7 @@ $text['description-sip_force_expires']['sv-se'] = "För att förhindra inaktuell
 $text['description-sip_force_expires']['uk-ua'] = "";
 
 $text['description-sip_force_contact']['en-us'] = "Choose whether to rewrite the contact port, or rewrite both the contact IP and port.";
+$text['description-sip_force_contact']['zh-cn'] = "选择是重写联系人端口，还是同时重写联系人IP和端口。";
 $text['description-sip_force_contact']['ar-eg'] = "";
 $text['description-sip_force_contact']['de-at'] = "Wählen Sie, ob 'contact Port' oder 'contact IP' und 'contact Port' im SIP Header überschrieben werden sollen."; //copied from de-de
 $text['description-sip_force_contact']['de-ch'] = "Wählen Sie, ob 'contact Port' oder 'contact IP' und 'contact Port' im SIP Header überschrieben werden sollen."; //copied from de-de
@@ -1770,6 +1850,7 @@ $text['description-sip_force_contact']['sv-se'] = "Välj om 'contact port' skall
 $text['description-sip_force_contact']['uk-ua'] = "";
 
 $text['description-sip_bypass_media']['en-us'] = "Choose whether to send the media stream point to point or in transparent proxy mode.";
+$text['description-sip_bypass_media']['zh-cn'] = "选择是点对点还是以透明代理模式发送媒体流。";
 $text['description-sip_bypass_media']['ar-eg'] = "";
 $text['description-sip_bypass_media']['de-at'] = "Wählen Sie, ob Mediendaten direkt von Endgerät zu Endgerät übertragen werden sollen."; //copied from de-de
 $text['description-sip_bypass_media']['de-ch'] = "Wählen Sie, ob Mediendaten direkt von Endgerät zu Endgerät übertragen werden sollen."; //copied from de-de
@@ -1790,6 +1871,7 @@ $text['description-sip_bypass_media']['sv-se'] = "Välj om media strömmen skall
 $text['description-sip_bypass_media']['uk-ua'] = "";
 
 $text['description-range']['en-us'] = "Enter the number of extensions to create. Increments each extension by 1.";
+$text['description-range']['zh-cn'] = "输入要创建的分机数量。每个分机递增1。";
 $text['description-range']['ar-eg'] = "";
 $text['description-range']['de-at'] = "Geben Sie die Anzahl der Nebenstellen an, die angelegt werden sollen. Nebenstellen werden automatisch um 1 erhöht."; //copied from de-de
 $text['description-range']['de-ch'] = "Geben Sie die Anzahl der Nebenstellen an, die angelegt werden sollen. Nebenstellen werden automatisch um 1 erhöht."; //copied from de-de
@@ -1810,6 +1892,7 @@ $text['description-range']['sv-se'] = "Ange hur många anknytningar som skall sk
 $text['description-range']['uk-ua'] = "";
 
 $text['description-provisioning']['en-us'] = "Select a device and line number to assign to this extension.";
+$text['description-provisioning']['zh-cn'] = "选择要分配给此分机的设备和号码。";
 $text['description-provisioning']['ar-eg'] = "";
 $text['description-provisioning']['de-at'] = "Wählen Sie eine Geräte- und Leitungsnummer um sie dieser Nebenstelle zuzuordnen."; //copied from de-de
 $text['description-provisioning']['de-ch'] = "Wählen Sie eine Geräte- und Leitungsnummer um sie dieser Nebenstelle zuzuordnen."; //copied from de-de
@@ -1830,6 +1913,7 @@ $text['description-provisioning']['sv-se'] = "Välj en enhet och linje nummer at
 $text['description-provisioning']['uk-ua'] = "";
 
 $text['description-password']['en-us'] = "Enter the password here.";
+$text['description-password']['zh-cn'] = "在此处输入密码。";
 $text['description-password']['ar-eg'] = "";
 $text['description-password']['de-at'] = "Geben Sie das Passwort ein."; //copied from de-de
 $text['description-password']['de-ch'] = "Geben Sie das Passwort ein."; //copied from de-de
@@ -1850,6 +1934,7 @@ $text['description-password']['sv-se'] = "Fyll i lösenord.";
 $text['description-password']['uk-ua'] = "";
 
 $text['description-outbound_caller_id_number-select']['en-us'] = "Select the external (public) caller ID number.";
+$text['description-outbound_caller_id_number-select']['zh-cn'] = "选择外部（公共）呼叫者ID号码。";
 $text['description-outbound_caller_id_number-select']['ar-eg'] = "";
 $text['description-outbound_caller_id_number-select']['de-at'] = "Wählen Sie die externe Anruferkennung (Nummer)."; //copied from de-de
 $text['description-outbound_caller_id_number-select']['de-ch'] = "Wählen Sie die externe Anruferkennung (Nummer)."; //copied from de-de
@@ -1870,6 +1955,7 @@ $text['description-outbound_caller_id_number-select']['sv-se'] = "Välj det exte
 $text['description-outbound_caller_id_number-select']['uk-ua'] = "";
 
 $text['description-outbound_caller_id_number-custom']['en-us'] = "Enter the external (public) caller ID number here.";
+$text['description-outbound_caller_id_number-custom']['zh-cn'] = "在此处输入外部（公共）呼叫者ID号码。";
 $text['description-outbound_caller_id_number-custom']['ar-eg'] = "";
 $text['description-outbound_caller_id_number-custom']['de-at'] = "Geben Sie die externe Anruferkennung (Nummer) hier an."; //copied from de-de
 $text['description-outbound_caller_id_number-custom']['de-ch'] = "Geben Sie die externe Anruferkennung (Nummer) hier an."; //copied from de-de
@@ -1890,6 +1976,7 @@ $text['description-outbound_caller_id_number-custom']['sv-se'] = "Ange det exter
 $text['description-outbound_caller_id_number-custom']['uk-ua'] = "";
 
 $text['description-outbound_caller_id_name-select']['en-us'] = "Select the external (public) caller ID name.";
+$text['description-outbound_caller_id_name-select']['zh-cn'] = "选择外部（公共）呼叫者ID名称。";
 $text['description-outbound_caller_id_name-select']['ar-eg'] = "";
 $text['description-outbound_caller_id_name-select']['de-at'] = "Wählen Sie die externe Anruferkennung (Name)."; //copied from de-de
 $text['description-outbound_caller_id_name-select']['de-ch'] = "Wählen Sie die externe Anruferkennung (Name)."; //copied from de-de
@@ -1910,6 +1997,7 @@ $text['description-outbound_caller_id_name-select']['sv-se'] = "Välj det extern
 $text['description-outbound_caller_id_name-select']['uk-ua'] = "";
 
 $text['description-outbound_caller_id_name-custom']['en-us'] = "Enter the external (public) caller ID name here.";
+$text['description-outbound_caller_id_name-custom']['zh-cn'] = "在此处输入外部（公共）呼叫者ID名称。";
 $text['description-outbound_caller_id_name-custom']['ar-eg'] = "";
 $text['description-outbound_caller_id_name-custom']['de-at'] = "Geben Sie die externe Anruferkennung (Name) hier an."; //copied from de-de
 $text['description-outbound_caller_id_name-custom']['de-ch'] = "Geben Sie die externe Anruferkennung (Name) hier an."; //copied from de-de
@@ -1930,6 +2018,7 @@ $text['description-outbound_caller_id_name-custom']['sv-se'] = "Ange det externa
 $text['description-outbound_caller_id_name-custom']['uk-ua'] = "";
 
 $text['description-number_alias']['en-us'] = "If the extension is numeric then number alias is optional.";
+$text['description-number_alias']['zh-cn'] = "如果分机是数字，则数字别名是可选的。";
 $text['description-number_alias']['ar-eg'] = "";
 $text['description-number_alias']['de-at'] = "Wenn die Nebenstelle numerisch ist, ist die Angabe einer alternativen Nummer optional."; //copied from de-de
 $text['description-number_alias']['de-ch'] = "Wenn die Nebenstelle numerisch ist, ist die Angabe einer alternativen Nummer optional."; //copied from de-de
@@ -1950,6 +2039,7 @@ $text['description-number_alias']['sv-se'] = "Om anknytningen är numerisk då �
 $text['description-number_alias']['uk-ua'] = "";
 
 $text['description-nibble_account']['en-us'] = "Enter the account number for nibblebill to use.";
+$text['description-nibble_account']['zh-cn'] = "输入要使用的帐单的帐号。";
 $text['description-nibble_account']['ar-eg'] = "";
 $text['description-nibble_account']['de-at'] = "Geben Sie die Kontonummer für den Nibblebill Benutzer an."; //copied from de-de
 $text['description-nibble_account']['de-ch'] = "Geben Sie die Kontonummer für den Nibblebill Benutzer an."; //copied from de-de
@@ -1970,6 +2060,7 @@ $text['description-nibble_account']['sv-se'] = "Ange konto nummer för 'nibblebi
 $text['description-nibble_account']['uk-ua'] = "";
 
 $text['description-mwi_account']['en-us'] = "MWI Account with user@domain of the voicemail to monitor.";
+$text['description-mwi_account']['zh-cn'] = "账户user@domain要监视的语音邮件。";
 $text['description-mwi_account']['ar-eg'] = "";
 $text['description-mwi_account']['de-at'] = "MWI Benutzer (user@domain) der Mailbox."; //copied from de-de
 $text['description-mwi_account']['de-ch'] = "MWI Benutzer (user@domain) der Mailbox."; //copied from de-de
@@ -1990,6 +2081,7 @@ $text['description-mwi_account']['sv-se'] = "MWI konto med user@domain för den 
 $text['description-mwi_account']['uk-ua'] = "";
 
 $text['description-absolute_codec_string']['en-us'] = "Absolute Codec String for the extension";
+$text['description-absolute_codec_string']['zh-cn'] = "分机号的绝对编解码器字符串";
 $text['description-absolute_codec_string']['ar-eg'] = "";
 $text['description-absolute_codec_string']['de-at'] = "Codec Zeichenkette für diese Nebenstelle"; //copied from de-de
 $text['description-absolute_codec_string']['de-ch'] = "Codec Zeichenkette für diese Nebenstelle"; //copied from de-de
@@ -2010,6 +2102,7 @@ $text['description-absolute_codec_string']['sv-se'] = "Absolut Codec String för
 $text['description-absolute_codec_string']['uk-ua'] = "";
 
 $text['description-force_ping']['en-us'] = "Use OPTIONS to detect if extension is reacheable";
+$text['description-force_ping']['zh-cn'] = "使用发现分机是否可访问";
 $text['description-force_ping']['ar-eg'] = "";
 $text['description-force_ping']['de-at'] = "Verwende diese Option um zu prüfen, ob die Nebenstelle ereichbar ist."; //copied from de-de
 $text['description-force_ping']['de-ch'] = "Verwende diese Option um zu prüfen, ob die Nebenstelle ereichbar ist."; //copied from de-de
@@ -2030,6 +2123,7 @@ $text['description-force_ping']['sv-se'] = "Använd OPTIONS för att avgöra om 
 $text['description-force_ping']['uk-ua'] = "";
 
 $text['description-missed_call']['en-us'] = "Select the notification type, and enter the appropriate destination.";
+$text['description-missed_call']['zh-cn'] = "选择通知类型，然后输入相应的目的地。";
 $text['description-missed_call']['ar-eg'] = "";
 $text['description-missed_call']['de-at'] = "Wählen Sie den Benachrichtigungstyp und geben Sie das entsprechende Ziel an."; //copied from de-de
 $text['description-missed_call']['de-ch'] = "Wählen Sie den Benachrichtigungstyp und geben Sie das entsprechende Ziel an."; //copied from de-de
@@ -2050,6 +2144,7 @@ $text['description-missed_call']['sv-se'] = "Välj typ anmälan, och ange lämpl
 $text['description-missed_call']['uk-ua'] = "Виберіть тип повідомлення, і ввести відповідний пункт призначення.";
 
 $text['description-limit_max']['en-us'] = "Enter the max number of outgoing calls for this user.";
+$text['description-limit_max']['zh-cn'] = "输入此用户的最大呼出电话数。";
 $text['description-limit_max']['ar-eg'] = "";
 $text['description-limit_max']['de-at'] = "Geben Sie die maximale Anzahl ausgehender Gespräche dieser Nebenstelle an."; //copied from de-de
 $text['description-limit_max']['de-ch'] = "Geben Sie die maximale Anzahl ausgehender Gespräche dieser Nebenstelle an."; //copied from de-de
@@ -2070,6 +2165,7 @@ $text['description-limit_max']['sv-se'] = "Ange max antal utgående samtal för 
 $text['description-limit_max']['uk-ua'] = "";
 
 $text['description-limit_destination']['en-us'] = "Enter the destination to send the calls when the max number of outgoing calls has been reached.";
+$text['description-limit_destination']['zh-cn'] = "当达到最大呼出电话数时，输入发送电话的目的地。";
 $text['description-limit_destination']['ar-eg'] = "";
 $text['description-limit_destination']['de-at'] = "Geben Sie das Ziel an, wohin der Anruf geleitet werden soll, falls die maximale Anzahl ausgehender Gespräche erreicht wurde."; //copied from de-de
 $text['description-limit_destination']['de-ch'] = "Geben Sie das Ziel an, wohin der Anruf geleitet werden soll, falls die maximale Anzahl ausgehender Gespräche erreicht wurde."; //copied from de-de
@@ -2090,6 +2186,7 @@ $text['description-limit_destination']['sv-se'] = "Ange destination dit samtal s
 $text['description-limit_destination']['uk-ua'] = "";
 
 $text['description-hold_music']['en-us'] = "Select the MOH Category here.";
+$text['description-hold_music']['zh-cn'] = "在此选择等待音乐类别。";
 $text['description-hold_music']['ar-eg'] = "";
 $text['description-hold_music']['de-at'] = "Wählen Sie die Wartemusik Kategorie."; //copied from de-de
 $text['description-hold_music']['de-ch'] = "Wählen Sie die Wartemusik Kategorie."; //copied from de-de
@@ -2110,6 +2207,7 @@ $text['description-hold_music']['sv-se'] = "Välj MOH Kategori här.";
 $text['description-hold_music']['uk-ua'] = "";
 
 $text['description-extensions']['en-us'] = "Use this to configure your SIP extensions.";
+$text['description-extensions']['zh-cn'] = "使用此选项配置SIP分机。";
 $text['description-extensions']['ar-eg'] = "";
 $text['description-extensions']['de-at'] = "Benutzen Sie dieses Modul um Ihre SIP Nebenstelle zu konfigurieren."; //copied from de-de
 $text['description-extensions']['de-ch'] = "Benutzen Sie dieses Modul um Ihre SIP Nebenstelle zu konfigurieren."; //copied from de-de
@@ -2130,6 +2228,7 @@ $text['description-extensions']['sv-se'] = "Använd detta för att konfigurera d
 $text['description-extensions']['uk-ua'] = "";
 
 $text['description-extension']['en-us'] = "Enter the alphanumeric extension. The default configuration allows 2 - 15 digit extensions.";
+$text['description-extension']['zh-cn'] = "输入分机号。默认配置允许2-15位分机号。";
 $text['description-extension']['ar-eg'] = "";
 $text['description-extension']['de-at'] = "Weisen Sie die Nebenstellen und Leitungen einem Gerät zu."; //copied from de-de
 $text['description-extension']['de-ch'] = "Weisen Sie die Nebenstellen und Leitungen einem Gerät zu."; //copied from de-de
@@ -2150,6 +2249,7 @@ $text['description-extension']['sv-se'] = "Tilldela anknytning och linje nummer 
 $text['description-extension']['uk-ua'] = "";
 
 $text['description-enabled']['en-us'] = "Set the status of the extension.";
+$text['description-enabled']['zh-cn'] = "设置分机的状态。";
 $text['description-enabled']['ar-eg'] = "";
 $text['description-enabled']['de-at'] = "Setzen Sie den Status dieser Nebenstelle."; //copied from de-de
 $text['description-enabled']['de-ch'] = "Setzen Sie den Status dieser Nebenstelle."; //copied from de-de
@@ -2170,6 +2270,7 @@ $text['description-enabled']['sv-se'] = "Välj status på denna standardinställ
 $text['description-enabled']['uk-ua'] = "";
 
 $text['description-emergency_caller_id_number']['en-us'] = "Enter the emergency caller ID number here.";
+$text['description-emergency_caller_id_number']['zh-cn'] = "在此处输入紧急呼叫方ID号码。";
 $text['description-emergency_caller_id_number']['ar-eg'] = "";
 $text['description-emergency_caller_id_number']['de-at'] = "Geben Sie die Anruferkennung (Nummer) für Notrufe an."; //copied from de-de
 $text['description-emergency_caller_id_number']['de-ch'] = "Geben Sie die Anruferkennung (Nummer) für Notrufe an."; //copied from de-de
@@ -2190,6 +2291,7 @@ $text['description-emergency_caller_id_number']['sv-se'] = "Ange nummer som skal
 $text['description-emergency_caller_id_number']['uk-ua'] = "";
 
 $text['description-emergency_caller_id_name']['en-us'] = "Enter the emergency caller ID name here.";
+$text['description-emergency_caller_id_name']['zh-cn'] = "在此处输入紧急呼叫者ID名称。";
 $text['description-emergency_caller_id_name']['ar-eg'] = "";
 $text['description-emergency_caller_id_name']['de-at'] = "Geben Sie die Anruferkennung (Name) für Notrufe an."; //copied from de-de
 $text['description-emergency_caller_id_name']['de-ch'] = "Geben Sie die Anruferkennung (Name) für Notrufe an."; //copied from de-de
@@ -2210,6 +2312,7 @@ $text['description-emergency_caller_id_name']['sv-se'] = "Ange namn som skall vi
 $text['description-emergency_caller_id_name']['uk-ua'] = "";
 
 $text['description-effective_caller_id_number']['en-us'] = "Enter the internal caller ID number here.";
+$text['description-effective_caller_id_number']['zh-cn'] = "在此处输入内部呼叫者ID号码。";
 $text['description-effective_caller_id_number']['ar-eg'] = "";
 $text['description-effective_caller_id_number']['de-at'] = "Geben Sie die interne Anruferkennung (Nummer) an."; //copied from de-de
 $text['description-effective_caller_id_number']['de-ch'] = "Geben Sie die interne Anruferkennung (Nummer) an."; //copied from de-de
@@ -2230,6 +2333,7 @@ $text['description-effective_caller_id_number']['sv-se'] = "Ange numret som skal
 $text['description-effective_caller_id_number']['uk-ua'] = "";
 
 $text['description-effective_caller_id_name']['en-us'] = "Enter the internal caller ID name here.";
+$text['description-effective_caller_id_name']['zh-cn'] = "在此处输入内部呼叫者ID名称。";
 $text['description-effective_caller_id_name']['ar-eg'] = "";
 $text['description-effective_caller_id_name']['de-at'] = "Geben Sie die interne Anruferkennung (Name) an."; //copied from de-de
 $text['description-effective_caller_id_name']['de-ch'] = "Geben Sie die interne Anruferkennung (Name) an."; //copied from de-de
@@ -2250,6 +2354,7 @@ $text['description-effective_caller_id_name']['sv-se'] = "Ange namn som skall vi
 $text['description-effective_caller_id_name']['uk-ua'] = "";
 
 $text['description-directory_visible']['en-us'] = "Select whether to hide the name from the directory.";
+$text['description-directory_visible']['zh-cn'] = "选择是否在电话簿中隐藏名称。";
 $text['description-directory_visible']['ar-eg'] = "";
 $text['description-directory_visible']['de-at'] = "Wählen Sie ob der Name im Verzeichnis angegeben werden soll."; //copied from de-de
 $text['description-directory_visible']['de-ch'] = "Wählen Sie ob der Name im Verzeichnis angegeben werden soll."; //copied from de-de
@@ -2270,6 +2375,7 @@ $text['description-directory_visible']['sv-se'] = "Välj om namnet inte skall vi
 $text['description-directory_visible']['uk-ua'] = "";
 
 $text['description-directory_full_name']['en-us'] = "Enter the first name followed by the last name.";
+$text['description-directory_full_name']['zh-cn'] = "输入名字，后跟姓氏。";
 $text['description-directory_full_name']['ar-eg'] = "";
 $text['description-directory_full_name']['de-at'] = "Geben Sie zuerst den Vornamen und dann den Nachnamen an."; //copied from de-de
 $text['description-directory_full_name']['de-ch'] = "Geben Sie zuerst den Vornamen und dann den Nachnamen an."; //copied from de-de
@@ -2290,6 +2396,7 @@ $text['description-directory_full_name']['sv-se'] = "Ange förnamn följt av eft
 $text['description-directory_full_name']['uk-ua'] = "";
 
 $text['description-directory_exten_visible']['en-us'] = "Select whether announce the extension when calling the directory.";
+$text['description-directory_exten_visible']['zh-cn'] = "选择是否在调用电话簿时宣布分机号。";
 $text['description-directory_exten_visible']['ar-eg'] = "";
 $text['description-directory_exten_visible']['de-at'] = "Geben Sie an, ob die Nebenstelle beim Aufruf des Verzeichnises angekündigt werden soll."; //copied from de-de
 $text['description-directory_exten_visible']['de-ch'] = "Geben Sie an, ob die Nebenstelle beim Aufruf des Verzeichnises angekündigt werden soll."; //copied from de-de
@@ -2310,6 +2417,7 @@ $text['description-directory_exten_visible']['sv-se'] = "Välj om anknytningen s
 $text['description-directory_exten_visible']['uk-ua'] = "";
 
 $text['description-dial_string']['en-us'] = "Location of the endpoint.";
+$text['description-dial_string']['zh-cn'] = "端点的位置。";
 $text['description-dial_string']['ar-eg'] = "";
 $text['description-dial_string']['de-at'] = "Standort des Endgeräts";
 $text['description-dial_string']['de-ch'] = " des EndgerStandortäts"; //copied from de-de
@@ -2330,6 +2438,7 @@ $text['description-dial_string']['sv-se'] = "Plats för enheten.";
 $text['description-dial_string']['uk-ua'] = "";
 
 $text['description-cidr']['en-us'] = "Enter the CIDR here.";
+$text['description-cidr']['zh-cn'] = "在此处输入CIDR。";
 $text['description-cidr']['ar-eg'] = "";
 $text['description-cidr']['de-at'] = "Geben Sie hier die Beschränkung der IP Adresse an (z.B. 1.2.3.4/32)"; //copied from de-de
 $text['description-cidr']['de-ch'] = "Geben Sie hier die Beschränkung der IP Adresse an (z.B. 1.2.3.4/32)"; //copied from de-de
@@ -2350,6 +2459,7 @@ $text['description-cidr']['sv-se'] = "Ange CIDR här.";
 $text['description-cidr']['uk-ua'] = "";
 
 $text['description-call_timeout']['en-us'] = "Enter the call timeout.";
+$text['description-call_timeout']['zh-cn'] = "输入呼叫超时时长。";
 $text['description-call_timeout']['ar-eg'] = "";
 $text['description-call_timeout']['de-at'] = "Geben Sie die Zeitbeschränkung für Anrufe an."; //copied from de-de
 $text['description-call_timeout']['de-ch'] = "Geben Sie die Zeitbeschränkung für Anrufe an."; //copied from de-de
@@ -2370,6 +2480,7 @@ $text['description-call_timeout']['sv-se'] = "Ange 'call timeout'";
 $text['description-call_timeout']['uk-ua'] = "";
 
 $text['description-call_screen_enabled']['en-us'] = "Choose whether to enable or disable call screening.";
+$text['description-call_screen_enabled']['zh-cn'] = "选择是启用还是禁用呼叫筛选。";
 $text['description-call_screen_enabled']['ar-eg'] = "";
 $text['description-call_screen_enabled']['de-at'] = "Wählen Sie ob die Anruf Anzeige Ein- oder Ausgeschaltet werden soll."; //copied from de-de
 $text['description-call_screen_enabled']['de-ch'] = "Wählen Sie ob die Anruf Anzeige Ein- oder Ausgeschaltet werden soll."; //copied from de-de
@@ -2390,6 +2501,7 @@ $text['description-call_screen_enabled']['sv-se'] = "Välj om du vill aktivera e
 $text['description-call_screen_enabled']['uk-ua'] = "";
 
 $text['description-call_group']['en-us'] = "Enter the user call group here. Groups available by default: sales, support, billing.";
+$text['description-call_group']['zh-cn'] = "在此处输入用户呼叫组。默认情况下可用的组：销售、支持、计费。";
 $text['description-call_group']['ar-eg'] = "";
 $text['description-call_group']['de-at'] = "Geben Sie eine Rufgruppe an. Standardgruppen: sales, support, billing."; //copied from de-de
 $text['description-call_group']['de-ch'] = "Geben Sie eine Rufgruppe an. Standardgruppen: sales, support, billing."; //copied from de-de
@@ -2410,6 +2522,7 @@ $text['description-call_group']['sv-se'] = "Ange användarens ring grupp här. G
 $text['description-call_group']['uk-ua'] = "";
 
 $text['description-auth_acl']['en-us'] = "Enter the Auth ACL here.";
+$text['description-auth_acl']['zh-cn'] = "在此处输入身份验证ACL。";
 $text['description-auth_acl']['ar-eg'] = "";
 $text['description-auth_acl']['de-at'] = "Geben Sie die Authentifizierungs ACL hier an."; //copied from de-de
 $text['description-auth_acl']['de-ch'] = "Geben Sie die Authentifizierungs ACL hier an."; //copied from de-de
@@ -2430,6 +2543,7 @@ $text['description-auth_acl']['sv-se'] = "Ange Auth ACL här.";
 $text['description-auth_acl']['uk-ua'] = "";
 
 $text['description-accountcode']['en-us'] = "Enter the account code here.";
+$text['description-accountcode']['zh-cn'] = "在此处输入帐户代码。";
 $text['description-accountcode']['ar-eg'] = "";
 $text['description-accountcode']['de-at'] = "Geben Sie den Account Code hier an."; //copied from de-de
 $text['description-accountcode']['de-ch'] = "Geben Sie den Account Code hier an."; //copied from de-de
@@ -2450,6 +2564,7 @@ $text['description-accountcode']['sv-se'] = "Ange 'account code' här.";
 $text['description-accountcode']['uk-ua'] = "";
 
 $text['checkbox-range']['en-us'] = "Auto-generate user with extension as login name";
+$text['checkbox-range']['zh-cn'] = "自动生成分机号为登录名的用户";
 $text['checkbox-range']['ar-eg'] = "";
 $text['checkbox-range']['de-at'] = "Benutzer automatisch anlegen (Nebenstelle als Login Name)"; //copied from de-de
 $text['checkbox-range']['de-ch'] = "Benutzer automatisch anlegen (Nebenstelle als Login Name)"; //copied from de-de
@@ -2470,6 +2585,7 @@ $text['checkbox-range']['sv-se'] = "Auto-generera användare med anknytning som 
 $text['checkbox-range']['uk-ua'] = "";
 
 $text['button-call_routing']['en-us'] = "Call Routing";
+$text['button-call_routing']['zh-cn'] = "呼叫路由";
 $text['button-call_routing']['ar-eg'] = "توجيه الدعوة";
 $text['button-call_routing']['de-at'] = "Call Routing"; //copied from de-de
 $text['button-call_routing']['de-ch'] = "Call Routing"; //copied from de-de

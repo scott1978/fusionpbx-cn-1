@@ -2,6 +2,7 @@
 #This file was last reorganized on 19th of September 2017 08:54:24 AM UTC
 
 $text['title-providers']['en-us'] = "Providers";
+$text['title-providers']['zh-cn'] = "服务供应商";
 $text['title-providers']['ar-eg'] = "";
 $text['title-providers']['de-at'] = "";
 $text['title-providers']['de-ch'] = "";
@@ -22,6 +23,7 @@ $text['title-providers']['sv-se'] = "";
 $text['title-providers']['uk-ua'] = "";
 
 $text['description-providers']['en-us'] = "From this page you can easily configure one of the VoIP providers in the list. When you click on setup it will add entries to the Domains access control list,  create a gateway and add outbound routes for that carrier. These providers support the project.";
+$text['description-providers']['zh-cn'] = "在此页面中，您可以轻松配置列表中的一个VoIP提供商。当您单击设置时，它将向域访问控制列表中添加条目，创建网关并为该运营商添加出站路由。这些提供商支持该项目。";
 $text['description-providers']['ar-eg'] = "";
 $text['description-providers']['de-at'] = "";
 $text['description-providers']['de-ch'] = "";
@@ -42,6 +44,7 @@ $text['description-providers']['sv-se'] = "";
 $text['description-providers']['uk-ua'] = "";
 
 $text['button-website']['en-us'] = "Website";
+$text['button-website']['zh-cn'] = "网站";
 $text['button-website']['ar-eg'] = "";
 $text['button-website']['de-at'] = "";
 $text['button-website']['de-ch'] = "";
@@ -62,6 +65,7 @@ $text['button-website']['sv-se'] = "";
 $text['button-website']['uk-ua'] = "";
 
 $text['button-pricing']['en-us'] = "Pricing";
+$text['button-pricing']['zh-cn'] = "价格";
 $text['button-pricing']['ar-eg'] = "";
 $text['button-pricing']['de-at'] = "";
 $text['button-pricing']['de-ch'] = "";
@@ -82,6 +86,7 @@ $text['button-pricing']['sv-se'] = "";
 $text['button-pricing']['uk-ua'] = "";
 
 $text['button-signup']['en-us'] = "Signup";
+$text['button-signup']['zh-cn'] = "注册";
 $text['button-signup']['ar-eg'] = "";
 $text['button-signup']['de-at'] = "";
 $text['button-signup']['de-ch'] = "";
@@ -102,6 +107,7 @@ $text['button-signup']['sv-se'] = "";
 $text['button-signup']['uk-ua'] = "";
 
 $text['button-setup']['en-us'] = "Setup";
+$text['button-setup']['zh-cn'] = "安装";
 $text['button-setup']['ar-eg'] = "";
 $text['button-setup']['de-at'] = "";
 $text['button-setup']['de-ch'] = "";
@@ -122,6 +128,7 @@ $text['button-setup']['sv-se'] = "";
 $text['button-setup']['uk-ua'] = "";
 
 $text['button-remove']['en-us'] = "Remove";
+$text['button-remove']['zh-cn'] = "卸载";
 $text['button-remove']['ar-eg'] = "";
 $text['button-remove']['de-at'] = "";
 $text['button-remove']['de-ch'] = "";
@@ -142,6 +149,7 @@ $text['button-remove']['sv-se'] = "";
 $text['button-remove']['uk-ua'] = "";
 
 $text['label-region']['en-us'] = "Region";
+$text['label-region']['zh-cn'] = "区域";
 $text['label-region']['ar-eg'] = "";
 $text['label-region']['de-at'] = "";
 $text['label-region']['de-ch'] = "";
@@ -162,6 +170,7 @@ $text['label-region']['sv-se'] = "";
 $text['label-region']['uk-ua'] = "";
 
 $text['label-about']['en-us'] = "About";
+$text['label-about']['zh-cn'] = "关于";
 $text['label-about']['ar-eg'] = "";
 $text['label-about']['de-at'] = "";
 $text['label-about']['de-ch'] = "";
@@ -182,6 +191,7 @@ $text['label-about']['sv-se'] = "";
 $text['label-about']['uk-ua'] = "";
 
 $text['label-features']['en-us'] = "Features";
+$text['label-features']['zh-cn'] = "特点";
 $text['label-features']['ar-eg'] = "";
 $text['label-features']['de-at'] = "";
 $text['label-features']['de-ch'] = "";
@@ -202,6 +212,7 @@ $text['label-features']['sv-se'] = "";
 $text['label-features']['uk-ua'] = "";
 
 $text['label-region_skyetel']['en-us'] = "Providing service to the United States and Canada.";
+$text['label-region_skyetel']['zh-cn'] = "为美国和加拿大提供服务。";
 $text['label-region_skyetel']['ar-eg'] = "";
 $text['label-region_skyetel']['de-at'] = "";
 $text['label-region_skyetel']['de-ch'] = "";
@@ -222,6 +233,7 @@ $text['label-region_skyetel']['sv-se'] = "";
 $text['label-region_skyetel']['uk-ua'] = "";
 
 $text['label-about_skyetel']['en-us'] = "Based out of the Pacific Northwest, Skyetel offers triple redundancy, a beautiful UI, and aggressive pricing. Skyetel has been awarded multiple times for its commitment to customer service and maintains a full time support team who can help you get your systems up and running quickly.";
+$text['label-about_skyetel']['zh-cn'] = "Skyetel总部位于太平洋西北部，提供三重冗余、漂亮的UI和定价优势。Skyetel多次因其对客户服务的承诺而获奖，并拥有一支全职支持团队，可帮助您快速启动和运行系统。";
 $text['label-about_skyetel']['ar-eg'] = "";
 $text['label-about_skyetel']['de-at'] = "";
 $text['label-about_skyetel']['de-ch'] = "";
@@ -242,6 +254,7 @@ $text['label-about_skyetel']['sv-se'] = "";
 $text['label-about_skyetel']['uk-ua'] = "";
 
 $text['label-features_skyetel']['en-us'] = "Origination, Termination, Local Presence, Dialer support, Uptime and QOS monitoring, E911, CNAM, Restful API.";
+$text['label-features_skyetel']['zh-cn'] = "发起、终止、本地存在、拨号支持、运行时间和QOS监控、E911、CNAM、Restful API。";
 $text['label-features_skyetel']['ar-eg'] = "";
 $text['label-features_skyetel']['de-at'] = "";
 $text['label-features_skyetel']['de-ch'] = "";
@@ -262,6 +275,7 @@ $text['label-features_skyetel']['sv-se'] = "";
 $text['label-features_skyetel']['uk-ua'] = "";
 
 $text['label-region_voicetel']['en-us'] = "Providing service to the United States and Canada.";
+$text['label-region_voicetel']['zh-cn'] = "为美国和加拿大提供服务。";
 $text['label-region_voicetel']['ar-eg'] = "";
 $text['label-region_voicetel']['de-at'] = "";
 $text['label-region_voicetel']['de-ch'] = "";
@@ -282,6 +296,7 @@ $text['label-region_voicetel']['sv-se'] = "";
 $text['label-region_voicetel']['uk-ua'] = "";
 
 $text['label-about_voicetel']['en-us'] = "VoiceTel offers local inbound phone service at exceptionally low monthly and per minute rates. We provide businesses and individuals access to a nationwide footprint covering over 90% of the U.S. Population. Substantially lower your telecommunications costs and improve your quality of service with our IP enhanced outbound phone service.";
+$text['label-about_voicetel']['zh-cn'] = "VoiceTel以极低的每月和每分钟费率提供本地入站电话服务。我们为企业和个人提供覆盖全国90%以上人口的服务。通过我们的IP增强的出站电话服务，大幅降低您的电信成本，提高您的服务质量。";
 $text['label-about_voicetel']['ar-eg'] = "";
 $text['label-about_voicetel']['de-at'] = "";
 $text['label-about_voicetel']['de-ch'] = "";
@@ -302,6 +317,7 @@ $text['label-about_voicetel']['sv-se'] = "";
 $text['label-about_voicetel']['uk-ua'] = "";
 
 $text['label-features_voicetel']['en-us'] = "Origination, Termination, Send and receive SMS Messages from your computer, tablet, or mobile device. Optionally automate or embed SMS transmission through the use of our RESTful API.";
+$text['label-features_voicetel']['zh-cn'] = "发起、终止、发送和接收来自计算机、平板电脑或移动设备的SMS消息。可以选择通过使用RESTful API自动或嵌入SMS传输。";
 $text['label-features_voicetel']['ar-eg'] = "";
 $text['label-features_voicetel']['de-at'] = "";
 $text['label-features_voicetel']['de-ch'] = "";

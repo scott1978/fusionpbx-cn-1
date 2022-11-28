@@ -1,7 +1,8 @@
 <?php
 #This file was last reorganized on 27th of September 2017 01:41:52 PM UTC
 
-$text['title-user_dashboard']['en-us'] = "仪表盘";
+$text['title-user_dashboard']['en-us'] = "Dashboard";
+$text['title-user_dashboard']['zh-cn'] = "仪表盘";
 $text['title-user_dashboard']['ar-eg'] = "Dashboard";
 $text['title-user_dashboard']['de-at'] = "Benutzerübersicht"; //copied from de-de
 $text['title-user_dashboard']['de-ch'] = "Benutzerübersicht"; //copied from de-de
@@ -148,7 +149,7 @@ $text['table-description']['sv-se'] = "Beskrivning";
 $text['table-description']['uk-ua'] = "Опис";
 
 $text['message-reset_link_sent']['en-us'] = "Password Reset Link Sent";
-$text['message-reset_link_sent']['zh-cn'] = "已发生密码重置链接";
+$text['message-reset_link_sent']['zh-cn'] = "已发送密码重置链接";
 $text['message-reset_link_sent']['ar-eg'] = "تم ارسال رابط اعادة تعيين كلمة السر";
 $text['message-reset_link_sent']['de-at'] = "Link zum Zurücksetzen des Passworts gesendet"; //copied from de-de
 $text['message-reset_link_sent']['de-ch'] = "Link zum Zurücksetzen des Passworts gesendet"; //copied from de-de
@@ -1072,7 +1073,7 @@ $text['label-missed_calls']['sv-se'] = "Missade Samtal";
 $text['label-missed_calls']['uk-ua'] = "";
 
 $text['label-missed']['en-us'] = "Missed";
-$text['label-missed']['zh-cn'] = "Missed";
+$text['label-missed']['zh-cn'] = "未接";
 $text['label-missed']['ar-eg'] = "";
 $text['label-missed']['de-at'] = "Verpasst"; //copied from de-de
 $text['label-missed']['de-ch'] = "Verpasst"; //copied from de-de
@@ -1156,7 +1157,7 @@ $text['label-lowercase_letters']['sv-se'] = "Gemener";
 $text['label-lowercase_letters']['uk-ua'] = "Букви нижнього регістру";
 
 $text['label-local']['en-us'] = "Local";
-$text['label-local']['zh-cn'] = "Local";
+$text['label-local']['zh-cn'] = "本地";
 $text['label-local']['ar-eg'] = "";
 $text['label-local']['de-at'] = "Lokal"; //copied from de-de
 $text['label-local']['de-ch'] = "Lokal"; //copied from de-de
@@ -2121,7 +2122,7 @@ $text['check-do-not-disturb-status']['sv-se'] = "Stör Ej";
 $text['check-do-not-disturb-status']['uk-ua'] = "Не турбувати";
 
 $text['check-available-status']['en-us'] = "Available";
-$text['check-available-status']['zh-cn'] = "Available";
+$text['check-available-status']['zh-cn'] = "可用";
 $text['check-available-status']['ar-eg'] = "متاح";
 $text['check-available-status']['de-at'] = "Erreichbar"; //copied from de-de
 $text['check-available-status']['de-ch'] = "Erreichbar"; //copied from de-de
@@ -2142,7 +2143,7 @@ $text['check-available-status']['sv-se'] = "Tillgänglig";
 $text['check-available-status']['uk-ua'] = "Доступний";
 
 $text['check-available-ondemand-status']['en-us'] = "Available (On Demand)";
-$text['check-available-ondemand-status']['zh-cn'] = "Available (On Demand)";
+$text['check-available-ondemand-status']['zh-cn'] = "可用（按需）";
 $text['check-available-ondemand-status']['ar-eg'] = "(متاح ( تحت الطلب";
 $text['check-available-ondemand-status']['de-at'] = "Erreichbar (bei Bedarf)"; //copied from de-de
 $text['check-available-ondemand-status']['de-ch'] = "Erreichbar (bei Bedarf)"; //copied from de-de

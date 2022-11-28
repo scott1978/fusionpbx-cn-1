@@ -2,6 +2,7 @@
 #This file was last reorganized on 27th of September 2017 01:41:52 PM UTC
 
 $text['language-name']['en-us'] = "English - United States";
+$text['language-name']['zh-cn'] = "Chinese - 简体中文";
 $text['language-name']['ar-eg'] = "العربية - مصر";
 $text['language-name']['de-at'] = "Deutsch - Österreich";
 $text['language-name']['de-ch'] = "Deutsch - Schweiz";
@@ -23,6 +24,7 @@ $text['language-name']['uk-ua'] = "Українська - Україна";
 $text['language-name']['tr-tr'] = "Türkçe - Türkiye";
 
 $text['language-en-us']['en-us'] = "English - United States";
+$text['language-zh-cn']['zh-cn'] = "Chinese - 简体中文";
 $text['language-ar-eg']['en-us'] = "العربية - مصر";
 $text['language-de-at']['en-us'] = "Deutsch - Österreich";
 $text['language-de-ch']['en-us'] = "Deutsch - Schweiz";
@@ -44,6 +46,7 @@ $text['language-uk-ua']['en-us'] = "Українська - Україна";
 $text['language-tr-tr']['tr-tr'] = "Türkçe - Türkiye";
 
 $text['message-update']['en-us'] = "Update Completed";
+$text['message-update']['zh-cn'] = "更新完成";
 $text['message-update']['ar-eg'] = "تحديث مكتمل";
 $text['message-update']['de-at'] = "Aktualisierung durchgeführt"; //copied from de-de
 $text['message-update']['de-ch'] = "Aktualisierung durchgeführt"; //copied from de-de
@@ -65,6 +68,7 @@ $text['message-update']['uk-ua'] = "Оновлення завершено";
 $text['message-update']['tr-tr'] = "Güncelleme Tamamlandı";
 
 $text['message-required']['en-us'] = "Please provide: ";
+$text['message-required']['zh-cn'] = "请提供: ";
 $text['message-required']['ar-eg'] = "يرجى تقديم:";
 $text['message-required']['de-at'] = "Bitte geben Sie folgendes an:"; //copied from de-de
 $text['message-required']['de-ch'] = "Bitte geben Sie folgendes an:"; //copied from de-de
@@ -86,6 +90,7 @@ $text['message-required']['uk-ua'] = "Будь ласка, вкажіть:";
 $text['message-required']['tr-tr'] = "Lütfen temin edin: ";
 
 $text['message-delete']['en-us'] = "Delete Completed";
+$text['message-delete']['zh-cn'] = "删除完成";
 $text['message-delete']['ar-eg'] = "تم المسح";
 $text['message-delete']['de-at'] = "Erfolgreich gelöscht"; //copied from de-de
 $text['message-delete']['de-ch'] = "Erfolgreich gelöscht"; //copied from de-de
@@ -107,6 +112,7 @@ $text['message-delete']['uk-ua'] = "Видалено";
 $text['message-delete']['tr-tr'] = "Silme İşlemi Tamamlandı";
 
 $text['message-delete_failed']['en-us'] = "Delete Failed";
+$text['message-delete_failed']['zh-cn'] = "删除失败";
 $text['message-delete_failed']['ar-eg'] = "";
 $text['message-delete_failed']['de-at'] = "Löschen fehlgeschlagen"; //copied from de-de
 $text['message-delete_failed']['de-ch'] = "Löschen fehlgeschlagen"; //copied from de-de
@@ -128,6 +134,7 @@ $text['message-delete_failed']['uk-ua'] = "";
 $text['message-delete_failed']['tr-tr'] = "Silme İşlemi Başarısız Oldu";
 
 $text['message-add']['en-us'] = "Add Completed";
+$text['message-add']['zh-cn'] = "添加完成";
 $text['message-add']['ar-eg'] = "تمت الأضافة";
 $text['message-add']['de-at'] = "Erfolgreich hinzugefügt"; //copied from de-de
 $text['message-add']['de-ch'] = "Erfolgreich hinzugefügt"; //copied from de-de
@@ -149,6 +156,7 @@ $text['message-add']['uk-ua'] = "Додано";
 $text['message-add']['tr-tr'] = "Ekleme İşlemi Tamamlandı";
 
 $text['message-failed']['en-us'] = "Update Failed - Contact Support";
+$text['message-failed']['zh-cn'] = "更新失败-联系支持";
 $text['message-failed']['ar-eg'] = "";
 $text['message-failed']['de-at'] = "Aktualisierung fehlgeschlagen - Kontaktieren Sie den Support"; //copied from de-de
 $text['message-failed']['de-ch'] = "Aktualisierung fehlgeschlagen - Kontaktieren Sie den Support"; //copied from de-de
@@ -170,6 +178,7 @@ $text['message-failed']['uk-ua'] = "";
 $text['message-failed']['tr-tr'] = "Ekleme İşlemi Başarısız Oldu - Destek Ekibine Ulaşın";
 
 $text['message-copy']['en-us'] = "Copy Completed";
+$text['message-copy']['zh-cn'] = "复制完成";
 $text['message-copy']['ar-eg'] = "";
 $text['message-copy']['de-at'] = "Erfolgreich kopiert"; //copied from de-de
 $text['message-copy']['de-ch'] = "Erfolgreich kopiert"; //copied from de-de
@@ -191,6 +200,7 @@ $text['message-copy']['uk-ua'] = "Скопійовано";
 $text['message-copy']['tr-tr'] = "Kopyalama İşlemi Tamamlandı";
 
 $text['message-invalid_credentials']['en-us'] = "Invalid Username and/or Password";
+$text['message-invalid_credentials']['zh-cn'] = "用户名或密码无效";
 $text['message-invalid_credentials']['ar-eg'] = "";
 $text['message-invalid_credentials']['de-at'] = "Ungültiger Benutzername und/oder Passwort"; //copied from de-de
 $text['message-invalid_credentials']['de-ch'] = "Ungültiger Benutzername und/oder Passwort"; //copied from de-de
@@ -212,6 +222,7 @@ $text['message-invalid_credentials']['uk-ua'] = "";
 $text['message-invalid_credentials']['tr-tr'] = "Geçersiz Kullanıcı Adı ve/veya Parola";
 
 $text['message-message']['en-us'] = "Message";
+$text['message-message']['zh-cn'] = "消息";
 $text['message-message']['ar-eg'] = "";
 $text['message-message']['de-at'] = "Nachricht"; //copied from de-de
 $text['message-message']['de-ch'] = "Nachricht"; //copied from de-de
@@ -233,6 +244,7 @@ $text['message-message']['uk-ua'] = "Повідомлення";
 $text['message-message']['tr-tr'] = "Mesaj";
 
 $text['message-restore']['en-us'] = "Restore Completed";
+$text['message-restore']['zh-cn'] = "还原完成";
 $text['message-restore']['ar-eg'] = "";
 $text['message-restore']['de-at'] = "Wiederherstellung durchgeführt"; //copied from de-de
 $text['message-restore']['de-ch'] = "Wiederherstellung durchgeführt"; //copied from de-de
@@ -254,6 +266,7 @@ $text['message-restore']['uk-ua'] = "Відновлено";
 $text['message-restore']['tr-tr'] = "Geri Yükleme İşlemi Tamamlandı";
 
 $text['message-duplicate']['en-us'] = "Duplicate Detected";
+$text['message-duplicate']['zh-cn'] = "检测到重复";
 $text['message-duplicate']['ar-eg'] = "";
 $text['message-duplicate']['de-at'] = "Bereits vorhanden"; //copied from de-de
 $text['message-duplicate']['de-ch'] = "Bereits vorhanden"; //copied from de-de
@@ -275,6 +288,7 @@ $text['message-duplicate']['uk-ua'] = "Знайдено дублікат";
 $text['message-duplicate']['tr-tr'] = "Kopya Algılandı";
 
 $text['confirm-delete']['en-us'] = "Do you really want to delete this?";
+$text['confirm-delete']['zh-cn'] = "确认删除？";
 $text['confirm-delete']['ar-eg'] = "هل تريد حقا أن تحذف هذا؟";
 $text['confirm-delete']['de-at'] = "Wollen Sie das wirklich löschen?"; //copied from de-de
 $text['confirm-delete']['de-ch'] = "Wollen Sie das wirklich löschen?"; //copied from de-de
@@ -296,6 +310,7 @@ $text['confirm-delete']['uk-ua'] = "Ви дійсно бажаєте це вид
 $text['confirm-delete']['tr-tr'] = "Bunu gerçekten silmek istiyor musunuz?";
 
 $text['confirm-copy']['en-us'] = "Do you really want to copy this?";
+$text['confirm-copy']['zh-cn'] = "确认复制？";
 $text['confirm-copy']['ar-eg'] = "";
 $text['confirm-copy']['de-at'] = "Wollen Sie das wirklich kopieren?"; //copied from de-de
 $text['confirm-copy']['de-ch'] = "Wollen Sie das wirklich kopieren?"; //copied from de-de
@@ -317,6 +332,7 @@ $text['confirm-copy']['uk-ua'] = "";
 $text['confirm-copy']['tr-tr'] = "Bunu gerçekten kopyalamak istiyor musunuz?";
 
 $text['button-apply']['en-us'] = "Apply";
+$text['button-apply']['zh-cn'] = "应用";
 $text['button-apply']['ar-eg'] = "";
 $text['button-apply']['de-at'] = "Anwenden"; //copied from de-de
 $text['button-apply']['de-ch'] = "Anwenden"; //copied from de-de
@@ -338,6 +354,7 @@ $text['button-apply']['uk-ua'] = "";
 $text['button-apply']['tr-tr'] = "Uygula";
 
 $text['button-provision']['en-us'] = "Provision";
+$text['button-provision']['zh-cn'] = "条款";
 $text['button-provision']['ar-eg'] = "";
 $text['button-provision']['de-at'] = "Bereitstellen"; //copied from de-de
 $text['button-provision']['de-ch'] = "Bereitstellen"; //copied from de-de
@@ -358,6 +375,7 @@ $text['button-provision']['sv-se'] = "Provisionera";
 $text['button-provision']['uk-ua'] = "Provision ";
 
 $text['button-applied']['en-us'] = "Applied";
+$text['button-applied']['zh-cn'] = "应用";
 $text['button-applied']['ar-eg'] = "";
 $text['button-applied']['de-at'] = "Angewandt"; //copied from de-de
 $text['button-applied']['de-ch'] = "Angewandt"; //copied from de-de
@@ -379,6 +397,7 @@ $text['button-applied']['uk-ua'] = "";
 $text['button-applied']['tr-tr'] = "Uygulandı";
 
 $text['button-xml']['en-us'] = "XML";
+$text['button-xml']['zh-cn'] = "XML";
 $text['button-xml']['ar-eg'] = "";
 $text['button-xml']['de-at'] = "XML"; //copied from de-de
 $text['button-xml']['de-ch'] = "XML"; //copied from de-de
@@ -400,6 +419,7 @@ $text['button-xml']['uk-ua'] = "";
 $text['button-xml']['tr-tr'] = "XML";
 
 $text['button-clear']['en-us'] = "Clear";
+$text['button-clear']['zh-cn'] = "清除";
 $text['button-clear']['ar-eg'] = "";
 $text['button-clear']['de-at'] = "Zurücksetzen"; //copied from de-de
 $text['button-clear']['de-ch'] = "Zurücksetzen"; //copied from de-de
@@ -421,6 +441,7 @@ $text['button-clear']['uk-ua'] = "";
 $text['button-clear']['tr-tr'] = "Temizle";
 
 $text['button-save']['en-us'] = "Save";
+$text['button-save']['zh-cn'] = "保存";
 $text['button-save']['ar-eg'] = "حفظ";
 $text['button-save']['de-at'] = "Speichern"; //copied from de-de
 $text['button-save']['de-ch'] = "Speichern"; //copied from de-de
@@ -442,6 +463,7 @@ $text['button-save']['uk-ua'] = "Зберегти";
 $text['button-save']['tr-tr'] = "Kaydet";
 
 $text['button-search']['en-us'] = "Search";
+$text['button-search']['zh-cn'] = "搜索";
 $text['button-search']['ar-eg'] = "";
 $text['button-search']['de-at'] = "Suchen"; //copied from de-de
 $text['button-search']['de-ch'] = "Suchen"; //copied from de-de
@@ -463,6 +485,7 @@ $text['button-search']['uk-ua'] = "Пошук";
 $text['button-search']['tr-tr'] = "Ara";
 
 $text['button-show_all']['en-us'] = "Show All";
+$text['button-show_all']['zh-cn'] = "显示全部";
 $text['button-show_all']['ar-eg'] = "أظهر الكل";
 $text['button-show_all']['de-at'] = "Alle anzeigen"; //copied from de-de
 $text['button-show_all']['de-ch'] = "Alle anzeigen"; //copied from de-de
@@ -484,6 +507,7 @@ $text['button-show_all']['uk-ua'] = "Показати всі";
 $text['button-show_all']['tr-tr'] = "Hepsini Görüntüle";
 
 $text['button-restore']['en-us'] = "Restore Default";
+$text['button-restore']['zh-cn'] = "恢复默认";
 $text['button-restore']['ar-eg'] = "";
 $text['button-restore']['de-at'] = "Ursprungszustand wiederherstellen"; //copied from de-de
 $text['button-restore']['de-ch'] = "Ursprungszustand wiederherstellen"; //copied from de-de
@@ -505,6 +529,7 @@ $text['button-restore']['uk-ua'] = "Відновити типові значен
 $text['button-restore']['tr-tr'] = "Varsayılana Geri Yükle";
 
 $text['button-reset']['en-us'] = "Reset";
+$text['button-reset']['zh-cn'] = "重置";
 $text['button-reset']['ar-eg'] = "إعادة تعيين";
 $text['button-reset']['de-at'] = "Zurücksetzen"; //copied from de-de
 $text['button-reset']['de-ch'] = "Zurücksetzen"; //copied from de-de
@@ -526,6 +551,7 @@ $text['button-reset']['uk-ua'] = "Скинути";
 $text['button-reset']['tr-tr'] = "Sıfırla";
 
 $text['button-copy']['en-us'] = "Copy";
+$text['button-copy']['zh-cn'] = "复制";
 $text['button-copy']['ar-eg'] = "";
 $text['button-copy']['de-at'] = "Kopieren"; //copied from de-de
 $text['button-copy']['de-ch'] = "Kopieren"; //copied from de-de
@@ -547,6 +573,7 @@ $text['button-copy']['uk-ua'] = "Копіювати";
 $text['button-copy']['tr-tr'] = "Kopyala";
 
 $text['button-login']['en-us'] = "Login";
+$text['button-login']['zh-cn'] = "登录";
 $text['button-login']['ar-eg'] = "دخول";
 $text['button-login']['de-at'] = "Anmelden"; //copied from de-de
 $text['button-login']['de-ch'] = "Anmelden"; //copied from de-de
@@ -568,6 +595,7 @@ $text['button-login']['uk-ua'] = "Логін";
 $text['button-login']['tr-tr'] = "Giriş Yap";
 
 $text['button-next']['en-us'] = "Next";
+$text['button-next']['zh-cn'] = "下一个";
 $text['button-next']['ar-eg'] = "";
 $text['button-next']['de-at'] = "Nächste"; //copied from de-de
 $text['button-next']['de-ch'] = "Nächste"; //copied from de-de
@@ -589,6 +617,7 @@ $text['button-next']['uk-ua'] = "";
 $text['button-next']['tr-tr'] = "Sonraki";
 
 $text['button-back']['en-us'] = "Back";
+$text['button-back']['zh-cn'] = "返回";
 $text['button-back']['ar-eg'] = "رجوع";
 $text['button-back']['de-at'] = "Zurück "; //copied from de-de
 $text['button-back']['de-ch'] = "Zurück "; //copied from de-de
@@ -610,6 +639,7 @@ $text['button-back']['uk-ua'] = "Назад";
 $text['button-back']['tr-tr'] = "Geri";
 
 $text['button-edit']['en-us'] = "Edit";
+$text['button-edit']['zh-cn'] = "编辑";
 $text['button-edit']['ar-eg'] = "تعديل";
 $text['button-edit']['de-at'] = "Bearbeiten"; //copied from de-de
 $text['button-edit']['de-ch'] = "Bearbeiten"; //copied from de-de
@@ -631,6 +661,7 @@ $text['button-edit']['uk-ua'] = "Редагувати";
 $text['button-edit']['tr-tr'] = "Düzenle";
 
 $text['button-delete']['en-us'] = "Delete";
+$text['button-delete']['zh-cn'] = "删除";
 $text['button-delete']['ar-eg'] = "مسح";
 $text['button-delete']['de-at'] = "löschen"; //copied from de-de
 $text['button-delete']['de-ch'] = "löschen"; //copied from de-de
@@ -652,6 +683,7 @@ $text['button-delete']['uk-ua'] = "Видалити";
 $text['button-delete']['tr-tr'] = "Sil";
 
 $text['button-add']['en-us'] = "Add";
+$text['button-add']['zh-cn'] = "添加";
 $text['button-add']['ar-eg'] = "اضافة";
 $text['button-add']['de-at'] = "Hinzufügen"; //copied from de-de
 $text['button-add']['de-ch'] = "Hinzufügen"; //copied from de-de
@@ -673,6 +705,7 @@ $text['button-add']['uk-ua'] = "Додати";
 $text['button-add']['tr-tr'] = "Ekle";
 
 $text['button-reload']['en-us'] = "Reload";
+$text['button-reload']['zh-cn'] = "重新加载";
 $text['button-reload']['ar-eg'] = "";
 $text['button-reload']['de-at'] = "Neu Laden"; //copied from de-de
 $text['button-reload']['de-ch'] = "Neu Laden"; //copied from de-de
@@ -694,6 +727,7 @@ $text['button-reload']['uk-ua'] = "перезавантажувати";
 $text['button-reload']['tr-tr'] = "Yeniden Yükle";
 
 $text['button-paste']['en-us'] = "Paste";
+$text['button-paste']['zh-cn'] = "粘贴";
 $text['button-paste']['ar-eg'] = "";
 $text['button-paste']['de-at'] = "Einfügen"; //copied from de-de
 $text['button-paste']['de-ch'] = "Einfügen"; //copied from de-de
@@ -715,6 +749,7 @@ $text['button-paste']['uk-ua'] = "Вставити";
 $text['button-paste']['tr-tr'] = "Yapıştır";
 
 $text['button-export']['en-us'] = "Export";
+$text['button-export']['zh-cn'] = "导出";
 $text['button-export']['ar-eg'] = "";
 $text['button-export']['de-at'] = "Exportieren"; //copied from de-de
 $text['button-export']['de-ch'] = "Exportieren"; //copied from de-de
@@ -736,6 +771,7 @@ $text['button-export']['uk-ua'] = "Експортувати";
 $text['button-export']['tr-tr'] = "Dışa Aktar";
 
 $text['button-execute']['en-us'] = "Execute";
+$text['button-execute']['zh-cn'] = "执行";
 $text['button-execute']['ar-eg'] = "";
 $text['button-execute']['de-at'] = "Ausführen"; //copied from de-de
 $text['button-execute']['de-ch'] = "Ausführen"; //copied from de-de
@@ -757,6 +793,7 @@ $text['button-execute']['uk-ua'] = "Виконати";
 $text['button-execute']['tr-tr'] = "Çalıştır";
 
 $text['button-view']['en-us'] = "View";
+$text['button-view']['zh-cn'] = "查看";
 $text['button-view']['ar-eg'] = "عرض";
 $text['button-view']['de-at'] = "Ansicht"; //copied from de-de
 $text['button-view']['de-ch'] = "Ansicht"; //copied from de-de
@@ -778,6 +815,7 @@ $text['button-view']['uk-ua'] = "вид";
 $text['button-view']['tr-tr'] = "Görüntüle";
 
 $text['button-upload']['en-us'] = "Upload";
+$text['button-upload']['zh-cn'] = "上传";
 $text['button-upload']['ar-eg'] = "";
 $text['button-upload']['de-at'] = "Hochladen"; //copied from de-de
 $text['button-upload']['de-ch'] = "Hochladen"; //copied from de-de
@@ -799,6 +837,7 @@ $text['button-upload']['uk-ua'] = "Завантажити";
 $text['button-upload']['tr-tr'] = "Yükle";
 
 $text['button-download']['en-us'] = "Download";
+$text['button-download']['zh-cn'] = "下载";
 $text['button-download']['ar-eg'] = "";
 $text['button-download']['de-at'] = "Herunterladen"; //copied from de-de
 $text['button-download']['de-ch'] = "Herunterladen"; //copied from de-de
@@ -820,6 +859,7 @@ $text['button-download']['uk-ua'] = "Скачати";
 $text['button-download']['tr-tr'] = "İndir";
 
 $text['button-downloads']['en-us'] = "Downloads";
+$text['button-downloads']['zh-cn'] = "下载";
 $text['button-downloads']['ar-eg'] = "";
 $text['button-downloads']['de-at'] = "Herunterladen";
 $text['button-downloads']['de-ch'] = "Herunterladen"; //copied from de-de
@@ -841,6 +881,7 @@ $text['button-downloads']['uk-ua'] = "Скачати";
 $text['button-downloads']['tr-tr'] = "İndirilenler";
 
 $text['button-restart']['en-us'] = "Restart";
+$text['button-restart']['zh-cn'] = "重新运行";
 $text['button-restart']['ar-eg'] = "";
 $text['button-restart']['de-at'] = "Neu starten"; //copied from de-de
 $text['button-restart']['de-ch'] = "Neu starten"; //copied from de-de
@@ -862,6 +903,7 @@ $text['button-restart']['uk-ua'] = "Перезапустити";
 $text['button-restart']['tr-tr'] = "Yeniden Başlat";
 
 $text['button-refresh']['en-us'] = "Refresh";
+$text['button-refresh']['zh-cn'] = "刷新";
 $text['button-refresh']['ar-eg'] = "";
 $text['button-refresh']['de-at'] = "Aktualisieren"; //copied from de-de
 $text['button-refresh']['de-ch'] = "Aktualisieren"; //copied from de-de
@@ -883,6 +925,7 @@ $text['button-refresh']['uk-ua'] = "Оновити";
 $text['button-refresh']['tr-tr'] = "Yenile";
 
 $text['button-advanced']['en-us'] = "Advanced";
+$text['button-advanced']['zh-cn'] = "高级";
 $text['button-advanced']['ar-eg'] = "";
 $text['button-advanced']['de-at'] = "Erweitert"; //copied from de-de
 $text['button-advanced']['de-ch'] = "Erweitert"; //copied from de-de
@@ -904,6 +947,7 @@ $text['button-advanced']['uk-ua'] = "Додатково";
 $text['button-advanced']['tr-tr'] = "Gelişmiş";
 
 $text['button-basic']['en-us'] = "Basic";
+$text['button-basic']['zh-cn'] = "基础";
 $text['button-basic']['ar-eg'] = "";
 $text['button-basic']['de-at'] = "Grundlegend"; //copied from de-de
 $text['button-basic']['de-ch'] = "Grundlegend"; //copied from de-de
@@ -925,6 +969,7 @@ $text['button-basic']['uk-ua'] = "Основний";
 $text['button-basic']['tr-tr'] = "Temel";
 
 $text['button-stop']['en-us'] = "Stop";
+$text['button-stop']['zh-cn'] = "停止";
 $text['button-stop']['ar-eg'] = "";
 $text['button-stop']['de-at'] = "Stopp"; //copied from de-de
 $text['button-stop']['de-ch'] = "Stopp"; //copied from de-de
@@ -946,6 +991,7 @@ $text['button-stop']['uk-ua'] = "Зупинити трансляцію";
 $text['button-stop']['tr-tr'] = "Durdur";
 
 $text['button-status']['en-us'] = "Status";
+$text['button-status']['zh-cn'] = "状态";
 $text['button-status']['ar-eg'] = "";
 $text['button-status']['de-at'] = "Status"; //copied from de-de
 $text['button-status']['de-ch'] = "Status"; //copied from de-de
@@ -967,6 +1013,7 @@ $text['button-status']['uk-ua'] = "Статус";
 $text['button-status']['tr-tr'] = "Durum";
 
 $text['button-start']['en-us'] = "Start";
+$text['button-start']['zh-cn'] = "运行";
 $text['button-start']['ar-eg'] = "";
 $text['button-start']['de-at'] = "Start"; //copied from de-de
 $text['button-start']['de-ch'] = "Start"; //copied from de-de
@@ -988,6 +1035,7 @@ $text['button-start']['uk-ua'] = "Запустити";
 $text['button-start']['tr-tr'] = "Başlat";
 
 $text['button-overview']['en-us'] = "Overview";
+$text['button-overview']['zh-cn'] = "视图";
 $text['button-overview']['ar-eg'] = "";
 $text['button-overview']['de-at'] = "";
 $text['button-overview']['de-ch'] = "";
@@ -1009,6 +1057,7 @@ $text['button-overview']['uk-ua'] = "";
 $text['button-overview']['tr-tr'] = "Genel Bakış";
 
 $text['button-summary']['en-us'] = "Summary";
+$text['button-summary']['zh-cn'] = "概要";
 $text['button-summary']['ar-eg'] = "";
 $text['button-summary']['de-at'] = "";
 $text['button-summary']['de-ch'] = "";
@@ -1030,6 +1079,7 @@ $text['button-summary']['uk-ua'] = "";
 $text['button-summary']['tr-tr'] = "Özet";
 
 $text['button-update']['en-us'] = "Update";
+$text['button-update']['zh-cn'] = "更新";
 $text['button-update']['ar-eg'] = "";
 $text['button-update']['de-at'] = "Aktualisieren"; //copied from de-de
 $text['button-update']['de-ch'] = "Aktualisieren"; //copied from de-de
@@ -1051,6 +1101,7 @@ $text['button-update']['uk-ua'] = "Оновити";
 $text['button-update']['tr-tr'] = "Güncelle";
 
 $text['button-download_csv']['en-us'] = "Download CSV";
+$text['button-download_csv']['zh-cn'] = "下载 CSV";
 $text['button-download_csv']['ar-eg'] = "";
 $text['button-download_csv']['de-at'] = "CSV Herunterladen"; //copied from de-de
 $text['button-download_csv']['de-ch'] = "CSV Herunterladen"; //copied from de-de
@@ -1072,6 +1123,7 @@ $text['button-download_csv']['uk-ua'] = "";
 $text['button-download_csv']['tr-tr'] = "CVS İndir";
 
 $text['button-import']['en-us'] = "Import";
+$text['button-import']['zh-cn'] = "导入";
 $text['button-import']['ar-eg'] = "";
 $text['button-import']['de-at'] = "Importieren"; //copied from de-de
 $text['button-import']['de-ch'] = "Importieren"; //copied from de-de
@@ -1093,6 +1145,7 @@ $text['button-import']['uk-ua'] = "";
 $text['button-import']['tr-tr'] = "İçe Aktar";
 
 $text['button-qr_code']['en-us'] = "QR Code";
+$text['button-qr_code']['zh-cn'] = "二维码";
 $text['button-qr_code']['ar-eg'] = "";
 $text['button-qr_code']['de-at'] = "QR Code"; //copied from de-de
 $text['button-qr_code']['de-ch'] = "QR Code"; //copied from de-de
@@ -1113,6 +1166,7 @@ $text['button-qr_code']['sv-se'] = "QR Kod";
 $text['button-qr_code']['uk-ua'] = "";
 
 $text['label-total']['en-us'] = "Total";
+$text['label-total']['zh-cn'] = "合计";
 $text['label-total']['ar-eg'] = "";
 $text['label-total']['de-at'] = "Summe"; //copied from de-de
 $text['label-total']['de-ch'] = "Summe"; //copied from de-de
@@ -1134,6 +1188,7 @@ $text['label-total']['uk-ua'] = "Всього";
 $text['label-total']['tr-tr'] = "Toplam";
 
 $text['label-overview']['en-us'] = "Overview";
+$text['label-overview']['zh-cn'] = "视图";
 $text['label-overview']['ar-eg'] = "";
 $text['label-overview']['de-at'] = "";
 $text['label-overview']['de-ch'] = "";
@@ -1155,6 +1210,7 @@ $text['label-overview']['uk-ua'] = "";
 $text['label-overview']['tr-tr'] = "Genel Bakış";
 
 $text['label-summary']['en-us'] = "Summary";
+$text['label-summary']['zh-cn'] = "概要";
 $text['label-summary']['ar-eg'] = "";
 $text['label-summary']['de-at'] = "";
 $text['label-summary']['de-ch'] = "";
@@ -1176,6 +1232,7 @@ $text['label-summary']['uk-ua'] = "";
 $text['label-summary']['tr-tr'] = "Özet";
 
 $text['label-import_data']['en-us'] = "Data";
+$text['label-import_data']['zh-cn'] = "数据";
 $text['label-import_data']['ar-eg'] = "";
 $text['label-import_data']['de-at'] = "Daten"; //copied from de-de
 $text['label-import_data']['de-ch'] = "Daten"; //copied from de-de
@@ -1197,6 +1254,7 @@ $text['label-import_data']['uk-ua'] = "";
 $text['label-import_data']['tr-tr'] = "Veri";
 
 $text['label-import_delimiter']['en-us'] = "Delimiter";
+$text['label-import_delimiter']['zh-cn'] = "分隔符";
 $text['label-import_delimiter']['ar-eg'] = "";
 $text['label-import_delimiter']['de-at'] = "Trennzeichen"; //copied from de-de
 $text['label-import_delimiter']['de-ch'] = "Trennzeichen"; //copied from de-de
@@ -1218,6 +1276,7 @@ $text['label-import_delimiter']['uk-ua'] = "";
 $text['label-import_delimiter']['tr-tr'] = "Ayırıcı";
 
 $text['label-import_enclosure']['en-us'] = "Enclosure";
+$text['label-import_enclosure']['zh-cn'] = "附件";
 $text['label-import_enclosure']['ar-eg'] = "";
 $text['label-import_enclosure']['de-at'] = "Abgrenzung"; //copied from de-de
 $text['label-import_enclosure']['de-ch'] = "Abgrenzung"; //copied from de-de
@@ -1239,6 +1298,7 @@ $text['label-import_enclosure']['uk-ua'] = "";
 $text['label-import_enclosure']['tr-tr'] = "Sonlandırma";
 
 $text['label-import_file_upload']['en-us'] = "File to Upload";
+$text['label-import_file_upload']['zh-cn'] = "上传文件";
 $text['label-import_file_upload']['ar-eg'] = "";
 $text['label-import_file_upload']['de-at'] = "Datei zum hochladen"; //copied from de-de
 $text['label-import_file_upload']['de-ch'] = "Datei zum hochladen"; //copied from de-de
@@ -1260,6 +1320,7 @@ $text['label-import_file_upload']['uk-ua'] = "Файл для завантаже
 $text['label-import_file_upload']['tr-tr'] = "Yüklenecek Dosya";
 
 $text['description-import_data']['en-us'] = "Copy and paste the comma delimitted data into the text area to begin the import.";
+$text['description-import_data']['zh-cn'] = "将逗号分隔的数据复制并粘贴到文本区域以开始导入。";
 $text['description-import_data']['ar-eg'] = "";
 $text['description-import_data']['de-at'] = "Kopieren Sie die komma-getrennten Daten in den Textbereich um den Import zu starten."; //copied from de-de
 $text['description-import_data']['de-ch'] = "Kopieren Sie die komma-getrennten Daten in den Textbereich um den Import zu starten."; //copied from de-de
@@ -1281,6 +1342,7 @@ $text['description-import_data']['uk-ua'] = "";
 $text['description-import_data']['tr-tr'] = "İçe aktarmayı başlatmak için virgül ile ayrılmış olan veriyi metin alanına kopyalayıp yapıştırın.";
 
 $text['description-import_delimiter']['en-us'] = "Select the delimiter (comma or pipe).";
+$text['description-import_delimiter']['zh-cn'] = "选择分隔符（,或;）。";
 $text['description-import_delimiter']['ar-eg'] = "";
 $text['description-import_delimiter']['de-at'] = "Wählen Sie das Trennzeichen (Beistrich oder Wagrechter Strich)"; //copied from de-de
 $text['description-import_delimiter']['de-ch'] = "Wählen Sie das Trennzeichen (Beistrich oder Wagrechter Strich)"; //copied from de-de
@@ -1302,6 +1364,7 @@ $text['description-import_delimiter']['uk-ua'] = "";
 $text['description-import_delimiter']['tr-tr'] = "Ayırıcıyı seçin(virgül ya da boru).";
 
 $text['description-import_enclosure']['en-us'] = "Select the enclosure of text (double-quotes or nothing).";
+$text['description-import_enclosure']['zh-cn'] = "选择文本框（双引号或无引号）。";
 $text['description-import_enclosure']['ar-eg'] = "";
 $text['description-import_enclosure']['de-at'] = "Wählen Sie die Abgrenzung für den Text (Doppelte Anführungszeichen oder nichts)."; //copied from de-de
 $text['description-import_enclosure']['de-ch'] = "Wählen Sie die Abgrenzung für den Text (Doppelte Anführungszeichen oder nichts)."; //copied from de-de
@@ -1323,6 +1386,7 @@ $text['description-import_enclosure']['uk-ua'] = "";
 $text['description-import_enclosure']['tr-tr'] = "Metin sonlandırmasını seçin (çift tırnak ya da hiçbir şey).";
 
 $text['option-yesterday']['en-us'] = "Yesterday";
+$text['option-yesterday']['zh-cn'] = "昨天";
 $text['option-yesterday']['ar-eg'] = "";
 $text['option-yesterday']['de-at'] = "Gestern"; //copied from de-de
 $text['option-yesterday']['de-ch'] = "Gestern"; //copied from de-de
@@ -1344,6 +1408,7 @@ $text['option-yesterday']['uk-ua'] = "Вчора";
 $text['option-yesterday']['tr-tr'] = "Dün";
 
 $text['option-today']['en-us'] = "Today";
+$text['option-today']['zh-cn'] = "今天";
 $text['option-today']['ar-eg'] = "";
 $text['option-today']['de-at'] = "Heute"; //copied from de-de
 $text['option-today']['de-ch'] = "Heute"; //copied from de-de
@@ -1365,6 +1430,7 @@ $text['option-today']['uk-ua'] = "Сьогодні";
 $text['option-today']['tr-tr'] = "Bugün";
 
 $text['option-this_year']['en-us'] = "This Year";
+$text['option-this_year']['zh-cn'] = "本年";
 $text['option-this_year']['ar-eg'] = "";
 $text['option-this_year']['de-at'] = "Dieses Jahr"; //copied from de-de
 $text['option-this_year']['de-ch'] = "Dieses Jahr"; //copied from de-de
@@ -1386,6 +1452,7 @@ $text['option-this_year']['uk-ua'] = "Цього року";
 $text['option-this_year']['tr-tr'] = "Bu Yıl";
 
 $text['option-this_week']['en-us'] = "This Week";
+$text['option-this_week']['zh-cn'] = "本周";
 $text['option-this_week']['ar-eg'] = "";
 $text['option-this_week']['de-at'] = "Diese Woche"; //copied from de-de
 $text['option-this_week']['de-ch'] = "Diese Woche"; //copied from de-de
@@ -1407,6 +1474,7 @@ $text['option-this_week']['uk-ua'] = "Цього тижня";
 $text['option-this_week']['tr-tr'] = "Bu Hafta";
 
 $text['option-this_month']['en-us'] = "This Month";
+$text['option-this_month']['zh-cn'] = "本月";
 $text['option-this_month']['ar-eg'] = "";
 $text['option-this_month']['de-at'] = "Diesen Monat"; //copied from de-de
 $text['option-this_month']['de-ch'] = "Diesen Monat"; //copied from de-de
@@ -1428,6 +1496,7 @@ $text['option-this_month']['uk-ua'] = "Цього місяця";
 $text['option-this_month']['tr-tr'] = "Bu Ay";
 
 $text['option-last_seven_days']['en-us'] = "Last 7 Days";
+$text['option-last_seven_days']['zh-cn'] = "最近7天";
 $text['option-last_seven_days']['ar-eg'] = "";
 $text['option-last_seven_days']['de-at'] = "Letzte 7 Tage"; //copied from de-de
 $text['option-last_seven_days']['de-ch'] = "Letzte 7 Tage"; //copied from de-de
@@ -1449,6 +1518,7 @@ $text['option-last_seven_days']['uk-ua'] = "За останні 7 днів";
 $text['option-last_seven_days']['tr-tr'] = "Geçtiğimiz 7 Gün";
 
 $text['option-last_hour']['en-us'] = "Last Hour";
+$text['option-last_hour']['zh-cn'] = "最近1小时";
 $text['option-last_hour']['ar-eg'] = "";
 $text['option-last_hour']['de-at'] = "Letzte Stunde"; //copied from de-de
 $text['option-last_hour']['de-ch'] = "Letzte Stunde"; //copied from de-de
@@ -1470,6 +1540,7 @@ $text['option-last_hour']['uk-ua'] = "За останню годину";
 $text['option-last_hour']['tr-tr'] = "Geçtiğimiz Saat";
 
 $text['option-default']['en-us'] = "Default";
+$text['option-default']['zh-cn'] = "默认";
 $text['option-default']['ar-eg'] = "";
 $text['option-default']['de-at'] = "Vorgabe"; //copied from de-de
 $text['option-default']['de-ch'] = "Vorgabe"; //copied from de-de
